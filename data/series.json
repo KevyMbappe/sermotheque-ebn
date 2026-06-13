@@ -1,0 +1,134 @@
+[
+  {
+    "id": "ser-epitre-aux-galates",
+    "name": "Épître aux Galates",
+    "type": "expository",
+    "count": 69
+  },
+  {
+    "id": "ser-epitre-aux-hebreux",
+    "name": "Épître aux Hébreux",
+    "type": "expository",
+    "count": 28
+  },
+  {
+    "id": "ser-epitre-de-jacques",
+    "name": "Épître de Jacques",
+    "type": "expository",
+    "count": 14
+  },
+  {
+    "id": "ser-etude-genese",
+    "name": "Étude — Genèse",
+    "type": "expository",
+    "count": 13
+  },
+  {
+    "id": "ser-etude-ezechiel",
+    "name": "Étude — Ézéchiel",
+    "type": "expository",
+    "count": 11
+  },
+  {
+    "id": "ser-epitre-aux-colossiens",
+    "name": "Épître aux Colossiens",
+    "type": "expository",
+    "count": 5
+  },
+  {
+    "id": "ser-evangile-de-jean",
+    "name": "Évangile de Jean",
+    "type": "expository",
+    "count": 5
+  },
+  {
+    "id": "ser-joie-chretienne",
+    "name": "Joie chrétienne",
+    "type": "thematic",
+    "count": 5
+  },
+  {
+    "id": "ser-actes-des-apotres",
+    "name": "Actes des Apôtres",
+    "type": "expository",
+    "count": 4
+  },
+  {
+    "id": "ser-epitre-aux-romains",
+    "name": "Épître aux Romains",
+    "type": "expository",
+    "count": 4
+  },
+  {
+    "id": "ser-epitre-aux-ephesiens",
+    "name": "Épître aux Éphésiens",
+    "type": "expository",
+    "count": 4
+  },
+  {
+    "id": "ser-noel-le-plus-glorieux-des-mysteres",
+    "name": "Noël le plus glorieux des mystères",
+    "type": "thematic",
+    "count": 4
+  },
+  {
+    "id": "ser-evangile-de-luc",
+    "name": "Évangile de Luc",
+    "type": "expository",
+    "count": 3
+  },
+  {
+    "id": "ser-fruit-de-l-esprit",
+    "name": "Fruit de l'Esprit",
+    "type": "thematic",
+    "count": 3
+  },
+  {
+    "id": "ser-evangile-de-matthieu",
+    "name": "Évangile de Matthieu",
+    "type": "expository",
+    "count": 3
+  },
+  {
+    "id": "ser-formations-des-diacres",
+    "name": "Formations des diacres",
+    "type": "thematic",
+    "count": 3
+  },
+  {
+    "id": "ser-etude-psaumes",
+    "name": "Étude — Psaumes",
+    "type": "expository",
+    "count": 3
+  },
+  {
+    "id": "ser-etre-l-aide-en-dieu",
+    "name": "Être l'aide en Dieu",
+    "type": "thematic",
+    "count": 3
+  },
+  {
+    "id": "ser-confession-de-foi-genese-1",
+    "name": "Confession de foi | Genèse 1",
+    "type": "thematic",
+    "count": 3
+  },
+  {
+    "id": "ser-evangile-de-marc",
+    "name": "Évangile de Marc",
+    "type": "expository",
+    "count": 3
+  },
+  {
+    "id": "ser-epitre-de-pierre",
+    "name": "Épître de Pierre",
+    "type": "expository",
+    "count": 2
+  },
+  {
+    "id": "ser-epitre-a-timothee",
+    "name": "Épître à Timothée",
+    "type": "expository",
+    "count": 2
+  }
+]
