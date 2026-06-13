@@ -26,6 +26,22 @@ ENRICH_SCHEMA = {
     "additionalProperties": False,
 }
 
+# Claude API pricing, $ per 1M tokens (input, output) — keep in sync with
+# docs/ENRICHMENT-MODEL.md. Used to report live cost; no effect on the call itself.
+PRICES = {
+    "claude-sonnet-4-6": (3.0, 15.0),
+    "claude-haiku-4-5": (1.0, 5.0),
+    "claude-haiku-4-5-20251001": (1.0, 5.0),
+    "claude-opus-4-8": (5.0, 25.0),
+}
+
+
+def cost_of(model: str, in_tok: int, out_tok: int) -> float:
+    """USD for one enrichment call, from the measured token usage."""
+    pin, pout = PRICES.get(model, (0.0, 0.0))
+    return in_tok / 1e6 * pin + out_tok / 1e6 * pout
+
+
 PROMPT = """Tu enrichis le catalogue de prédications d'une église réformée baptiste francophone.
 À partir de la TRANSCRIPTION (français, générée automatiquement — ignore les coquilles d'ASR),
 renvoie un JSON: un résumé français de 2-3 phrases fidèle au contenu, 3-7 sujets théologiques,
@@ -38,8 +54,14 @@ TRANSCRIPTION:
 """
 
 
-def make_enricher(*, model="claude-sonnet-4-6", topic_vocab=None, max_chars=48000):
-    """Build the real enrich_fn(transcript, parsed) -> dict. Needs ANTHROPIC_API_KEY."""
+def make_enricher(*, model="claude-sonnet-4-6", topic_vocab=None, max_chars=120000, on_usage=None):
+    """Build the real enrich_fn(transcript, parsed) -> dict. Needs ANTHROPIC_API_KEY.
+
+    max_chars=120000 (~40k tokens) comfortably covers a full ~60-90 min sermon — the
+    old 48k cap silently truncated the conclusion of longer ones (#42 follow-up).
+    on_usage(input_tokens, output_tokens), if given, is called after the response so
+    the caller can report live cost via cost_of().
+    """
     import anthropic  # lazy — keeps the core importable without the SDK
     client = anthropic.Anthropic()
     vocab = (f"Vocabulaire de sujets à privilégier: {', '.join(topic_vocab)}." if topic_vocab else "")
@@ -52,6 +74,9 @@ def make_enricher(*, model="claude-sonnet-4-6", topic_vocab=None, max_chars=4800
             output_config={"format": {"type": "json_schema", "schema": ENRICH_SCHEMA}},
             messages=[{"role": "user", "content": prompt}],
         )
+        usage = getattr(resp, "usage", None)
+        if on_usage and usage is not None:
+            on_usage(usage.input_tokens, usage.output_tokens)
         import json
         text = next(b.text for b in resp.content if b.type == "text")
         return json.loads(text)

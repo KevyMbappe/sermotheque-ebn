@@ -16,6 +16,7 @@ import json
 import os
 import re
 import subprocess
+import sys
 import unicodedata
 from pathlib import Path
 
@@ -55,13 +56,33 @@ def _slug(s):
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")[:60]
 
 
-def download_audio(url, cache_dir=CACHE, ytdlp=YTDLP):
+def _run(cmd, verbose):
+    """Run a subprocess. When verbose, the tool's progress is shown on stderr (its
+    stdout is redirected there too) so our own stdout stays clean for the entry JSON;
+    otherwise it's captured/silent (the default — keeps tests and library use quiet)."""
+    if verbose:
+        subprocess.run(cmd, check=True, stdout=sys.stderr)
+    else:
+        subprocess.run(cmd, check=True, capture_output=True)
+
+
+def probe_metadata(url, ytdlp=YTDLP):
+    """Fetch title / upload_date / duration without downloading (one fast yt-dlp call)."""
+    res = subprocess.run(
+        [ytdlp, "--skip-download", "--no-warnings",
+         "--print", "%(title)s\t%(upload_date)s\t%(duration)s", url],
+        check=True, capture_output=True, text=True)
+    title, date, dur = (res.stdout.strip().split("\t") + ["", "", ""])[:3]
+    return {"title": title or None, "upload_date": date or None,
+            "duration": int(float(dur)) if dur else None}
+
+
+def download_audio(url, cache_dir=CACHE, ytdlp=YTDLP, verbose=False):
     """Download a SoundCloud/YouTube URL to mp3 in the cache. Returns the path."""
     cache_dir = Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
     out = cache_dir / f"{_slug(url)}.%(ext)s"
-    subprocess.run([ytdlp, "-x", "--audio-format", "mp3", "--no-warnings",
-                    "-o", str(out), url], check=True, capture_output=True)
+    _run([ytdlp, "-x", "--audio-format", "mp3", "--no-warnings", "-o", str(out), url], verbose)
     mp3s = sorted(cache_dir.glob(f"{_slug(url)}.mp3"))
     if not mp3s:
         raise RuntimeError(f"download produced no mp3 for {url}")
@@ -71,25 +92,22 @@ def download_audio(url, cache_dir=CACHE, ytdlp=YTDLP):
 _SIDECAR_EXTS = (".txt", ".vtt", ".srt", ".tsv", ".json")
 
 
-def asr(audio_path, model=MODEL, mlx_whisper=MLX_WHISPER):
-    """Transcribe an audio file with mlx-whisper (French), capturing timestamps.
-
-    Returns a dict: {text, vtt, segments, language}.
-      • text     — plain transcript (drives enrichment + search).
+def asr(audio_path, model=MODEL, mlx_whisper=MLX_WHISPER, word_timestamps=False, verbose=False):
+    """Transcribe an audio file with mlx-whisper (French). Returns {text, vtt, segments, language}.
+      • text      — plain transcript (drives enrichment + search).
       • vtt       — subtitle-ready WebVTT, segment timestamps (→ EN/PT subtitles,
-                    audio-synced reading, deep-linking "jump to where he says X").
-      • segments  — list of {start, end, text, words[], avg_logprob, no_speech_prob,
-                    compression_ratio}; word-level timing enables search-to-moment and
-                    karaoke highlight, and per-segment confidence flags shaky stretches
-                    for a human pass. Captured here because re-deriving it later means
-                    re-running ASR — so we extract the maximum in the one pass (#42).
+                    audio-synced reading, deep-linking). Persisted by default.
+      • segments  — segment-level {start, end, text, avg_logprob, no_speech_prob, …},
+                    free. With word_timestamps=True each segment also gets per-word
+                    timing (`words[]`) — heavier; opt-in (see #42). Not persisted unless
+                    build_entry(persist_segments=True).
     """
     audio_path = Path(audio_path)
     stem, out = audio_path.stem, audio_path.parent
-    subprocess.run([mlx_whisper, str(audio_path), "--model", model, "--language", "fr",
-                    "--output-dir", str(out), "--output-name", stem,
-                    "--output-format", "all", "--word-timestamps", "True"],
-                   check=True, capture_output=True)
+    _run([mlx_whisper, str(audio_path), "--model", model, "--language", "fr",
+          "--output-dir", str(out), "--output-name", stem,
+          "--output-format", "all", "--word-timestamps", "True" if word_timestamps else "False"],
+         verbose)
     data = json.loads((out / f"{stem}.json").read_text(encoding="utf-8"))
     return {
         "text": (out / f"{stem}.txt").read_text(encoding="utf-8"),
@@ -99,13 +117,15 @@ def asr(audio_path, model=MODEL, mlx_whisper=MLX_WHISPER):
     }
 
 
-def make_transcriber(*, keep_audio=False, model=MODEL):
+def make_transcriber(*, keep_audio=False, model=MODEL, word_timestamps=False, verbose=False):
     """Build the real transcribe_fn(source) -> {text, vtt, segments, language}.
 
     `source` must provide an audio location: either a pre-downloaded `audio_path`,
     or a `url` (SoundCloud permalink / YouTube watch URL) to fetch. The conservative
     ASR cleanup is applied to both the plain text and the VTT cues (the substitution
     rules match French words, never the timestamp lines, so VTT is safe to clean).
+    `verbose` streams yt-dlp/whisper progress to stderr; `word_timestamps` opts into
+    the heavier per-word timing (only worth it if persisting segments).
     """
     def transcribe(source: dict) -> dict:
         audio = source.get("audio_path")
@@ -114,8 +134,8 @@ def make_transcriber(*, keep_audio=False, model=MODEL):
             url = source.get("url") or source.get("soundcloud_url") or source.get("youtube_url")
             if not url:
                 raise ValueError("transcribe: source needs audio_path or a url")
-            audio = downloaded = download_audio(url)
-        result = asr(audio, model=model)
+            audio = downloaded = download_audio(url, verbose=verbose)
+        result = asr(audio, model=model, word_timestamps=word_timestamps, verbose=verbose)
         result["text"] = clean_transcript(result["text"])
         result["vtt"] = clean_transcript(result["vtt"])
         if downloaded and not keep_audio:

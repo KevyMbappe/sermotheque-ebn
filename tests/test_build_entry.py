@@ -55,29 +55,44 @@ class TestBuildEntry(unittest.TestCase):
         self.assertEqual(path.read_text(encoding="utf-8"), FIXTURE)
         self.assertTrue(e["transcript_ref"].endswith("sc-123.txt"))
 
-    def test_timestamps_persisted_when_transcriber_returns_rich_result(self):
-        # The real transcriber returns {text, vtt, segments, language}; build_entry
-        # should enrich on the plain text and persist the VTT + segments sidecars (#42).
-        vtt = "WEBVTT\n\n00:00.000 --> 00:02.000\nAu commencement.\n"
-        segs = [{"start": 0.0, "end": 2.0, "text": "Au commencement.",
-                 "words": [{"word": "Au", "start": 0.0, "end": 0.4}],
-                 "no_speech_prob": 0.01}]
-        def rich_transcribe(src):
-            return {"text": FIXTURE, "vtt": vtt, "segments": segs, "language": "fr"}
-        e = build_entry(SOURCE, transcribe=rich_transcribe,
-                        enrich=lambda t, p: {**ENRICHMENT, "_seen": t},
-                        transcripts_dir=self.tmp)
+    RICH = {"text": FIXTURE, "vtt": "WEBVTT\n\n00:00.000 --> 00:02.000\nAu commencement.\n",
+            "segments": [{"start": 0.0, "end": 2.0, "text": "Au commencement.",
+                          "words": [{"word": "Au", "start": 0.0, "end": 0.4}], "no_speech_prob": 0.01}],
+            "language": "fr"}
+
+    def test_vtt_persisted_but_segments_off_by_default(self):
+        # Default keeps txt + vtt only; the heavy word-level .json is opt-in (#42).
+        e = build_entry(SOURCE, transcribe=lambda s: self.RICH,
+                        enrich=lambda t, p: ENRICHMENT, transcripts_dir=self.tmp)
         self.assertEqual((self.tmp / "sc-123.txt").read_text(encoding="utf-8"), FIXTURE)
-        self.assertEqual((self.tmp / "sc-123.vtt").read_text(encoding="utf-8"), vtt)
+        self.assertEqual((self.tmp / "sc-123.vtt").read_text(encoding="utf-8"), self.RICH["vtt"])
         self.assertTrue(e["captions_ref"].endswith("sc-123.vtt"))
+        self.assertFalse((self.tmp / "sc-123.json").exists())
+        self.assertIsNone(e["segments_ref"])
+
+    def test_segments_persisted_when_opted_in(self):
+        e = build_entry(SOURCE, transcribe=lambda s: self.RICH, enrich=lambda t, p: ENRICHMENT,
+                        transcripts_dir=self.tmp, persist_segments=True)
         loaded = json.loads((self.tmp / "sc-123.json").read_text(encoding="utf-8"))
         self.assertEqual(loaded["segments"][0]["words"][0]["word"], "Au")
-        self.assertEqual(loaded["language"], "fr")
+        self.assertTrue(e["segments_ref"].endswith("sc-123.json"))
 
     def test_string_transcriber_leaves_timestamp_refs_empty(self):
         e = self._build()  # fake returns a plain string
         self.assertIsNone(e["captions_ref"])
         self.assertIsNone(e["segments_ref"])
+
+    def test_date_falls_back_to_source_upload_date(self):
+        # Title has no date prefix; YouTube's upload_date (YYYYMMDD) should fill it.
+        src = {"youtube_id": "X", "raw_title": "Prier | Psaume 40 : 1 - 17", "upload_date": "20260607"}
+        e = build_entry(src, transcribe=lambda s: "", enrich=lambda t, p: {})
+        self.assertEqual(e["date"], "2026-06-07")
+
+    def test_progress_callback_fires_each_phase(self):
+        seen = []
+        build_entry(SOURCE, transcribe=lambda s: FIXTURE, enrich=lambda t, p: {},
+                    on_progress=seen.append, transcripts_dir=self.tmp)
+        self.assertEqual(seen, ["parse", "transcribe", "enrich", "persist", "done"])
 
     def test_steps_actually_invoked(self):
         self._build()

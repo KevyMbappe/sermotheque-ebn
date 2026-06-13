@@ -28,7 +28,7 @@ This reframe happened through a long planning conversation; the **two spec docs 
 | `tools/md_to_pdf.py` | Markdown → PDF via headless Chrome (used for SYNTHESE / spike PDFs). |
 | `docs/research/` | **Historical evidence** (not living docs): the M3 ASR spike (`METHODOLOGY.md`, `RESULTS.md`/`.pdf`) + the M5b POC (`POC.md`/`.pdf`, `poc_entries.json`) + `spike-transcripts/` (the original slices the spike ran on). |
 | `data/raw/*.tsv` | Raw inventories pulled via `yt-dlp`. `data/catalog/` = canonical dataset (`catalog.json`/`.csv`, `series.json`, `youtube_orphans.json`, `transcripts/`). |
-| `data/catalog/transcripts/` | Canonical transcripts, **named `<entry-id>.<ext>`** (the `id` from `catalog.json`): `sc-<id>.txt` (plain) · `.vtt` (segment timing) · `.json` (word timing + confidence); later `.en.vtt` / `.pt.vtt` for translated subtitles. Filename = primary key; title/date live in the catalog, not the filename. |
+| `data/catalog/transcripts/` | Canonical transcripts, **named `<entry-id>.<ext>`** (the `id` from `catalog.json`): `sc-<id>.txt` (plain) + `.vtt` (segment timing) committed by default; `.json` (word-level timing) is opt-in via `--segments` (heavy — see #42); later `.en.vtt` / `.pt.vtt` for translated subtitles. Filename = primary key; title/date live in the catalog, not the filename. |
 
 ## Architecture (three layers)
 
@@ -59,7 +59,7 @@ WordPress **authors but does not own**. The canonical dataset (this repo's `data
 - YouTube **Videos** (cut sermons): **300** · YouTube **Live** (services): **102** · SoundCloud (clean sermon audio): **239**.
 - First-pass parse of the 239 SC titles: **82% scripture (OSIS)**, 87% clean title, 24 Bible books.
 - **22 series** auto-clustered: Galates 69, Hébreux 28, Jacques 14, Genèse 13, Ézéchiel 11, + thematic (Joie chrétienne, Noël…, Fruit de l'Esprit).
-- **YouTube ≠ SoundCloud mirror** (matcher finding): they are largely **complementary**. With full SC duration coverage (239/239) and a **duration fingerprint** (YT runs ~+51 s vs SC, calibrated) on top of title/scripture: **61** confirmed same-language overlaps + **11** EN↔FR translations; **228 YT videos are net-new** (conference ~45, English ~21, SC-absent French ~162). **True catalog = 467 distinct sermons** (union). Orphans (parsed) in `data/catalog/youtube_orphans.json`.
+- **YouTube ≠ SoundCloud mirror** (matcher finding): they are largely **complementary**. With full SC duration coverage (239/239) and a **duration fingerprint** (YT runs ~+51 s vs SC, calibrated) on top of title/scripture: **61** confirmed same-language overlaps + **11** EN↔FR translations; **228 YT videos are net-new** (conference ~45, English ~21, SC-absent French ~162). **True catalog ≈ 467 distinct sermons** (union; **468** after correcting one false YT↔SC match — decision #43). Orphans (parsed) in `data/catalog/youtube_orphans.json`.
 - **ASR enrichment validated** (spike, `docs/research/METHODOLOGY.md`): mlx-whisper `large-v3-turbo` transcribes French sermons ~6× real-time locally; LLM topics/summary are confirm-don't-type quality. **Title → scripture; transcript → topics/summary/series/search.** Speaker inference needs a default rule, not ASR.
 
 ## How to run the pipeline
@@ -95,14 +95,16 @@ Everything the pipeline needs lives **inside the project** (never `/tmp`):
 
 ## Current status & next steps
 
-**Done:** planning/specs · M1 catalog · M1b series · M2 YT↔SC matching · M2b duration dedup (union 467) · M3 ASR+LLM spike (PASS) · M3b n=8 sample · M4 fold→unified 467 · **M5 enrichment pipeline `build_entry`** · M5b POC (8 real sermons) · M5c cost reconciliation + Haiku-vs-Sonnet bake-off · **M5d timestamp capture (.vtt/.json sidecars, 22 tests)** · git + GitHub remote.
+**Done:** planning/specs · M1 catalog · M1b series · M2 YT↔SC matching · M2b duration dedup (union 467) · M3 ASR+LLM spike (PASS) · M3b n=8 sample · M4 fold→unified 467 · **M5 enrichment pipeline `build_entry`** · M5b POC (8 real sermons) · M5c cost + Haiku-vs-Sonnet bake-off · M5d timestamp capture · M5e docs restructure · **M5f pipeline hardening (cap 120k, YT date, live tracking + cost, txt+vtt default) + first real YT run** · M5g catalog correction (false-match fix, 468) · 25 tests · git + GitHub remote.
 
-Catalog is the **unified 467-record union** (239 SoundCloud + 228 YouTube), one canonical schema with `source` + `media`, 25 series. The per-sermon pipeline exists; it has NOT yet been run across the catalog.
+Catalog is the **unified union (467 as built; 468 after the decision-#43 correction)** (SoundCloud + YouTube), one canonical schema with `source` + `media`, 25 series. The per-sermon pipeline has now been **run end-to-end on one real YouTube sermon and validated** (`yt-IqNmh_XGULE`, enriched + in the catalog); it has NOT yet been run across the whole catalog.
 
 **Open / next (pick up here):**
 1. **POC DONE** (2026-06-14): real pipeline ran on the 8 sample sermons (full audio). **8 canonical transcripts now in `data/catalog/transcripts/`**; merged entries + Claude enrichment in `docs/research/poc_entries.json`; **elder-facing `docs/research/POC.{md,pdf}`** (5 pp). Scripture/kind parsed correctly incl. cross-chapter + the `Leçon`→teaching. **Enrichment is REAL**: ran `enrich.py` (Claude `sonnet-4-6`) on the 8 full transcripts (**$0.51 total ⇒ ~$0.06/sermon measured**; the earlier "~16¢/~$0.02" figure was Haiku pricing, not the Sonnet path actually run) — first execution of that path, validated; full-text summaries + **body-cited `scripture_refs` (3–15/sermon)**, far richer than the earlier slice version.
-2. **Full ASR enrichment pass** — run `build_entry` across the catalog (~15× real-time ⇒ ~15 h for 239 SC sermons, a few overnight runs) → write topics/summary/transcript back to `catalog.json`. Needs `ANTHROPIC_API_KEY` for the enrich step: **~$0.06/sermon on Sonnet 4.6 ⇒ ~$12 for the 239 SC / ~$23 for the full 467** (Haiku 4.5 ≈ ⅓ that, but see decision #40 — Sonnet chosen for FR/theological precision). Add a **default-speaker rule** for untagged sermons.
-3. **JSON Schema + WP import** — freeze the canonical record contract; design the WordPress CPT/ACF import → first public deliverable (website sermon library).
+2. **Re-run the sample-8 with the hardened pipeline** (next immediate step) — full confidence before the catalog-wide pass.
+3. **Harden the YT↔SC matcher (decision #43)** — one false positive already found (`IqNmh_XGULE` ↔ Genèse, 0.656 duration collision). Raise the auto-accept threshold, require title/scripture corroboration at small duration deltas, audit the ~0.5–0.7 band. The durable fix lives in `match_youtube.py` (hand-patches to `catalog.json` are reverted by `build.py`).
+4. **Full ASR enrichment pass** — run `build_entry` across the catalog (~15× real-time ⇒ ~15 h for 239 SC sermons, a few overnight runs) → write topics/summary/transcript back to `catalog.json`. Needs `ANTHROPIC_API_KEY`: **~$0.06/sermon on Sonnet 4.6 ⇒ ~$12 for the 239 SC / ~$23 for the full ~468** (Haiku 4.5 ≈ ⅓ that, decision #40). **Essentials for this run (build first): a runner with a logfile + resumability** (skip already-done sermons, checkpoint so a crash at #300 doesn't restart from zero) — these matter more than a progress bar for a 15h unattended run. Add a **default-speaker rule** for untagged sermons.
+5. **JSON Schema + WP import** — freeze the canonical record contract; design the WordPress CPT/ACF import → first public deliverable (website sermon library).
 - *(Optional: also fold the 102 Live `Service` records in — currently only the 228 Videos-tab orphans are folded.)*
 
 **Still-open design questions:** SoundCloud trim (only the sermon, or intro/offering too?), canonical hosting location, dedup edge cases (multi-part, re-uploads). See docs/SERMOTHEQUE.md §8.

@@ -2854,9 +2854,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2054926060",
-      "youtube_id": "IqNmh_XGULE"
+      "youtube_id": null
     },
-    "youtube_match": 0.656,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -14541,5 +14541,53 @@
     "topics": [],
     "summary": null,
     "transcript_ref": null
+  },
+  {
+    "id": "yt-IqNmh_XGULE",
+    "source": "youtube",
+    "raw_title": "Prier selon le cœur de Dieu (Partie IV) | Psaume 40 : 1 - 17",
+    "title": "Prier selon le cœur de Dieu",
+    "language": "fr",
+    "date": "2026-06-07",
+    "audio_duration": null,
+    "video_duration": 3555,
+    "speaker": null,
+    "series_id": null,
+    "series_name": "Prier selon le cœur de Dieu",
+    "series_part": 4,
+    "series_order": null,
+    "scripture_osis": "Ps.40.1-Ps.40.17",
+    "scripture_display": "Psaume 40 : 1 - 17",
+    "scripture_book": "Ps",
+    "scripture_chapter": 40,
+    "scripture_confident": true,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "IqNmh_XGULE"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [
+      "Prière",
+      "Souffrance et persévérance",
+      "Repentance",
+      "Christologie",
+      "Miséricorde de Dieu",
+      "Sainteté et intégrité",
+      "Glorification de Dieu"
+    ],
+    "summary": "Dans cette quatrième partie d'une série sur la prière à partir du Psaume 40, le prédicateur rappelle que David, type du Christ, nous enseigne à prier avec un cœur fixé sur l'éternel, reconnaissant les bienfaits de Dieu et déterminé à lui obéir même dans la souffrance. Il souligne que la prière authentique s'appuie davantage sur la miséricorde et les compassions de Dieu que sur notre propre innocence, à l'image du Christ au Gethsémani qui a endure la croix pour purger nos péchés. La glorification de Dieu passe par la persévérance dans l'intégrité au milieu des épreuves, rendue possible par le Saint-Esprit et fondée sur la certitude que la grâce surabonde là où le péché abonde.",
+    "primary_scripture": "Psaume 40:1-17",
+    "scripture_refs": [
+      "Ésaïe 53",
+      "Matthieu 26:36-46",
+      "Luc 22:43-46",
+      "Hébreux 5:7-9",
+      "Psaume 51"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-IqNmh_XGULE.txt",
+    "captions_ref": "data/catalog/transcripts/yt-IqNmh_XGULE.vtt"
   }
 ]
