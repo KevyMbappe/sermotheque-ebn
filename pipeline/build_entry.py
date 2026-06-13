@@ -14,12 +14,25 @@ transcribe.py / enrich.py; tests pass stubs.
 Pipeline:  parse title → transcribe → enrich → assemble (+ persist transcript to git).
 """
 import json
+import os
 from pathlib import Path
 
 from scripture import fold, parse_scripture, parse_speaker, parse_part, classify, clean_title, date_prefix
 
 ROOT = Path(__file__).resolve().parent.parent
 TRANSCRIPTS = ROOT / "data" / "catalog" / "transcripts"
+
+
+def load_dotenv(path=ROOT / ".env"):
+    """Minimal KEY=VALUE loader (stdlib) — no python-dotenv dependency."""
+    if not path.exists():
+        return
+    for line in path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        k, v = line.split("=", 1)
+        os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
 
 
 def entry_id(source: dict) -> str:
@@ -108,6 +121,7 @@ def _cli():
     ap.add_argument("--raw-title", required=True)
     ap.add_argument("--model", default="claude-sonnet-4-6")
     args = ap.parse_args()
+    load_dotenv()  # pick up ANTHROPIC_API_KEY (+ optional SERMO_* overrides) from .env
     source = {k: v for k, v in {
         "soundcloud_url": args.soundcloud_url, "soundcloud_id": args.soundcloud_id,
         "youtube_url": args.youtube_url, "youtube_id": args.youtube_id,

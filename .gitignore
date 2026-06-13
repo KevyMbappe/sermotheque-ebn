@@ -4,6 +4,9 @@ __pycache__/
 .venv/
 venv/
 
+# Secrets / local config — real .env is private; .env.example is committed as the template.
+.env
+
 # OS
 .DS_Store
 Thumbs.db
