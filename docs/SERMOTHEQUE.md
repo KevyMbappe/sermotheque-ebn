@@ -139,7 +139,9 @@ Sequence:
 
 **Git — DONE (2026-06-13).** Repo initialized (branch `main`); the canonical dataset is now version-controlled per the durability decision. Initial commit `e2d3218`. Pushed to private GitHub repo `KevyMbappe/sermotheque-ebn`.
 
-**M2 YouTube↔SoundCloud matching — DONE (2026-06-13).** `pipeline/match_youtube.py` (scripture-anchored + language-aware) → enriches catalog + `data/catalog/youtube_orphans.json`. **Finding: YouTube's Videos tab is NOT a mirror of SoundCloud** — only **17** confident same-language overlaps. YT is dominated by **conference content (48, CBN Paris / international guests)**, **English** material, and ~215 French videos not title-matchable to SC. The real catalog is the **UNION (~500+ items)**, not the 239 SC spine. *Decision #37 (below).* **Caveat:** the 215 French YT orphans' true overlap with SC can't be settled by titles alone.
+**M2 YouTube↔SoundCloud matching — DONE (2026-06-13).** `pipeline/match_youtube.py` (scripture-anchored + language-aware) → enriches catalog + `data/catalog/youtube_orphans.json`. **Finding: YouTube's Videos tab is NOT a mirror of SoundCloud** — only **17** confident same-language overlaps. YT is dominated by **conference content (48, CBN Paris / international guests)**, **English** material, and ~215 French videos not title-matchable to SC. The real catalog is the **UNION**, not the 239 SC spine. *Decision #37 (below).*
+
+**M2b duration fingerprint — DONE (2026-06-13).** Re-pulled SoundCloud **durations + dates** (full extraction; data now `id⇥duration⇥upload_date⇥title`). Calibrated on 19 known-same pairs: **YouTube runs a near-constant +51 s longer than SoundCloud** (range +26…+63 — an intro/outro card) — a sermon's length is effectively a fingerprint. Added an offset-corrected duration signal to the matcher. Result: same-language matches **17 → 52**, translations **2 → 9**, orphans **281 → 239**. **Union ≈ 478 distinct sermons** (239 SC + 239 YT-only). **Caveats:** SoundCloud rate-limits heavy extraction, so durations cover **146/239** SC tracks (a throttled background pass is topping up the rest); the French-orphan count is therefore an **upper bound** — it will shrink as the remaining 93 durations let us catch more title-divergent duplicates.
 
 ## 8. Resolved design decisions (grilled 2026-06-13)
 - **Scripture:** canonical **OSIS** book IDs (e.g. `Rom.8.1-8.4`) + a FR/EN parser; display localized, query canonical. Powers browse-by-book.
@@ -150,7 +152,7 @@ Sequence:
 - **YT↔SC matching (backfill):** **fuzzy title + date window**; high-confidence auto-link, low-confidence to the completeness dashboard; orphans (EN-only videos) flagged, not forced.
 
 ### Decision (added)
-- **#37 (2026-06-13):** The catalog is the **UNION of SoundCloud + YouTube**, not the SC spine alone. SC = clean French expository audio (239); YouTube adds conference content + English versions + SC-absent French sermons (~280 items). YT↔SC are largely *complementary*; title-only matching confirms just ~17 overlaps.
+- **#37 (2026-06-13):** The catalog is the **UNION of SoundCloud + YouTube** (~478 distinct sermons), not the SC spine alone. SC = clean French expository audio (239); YouTube adds conference content (~45) + English versions + SC-absent French sermons. YT↔SC are largely *complementary*: duration-fingerprint matching (YT ≈ SC + 51 s) confirms **52** same-language overlaps + 9 translations; the rest (~239) is net-new — an upper bound pending full SC duration coverage (146/239 so far).
 
 ### Still open (lighter — resolve during build)
 - **YT↔SC true overlap** — dedup the ~215 French YT orphans against SC needs a stronger signal than titles: re-pull `duration`+`upload_date` (both platforms) and match on those, or use embeddings/audio fingerprint.

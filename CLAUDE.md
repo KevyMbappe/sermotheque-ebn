@@ -55,7 +55,7 @@ WordPress **authors but does not own**. The canonical dataset (this repo's `data
 - YouTube **Videos** (cut sermons): **300** · YouTube **Live** (services): **102** · SoundCloud (clean sermon audio): **239**.
 - First-pass parse of the 239 SC titles: **82% scripture (OSIS)**, 87% clean title, 24 Bible books.
 - **22 series** auto-clustered: Galates 69, Hébreux 28, Jacques 14, Genèse 13, Ézéchiel 11, + thematic (Joie chrétienne, Noël…, Fruit de l'Esprit).
-- **YouTube ≠ SoundCloud mirror** (matcher finding): only **17** confident same-language overlaps. YT's Videos tab is dominated by **conference content** (48, CBN Paris / international guests) + **English** material + ~215 French videos not title-matchable to SC. The true catalog is the **UNION (~500+ items)**, not the 239 SC spine. *Caveat:* the 215 French YT orphans' real overlap with SC is unknown via titles alone — needs durations/dates/embeddings to dedup. Orphans (already parsed) are in `data/catalog/youtube_orphans.json`.
+- **YouTube ≠ SoundCloud mirror** (matcher finding): they are largely **complementary**. Using a **duration fingerprint** (YT runs ~+51 s vs SC, calibrated) on top of title/scripture: **52** confirmed same-language overlaps + **9** EN↔FR translations; **~239 YT videos are net-new** (conference ~45, English ~23, SC-absent French ~170). **True catalog ≈ 478 distinct sermons** (union). *Caveat:* SC durations cover **146/239** (SoundCloud rate-limits heavy extraction; a throttled background pass tops up the rest) → the net-new count is an **upper bound**, shrinking as more durations land. Orphans (parsed) in `data/catalog/youtube_orphans.json`.
 
 ## How to run the pipeline
 
@@ -74,8 +74,8 @@ Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); t
 **Done:** planning/specs · M1 first-pass catalog · M1b series clustering · M2 YT↔SC matching · git + GitHub remote.
 
 **Open / next (pick up here):**
-1. **YT↔SC dedup (stronger signal)** — the 215 French YT orphans can't be deduped against SC by title alone; re-pull YT with `duration`/`upload_date` (and SC durations) and match on those, or use embeddings, to learn the true overlap and finalize the union catalog.
-2. **Fold YT orphans into the catalog** — promote the conference + English + SC-absent French videos (in `data/catalog/youtube_orphans.json`) to `Sermon`/`Service` records (they're net-new content, already parsed).
+1. **Finish SC duration coverage (146→239)** — SoundCloud rate-limits heavy extraction; a throttled `yt-dlp` pass is needed to fill the remaining ~93 durations, then re-run `match_youtube.py` to tighten the net-new count. *(Duration signal already validated: YT ≈ SC + 51 s.)*
+2. **Fold YT orphans into the catalog** — promote the conference + English + SC-absent French videos (in `data/catalog/youtube_orphans.json`) to `Sermon`/`Service` records (net-new, already parsed). Dedup the French ones against SC durations first (see #1).
 3. **ASR + LLM enrichment spike** — prove on ONE sermon that transcribe→suggest gives "confirm-don't-type" quality (topics/summary/scripture + infer the regular preacher, untagged in titles). *Biggest unproven assumption.*
 4. **JSON Schema + WP import** — freeze the canonical record contract; design the WordPress CPT/ACF import → first public deliverable (website sermon library).
 

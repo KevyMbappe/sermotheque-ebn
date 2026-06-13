@@ -22,6 +22,8 @@ YT = ROOT / "data" / "raw" / "youtube_videos.tsv"
 
 TITLE_MATCH = 0.60
 TITLE_ASSIST = 0.30
+DUR_OFFSET = 50          # YouTube videos run ~50s longer than the SoundCloud audio (calibrated)
+DUR_TOL = 75             # tolerance around the offset (s)
 
 EN_BOOK_WORDS = {"genesis", "psalm", "psalms", "matthew", "luke", "john", "acts", "romans",
                  "galatians", "ephesians", "philippians", "colossians", "hebrews", "james",
@@ -87,6 +89,9 @@ def main():
             sc = title_sim(vt, s["title"] or s["raw_title"])
             if v["scripture_osis"] and v["scripture_osis"] == s.get("scripture_osis"):
                 sc += 0.4
+            vd, sd = v.get("duration"), s.get("audio_duration")
+            if vd and sd and abs((vd - DUR_OFFSET) - sd) <= DUR_TOL:
+                sc += 0.4                                   # duration fingerprint (YT ≈ SC + ~50s)
             if sc > bs:
                 best, bs = i, sc
         ranked.append((v, best, bs))

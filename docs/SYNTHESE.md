@@ -26,7 +26,7 @@ Les prédications sont aujourd'hui **dispersées** sur YouTube et SoundCloud, sa
 
 - **82 %** des titres SoundCloud contiennent déjà la **référence biblique** exacte — réutilisable sans aucune ressaisie. **24 livres** bibliques couverts.
 - **22 séries** ont été reconstituées automatiquement, dans l'ordre des textes : *Épître aux Galates* (69 prédications), *aux Hébreux* (28), *de Jacques* (14), *Genèse* (13), *Ézéchiel* (11)…
-- **Découverte majeure :** YouTube et SoundCloud ne sont **pas** des copies l'un de l'autre (≈ 17 recoupements directs seulement). YouTube apporte **en plus** le **contenu des conférences** (CBN Paris, prédicateurs internationaux) et des **versions anglaises**. Le **véritable catalogue représente ≈ 500 prédications** (l'union des deux sources), et non 239.
+- **Découverte majeure :** YouTube et SoundCloud ne sont **pas** des copies l'un de l'autre — ils sont en grande partie **complémentaires** (une cinquantaine de recoupements confirmés seulement). YouTube apporte **en plus** le **contenu des conférences** (CBN Paris, prédicateurs internationaux) et des **versions anglaises**. Le **véritable catalogue représente ≈ 480 prédications** (l'union des deux sources), et non 239.
 
 ## Ce qui a déjà été réalisé
 
@@ -53,4 +53,4 @@ Les prédications sont aujourd'hui **dispersées** sur YouTube et SoundCloud, sa
 
 ## Chiffres clés
 
-**239** audios · **300 + 102** vidéos · **≈ 500** prédications au total · **82 %** déjà référencées bibliquement · **22 séries** reconstituées.
+**239** audios · **300 + 102** vidéos · **≈ 480** prédications au total · **82 %** déjà référencées bibliquement · **22 séries** reconstituées.

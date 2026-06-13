@@ -23,7 +23,7 @@ YouTube, SoundCloud, the website, and any future mobile/TV apps are all just *re
 | Scripture coverage (OSIS) | **82%**, across 24 books of the Bible |
 | Series auto-clustered | **22** (e.g. Épître aux Galates ×69, aux Hébreux ×28) |
 | YouTube inventory | 300 cut sermons + 102 full services |
-| YouTube ↔ SoundCloud | largely **complementary** — conference + English content on YT; true catalog ≈ **union (~500+)** |
+| YouTube ↔ SoundCloud | largely **complementary** — duration fingerprint confirms 52 overlaps + 9 translations; true catalog ≈ **union (~478)** |
 
 ## Architecture
 
@@ -73,7 +73,8 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **M1** — first-pass catalog from SoundCloud titles
 - [x] **M1b** — series clustering (expository + thematic)
 - [x] **M2** — YouTube ↔ SoundCloud matching (found: largely complementary, not a mirror)
-- [ ] YT↔SC dedup via durations/dates/embeddings (settle the true union) + fold YT orphans into the catalog
+- [x] **M2b** — YT↔SC dedup via duration fingerprint (52 overlaps + 9 translations; ~239 net-new) · *SC duration coverage 146/239, topping up*
+- [ ] Fold YT orphans (conferences, English, SC-absent French) into the catalog
 - [ ] ASR + LLM enrichment (transcripts, topics, summaries, scripture gaps)
 - [ ] JSON Schema + WordPress import → website sermon library (first public deliverable)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`

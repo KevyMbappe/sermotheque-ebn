@@ -22,8 +22,12 @@ def main():
     for line in SRC.read_text(encoding="utf-8").splitlines():
         if not line.strip():
             continue
-        line = line.replace("\\t", "\t")          # yt-dlp wrote a literal backslash-t
-        sc_id, _, title = line.partition("\t")
+        # schema: id <TAB> duration <TAB> upload_date(YYYYMMDD) <TAB> title
+        p = line.replace("\\t", "\t").split("\t")
+        sc_id, dur, upd, title = p[0], p[1], p[2], "\t".join(p[3:])
+        audio_duration = int(float(dur)) if dur not in ("NA", "") else None
+        date = (f"{upd[:4]}-{upd[4:6]}-{upd[6:8]}"
+                if upd and upd != "NA" and len(upd) >= 8 else date_prefix(title))
         scr = parse_scripture(fold(title), title)
         spk = parse_speaker(title)
         rows.append({
@@ -31,7 +35,8 @@ def main():
             "raw_title": title,
             "title": clean_title(title, scr, spk),
             "language": "en" if (scr and scr["is_english"]) else "fr",
-            "date": date_prefix(title),
+            "date": date,
+            "audio_duration": audio_duration,
             "speaker": spk,
             "series_part": parse_part(title),
             "scripture_osis": scr["osis"] if scr else None,
