@@ -44,7 +44,8 @@ WordPress **authors but does not own**. The canonical dataset (this repo's `data
 - **System of record:** WP authors → canonical = portable, git-versioned dataset. (Build custom, not a turnkey vendor.)
 - **SoundCloud is the catalog spine** (its titles are 74% structured vs 20% on YouTube). Match YouTube videos *in* by title/date.
 - **Scripture:** canonical **OSIS** IDs + FR/EN parser → browse-by-book.
-- **Transcripts:** ASR (Whisper-class) on clean SoundCloud audio is the *metadata engine* (auto-suggest topics/summary/scripture); correct opportunistically.
+- **Transcripts:** ASR (Whisper-class) on clean SoundCloud audio is the *metadata engine* (auto-suggest topics/summary/scripture); correct opportunistically. **ASR backend is pluggable** (decision #41): mlx-whisper local on Mac for the backfill, cloud Whisper API (e.g. Groq) for the church's Windows machines in production — same injected `transcribe_fn` contract.
+- **Enrichment model:** Claude **`claude-sonnet-4-6`**, ~**$0.06/sermon** measured (decision #40; ~$23 for the full 467). Haiku 4.5 is ⅓ the cost and nearly as good, but Sonnet wins on French precision + correct heresy naming — kept as default, Haiku is the budget fallback.
 - **Topics:** curated vocabulary, AI-bootstrapped; labels FR/EN/PT.
 - **EN/FR conference versions:** independent records linked by `translation_of`.
 - **Audit:** git history of the export. **Search:** prebuilt static index (no server).
@@ -86,7 +87,7 @@ cp .env.example .env        # then put your ANTHROPIC_API_KEY in .env
 Everything the pipeline needs lives **inside the project** (never `/tmp`):
 - **`.venv/`** (gitignored) — yt-dlp ≥ 2026.x, mlx-whisper, anthropic (see `requirements.txt`). `transcribe.py` defaults to `.venv/bin/*` (override via `SERMO_YTDLP` / `SERMO_MLX_WHISPER`).
 - **`cache/`** (gitignored) — downloaded audio + scratch; audio is deleted after transcription.
-- **`.env`** (gitignored; template `.env.example`) holds `ANTHROPIC_API_KEY` for the enrich step (model `claude-sonnet-4-6`, ~$0.02/sermon) — the CLI auto-loads it. Without a key the deterministic steps still run; inject your own `enrich` fn. *(`.venv` ≈ node_modules ← `requirements.txt`; `.env` ≈ Node's `.env` ← `.env.example`.)*
+- **`.env`** (gitignored; template `.env.example`) holds `ANTHROPIC_API_KEY` for the enrich step (model `claude-sonnet-4-6`, **~$0.06/sermon measured** — full transcript ≈ 13–16k input tok + 1.5k out; Haiku 4.5 ≈ $0.02/sermon) — the CLI auto-loads it. Without a key the deterministic steps still run; inject your own `enrich` fn. *(`.venv` ≈ node_modules ← `requirements.txt`; `.env` ≈ Node's `.env` ← `.env.example`.)*
 - The only thing *outside* the project is the Whisper model (~1.6 GB) in the standard `~/.cache/huggingface` shared ML cache — conventional and persistent, not scratch.
 - Nothing critical is unrecoverable: the pipeline is committed, audio re-downloadable, transcripts regenerable.
 
@@ -97,8 +98,8 @@ Everything the pipeline needs lives **inside the project** (never `/tmp`):
 Catalog is the **unified 467-record union** (239 SoundCloud + 228 YouTube), one canonical schema with `source` + `media`, 25 series. The per-sermon pipeline exists; it has NOT yet been run across the catalog.
 
 **Open / next (pick up here):**
-1. **POC DONE** (2026-06-14): real pipeline ran on the 8 sample sermons (full audio). **8 canonical transcripts now in `data/catalog/transcripts/`**; merged entries + Claude enrichment in `docs/spike-asr/poc_entries.json`; **elder-facing `docs/spike-asr/POC.{md,pdf}`** (5 pp). Scripture/kind parsed correctly incl. cross-chapter + the `Leçon`→teaching. **Enrichment is REAL**: ran `enrich.py` (Claude `sonnet-4-6`) on the 8 full transcripts (~16¢) — first execution of that path, validated; full-text summaries + **body-cited `scripture_refs` (3–15/sermon)**, far richer than the earlier slice version.
-2. **Full ASR enrichment pass** — run `build_entry` across the catalog (~15× real-time ⇒ ~15 h for 239 SC sermons, a few overnight runs) → write topics/summary/transcript back to `catalog.json`. Needs `ANTHROPIC_API_KEY` for the enrich step (~$5–20 one-time). Add a **default-speaker rule** for untagged sermons.
+1. **POC DONE** (2026-06-14): real pipeline ran on the 8 sample sermons (full audio). **8 canonical transcripts now in `data/catalog/transcripts/`**; merged entries + Claude enrichment in `docs/spike-asr/poc_entries.json`; **elder-facing `docs/spike-asr/POC.{md,pdf}`** (5 pp). Scripture/kind parsed correctly incl. cross-chapter + the `Leçon`→teaching. **Enrichment is REAL**: ran `enrich.py` (Claude `sonnet-4-6`) on the 8 full transcripts (**$0.51 total ⇒ ~$0.06/sermon measured**; the earlier "~16¢/~$0.02" figure was Haiku pricing, not the Sonnet path actually run) — first execution of that path, validated; full-text summaries + **body-cited `scripture_refs` (3–15/sermon)**, far richer than the earlier slice version.
+2. **Full ASR enrichment pass** — run `build_entry` across the catalog (~15× real-time ⇒ ~15 h for 239 SC sermons, a few overnight runs) → write topics/summary/transcript back to `catalog.json`. Needs `ANTHROPIC_API_KEY` for the enrich step: **~$0.06/sermon on Sonnet 4.6 ⇒ ~$12 for the 239 SC / ~$23 for the full 467** (Haiku 4.5 ≈ ⅓ that, but see decision #40 — Sonnet chosen for FR/theological precision). Add a **default-speaker rule** for untagged sermons.
 3. **JSON Schema + WP import** — freeze the canonical record contract; design the WordPress CPT/ACF import → first public deliverable (website sermon library).
 - *(Optional: also fold the 102 Live `Service` records in — currently only the 228 Videos-tab orphans are folded.)*
 
