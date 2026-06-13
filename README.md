@@ -4,6 +4,8 @@
 
 **Église Bonne Nouvelle** is an église réformée baptiste in Poissy, France ([eglisebonnenouvelle.com](https://www.eglisebonnenouvelle.com)). Sermons are published on [YouTube](https://www.youtube.com/@eglisebonnenouvelle855) and [SoundCloud](https://soundcloud.com/ebn-paris).
 
+> 📄 **Présentation en français** (pour les anciens & l'équipe média) : **[docs/SYNTHESE.md](docs/SYNTHESE.md)** — état du projet, données, réalisations, feuille de route.
+
 ## Why this exists
 
 > **The catalog is the asset; every app, site, and platform is a replaceable window onto it.**
