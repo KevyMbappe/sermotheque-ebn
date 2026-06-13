@@ -39,16 +39,19 @@ WordPress **authors but does not own** the data. The canonical dataset (`data/`)
 ## Repository layout
 
 ```
-CLAUDE.md            Agent/contributor front door — read this to get oriented fast
-SERMOTHEQUE.md       ★ Spec for the content system of record (the primary project)
-PRD.md               App suite spec (web/mobile/TV) — a downstream consumer
-scripts/
-  parse_catalog.py   SoundCloud titles → structured metadata (OSIS scripture, speaker, …)
-  cluster_series.py  Group sermons into ordered series (run after the parser)
+CLAUDE.md              Agent/contributor front door — read this to get oriented fast
+docs/
+  SERMOTHEQUE.md       ★ Spec for the content system of record (the primary project)
+  PRD.md               App suite spec (web/mobile/TV) — a downstream consumer
+pipeline/
+  scripture.py         Shared parsing primitives (OSIS book map, scripture/speaker parsing)
+  parse_catalog.py     SoundCloud titles → structured metadata
+  cluster_series.py    Group sermons into ordered series (run after the parser)
+  match_youtube.py     Link YouTube videos to SC sermons; emit orphans
+  build.py             Run the whole pipeline in order
 data/
-  *.tsv              Raw YouTube/SoundCloud inventories (via yt-dlp)
-  catalog.json/.csv  The structured sermon catalog (canonical)
-  series.json        The series list
+  raw/                 Raw YouTube/SoundCloud inventories (via yt-dlp)
+  catalog/             The canonical dataset: catalog.json/.csv, series.json, youtube_orphans.json
 ```
 
 ## Quickstart
@@ -56,22 +59,21 @@ data/
 Rebuild the catalog from the raw inventories (pure-stdlib Python 3, no dependencies):
 
 ```bash
-python3 scripts/parse_catalog.py    # → data/catalog.json + data/catalog.csv  (coverage report)
-python3 scripts/cluster_series.py   # → data/series.json + enriches catalog.json
+python3 pipeline/build.py    # runs parse → cluster → match, writes data/catalog/*
 ```
 
 Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 
 ## Roadmap
 
-- [x] Plan & specs (decision logs in `SERMOTHEQUE.md` / `PRD.md`)
+- [x] Plan & specs (decision logs in `docs/SERMOTHEQUE.md` / `docs/PRD.md`)
 - [x] **M1** — first-pass catalog from SoundCloud titles
 - [x] **M1b** — series clustering (expository + thematic)
 - [x] **M2** — YouTube ↔ SoundCloud matching (found: largely complementary, not a mirror)
 - [ ] YT↔SC dedup via durations/dates/embeddings (settle the true union) + fold YT orphans into the catalog
 - [ ] ASR + LLM enrichment (transcripts, topics, summaries, scripture gaps)
 - [ ] JSON Schema + WordPress import → website sermon library (first public deliverable)
-- [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `PRD.md`
+- [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 
 ## Key decisions
 

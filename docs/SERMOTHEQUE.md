@@ -100,7 +100,7 @@ Every auto-extracted field carries provenance (`ai_suggested` / `human_confirmed
 - **Curation console (the "management solution"):** a catalog-wide view with a **completeness dashboard** — surfaces what's missing or unconfirmed: no scripture, unconfirmed AI fields, unmatched YT↔SC, no thumbnail, no transcript, orphan series. Bulk edit; manage Series / Speakers / Topics. Recommended to live as custom pages **inside WP admin** (one tool, same records), not a second app.
 - **Roles:** Publisher (media team/elders) + Admin (pastor + technical owner) — per [PRD.md](PRD.md) §8.
 
-## 6. Backfill plan (measured inventory — files in `/data`)
+## 6. Backfill plan (measured inventory — raw files in `data/raw/`)
 
 | Source | Count | Role |
 |---|---|---|
@@ -129,17 +129,17 @@ Sequence:
 
 > Append a dated entry here whenever you complete a step, and follow the **Maintenance protocol** in `CLAUDE.md` (sync README/CLAUDE.md status + roadmap, commit, push).
 
-**M1 first-pass catalog — DONE (2026-06-13).** `scripts/parse_catalog.py` parses the 239 SoundCloud titles → `data/catalog.json` + `data/catalog.csv`. Coverage (titles only, no ASR):
+**M1 first-pass catalog — DONE (2026-06-13).** `pipeline/parse_catalog.py` parses the 239 SoundCloud titles → `data/catalog/catalog.json` + `.csv`. Coverage (titles only, no ASR):
 - Scripture (OSIS): **196/239 (82%)**, 80% high-confidence, across **24 books**.
 - Clean title: 87% · Speaker: 26 named (mostly the regular pastor is untagged) · Series part: 34 · English: 0 (SoundCloud is FR-only).
 - Distribution reveals systematic expository series: **Galates 72, Hébreux 28, Genèse 16, Jacques 14, Ézéchiel 11**.
 - Known limitations carried to enrichment: the 43 refless items (intros/Q&A/topical), speaker inference for the regular preacher, multi-range verses approximated as a span.
 
-**M1b series clustering — DONE (2026-06-13).** `scripts/cluster_series.py` → `data/series.json` + enriches catalog. **22 series, 81% of sermons placed**, ordered by chapter:verse. Expository: Épître aux Galates (69), aux Hébreux (28), de Jacques (14), Genèse (13), Ézéchiel (11)… Thematic: Joie chrétienne, Noël le plus glorieux des mystères, Fruit de l'Esprit… Pipeline order is `parse_catalog.py` → `cluster_series.py`.
+**M1b series clustering — DONE (2026-06-13).** `pipeline/cluster_series.py` → `data/catalog/series.json` + enriches catalog. **22 series, 81% of sermons placed**, ordered by chapter:verse. Expository: Épître aux Galates (69), aux Hébreux (28), de Jacques (14), Genèse (13), Ézéchiel (11)… Thematic: Joie chrétienne, Noël le plus glorieux des mystères, Fruit de l'Esprit… Pipeline order: `pipeline/build.py` runs parse → cluster → match.
 
 **Git — DONE (2026-06-13).** Repo initialized (branch `main`); the canonical dataset is now version-controlled per the durability decision. Initial commit `e2d3218`. Pushed to private GitHub repo `KevyMbappe/sermotheque-ebn`.
 
-**M2 YouTube↔SoundCloud matching — DONE (2026-06-13).** `scripts/match_youtube.py` (scripture-anchored + language-aware) → enriches catalog + `data/youtube_orphans.json`. **Finding: YouTube's Videos tab is NOT a mirror of SoundCloud** — only **17** confident same-language overlaps. YT is dominated by **conference content (48, CBN Paris / international guests)**, **English** material, and ~215 French videos not title-matchable to SC. The real catalog is the **UNION (~500+ items)**, not the 239 SC spine. *Decision #37 (below).* **Caveat:** the 215 French YT orphans' true overlap with SC can't be settled by titles alone.
+**M2 YouTube↔SoundCloud matching — DONE (2026-06-13).** `pipeline/match_youtube.py` (scripture-anchored + language-aware) → enriches catalog + `data/catalog/youtube_orphans.json`. **Finding: YouTube's Videos tab is NOT a mirror of SoundCloud** — only **17** confident same-language overlaps. YT is dominated by **conference content (48, CBN Paris / international guests)**, **English** material, and ~215 French videos not title-matchable to SC. The real catalog is the **UNION (~500+ items)**, not the 239 SC spine. *Decision #37 (below).* **Caveat:** the 215 French YT orphans' true overlap with SC can't be settled by titles alone.
 
 ## 8. Resolved design decisions (grilled 2026-06-13)
 - **Scripture:** canonical **OSIS** book IDs (e.g. `Rom.8.1-8.4`) + a FR/EN parser; display localized, query canonical. Powers browse-by-book.

@@ -2,38 +2,32 @@
 """
 Sermothèque EBN — YouTube ↔ SoundCloud matcher (run AFTER parse_catalog.py).
 
-Key insight (2026-06-13): YouTube's Videos tab is NOT a mirror of SoundCloud. It is
-heavily (a) ENGLISH-titled translations of the French sermons and (b) annual CONFERENCE
-content (CBN Paris, international guests). So matching is scripture-anchored + language-aware,
-not title-similarity-dominant.
+Key finding (2026-06-13): YouTube's Videos tab is NOT a mirror of SoundCloud. It is
+heavily (a) ENGLISH-titled translations and (b) annual CONFERENCE content (CBN Paris,
+international guests). So matching is scripture-anchored + language-aware, not title-dominant.
 
-Produces three buckets:
-  1. same-language video match  → attach youtube_id to the SC sermon record
-  2. cross-language pair        → record as a translation_of candidate on the FR sermon
-  3. orphan (conference / new)  → candidate NEW catalog record (parsed), written to a file
-
-Outputs: enriches data/catalog.json; writes data/youtube_orphans.json. Prints a report.
+Buckets: ① same-language video match → attach youtube_id; ② cross-language → translation_of
+candidate on the FR sermon; ③ orphan (conference/new) → candidate record in youtube_orphans.json.
 """
-import sys, json, re
+import json
+import re
 from difflib import SequenceMatcher
 from pathlib import Path
 
+from scripture import fold, parse_scripture, parse_speaker, clean_title, classify, BOOKS
+
 ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from parse_catalog import parse_scripture, parse_speaker, clean_title, classify, fold, BOOKS  # noqa: E402
+CAT = ROOT / "data" / "catalog" / "catalog.json"
+YT = ROOT / "data" / "raw" / "youtube_videos.tsv"
 
-CAT = ROOT / "data" / "catalog.json"
-YT = ROOT / "data" / "youtube_videos.tsv"
+TITLE_MATCH = 0.60
+TITLE_ASSIST = 0.30
 
-TITLE_MATCH = 0.60          # same-language confident title match
-TITLE_ASSIST = 0.30         # title support required alongside an exact-scripture match
-
-EN_BOOK_WORDS = {"genesis", "psalm", "psalms", "matthew", "luke", "john", "acts",
-                 "romans", "galatians", "ephesians", "philippians", "colossians",
-                 "hebrews", "james", "revelation", "mark"}
-EN_MARKERS = re.compile(r"\b(the|of|according|with|god's|part|sunday|professor|dr|"
-                        r"praying|heart|mercy|spirit|witness|conversion|throne|"
-                        r"encountered|conference)\b", re.I)
+EN_BOOK_WORDS = {"genesis", "psalm", "psalms", "matthew", "luke", "john", "acts", "romans",
+                 "galatians", "ephesians", "philippians", "colossians", "hebrews", "james",
+                 "revelation", "mark"}
+EN_MARKERS = re.compile(r"\b(the|of|according|with|god's|part|sunday|professor|dr|praying|"
+                        r"heart|mercy|spirit|witness|conversion|throne|encountered|conference)\b", re.I)
 CONF_MARKERS = re.compile(r"\b(cbn\d*|good news conference|conf[ée]rence|paris 20\d\d)\b", re.I)
 STOP = {"la", "le", "les", "de", "des", "du", "un", "une", "et", "en", "au", "aux", "dans",
         "par", "pour", "sur", "qui", "que", "selon", "ch", "chapitre", "partie", "part"}
@@ -52,11 +46,9 @@ def title_sim(a, b):
 
 
 def detect(title):
-    """returns (language, is_conference)"""
     f = fold(title)
     is_conf = bool(CONF_MARKERS.search(title))
-    is_en = (any(w in f.split() for w in EN_BOOK_WORDS)
-             or bool(EN_MARKERS.search(title)))
+    is_en = any(w in f.split() for w in EN_BOOK_WORDS) or bool(EN_MARKERS.search(title))
     return ("en" if is_en else "fr"), is_conf
 
 
@@ -76,8 +68,7 @@ def load_youtube():
             "raw_title": title,
             "title": clean_title(title, scr, parse_speaker(title)),
             "scripture_osis": scr["osis"] if scr else None,
-            "language": lang,
-            "is_conference": conf,
+            "language": lang, "is_conference": conf,
             "speaker": parse_speaker(title),
             "kind": "qa" if "question" in fold(title) else classify(title),
         })
@@ -87,30 +78,21 @@ def load_youtube():
 def main():
     sermons = json.loads(CAT.read_text(encoding="utf-8"))
     videos = load_youtube()
-    by_osis = {}
-    for i, s in enumerate(sermons):
-        if s.get("scripture_osis"):
-            by_osis.setdefault(s["scripture_osis"], []).append(i)
 
-    same_lang = {}       # sc_idx -> (video, score)
-    translations = {}    # sc_idx -> [video,...]
-    orphans = []
-
-    # rank video->best SC by title; resolve in score order so best claims win
     ranked = []
     for v in videos:
         best, bs = None, 0.0
-        vt = v["title"] or v["raw_title"]                   # cleaned title (scripture stripped)
+        vt = v["title"] or v["raw_title"]
         for i, s in enumerate(sermons):
-            st = s["title"] or s["raw_title"]
-            sc = title_sim(vt, st)
+            sc = title_sim(vt, s["title"] or s["raw_title"])
             if v["scripture_osis"] and v["scripture_osis"] == s.get("scripture_osis"):
-                sc += 0.4                                   # exact scripture range agreement
+                sc += 0.4
             if sc > bs:
                 best, bs = i, sc
         ranked.append((v, best, bs))
     ranked.sort(key=lambda r: -r[2])
 
+    same_lang, translations, orphans = {}, {}, []
     for v, idx, sc in ranked:
         exact = idx is not None and v["scripture_osis"] and \
             v["scripture_osis"] == sermons[idx].get("scripture_osis")
@@ -119,7 +101,7 @@ def main():
             if v["language"] == "fr" and idx not in same_lang:
                 same_lang[idx] = (v, round(sc, 3))
                 continue
-            if v["language"] == "en":                       # cross-language = translation
+            if v["language"] == "en":
                 translations.setdefault(idx, []).append(v)
                 continue
         orphans.append({**v, "best_sc_score": round(sc, 3),
@@ -130,29 +112,21 @@ def main():
         sermons[i]["youtube_match"] = s
     for i, vs in translations.items():
         sermons[i]["translation_candidates"] = [
-            {"youtube_id": v["youtube_id"], "title": v["raw_title"], "language": v["language"]}
-            for v in vs]
+            {"youtube_id": v["youtube_id"], "title": v["raw_title"], "language": v["language"]} for v in vs]
 
-    (ROOT / "data" / "youtube_orphans.json").write_text(
+    (CAT.parent / "youtube_orphans.json").write_text(
         json.dumps(orphans, ensure_ascii=False, indent=2), encoding="utf-8")
     CAT.write_text(json.dumps(sermons, ensure_ascii=False, indent=2), encoding="utf-8")
 
     n = len(sermons)
-    conf_orph = sum(1 for o in orphans if o["is_conference"])
-    en_orph = sum(1 for o in orphans if o["language"] == "en")
     print(f"SoundCloud sermons: {n} | YouTube videos: {len(videos)}")
     print(f"  ① same-language video attached:   {len(same_lang)}/{n} SC sermons")
-    print(f"  ② cross-language (translation) :   {sum(len(v) for v in translations.values())} videos "
+    print(f"  ② cross-language (translation):    {sum(len(v) for v in translations.values())} videos "
           f"→ {len(translations)} FR sermons")
     print(f"  ③ orphans (candidate new records): {len(orphans)}")
-    print(f"        ├─ conference content: {conf_orph}")
-    print(f"        └─ English-language:   {en_orph}")
-    print(f"\nWrote data/youtube_orphans.json; enriched data/catalog.json")
-    if translations:
-        print("\nSample translation pairs (EN video ↔ FR sermon):")
-        for i, vs in list(translations.items())[:5]:
-            print(f"  FR {sermons[i]['raw_title'][:46]!r}")
-            print(f"  EN {vs[0]['raw_title'][:46]!r}")
+    print(f"        ├─ conference content: {sum(1 for o in orphans if o['is_conference'])}")
+    print(f"        └─ English-language:   {sum(1 for o in orphans if o['language'] == 'en')}")
+    print("\nWrote data/catalog/youtube_orphans.json; enriched data/catalog/catalog.json")
 
 
 if __name__ == "__main__":

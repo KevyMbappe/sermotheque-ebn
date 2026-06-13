@@ -92,7 +92,7 @@ Shared core + i18n + tokens; two UI shells differing only in presentation/naviga
 
 **Critical distinction (2026-06-13):** YouTube holds two different things — full **Services** (Live tab) and isolated **Sermons** (Videos tab, cut by the media team). SoundCloud carries the clean isolated **sermon** audio. Different *scopes*, not the same content at different quality.
 
-**Measured inventory (yt-dlp, 2026-06-13)** — files in `/data`:
+**Measured inventory (yt-dlp, 2026-06-13)** — files in `data/raw/`:
 - YouTube **Videos** (cut sermons): **300** (~55–69 min)
 - YouTube **Live** (services, "Culte Dimanche DD/MM"): **102** (~2 h)
 - SoundCloud (clean sermon audio): **239** (~46–58 min)
@@ -173,7 +173,7 @@ The core challenge: the suite must be operable by pastors/elders/deacons without
 - **Legal entity + D-U-N-S** — confirm the church's association status and obtain a D-U-N-S number for the Apple org account.
 - **App name + icon** — "EBN"? Distinct identity vs. the website?
 - **SoundCloud trim** — confirm whether SoundCloud audio is only the main sermon or also intro/offering preaching (titles suggest clean sermons).
-- ~~Counts~~ **RESOLVED** (2026-06-13): 300 cut sermons / 102 services / 239 SC tracks; inventory in `/data`.
+- ~~Counts~~ **RESOLVED** (2026-06-13): 300 cut sermons / 102 services / 239 SC tracks; inventory in `data/raw/`.
 - **YT↔SC matching** — pick the match key (title fuzzy-match + date) to link the 300 videos to 239 audio tracks; quantify unmatched.
 - **Media-team workflow fit** — how the team currently cuts + publishes, so the pipeline plugs into their process.
 - **Named technical backup** — identify the volunteer dev or agency for column B.
@@ -248,7 +248,7 @@ This is the heart of Phase 1: a repeatable per-sermon workflow that produces ric
 32. Topics: curated vocabulary, AI-bootstrapped from the corpus, then auto-suggested + confirmed per sermon.
 33. Media team = the Publisher role; the pipeline must fit their existing cut-and-publish process.
 
-**Measured inventory + refinements (yt-dlp, 2026-06-13; data in `/data`):**
+**Measured inventory + refinements (yt-dlp, 2026-06-13; data in `data/`):**
 34. Counts: 300 cut-sermon videos, 102 service streams, 239 SoundCloud tracks (402 YT total). Assumption "few cut sermons" was wrong — the sermon archive is already large; service-mining is NOT needed for the catalog; backfill is a mostly-automated import.
 35. SoundCloud is the canonical catalog spine (74% structured titles vs 20% on YT); title-parsing gives a free first-pass of title/scripture/speaker; YT videos matched in by title/date.
 36. Content is NOT single-language — English conference sermons exist → add optional `language` field (default FR). (Softens #12.)

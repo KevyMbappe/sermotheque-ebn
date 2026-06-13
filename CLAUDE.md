@@ -16,14 +16,16 @@ This reframe happened through a long planning conversation; the **two spec docs 
 
 | File | What it is |
 |---|---|
-| **SERMOTHEQUE.md** | ★ The primary project: sermon/service system-of-record spec (architecture, canonical schema, pipeline, backfill, roadmap, decisions). |
-| **PRD.md** | The app suite (web/mobile/TV) — now a *downstream consumer* of the catalog. Full decision log (#1–36). |
+| **docs/SERMOTHEQUE.md** | ★ The primary project: sermon/service system-of-record spec (architecture, canonical schema, pipeline, backfill, roadmap, decisions). |
+| **docs/PRD.md** | The app suite (web/mobile/TV) — now a *downstream consumer* of the catalog. Full decision log. |
 | **CLAUDE.md** | This file — orientation + current state. |
-| `scripts/parse_catalog.py` | Parses SoundCloud titles → structured metadata (OSIS scripture, speaker, series part, language, kind). |
-| `scripts/cluster_series.py` | Groups sermons into ordered series (run AFTER the parser). |
-| `data/*.tsv` | Raw inventories pulled via `yt-dlp` (YouTube videos/streams, SoundCloud tracks). |
-| `data/catalog.json` / `.csv` | The structured sermon catalog (canonical, versioned). |
-| `data/series.json` | The series list. |
+| `pipeline/scripture.py` | Shared parsing primitives (OSIS book map, scripture/speaker/series parsing). Imported by the others. |
+| `pipeline/parse_catalog.py` | SoundCloud titles → structured metadata. |
+| `pipeline/cluster_series.py` | Groups sermons into ordered series (run AFTER the parser). |
+| `pipeline/match_youtube.py` | Links YouTube videos to SC sermons; writes orphans. |
+| `pipeline/build.py` | Runs all three in order (one command). |
+| `data/raw/*.tsv` | Raw inventories pulled via `yt-dlp` (YouTube videos/streams, SoundCloud tracks). |
+| `data/catalog/` | The canonical dataset: `catalog.json` / `.csv`, `series.json`, `youtube_orphans.json`. |
 
 ## Architecture (three layers)
 
@@ -53,16 +55,19 @@ WordPress **authors but does not own**. The canonical dataset (this repo's `data
 - YouTube **Videos** (cut sermons): **300** · YouTube **Live** (services): **102** · SoundCloud (clean sermon audio): **239**.
 - First-pass parse of the 239 SC titles: **82% scripture (OSIS)**, 87% clean title, 24 Bible books.
 - **22 series** auto-clustered: Galates 69, Hébreux 28, Jacques 14, Genèse 13, Ézéchiel 11, + thematic (Joie chrétienne, Noël…, Fruit de l'Esprit).
-- **YouTube ≠ SoundCloud mirror** (matcher finding): only **17** confident same-language overlaps. YT's Videos tab is dominated by **conference content** (48, CBN Paris / international guests) + **English** material + ~215 French videos not title-matchable to SC. The true catalog is the **UNION (~500+ items)**, not the 239 SC spine. *Caveat:* the 215 French YT orphans' real overlap with SC is unknown via titles alone — needs durations/dates/embeddings to dedup. Orphans (already parsed) are in `data/youtube_orphans.json`.
+- **YouTube ≠ SoundCloud mirror** (matcher finding): only **17** confident same-language overlaps. YT's Videos tab is dominated by **conference content** (48, CBN Paris / international guests) + **English** material + ~215 French videos not title-matchable to SC. The true catalog is the **UNION (~500+ items)**, not the 239 SC spine. *Caveat:* the 215 French YT orphans' real overlap with SC is unknown via titles alone — needs durations/dates/embeddings to dedup. Orphans (already parsed) are in `data/catalog/youtube_orphans.json`.
 
 ## How to run the pipeline
 
 ```bash
-python3 scripts/parse_catalog.py      # data/soundcloud_tracks.tsv -> data/catalog.json/.csv
-python3 scripts/cluster_series.py      # enriches catalog.json + writes data/series.json
-python3 scripts/match_youtube.py       # links YT videos; writes data/youtube_orphans.json
+python3 pipeline/build.py             # runs all three steps in order (recommended)
+
+# or individually:
+python3 pipeline/parse_catalog.py     # data/raw/soundcloud_tracks.tsv -> data/catalog/catalog.json/.csv
+python3 pipeline/cluster_series.py    # enriches catalog.json + writes data/catalog/series.json
+python3 pipeline/match_youtube.py     # links YT videos; writes data/catalog/youtube_orphans.json
 ```
-Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); the TSVs use a **literal `\t`** separator (yt-dlp didn't expand the escape) — the parser handles this with `line.replace("\\t","\t")`.
+Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); the TSVs use a **literal `\t`** separator (yt-dlp didn't expand the escape) — the loaders handle this with `line.replace("\\t","\t")`.
 
 ## Current status & next steps
 
@@ -70,11 +75,11 @@ Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); t
 
 **Open / next (pick up here):**
 1. **YT↔SC dedup (stronger signal)** — the 215 French YT orphans can't be deduped against SC by title alone; re-pull YT with `duration`/`upload_date` (and SC durations) and match on those, or use embeddings, to learn the true overlap and finalize the union catalog.
-2. **Fold YT orphans into the catalog** — promote the conference + English + SC-absent French videos (in `youtube_orphans.json`) to `Sermon`/`Service` records (they're net-new content, already parsed).
+2. **Fold YT orphans into the catalog** — promote the conference + English + SC-absent French videos (in `data/catalog/youtube_orphans.json`) to `Sermon`/`Service` records (they're net-new content, already parsed).
 3. **ASR + LLM enrichment spike** — prove on ONE sermon that transcribe→suggest gives "confirm-don't-type" quality (topics/summary/scripture + infer the regular preacher, untagged in titles). *Biggest unproven assumption.*
 4. **JSON Schema + WP import** — freeze the canonical record contract; design the WordPress CPT/ACF import → first public deliverable (website sermon library).
 
-**Still-open design questions:** SoundCloud trim (only the sermon, or intro/offering too?), canonical hosting location, dedup edge cases (multi-part, re-uploads). See SERMOTHEQUE.md §8.
+**Still-open design questions:** SoundCloud trim (only the sermon, or intro/offering too?), canonical hosting location, dedup edge cases (multi-part, re-uploads). See docs/SERMOTHEQUE.md §8.
 
 ## Conventions
 
@@ -89,18 +94,18 @@ Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); t
 **State/history files to keep in sync:**
 - `CLAUDE.md` — *Current status & next steps*, *Measured inventory*, *Key decisions*.
 - `README.md` — the **Status** table and the **Roadmap** checklist.
-- `SERMOTHEQUE.md` — the **Build log** (§7b), **decision log**, resolved/open questions; bump *Last updated*.
-- `PRD.md` — its **decision log** and status; bump *Last updated*.
+- `docs/SERMOTHEQUE.md` — the **Build log** (§7b), **decision log**, resolved/open questions; bump *Last updated*.
+- `docs/PRD.md` — its **decision log** and status; bump *Last updated*.
 
 **When you complete a step** (milestone, new script, pipeline change):
 1. Tick the roadmap box(es) in `README.md` **and** `SERMOTHEQUE.md`.
-2. Add a dated entry to the **Build log** in `SERMOTHEQUE.md` (what changed + any coverage/count numbers).
+2. Add a dated entry to the **Build log** in `docs/SERMOTHEQUE.md` (what changed + any coverage/count numbers).
 3. Update *Current status & next steps* in `CLAUDE.md` — move the item from "next" to "done" and name the new next step.
 4. If counts/coverage changed, update the numbers in both `CLAUDE.md` and the `README.md` status table.
 5. If you changed the pipeline, **re-run it** so `data/` reflects reality before committing.
 
 **When a decision is made or changed:**
-1. Append a numbered entry to the decision log in the relevant spec (`SERMOTHEQUE.md` or `PRD.md`).
+1. Append a numbered entry to the decision log in the relevant spec (`docs/SERMOTHEQUE.md` or `docs/PRD.md`).
 2. Edit the affected sections to match; if it **supersedes** an earlier decision, say so explicitly (don't silently leave stale text).
 3. Reflect it in `CLAUDE.md` *Key decisions* if significant.
 
