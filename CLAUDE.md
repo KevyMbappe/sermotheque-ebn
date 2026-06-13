@@ -1,6 +1,8 @@
 # CLAUDE.md — Sermothèque EBN
 
-> **Read this first.** It is the front door for any agent (or person) picking up this project. It orients you, points to the detailed specs, states what's built, and tells you how to continue. Keep it updated as the project moves.
+> **Read this first.** It is the front door for any agent (or person) picking up this project. It orients you, points to the detailed specs, states what's built, and tells you how to continue.
+>
+> ⚠️ **Before you finish any task that advances the project, follow the [Maintenance protocol](#maintenance-protocol-keep-the-history-in-sync) at the bottom — keep the history/state files in sync.** This project's value is that its state lives in the repo, not in an agent's memory; that only holds if every contributor updates these files.
 
 ## What this project is
 
@@ -76,3 +78,30 @@ Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); t
 - Content is French-dominant; some English conference sermons exist (add `language`, default `fr`). UI (future apps) is FR/EN/PT.
 - Scripts are pure-stdlib Python 3, no external deps.
 - This is a real church's data — keep titles/names accurate; French theological/biblical naming matters (e.g. "Épître **de** Jacques", not "à").
+
+## Maintenance protocol (keep the history in sync)
+
+**Do this before you finish any task that advances the project.** The repo *is* the project's memory — these files must always reflect reality.
+
+**State/history files to keep in sync:**
+- `CLAUDE.md` — *Current status & next steps*, *Measured inventory*, *Key decisions*.
+- `README.md` — the **Status** table and the **Roadmap** checklist.
+- `SERMOTHEQUE.md` — the **Build log** (§7b), **decision log**, resolved/open questions; bump *Last updated*.
+- `PRD.md` — its **decision log** and status; bump *Last updated*.
+
+**When you complete a step** (milestone, new script, pipeline change):
+1. Tick the roadmap box(es) in `README.md` **and** `SERMOTHEQUE.md`.
+2. Add a dated entry to the **Build log** in `SERMOTHEQUE.md` (what changed + any coverage/count numbers).
+3. Update *Current status & next steps* in `CLAUDE.md` — move the item from "next" to "done" and name the new next step.
+4. If counts/coverage changed, update the numbers in both `CLAUDE.md` and the `README.md` status table.
+5. If you changed the pipeline, **re-run it** so `data/` reflects reality before committing.
+
+**When a decision is made or changed:**
+1. Append a numbered entry to the decision log in the relevant spec (`SERMOTHEQUE.md` or `PRD.md`).
+2. Edit the affected sections to match; if it **supersedes** an earlier decision, say so explicitly (don't silently leave stale text).
+3. Reflect it in `CLAUDE.md` *Key decisions* if significant.
+
+**Always:**
+- Use **absolute dates** (e.g. `2026-06-13`), never "today".
+- Commit with a clear message ending in the trailer `Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>`, then **push to `origin`**.
+- Leave the tree consistent: specs, README, and `data/` should never contradict each other in a commit.

@@ -209,6 +209,8 @@ This is the heart of Phase 1: a repeatable per-sermon workflow that produces ric
 ---
 
 ### Decision log (from grilling session, 2026-06-13)
+<!-- When a decision changes, append a numbered entry and update affected sections; see the Maintenance protocol in CLAUDE.md. -->
+
 1. Structured catalog (not a feed reader).
 2. Headless WordPress as CMS.
 3. Bulk import once, then manual-assisted weekly.

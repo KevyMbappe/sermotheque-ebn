@@ -127,6 +127,8 @@ Sequence:
 
 ## 7b. Build log
 
+> Append a dated entry here whenever you complete a step, and follow the **Maintenance protocol** in `CLAUDE.md` (sync README/CLAUDE.md status + roadmap, commit, push).
+
 **M1 first-pass catalog — DONE (2026-06-13).** `scripts/parse_catalog.py` parses the 239 SoundCloud titles → `data/catalog.json` + `data/catalog.csv`. Coverage (titles only, no ASR):
 - Scripture (OSIS): **196/239 (82%)**, 80% high-confidence, across **24 books**.
 - Clean title: 87% · Speaker: 26 named (mostly the regular pastor is untagged) · Series part: 34 · English: 0 (SoundCloud is FR-only).
