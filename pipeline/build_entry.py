@@ -72,16 +72,30 @@ def build_entry(source: dict, *, transcribe, enrich,
     eid = entry_id(source)
     parsed = parse_title(raw_title)
 
-    transcript = transcribe(source)                 # external step 1 (injected)
-    enrichment = enrich(transcript, parsed) or {}    # external step 2 (injected)
+    result = transcribe(source)                      # external step 1 (injected)
+    # The real transcriber returns {text, vtt, segments, language}; fakes/legacy may
+    # return a plain string. Normalize so enrichment + persistence handle both.
+    tr = {"text": result} if isinstance(result, str) else (result or {})
+    text = tr.get("text") or ""
+    enrichment = enrich(text, parsed) or {}          # external step 2 (injected)
 
-    transcript_ref = None
-    if persist_transcript and transcript:
+    transcript_ref = captions_ref = segments_ref = None
+    if persist_transcript and text:
         transcripts_dir = Path(transcripts_dir)
         transcripts_dir.mkdir(parents=True, exist_ok=True)
-        path = transcripts_dir / f"{eid}.txt"
-        path.write_text(transcript, encoding="utf-8")
-        transcript_ref = str(path.relative_to(ROOT)) if ROOT in path.parents else str(path)
+
+        def _persist(ext, content):
+            path = transcripts_dir / f"{eid}.{ext}"
+            path.write_text(content, encoding="utf-8")
+            return str(path.relative_to(ROOT)) if ROOT in path.parents else str(path)
+
+        transcript_ref = _persist("txt", text)
+        if tr.get("vtt"):                            # subtitle-ready segment timestamps
+            captions_ref = _persist("vtt", tr["vtt"])
+        if tr.get("segments"):                       # word-level timing + confidence (#42)
+            segments_ref = _persist("json", json.dumps(
+                {"language": tr.get("language", "fr"), "segments": tr["segments"]},
+                ensure_ascii=False))
 
     return {
         "id": eid,
@@ -103,6 +117,8 @@ def build_entry(source: dict, *, transcribe, enrich,
         "topics": enrichment.get("topics") or [],
         "summary": enrichment.get("summary") or None,
         "transcript_ref": transcript_ref,
+        "captions_ref": captions_ref,
+        "segments_ref": segments_ref,
         "kind": parsed["kind"],
         "media": {
             "soundcloud_id": source.get("soundcloud_id"),

@@ -44,7 +44,7 @@ WordPress **authors but does not own**. The canonical dataset (this repo's `data
 - **System of record:** WP authors → canonical = portable, git-versioned dataset. (Build custom, not a turnkey vendor.)
 - **SoundCloud is the catalog spine** (its titles are 74% structured vs 20% on YouTube). Match YouTube videos *in* by title/date.
 - **Scripture:** canonical **OSIS** IDs + FR/EN parser → browse-by-book.
-- **Transcripts:** ASR (Whisper-class) on clean SoundCloud audio is the *metadata engine* (auto-suggest topics/summary/scripture); correct opportunistically. **ASR backend is pluggable** (decision #41): mlx-whisper local on Mac for the backfill, cloud Whisper API (e.g. Groq) for the church's Windows machines in production — same injected `transcribe_fn` contract.
+- **Transcripts:** ASR (Whisper-class) on clean SoundCloud audio is the *metadata engine* (auto-suggest topics/summary/scripture); correct opportunistically. **ASR backend is pluggable** (decision #41): mlx-whisper local on Mac for the backfill, cloud Whisper API (e.g. Groq) for the church's Windows machines in production — same injected `transcribe_fn` contract. **Timestamps captured in the same pass** (decision #42): each sermon yields `.txt` (plain) + `.vtt` (subtitle-ready segment timing) + `.json` (word-level timing + confidence) — free at ASR time, and the basis for EN/PT subtitles, deep-linking, and search-to-moment.
 - **Enrichment model:** Claude **`claude-sonnet-4-6`**, ~**$0.06/sermon** measured (decision #40; ~$23 for the full 467). Haiku 4.5 is ⅓ the cost and nearly as good, but Sonnet wins on French precision + correct heresy naming — kept as default, Haiku is the budget fallback.
 - **Topics:** curated vocabulary, AI-bootstrapped; labels FR/EN/PT.
 - **EN/FR conference versions:** independent records linked by `translation_of`.
@@ -75,7 +75,7 @@ Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); t
 
 **Enrichment pipeline** (per-sermon, M5):
 ```bash
-python3 -m unittest discover -s tests        # 20 tests, offline, pure stdlib — no venv needed
+python3 -m unittest discover -s tests        # 22 tests, offline, pure stdlib — no venv needed
 
 # one-time setup (everything project-local & gitignored):
 python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
@@ -93,7 +93,7 @@ Everything the pipeline needs lives **inside the project** (never `/tmp`):
 
 ## Current status & next steps
 
-**Done:** planning/specs · M1 catalog · M1b series · M2 YT↔SC matching · M2b duration dedup (union 467) · M3 ASR+LLM spike (PASS) · M3b n=8 sample · M4 fold→unified 467 · **M5 enrichment pipeline `build_entry` + 20 tests** · git + GitHub remote.
+**Done:** planning/specs · M1 catalog · M1b series · M2 YT↔SC matching · M2b duration dedup (union 467) · M3 ASR+LLM spike (PASS) · M3b n=8 sample · M4 fold→unified 467 · **M5 enrichment pipeline `build_entry`** · M5b POC (8 real sermons) · M5c cost reconciliation + Haiku-vs-Sonnet bake-off · **M5d timestamp capture (.vtt/.json sidecars, 22 tests)** · git + GitHub remote.
 
 Catalog is the **unified 467-record union** (239 SoundCloud + 228 YouTube), one canonical schema with `source` + `media`, 25 series. The per-sermon pipeline exists; it has NOT yet been run across the catalog.
 

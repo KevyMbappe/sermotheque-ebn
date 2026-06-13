@@ -3,6 +3,7 @@
 No network, no API cost, deterministic — the two external steps (transcribe, enrich)
 are stubbed, so this exercises the whole compose/assemble path offline.
 """
+import json
 import sys
 import tempfile
 import unittest
@@ -53,6 +54,30 @@ class TestBuildEntry(unittest.TestCase):
         self.assertTrue(path.exists())
         self.assertEqual(path.read_text(encoding="utf-8"), FIXTURE)
         self.assertTrue(e["transcript_ref"].endswith("sc-123.txt"))
+
+    def test_timestamps_persisted_when_transcriber_returns_rich_result(self):
+        # The real transcriber returns {text, vtt, segments, language}; build_entry
+        # should enrich on the plain text and persist the VTT + segments sidecars (#42).
+        vtt = "WEBVTT\n\n00:00.000 --> 00:02.000\nAu commencement.\n"
+        segs = [{"start": 0.0, "end": 2.0, "text": "Au commencement.",
+                 "words": [{"word": "Au", "start": 0.0, "end": 0.4}],
+                 "no_speech_prob": 0.01}]
+        def rich_transcribe(src):
+            return {"text": FIXTURE, "vtt": vtt, "segments": segs, "language": "fr"}
+        e = build_entry(SOURCE, transcribe=rich_transcribe,
+                        enrich=lambda t, p: {**ENRICHMENT, "_seen": t},
+                        transcripts_dir=self.tmp)
+        self.assertEqual((self.tmp / "sc-123.txt").read_text(encoding="utf-8"), FIXTURE)
+        self.assertEqual((self.tmp / "sc-123.vtt").read_text(encoding="utf-8"), vtt)
+        self.assertTrue(e["captions_ref"].endswith("sc-123.vtt"))
+        loaded = json.loads((self.tmp / "sc-123.json").read_text(encoding="utf-8"))
+        self.assertEqual(loaded["segments"][0]["words"][0]["word"], "Au")
+        self.assertEqual(loaded["language"], "fr")
+
+    def test_string_transcriber_leaves_timestamp_refs_empty(self):
+        e = self._build()  # fake returns a plain string
+        self.assertIsNone(e["captions_ref"])
+        self.assertIsNone(e["segments_ref"])
 
     def test_steps_actually_invoked(self):
         self._build()

@@ -12,6 +12,7 @@ Two pieces:
                               Shelled out to the venv binaries so the core stays pure-stdlib and
                               importable without mlx/yt-dlp installed (tests inject a fake instead).
 """
+import json
 import os
 import re
 import subprocess
@@ -67,23 +68,46 @@ def download_audio(url, cache_dir=CACHE, ytdlp=YTDLP):
     return mp3s[0]
 
 
+_SIDECAR_EXTS = (".txt", ".vtt", ".srt", ".tsv", ".json")
+
+
 def asr(audio_path, model=MODEL, mlx_whisper=MLX_WHISPER):
-    """Transcribe an audio file with mlx-whisper (French). Returns raw text."""
+    """Transcribe an audio file with mlx-whisper (French), capturing timestamps.
+
+    Returns a dict: {text, vtt, segments, language}.
+      • text     — plain transcript (drives enrichment + search).
+      • vtt       — subtitle-ready WebVTT, segment timestamps (→ EN/PT subtitles,
+                    audio-synced reading, deep-linking "jump to where he says X").
+      • segments  — list of {start, end, text, words[], avg_logprob, no_speech_prob,
+                    compression_ratio}; word-level timing enables search-to-moment and
+                    karaoke highlight, and per-segment confidence flags shaky stretches
+                    for a human pass. Captured here because re-deriving it later means
+                    re-running ASR — so we extract the maximum in the one pass (#42).
+    """
     audio_path = Path(audio_path)
+    stem, out = audio_path.stem, audio_path.parent
     subprocess.run([mlx_whisper, str(audio_path), "--model", model, "--language", "fr",
-                    "--output-dir", str(audio_path.parent),
-                    "--output-name", audio_path.stem, "--output-format", "txt"],
+                    "--output-dir", str(out), "--output-name", stem,
+                    "--output-format", "all", "--word-timestamps", "True"],
                    check=True, capture_output=True)
-    return (audio_path.parent / f"{audio_path.stem}.txt").read_text(encoding="utf-8")
+    data = json.loads((out / f"{stem}.json").read_text(encoding="utf-8"))
+    return {
+        "text": (out / f"{stem}.txt").read_text(encoding="utf-8"),
+        "vtt": (out / f"{stem}.vtt").read_text(encoding="utf-8"),
+        "segments": data.get("segments", []),
+        "language": data.get("language", "fr"),
+    }
 
 
 def make_transcriber(*, keep_audio=False, model=MODEL):
-    """Build the real transcribe_fn(source) -> cleaned transcript text.
+    """Build the real transcribe_fn(source) -> {text, vtt, segments, language}.
 
     `source` must provide an audio location: either a pre-downloaded `audio_path`,
-    or a `url` (SoundCloud permalink / YouTube watch URL) to fetch.
+    or a `url` (SoundCloud permalink / YouTube watch URL) to fetch. The conservative
+    ASR cleanup is applied to both the plain text and the VTT cues (the substitution
+    rules match French words, never the timestamp lines, so VTT is safe to clean).
     """
-    def transcribe(source: dict) -> str:
+    def transcribe(source: dict) -> dict:
         audio = source.get("audio_path")
         downloaded = None
         if not audio:
@@ -91,9 +115,12 @@ def make_transcriber(*, keep_audio=False, model=MODEL):
             if not url:
                 raise ValueError("transcribe: source needs audio_path or a url")
             audio = downloaded = download_audio(url)
-        raw = asr(audio, model=model)
+        result = asr(audio, model=model)
+        result["text"] = clean_transcript(result["text"])
+        result["vtt"] = clean_transcript(result["vtt"])
         if downloaded and not keep_audio:
-            Path(downloaded).unlink(missing_ok=True)
-            Path(downloaded).with_suffix(".txt").unlink(missing_ok=True)
-        return clean_transcript(raw)
+            base = str(Path(downloaded).with_suffix(""))
+            for ext in (".mp3", *_SIDECAR_EXTS):
+                Path(base + ext).unlink(missing_ok=True)
+        return result
     return transcribe
