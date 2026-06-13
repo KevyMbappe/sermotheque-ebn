@@ -6,7 +6,6 @@ from the raw titles. Writes data/catalog/catalog.json + .csv and prints a covera
 
 This is the M1 "free metadata" pass; ASR/LLM enrichment fills the rest.
 """
-import csv
 import json
 from pathlib import Path
 
@@ -50,10 +49,7 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / "catalog.json").write_text(
         json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
-    with (OUT / "catalog.csv").open("w", newline="", encoding="utf-8") as fh:
-        w = csv.DictWriter(fh, fieldnames=list(rows[0].keys()))
-        w.writeheader()
-        w.writerows(rows)
+    # CSV is written by the final step (cluster_series) over the unified catalog
 
     n = len(rows)
     def pct(k): return f"{k}/{n} ({100*k//n}%)"

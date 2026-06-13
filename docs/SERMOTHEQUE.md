@@ -145,6 +145,8 @@ Sequence:
 
 **M3 ASR + LLM enrichment spike — DONE (2026-06-13).** Transcribed one sermon (mlx-whisper `large-v3-turbo`, ~6× real-time, local/free) and enriched it. **PASS** — excellent French ASR (cosmetic artifacts only), accurate zero-hallucination topics/summary, and it *recovered series context the title lacked* (Confession de foi 1689, ch. 8). Refined division of labor: **title → primary scripture; transcript → topics/summary/series/search**. Speaker inference is the weak spot (use a default rule, not ASR). Full write-up: `docs/spike-asr-2026-06-13.md`.
 
+**M4 fold orphans → unified catalog — DONE (2026-06-13).** `pipeline/fold_orphans.py` merges the 239 SoundCloud records + 228 YouTube orphans into **one catalog of 467 records** with a uniform canonical schema (`id`, `source`, `media`, enrichment placeholders). Pipeline order is now **parse → match → fold → cluster** (`build.py`); series clustering runs over the union → **25 series** (new ones surfaced from YT/conference content). `catalog.csv` is now the flattened 467-row export written by the final step. *(Not yet folded: the 102 Live `Service` records — a separate light type.)*
+
 ## 8. Resolved design decisions (grilled 2026-06-13)
 - **Scripture:** canonical **OSIS** book IDs (e.g. `Rom.8.1-8.4`) + a FR/EN parser; display localized, query canonical. Powers browse-by-book.
 - **EN/FR pairing:** **independent** Sermon records linked by `translation_of` (each keeps its own media/transcript/thumbnail).

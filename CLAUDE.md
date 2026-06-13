@@ -23,7 +23,8 @@ This reframe happened through a long planning conversation; the **two spec docs 
 | `pipeline/parse_catalog.py` | SoundCloud titles → structured metadata. |
 | `pipeline/cluster_series.py` | Groups sermons into ordered series (run AFTER the parser). |
 | `pipeline/match_youtube.py` | Links YouTube videos to SC sermons; writes orphans. |
-| `pipeline/build.py` | Runs all three in order (one command). |
+| `pipeline/fold_orphans.py` | Folds YT orphans into one unified catalog (canonical schema + `source`). |
+| `pipeline/build.py` | Runs the whole pipeline in order (one command). |
 | `data/raw/*.tsv` | Raw inventories pulled via `yt-dlp` (YouTube videos/streams, SoundCloud tracks). |
 | `data/catalog/` | The canonical dataset: `catalog.json` / `.csv`, `series.json`, `youtube_orphans.json`. |
 
@@ -61,12 +62,13 @@ WordPress **authors but does not own**. The canonical dataset (this repo's `data
 ## How to run the pipeline
 
 ```bash
-python3 pipeline/build.py             # runs all three steps in order (recommended)
+python3 pipeline/build.py             # runs the whole pipeline in order (recommended)
 
-# or individually:
-python3 pipeline/parse_catalog.py     # data/raw/soundcloud_tracks.tsv -> data/catalog/catalog.json/.csv
-python3 pipeline/cluster_series.py    # enriches catalog.json + writes data/catalog/series.json
-python3 pipeline/match_youtube.py     # links YT videos; writes data/catalog/youtube_orphans.json
+# order (build.py does this): parse → match → fold → cluster
+python3 pipeline/parse_catalog.py     # SoundCloud titles -> data/catalog/catalog.json (239)
+python3 pipeline/match_youtube.py     # link YT videos; write youtube_orphans.json
+python3 pipeline/fold_orphans.py      # fold orphans -> unified catalog (~467, canonical schema)
+python3 pipeline/cluster_series.py    # series over the union + write series.json + catalog.csv
 ```
 Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); the TSVs use a **literal `\t`** separator (yt-dlp didn't expand the escape) — the loaders handle this with `line.replace("\\t","\t")`.
 
@@ -74,10 +76,13 @@ Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); t
 
 **Done:** planning/specs · M1 catalog · M1b series · M2 YT↔SC matching · M2b duration dedup (full 239/239, union 467) · M3 ASR+LLM spike (PASS) · git + GitHub remote.
 
+Catalog is now the **unified 467-record union** (239 SoundCloud + 228 YouTube), one canonical schema with `source` + `media`, 25 series.
+
 **Open / next (pick up here):**
-1. **Fold YT orphans into the catalog** — promote the 228 net-new videos (conference + English + SC-absent French, in `data/catalog/youtube_orphans.json`) to `Sermon`/`Service` records. Parsed already; durations available for dedup.
-2. **Full ASR enrichment pass** — batch-transcribe the catalog locally (mlx-whisper turbo, ~overnight), LLM-enrich topics/summary/series; correct opportunistically. Add a default-speaker rule for untagged sermons.
+1. **ASR enrichment — bigger sample (5–10 random full sermons, incl. very old)** before the full pass, to gauge performance variance across the ~467 (audio quality, accents, old title conventions).
+2. **Full ASR enrichment pass** — batch-transcribe locally (mlx-whisper turbo, ~overnight), LLM-enrich topics/summary/series; correct opportunistically. Add a default-speaker rule for untagged sermons.
 3. **JSON Schema + WP import** — freeze the canonical record contract; design the WordPress CPT/ACF import → first public deliverable (website sermon library).
+- *(Optional: also fold the 102 Live `Service` records in — currently only the 228 Videos-tab orphans are folded.)*
 
 **Still-open design questions:** SoundCloud trim (only the sermon, or intro/offering too?), canonical hosting location, dedup edge cases (multi-part, re-uploads). See docs/SERMOTHEQUE.md §8.
 

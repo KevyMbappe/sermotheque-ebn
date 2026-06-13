@@ -51,7 +51,8 @@ pipeline/
   parse_catalog.py     SoundCloud titles → structured metadata
   cluster_series.py    Group sermons into ordered series (run after the parser)
   match_youtube.py     Link YouTube videos to SC sermons; emit orphans
-  build.py             Run the whole pipeline in order
+  fold_orphans.py      Fold orphans into one unified catalog (canonical schema)
+  build.py             Run the whole pipeline in order (parse → match → fold → cluster)
 data/
   raw/                 Raw YouTube/SoundCloud inventories (via yt-dlp)
   catalog/             The canonical dataset: catalog.json/.csv, series.json, youtube_orphans.json
@@ -75,8 +76,9 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **M2** — YouTube ↔ SoundCloud matching (found: largely complementary, not a mirror)
 - [x] **M2b** — YT↔SC dedup via duration fingerprint, full coverage (61 overlaps + 11 translations; 228 net-new; union 467)
 - [x] **M3** — ASR + LLM enrichment spike (PASS — see `docs/spike-asr-2026-06-13.md`)
-- [ ] Fold YT orphans (conferences, English, SC-absent French) into the catalog
-- [ ] Full ASR enrichment pass (transcripts, topics, summaries) + WordPress import
+- [x] **M4** — fold YT orphans into one unified catalog (467 records, canonical schema, 25 series)
+- [ ] ASR enrichment: bigger sample → full pass (transcripts, topics, summaries)
+- [ ] JSON Schema + WordPress import (first public deliverable)
 - [ ] JSON Schema + WordPress import → website sermon library (first public deliverable)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 

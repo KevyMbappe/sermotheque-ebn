@@ -56,6 +56,25 @@ def book_series_name(osis):
     return SERIES_NAME.get(osis, f"Étude — {FR_BOOK.get(osis, osis)}")
 
 
+def write_csv(rows):
+    """flattened, spreadsheet-friendly export of the unified catalog"""
+    import csv
+    cols = ["id", "source", "title", "language", "date", "audio_duration", "video_duration",
+            "speaker", "series_name", "series_part", "series_order", "scripture_osis",
+            "scripture_book", "kind", "is_conference", "soundcloud_id", "youtube_id", "topics"]
+    with (CAT.parent / "catalog.csv").open("w", newline="", encoding="utf-8") as fh:
+        w = csv.DictWriter(fh, fieldnames=cols)
+        w.writeheader()
+        for r in rows:
+            media = r.get("media") or {}
+            w.writerow({
+                **{k: r.get(k) for k in cols if k not in ("soundcloud_id", "youtube_id", "topics")},
+                "soundcloud_id": media.get("soundcloud_id"),
+                "youtube_id": media.get("youtube_id"),
+                "topics": "; ".join(r.get("topics") or []),
+            })
+
+
 def main():
     rows = json.loads(CAT.read_text(encoding="utf-8"))
 
@@ -94,7 +113,7 @@ def main():
         r = rows[idx]
         ch = r.get("scripture_chapter") or 999
         m = re.search(r"\.(\d+)\.(\d+)", r.get("scripture_osis") or "")
-        return (ch, int(m.group(2)) if m else 0, r["soundcloud_id"])
+        return (ch, int(m.group(2)) if m else 0, r["id"])
 
     out_series = []
     for s in series.values():
@@ -111,6 +130,7 @@ def main():
     (CAT.parent / "series.json").write_text(
         json.dumps(out_series, ensure_ascii=False, indent=2), encoding="utf-8")
     CAT.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_csv(rows)
 
     in_series = sum(1 for r in rows if r.get("series_id"))
     n = len(rows)
