@@ -131,7 +131,11 @@ Sequence:
 - Scripture (OSIS): **196/239 (82%)**, 80% high-confidence, across **24 books**.
 - Clean title: 87% · Speaker: 26 named (mostly the regular pastor is untagged) · Series part: 34 · English: 0 (SoundCloud is FR-only).
 - Distribution reveals systematic expository series: **Galates 72, Hébreux 28, Genèse 16, Jacques 14, Ézéchiel 11**.
-- Known limitations carried to enrichment: series *clustering* (group the 72 Galates into one series), the 43 refless items (intros/Q&A/topical), speaker inference for the regular preacher, multi-range verses approximated as a span.
+- Known limitations carried to enrichment: the 43 refless items (intros/Q&A/topical), speaker inference for the regular preacher, multi-range verses approximated as a span.
+
+**M1b series clustering — DONE (2026-06-13).** `scripts/cluster_series.py` → `data/series.json` + enriches catalog. **22 series, 81% of sermons placed**, ordered by chapter:verse. Expository: Épître aux Galates (69), aux Hébreux (28), de Jacques (14), Genèse (13), Ézéchiel (11)… Thematic: Joie chrétienne, Noël le plus glorieux des mystères, Fruit de l'Esprit… Pipeline order is `parse_catalog.py` → `cluster_series.py`.
+
+**Git — DONE (2026-06-13).** Repo initialized (branch `main`); the canonical dataset is now version-controlled per the durability decision. Initial commit `e2d3218`.
 
 ## 8. Resolved design decisions (grilled 2026-06-13)
 - **Scripture:** canonical **OSIS** book IDs (e.g. `Rom.8.1-8.4`) + a FR/EN parser; display localized, query canonical. Powers browse-by-book.
