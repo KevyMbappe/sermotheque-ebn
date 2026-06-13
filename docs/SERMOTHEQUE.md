@@ -149,6 +149,8 @@ Sequence:
 
 **M4 fold orphans → unified catalog — DONE (2026-06-13).** `pipeline/fold_orphans.py` merges the 239 SoundCloud records + 228 YouTube orphans into **one catalog of 467 records** with a uniform canonical schema (`id`, `source`, `media`, enrichment placeholders). Pipeline order is now **parse → match → fold → cluster** (`build.py`); series clustering runs over the union → **25 series** (new ones surfaced from YT/conference content). `catalog.csv` is now the flattened 467-row export written by the final step. *(Not yet folded: the 102 Live `Service` records — a separate light type.)*
 
+**M5 enrichment pipeline — built (2026-06-13).** `pipeline/{transcribe,enrich,build_entry}.py` — single entry point `build_entry(source, *, transcribe, enrich)` (YT/SC ids/URLs → one canonical catalog entry). Transcribe + enrich are injected (real adapters: mlx-whisper, Claude API). Conservative ASR cleanup (`clean_transcript`). Tests: `tests/` (stdlib unittest) — **20 tests, offline/deterministic**, covering parsing edge cases, cleanup (with negatives), and end-to-end assembly. Storage per #38 (transcripts→git, audio→gitignored `cache/`). POC on the 8 sample sermons + elder-facing PDF in progress.
+
 ## 8. Resolved design decisions (grilled 2026-06-13)
 - **Scripture:** canonical **OSIS** book IDs (e.g. `Rom.8.1-8.4`) + a FR/EN parser; display localized, query canonical. Powers browse-by-book.
 - **EN/FR pairing:** **independent** Sermon records linked by `translation_of` (each keeps its own media/transcript/thumbnail).
@@ -158,6 +160,8 @@ Sequence:
 - **YT↔SC matching (backfill):** **fuzzy title + date window**; high-confidence auto-link, low-confidence to the completeness dashboard; orphans (EN-only videos) flagged, not forced.
 
 ### Decision (added)
+- **#38 (2026-06-13) — Storage split:** **transcripts are committed to git** (`data/catalog/transcripts/*.txt`, ~25 MB total — text, canonical, diffable). **Audio is never committed** — downloaded to a gitignored `cache/`, deleted after transcription; it's regenerable via `yt-dlp` and the church's SoundCloud/YouTube are the durable audio archive. Media artifacts (thumbnails) later go to object storage / WP media, referenced by URL — not git.
+- **#39 (2026-06-13) — Pipeline shape:** single entry point `build_entry(source, *, transcribe, enrich)` composing parse → transcribe → enrich → assemble; the two external steps are **injected** (real = mlx-whisper + Claude API; tests inject fakes) → fast offline deterministic tests + one global integration test. Production enricher = Claude `claude-sonnet-4-6`, structured JSON output, ~$0.02/sermon (needs `ANTHROPIC_API_KEY`).
 - **#37 (2026-06-13):** The catalog is the **UNION of SoundCloud + YouTube** (**467** distinct sermons), not the SC spine alone. SC = clean French expository audio (239); YouTube adds conference content (~45) + English versions + SC-absent French sermons. YT↔SC are largely *complementary*: with full duration coverage (239/239), duration-fingerprint matching (YT ≈ SC + 51 s) confirms **61** same-language overlaps + **11** translations; the remaining **228** YT videos are net-new.
 
 ### Still open (lighter — resolve during build)

@@ -7,3 +7,10 @@ venv/
 # OS
 .DS_Store
 Thumbs.db
+
+# Transient media cache — audio is regenerable via yt-dlp; never commit it.
+# (Transcripts ARE committed, under data/catalog/transcripts/.)
+cache/
+*.mp3
+*.m4a
+*.wav
