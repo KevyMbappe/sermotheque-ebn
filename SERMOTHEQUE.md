@@ -137,7 +137,9 @@ Sequence:
 
 **M1b series clustering — DONE (2026-06-13).** `scripts/cluster_series.py` → `data/series.json` + enriches catalog. **22 series, 81% of sermons placed**, ordered by chapter:verse. Expository: Épître aux Galates (69), aux Hébreux (28), de Jacques (14), Genèse (13), Ézéchiel (11)… Thematic: Joie chrétienne, Noël le plus glorieux des mystères, Fruit de l'Esprit… Pipeline order is `parse_catalog.py` → `cluster_series.py`.
 
-**Git — DONE (2026-06-13).** Repo initialized (branch `main`); the canonical dataset is now version-controlled per the durability decision. Initial commit `e2d3218`.
+**Git — DONE (2026-06-13).** Repo initialized (branch `main`); the canonical dataset is now version-controlled per the durability decision. Initial commit `e2d3218`. Pushed to private GitHub repo `KevyMbappe/sermotheque-ebn`.
+
+**M2 YouTube↔SoundCloud matching — DONE (2026-06-13).** `scripts/match_youtube.py` (scripture-anchored + language-aware) → enriches catalog + `data/youtube_orphans.json`. **Finding: YouTube's Videos tab is NOT a mirror of SoundCloud** — only **17** confident same-language overlaps. YT is dominated by **conference content (48, CBN Paris / international guests)**, **English** material, and ~215 French videos not title-matchable to SC. The real catalog is the **UNION (~500+ items)**, not the 239 SC spine. *Decision #37 (below).* **Caveat:** the 215 French YT orphans' true overlap with SC can't be settled by titles alone.
 
 ## 8. Resolved design decisions (grilled 2026-06-13)
 - **Scripture:** canonical **OSIS** book IDs (e.g. `Rom.8.1-8.4`) + a FR/EN parser; display localized, query canonical. Powers browse-by-book.
@@ -147,6 +149,10 @@ Sequence:
 - **Topic labels:** translated **FR + EN + PT** (bounded ~30–60 list); matches the trilingual UI.
 - **YT↔SC matching (backfill):** **fuzzy title + date window**; high-confidence auto-link, low-confidence to the completeness dashboard; orphans (EN-only videos) flagged, not forced.
 
+### Decision (added)
+- **#37 (2026-06-13):** The catalog is the **UNION of SoundCloud + YouTube**, not the SC spine alone. SC = clean French expository audio (239); YouTube adds conference content + English versions + SC-absent French sermons (~280 items). YT↔SC are largely *complementary*; title-only matching confirms just ~17 overlaps.
+
 ### Still open (lighter — resolve during build)
+- **YT↔SC true overlap** — dedup the ~215 French YT orphans against SC needs a stronger signal than titles: re-pull `duration`+`upload_date` (both platforms) and match on those, or use embeddings/audio fingerprint.
 - **Canonical hosting** — where the git export repo + static serving live (church-owned, per [PRD.md](PRD.md) §8 ownership model). Static index ⇒ static hosting, very low ops.
 - **Dedup edge cases** — multi-part sermons, re-uploads, same-day multiples.

@@ -86,7 +86,14 @@
     "kind": "sermon",
     "series_id": "ser-epitre-de-jacques",
     "series_name": "Épître de Jacques",
-    "series_order": 14
+    "series_order": 14,
+    "translation_candidates": [
+      {
+        "youtube_id": "TyjEJN_eVvE",
+        "title": "The Triumph of Mercy | James 2:12-13",
+        "language": "en"
+      }
+    ]
   },
   {
     "soundcloud_id": "2305315550",
@@ -158,7 +165,9 @@
     "kind": "sermon",
     "series_id": "ser-etude-ezechiel",
     "series_name": "Étude — Ézéchiel",
-    "series_order": 11
+    "series_order": 11,
+    "youtube_id": "bA_raD3yptU",
+    "youtube_match": 1.4
   },
   {
     "soundcloud_id": "2275538630",
@@ -176,7 +185,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-aux-galates",
     "series_name": "Épître aux Galates",
-    "series_order": 67
+    "series_order": 67,
+    "youtube_id": "RoEGlbc9Td0",
+    "youtube_match": 1.4
   },
   {
     "soundcloud_id": "2271246476",
@@ -194,7 +205,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-aux-hebreux",
     "series_name": "Épître aux Hébreux",
-    "series_order": 28
+    "series_order": 28,
+    "youtube_id": "lQJIB1N_Jl4",
+    "youtube_match": 1.4
   },
   {
     "soundcloud_id": "2270784290",
@@ -552,7 +565,9 @@
     "scripture_confident": null,
     "kind": "teaching_or_qa",
     "series_id": null,
-    "series_name": null
+    "series_name": null,
+    "youtube_id": "AlWPMu-OBqo",
+    "youtube_match": 0.7
   },
   {
     "soundcloud_id": "2205619247",
@@ -856,7 +871,9 @@
     "kind": "sermon",
     "series_id": "ser-actes-des-apotres",
     "series_name": "Actes des Apôtres",
-    "series_order": 3
+    "series_order": 3,
+    "youtube_id": "ch8YEPP3twE",
+    "youtube_match": 1.0
   },
   {
     "soundcloud_id": "2169824730",
@@ -999,7 +1016,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-de-jacques",
     "series_name": "Épître de Jacques",
-    "series_order": 12
+    "series_order": 12,
+    "youtube_id": "Bx5Z25JOL1Q",
+    "youtube_match": 1.0
   },
   {
     "soundcloud_id": "2158843158",
@@ -1017,7 +1036,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-de-jacques",
     "series_name": "Épître de Jacques",
-    "series_order": 11
+    "series_order": 11,
+    "youtube_id": "E1yHe_-wugw",
+    "youtube_match": 1.0
   },
   {
     "soundcloud_id": "2151088524",
@@ -1035,7 +1056,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-de-jacques",
     "series_name": "Épître de Jacques",
-    "series_order": 10
+    "series_order": 10,
+    "youtube_id": "0gx_6KBQMXc",
+    "youtube_match": 1.0
   },
   {
     "soundcloud_id": "2151088182",
@@ -1480,7 +1503,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-aux-hebreux",
     "series_name": "Épître aux Hébreux",
-    "series_order": 25
+    "series_order": 25,
+    "youtube_id": "9ViOL-rIG1c",
+    "youtube_match": 1.0
   },
   {
     "soundcloud_id": "2077749968",
@@ -1642,7 +1667,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-aux-galates",
     "series_name": "Épître aux Galates",
-    "series_order": 54
+    "series_order": 54,
+    "youtube_id": "dU-aDP5rMBc",
+    "youtube_match": 0.991
   },
   {
     "soundcloud_id": "2053265520",
@@ -1660,7 +1687,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-aux-galates",
     "series_name": "Épître aux Galates",
-    "series_order": 42
+    "series_order": 42,
+    "youtube_id": "k2Ni-szTzyk",
+    "youtube_match": 1.0
   },
   {
     "soundcloud_id": "2053260992",
@@ -1714,7 +1743,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-aux-galates",
     "series_name": "Épître aux Galates",
-    "series_order": 41
+    "series_order": 41,
+    "youtube_id": "QhdOXa4UQ5s",
+    "youtube_match": 0.979
   },
   {
     "soundcloud_id": "2039462392",
@@ -1750,7 +1781,14 @@
     "kind": "sermon",
     "series_id": "ser-epitre-aux-galates",
     "series_name": "Épître aux Galates",
-    "series_order": 40
+    "series_order": 40,
+    "translation_candidates": [
+      {
+        "youtube_id": "oU6skQrVr-c",
+        "title": "Les caractéristiques des fruits de l'Esprit. (part I) Galates 5:22-26",
+        "language": "en"
+      }
+    ]
   },
   {
     "soundcloud_id": "2039455192",
@@ -2936,7 +2974,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-aux-galates",
     "series_name": "Épître aux Galates",
-    "series_order": 8
+    "series_order": 8,
+    "youtube_id": "hmdc7cbwWsc",
+    "youtube_match": 0.819
   },
   {
     "soundcloud_id": "1920885503",
@@ -3224,7 +3264,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-aux-galates",
     "series_name": "Épître aux Galates",
-    "series_order": 5
+    "series_order": 5,
+    "youtube_id": "9qcmpi_86qY",
+    "youtube_match": 0.796
   },
   {
     "soundcloud_id": "1848634356",
@@ -3242,7 +3284,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-aux-galates",
     "series_name": "Épître aux Galates",
-    "series_order": 69
+    "series_order": 69,
+    "youtube_id": "0boDuClIA4k",
+    "youtube_match": 1.325
   },
   {
     "soundcloud_id": "1834617897",
@@ -3277,7 +3321,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-aux-galates",
     "series_name": "Épître aux Galates",
-    "series_order": 4
+    "series_order": 4,
+    "youtube_id": "Qawl8x-wkGQ",
+    "youtube_match": 0.699
   },
   {
     "soundcloud_id": "1824014199",
@@ -3295,7 +3341,9 @@
     "kind": "sermon",
     "series_id": "ser-epitre-aux-galates",
     "series_name": "Épître aux Galates",
-    "series_order": 3
+    "series_order": 3,
+    "youtube_id": "ndatfCdiLs8",
+    "youtube_match": 0.699
   },
   {
     "soundcloud_id": "1824012756",

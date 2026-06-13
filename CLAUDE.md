@@ -53,23 +53,26 @@ WordPress **authors but does not own**. The canonical dataset (this repo's `data
 - YouTube **Videos** (cut sermons): **300** · YouTube **Live** (services): **102** · SoundCloud (clean sermon audio): **239**.
 - First-pass parse of the 239 SC titles: **82% scripture (OSIS)**, 87% clean title, 24 Bible books.
 - **22 series** auto-clustered: Galates 69, Hébreux 28, Jacques 14, Genèse 13, Ézéchiel 11, + thematic (Joie chrétienne, Noël…, Fruit de l'Esprit).
+- **YouTube ≠ SoundCloud mirror** (matcher finding): only **17** confident same-language overlaps. YT's Videos tab is dominated by **conference content** (48, CBN Paris / international guests) + **English** material + ~215 French videos not title-matchable to SC. The true catalog is the **UNION (~500+ items)**, not the 239 SC spine. *Caveat:* the 215 French YT orphans' real overlap with SC is unknown via titles alone — needs durations/dates/embeddings to dedup. Orphans (already parsed) are in `data/youtube_orphans.json`.
 
 ## How to run the pipeline
 
 ```bash
 python3 scripts/parse_catalog.py      # data/soundcloud_tracks.tsv -> data/catalog.json/.csv
 python3 scripts/cluster_series.py      # enriches catalog.json + writes data/series.json
+python3 scripts/match_youtube.py       # links YT videos; writes data/youtube_orphans.json
 ```
 Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); the TSVs use a **literal `\t`** separator (yt-dlp didn't expand the escape) — the parser handles this with `line.replace("\\t","\t")`.
 
 ## Current status & next steps
 
-**Done:** planning/specs · M1 first-pass catalog · M1b series clustering · git initialized (branch `main`).
+**Done:** planning/specs · M1 first-pass catalog · M1b series clustering · M2 YT↔SC matching · git + GitHub remote.
 
 **Open / next (pick up here):**
-1. **YT↔SC matching** — link the 300 YouTube videos to the 239 SoundCloud sermons (fuzzy title + date), attach video to each record, flag orphans.
-2. **ASR + LLM enrichment spike** — prove on ONE sermon that transcribe→suggest gives "confirm-don't-type" quality (topics/summary/scripture + infer the regular preacher, untagged in titles). *Biggest unproven assumption.*
-3. **JSON Schema + WP import** — freeze the canonical record contract; design the WordPress CPT/ACF import → first public deliverable (website sermon library).
+1. **YT↔SC dedup (stronger signal)** — the 215 French YT orphans can't be deduped against SC by title alone; re-pull YT with `duration`/`upload_date` (and SC durations) and match on those, or use embeddings, to learn the true overlap and finalize the union catalog.
+2. **Fold YT orphans into the catalog** — promote the conference + English + SC-absent French videos (in `youtube_orphans.json`) to `Sermon`/`Service` records (they're net-new content, already parsed).
+3. **ASR + LLM enrichment spike** — prove on ONE sermon that transcribe→suggest gives "confirm-don't-type" quality (topics/summary/scripture + infer the regular preacher, untagged in titles). *Biggest unproven assumption.*
+4. **JSON Schema + WP import** — freeze the canonical record contract; design the WordPress CPT/ACF import → first public deliverable (website sermon library).
 
 **Still-open design questions:** SoundCloud trim (only the sermon, or intro/offering too?), canonical hosting location, dedup edge cases (multi-part, re-uploads). See SERMOTHEQUE.md §8.
 
