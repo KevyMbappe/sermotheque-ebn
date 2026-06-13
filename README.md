@@ -75,7 +75,7 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **M1b** — series clustering (expository + thematic)
 - [x] **M2** — YouTube ↔ SoundCloud matching (found: largely complementary, not a mirror)
 - [x] **M2b** — YT↔SC dedup via duration fingerprint, full coverage (61 overlaps + 11 translations; 228 net-new; union 467)
-- [x] **M3** — ASR + LLM enrichment spike (PASS — see `docs/spike-asr-2026-06-13.md`)
+- [x] **M3** — ASR + LLM enrichment spike (PASS — see `docs/spike-asr/METHODOLOGY.md`)
 - [x] **M4** — fold YT orphans into one unified catalog (467 records, canonical schema, 25 series)
 - [ ] ASR enrichment: bigger sample → full pass (transcripts, topics, summaries)
 - [ ] JSON Schema + WordPress import (first public deliverable)

@@ -20,13 +20,13 @@ This reframe happened through a long planning conversation; the **two spec docs 
 | **docs/PRD.md** | The app suite (web/mobile/TV) — now a *downstream consumer* of the catalog. Full decision log. |
 | **CLAUDE.md** | This file — orientation + current state. |
 | `pipeline/scripture.py` | Shared parsing primitives (OSIS book map, scripture/speaker/series parsing). Imported by the others. |
-| `pipeline/parse_catalog.py` | SoundCloud titles → structured metadata. |
-| `pipeline/cluster_series.py` | Groups sermons into ordered series (run AFTER the parser). |
-| `pipeline/match_youtube.py` | Links YouTube videos to SC sermons; writes orphans. |
-| `pipeline/fold_orphans.py` | Folds YT orphans into one unified catalog (canonical schema + `source`). |
-| `pipeline/build.py` | Runs the whole pipeline in order (one command). |
-| `data/raw/*.tsv` | Raw inventories pulled via `yt-dlp` (YouTube videos/streams, SoundCloud tracks). |
-| `data/catalog/` | The canonical dataset: `catalog.json` / `.csv`, `series.json`, `youtube_orphans.json`. |
+| `pipeline/parse_catalog.py` · `match_youtube.py` · `fold_orphans.py` · `cluster_series.py` | **Catalog-build** pipeline (batch, pure-stdlib). `build.py` runs them in order. |
+| `pipeline/build_entry.py` | ★ **Single entry point**: `build_entry(source, *, transcribe, enrich)` — one YT/SC source → one canonical entry. |
+| `pipeline/transcribe.py` · `enrich.py` | The two **injected** external steps: mlx-whisper adapter (+ `clean_transcript`) and Claude-API adapter. |
+| `tests/` | Stdlib `unittest` suite (offline). Run: `python3 -m unittest discover -s tests`. |
+| `tools/md_to_pdf.py` | Markdown → PDF via headless Chrome (used for SYNTHESE / spike PDFs). |
+| `docs/spike-asr/` | ASR spike evidence: `METHODOLOGY.md`, `RESULTS.md`/`.pdf`, sample `transcripts/`. |
+| `data/raw/*.tsv` | Raw inventories pulled via `yt-dlp`. `data/catalog/` = canonical dataset (`catalog.json`/`.csv`, `series.json`, `youtube_orphans.json`, `transcripts/`). |
 
 ## Architecture (three layers)
 
@@ -57,7 +57,7 @@ WordPress **authors but does not own**. The canonical dataset (this repo's `data
 - First-pass parse of the 239 SC titles: **82% scripture (OSIS)**, 87% clean title, 24 Bible books.
 - **22 series** auto-clustered: Galates 69, Hébreux 28, Jacques 14, Genèse 13, Ézéchiel 11, + thematic (Joie chrétienne, Noël…, Fruit de l'Esprit).
 - **YouTube ≠ SoundCloud mirror** (matcher finding): they are largely **complementary**. With full SC duration coverage (239/239) and a **duration fingerprint** (YT runs ~+51 s vs SC, calibrated) on top of title/scripture: **61** confirmed same-language overlaps + **11** EN↔FR translations; **228 YT videos are net-new** (conference ~45, English ~21, SC-absent French ~162). **True catalog = 467 distinct sermons** (union). Orphans (parsed) in `data/catalog/youtube_orphans.json`.
-- **ASR enrichment validated** (spike, `docs/spike-asr-2026-06-13.md`): mlx-whisper `large-v3-turbo` transcribes French sermons ~6× real-time locally; LLM topics/summary are confirm-don't-type quality. **Title → scripture; transcript → topics/summary/series/search.** Speaker inference needs a default rule, not ASR.
+- **ASR enrichment validated** (spike, `docs/spike-asr/METHODOLOGY.md`): mlx-whisper `large-v3-turbo` transcribes French sermons ~6× real-time locally; LLM topics/summary are confirm-don't-type quality. **Title → scripture; transcript → topics/summary/series/search.** Speaker inference needs a default rule, not ASR.
 
 ## How to run the pipeline
 
@@ -72,14 +72,25 @@ python3 pipeline/cluster_series.py    # series over the union + write series.jso
 ```
 Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); the TSVs use a **literal `\t`** separator (yt-dlp didn't expand the escape) — the loaders handle this with `line.replace("\\t","\t")`.
 
+**Enrichment pipeline** (per-sermon, M5):
+```bash
+python3 -m unittest discover -s tests        # 20 tests, offline, no deps
+python3 pipeline/build_entry.py --soundcloud-url <url> --raw-title "<title>"   # real run
+```
+Runtime deps for a *real* run (the catalog-build scripts above are pure-stdlib; these are not):
+- **yt-dlp ≥ 2026.x** and **mlx-whisper** (`large-v3-turbo`) — currently installed in throwaway venvs `/tmp/ytdlp-venv` and `/tmp/asr-venv` (⚠️ **ephemeral `/tmp`** — recreate with `python3 -m venv` + `pip install yt-dlp mlx-whisper` if gone; paths are configurable at the top of `transcribe.py`).
+- **`anthropic` SDK + `ANTHROPIC_API_KEY`** for the enrich step (model `claude-sonnet-4-6`, ~$0.02/sermon). Without a key the deterministic steps still run; supply your own `enrich` fn.
+- Nothing critical lives only in `/tmp`: the pipeline is committed and re-runnable, and audio is re-downloadable — caches/transcripts can always be regenerated.
+
 ## Current status & next steps
 
-**Done:** planning/specs · M1 catalog · M1b series · M2 YT↔SC matching · M2b duration dedup (full 239/239, union 467) · M3 ASR+LLM spike (PASS) · git + GitHub remote.
+**Done:** planning/specs · M1 catalog · M1b series · M2 YT↔SC matching · M2b duration dedup (union 467) · M3 ASR+LLM spike (PASS) · M3b n=8 sample · M4 fold→unified 467 · **M5 enrichment pipeline `build_entry` + 20 tests** · git + GitHub remote.
 
-Catalog is now the **unified 467-record union** (239 SoundCloud + 228 YouTube), one canonical schema with `source` + `media`, 25 series.
+Catalog is the **unified 467-record union** (239 SoundCloud + 228 YouTube), one canonical schema with `source` + `media`, 25 series. The per-sermon pipeline exists; it has NOT yet been run across the catalog.
 
 **Open / next (pick up here):**
-1. **Full ASR enrichment pass** — validated by the n=8 sample (robust across 2023→2026, all speakers). Plan: mlx-whisper `large-v3-turbo` locally (~15× real-time, measured on a full sermon ⇒ ~15 h for the 239 SC sermons, a couple of overnight runs) → **regex post-clean** (foi→fois, le→les, Dieu→dieux) → LLM-enrich topics/summary/series; correct opportunistically. Add a **default-speaker rule** for untagged sermons (artifact presence is a weak speaker signal).
+1. **POC in flight** (2026-06-13): a background run transcribed the 8 sample sermons in full via the real pipeline → outputs in `/tmp/spike/poc_entries.json` + `/tmp/spike/poc_transcripts/` (ephemeral; re-creatable with `/tmp/spike/run_poc.py`). **Next step:** enrich those 8 (no API key was set, so Claude/agent supplies enrichment, labeled) → render an **elder-facing POC PDF** → commit the 8 real transcripts into `data/catalog/transcripts/`.
+2. **Full ASR enrichment pass** — run `build_entry` across the catalog (~15× real-time ⇒ ~15 h for 239 SC sermons, a few overnight runs) → write topics/summary/transcript back to `catalog.json`. Needs `ANTHROPIC_API_KEY` for the enrich step (~$5–20 one-time). Add a **default-speaker rule** for untagged sermons.
 3. **JSON Schema + WP import** — freeze the canonical record contract; design the WordPress CPT/ACF import → first public deliverable (website sermon library).
 - *(Optional: also fold the 102 Live `Service` records in — currently only the 228 Videos-tab orphans are folded.)*
 
@@ -88,7 +99,7 @@ Catalog is now the **unified 467-record union** (239 SoundCloud + 228 YouTube), 
 ## Conventions
 
 - Content is French-dominant; some English conference sermons exist (add `language`, default `fr`). UI (future apps) is FR/EN/PT.
-- Scripts are pure-stdlib Python 3, no external deps.
+- **Catalog-build scripts + the pipeline core + tests are pure-stdlib Python 3.** Only the *real adapters* (`transcribe.py` → yt-dlp/mlx-whisper via subprocess; `enrich.py` → `anthropic`) need external tools, and they lazy-load so the core imports without them.
 - This is a real church's data — keep titles/names accurate; French theological/biblical naming matters (e.g. "Épître **de** Jacques", not "à").
 
 ## Maintenance protocol (keep the history in sync)
