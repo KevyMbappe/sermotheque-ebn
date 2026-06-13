@@ -1,6 +1,10 @@
 # ASR + enrichment — sample results (8 sermons, 2023→2026)
 
-Real output you can inspect. Each sermon below was **transcribed by mlx-whisper `large-v3-turbo`** (8-min slice; full transcripts in [`transcripts/`](transcripts/)) and then **enriched by an LLM from the transcript alone** (this is exactly what the production engine would produce). ASR speed ≈ 6–7× real-time, local, free.
+Real output you can inspect. Each sermon below was **transcribed by mlx-whisper `large-v3-turbo`** and then **enriched by an LLM from the transcript alone** (this is exactly what the production engine would produce).
+
+> **Note on size:** the per-sermon transcripts in [`transcripts/`](transcripts/) are **8-minute slices** (~1,100–1,500 words ≈ 13–16% of a 50–66 min sermon) — sampled for speed to gauge ASR quality across the span. One **FULL** transcript is included for reference: [`…incarnation…_FULL.txt`](transcripts/01_20260613_la-doctrine-de-l-incarnation-de-christ_FULL.txt) (**7,743 words**). In the real pass every sermon is transcribed end-to-end.
+>
+> **Speed (measured on the full sermon):** 3,389 s of audio → 221 s ⇒ **~15× real-time** (short slices look slower only because of one-time model-load overhead). So the full pass ≈ **~15 h** of local compute for the 239 SoundCloud sermons.
 
 **Legend:** 🟢 regular pastor (Lusophone-accented FR — systematic artifacts `foi→fois`, `le→les`, `Dieu→dieux`); 🔵 different native-FR preacher (cleaner, no artifact).
 

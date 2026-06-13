@@ -79,7 +79,7 @@ Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); t
 Catalog is now the **unified 467-record union** (239 SoundCloud + 228 YouTube), one canonical schema with `source` + `media`, 25 series.
 
 **Open / next (pick up here):**
-1. **Full ASR enrichment pass** — validated by the n=8 sample (robust across 2023→2026, all speakers). Plan: mlx-whisper `large-v3-turbo` locally (~30+ h for the 239 SC sermons → chunks/parallel/cloud, NOT one overnight) → **regex post-clean** (foi→fois, le→les, Dieu→dieux) → LLM-enrich topics/summary/series; correct opportunistically. Add a **default-speaker rule** for untagged sermons (artifact presence is a weak speaker signal).
+1. **Full ASR enrichment pass** — validated by the n=8 sample (robust across 2023→2026, all speakers). Plan: mlx-whisper `large-v3-turbo` locally (~15× real-time, measured on a full sermon ⇒ ~15 h for the 239 SC sermons, a couple of overnight runs) → **regex post-clean** (foi→fois, le→les, Dieu→dieux) → LLM-enrich topics/summary/series; correct opportunistically. Add a **default-speaker rule** for untagged sermons (artifact presence is a weak speaker signal).
 3. **JSON Schema + WP import** — freeze the canonical record contract; design the WordPress CPT/ACF import → first public deliverable (website sermon library).
 - *(Optional: also fold the 102 Live `Service` records in — currently only the 228 Videos-tab orphans are folded.)*
 
