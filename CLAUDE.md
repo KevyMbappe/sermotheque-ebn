@@ -74,13 +74,20 @@ Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); t
 
 **Enrichment pipeline** (per-sermon, M5):
 ```bash
-python3 -m unittest discover -s tests        # 20 tests, offline, no deps
-python3 pipeline/build_entry.py --soundcloud-url <url> --raw-title "<title>"   # real run
+python3 -m unittest discover -s tests        # 20 tests, offline, pure stdlib — no venv needed
+
+# one-time setup (everything project-local & gitignored):
+python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
+
+# real run (uses the .venv python so anthropic/yt-dlp/mlx-whisper are importable):
+ANTHROPIC_API_KEY=sk-... ./.venv/bin/python pipeline/build_entry.py --soundcloud-url <url> --raw-title "<title>"
 ```
-Runtime deps for a *real* run (the catalog-build scripts above are pure-stdlib; these are not):
-- **yt-dlp ≥ 2026.x** and **mlx-whisper** (`large-v3-turbo`) — currently installed in throwaway venvs `/tmp/ytdlp-venv` and `/tmp/asr-venv` (⚠️ **ephemeral `/tmp`** — recreate with `python3 -m venv` + `pip install yt-dlp mlx-whisper` if gone; paths are configurable at the top of `transcribe.py`).
-- **`anthropic` SDK + `ANTHROPIC_API_KEY`** for the enrich step (model `claude-sonnet-4-6`, ~$0.02/sermon). Without a key the deterministic steps still run; supply your own `enrich` fn.
-- Nothing critical lives only in `/tmp`: the pipeline is committed and re-runnable, and audio is re-downloadable — caches/transcripts can always be regenerated.
+Everything the pipeline needs lives **inside the project** (never `/tmp`):
+- **`.venv/`** (gitignored) — yt-dlp ≥ 2026.x, mlx-whisper, anthropic (see `requirements.txt`). `transcribe.py` defaults to `.venv/bin/*` (override via `SERMO_YTDLP` / `SERMO_MLX_WHISPER`).
+- **`cache/`** (gitignored) — downloaded audio + scratch; audio is deleted after transcription.
+- **`ANTHROPIC_API_KEY`** for the enrich step (model `claude-sonnet-4-6`, ~$0.02/sermon). Without it the deterministic steps still run; inject your own `enrich` fn.
+- The only thing *outside* the project is the Whisper model (~1.6 GB) in the standard `~/.cache/huggingface` shared ML cache — conventional and persistent, not scratch.
+- Nothing critical is unrecoverable: the pipeline is committed, audio re-downloadable, transcripts regenerable.
 
 ## Current status & next steps
 

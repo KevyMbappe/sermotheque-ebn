@@ -12,17 +12,19 @@ Two pieces:
                               Shelled out to the venv binaries so the core stays pure-stdlib and
                               importable without mlx/yt-dlp installed (tests inject a fake instead).
 """
+import os
 import re
 import subprocess
 import unicodedata
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-CACHE = ROOT / "cache"
+CACHE = ROOT / "cache"                       # gitignored: downloaded audio + scratch, in-project
 
-# Defaults are overridable (production installs these on PATH).
-YTDLP = "/tmp/ytdlp-venv/bin/yt-dlp"
-MLX_WHISPER = "/tmp/asr-venv/bin/mlx_whisper"
+# Tools live in the project-local .venv (gitignored), not /tmp. Overridable via env.
+_VENV_BIN = ROOT / ".venv" / "bin"
+YTDLP = os.environ.get("SERMO_YTDLP", str(_VENV_BIN / "yt-dlp"))
+MLX_WHISPER = os.environ.get("SERMO_MLX_WHISPER", str(_VENV_BIN / "mlx_whisper"))
 MODEL = "mlx-community/whisper-large-v3-turbo"
 
 # --- conservative ASR cleanup -------------------------------------------------

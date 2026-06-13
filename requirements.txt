@@ -1,0 +1,13 @@
+# Runtime deps for the enrichment pipeline (pipeline/transcribe.py + enrich.py).
+# The catalog-build pipeline and the test suite need NONE of these (pure stdlib).
+#
+# Set up the project-local environment (gitignored):
+#   python3 -m venv .venv && .venv/bin/pip install -r requirements.txt
+# Then run the real pipeline with:  .venv/bin/python pipeline/build_entry.py ...
+#
+# Apple Silicon required for mlx-whisper. The Whisper model (~1.6 GB) is cached by
+# huggingface_hub in the standard ~/.cache/huggingface (shared ML cache, not project scratch).
+
+yt-dlp>=2026.0      # needs the ≥2026.x layout support for YouTube
+mlx-whisper          # local ASR on Apple Silicon (large-v3-turbo)
+anthropic            # Claude API client for the enrich step (needs ANTHROPIC_API_KEY)
