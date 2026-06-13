@@ -97,10 +97,16 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         hp = Path(tmp) / "doc.html"
         hp.write_text(htmlc, encoding="utf-8")
-        subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
-                        f"--user-data-dir={tmp}/profile",
-                        f"--print-to-pdf={dst}", f"file://{hp}"],
-                       check=True, capture_output=True)
+        cmd = [CHROME, "--headless=new", "--disable-gpu", "--no-first-run",
+               "--no-default-browser-check", "--disable-extensions", "--no-pdf-header-footer",
+               f"--user-data-dir={tmp}/profile", f"--print-to-pdf={dst}", f"file://{hp}"]
+        # Headless Chrome sometimes writes the PDF but hangs on exit — cap it and move on.
+        try:
+            subprocess.run(cmd, capture_output=True, timeout=90)
+        except subprocess.TimeoutExpired:
+            pass
+    if not dst.exists() or dst.stat().st_size == 0:
+        raise SystemExit("PDF was not produced")
     print(f"Wrote {dst} ({dst.stat().st_size // 1024} KB)")
 
 
