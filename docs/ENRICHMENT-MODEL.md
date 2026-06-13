@@ -1,6 +1,6 @@
 # Enrichment model — bake-off, cost, and pricing reference
 
-**Last updated:** 2026-06-14 · Decisions [#40](../SERMOTHEQUE.md) (model + cost) and #41 (pluggable ASR).
+**Last updated:** 2026-06-14 · Decisions [#40](SERMOTHEQUE.md) (model + cost) and #41 (pluggable ASR).
 
 The enrichment step (`pipeline/enrich.py`) makes **one Claude API call per sermon** — it reads the
 ASR transcript and returns a French summary, topics, the primary passage, body-cited scripture

@@ -18,6 +18,7 @@ This reframe happened through a long planning conversation; the **two spec docs 
 |---|---|
 | **docs/SERMOTHEQUE.md** | ★ The primary project: sermon/service system-of-record spec (architecture, canonical schema, pipeline, backfill, roadmap, decisions). |
 | **docs/PRD.md** | The app suite (web/mobile/TV) — now a *downstream consumer* of the catalog. Full decision log. |
+| **docs/ENRICHMENT-MODEL.md** | Live reference: Haiku-vs-Sonnet bake-off, measured per-sermon cost, Claude pricing table. Consult before the full enrichment pass. |
 | **CLAUDE.md** | This file — orientation + current state. |
 | `pipeline/scripture.py` | Shared parsing primitives (OSIS book map, scripture/speaker/series parsing). Imported by the others. |
 | `pipeline/parse_catalog.py` · `match_youtube.py` · `fold_orphans.py` · `cluster_series.py` | **Catalog-build** pipeline (batch, pure-stdlib). `build.py` runs them in order. |
@@ -25,8 +26,9 @@ This reframe happened through a long planning conversation; the **two spec docs 
 | `pipeline/transcribe.py` · `enrich.py` | The two **injected** external steps: mlx-whisper adapter (+ `clean_transcript`) and Claude-API adapter. |
 | `tests/` | Stdlib `unittest` suite (offline). Run: `python3 -m unittest discover -s tests`. |
 | `tools/md_to_pdf.py` | Markdown → PDF via headless Chrome (used for SYNTHESE / spike PDFs). |
-| `docs/spike-asr/` | ASR spike evidence: `METHODOLOGY.md`, `RESULTS.md`/`.pdf`, sample `transcripts/`. |
+| `docs/research/` | **Historical evidence** (not living docs): the M3 ASR spike (`METHODOLOGY.md`, `RESULTS.md`/`.pdf`) + the M5b POC (`POC.md`/`.pdf`, `poc_entries.json`) + `spike-transcripts/` (the original slices the spike ran on). |
 | `data/raw/*.tsv` | Raw inventories pulled via `yt-dlp`. `data/catalog/` = canonical dataset (`catalog.json`/`.csv`, `series.json`, `youtube_orphans.json`, `transcripts/`). |
+| `data/catalog/transcripts/` | Canonical transcripts, **named `<entry-id>.<ext>`** (the `id` from `catalog.json`): `sc-<id>.txt` (plain) · `.vtt` (segment timing) · `.json` (word timing + confidence); later `.en.vtt` / `.pt.vtt` for translated subtitles. Filename = primary key; title/date live in the catalog, not the filename. |
 
 ## Architecture (three layers)
 
@@ -58,7 +60,7 @@ WordPress **authors but does not own**. The canonical dataset (this repo's `data
 - First-pass parse of the 239 SC titles: **82% scripture (OSIS)**, 87% clean title, 24 Bible books.
 - **22 series** auto-clustered: Galates 69, Hébreux 28, Jacques 14, Genèse 13, Ézéchiel 11, + thematic (Joie chrétienne, Noël…, Fruit de l'Esprit).
 - **YouTube ≠ SoundCloud mirror** (matcher finding): they are largely **complementary**. With full SC duration coverage (239/239) and a **duration fingerprint** (YT runs ~+51 s vs SC, calibrated) on top of title/scripture: **61** confirmed same-language overlaps + **11** EN↔FR translations; **228 YT videos are net-new** (conference ~45, English ~21, SC-absent French ~162). **True catalog = 467 distinct sermons** (union). Orphans (parsed) in `data/catalog/youtube_orphans.json`.
-- **ASR enrichment validated** (spike, `docs/spike-asr/METHODOLOGY.md`): mlx-whisper `large-v3-turbo` transcribes French sermons ~6× real-time locally; LLM topics/summary are confirm-don't-type quality. **Title → scripture; transcript → topics/summary/series/search.** Speaker inference needs a default rule, not ASR.
+- **ASR enrichment validated** (spike, `docs/research/METHODOLOGY.md`): mlx-whisper `large-v3-turbo` transcribes French sermons ~6× real-time locally; LLM topics/summary are confirm-don't-type quality. **Title → scripture; transcript → topics/summary/series/search.** Speaker inference needs a default rule, not ASR.
 
 ## How to run the pipeline
 
@@ -98,7 +100,7 @@ Everything the pipeline needs lives **inside the project** (never `/tmp`):
 Catalog is the **unified 467-record union** (239 SoundCloud + 228 YouTube), one canonical schema with `source` + `media`, 25 series. The per-sermon pipeline exists; it has NOT yet been run across the catalog.
 
 **Open / next (pick up here):**
-1. **POC DONE** (2026-06-14): real pipeline ran on the 8 sample sermons (full audio). **8 canonical transcripts now in `data/catalog/transcripts/`**; merged entries + Claude enrichment in `docs/spike-asr/poc_entries.json`; **elder-facing `docs/spike-asr/POC.{md,pdf}`** (5 pp). Scripture/kind parsed correctly incl. cross-chapter + the `Leçon`→teaching. **Enrichment is REAL**: ran `enrich.py` (Claude `sonnet-4-6`) on the 8 full transcripts (**$0.51 total ⇒ ~$0.06/sermon measured**; the earlier "~16¢/~$0.02" figure was Haiku pricing, not the Sonnet path actually run) — first execution of that path, validated; full-text summaries + **body-cited `scripture_refs` (3–15/sermon)**, far richer than the earlier slice version.
+1. **POC DONE** (2026-06-14): real pipeline ran on the 8 sample sermons (full audio). **8 canonical transcripts now in `data/catalog/transcripts/`**; merged entries + Claude enrichment in `docs/research/poc_entries.json`; **elder-facing `docs/research/POC.{md,pdf}`** (5 pp). Scripture/kind parsed correctly incl. cross-chapter + the `Leçon`→teaching. **Enrichment is REAL**: ran `enrich.py` (Claude `sonnet-4-6`) on the 8 full transcripts (**$0.51 total ⇒ ~$0.06/sermon measured**; the earlier "~16¢/~$0.02" figure was Haiku pricing, not the Sonnet path actually run) — first execution of that path, validated; full-text summaries + **body-cited `scripture_refs` (3–15/sermon)**, far richer than the earlier slice version.
 2. **Full ASR enrichment pass** — run `build_entry` across the catalog (~15× real-time ⇒ ~15 h for 239 SC sermons, a few overnight runs) → write topics/summary/transcript back to `catalog.json`. Needs `ANTHROPIC_API_KEY` for the enrich step: **~$0.06/sermon on Sonnet 4.6 ⇒ ~$12 for the 239 SC / ~$23 for the full 467** (Haiku 4.5 ≈ ⅓ that, but see decision #40 — Sonnet chosen for FR/theological precision). Add a **default-speaker rule** for untagged sermons.
 3. **JSON Schema + WP import** — freeze the canonical record contract; design the WordPress CPT/ACF import → first public deliverable (website sermon library).
 - *(Optional: also fold the 102 Live `Service` records in — currently only the 228 Videos-tab orphans are folded.)*
