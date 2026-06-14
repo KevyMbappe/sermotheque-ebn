@@ -106,7 +106,8 @@ def asr(audio_path, model=MODEL, mlx_whisper=MLX_WHISPER, word_timestamps=False,
     stem, out = audio_path.stem, audio_path.parent
     _run([mlx_whisper, str(audio_path), "--model", model, "--language", "fr",
           "--output-dir", str(out), "--output-name", stem,
-          "--output-format", "all", "--word-timestamps", "True" if word_timestamps else "False"],
+          "--output-format", "all", "--word-timestamps", "True" if word_timestamps else "False",
+          "--verbose", "False"],   # progress bar, not a live segment dump
          verbose)
     data = json.loads((out / f"{stem}.json").read_text(encoding="utf-8"))
     return {

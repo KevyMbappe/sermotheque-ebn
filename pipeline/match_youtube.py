@@ -20,8 +20,12 @@ ROOT = Path(__file__).resolve().parent.parent
 CAT = ROOT / "data" / "catalog" / "catalog.json"
 YT = ROOT / "data" / "raw" / "youtube_videos.tsv"
 
-TITLE_MATCH = 0.60
-TITLE_ASSIST = 0.30
+# Acceptance thresholds (decision #43). The duration fingerprint only CORROBORATES —
+# it can never carry a match on its own, because two unrelated ~59-min sermons collide
+# on length. A match must be carried by title or scripture agreement.
+TITLE_STRONG = 0.62      # strong title agreement alone confirms a match
+TITLE_WITH_DUR = 0.45    # title needed alongside a duration-fingerprint match (no scripture)
+TITLE_WITH_SCR = 0.25    # title needed alongside an exact-scripture match
 DUR_OFFSET = 50          # YouTube videos run ~50s longer than the SoundCloud audio (calibrated)
 DUR_TOL = 75             # tolerance around the offset (s)
 
@@ -83,25 +87,28 @@ def main():
 
     ranked = []
     for v in videos:
-        best, bs = None, 0.0
+        best, bs, bsig = None, 0.0, (0.0, False, False)
         vt = v["title"] or v["raw_title"]
         for i, s in enumerate(sermons):
-            sc = title_sim(vt, s["title"] or s["raw_title"])
-            if v["scripture_osis"] and v["scripture_osis"] == s.get("scripture_osis"):
-                sc += 0.4
+            ts = title_sim(vt, s["title"] or s["raw_title"])
+            scr = bool(v["scripture_osis"] and v["scripture_osis"] == s.get("scripture_osis"))
             vd, sd = v.get("duration"), s.get("audio_duration")
-            if vd and sd and abs((vd - DUR_OFFSET) - sd) <= DUR_TOL:
-                sc += 0.4                                   # duration fingerprint (YT ≈ SC + ~50s)
+            dur = bool(vd and sd and abs((vd - DUR_OFFSET) - sd) <= DUR_TOL)
+            sc = ts + (0.4 if scr else 0.0) + (0.4 if dur else 0.0)  # additive — ranking/reporting only
             if sc > bs:
-                best, bs = i, sc
-        ranked.append((v, best, bs))
+                best, bs, bsig = i, sc, (ts, scr, dur)
+        ranked.append((v, best, bs, bsig))
     ranked.sort(key=lambda r: -r[2])
 
     same_lang, translations, orphans = {}, {}, []
-    for v, idx, sc in ranked:
-        exact = idx is not None and v["scripture_osis"] and \
-            v["scripture_osis"] == sermons[idx].get("scripture_osis")
-        is_match = (sc >= TITLE_MATCH) or (exact and sc >= TITLE_ASSIST + 0.4)
+    for v, idx, sc, (ts, scr, dur) in ranked:
+        # Corroboration rule (#43): duration alone is never enough — title or scripture must carry it.
+        is_match = idx is not None and (
+            ts >= TITLE_STRONG                  # strong title agreement alone
+            or (scr and dur)                    # same passage + same length
+            or (scr and ts >= TITLE_WITH_SCR)   # same passage + some title overlap
+            or (dur and ts >= TITLE_WITH_DUR)   # same length + decent title (no scripture)
+        )
         if is_match and idx is not None:
             if v["language"] == "fr" and idx not in same_lang:
                 same_lang[idx] = (v, round(sc, 3))

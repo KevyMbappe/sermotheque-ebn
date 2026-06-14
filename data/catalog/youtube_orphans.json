@@ -1,5 +1,31 @@
 [
   {
+    "youtube_id": "snB851daJXk",
+    "duration": 3600,
+    "raw_title": "Introduction à l'épitre de Paul aux Galates (Gal.1:1-9) [GAL.001]",
+    "title": "Introduction à l'épitre de Paul aux",
+    "scripture_osis": "Gal",
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.826,
+    "best_sc_title": "Introduction | Pr. Stephan Kongo"
+  },
+  {
+    "youtube_id": "gj17HMaMOyY",
+    "duration": 2990,
+    "raw_title": "La Bible   3ème Partie",
+    "title": "La Bible 3ème Partie",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.788,
+    "best_sc_title": "Le célibat selon la Bible | Pr. David Pelosi"
+  },
+  {
     "youtube_id": "sjG__9VrXM0",
     "duration": 3055,
     "raw_title": "La Bible   1ère Partie",
@@ -11,6 +37,71 @@
     "kind": "sermon",
     "best_sc_score": 0.788,
     "best_sc_title": "Le célibat selon la Bible | Pr. David Pelosi"
+  },
+  {
+    "youtube_id": "uhX8wbxSQ1g",
+    "duration": 3537,
+    "raw_title": "Aimer Dieu de Tout Coeur [Chasse au Roi : 4/8]",
+    "title": "Aimer Dieu de Tout Coeur [Chasse au Roi : 4/8]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.757,
+    "best_sc_title": "L'image de Dieu au coeur de l'anthropologie ( Chapitre IV, partie 6 ) Genèse 1 : 26 - 31"
+  },
+  {
+    "youtube_id": "NDCyRMRt6xw",
+    "duration": 3600,
+    "raw_title": "Paul, the Theologian, Evangelist, and Christian (Gal. 1:1-5) [GAL.003]",
+    "title": "Paul, the Theologian, Evangelist, and Christian [GAL.003]",
+    "scripture_osis": null,
+    "language": "en",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.742,
+    "best_sc_title": "Paul, l'homme théologien, évangéliste, chrétien | Galates 1:1-5"
+  },
+  {
+    "youtube_id": "Tqu-GLCEgbA",
+    "duration": 3205,
+    "raw_title": "Being a Witness of Christ",
+    "title": "Being a Witness of Christ",
+    "scripture_osis": null,
+    "language": "en",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.724,
+    "best_sc_title": "Être témoins de Christ | Actes 8 : 26 - 35 (Pr. David Pelosi)"
+  },
+  {
+    "youtube_id": "FDcy9KUQM6s",
+    "duration": 2560,
+    "raw_title": "Comment Voir Dieu? [Des Yeux pour Voir - 04]",
+    "title": "Comment Voir Dieu? [Des Yeux pour Voir - 04]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.722,
+    "best_sc_title": "Comment Dieu est glorifié dans notre repentance ? | Ézéchiel 6 : 9 - 10"
+  },
+  {
+    "youtube_id": "yCBKVjfAfhQ",
+    "duration": 3405,
+    "raw_title": "Le Vrai Christ : L'Abandonné de Dieu [cROIx 08/13]",
+    "title": "Le Vrai Christ : L'Abandonné de Dieu [cROIx 08/13]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.714,
+    "best_sc_title": "La Providence de Dieu centrée sur Christ | Éphésiens 1 : 3 - 14"
   },
   {
     "youtube_id": "LAcVjq-mfJc",
@@ -26,6 +117,45 @@
     "best_sc_title": "Le célibat selon la Bible | Pr. David Pelosi"
   },
   {
+    "youtube_id": "oLoNQjP0ZoU",
+    "duration": 2652,
+    "raw_title": "A LA RECHERCHE DU BONHEUR 3/6",
+    "title": "A LA RECHERCHE DU BONHEUR 3/6",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.71,
+    "best_sc_title": "Le chemin vers le bonheur chrétien | Jacques 1 : 25 (Partie II)"
+  },
+  {
+    "youtube_id": "Tq-6inKs7nk",
+    "duration": 3583,
+    "raw_title": "Paul, the Natural Man (Gal. 1:1-5) [GAL.002]",
+    "title": "Paul, the Natural Man [GAL.002]",
+    "scripture_osis": null,
+    "language": "en",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.706,
+    "best_sc_title": "Paul, l'homme naturel | Galates 1:1-5"
+  },
+  {
+    "youtube_id": "1tLNBV_tWBo",
+    "duration": 3149,
+    "raw_title": "Que voulez-vous de Dieu? [deCOURAGEment 06]",
+    "title": "Que voulez-vous de Dieu? [deCOURAGEment 06]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.697,
+    "best_sc_title": "La Parole de Dieu met à nu | Hébreux 4:12-13"
+  },
+  {
     "youtube_id": "nTrSEHDkXqM",
     "duration": 1578,
     "raw_title": "Questions et Réponses - Leçons 1 - 3 ( Gn.1-3 )",
@@ -37,6 +167,123 @@
     "kind": "qa",
     "best_sc_score": 0.695,
     "best_sc_title": "2025_10_31 Questions et Réponses | Nathanaël Fis"
+  },
+  {
+    "youtube_id": "lWtea4iQzKw",
+    "duration": 2741,
+    "raw_title": "Inspiré de Dieu (Parole de Dieu 3/5)",
+    "title": "Inspiré de Dieu",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.691,
+    "best_sc_title": "L'amour extraordinaire du Dieu trinitaire | Jean 3 : 16"
+  },
+  {
+    "youtube_id": "m4U4zENp9KY",
+    "duration": 3679,
+    "raw_title": "L'argent à la place de Dieu [FAUX DIEUX 2/7]",
+    "title": "L'argent à la place de Dieu [FAUX DIEUX 2/7]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.683,
+    "best_sc_title": "Introduction à l'Alliance de Dieu | Genèse 3 : 9 - 24"
+  },
+  {
+    "youtube_id": "HOjW63LMfhQ",
+    "duration": 4480,
+    "raw_title": "Authentic Conversion, Responsible Ambassadors",
+    "title": "Authentic Conversion, Responsible Ambassadors",
+    "scripture_osis": null,
+    "language": "en",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.681,
+    "best_sc_title": "Conversion authentique, embassadeurs responsables | Actes 8 : 29 - 40 (Pr. David Pelosi)"
+  },
+  {
+    "youtube_id": "HGLROgzi8Z0",
+    "duration": 3774,
+    "raw_title": "Intimité Abominable (Mc.14:10,11)  [Divin Orchestre 03/13]",
+    "title": "Intimité Abominable [Divin Orchestre 03/13]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.679,
+    "best_sc_title": "L'aspect abominable de l'inimitié | Galates 5 : 20"
+  },
+  {
+    "youtube_id": "yxvHbUvdq0Y",
+    "duration": 2996,
+    "raw_title": "L'incredulité choque Dieu  -  [deCOURAGEment 01]",
+    "title": "L'incredulité choque Dieu - [deCOURAGEment 01]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.676,
+    "best_sc_title": "Être l'aide en Dieu : Pour le ministre"
+  },
+  {
+    "youtube_id": "rXcYUL5ab6Y",
+    "duration": 3580,
+    "raw_title": "Ce qui est à César et ce qui est à Dieu [Chasse au Roi : 2/8]",
+    "title": "Ce qui est à César et ce qui est à Dieu [Chasse au Roi : 2/8]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.672,
+    "best_sc_title": "Le Décret Éternel de Dieu est tout inclusif | Éphésiens 1 : 3 - 12"
+  },
+  {
+    "youtube_id": "izcZo4l8SIQ",
+    "duration": 3600,
+    "raw_title": "L'Indéniable Divinité du Christ [Chasse au Roi : 6/8]",
+    "title": "L'Indéniable Divinité du Christ [Chasse au Roi : 6/8]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.667,
+    "best_sc_title": "La victoire de Christ sur les idoles du cœur | Galates 5 : 20"
+  },
+  {
+    "youtube_id": "1Bh1GAvozDE",
+    "duration": 3862,
+    "raw_title": "Christ, le centre de l'Histoire | Dr  Hensworth Jonas | CBN8 Paris 2024 | Intervention 03/10",
+    "title": "Christ, le centre de l'Histoire | Dr Hensworth",
+    "scripture_osis": "Jonah",
+    "language": "en",
+    "is_conference": true,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.667,
+    "best_sc_title": "Christ, Prêtre et Roi de paix | Hébreux 7 : 1 - 2"
+  },
+  {
+    "youtube_id": "5S_axblPJhE",
+    "duration": 3431,
+    "raw_title": "Le Retour Glorieux du Christ [La Fin des Temps 10]",
+    "title": "Le Retour Glorieux du Christ [La Fin des Temps 10]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.667,
+    "best_sc_title": "La glorieuse humiliation du Christ | Hébreux 2:9-10"
   },
   {
     "youtube_id": "zJhVVp9LNxg",
@@ -78,6 +325,58 @@
     "best_sc_title": "L'image de Dieu au coeur de l'anthropologie ( Chapitre IV, partie 6 ) Genèse 1 : 26 - 31"
   },
   {
+    "youtube_id": "CYYRlnPVCd8",
+    "duration": 2865,
+    "raw_title": "Faites briller la lumière de Dieu",
+    "title": "Faites briller la lumière de Dieu",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.66,
+    "best_sc_title": "Nouvelle naissance : œuvre souveraine de Dieu | Jean 3 : 1 - 10"
+  },
+  {
+    "youtube_id": "P7WSbckY-lc",
+    "duration": 3820,
+    "raw_title": "La Seule Conception de Jésus qui Sauve ( Mc.15:1-15 ) [cROIx 02/13]",
+    "title": "La Seule Conception de Jésus qui Sauve [cROIx 02/13]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.656,
+    "best_sc_title": "La conception biblique de la paix de l'Esprit | Galates 5 : 22"
+  },
+  {
+    "youtube_id": "aVbo4n0fl4k",
+    "duration": 3742,
+    "raw_title": "Prier selon le cœur de Dieu (Partie V) | Psaume 40 : 1 - 17",
+    "title": "Prier selon le cœur de Dieu",
+    "scripture_osis": "Ps.40.1-Ps.40.17",
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.656,
+    "best_sc_title": "Les quatre états de l'image de Dieu chez l'homme | Colossiens 3 : 1 - 11"
+  },
+  {
+    "youtube_id": "IqNmh_XGULE",
+    "duration": 3555,
+    "raw_title": "Prier selon le cœur de Dieu (Partie IV) | Psaume 40 : 1 - 17",
+    "title": "Prier selon le cœur de Dieu",
+    "scripture_osis": "Ps.40.1-Ps.40.17",
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.656,
+    "best_sc_title": "Image de Dieu : être et fonction | Genèse 1 : 26 - 2 : 3"
+  },
+  {
     "youtube_id": "CZkmvAvA4ds",
     "duration": 3427,
     "raw_title": "La Maison du Dieu Omniprésent [ Au DELA de la VUE 9/9 ]",
@@ -117,6 +416,45 @@
     "best_sc_title": "Questions et Réponses | La Providence de Dieu"
   },
   {
+    "youtube_id": "mNqY4f0CYoA",
+    "duration": 2906,
+    "raw_title": "Seulement la Foi [ REF500 2/5 ]",
+    "title": "Seulement la Foi [ REF500 2/5 ]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.65,
+    "best_sc_title": "Confession de foi ( Chapitre IV, partie 9 ) | Colossiens 1 : 9 - 20"
+  },
+  {
+    "youtube_id": "MnyxTg1ZsUU",
+    "duration": 2834,
+    "raw_title": "Impossible Faire Taire la Voix de Dieu [deCOURAGEment 03]",
+    "title": "Impossible Faire Taire la Voix de Dieu [deCOURAGEment 03]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.649,
+    "best_sc_title": "Être l'aide en Dieu : Pour l'Église"
+  },
+  {
+    "youtube_id": "1fW75nneR_U",
+    "duration": 3302,
+    "raw_title": "Le Soin Minutieusement Souverain de Dieu [PEUPLE DE DIEU 02/15]",
+    "title": "Le Soin Minutieusement Souverain de Dieu [PEUPLE DE DIEU 02/15]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.648,
+    "best_sc_title": "Le Décret Éternel de Dieu : La prédestination des Saints | Éphésiens 1 : 3 - 12"
+  },
+  {
     "youtube_id": "Q9A-bZnqZk4",
     "duration": 3624,
     "raw_title": "Distingués par la Gloire de Dieu - La Pâque [PEUPLE DE DIEU 15/15]",
@@ -128,6 +466,19 @@
     "kind": "sermon",
     "best_sc_score": 0.647,
     "best_sc_title": "Introduction à l'Alliance de Dieu | Genèse 3 : 9 - 24"
+  },
+  {
+    "youtube_id": "WNAfTDl54b8",
+    "duration": 3662,
+    "raw_title": "Une toute nouvelle histoire avec Dieu | Dr Joel Beeke | CBN8 Paris 2024 | Intervention 07/10",
+    "title": "Une toute nouvelle histoire avec Dieu | Dr",
+    "scripture_osis": "Joel",
+    "language": "en",
+    "is_conference": true,
+    "speaker": "Joël Beeke",
+    "kind": "sermon",
+    "best_sc_score": 0.646,
+    "best_sc_title": "La supériorité de la nouvelle alliance | Hébreux 1 : 1 - 4"
   },
   {
     "youtube_id": "UDD4dPk7k8I",
@@ -167,6 +518,19 @@
     "kind": "sermon",
     "best_sc_score": 0.643,
     "best_sc_title": "La victoire de Christ sur les idoles du cœur | Galates 5 : 20"
+  },
+  {
+    "youtube_id": "WstQhX81KQ8",
+    "duration": 3383,
+    "raw_title": "Mutiler la Chair pour Préserver l'Esprit (Ciel sur Terre - Partie 10/10)",
+    "title": "Mutiler la Chair pour Préserver l'Esprit",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.642,
+    "best_sc_title": "Introduction au fruit de l'Esprit  |  Galates Ch. 5 : 13 - 26"
   },
   {
     "youtube_id": "TzuREsU3I1Q",
@@ -234,6 +598,19 @@
     "best_sc_title": "Introduction à l'Alliance de Dieu | Genèse 3 : 9 - 24"
   },
   {
+    "youtube_id": "Uw9lmjSwI_I",
+    "duration": 3587,
+    "raw_title": "La Vraie Identité du Christ attestée par les Miracles du Saint Esprit [cROIx 07/13]",
+    "title": "La Vraie Iden",
+    "scripture_osis": "Titus",
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.635,
+    "best_sc_title": "La crainte de l'homme | Proverbes 29 : 25"
+  },
+  {
     "youtube_id": "a9w2mYesTag",
     "duration": 3541,
     "raw_title": "Participer aux Victoires de Dieu - Partie 1 [AU DELA de la VUE 6/9]",
@@ -245,6 +622,19 @@
     "kind": "sermon",
     "best_sc_score": 0.635,
     "best_sc_title": "L'image de Dieu au coeur de l'anthropologie ( Chapitre IV, partie 6 ) Genèse 1 : 26 - 31"
+  },
+  {
+    "youtube_id": "o4hWvXrGs8k",
+    "duration": 3642,
+    "raw_title": "La Maison Centré sur l'Évangile  [ Don Currin ]",
+    "title": "La Maison Centré sur l'Évangile [ Don Currin ]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.634,
+    "best_sc_title": "La foi authentique : promouvoir la liberté par le don de soi | Galates 6 : 12 - 13"
   },
   {
     "youtube_id": "-h6mzp9I55Q",
@@ -273,6 +663,32 @@
     "best_sc_title": "Les quatre états de l'image de Dieu chez l'homme | Colossiens 3 : 1 - 11"
   },
   {
+    "youtube_id": "KWA5Y3jbTEE",
+    "duration": 3286,
+    "raw_title": "L'activité centrale du peuple de Dieu [ Famille de foi | David Pelosi ]",
+    "title": "L'activité centrale du peuple de Dieu [ Famille de foi | ]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": "David Pelosi",
+    "kind": "sermon",
+    "best_sc_score": 0.633,
+    "best_sc_title": "L'image de Dieu au coeur de l'anthropologie ( Chapitre IV, partie 5 ) Genèse 1 : 26 - 31"
+  },
+  {
+    "youtube_id": "rgbmlAWOFnY",
+    "duration": 3493,
+    "raw_title": "EBN - Famille de foi - João Cardoso - Ago 2015",
+    "title": "EBN - Famille de foi - João Cardoso - Ago 2015",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.631,
+    "best_sc_title": "Confession de foi ( Chapitre IV, partie 3 ) | Genèse 1 :  1 - 5"
+  },
+  {
     "youtube_id": "yFhiUBP6BgY",
     "duration": 3780,
     "raw_title": "Dieu est au-delà de nos limitations [PEUPLE DE DIEU 05/15]",
@@ -297,6 +713,19 @@
     "kind": "sermon",
     "best_sc_score": 0.628,
     "best_sc_title": "Être l'aide en Dieu : Pour l'Église"
+  },
+  {
+    "youtube_id": "qD2RGp-rp-I",
+    "duration": 3323,
+    "raw_title": "Le Danger d'Abuser de la Grâce de Dieu [Chasse au Roi : 1/8]",
+    "title": "Le Danger d'Abuser de la Grâce de Dieu [Chasse au Roi : 1/8]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.628,
+    "best_sc_title": "Le triomphe de Christ dans le cœur des enfants de Dieu | Jean 1 : 1 - 13 (Christian Bouedjoro)"
   },
   {
     "youtube_id": "yyt3wv39lFc",
@@ -351,6 +780,19 @@
     "best_sc_title": "Confession de foi ( Chapitre IV, partie 9 ) | Colossiens 1 : 9 - 20"
   },
   {
+    "youtube_id": "XXGAfEVaQ6k",
+    "duration": 3828,
+    "raw_title": "Aucun rival n'est à la hauteur de l'Éternel [PEUPLE DE DIEU 13/15]",
+    "title": "Aucun rival n'est à la hauteur de l'Éternel [PEUPLE DE DIEU 13/15]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.626,
+    "best_sc_title": "Un refuge éternel dans un pèlerinage éphémère"
+  },
+  {
     "youtube_id": "x3Q6QMNyEj0",
     "duration": 3253,
     "raw_title": "Le Salut est de Dieu par Dieu et pou Dieu [Pâques 2017]",
@@ -362,6 +804,19 @@
     "kind": "sermon",
     "best_sc_score": 0.626,
     "best_sc_title": "Le Décret Éternel de Dieu : La prédestination des Saints | Éphésiens 1 : 3 - 12"
+  },
+  {
+    "youtube_id": "_E8Q6GcAvtw",
+    "duration": 2807,
+    "raw_title": "Paul Washer - Le Dieu de la Parole - Q&R 13/11/2016",
+    "title": "Paul Washer - Le Dieu de la Parole - Q&R 13/11/2016",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.625,
+    "best_sc_title": "Être l'aide en Dieu : Pour le mari et le père"
   },
   {
     "youtube_id": "d7fLsUeRJsQ",
@@ -390,6 +845,32 @@
     "best_sc_title": "Introduction à l'Alliance de Dieu | Genèse 3 : 9 - 24"
   },
   {
+    "youtube_id": "srNVCECQC8c",
+    "duration": 2971,
+    "raw_title": "Comment Semer un Coeur Enseignable [Des Yeux pour Voir - 03]",
+    "title": "Comment Semer un Coeur Enseignable [Des Yeux pour Voir - 03]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.624,
+    "best_sc_title": "Pourquoi et comment exercer la libéralité | Pr. Loïc Rakotozafy"
+  },
+  {
+    "youtube_id": "4Q_jOMO_YkY",
+    "duration": 3079,
+    "raw_title": "Matinée Pastorale avec Paul Washer : l'Église du Christ à la Manière du Christ",
+    "title": "Matinée Pastorale avec Paul Washer : l'Église du Christ à la Manière du Christ",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.623,
+    "best_sc_title": "Soumettre Mamon à Christ en tant qu'Eglise  | Pr. David Pelosi"
+  },
+  {
     "youtube_id": "c4kkYeEFvS0",
     "duration": 3710,
     "raw_title": "Un Coeur Selon Dieu [ AU DELA de la VUE 5/9 ]",
@@ -414,6 +895,58 @@
     "kind": "sermon",
     "best_sc_score": 0.622,
     "best_sc_title": "La glorieuse humiliation du Christ | Hébreux 2:9-10"
+  },
+  {
+    "youtube_id": "nwYiAUfLA9I",
+    "duration": 3748,
+    "raw_title": "Participer aux Victoires de Dieu - Partie 2 [AU DELA de la VUE 7/9]",
+    "title": "Participer aux Victoires de Dieu - Partie 2 [AU DELA de la VUE 7/9]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.622,
+    "best_sc_title": "Noël le plus glorieux des mystères : Dieu en chair cru dans le monde | 1 Tim 3 : 14 - 16"
+  },
+  {
+    "youtube_id": "KB5SXgKGvuw",
+    "duration": 3568,
+    "raw_title": "Jésus, Roi du Temple : l'essence de la vraie religion [ Roi Jésus - 04/06 ]",
+    "title": "Jésus, Roi du Temple : l'essence de la vraie religion [ Roi Jésus - 04/06 ]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.621,
+    "best_sc_title": "Dédicace du Temple : Christ notre lieu d'adoration | 1 Rois 8 : 27 (Pr. David Pelosi)"
+  },
+  {
+    "youtube_id": "CIOgYkQwjKs",
+    "duration": 2993,
+    "raw_title": "Le Rôle Central de la Résurrection (Ciel sur Terre - Partie 3)",
+    "title": "Le Rôle Central de la Résurrection",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.62,
+    "best_sc_title": "La lecture naturelle de la création | Genèse 1 : 1 - 2 : 3"
+  },
+  {
+    "youtube_id": "IZdVCiBe4XU",
+    "duration": 4195,
+    "raw_title": "L'Appel d'un Homme de Dieu [ AU DELA de la VUE 2/9 ]",
+    "title": "L'Appel d'un Homme de Dieu [ AU DELA de la VUE 2/9 ]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.619,
+    "best_sc_title": "Noël le plus glorieux des mystères : Dieu en chair élevé dans la gloire | 1 Tim 3 : 14 - 16"
   },
   {
     "youtube_id": "jnIFvHzwcFA",
@@ -494,6 +1027,71 @@
     "best_sc_title": "Les quatre états de l'image de Dieu chez l'homme | Colossiens 3 : 1 - 11"
   },
   {
+    "youtube_id": "r2phMiy2ymg",
+    "duration": 4236,
+    "raw_title": "Galates 6 : 16 - 18 | Dimanche 29/03",
+    "title": null,
+    "scripture_osis": "Gal.6.16-Gal.6.18",
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.612,
+    "best_sc_title": "2026_03_15 | Galates 6 : 14"
+  },
+  {
+    "youtube_id": "tI4dba2n9JA",
+    "duration": 3182,
+    "raw_title": "l'Esclavage de la Religion et le Vrai Problème de l'Homme [Religion Vaine 02]",
+    "title": "l'Esclavage de la Religion et le Vrai Problème de l'Homme [Religion Vaine 02]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.612,
+    "best_sc_title": "Introduction á la chute de l'homme | Genèse 3 : 1 - 8"
+  },
+  {
+    "youtube_id": "2I1d-K_d-kM",
+    "duration": 3708,
+    "raw_title": "Les Écritures Accomplies à la Croix (1/2) ( Mc.15:20-32 ) [cROIx 04/13]",
+    "title": "Les Écritures Accomplies à la Croix [cROIx 04/13]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.611,
+    "best_sc_title": "Jésus : le vrai sacerdoce selon les Écritures | Hébreux 6 : 20"
+  },
+  {
+    "youtube_id": "uNwWgjbrlJE",
+    "duration": 3878,
+    "raw_title": "Paul Washer - Le Dieu de la Parole",
+    "title": "Paul Washer - Le Dieu de la Parole",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.61,
+    "best_sc_title": "Noël le plus glorieux des mystères : Dieu en chair vu par les anges | 1 Tim 3 : 14 - 16"
+  },
+  {
+    "youtube_id": "zmN8-ErWh6s",
+    "duration": 3594,
+    "raw_title": "La prière qui triomphe sur l'Épreuve - Gethsémani [Divin Orchestre 08/13]",
+    "title": "La prière qui triomphe sur l'Épreuve - Gethsémani [Divin Orchestre 08/13]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.61,
+    "best_sc_title": "Quand l'épreuve devient tentation | Jacques 1 : 12 - 15"
+  },
+  {
     "youtube_id": "0aNrtKizDTQ",
     "duration": 3299,
     "raw_title": "L'Histoire humaine séparée de Dieu | Pr  Vincent Lemieux | CBN8 Paris 2024 | Intervention 02/10",
@@ -520,6 +1118,32 @@
     "best_sc_title": "Image de Dieu : être et fonction | Genèse 1 : 26 - 2 : 3"
   },
   {
+    "youtube_id": "TDvPFzqCvy4",
+    "duration": 3815,
+    "raw_title": "Jésus notre Justice [Divin Orchestre 11/13]",
+    "title": "Jésus notre Justice [Divin Orchestre 11/13]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.605,
+    "best_sc_title": "La beauté de notre nouvelle naissance | Jacques 1 : 16 - 18"
+  },
+  {
+    "youtube_id": "rqJ_E6GUMOk",
+    "duration": 3866,
+    "raw_title": "Le responsable ultime de la mort du Christ (Mc.14:1,2) [Divin Orchestre 01/13]",
+    "title": "Le responsable ultime de la mort du Christ [Divin Orchestre 01/13]",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.604,
+    "best_sc_title": "La nature divine du sacerdoce de Christ | Hébreux 4:14"
+  },
+  {
     "youtube_id": "kHnECRMIPp4",
     "duration": 3526,
     "raw_title": "4. L'Évangile du Christ est la Justification par la foi | Conrad Mbewe",
@@ -531,6 +1155,32 @@
     "kind": "sermon",
     "best_sc_score": 0.603,
     "best_sc_title": "Dédicace du Temple : Christ notre lieu d'adoration | 1 Rois 8 : 27 (Pr. David Pelosi)"
+  },
+  {
+    "youtube_id": "MSJ73JEu1uI",
+    "duration": 3964,
+    "raw_title": "La pauvre la plus riche : l'offrande qui plaît Dieu le plus",
+    "title": "La pauvre la plus riche : l'offrande qui plaît Dieu le plus",
+    "scripture_osis": null,
+    "language": "fr",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.602,
+    "best_sc_title": "Gérer les biens de Dieu sous nos soins | Pr. David Pelosi"
+  },
+  {
+    "youtube_id": "EogCnlGv9hE",
+    "duration": 3661,
+    "raw_title": "1. The Evangelization of Christ versus the Materialistic \"Gospel\" | Conrad Mbewe",
+    "title": "1. The Evangelization of Christ versus the Materialistic \"Gospel\" | Conrad Mbewe",
+    "scripture_osis": null,
+    "language": "en",
+    "is_conference": false,
+    "speaker": null,
+    "kind": "sermon",
+    "best_sc_score": 0.602,
+    "best_sc_title": "La victoire de Christ sur les idoles du cœur | Galates 5 : 20"
   },
   {
     "youtube_id": "TB7R8erBUxY",

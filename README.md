@@ -23,7 +23,7 @@ YouTube, SoundCloud, the website, and any future mobile/TV apps are all just *re
 | Scripture coverage (OSIS) | **82%**, across 24 books of the Bible |
 | Series auto-clustered | **22** (e.g. Épître aux Galates ×69, aux Hébreux ×28) |
 | YouTube inventory | 300 cut sermons + 102 full services |
-| YouTube ↔ SoundCloud | largely **complementary** — duration fingerprint confirms 61 overlaps + 11 translations; true catalog = **union (467)** |
+| YouTube ↔ SoundCloud | largely **complementary** — corroborated matcher (decision #43) confirms 18 overlaps + 4 translations; true catalog = **union (517)** |
 
 ## Architecture
 
@@ -74,11 +74,12 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **M1** — first-pass catalog from SoundCloud titles
 - [x] **M1b** — series clustering (expository + thematic)
 - [x] **M2** — YouTube ↔ SoundCloud matching (found: largely complementary, not a mirror)
-- [x] **M2b** — YT↔SC dedup via duration fingerprint, full coverage (61 overlaps + 11 translations; 228 net-new; union 467)
+- [x] **M2b** — YT↔SC dedup via duration fingerprint, full coverage
 - [x] **M3** — ASR + LLM enrichment spike (PASS — see `docs/research/METHODOLOGY.md`)
-- [x] **M4** — fold YT orphans into one unified catalog (467 records, canonical schema, 25 series)
-- [ ] ASR enrichment: bigger sample → full pass (transcripts, topics, summaries)
-- [ ] JSON Schema + WordPress import (first public deliverable)
+- [x] **M4** — fold YT orphans into one unified catalog (canonical schema, 26 series)
+- [x] **M5** — per-sermon enrichment pipeline (`build_entry`) + timestamps + live cost tracking
+- [x] **M5h** — matcher hardening: duration only corroborates (18 overlaps + 4 translations; **union 517**; decision #43)
+- [ ] Enrichment writeback layer (decision #44) → full ASR enrichment pass (transcripts, topics, summaries)
 - [ ] JSON Schema + WordPress import → website sermon library (first public deliverable)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 

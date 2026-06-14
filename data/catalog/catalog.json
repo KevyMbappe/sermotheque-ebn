@@ -251,9 +251,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2284148612",
-      "youtube_id": "r2phMiy2ymg"
+      "youtube_id": null
     },
-    "youtube_match": 0.612,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -347,13 +347,7 @@
       "youtube_id": "lQJIB1N_Jl4"
     },
     "youtube_match": 1.8,
-    "translation_candidates": [
-      {
-        "youtube_id": "1Bh1GAvozDE",
-        "title": "Christ, le centre de l'Histoire | Dr  Hensworth Jonas | CBN8 Paris 2024 | Intervention 03/10",
-        "language": "en"
-      }
-    ],
+    "translation_candidates": [],
     "topics": [],
     "summary": null,
     "transcript_ref": null
@@ -384,13 +378,7 @@
       "youtube_id": null
     },
     "youtube_match": null,
-    "translation_candidates": [
-      {
-        "youtube_id": "WNAfTDl54b8",
-        "title": "Une toute nouvelle histoire avec Dieu | Dr Joel Beeke | CBN8 Paris 2024 | Intervention 07/10",
-        "language": "en"
-      }
-    ],
+    "translation_candidates": [],
     "topics": [],
     "summary": null,
     "transcript_ref": null
@@ -449,9 +437,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2262405503",
-      "youtube_id": "o4hWvXrGs8k"
+      "youtube_id": null
     },
-    "youtube_match": 0.634,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -511,9 +499,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2259635702",
-      "youtube_id": "lWtea4iQzKw"
+      "youtube_id": null
     },
-    "youtube_match": 0.691,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -604,9 +592,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2258331260",
-      "youtube_id": "KB5SXgKGvuw"
+      "youtube_id": null
     },
-    "youtube_match": 0.621,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -759,9 +747,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2250427724",
-      "youtube_id": "m4U4zENp9KY"
+      "youtube_id": null
     },
-    "youtube_match": 0.683,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -1261,9 +1249,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2178138930",
-      "youtube_id": "P7WSbckY-lc"
+      "youtube_id": null
     },
-    "youtube_match": 0.656,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -1450,13 +1438,7 @@
       "youtube_id": null
     },
     "youtube_match": null,
-    "translation_candidates": [
-      {
-        "youtube_id": "HOjW63LMfhQ",
-        "title": "Authentic Conversion, Responsible Ambassadors",
-        "language": "en"
-      }
-    ],
+    "translation_candidates": [],
     "topics": [],
     "summary": null,
     "transcript_ref": null
@@ -1484,9 +1466,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2173529298",
-      "youtube_id": "tI4dba2n9JA"
+      "youtube_id": null
     },
-    "youtube_match": 0.612,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -1577,9 +1559,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2167749627",
-      "youtube_id": "TDvPFzqCvy4"
+      "youtube_id": null
     },
-    "youtube_match": 0.605,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -1608,9 +1590,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2167749246",
-      "youtube_id": "zmN8-ErWh6s"
+      "youtube_id": null
     },
-    "youtube_match": 0.61,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -1704,13 +1686,7 @@
       "youtube_id": null
     },
     "youtube_match": null,
-    "translation_candidates": [
-      {
-        "youtube_id": "Tqu-GLCEgbA",
-        "title": "Being a Witness of Christ",
-        "language": "en"
-      }
-    ],
+    "translation_candidates": [],
     "topics": [],
     "summary": null,
     "transcript_ref": null
@@ -1738,9 +1714,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2163682815",
-      "youtube_id": "FDcy9KUQM6s"
+      "youtube_id": null
     },
-    "youtube_match": 0.722,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -2048,9 +2024,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2133651906",
-      "youtube_id": "CYYRlnPVCd8"
+      "youtube_id": null
     },
-    "youtube_match": 0.66,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -2110,9 +2086,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2124804168",
-      "youtube_id": "Uw9lmjSwI_I"
+      "youtube_id": null
     },
-    "youtube_match": 0.635,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -2141,9 +2117,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2121638127",
-      "youtube_id": "2I1d-K_d-kM"
+      "youtube_id": null
     },
-    "youtube_match": 0.611,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -2234,9 +2210,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2117114544",
-      "youtube_id": "yCBKVjfAfhQ"
+      "youtube_id": null
     },
-    "youtube_match": 0.714,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -2513,9 +2489,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2088231870",
-      "youtube_id": "MnyxTg1ZsUU"
+      "youtube_id": null
     },
-    "youtube_match": 0.649,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -2544,9 +2520,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2088230982",
-      "youtube_id": "yxvHbUvdq0Y"
+      "youtube_id": null
     },
-    "youtube_match": 0.676,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -2575,9 +2551,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2088230604",
-      "youtube_id": "_E8Q6GcAvtw"
+      "youtube_id": null
     },
-    "youtube_match": 0.625,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -2668,9 +2644,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2077120036",
-      "youtube_id": "mNqY4f0CYoA"
+      "youtube_id": null
     },
-    "youtube_match": 0.65,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -2792,9 +2768,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2060412908",
-      "youtube_id": "aVbo4n0fl4k"
+      "youtube_id": null
     },
-    "youtube_match": 0.656,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -2947,9 +2923,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2053260992",
-      "youtube_id": "uhX8wbxSQ1g"
+      "youtube_id": null
     },
-    "youtube_match": 0.757,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -3040,9 +3016,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2039462392",
-      "youtube_id": "KWA5Y3jbTEE"
+      "youtube_id": null
     },
-    "youtube_match": 0.633,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -3139,9 +3115,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2024353268",
-      "youtube_id": "WstQhX81KQ8"
+      "youtube_id": null
     },
-    "youtube_match": 0.642,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -3170,9 +3146,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2020464289",
-      "youtube_id": "IZdVCiBe4XU"
+      "youtube_id": null
     },
-    "youtube_match": 0.619,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -3201,9 +3177,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2018139389",
-      "youtube_id": "rgbmlAWOFnY"
+      "youtube_id": null
     },
-    "youtube_match": 0.631,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -3232,9 +3208,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2012677347",
-      "youtube_id": "nwYiAUfLA9I"
+      "youtube_id": null
     },
-    "youtube_match": 0.622,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -3356,9 +3332,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "2002238743",
-      "youtube_id": "uNwWgjbrlJE"
+      "youtube_id": null
     },
-    "youtube_match": 0.61,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -3387,9 +3363,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1996734623",
-      "youtube_id": "qD2RGp-rp-I"
+      "youtube_id": null
     },
-    "youtube_match": 0.628,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -4317,9 +4293,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1954723351",
-      "youtube_id": "HGLROgzi8Z0"
+      "youtube_id": null
     },
-    "youtube_match": 0.679,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -4379,9 +4355,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1947861891",
-      "youtube_id": "CIOgYkQwjKs"
+      "youtube_id": null
     },
-    "youtube_match": 0.62,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -4441,9 +4417,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1940982903",
-      "youtube_id": "1fW75nneR_U"
+      "youtube_id": null
     },
-    "youtube_match": 0.648,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -4472,16 +4448,10 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1940976919",
-      "youtube_id": "izcZo4l8SIQ"
+      "youtube_id": null
     },
-    "youtube_match": 0.667,
-    "translation_candidates": [
-      {
-        "youtube_id": "EogCnlGv9hE",
-        "title": "1. The Evangelization of Christ versus the Materialistic \"Gospel\" | Conrad Mbewe",
-        "language": "en"
-      }
-    ],
+    "youtube_match": null,
+    "translation_candidates": [],
     "topics": [],
     "summary": null,
     "transcript_ref": null
@@ -4509,9 +4479,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1936150085",
-      "youtube_id": "rXcYUL5ab6Y"
+      "youtube_id": null
     },
-    "youtube_match": 0.672,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -5377,9 +5347,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1903858688",
-      "youtube_id": "oLoNQjP0ZoU"
+      "youtube_id": null
     },
-    "youtube_match": 0.71,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -5646,7 +5616,7 @@
     "series_id": "ser-epitre-aux-galates",
     "series_name": "Épître aux Galates",
     "series_part": null,
-    "series_order": 69,
+    "series_order": 70,
     "scripture_osis": "Gal",
     "scripture_display": "es Galates | Galates 1 : 6",
     "scripture_book": "Gal",
@@ -5783,13 +5753,7 @@
       "youtube_id": null
     },
     "youtube_match": null,
-    "translation_candidates": [
-      {
-        "youtube_id": "NDCyRMRt6xw",
-        "title": "Paul, the Theologian, Evangelist, and Christian (Gal. 1:1-5) [GAL.003]",
-        "language": "en"
-      }
-    ],
+    "translation_candidates": [],
     "topics": [],
     "summary": null,
     "transcript_ref": null
@@ -5820,13 +5784,7 @@
       "youtube_id": null
     },
     "youtube_match": null,
-    "translation_candidates": [
-      {
-        "youtube_id": "Tq-6inKs7nk",
-        "title": "Paul, the Natural Man (Gal. 1:1-5) [GAL.002]",
-        "language": "en"
-      }
-    ],
+    "translation_candidates": [],
     "topics": [],
     "summary": null,
     "transcript_ref": null
@@ -5854,9 +5812,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1823993748",
-      "youtube_id": "4Q_jOMO_YkY"
+      "youtube_id": null
     },
-    "youtube_match": 0.623,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -6133,9 +6091,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1783383399",
-      "youtube_id": "MSJ73JEu1uI"
+      "youtube_id": null
     },
-    "youtube_match": 0.602,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -6350,9 +6308,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1757737536",
-      "youtube_id": "srNVCECQC8c"
+      "youtube_id": null
     },
-    "youtube_match": 0.624,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -6443,9 +6401,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1747289583",
-      "youtube_id": "rqJ_E6GUMOk"
+      "youtube_id": null
     },
-    "youtube_match": 0.604,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -6474,9 +6432,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1747287255",
-      "youtube_id": "1tLNBV_tWBo"
+      "youtube_id": null
     },
-    "youtube_match": 0.697,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -6660,9 +6618,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1747271847",
-      "youtube_id": "5S_axblPJhE"
+      "youtube_id": null
     },
-    "youtube_match": 0.667,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -6784,9 +6742,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1736838363",
-      "youtube_id": "snB851daJXk"
+      "youtube_id": null
     },
-    "youtube_match": 0.826,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -6877,9 +6835,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1719407739",
-      "youtube_id": "XXGAfEVaQ6k"
+      "youtube_id": null
     },
-    "youtube_match": 0.626,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -7094,9 +7052,9 @@
     "is_conference": false,
     "media": {
       "soundcloud_id": "1690623990",
-      "youtube_id": "gj17HMaMOyY"
+      "youtube_id": null
     },
-    "youtube_match": 0.788,
+    "youtube_match": null,
     "translation_candidates": [],
     "topics": [],
     "summary": null,
@@ -7475,6 +7433,68 @@
     "transcript_ref": null
   },
   {
+    "id": "yt-snB851daJXk",
+    "source": "youtube",
+    "raw_title": "Introduction à l'épitre de Paul aux Galates (Gal.1:1-9) [GAL.001]",
+    "title": "Introduction à l'épitre de Paul aux",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3600,
+    "speaker": null,
+    "series_id": "ser-epitre-aux-galates",
+    "series_name": "Épître aux Galates",
+    "series_part": null,
+    "series_order": 71,
+    "scripture_osis": "Gal",
+    "scripture_display": null,
+    "scripture_book": "Gal",
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "snB851daJXk"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-gj17HMaMOyY",
+    "source": "youtube",
+    "raw_title": "La Bible   3ème Partie",
+    "title": "La Bible 3ème Partie",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 2990,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "gj17HMaMOyY"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
     "id": "yt-sjG__9VrXM0",
     "source": "youtube",
     "raw_title": "La Bible   1ère Partie",
@@ -7498,6 +7518,161 @@
     "media": {
       "soundcloud_id": null,
       "youtube_id": "sjG__9VrXM0"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-uhX8wbxSQ1g",
+    "source": "youtube",
+    "raw_title": "Aimer Dieu de Tout Coeur [Chasse au Roi : 4/8]",
+    "title": "Aimer Dieu de Tout Coeur [Chasse au Roi : 4/8]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3537,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "uhX8wbxSQ1g"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-NDCyRMRt6xw",
+    "source": "youtube",
+    "raw_title": "Paul, the Theologian, Evangelist, and Christian (Gal. 1:1-5) [GAL.003]",
+    "title": "Paul, the Theologian, Evangelist, and Christian [GAL.003]",
+    "language": "en",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3600,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "NDCyRMRt6xw"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-Tqu-GLCEgbA",
+    "source": "youtube",
+    "raw_title": "Being a Witness of Christ",
+    "title": "Being a Witness of Christ",
+    "language": "en",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3205,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "Tqu-GLCEgbA"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-FDcy9KUQM6s",
+    "source": "youtube",
+    "raw_title": "Comment Voir Dieu? [Des Yeux pour Voir - 04]",
+    "title": "Comment Voir Dieu? [Des Yeux pour Voir - 04]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 2560,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "FDcy9KUQM6s"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-yCBKVjfAfhQ",
+    "source": "youtube",
+    "raw_title": "Le Vrai Christ : L'Abandonné de Dieu [cROIx 08/13]",
+    "title": "Le Vrai Christ : L'Abandonné de Dieu [cROIx 08/13]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3405,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "yCBKVjfAfhQ"
     },
     "youtube_match": null,
     "translation_candidates": [],
@@ -7537,6 +7712,99 @@
     "transcript_ref": null
   },
   {
+    "id": "yt-oLoNQjP0ZoU",
+    "source": "youtube",
+    "raw_title": "A LA RECHERCHE DU BONHEUR 3/6",
+    "title": "A LA RECHERCHE DU BONHEUR 3/6",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 2652,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "oLoNQjP0ZoU"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-Tq-6inKs7nk",
+    "source": "youtube",
+    "raw_title": "Paul, the Natural Man (Gal. 1:1-5) [GAL.002]",
+    "title": "Paul, the Natural Man [GAL.002]",
+    "language": "en",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3583,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "Tq-6inKs7nk"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-1tLNBV_tWBo",
+    "source": "youtube",
+    "raw_title": "Que voulez-vous de Dieu? [deCOURAGEment 06]",
+    "title": "Que voulez-vous de Dieu? [deCOURAGEment 06]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3149,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "1tLNBV_tWBo"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
     "id": "yt-nTrSEHDkXqM",
     "source": "youtube",
     "raw_title": "Questions et Réponses - Leçons 1 - 3 ( Gn.1-3 )",
@@ -7560,6 +7828,285 @@
     "media": {
       "soundcloud_id": null,
       "youtube_id": "nTrSEHDkXqM"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-lWtea4iQzKw",
+    "source": "youtube",
+    "raw_title": "Inspiré de Dieu (Parole de Dieu 3/5)",
+    "title": "Inspiré de Dieu",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 2741,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "lWtea4iQzKw"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-m4U4zENp9KY",
+    "source": "youtube",
+    "raw_title": "L'argent à la place de Dieu [FAUX DIEUX 2/7]",
+    "title": "L'argent à la place de Dieu [FAUX DIEUX 2/7]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3679,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "m4U4zENp9KY"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-HOjW63LMfhQ",
+    "source": "youtube",
+    "raw_title": "Authentic Conversion, Responsible Ambassadors",
+    "title": "Authentic Conversion, Responsible Ambassadors",
+    "language": "en",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 4480,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "HOjW63LMfhQ"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-HGLROgzi8Z0",
+    "source": "youtube",
+    "raw_title": "Intimité Abominable (Mc.14:10,11)  [Divin Orchestre 03/13]",
+    "title": "Intimité Abominable [Divin Orchestre 03/13]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3774,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "HGLROgzi8Z0"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-yxvHbUvdq0Y",
+    "source": "youtube",
+    "raw_title": "L'incredulité choque Dieu  -  [deCOURAGEment 01]",
+    "title": "L'incredulité choque Dieu - [deCOURAGEment 01]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 2996,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "yxvHbUvdq0Y"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-rXcYUL5ab6Y",
+    "source": "youtube",
+    "raw_title": "Ce qui est à César et ce qui est à Dieu [Chasse au Roi : 2/8]",
+    "title": "Ce qui est à César et ce qui est à Dieu [Chasse au Roi : 2/8]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3580,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "rXcYUL5ab6Y"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-izcZo4l8SIQ",
+    "source": "youtube",
+    "raw_title": "L'Indéniable Divinité du Christ [Chasse au Roi : 6/8]",
+    "title": "L'Indéniable Divinité du Christ [Chasse au Roi : 6/8]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3600,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "izcZo4l8SIQ"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-1Bh1GAvozDE",
+    "source": "youtube",
+    "raw_title": "Christ, le centre de l'Histoire | Dr  Hensworth Jonas | CBN8 Paris 2024 | Intervention 03/10",
+    "title": "Christ, le centre de l'Histoire | Dr Hensworth",
+    "language": "en",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3862,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": "Jonah",
+    "scripture_display": null,
+    "scripture_book": "Jonah",
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": true,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "1Bh1GAvozDE"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-5S_axblPJhE",
+    "source": "youtube",
+    "raw_title": "Le Retour Glorieux du Christ [La Fin des Temps 10]",
+    "title": "Le Retour Glorieux du Christ [La Fin des Temps 10]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3431,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "5S_axblPJhE"
     },
     "youtube_match": null,
     "translation_candidates": [],
@@ -7661,6 +8208,130 @@
     "transcript_ref": null
   },
   {
+    "id": "yt-CYYRlnPVCd8",
+    "source": "youtube",
+    "raw_title": "Faites briller la lumière de Dieu",
+    "title": "Faites briller la lumière de Dieu",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 2865,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "CYYRlnPVCd8"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-P7WSbckY-lc",
+    "source": "youtube",
+    "raw_title": "La Seule Conception de Jésus qui Sauve ( Mc.15:1-15 ) [cROIx 02/13]",
+    "title": "La Seule Conception de Jésus qui Sauve [cROIx 02/13]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3820,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "P7WSbckY-lc"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-aVbo4n0fl4k",
+    "source": "youtube",
+    "raw_title": "Prier selon le cœur de Dieu (Partie V) | Psaume 40 : 1 - 17",
+    "title": "Prier selon le cœur de Dieu",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3742,
+    "speaker": null,
+    "series_id": "ser-etude-psaumes",
+    "series_name": "Étude — Psaumes",
+    "series_part": null,
+    "series_order": 6,
+    "scripture_osis": "Ps.40.1-Ps.40.17",
+    "scripture_display": null,
+    "scripture_book": "Ps",
+    "scripture_chapter": 40,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "aVbo4n0fl4k"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-IqNmh_XGULE",
+    "source": "youtube",
+    "raw_title": "Prier selon le cœur de Dieu (Partie IV) | Psaume 40 : 1 - 17",
+    "title": "Prier selon le cœur de Dieu",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3555,
+    "speaker": null,
+    "series_id": "ser-etude-psaumes",
+    "series_name": "Étude — Psaumes",
+    "series_part": null,
+    "series_order": 4,
+    "scripture_osis": "Ps.40.1-Ps.40.17",
+    "scripture_display": null,
+    "scripture_book": "Ps",
+    "scripture_chapter": 40,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "IqNmh_XGULE"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
     "id": "yt-CZkmvAvA4ds",
     "source": "youtube",
     "raw_title": "La Maison du Dieu Omniprésent [ Au DELA de la VUE 9/9 ]",
@@ -7754,6 +8425,99 @@
     "transcript_ref": null
   },
   {
+    "id": "yt-mNqY4f0CYoA",
+    "source": "youtube",
+    "raw_title": "Seulement la Foi [ REF500 2/5 ]",
+    "title": "Seulement la Foi [ REF500 2/5 ]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 2906,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "mNqY4f0CYoA"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-MnyxTg1ZsUU",
+    "source": "youtube",
+    "raw_title": "Impossible Faire Taire la Voix de Dieu [deCOURAGEment 03]",
+    "title": "Impossible Faire Taire la Voix de Dieu [deCOURAGEment 03]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 2834,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "MnyxTg1ZsUU"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-1fW75nneR_U",
+    "source": "youtube",
+    "raw_title": "Le Soin Minutieusement Souverain de Dieu [PEUPLE DE DIEU 02/15]",
+    "title": "Le Soin Minutieusement Souverain de Dieu [PEUPLE DE DIEU 02/15]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3302,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "1fW75nneR_U"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
     "id": "yt-Q9A-bZnqZk4",
     "source": "youtube",
     "raw_title": "Distingués par la Gloire de Dieu - La Pâque [PEUPLE DE DIEU 15/15]",
@@ -7777,6 +8541,37 @@
     "media": {
       "soundcloud_id": null,
       "youtube_id": "Q9A-bZnqZk4"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-WNAfTDl54b8",
+    "source": "youtube",
+    "raw_title": "Une toute nouvelle histoire avec Dieu | Dr Joel Beeke | CBN8 Paris 2024 | Intervention 07/10",
+    "title": "Une toute nouvelle histoire avec Dieu | Dr",
+    "language": "en",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3662,
+    "speaker": "Joël Beeke",
+    "series_id": "ser-etude-joel",
+    "series_name": "Étude — Joel",
+    "series_part": null,
+    "series_order": 4,
+    "scripture_osis": "Joel",
+    "scripture_display": null,
+    "scripture_book": "Joel",
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": true,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "WNAfTDl54b8"
     },
     "youtube_match": null,
     "translation_candidates": [],
@@ -7870,6 +8665,37 @@
     "media": {
       "soundcloud_id": null,
       "youtube_id": "k9gIc82LOWk"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-WstQhX81KQ8",
+    "source": "youtube",
+    "raw_title": "Mutiler la Chair pour Préserver l'Esprit (Ciel sur Terre - Partie 10/10)",
+    "title": "Mutiler la Chair pour Préserver l'Esprit",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3383,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "WstQhX81KQ8"
     },
     "youtube_match": null,
     "translation_candidates": [],
@@ -8033,6 +8859,37 @@
     "transcript_ref": null
   },
   {
+    "id": "yt-Uw9lmjSwI_I",
+    "source": "youtube",
+    "raw_title": "La Vraie Identité du Christ attestée par les Miracles du Saint Esprit [cROIx 07/13]",
+    "title": "La Vraie Iden",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3587,
+    "speaker": null,
+    "series_id": "ser-etude-titus",
+    "series_name": "Étude — Titus",
+    "series_part": null,
+    "series_order": 2,
+    "scripture_osis": "Titus",
+    "scripture_display": null,
+    "scripture_book": "Titus",
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "Uw9lmjSwI_I"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
     "id": "yt-a9w2mYesTag",
     "source": "youtube",
     "raw_title": "Participer aux Victoires de Dieu - Partie 1 [AU DELA de la VUE 6/9]",
@@ -8056,6 +8913,37 @@
     "media": {
       "soundcloud_id": null,
       "youtube_id": "a9w2mYesTag"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-o4hWvXrGs8k",
+    "source": "youtube",
+    "raw_title": "La Maison Centré sur l'Évangile  [ Don Currin ]",
+    "title": "La Maison Centré sur l'Évangile [ Don Currin ]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3642,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "o4hWvXrGs8k"
     },
     "youtube_match": null,
     "translation_candidates": [],
@@ -8126,6 +9014,68 @@
     "transcript_ref": null
   },
   {
+    "id": "yt-KWA5Y3jbTEE",
+    "source": "youtube",
+    "raw_title": "L'activité centrale du peuple de Dieu [ Famille de foi | David Pelosi ]",
+    "title": "L'activité centrale du peuple de Dieu [ Famille de foi | ]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3286,
+    "speaker": "David Pelosi",
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "KWA5Y3jbTEE"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-rgbmlAWOFnY",
+    "source": "youtube",
+    "raw_title": "EBN - Famille de foi - João Cardoso - Ago 2015",
+    "title": "EBN - Famille de foi - João Cardoso - Ago 2015",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3493,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "rgbmlAWOFnY"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
     "id": "yt-yFhiUBP6BgY",
     "source": "youtube",
     "raw_title": "Dieu est au-delà de nos limitations [PEUPLE DE DIEU 05/15]",
@@ -8180,6 +9130,37 @@
     "media": {
       "soundcloud_id": null,
       "youtube_id": "_7zlIXgDgq0"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-qD2RGp-rp-I",
+    "source": "youtube",
+    "raw_title": "Le Danger d'Abuser de la Grâce de Dieu [Chasse au Roi : 1/8]",
+    "title": "Le Danger d'Abuser de la Grâce de Dieu [Chasse au Roi : 1/8]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3323,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "qD2RGp-rp-I"
     },
     "youtube_match": null,
     "translation_candidates": [],
@@ -8312,6 +9293,37 @@
     "transcript_ref": null
   },
   {
+    "id": "yt-XXGAfEVaQ6k",
+    "source": "youtube",
+    "raw_title": "Aucun rival n'est à la hauteur de l'Éternel [PEUPLE DE DIEU 13/15]",
+    "title": "Aucun rival n'est à la hauteur de l'Éternel [PEUPLE DE DIEU 13/15]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3828,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "XXGAfEVaQ6k"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
     "id": "yt-x3Q6QMNyEj0",
     "source": "youtube",
     "raw_title": "Le Salut est de Dieu par Dieu et pou Dieu [Pâques 2017]",
@@ -8335,6 +9347,37 @@
     "media": {
       "soundcloud_id": null,
       "youtube_id": "x3Q6QMNyEj0"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-_E8Q6GcAvtw",
+    "source": "youtube",
+    "raw_title": "Paul Washer - Le Dieu de la Parole - Q&R 13/11/2016",
+    "title": "Paul Washer - Le Dieu de la Parole - Q&R 13/11/2016",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 2807,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "_E8Q6GcAvtw"
     },
     "youtube_match": null,
     "translation_candidates": [],
@@ -8405,6 +9448,68 @@
     "transcript_ref": null
   },
   {
+    "id": "yt-srNVCECQC8c",
+    "source": "youtube",
+    "raw_title": "Comment Semer un Coeur Enseignable [Des Yeux pour Voir - 03]",
+    "title": "Comment Semer un Coeur Enseignable [Des Yeux pour Voir - 03]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 2971,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "srNVCECQC8c"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-4Q_jOMO_YkY",
+    "source": "youtube",
+    "raw_title": "Matinée Pastorale avec Paul Washer : l'Église du Christ à la Manière du Christ",
+    "title": "Matinée Pastorale avec Paul Washer : l'Église du Christ à la Manière du Christ",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3079,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "4Q_jOMO_YkY"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
     "id": "yt-c4kkYeEFvS0",
     "source": "youtube",
     "raw_title": "Un Coeur Selon Dieu [ AU DELA de la VUE 5/9 ]",
@@ -8459,6 +9564,130 @@
     "media": {
       "soundcloud_id": null,
       "youtube_id": "BSUk6hEzjlc"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-nwYiAUfLA9I",
+    "source": "youtube",
+    "raw_title": "Participer aux Victoires de Dieu - Partie 2 [AU DELA de la VUE 7/9]",
+    "title": "Participer aux Victoires de Dieu - Partie 2 [AU DELA de la VUE 7/9]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3748,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "nwYiAUfLA9I"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-KB5SXgKGvuw",
+    "source": "youtube",
+    "raw_title": "Jésus, Roi du Temple : l'essence de la vraie religion [ Roi Jésus - 04/06 ]",
+    "title": "Jésus, Roi du Temple : l'essence de la vraie religion [ Roi Jésus - 04/06 ]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3568,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "KB5SXgKGvuw"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-CIOgYkQwjKs",
+    "source": "youtube",
+    "raw_title": "Le Rôle Central de la Résurrection (Ciel sur Terre - Partie 3)",
+    "title": "Le Rôle Central de la Résurrection",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 2993,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "CIOgYkQwjKs"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-IZdVCiBe4XU",
+    "source": "youtube",
+    "raw_title": "L'Appel d'un Homme de Dieu [ AU DELA de la VUE 2/9 ]",
+    "title": "L'Appel d'un Homme de Dieu [ AU DELA de la VUE 2/9 ]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 4195,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "IZdVCiBe4XU"
     },
     "youtube_match": null,
     "translation_candidates": [],
@@ -8653,6 +9882,161 @@
     "transcript_ref": null
   },
   {
+    "id": "yt-r2phMiy2ymg",
+    "source": "youtube",
+    "raw_title": "Galates 6 : 16 - 18 | Dimanche 29/03",
+    "title": null,
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 4236,
+    "speaker": null,
+    "series_id": "ser-epitre-aux-galates",
+    "series_name": "Épître aux Galates",
+    "series_part": null,
+    "series_order": 69,
+    "scripture_osis": "Gal.6.16-Gal.6.18",
+    "scripture_display": null,
+    "scripture_book": "Gal",
+    "scripture_chapter": 6,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "r2phMiy2ymg"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-tI4dba2n9JA",
+    "source": "youtube",
+    "raw_title": "l'Esclavage de la Religion et le Vrai Problème de l'Homme [Religion Vaine 02]",
+    "title": "l'Esclavage de la Religion et le Vrai Problème de l'Homme [Religion Vaine 02]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3182,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "tI4dba2n9JA"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-2I1d-K_d-kM",
+    "source": "youtube",
+    "raw_title": "Les Écritures Accomplies à la Croix (1/2) ( Mc.15:20-32 ) [cROIx 04/13]",
+    "title": "Les Écritures Accomplies à la Croix [cROIx 04/13]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3708,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "2I1d-K_d-kM"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-uNwWgjbrlJE",
+    "source": "youtube",
+    "raw_title": "Paul Washer - Le Dieu de la Parole",
+    "title": "Paul Washer - Le Dieu de la Parole",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3878,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "uNwWgjbrlJE"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-zmN8-ErWh6s",
+    "source": "youtube",
+    "raw_title": "La prière qui triomphe sur l'Épreuve - Gethsémani [Divin Orchestre 08/13]",
+    "title": "La prière qui triomphe sur l'Épreuve - Gethsémani [Divin Orchestre 08/13]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3594,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "zmN8-ErWh6s"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
     "id": "yt-0aNrtKizDTQ",
     "source": "youtube",
     "raw_title": "L'Histoire humaine séparée de Dieu | Pr  Vincent Lemieux | CBN8 Paris 2024 | Intervention 02/10",
@@ -8715,6 +10099,68 @@
     "transcript_ref": null
   },
   {
+    "id": "yt-TDvPFzqCvy4",
+    "source": "youtube",
+    "raw_title": "Jésus notre Justice [Divin Orchestre 11/13]",
+    "title": "Jésus notre Justice [Divin Orchestre 11/13]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3815,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "TDvPFzqCvy4"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-rqJ_E6GUMOk",
+    "source": "youtube",
+    "raw_title": "Le responsable ultime de la mort du Christ (Mc.14:1,2) [Divin Orchestre 01/13]",
+    "title": "Le responsable ultime de la mort du Christ [Divin Orchestre 01/13]",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3866,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "rqJ_E6GUMOk"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
     "id": "yt-kHnECRMIPp4",
     "source": "youtube",
     "raw_title": "4. L'Évangile du Christ est la Justification par la foi | Conrad Mbewe",
@@ -8738,6 +10184,68 @@
     "media": {
       "soundcloud_id": null,
       "youtube_id": "kHnECRMIPp4"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-MSJ73JEu1uI",
+    "source": "youtube",
+    "raw_title": "La pauvre la plus riche : l'offrande qui plaît Dieu le plus",
+    "title": "La pauvre la plus riche : l'offrande qui plaît Dieu le plus",
+    "language": "fr",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3964,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "MSJ73JEu1uI"
+    },
+    "youtube_match": null,
+    "translation_candidates": [],
+    "topics": [],
+    "summary": null,
+    "transcript_ref": null
+  },
+  {
+    "id": "yt-EogCnlGv9hE",
+    "source": "youtube",
+    "raw_title": "1. The Evangelization of Christ versus the Materialistic \"Gospel\" | Conrad Mbewe",
+    "title": "1. The Evangelization of Christ versus the Materialistic \"Gospel\" | Conrad Mbewe",
+    "language": "en",
+    "date": null,
+    "audio_duration": null,
+    "video_duration": 3661,
+    "speaker": null,
+    "series_id": null,
+    "series_name": null,
+    "series_part": null,
+    "series_order": null,
+    "scripture_osis": null,
+    "scripture_display": null,
+    "scripture_book": null,
+    "scripture_chapter": null,
+    "scripture_confident": null,
+    "kind": "sermon",
+    "is_conference": false,
+    "media": {
+      "soundcloud_id": null,
+      "youtube_id": "EogCnlGv9hE"
     },
     "youtube_match": null,
     "translation_candidates": [],
@@ -9375,10 +10883,10 @@
     "audio_duration": null,
     "video_duration": 3587,
     "speaker": null,
-    "series_id": null,
-    "series_name": null,
+    "series_id": "ser-etude-titus",
+    "series_name": "Étude — Titus",
     "series_part": null,
-    "series_order": null,
+    "series_order": 1,
     "scripture_osis": "Titus",
     "scripture_display": null,
     "scripture_book": "Titus",
@@ -11331,7 +12839,7 @@
     "series_id": "ser-etude-psaumes",
     "series_name": "Étude — Psaumes",
     "series_part": null,
-    "series_order": 4,
+    "series_order": 5,
     "scripture_osis": "Ps.40.1-Ps.40.17",
     "scripture_display": null,
     "scripture_book": "Ps",
@@ -11517,7 +13025,7 @@
     "series_id": "ser-etude-psaumes",
     "series_name": "Étude — Psaumes",
     "series_part": null,
-    "series_order": 6,
+    "series_order": 8,
     "scripture_osis": "Ps.40.1-Ps.40.4",
     "scripture_display": null,
     "scripture_book": "Ps",
@@ -13439,7 +14947,7 @@
     "series_id": "ser-etude-psaumes",
     "series_name": "Étude — Psaumes",
     "series_part": null,
-    "series_order": 5,
+    "series_order": 7,
     "scripture_osis": "Ps.40.1-Ps.40.11",
     "scripture_display": null,
     "scripture_book": "Ps",
@@ -14541,53 +16049,5 @@
     "topics": [],
     "summary": null,
     "transcript_ref": null
-  },
-  {
-    "id": "yt-IqNmh_XGULE",
-    "source": "youtube",
-    "raw_title": "Prier selon le cœur de Dieu (Partie IV) | Psaume 40 : 1 - 17",
-    "title": "Prier selon le cœur de Dieu",
-    "language": "fr",
-    "date": "2026-06-07",
-    "audio_duration": null,
-    "video_duration": 3555,
-    "speaker": null,
-    "series_id": null,
-    "series_name": "Prier selon le cœur de Dieu",
-    "series_part": 4,
-    "series_order": null,
-    "scripture_osis": "Ps.40.1-Ps.40.17",
-    "scripture_display": "Psaume 40 : 1 - 17",
-    "scripture_book": "Ps",
-    "scripture_chapter": 40,
-    "scripture_confident": true,
-    "kind": "sermon",
-    "is_conference": false,
-    "media": {
-      "soundcloud_id": null,
-      "youtube_id": "IqNmh_XGULE"
-    },
-    "youtube_match": null,
-    "translation_candidates": [],
-    "topics": [
-      "Prière",
-      "Souffrance et persévérance",
-      "Repentance",
-      "Christologie",
-      "Miséricorde de Dieu",
-      "Sainteté et intégrité",
-      "Glorification de Dieu"
-    ],
-    "summary": "Dans cette quatrième partie d'une série sur la prière à partir du Psaume 40, le prédicateur rappelle que David, type du Christ, nous enseigne à prier avec un cœur fixé sur l'éternel, reconnaissant les bienfaits de Dieu et déterminé à lui obéir même dans la souffrance. Il souligne que la prière authentique s'appuie davantage sur la miséricorde et les compassions de Dieu que sur notre propre innocence, à l'image du Christ au Gethsémani qui a endure la croix pour purger nos péchés. La glorification de Dieu passe par la persévérance dans l'intégrité au milieu des épreuves, rendue possible par le Saint-Esprit et fondée sur la certitude que la grâce surabonde là où le péché abonde.",
-    "primary_scripture": "Psaume 40:1-17",
-    "scripture_refs": [
-      "Ésaïe 53",
-      "Matthieu 26:36-46",
-      "Luc 22:43-46",
-      "Hébreux 5:7-9",
-      "Psaume 51"
-    ],
-    "transcript_ref": "data/catalog/transcripts/yt-IqNmh_XGULE.txt",
-    "captions_ref": "data/catalog/transcripts/yt-IqNmh_XGULE.vtt"
   }
 ]

@@ -3,7 +3,7 @@
     "id": "ser-epitre-aux-galates",
     "name": "Épître aux Galates",
     "type": "expository",
-    "count": 69
+    "count": 71
   },
   {
     "id": "ser-epitre-aux-hebreux",
@@ -33,7 +33,7 @@
     "id": "ser-etude-psaumes",
     "name": "Étude — Psaumes",
     "type": "expository",
-    "count": 6
+    "count": 8
   },
   {
     "id": "ser-epitre-aux-colossiens",
@@ -84,6 +84,12 @@
     "count": 4
   },
   {
+    "id": "ser-etude-joel",
+    "name": "Étude — Joel",
+    "type": "expository",
+    "count": 4
+  },
+  {
     "id": "ser-evangile-de-luc",
     "name": "Évangile de Luc",
     "type": "expository",
@@ -126,12 +132,6 @@
     "count": 3
   },
   {
-    "id": "ser-etude-joel",
-    "name": "Étude — Joel",
-    "type": "expository",
-    "count": 3
-  },
-  {
     "id": "ser-epitre-de-pierre",
     "name": "Épître de Pierre",
     "type": "expository",
@@ -146,6 +146,12 @@
   {
     "id": "ser-epitre-aux-philippiens",
     "name": "Épître aux Philippiens",
+    "type": "expository",
+    "count": 2
+  },
+  {
+    "id": "ser-etude-titus",
+    "name": "Étude — Titus",
     "type": "expository",
     "count": 2
   }
