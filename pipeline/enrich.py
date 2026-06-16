@@ -14,15 +14,24 @@ import without the SDK installed. Tests inject a fake enricher instead of callin
 ENRICH_SCHEMA = {
     "type": "object",
     "properties": {
+        "description": {"type": "string",
+                        "description": "ONE punchy sentence (≤30 words) to show under the video — distinct from the summary; a hook, not a recap."},
         "summary": {"type": "string", "description": "2-3 sentence French summary, faithful to the audio."},
+        "key_points": {"type": "array", "items": {"type": "string"},
+                       "description": "3-6 short bullets tracing the sermon's main movements/arguments."},
         "topics": {"type": "array", "items": {"type": "string"},
                    "description": "3-7 topics; prefer the provided controlled vocabulary."},
+        "references": {"type": "array", "items": {"type": "string"},
+                       "description": "People/works/confessions actually CITED (e.g. 'Jean Calvin', 'Confession de foi de 1689', 'Augustin'). Confirm, don't invent; empty if none."},
+        "questions": {"type": "array", "items": {"type": "string"},
+                      "description": "2-4 reflection/discussion questions for a small group (these are study aids — generated, not quoted)."},
         "primary_scripture": {"type": "string", "description": "Main passage preached (e.g. 'Luc 1:26-38'), or empty."},
         "scripture_refs": {"type": "array", "items": {"type": "string"},
                            "description": "Other passages cited in the sermon."},
         "series_hint": {"type": "string", "description": "Series/study context mentioned (e.g. 'Confession de foi ch.8'), or empty."},
     },
-    "required": ["summary", "topics", "primary_scripture", "scripture_refs", "series_hint"],
+    "required": ["description", "summary", "key_points", "topics", "references", "questions",
+                 "primary_scripture", "scripture_refs", "series_hint"],
     "additionalProperties": False,
 }
 
@@ -44,9 +53,15 @@ def cost_of(model: str, in_tok: int, out_tok: int) -> float:
 
 PROMPT = """Tu enrichis le catalogue de prédications d'une église réformée baptiste francophone.
 À partir de la TRANSCRIPTION (français, générée automatiquement — ignore les coquilles d'ASR),
-renvoie un JSON: un résumé français de 2-3 phrases fidèle au contenu, 3-7 sujets théologiques,
-le passage biblique principal prêché, les autres références citées, et tout contexte de série
-mentionné. Confirme, n'invente pas. {vocab}
+renvoie un JSON (tout en français):
+- description: UNE phrase accrocheuse (≤30 mots) à afficher sous la vidéo (une accroche, pas un résumé);
+- summary: un résumé fidèle de 2-3 phrases;
+- key_points: 3-6 points clés retraçant le déroulé de la prédication;
+- topics: 3-7 sujets théologiques;
+- references: personnes/œuvres/confessions réellement CITÉES (ex: Jean Calvin, Confession de foi de 1689) — n'invente pas, vide si aucune;
+- questions: 2-4 questions de réflexion pour un groupe (ce sont des aides générées);
+- primary_scripture: le passage principal prêché; scripture_refs: les autres passages cités; series_hint: contexte de série.
+Confirme, n'invente pas (sauf les questions, qui sont des aides). {vocab}
 
 Titre (indice): {title}
 TRANSCRIPTION:

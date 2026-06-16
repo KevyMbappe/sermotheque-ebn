@@ -23,8 +23,9 @@ STORE = ROOT / "data" / "catalog" / "enrichment.json"
 # The fields produced by enrichment (build_entry output) that must survive a structural
 # rebuild. Everything else on a catalog row is structural (re-derived from title/inventory).
 # (speaker is structural — set by the default-speaker rule in the build, #45 — not stored here.)
-ENRICHMENT_FIELDS = ("topics", "summary", "primary_scripture", "scripture_refs",
-                     "series_hint", "transcript_ref", "raw_ref", "captions_ref", "segments_ref")
+ENRICHMENT_FIELDS = ("description", "summary", "key_points", "topics", "references", "questions",
+                     "primary_scripture", "scripture_refs", "series_hint",
+                     "transcript_ref", "raw_ref", "captions_ref", "segments_ref")
 
 
 def load_store(path=STORE):

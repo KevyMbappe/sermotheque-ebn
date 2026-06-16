@@ -16,6 +16,8 @@ FIXTURE = (Path(__file__).resolve().parent / "fixtures" / "sample_transcript.txt
 SOURCE = {"soundcloud_id": "123",
           "raw_title": "La doctrine de l'incarnation de Christ | Luc 1 : 26 - 38"}
 ENRICHMENT = {"summary": "Introduction à l'incarnation.", "topics": ["Incarnation", "Christologie"],
+              "description": "Dieu fait chair.", "key_points": ["point un", "point deux"],
+              "references": ["Confession de foi de 1689"], "questions": ["Pourquoi ?"],
               "primary_scripture": "Luc 1:26-38", "scripture_refs": ["Jean 1:14"],
               "series_hint": "Confession de foi ch.8"}
 
@@ -45,6 +47,9 @@ class TestBuildEntry(unittest.TestCase):
         # enrichment-derived (injected)
         self.assertEqual(e["topics"], ["Incarnation", "Christologie"])
         self.assertEqual(e["summary"], "Introduction à l'incarnation.")
+        self.assertEqual(e["description"], "Dieu fait chair.")            # display blurb
+        self.assertEqual(e["key_points"], ["point un", "point deux"])
+        self.assertEqual(e["references"], ["Confession de foi de 1689"])
         self.assertEqual(e["series_hint"], "Confession de foi ch.8")
         self.assertEqual(e["scripture_refs"], ["Jean 1:14"])
 

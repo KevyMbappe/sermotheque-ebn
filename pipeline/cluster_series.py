@@ -59,20 +59,25 @@ def book_series_name(osis):
 def write_csv(rows):
     """flattened, spreadsheet-friendly export of the unified catalog"""
     import csv
-    cols = ["id", "source", "title", "language", "date", "audio_duration", "video_duration",
-            "speaker", "series_name", "series_part", "series_order", "scripture_osis",
-            "scripture_book", "kind", "is_conference", "soundcloud_id", "youtube_id", "topics"]
+    # The CSV is a flat data export (not UI) — carry provenance + enrichment so a single
+    # expensive run never loses information. List fields are joined with " | ".
+    scalar = ["id", "source", "title", "language", "date", "audio_duration", "video_duration",
+              "speaker", "speaker_provenance", "series_name", "series_part", "series_order",
+              "scripture_osis", "scripture_book", "primary_scripture", "kind", "is_conference",
+              "description", "summary", "transcript_ref"]
+    joined = ["topics", "key_points", "references", "scripture_refs", "questions"]  # list → "a | b"
+    cols = scalar + ["soundcloud_id", "youtube_id"] + joined
     with (CAT.parent / "catalog.csv").open("w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=cols)
         w.writeheader()
         for r in rows:
             media = r.get("media") or {}
-            w.writerow({
-                **{k: r.get(k) for k in cols if k not in ("soundcloud_id", "youtube_id", "topics")},
-                "soundcloud_id": media.get("soundcloud_id"),
-                "youtube_id": media.get("youtube_id"),
-                "topics": "; ".join(r.get("topics") or []),
-            })
+            row = {k: r.get(k) for k in scalar}
+            row["soundcloud_id"] = media.get("soundcloud_id")
+            row["youtube_id"] = media.get("youtube_id")
+            for k in joined:
+                row[k] = " | ".join(r.get(k) or [])
+            w.writerow(row)
 
 
 def main():
