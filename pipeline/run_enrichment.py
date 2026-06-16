@@ -116,6 +116,9 @@ def main():
     log(f"=== enrichment pass: {len(targets)} sermons (source={args.source}, model={args.model}, "
         f"{len(done)} already done) ===")
     transcribe = make_transcriber(verbose=verbose, word_timestamps=args.segments)
+    cost = {}                                          # reused each sermon; the enricher writes into it
+    enricher = make_enricher(model=args.model,         # build the Anthropic client ONCE, not per sermon
+                             on_usage=lambda i, o: cost.update(usd=cost_of(args.model, i, o), i=i, o=o))
     total, ok, t_all = 0.0, 0, time.monotonic()
 
     for n, row in enumerate(targets, 1):
@@ -123,16 +126,14 @@ def main():
         if not (src.get("soundcloud_url") or src.get("youtube_url")):
             log(f"[{n}/{len(targets)}] {row['id']}  SKIP (no resolvable URL)"); continue
         log(f"[{n}/{len(targets)}] {row['id']}  {row['raw_title']!r}")
-        cost, t0 = {}, time.monotonic()
+        cost.clear(); t0 = time.monotonic()
         try:
             entry = build_entry(
-                src, transcribe=transcribe,
-                enrich=make_enricher(model=args.model,
-                                     on_usage=lambda i, o: cost.update(usd=cost_of(args.model, i, o), i=i, o=o)),
+                src, transcribe=transcribe, enrich=enricher,
                 on_progress=lambda p: log(f"      [{time.monotonic()-t0:5.1f}s] → {p}"),
                 persist_segments=args.segments)
         except Exception as e:
-            log(f"      FAILED: {e!r}"); continue
+            log(f"      FAILED: {e!r}"); continue       # not stored → resume retries it next run
         save_entry(entry, model=args.model)        # durable now — resume skips it next time
         c = cost.get("usd", 0.0); total += c; ok += 1
         log(f"      ✓ {time.monotonic()-t0:.0f}s · {cost.get('i',0):,}+{cost.get('o',0)} tok · "

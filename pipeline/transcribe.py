@@ -62,14 +62,21 @@ def _slug(s):
     return re.sub(r"[^a-z0-9]+", "-", s).strip("-")[:60]
 
 
-def _run(cmd, verbose):
+# Generous ceilings so a *hung* yt-dlp/mlx can't wedge an unattended multi-hour run
+# (a real download/transcription finishes well under these); on timeout the subprocess
+# raises TimeoutExpired → build_entry propagates → the runner logs FAILED and resumes it.
+DL_TIMEOUT = 900      # 15 min — a download should take seconds–minutes
+ASR_TIMEOUT = 2400    # 40 min — ASR is ~13× real-time, so even a 90-min sermon is ~7 min
+
+
+def _run(cmd, verbose, timeout=None):
     """Run a subprocess. When verbose, the tool's progress is shown on stderr (its
     stdout is redirected there too) so our own stdout stays clean for the entry JSON;
     otherwise it's captured/silent (the default — keeps tests and library use quiet)."""
     if verbose:
-        subprocess.run(cmd, check=True, stdout=sys.stderr)
+        subprocess.run(cmd, check=True, stdout=sys.stderr, timeout=timeout)
     else:
-        subprocess.run(cmd, check=True, capture_output=True)
+        subprocess.run(cmd, check=True, capture_output=True, timeout=timeout)
 
 
 def probe_metadata(url, ytdlp=YTDLP):
@@ -88,7 +95,7 @@ def download_audio(url, cache_dir=CACHE, ytdlp=YTDLP, verbose=False):
     cache_dir = Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
     out = cache_dir / f"{_slug(url)}.%(ext)s"
-    _run([ytdlp, "-x", "--audio-format", "mp3", "--no-warnings", "-o", str(out), url], verbose)
+    _run([ytdlp, "-x", "--audio-format", "mp3", "--no-warnings", "-o", str(out), url], verbose, DL_TIMEOUT)
     mp3s = sorted(cache_dir.glob(f"{_slug(url)}.mp3"))
     if not mp3s:
         raise RuntimeError(f"download produced no mp3 for {url}")
@@ -114,7 +121,7 @@ def asr(audio_path, model=MODEL, mlx_whisper=MLX_WHISPER, word_timestamps=False,
           "--output-dir", str(out), "--output-name", stem,
           "--output-format", "all", "--word-timestamps", "True" if word_timestamps else "False",
           "--verbose", "False"],   # progress bar, not a live segment dump
-         verbose)
+         verbose, ASR_TIMEOUT)
     data = json.loads((out / f"{stem}.json").read_text(encoding="utf-8"))
     return {
         "text": (out / f"{stem}.txt").read_text(encoding="utf-8"),
