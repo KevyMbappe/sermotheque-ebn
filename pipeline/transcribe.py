@@ -131,7 +131,8 @@ def asr(audio_path, model=MODEL, mlx_whisper=MLX_WHISPER, word_timestamps=False,
     }
 
 
-def make_transcriber(*, keep_audio=False, model=MODEL, word_timestamps=False, verbose=False):
+def make_transcriber(*, keep_audio=False, model=MODEL, word_timestamps=False, verbose=False,
+                     embed=None):
     """Build the real transcribe_fn(source) -> {text, vtt, segments, language}.
 
     `source` must provide an audio location: either a pre-downloaded `audio_path`,
@@ -139,7 +140,8 @@ def make_transcriber(*, keep_audio=False, model=MODEL, word_timestamps=False, ve
     ASR cleanup is applied to both the plain text and the VTT cues (the substitution
     rules match French words, never the timestamp lines, so VTT is safe to clean).
     `verbose` streams yt-dlp/whisper progress to stderr; `word_timestamps` opts into
-    the heavier per-word timing (only worth it if persisting segments).
+    the heavier per-word timing (only worth it if persisting segments). `embed`, if given,
+    captures a voiceprint from the SAME download (before the audio is deleted, #46).
     """
     def transcribe(source: dict) -> dict:
         audio = source.get("audio_path")
@@ -153,6 +155,12 @@ def make_transcriber(*, keep_audio=False, model=MODEL, word_timestamps=False, ve
         result["text_raw"] = result["text"]          # uncleaned ASR — preserves the accent signature (#45)
         result["text"] = clean_transcript(result["text"])
         result["vtt"] = clean_transcript(result["vtt"])
+        if embed:                                    # voiceprint from the same audio (#46)
+            try:
+                result["embedding"] = embed(audio)
+            except Exception as e:                   # never let an embed failure cost us the transcript
+                print(f"  voiceprint failed (kept transcript): {e!r}", file=sys.stderr)
+                result["embedding"] = None
         if downloaded and not keep_audio:
             base = str(Path(downloaded).with_suffix(""))
             for ext in (".mp3", *_SIDECAR_EXTS):

@@ -11,3 +11,5 @@
 yt-dlp>=2026.0      # needs the ≥2026.x layout support for YouTube
 mlx-whisper          # local ASR on Apple Silicon (large-v3-turbo)
 anthropic            # Claude API client for the enrich step (needs ANTHROPIC_API_KEY)
+resemblyzer          # speaker voiceprint embeddings for the fingerprint store (#46; pulls torch)
+librosa              # audio loading for resemblyzer

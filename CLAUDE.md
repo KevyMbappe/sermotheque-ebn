@@ -24,11 +24,12 @@ This reframe happened through a long planning conversation; the **two spec docs 
 | `pipeline/parse_catalog.py` · `match_youtube.py` · `fold_orphans.py` · `cluster_series.py` · `enrichment_store.py` | **Catalog-build** pipeline (batch, pure-stdlib). `build.py` runs them in order, ending with the enrichment **writeback** (#44). |
 | `pipeline/build_entry.py` | ★ **Single entry point**: `build_entry(source, *, transcribe, enrich)` — one YT/SC source → one canonical entry. |
 | `pipeline/run_enrichment.py` | **Production runner** for the catalog-wide pass: resumable, logfile, live cost; `save_entry` per sermon → store + writeback (#44/#45). |
-| `pipeline/transcribe.py` · `enrich.py` | The two **injected** external steps: mlx-whisper adapter (+ `clean_transcript`) and Claude-API adapter. |
+| `pipeline/transcribe.py` · `enrich.py` · `embed.py` | The three **injected** external steps: mlx-whisper adapter (+ `clean_transcript`), Claude-API adapter, and the Resemblyzer **voiceprint** adapter (#46). |
+| `pipeline/enrichment_store.py` · `voiceprint_store.py` | Id-keyed stores: enrichment (#44, text-derived, writeback) and voiceprints (#46, audio-derived, captured in-pass by `build_entry`). |
 | `tests/` | Stdlib `unittest` suite (offline). Run: `python3 -m unittest discover -s tests`. |
 | `tools/md_to_pdf.py` | Markdown → PDF via headless Chrome (used for SYNTHESE / spike PDFs). |
 | `docs/research/` | **Historical evidence** (not living docs): the M3 ASR spike (`METHODOLOGY.md`, `RESULTS.md`/`.pdf`) + the M5b POC (`POC.md`/`.pdf`, `poc_entries.json`) + `spike-transcripts/` (the original slices the spike ran on). |
-| `data/raw/*.tsv` | Raw inventories pulled via `yt-dlp`. `data/catalog/` = canonical dataset (`catalog.json`/`.csv`, `series.json`, `youtube_orphans.json`, `enrichment.json` [id-keyed enrichment, #44], `transcripts/`). |
+| `data/raw/*.tsv` | Raw inventories pulled via `yt-dlp`. `data/catalog/` = canonical dataset (`catalog.json`/`.csv`, `series.json`, `youtube_orphans.json`, `enrichment.json` [#44], `voiceprints.json` [id-keyed speaker embeddings, #46], `transcripts/`). |
 | `data/catalog/transcripts/` | Canonical transcripts, **named `<entry-id>.<ext>`** (the `id` from `catalog.json`): `sc-<id>.txt` (cleaned) + `.raw.txt` (uncleaned ASR — accent signal for speaker ID, #45) + `.vtt` (segment timing) committed by default; `.json` (word-level timing) is opt-in via `--segments` (heavy — see #42); later `.en.vtt` / `.pt.vtt` for translated subtitles. Filename = primary key; title/date live in the catalog, not the filename. |
 
 ## Architecture (three layers)

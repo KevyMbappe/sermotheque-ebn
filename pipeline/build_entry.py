@@ -119,7 +119,8 @@ def parse_title(raw_title: str) -> dict:
 
 
 def build_entry(source: dict, *, transcribe, enrich, on_progress=None,
-                transcripts_dir=TRANSCRIPTS, persist_transcript=True, persist_segments=False) -> dict:
+                transcripts_dir=TRANSCRIPTS, persist_transcript=True, persist_segments=False,
+                voiceprints_path=None) -> dict:
     """Compose one canonical entry. `on_progress(phase)` (optional) is called at each
     step for live tracking. `persist_segments` (default False) controls whether the
     heavy word-level `.json` sidecar is written — by default only `.txt` + `.vtt` are
@@ -175,6 +176,10 @@ def build_entry(source: dict, *, transcribe, enrich, on_progress=None,
             segments_ref = _persist("json", json.dumps(
                 {"language": tr.get("language", "fr"), "segments": tr["segments"]},
                 ensure_ascii=False))
+        if tr.get("embedding"):                       # voiceprint → its own store, one-shot (#46)
+            import voiceprint_store
+            voiceprint_store.save_embedding(eid, tr["embedding"],
+                                            path=voiceprints_path or voiceprint_store.STORE)
 
     _p("done")
     return {
@@ -229,12 +234,14 @@ def _cli():
     ap.add_argument("--model", default="claude-sonnet-4-6")
     ap.add_argument("--segments", action="store_true",
                     help="also persist the heavy word-level .json (default: txt+vtt only)")
+    ap.add_argument("--no-voiceprint", action="store_true", help="skip the speaker-embedding capture (#46)")
     ap.add_argument("--quiet", action="store_true", help="suppress live progress on stderr")
     args = ap.parse_args()
     load_dotenv()  # pick up ANTHROPIC_API_KEY (+ optional SERMO_* overrides) from .env
 
     from transcribe import make_transcriber, probe_metadata
     from enrich import make_enricher, cost_of
+    from embed import make_embedder
 
     verbose = not args.quiet
     def log(msg):  # everything human-facing goes to stderr; stdout stays clean JSON
@@ -271,9 +278,10 @@ def _cli():
         cost_box["usd"] = c
         log(f"        enrich: {in_tok:,} in + {out_tok:,} out tok → ${c:.4f} ({args.model})")
 
+    embedder = None if args.no_voiceprint else make_embedder()
     entry = build_entry(
         source,
-        transcribe=make_transcriber(verbose=verbose, word_timestamps=args.segments),
+        transcribe=make_transcriber(verbose=verbose, word_timestamps=args.segments, embed=embedder),
         enrich=make_enricher(model=args.model, on_usage=on_usage),
         on_progress=on_progress, persist_segments=args.segments)
 
