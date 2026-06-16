@@ -82,6 +82,21 @@ class TestBuildEntry(unittest.TestCase):
         self.assertEqual(loaded["segments"][0]["words"][0]["word"], "Au")
         self.assertTrue(e["segments_ref"].endswith("sc-123.json"))
 
+    def test_vtt_locate_anchors_phrases_to_timestamps(self):
+        from build_entry import _vtt_locate
+        vtt = ("WEBVTT\n\n00:10.000 --> 00:14.000\nAu commencement était la Parole.\n\n"
+               "01:05.500 --> 01:09.000\nEt la Parole était Dieu.\n")
+        self.assertEqual(_vtt_locate("Au commencement", vtt), 10)
+        self.assertEqual(_vtt_locate("la Parole était Dieu", vtt), 65)   # 01:05 → 65s
+        self.assertIsNone(_vtt_locate("phrase absente", vtt))
+
+    def test_quotes_and_chapters_get_timestamps(self):
+        enr = lambda t, p: {**ENRICHMENT, "key_quotes": ["Au commencement."],
+                            "chapters": [{"title": "Intro", "anchor": "Au commencement"}]}
+        e = build_entry(SOURCE, transcribe=lambda s: self.RICH, enrich=enr, transcripts_dir=self.tmp)
+        self.assertEqual(e["key_quotes"], [{"text": "Au commencement.", "t": 0}])  # RICH vtt cue at 00:00
+        self.assertEqual(e["chapters"], [{"title": "Intro", "t": 0}])
+
     def test_raw_transcript_persisted_when_provided(self):
         rich = {**self.RICH, "text_raw": "confession des fois en Dieu les Fils"}  # uncleaned
         e = build_entry(SOURCE, transcribe=lambda s: rich, enrich=lambda t, p: ENRICHMENT,

@@ -64,8 +64,9 @@ def write_csv(rows):
     scalar = ["id", "source", "title", "language", "date", "audio_duration", "video_duration",
               "speaker", "speaker_provenance", "series_name", "series_part", "series_order",
               "scripture_osis", "scripture_book", "primary_scripture", "kind", "is_conference",
-              "description", "summary", "transcript_ref"]
-    joined = ["topics", "key_points", "references", "scripture_refs", "questions"]  # list → "a | b"
+              "description", "invitation", "summary", "transcript_ref"]
+    joined = ["topics", "doctrines", "key_points", "references", "scripture_refs", "questions"]
+    # key_quotes / chapters carry timestamps (nested objects) — JSON only, not flattened to CSV.
     cols = scalar + ["soundcloud_id", "youtube_id"] + joined
     with (CAT.parent / "catalog.csv").open("w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=cols)

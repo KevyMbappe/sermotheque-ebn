@@ -16,13 +16,26 @@ ENRICH_SCHEMA = {
     "properties": {
         "description": {"type": "string",
                         "description": "ONE punchy sentence (≤30 words) to show under the video — distinct from the summary; a hook, not a recap."},
+        "invitation": {"type": "string",
+                       "description": "2-4 sentence warm, SOBER invitation to listen (blogger-style 'why listen'). Inviting but substantive — no marketing clichés, no 'plongez dans', no empty superlatives."},
         "summary": {"type": "string", "description": "2-3 sentence French summary, faithful to the audio."},
         "key_points": {"type": "array", "items": {"type": "string"},
                        "description": "3-6 short bullets tracing the sermon's main movements/arguments."},
+        "chapters": {"type": "array",
+                     "description": "3-7 sections of the sermon, in order, for player navigation.",
+                     "items": {"type": "object", "additionalProperties": False,
+                               "required": ["title", "anchor"],
+                               "properties": {
+                                   "title": {"type": "string", "description": "short section title"},
+                                   "anchor": {"type": "string", "description": "a phrase copied VERBATIM (exact words) from the transcript where this section begins — used to locate its timestamp."}}}},
         "topics": {"type": "array", "items": {"type": "string"},
-                   "description": "3-7 topics; prefer the provided controlled vocabulary."},
+                   "description": "3-7 BROAD subjects for browsing; prefer the controlled vocabulary (e.g. 'Christologie', 'Prière')."},
+        "doctrines": {"type": "array", "items": {"type": "string"},
+                      "description": "Specific doctrines/positions actually expounded or defended — FINER than topics, don't just echo them (e.g. 'union hypostatique', 'naissance virginale', 'imputation de la justice'). Empty if none."},
         "references": {"type": "array", "items": {"type": "string"},
                        "description": "People/works/confessions actually CITED (e.g. 'Jean Calvin', 'Confession de foi de 1689', 'Augustin'). Confirm, don't invent; empty if none."},
+        "key_quotes": {"type": "array", "items": {"type": "string"},
+                       "description": "1-3 striking sentences copied VERBATIM (exact words) from the transcript — used for clips/search; timestamps are attached afterwards."},
         "questions": {"type": "array", "items": {"type": "string"},
                       "description": "2-4 reflection/discussion questions for a small group (these are study aids — generated, not quoted)."},
         "primary_scripture": {"type": "string", "description": "Main passage preached (e.g. 'Luc 1:26-38'), or empty."},
@@ -30,7 +43,8 @@ ENRICH_SCHEMA = {
                            "description": "Other passages cited in the sermon."},
         "series_hint": {"type": "string", "description": "Series/study context mentioned (e.g. 'Confession de foi ch.8'), or empty."},
     },
-    "required": ["description", "summary", "key_points", "topics", "references", "questions",
+    "required": ["description", "invitation", "summary", "key_points", "chapters", "topics",
+                 "doctrines", "references", "key_quotes", "questions",
                  "primary_scripture", "scripture_refs", "series_hint"],
     "additionalProperties": False,
 }
@@ -55,13 +69,16 @@ PROMPT = """Tu enrichis le catalogue de prédications d'une église réformée b
 À partir de la TRANSCRIPTION (français, générée automatiquement — ignore les coquilles d'ASR),
 renvoie un JSON (tout en français):
 - description: UNE phrase accrocheuse (≤30 mots) à afficher sous la vidéo (une accroche, pas un résumé);
+- invitation: 2-4 phrases chaleureuses mais SOBRES, donnant envie d'écouter (pas de clichés marketing, pas de 'plongez dans');
 - summary: un résumé fidèle de 2-3 phrases;
-- key_points: 3-6 points clés retraçant le déroulé de la prédication;
-- topics: 3-7 sujets théologiques;
-- references: personnes/œuvres/confessions réellement CITÉES (ex: Jean Calvin, Confession de foi de 1689) — n'invente pas, vide si aucune;
-- questions: 2-4 questions de réflexion pour un groupe (ce sont des aides générées);
-- primary_scripture: le passage principal prêché; scripture_refs: les autres passages cités; series_hint: contexte de série.
-Confirme, n'invente pas (sauf les questions, qui sont des aides). {vocab}
+- key_points: 3-6 points clés retraçant le déroulé;
+- chapters: 3-7 sections en ordre, chacune avec un titre (title) et une phrase d'ancrage (anchor) copiée TEXTUELLEMENT de la transcription au début de la section (servira à retrouver son minutage);
+- topics: 3-7 sujets LARGES pour la navigation; doctrines: les doctrines/positions précises réellement exposées (PLUS FINES que topics, ne les répète pas);
+- references: personnes/œuvres/confessions réellement CITÉES — n'invente pas, vide si aucune;
+- key_quotes: 1-3 phrases marquantes copiées TEXTUELLEMENT (mots exacts) de la transcription;
+- questions: 2-4 questions de réflexion pour un groupe (aides générées);
+- primary_scripture, scripture_refs, series_hint.
+Confirme, n'invente pas (sauf invitation/questions, qui sont rédigées). {vocab}
 
 Titre (indice): {title}
 TRANSCRIPTION:
@@ -69,7 +86,8 @@ TRANSCRIPTION:
 """
 
 
-def make_enricher(*, model="claude-sonnet-4-6", topic_vocab=None, max_chars=120000, on_usage=None):
+def make_enricher(*, model="claude-sonnet-4-6", topic_vocab=None, max_chars=120000,
+                  max_tokens=4096, on_usage=None):
     """Build the real enrich_fn(transcript, parsed) -> dict. Needs ANTHROPIC_API_KEY.
 
     max_chars=120000 (~40k tokens) comfortably covers a full ~60-90 min sermon — the
@@ -85,13 +103,17 @@ def make_enricher(*, model="claude-sonnet-4-6", topic_vocab=None, max_chars=1200
         prompt = PROMPT.format(vocab=vocab, title=parsed.get("raw_title", ""),
                                transcript=transcript[:max_chars])
         resp = client.messages.create(
-            model=model, max_tokens=1500,
+            model=model, max_tokens=max_tokens,
             output_config={"format": {"type": "json_schema", "schema": ENRICH_SCHEMA}},
             messages=[{"role": "user", "content": prompt}],
         )
         usage = getattr(resp, "usage", None)
         if on_usage and usage is not None:
             on_usage(usage.input_tokens, usage.output_tokens)
+        # The rich schema can run long; a truncated response is invalid JSON. Fail loudly
+        # (the runner catches it → resume retries) rather than crash with an opaque error.
+        if getattr(resp, "stop_reason", None) == "max_tokens":
+            raise RuntimeError(f"enrichment truncated at max_tokens={max_tokens}; raise it")
         import json
         text = next(b.text for b in resp.content if b.type == "text")
         return json.loads(text)

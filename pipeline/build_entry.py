@@ -15,6 +15,7 @@ Pipeline:  parse title → transcribe → enrich → assemble (+ persist transcr
 """
 import json
 import os
+import re
 from pathlib import Path
 
 from scripture import (fold, parse_scripture, parse_speaker, resolve_speaker, speaker_provenance,
@@ -51,6 +52,50 @@ def _norm_date(s):
         return None
     s = str(s)
     return f"{s[:4]}-{s[4:6]}-{s[6:]}" if len(s) == 8 and s.isdigit() else s
+
+
+def _ts_to_sec(t):
+    m = re.match(r"(?:(\d{1,2}):)?(\d{1,2}):(\d{2})\.\d+", t)
+    if not m:
+        return None
+    h, mi, s = m.groups()
+    return (int(h) if h else 0) * 3600 + int(mi) * 60 + int(s)
+
+
+def _vtt_cues(vtt):
+    """[(start_seconds, text)] per VTT cue."""
+    cues = []
+    for block in re.split(r"\n\s*\n", (vtt or "").strip()):
+        lines = [ln for ln in block.splitlines() if ln.strip()]
+        ti = next((i for i, ln in enumerate(lines) if "-->" in ln), None)
+        if ti is None:
+            continue
+        secs = _ts_to_sec(lines[ti].split("-->")[0].strip())
+        text = " ".join(lines[ti + 1:]).strip()
+        if secs is not None and text:
+            cues.append((secs, text))
+    return cues
+
+
+def _vtt_locate(phrase, vtt):
+    """Start time (sec) of the cue where a verbatim phrase begins, else None. Matches on
+    normalized text (ASR punctuation/case shouldn't block it), falling back to the first 6
+    words — so LLM-returned quotes/chapter anchors get a real timestamp from our own VTT (#42)."""
+    cues = _vtt_cues(vtt)
+    if not cues or not phrase:
+        return None
+    norm = lambda s: re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", s.lower())).strip()
+    big, pos = "", []
+    for secs, text in cues:
+        nt = norm(text) + " "
+        big += nt
+        pos += [secs] * len(nt)
+    q = norm(phrase)
+    i = big.find(q)
+    if i < 0:
+        short = " ".join(q.split()[:6])
+        i = big.find(short) if short else -1
+    return pos[i] if 0 <= i < len(pos) else None
 
 
 def parse_title(raw_title: str) -> dict:
@@ -102,6 +147,14 @@ def build_entry(source: dict, *, transcribe, enrich, on_progress=None,
     _p("enrich")
     enrichment = enrich(text, parsed) or {}          # external step 2 (injected)
 
+    # Anchor LLM-returned quotes/chapters to real timestamps via our own VTT (deterministic).
+    vtt = tr.get("vtt") or ""
+    key_quotes = [{"text": q, "t": _vtt_locate(q, vtt)}
+                  for q in (enrichment.get("key_quotes") or []) if q]
+    chapters = [{"title": c.get("title"), "t": _vtt_locate(c.get("anchor", ""), vtt)}
+                for c in (enrichment.get("chapters") or []) if c.get("title")]
+    chapters.sort(key=lambda c: (c["t"] is None, c["t"] or 0))  # player order (anchors can land early)
+
     _p("persist")
     transcript_ref = raw_ref = captions_ref = segments_ref = None
     if persist_transcript and text:
@@ -144,9 +197,13 @@ def build_entry(source: dict, *, transcribe, enrich, on_progress=None,
         "scripture_refs": enrichment.get("scripture_refs") or [],
         "topics": enrichment.get("topics") or [],
         "description": enrichment.get("description") or None,
+        "invitation": enrichment.get("invitation") or None,
         "summary": enrichment.get("summary") or None,
         "key_points": enrichment.get("key_points") or [],
+        "chapters": chapters,
+        "doctrines": enrichment.get("doctrines") or [],
         "references": enrichment.get("references") or [],
+        "key_quotes": key_quotes,
         "questions": enrichment.get("questions") or [],
         "transcript_ref": transcript_ref,
         "raw_ref": raw_ref,

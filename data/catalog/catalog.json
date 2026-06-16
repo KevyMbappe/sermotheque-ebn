@@ -28,16 +28,93 @@
     "youtube_match": null,
     "translation_candidates": [],
     "topics": [
-      "Incarnation",
       "Christologie",
-      "Nature de Christ (deux natures)",
-      "Naissance virginale",
+      "Incarnation",
       "Trinité",
-      "Médiation du Christ",
-      "Hérésies christologiques"
+      "Rédemption",
+      "Sotériologie",
+      "Hérésies et orthodoxie"
     ],
-    "summary": "Cette prédication explore la doctrine de l'incarnation du Fils de Dieu, en s'appuyant sur le chapitre 8 de la confession de foi (Christ le Médiateur). Le prédicateur insiste sur le fait que c'est la deuxième personne de la Trinité qui a assumé une véritable nature humaine, conçue par l'Esprit-Saint dans le sein de la Vierge Marie, sans péché ni transformation ontologique de la personne divine. Il montre comment chaque déviation doctrinale — docétisme, modalisme, nestorianisme — compromet le salut, car seule une incarnation réelle permet à Christ d'être un médiateur parfait entre Dieu et l'homme.",
+    "summary": "La prédication expose la doctrine de l'incarnation à partir de la Confession de foi baptiste de 1689 et de plusieurs passages bibliques clés. L'orateur montre que le Fils éternel de Dieu, deuxième personne de la Trinité, a pris une véritable nature humaine par naissance virginale — sans mélange, sans confusion, sans changement de personne — afin d'être le seul médiateur qualifié entre Dieu et l'homme. Chaque précision doctrinale est présentée comme indispensable au salut : toute déviation, qu'elle soit docète, nestorienne ou modaliste, compromet la rédemption elle-même.",
     "transcript_ref": "data/catalog/transcripts/sc-2338530545.txt",
+    "description": "La naissance à Bethléem n'est pas le début d'une personne — c'est l'entrée du Fils éternel dans l'histoire humaine.",
+    "invitation": "Cette prédication examine avec rigueur ce que la Bible affirme sur l'incarnation du Fils de Dieu : pourquoi il fallait qu'il soit véritablement Dieu et véritablement homme, et ce que nous perdons si l'une ou l'autre de ces vérités est compromise. L'orateur prend le temps de montrer comment chaque précision doctrinale est au service de l'assurance du salut. Une étude sérieuse, ancrée dans la confession de foi et dans les Écritures, pour ceux qui veulent comprendre pourquoi la doctrine de l'incarnation n'est pas optionnelle.",
+    "key_points": [
+      "L'incarnation s'inscrit dans le dessein éternel de Dieu : le Fils a été désigné médiateur selon une alliance éternelle, avant même la création.",
+      "C'est la deuxième personne de la Trinité — et non 'Dieu' de façon générale — qui s'est fait chair ; la précision trinitaire est indissociable de la doctrine de l'incarnation.",
+      "La nature humaine du Christ était réelle et complète, conçue par le Saint-Esprit de la substance de Marie, sans être contaminée par le péché.",
+      "La personne du Christ reste unique et divine : l'incarnation n'a pas créé une nouvelle personne ni mélangé les deux natures.",
+      "Trois hérésies majeures sont identifiées et réfutées : le docétisme (corps illusoire), le nestorianisme (deux personnes), le modalisme (manifestations successives).",
+      "Sans incarnation véritable, il n'y a ni représentant humain sans péché, ni punition portée dans une chair réelle, ni espérance de résurrection — donc pas de salut."
+    ],
+    "chapters": [
+      {
+        "t": 15,
+        "title": "Rappel du cadre : Christ médiateur selon le dessein éternel"
+      },
+      {
+        "t": 415,
+        "title": "Pourquoi la précision christologique conditionne le salut"
+      },
+      {
+        "t": 909,
+        "title": "Définition de l'incarnation selon la Confession de foi"
+      },
+      {
+        "t": 451,
+        "title": "La Trinité, condition nécessaire de la rédemption"
+      },
+      {
+        "t": 1157,
+        "title": "Ce que l'incarnation affirme : cinq déclarations précises"
+      },
+      {
+        "t": 3150,
+        "title": "La naissance virginale et la transmission du péché"
+      },
+      {
+        "t": 3314,
+        "title": "Conclusion : rester ancrés à la révélation biblique"
+      }
+    ],
+    "doctrines": [
+      "Incarnation du Fils éternel de Dieu",
+      "Naissance virginale",
+      "Double nature du Christ (vrai Dieu et vrai homme)",
+      "Unité de la personne du Christ (contre le nestorianisme)",
+      "Réfutation du docétisme",
+      "Réfutation du modalisme",
+      "Alliance éternelle de rédemption (pactum salutis)",
+      "Imputation et représentation fédérale d'Adam",
+      "Transmission biologique de la corruption du péché",
+      "Préexistence éternelle du Fils"
+    ],
+    "references": [
+      "Confession de foi baptiste de 1689 (chapitre 8)",
+      "Francis Schaeffer",
+      "Concile d'Éphèse (Théotokos)",
+      "Symbole de Nicée (mention implicite des crédeaux)"
+    ],
+    "key_quotes": [
+      {
+        "t": 1340,
+        "text": "les bébés dans les mangeoires la personne qui était dans ses corps est la même personne qui soutenait tout l'univers par sa parole puissante"
+      },
+      {
+        "t": 1700,
+        "text": "sans trinité il n'y a pas de rédemption il n'y a pas de réconciliation avec Dieu car l'incarnation n'est pas possible"
+      },
+      {
+        "t": 3326,
+        "text": "la moindre déviation va enlever complètement nous ne pouvons pas dire par exemple que les Saint-Esprits au ventre de Marie il a formé à partir de rien une nouvelle nature humaine sinon cela ne pouvait pas représenter notre race"
+      }
+    ],
+    "questions": [
+      "En quoi la précision trinitaire est-elle indispensable pour comprendre l'incarnation ? Que perdrait-on si l'on disait simplement 'Dieu s'est fait homme' sans distinguer les personnes ?",
+      "Pourquoi la réalité corporelle de l'incarnation (contre le docétisme) est-elle une condition du salut, et pas seulement un détail théologique ?",
+      "Comment le nestorianisme — l'idée de deux personnes en Christ — ruinerait-il la notion de représentation et de médiation ?",
+      "Que signifie concrètement, dans la vie chrétienne, le fait que la connaissance précise du Christ conditionne l'assurance du salut ?"
+    ],
     "primary_scripture": "Luc 1:26-38",
     "scripture_refs": [
       "Jean 1:1",
@@ -51,7 +128,7 @@
       "1 Jean 4:2",
       "Malachie 4:2"
     ],
-    "series_hint": "Confession de foi ch.8 — série d'études sur la doctrine du Christ le Médiateur",
+    "series_hint": "Série d'études sur la Confession de foi baptiste de 1689, chapitre 8 — Le Christ médiateur",
     "captions_ref": "data/catalog/transcripts/sc-2338530545.vtt"
   },
   {
