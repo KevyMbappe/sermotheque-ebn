@@ -50,6 +50,12 @@ def clean_transcript(text: str) -> str:
     return text
 
 
+def count_artifacts(text: str) -> int:
+    """How many systematic ASR artifacts (the _CLEAN_RULES patterns) appear in the text.
+    A lusophone/non-native accent inflates this — a speaker signal in the raw transcript (#46)."""
+    return sum(len(pat.findall(text)) for pat, _ in _CLEAN_RULES)
+
+
 def _slug(s):
     s = "".join(c for c in unicodedata.normalize("NFD", s.lower())
                 if unicodedata.category(c) != "Mn")
