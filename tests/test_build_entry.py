@@ -77,10 +77,19 @@ class TestBuildEntry(unittest.TestCase):
         self.assertEqual(loaded["segments"][0]["words"][0]["word"], "Au")
         self.assertTrue(e["segments_ref"].endswith("sc-123.json"))
 
+    def test_raw_transcript_persisted_when_provided(self):
+        rich = {**self.RICH, "text_raw": "confession des fois en Dieu les Fils"}  # uncleaned
+        e = build_entry(SOURCE, transcribe=lambda s: rich, enrich=lambda t, p: ENRICHMENT,
+                        transcripts_dir=self.tmp)
+        self.assertEqual((self.tmp / "sc-123.raw.txt").read_text(encoding="utf-8"),
+                         "confession des fois en Dieu les Fils")
+        self.assertTrue(e["raw_ref"].endswith("sc-123.raw.txt"))
+
     def test_string_transcriber_leaves_timestamp_refs_empty(self):
         e = self._build()  # fake returns a plain string
         self.assertIsNone(e["captions_ref"])
         self.assertIsNone(e["segments_ref"])
+        self.assertIsNone(e["raw_ref"])
 
     def test_date_falls_back_to_source_upload_date(self):
         # Title has no date prefix; YouTube's upload_date (YYYYMMDD) should fill it.

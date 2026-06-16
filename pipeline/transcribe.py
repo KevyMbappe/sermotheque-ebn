@@ -137,6 +137,7 @@ def make_transcriber(*, keep_audio=False, model=MODEL, word_timestamps=False, ve
                 raise ValueError("transcribe: source needs audio_path or a url")
             audio = downloaded = download_audio(url, verbose=verbose)
         result = asr(audio, model=model, word_timestamps=word_timestamps, verbose=verbose)
+        result["text_raw"] = result["text"]          # uncleaned ASR — preserves the accent signature (#45)
         result["text"] = clean_transcript(result["text"])
         result["vtt"] = clean_transcript(result["vtt"])
         if downloaded and not keep_audio:

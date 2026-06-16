@@ -102,7 +102,7 @@ def build_entry(source: dict, *, transcribe, enrich, on_progress=None,
     enrichment = enrich(text, parsed) or {}          # external step 2 (injected)
 
     _p("persist")
-    transcript_ref = captions_ref = segments_ref = None
+    transcript_ref = raw_ref = captions_ref = segments_ref = None
     if persist_transcript and text:
         transcripts_dir = Path(transcripts_dir)
         transcripts_dir.mkdir(parents=True, exist_ok=True)
@@ -113,6 +113,8 @@ def build_entry(source: dict, *, transcribe, enrich, on_progress=None,
             return str(path.relative_to(ROOT)) if ROOT in path.parents else str(path)
 
         transcript_ref = _persist("txt", text)
+        if tr.get("text_raw"):                       # uncleaned ASR — accent fingerprint for speaker ID (#45)
+            raw_ref = _persist("raw.txt", tr["text_raw"])
         if tr.get("vtt"):                            # subtitle-ready segment timestamps (committed)
             captions_ref = _persist("vtt", tr["vtt"])
         if persist_segments and tr.get("segments"):  # word-level timing + confidence — opt-in (#42)
@@ -141,6 +143,7 @@ def build_entry(source: dict, *, transcribe, enrich, on_progress=None,
         "topics": enrichment.get("topics") or [],
         "summary": enrichment.get("summary") or None,
         "transcript_ref": transcript_ref,
+        "raw_ref": raw_ref,
         "captions_ref": captions_ref,
         "segments_ref": segments_ref,
         "kind": parsed["kind"],

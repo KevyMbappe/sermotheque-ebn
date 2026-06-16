@@ -29,7 +29,7 @@ This reframe happened through a long planning conversation; the **two spec docs 
 | `tools/md_to_pdf.py` | Markdown → PDF via headless Chrome (used for SYNTHESE / spike PDFs). |
 | `docs/research/` | **Historical evidence** (not living docs): the M3 ASR spike (`METHODOLOGY.md`, `RESULTS.md`/`.pdf`) + the M5b POC (`POC.md`/`.pdf`, `poc_entries.json`) + `spike-transcripts/` (the original slices the spike ran on). |
 | `data/raw/*.tsv` | Raw inventories pulled via `yt-dlp`. `data/catalog/` = canonical dataset (`catalog.json`/`.csv`, `series.json`, `youtube_orphans.json`, `enrichment.json` [id-keyed enrichment, #44], `transcripts/`). |
-| `data/catalog/transcripts/` | Canonical transcripts, **named `<entry-id>.<ext>`** (the `id` from `catalog.json`): `sc-<id>.txt` (plain) + `.vtt` (segment timing) committed by default; `.json` (word-level timing) is opt-in via `--segments` (heavy — see #42); later `.en.vtt` / `.pt.vtt` for translated subtitles. Filename = primary key; title/date live in the catalog, not the filename. |
+| `data/catalog/transcripts/` | Canonical transcripts, **named `<entry-id>.<ext>`** (the `id` from `catalog.json`): `sc-<id>.txt` (cleaned) + `.raw.txt` (uncleaned ASR — accent signal for speaker ID, #45) + `.vtt` (segment timing) committed by default; `.json` (word-level timing) is opt-in via `--segments` (heavy — see #42); later `.en.vtt` / `.pt.vtt` for translated subtitles. Filename = primary key; title/date live in the catalog, not the filename. |
 
 ## Architecture (three layers)
 
