@@ -23,6 +23,7 @@ This reframe happened through a long planning conversation; the **two spec docs 
 | `pipeline/scripture.py` | Shared parsing primitives (OSIS book map, scripture/speaker/series parsing). Imported by the others. |
 | `pipeline/parse_catalog.py` · `match_youtube.py` · `fold_orphans.py` · `cluster_series.py` · `enrichment_store.py` | **Catalog-build** pipeline (batch, pure-stdlib). `build.py` runs them in order, ending with the enrichment **writeback** (#44). |
 | `pipeline/build_entry.py` | ★ **Single entry point**: `build_entry(source, *, transcribe, enrich)` — one YT/SC source → one canonical entry. |
+| `pipeline/run_enrichment.py` | **Production runner** for the catalog-wide pass: resumable, logfile, live cost; `save_entry` per sermon → store + writeback (#44/#45). |
 | `pipeline/transcribe.py` · `enrich.py` | The two **injected** external steps: mlx-whisper adapter (+ `clean_transcript`) and Claude-API adapter. |
 | `tests/` | Stdlib `unittest` suite (offline). Run: `python3 -m unittest discover -s tests`. |
 | `tools/md_to_pdf.py` | Markdown → PDF via headless Chrome (used for SYNTHESE / spike PDFs). |
@@ -78,14 +79,18 @@ Re-pulling inventories needs a recent yt-dlp (≥2026.x for YouTube's layout); t
 
 **Enrichment pipeline** (per-sermon, M5):
 ```bash
-python3 -m unittest discover -s tests        # 22 tests, offline, pure stdlib — no venv needed
+python3 -m unittest discover -s tests        # 34 tests, offline, pure stdlib — no venv needed
 
 # one-time setup (everything project-local & gitignored):
 python3 -m venv .venv && ./.venv/bin/pip install -r requirements.txt
 cp .env.example .env        # then put your ANTHROPIC_API_KEY in .env
 
-# real run (uses the .venv python so anthropic/yt-dlp/mlx-whisper are importable; auto-loads .env):
-./.venv/bin/python pipeline/build_entry.py --soundcloud-url <url> --raw-title "<title>"
+# one sermon (uses the .venv python so anthropic/yt-dlp/mlx-whisper are importable; auto-loads .env):
+./.venv/bin/python pipeline/build_entry.py --youtube-url <url>   # --raw-title optional (fetched)
+
+# the catalog-wide pass (resumable, logfile, live cost — the real backfill):
+./.venv/bin/python pipeline/run_enrichment.py --source soundcloud   # 239 SC spine, ~16h, ~$15
+./.venv/bin/python pipeline/run_enrichment.py --source all --limit 3 # smoke test first
 ```
 Everything the pipeline needs lives **inside the project** (never `/tmp`):
 - **`.venv/`** (gitignored) — yt-dlp ≥ 2026.x, mlx-whisper, anthropic (see `requirements.txt`). `transcribe.py` defaults to `.venv/bin/*` (override via `SERMO_YTDLP` / `SERMO_MLX_WHISPER`).
@@ -96,7 +101,7 @@ Everything the pipeline needs lives **inside the project** (never `/tmp`):
 
 ## Current status & next steps
 
-**Done:** planning/specs · M1 catalog · M1b series · M2 YT↔SC matching · M2b duration dedup (union 467) · M3 ASR+LLM spike (PASS) · M3b n=8 sample · M4 fold→unified 467 · **M5 enrichment pipeline `build_entry`** · M5b POC (8 real sermons) · M5c cost + Haiku-vs-Sonnet bake-off · M5d timestamp capture · M5e docs restructure · **M5f pipeline hardening (cap 120k, YT date, live tracking + cost, txt+vtt default) + first real YT run** · **M5h matcher hardening (false positives fixed; union 467→517)** · **M5i enrichment writeback layer (#44) + 8-sermon re-run validated** · 28 tests · git + GitHub remote.
+**Done:** planning/specs · M1 catalog · M1b series · M2 YT↔SC matching · M2b duration dedup (union 467) · M3 ASR+LLM spike (PASS) · M3b n=8 sample · M4 fold→unified 467 · **M5 enrichment pipeline `build_entry`** · M5b POC (8 real sermons) · M5c cost + Haiku-vs-Sonnet bake-off · M5d timestamp capture · M5e docs restructure · **M5f pipeline hardening (cap 120k, YT date, live tracking + cost, txt+vtt default) + first real YT run** · **M5h matcher hardening (false positives fixed; union 467→517)** · **M5i enrichment writeback (#44)** · **M5j production runner + default-speaker rule (#45)** · 34 tests · git + GitHub remote.
 
 Catalog is the **unified union of 517 records** (239 SoundCloud + 278 YouTube-only), one canonical schema with `source` + `media`, 26 series. The per-sermon pipeline is **validated end-to-end** (hardened, re-run on the 8 samples + a real YouTube sermon). **Enrichment now persists across rebuilds** via an id-keyed store (`data/catalog/enrichment.json`) + writeback in `build.py` (#44) — **9 rows enriched so far** (the 8 samples + `yt-IqNmh_XGULE`). The full catalog-wide enrichment pass has NOT yet run.
 
@@ -105,7 +110,7 @@ Catalog is the **unified union of 517 records** (239 SoundCloud + 278 YouTube-on
 2. **MATCHER HARDENED (DONE, decision #43)** — duration now only corroborates; union re-derived to **517** with 0 false positives. ✓
 3. **Re-run the sample-8 with the hardened pipeline** (in progress) — full confidence before the catalog-wide pass.
 4. **ENRICHMENT WRITEBACK DONE (decision #44)** — id-keyed `data/catalog/enrichment.json` + `writeback()` as the final `build.py` step; survives rebuilds. ✓
-5. **Full ASR enrichment pass** — run `build_entry` across the catalog (~13× real-time ⇒ ~16 h for 239 SC sermons, a few overnight runs); per sermon call `save_entry(...)` → store, then `build.py` writeback merges into `catalog.json`. Needs `ANTHROPIC_API_KEY`: **~$0.06/sermon on Sonnet 4.6 ⇒ ~$15 for the 239 SC / ~$31 for the full 517** (Haiku 4.5 ≈ ⅓ that, decision #40). **Build the production runner first** (promote `cache/rerun8.py`): logfile + resumability (skip done, checkpoint) + `save_entry` per sermon. Add a **default-speaker rule** for untagged sermons.
+5. **RUN the full ASR enrichment pass** — the runner is built (`pipeline/run_enrichment.py`, resumable + logfile + cost) and the default-speaker rule is in (#45). Just run it: `./.venv/bin/python pipeline/run_enrichment.py --source soundcloud` (the 239 SC spine, ~16 h overnight, ~$15) then `--source all` for the YT-only sermons (~$31 total for 517). Needs `ANTHROPIC_API_KEY`. 9 already done (skipped on resume). *(English YT sermons get a French summary of English content — fine, but note the enrich prompt is French.)*
 6. **JSON Schema + WP import** — freeze the canonical record contract; design the WordPress CPT/ACF import → first public deliverable (website sermon library).
 - *(Optional: also fold the 102 Live `Service` records in — currently only the Videos-tab orphans are folded.)*
 

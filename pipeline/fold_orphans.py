@@ -11,6 +11,8 @@ import json
 import re
 from pathlib import Path
 
+from scripture import resolve_speaker
+
 ROOT = Path(__file__).resolve().parent.parent
 CAT = ROOT / "data" / "catalog" / "catalog.json"
 ORPH = ROOT / "data" / "catalog" / "youtube_orphans.json"
@@ -59,7 +61,9 @@ def main():
             "id": "yt-" + o["youtube_id"], "source": "youtube",
             "raw_title": o["raw_title"], "title": o.get("title"),
             "language": o.get("language", "fr"),
-            "video_duration": o.get("duration"), "speaker": o.get("speaker"),
+            "video_duration": o.get("duration"),
+            "speaker": resolve_speaker(o["raw_title"], is_conference=bool(o.get("is_conference")),
+                                       is_english=(o.get("language") == "en")),
             "scripture_osis": o.get("scripture_osis"), "scripture_book": book, "scripture_chapter": chap,
             "kind": o.get("kind", "sermon"), "is_conference": o.get("is_conference"),
             "media": {"soundcloud_id": None, "youtube_id": o["youtube_id"]},

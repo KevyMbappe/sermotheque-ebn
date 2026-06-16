@@ -7,6 +7,9 @@ venv/
 # Secrets / local config — real .env is private; .env.example is committed as the template.
 .env
 
+# Operational run logs (the enrichment pass appends here)
+logs/
+
 # OS
 .DS_Store
 Thumbs.db

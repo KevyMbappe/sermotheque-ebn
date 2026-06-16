@@ -4,7 +4,8 @@ import unittest
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
-from scripture import fold, parse_scripture, parse_speaker, parse_part  # noqa: E402
+from scripture import (fold, parse_scripture, parse_speaker, parse_part,  # noqa: E402
+                       resolve_speaker, DEFAULT_SPEAKER)
 
 
 def osis(title):
@@ -45,6 +46,15 @@ class TestSpeakerAndPart(unittest.TestCase):
         self.assertEqual(parse_part("La perfection | Jacques 1:25 (Partie I)"), 1)
         self.assertEqual(parse_part("Leçon n°10"), 10)
         self.assertEqual(parse_part("Galates Ch. 2 v 11 à 16 (2)"), 2)
+
+    def test_default_speaker_rule(self):
+        # untagged sermon → the regular preacher
+        self.assertEqual(resolve_speaker("Image de Dieu | Genèse 1:26"), DEFAULT_SPEAKER)
+        # explicit guest named in the title wins
+        self.assertEqual(resolve_speaker("La grâce souveraine (Pr. Joël Beeke)"), "Joël Beeke")
+        # conference / English left unattributed (likely a guest, don't mis-credit the pastor)
+        self.assertIsNone(resolve_speaker("Good News Conference 2024", is_conference=True))
+        self.assertIsNone(resolve_speaker("The witness of the Spirit | John 3", is_english=True))
 
 
 if __name__ == "__main__":

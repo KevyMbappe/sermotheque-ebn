@@ -124,6 +124,20 @@ def parse_speaker(title):
     return None
 
 
+# The regular preacher (lusophone-accented) — untagged sermons are his. Decision #45.
+DEFAULT_SPEAKER = "David Pelosi"
+
+
+def resolve_speaker(title, *, is_conference=False, is_english=False):
+    """Explicit speaker named in the title, else the regular preacher — except for
+    conference or English sermons, which are typically named guests, so we leave those
+    unattributed rather than mis-credit them to the pastor."""
+    spk = parse_speaker(title)
+    if spk:
+        return spk
+    return None if (is_conference or is_english) else DEFAULT_SPEAKER
+
+
 def parse_part(title):
     f = fold(title)
     m = re.search(r"partie\s+([ivx]+|\d+)", f)
