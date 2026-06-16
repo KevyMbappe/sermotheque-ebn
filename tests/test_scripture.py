@@ -5,7 +5,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "pipeline"))
 from scripture import (fold, parse_scripture, parse_speaker, parse_part,  # noqa: E402
-                       resolve_speaker, DEFAULT_SPEAKER)
+                       resolve_speaker, speaker_provenance, DEFAULT_SPEAKER)
 
 
 def osis(title):
@@ -55,6 +55,11 @@ class TestSpeakerAndPart(unittest.TestCase):
         # conference / English left unattributed (likely a guest, don't mis-credit the pastor)
         self.assertIsNone(resolve_speaker("Good News Conference 2024", is_conference=True))
         self.assertIsNone(resolve_speaker("The witness of the Spirit | John 3", is_english=True))
+
+    def test_speaker_provenance_marks_how_speaker_was_decided(self):
+        self.assertEqual(speaker_provenance("Image de Dieu | Genèse 1"), "default-rule")
+        self.assertEqual(speaker_provenance("La grâce (Pr. Joël Beeke)"), "title")
+        self.assertIsNone(speaker_provenance("Good News Conference 2024", is_conference=True))
 
 
 if __name__ == "__main__":

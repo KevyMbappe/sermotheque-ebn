@@ -9,8 +9,8 @@ This is the M1 "free metadata" pass; ASR/LLM enrichment fills the rest.
 import json
 from pathlib import Path
 
-from scripture import (fold, parse_scripture, parse_speaker, resolve_speaker, parse_part,
-                       classify, clean_title, date_prefix)
+from scripture import (fold, parse_scripture, parse_speaker, resolve_speaker, speaker_provenance,
+                       parse_part, classify, clean_title, date_prefix)
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "data" / "raw" / "soundcloud_tracks.tsv"
@@ -38,6 +38,7 @@ def main():
             "date": date,
             "audio_duration": audio_duration,
             "speaker": resolve_speaker(title, is_english=bool(scr and scr["is_english"])),
+            "speaker_provenance": speaker_provenance(title, is_english=bool(scr and scr["is_english"])),
             "series_part": parse_part(title),
             "scripture_osis": scr["osis"] if scr else None,
             "scripture_display": scr["display"] if scr else None,

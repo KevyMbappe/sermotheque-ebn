@@ -138,6 +138,14 @@ def resolve_speaker(title, *, is_conference=False, is_english=False):
     return None if (is_conference or is_english) else DEFAULT_SPEAKER
 
 
+def speaker_provenance(title, *, is_conference=False, is_english=False):
+    """How `speaker` was decided — so the human sweep / fingerprint gate can find guesses.
+    'title' (named explicitly) | 'default-rule' (assumed David, #45) | None (left blank)."""
+    if parse_speaker(title):
+        return "title"
+    return None if (is_conference or is_english) else "default-rule"
+
+
 def parse_part(title):
     f = fold(title)
     m = re.search(r"partie\s+([ivx]+|\d+)", f)

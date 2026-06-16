@@ -51,6 +51,15 @@ def title_sim(a, b):
     return 0.6 * jac + 0.4 * SequenceMatcher(None, fold(a), fold(b)).ratio()
 
 
+def is_match(ts, scr, dur):
+    """Accept a YT↔SC pairing? Title or scripture must CARRY it; duration only corroborates (#43).
+    ts = title similarity, scr = exact-scripture match, dur = duration fingerprint match."""
+    return (ts >= TITLE_STRONG                  # strong title agreement alone
+            or (scr and dur)                    # same passage + same length
+            or (scr and ts >= TITLE_WITH_SCR)   # same passage + some title overlap
+            or (dur and ts >= TITLE_WITH_DUR))  # same length + decent title (no scripture)
+
+
 def detect(title):
     f = fold(title)
     is_conf = bool(CONF_MARKERS.search(title))
@@ -103,13 +112,7 @@ def main():
     same_lang, translations, orphans = {}, {}, []
     for v, idx, sc, (ts, scr, dur) in ranked:
         # Corroboration rule (#43): duration alone is never enough — title or scripture must carry it.
-        is_match = idx is not None and (
-            ts >= TITLE_STRONG                  # strong title agreement alone
-            or (scr and dur)                    # same passage + same length
-            or (scr and ts >= TITLE_WITH_SCR)   # same passage + some title overlap
-            or (dur and ts >= TITLE_WITH_DUR)   # same length + decent title (no scripture)
-        )
-        if is_match and idx is not None:
+        if idx is not None and is_match(ts, scr, dur):
             if v["language"] == "fr" and idx not in same_lang:
                 same_lang[idx] = (v, round(sc, 3))
                 continue

@@ -11,7 +11,7 @@ import json
 import re
 from pathlib import Path
 
-from scripture import resolve_speaker
+from scripture import resolve_speaker, speaker_provenance
 
 ROOT = Path(__file__).resolve().parent.parent
 CAT = ROOT / "data" / "catalog" / "catalog.json"
@@ -27,7 +27,7 @@ def osis_book_chapter(osis):
 
 # canonical key order for every unified record
 CANON = ["id", "source", "raw_title", "title", "language", "date",
-         "audio_duration", "video_duration", "speaker",
+         "audio_duration", "video_duration", "speaker", "speaker_provenance",
          "series_id", "series_name", "series_part", "series_order",
          "scripture_osis", "scripture_display", "scripture_book", "scripture_chapter",
          "scripture_confident", "kind", "is_conference", "media",
@@ -64,6 +64,8 @@ def main():
             "video_duration": o.get("duration"),
             "speaker": resolve_speaker(o["raw_title"], is_conference=bool(o.get("is_conference")),
                                        is_english=(o.get("language") == "en")),
+            "speaker_provenance": speaker_provenance(o["raw_title"], is_conference=bool(o.get("is_conference")),
+                                                     is_english=(o.get("language") == "en")),
             "scripture_osis": o.get("scripture_osis"), "scripture_book": book, "scripture_chapter": chap,
             "kind": o.get("kind", "sermon"), "is_conference": o.get("is_conference"),
             "media": {"soundcloud_id": None, "youtube_id": o["youtube_id"]},
