@@ -35,12 +35,13 @@ def _tokens(text):
 
 
 def _vtt_seconds(vtt):
-    """Total spoken duration from the last VTT timestamp (for cadence)."""
-    ts = re.findall(r"(\d{2}):(\d{2})[:.](\d{2})", vtt or "")
+    """Total spoken duration from the last VTT timestamp (for cadence). VTT cue times are
+    MM:SS.mmm or HH:MM:SS.mmm — parse both (the earlier MM:SS→HH:MM misread inflated it ~60×)."""
+    ts = re.findall(r"(?:(\d{1,2}):)?(\d{1,2}):(\d{2})\.\d+", vtt or "")
     if not ts:
         return None
     h, m, s = ts[-1]
-    return int(h) * 3600 + int(m) * 60 + int(s)
+    return (int(h) if h else 0) * 3600 + int(m) * 60 + int(s)
 
 
 def extract(text, raw=None, vtt=None):

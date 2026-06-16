@@ -15,6 +15,11 @@ class TestFingerprint(unittest.TestCase):
         self.assertGreater(e["artifact_per_1k"], 0)        # accent artifacts from raw
         self.assertIsNotNone(e["words_per_sec"])           # cadence from vtt
 
+    def test_cadence_parses_mmss_and_hhmmss(self):
+        from fingerprint import _vtt_seconds
+        self.assertEqual(_vtt_seconds("00:00.000 --> 44:30.500\nx"), 44 * 60 + 30)   # MM:SS
+        self.assertEqual(_vtt_seconds("00:00:00.0 --> 01:44:30.5\nx"), 3600 + 44 * 60 + 30)  # HH:MM:SS
+
     def test_missing_raw_and_vtt_leave_features_none(self):
         e = extract("le la de et")
         self.assertIsNone(e["artifact_per_1k"])
