@@ -1,5 +1,5 @@
 id,source,title,language,date,audio_duration,video_duration,speaker,series_name,series_part,series_order,scripture_osis,scripture_book,kind,is_conference,soundcloud_id,youtube_id,topics
-sc-2338530545,soundcloud,La doctrine de l'incarnation de Christ,fr,2026-06-13,3389,,,Évangile de Luc,,1,Luke.1.26-Luke.1.38,Luke,sermon,False,2338530545,,
+sc-2338530545,soundcloud,La doctrine de l'incarnation de Christ,fr,2026-06-13,3389,,,Évangile de Luc,,1,Luke.1.26-Luke.1.38,Luke,sermon,False,2338530545,,Incarnation; Christologie; Nature de Christ (deux natures); Naissance virginale; Trinité; Médiation du Christ; Hérésies christologiques
 sc-2334913202,soundcloud,Introduction à la Christologie : Déclarations capitales,fr,2026-06-07,3477,,,Épître aux Colossiens,,3,Col.1.12-Col.1.20,Col,sermon,False,2334913202,,
 sc-2334907916,soundcloud,Introduction au panorama général de la Bible,fr,2026-06-07,2766,,,,,,,,teaching_or_qa,False,2334907916,,
 sc-2326480337,soundcloud,Introduction à la Christologie : Ordre confessionnel,fr,2026-05-24,3053,,,Épître aux Colossiens,,2,Col.1.12-Col.1.20,Col,sermon,False,2326480337,,
@@ -33,7 +33,7 @@ sc-2205625143,soundcloud,Questions et Réponses,fr,2025-11-03,3196,,Nathanaël F
 sc-2205619247,soundcloud,,fr,2025-11-03,3217,,,,,,Lam,Lam,sermon,False,2205619247,,
 sc-2199484955,soundcloud,Fruit de l'Esprit : la tempérance,fr,2025-10-26,3750,,,Fruit de l'Esprit,,3,Gal.5.22,Gal,sermon,False,2199484955,,
 sc-2193800499,soundcloud,Les conséquences du péché,fr,2025-10-19,3685,,,Étude — Genèse,,9,Gen.3.7-Gen.3.24,Gen,sermon,False,2193800499,,
-sc-2193798131,soundcloud,Fruit de l'Esprit : fidélité et douceur,fr,2025-10-19,3671,,,Fruit de l'Esprit,,2,Gal.5.22,Gal,sermon,False,2193798131,,
+sc-2193798131,soundcloud,Fruit de l'Esprit : fidélité et douceur,fr,2025-10-19,3671,,,Fruit de l'Esprit,,2,Gal.5.22,Gal,sermon,False,2193798131,,Fruit de l'Esprit; Sanctification; Justification; Nouvelle nature; Fidélité; Douceur; Vie chrétienne
 sc-2188664595,soundcloud,"Fruit de l'Esprit : patience, benignité et bonté",fr,2025-10-12,3429,,,Fruit de l'Esprit,,1,Gal.5.22,Gal,sermon,False,2188664595,,
 sc-2187560778,soundcloud,La tentation de notre Seigneur Jésus-Christ,fr,2025-10-10,3168,,,Évangile de Matthieu,,2,Matt.4.1-Matt.4.11,Matt,sermon,False,2187560778,,
 sc-2183820587,soundcloud,La paix qui jaillit du Christ par l'Esprit,fr,2025-10-06,4075,,,Épître aux Galates,,61,Gal.5.22,Gal,sermon,False,2183820587,,
@@ -68,7 +68,7 @@ sc-2128572861,soundcloud,La Crainte de Dieu,fr,2025-07-11,2440,,,Étude — Psau
 sc-2124804168,soundcloud,La crainte de l'homme,fr,2025-07-04,3596,,,,,,Prov.29.25,Prov,sermon,False,2124804168,,
 sc-2121638127,soundcloud,Jésus : le vrai sacerdoce selon les Écritures,fr,2025-06-29,3665,,,Épître aux Hébreux,,26,Heb.6.20,Heb,sermon,False,2121638127,,
 sc-2120998923,soundcloud,Questions et Réponses | La Providence de Dieu,fr,2025-06-28,3775,,,,,,,,teaching_or_qa,False,2120998923,AlWPMu-OBqo,
-sc-2117744874,soundcloud,Joie chrétienne : l'adoration du Père qui pourvoit,fr,2025-06-22,4006,,,Joie chrétienne,,5,Phil.4.18-Phil.4.20,Phil,sermon,False,2117744874,,
+sc-2117744874,soundcloud,Joie chrétienne : l'adoration du Père qui pourvoit,fr,2025-06-22,4006,,,Joie chrétienne,,5,Phil.4.18-Phil.4.20,Phil,sermon,False,2117744874,,Joie chrétienne; Mission et implantation d'églises; Soutien des ministres de l'Évangile; Contentement chrétien; Providence divine; Adoration et offrandes; Vie communautaire de l'Église
 sc-2117114544,soundcloud,La Providence de Dieu centrée sur Christ,fr,2025-06-21,3307,,,Épître aux Éphésiens,,4,Eph.1.3-Eph.1.14,Eph,sermon,False,2117114544,,
 sc-2113855248,soundcloud,Les degrés et difficultés de la Providence de Dieu,fr,2025-06-15,3113,,,Épître aux Colossiens,,4,Col.1.15-Col.1.19,Col,sermon,False,2113855248,,
 sc-2113848477,soundcloud,Joie chrétienne : maturité missionaire d'une Église,fr,2025-06-15,3775,,,Joie chrétienne,,4,Phil.4.14-Phil.4.17,Phil,sermon,False,2113848477,,
@@ -103,7 +103,7 @@ sc-2020464289,soundcloud,Noël le plus glorieux des mystères : Dieu en chair é
 sc-2018139389,soundcloud,Confession de foi | Genèse 1 : 1 - 5,fr,2025-01-25,3446,,,Confession de foi | Genèse 1,3,3,Gen.1.1-Gen.1.5,Gen,sermon,False,2018139389,,
 sc-2012677347,soundcloud,Noël le plus glorieux des mystères : Dieu en chair cru dans le monde,fr,2025-01-19,3752,,,Noël le plus glorieux des mystères,,3,1Tim.3.14-1Tim.3.16,1Tim,sermon,False,2012677347,,
 sc-2011866255,soundcloud,Confession de foi | Genèse 1 : 1 - 5,fr,2025-01-18,4187,,,Confession de foi | Genèse 1,2,2,Gen.1.1-Gen.1.5,Gen,sermon,False,2011866255,,
-sc-2007594779,soundcloud,Noël le plus glorieux des mystères : Dieu en chair proclamé aux païens,fr,2025-01-12,3615,,,Noël le plus glorieux des mystères,,2,1Tim.3.14-1Tim.3.16,1Tim,sermon,False,2007594779,,
+sc-2007594779,soundcloud,Noël le plus glorieux des mystères : Dieu en chair proclamé aux païens,fr,2025-01-12,3615,,,Noël le plus glorieux des mystères,,2,1Tim.3.14-1Tim.3.16,1Tim,sermon,False,2007594779,,Incarnation; Mystère de la piété; Mission et évangélisation; Proclamation de l'Évangile; Identité et mission de l'Église; Résolutions chrétiennes / Nouvel An; Témoignage et martyrs
 sc-2006543831,soundcloud,Confession de foi | Genèse 1 : 1 - 5,fr,2025-01-11,3434,,,Confession de foi | Genèse 1,,1,Gen.1.1-Gen.1.5,Gen,sermon,False,2006543831,,
 sc-2002238743,soundcloud,Noël le plus glorieux des mystères : Dieu en chair vu par les anges,fr,2025-01-06,3761,,,Noël le plus glorieux des mystères,,1,1Tim.3.14-1Tim.3.16,1Tim,sermon,False,2002238743,,
 sc-1996734623,soundcloud,Le triomphe de Christ dans le cœur des enfants de Dieu,fr,2024-12-29,3215,,Christian Bouedjoro,Évangile de Jean,,1,John.1.1-John.1.13,John,sermon,False,1996734623,,
@@ -138,7 +138,7 @@ sc-1959631311,soundcloud,L'occupation des anges élus,fr,2024-11-16,3236,,,,,,Re
 sc-1954725199,soundcloud,L'origine et nature des anges,fr,2024-11-10,3256,,,Épître aux Hébreux,,1,Heb.1.1-Heb.1.14,Heb,sermon,False,1954725199,,
 sc-1954723351,soundcloud,L'aspect abominable de l'inimitié,fr,2024-11-10,3750,,,Épître aux Galates,,50,Gal.5.20,Gal,sermon,False,1954723351,,
 sc-1949030511,soundcloud,Les manifestations variables de l'inimitié,fr,2024-11-04,3934,,,Épître aux Galates,,49,Gal.5.20,Gal,sermon,False,1949030511,,
-sc-1947861891,soundcloud,La lecture naturelle de la création,fr,2024-11-02,3009,,,Étude — Genèse,,1,Gen.1.1-Gen.2.3,Gen,sermon,False,1947861891,,
+sc-1947861891,soundcloud,La lecture naturelle de la création,fr,2024-11-02,3009,,,Étude — Genèse,,1,Gen.1.1-Gen.2.3,Gen,sermon,False,1947861891,,Création; Herméneutique; Image de Dieu; Anthropologie biblique; Confession de foi; Perspicuité des Écritures; Sabbat
 sc-1943259707,soundcloud,Vivre pour la gloire de Dieu,fr,2024-10-27,3404,,David Pelosi,Épître aux Romains,,4,Rom.11.32-Rom.11.36,Rom,sermon,False,1943259707,,
 sc-1940982903,soundcloud,Le Décret Éternel de Dieu : La prédestination des Saints,fr,2024-10-24,3239,,,Épître aux Éphésiens,,3,Eph.1.3-Eph.1.12,Eph,sermon,False,1940982903,,
 sc-1940976919,soundcloud,La victoire de Christ sur les idoles du cœur,fr,2024-10-24,3597,,,Épître aux Galates,,48,Gal.5.20,Gal,sermon,False,1940976919,,
@@ -173,7 +173,7 @@ sc-1903860197,soundcloud,La perfection de la loi naturelle,fr,2024-08-25,3563,,,
 sc-1903858688,soundcloud,Le chemin vers le bonheur chrétien,fr,2024-08-25,2572,,,Épître de Jacques,2,6,Jas.1.25,Jas,sermon,False,1903858688,,
 sc-1903852337,soundcloud,La religion du cœur,fr,2024-08-25,3753,,,Épître de Jacques,,8,Jas.1.26-Jas.1.27,Jas,sermon,False,1903852337,,
 sc-1900268571,soundcloud,Les signes du jugement,fr,2024-08-19,3496,,,Étude — Ézéchiel,,1,Ezek.5.1-Ezek.5.4,Ezek,sermon,False,1900268571,,
-sc-1900264623,soundcloud,Dieu œuvre lui même au jugement d'Israël,fr,2024-08-19,3867,,,Étude — Ézéchiel,,4,Ezek.5.8-Ezek.5.17,Ezek,sermon,False,1900264623,,
+sc-1900264623,soundcloud,Dieu œuvre lui même au jugement d'Israël,fr,2024-08-19,3867,,,Étude — Ézéchiel,,4,Ezek.5.8-Ezek.5.17,Ezek,sermon,False,1900264623,,Jugement de Dieu; Sainteté et justice de Dieu; Prophétie et accomplissement; Alliance et fidélité; Discipline ecclésiale; Espérance et restauration; Idolâtrie et péché
 sc-1900255956,soundcloud,Le jugement de Dieu malgré l'amour et les privilèges accordés à Jérusalem,fr,2024-08-19,3374,,,Étude — Ézéchiel,,2,Ezek.5.5-Ezek.5.7,Ezek,sermon,False,1900255956,,
 sc-1900254174,soundcloud,Introduction à l'excellence de la Nouvelle Alliance,fr,2024-08-19,4569,,,Épître aux Hébreux,,23,Heb.6.18,Heb,sermon,False,1900254174,,
 sc-1900250868,soundcloud,L'irrévocabilité des promesses de Dieu,fr,2024-08-19,3368,,,Épître aux Hébreux,,22,Heb.6.14-Heb.6.17,Heb,sermon,False,1900250868,,
@@ -208,7 +208,7 @@ sc-1747289583,soundcloud,La nature divine du sacerdoce de Christ,fr,2024-02-14,3
 sc-1747287255,soundcloud,La Parole de Dieu met à nu,fr,2024-02-14,3147,,,Épître aux Hébreux,,11,Heb.4.12-Heb.4.13,Heb,sermon,False,1747287255,,
 sc-1747285392,soundcloud,La nature et les conséquences de l'incrédulité,fr,2024-02-14,4084,,,Épître aux Hébreux,,10,Heb.3.19,Heb,sermon,False,1747285392,,
 sc-1747282587,soundcloud,Aux coeurs endurcis,fr,2024-02-14,4176,,,Épître aux Hébreux,,9,Heb.3.12-Heb.3.18,Heb,sermon,False,1747282587,,
-sc-1747280997,soundcloud,Aux coeurs endurcis I,fr,2024-02-14,3695,,,Épître aux Hébreux,,8,Heb.3.7-Heb.3.11,Heb,sermon,False,1747280997,,
+sc-1747280997,soundcloud,Aux coeurs endurcis I,fr,2024-02-14,3695,,,Épître aux Hébreux,,8,Heb.3.7-Heb.3.11,Heb,sermon,False,1747280997,,Endurcissement du cœur; Persévérance; Régénération; Souveraineté de Dieu; Jugement et colère de Dieu; Saint-Esprit; Sanctification
 sc-1747279587,soundcloud,Christ supérieur à Moïse,fr,2024-02-14,3702,,,Épître aux Hébreux,,7,Heb.3.2-Heb.3.6,Heb,sermon,False,1747279587,,
 sc-1747277709,soundcloud,Considérez Christ,fr,2024-02-14,3423,,,Épître aux Hébreux,,6,Heb.3.1,Heb,sermon,False,1747277709,,
 sc-1747271847,soundcloud,La glorieuse humiliation du Christ,fr,2024-02-14,3367,,,Épître aux Hébreux,,3,Heb.2.9-Heb.2.10,Heb,sermon,False,1747271847,,
@@ -237,7 +237,7 @@ sc-1651552227,soundcloud,Leçon n°3,fr,2023-10-28,3553,,,,3,,,,teaching,False,1
 sc-1651552212,soundcloud,Leçon n°4,fr,2023-10-28,3461,,,,4,,,,teaching,False,1651552212,,
 sc-1651552182,soundcloud,Leçon n°5,fr,2023-10-28,4272,,,,5,,,,teaching,False,1651552182,,
 sc-1650134268,soundcloud,Introduction,fr,2023-10-26,3587,,,,,,,,teaching,False,1650134268,,
-sc-1650117738,soundcloud,Leçon 3 - Baptême du croyant,fr,2023-10-26,3266,,,,3,,,,teaching,False,1650117738,,
+sc-1650117738,soundcloud,Leçon 3 - Baptême du croyant,fr,2023-10-26,3266,,,,3,,,,teaching,False,1650117738,,Baptême du croyant; Théologie des alliances; Ecclésiologie; Herméneutique biblique; Pédobaptisme; Sotériologie; Ordonnances de l'Église
 yt-snB851daJXk,youtube,Introduction à l'épitre de Paul aux,fr,,,3600,,Épître aux Galates,,71,Gal,Gal,sermon,False,,snB851daJXk,
 yt-gj17HMaMOyY,youtube,La Bible 3ème Partie,fr,,,2990,,,,,,,sermon,False,,gj17HMaMOyY,
 yt-sjG__9VrXM0,youtube,La Bible 1ère Partie,fr,,,3055,,,,,,,sermon,False,,sjG__9VrXM0,
@@ -266,7 +266,7 @@ yt-is5Ve6fjMBY,youtube,La Glorieuse Paternité de Dieu [PEUPLE DE DIEU 07/15],fr
 yt-CYYRlnPVCd8,youtube,Faites briller la lumière de Dieu,fr,,,2865,,,,,,,sermon,False,,CYYRlnPVCd8,
 yt-P7WSbckY-lc,youtube,La Seule Conception de Jésus qui Sauve [cROIx 02/13],fr,,,3820,,,,,,,sermon,False,,P7WSbckY-lc,
 yt-aVbo4n0fl4k,youtube,Prier selon le cœur de Dieu,fr,,,3742,,Étude — Psaumes,,6,Ps.40.1-Ps.40.17,Ps,sermon,False,,aVbo4n0fl4k,
-yt-IqNmh_XGULE,youtube,Prier selon le cœur de Dieu,fr,,,3555,,Étude — Psaumes,,4,Ps.40.1-Ps.40.17,Ps,sermon,False,,IqNmh_XGULE,
+yt-IqNmh_XGULE,youtube,Prier selon le cœur de Dieu,fr,,,3555,,Étude — Psaumes,,4,Ps.40.1-Ps.40.17,Ps,sermon,False,,IqNmh_XGULE,Prière; Souffrance et persévérance; Repentance; Christologie; Miséricorde de Dieu; Sainteté et intégrité; Glorification de Dieu
 yt-CZkmvAvA4ds,youtube,La Maison du Dieu Omniprésent [ Au DELA de la VUE 9/9 ],fr,,,3427,,,,,,,sermon,False,,CZkmvAvA4ds,
 yt-aVRg9gjwHsQ,youtube,Je suis l'Eternel [PEUPLE DE DIEU 09/15],fr,,,3706,,,,,,,sermon,False,,aVRg9gjwHsQ,
 yt-bfgvq2Rh7lQ,youtube,Surmonter L'Incrédulité [PEUPLE DE DIEU 11/15],fr,,,3766,,,,,,,sermon,False,,bfgvq2Rh7lQ,

@@ -26,9 +26,32 @@
     },
     "youtube_match": null,
     "translation_candidates": [],
-    "topics": [],
-    "summary": null,
-    "transcript_ref": null
+    "topics": [
+      "Incarnation",
+      "Christologie",
+      "Nature de Christ (deux natures)",
+      "Naissance virginale",
+      "Trinité",
+      "Médiation du Christ",
+      "Hérésies christologiques"
+    ],
+    "summary": "Cette prédication explore la doctrine de l'incarnation du Fils de Dieu, en s'appuyant sur le chapitre 8 de la confession de foi (Christ le Médiateur). Le prédicateur insiste sur le fait que c'est la deuxième personne de la Trinité qui a assumé une véritable nature humaine, conçue par l'Esprit-Saint dans le sein de la Vierge Marie, sans péché ni transformation ontologique de la personne divine. Il montre comment chaque déviation doctrinale — docétisme, modalisme, nestorianisme — compromet le salut, car seule une incarnation réelle permet à Christ d'être un médiateur parfait entre Dieu et l'homme.",
+    "transcript_ref": "data/catalog/transcripts/sc-2338530545.txt",
+    "primary_scripture": "Luc 1:26-38",
+    "scripture_refs": [
+      "Jean 1:1",
+      "Jean 1:14",
+      "Galates 4:4",
+      "Romains 8:3",
+      "Philippiens 2:6-8",
+      "Hébreux 2:14",
+      "Hébreux 2:17",
+      "Luc 24:39",
+      "1 Jean 4:2",
+      "Malachie 4:2"
+    ],
+    "series_hint": "Confession de foi ch.8 — série d'études sur la doctrine du Christ le Médiateur",
+    "captions_ref": "data/catalog/transcripts/sc-2338530545.vtt"
   },
   {
     "id": "sc-2334913202",
@@ -1098,9 +1121,26 @@
     },
     "youtube_match": null,
     "translation_candidates": [],
-    "topics": [],
-    "summary": null,
-    "transcript_ref": null
+    "topics": [
+      "Fruit de l'Esprit",
+      "Sanctification",
+      "Justification",
+      "Nouvelle nature",
+      "Fidélité",
+      "Douceur",
+      "Vie chrétienne"
+    ],
+    "summary": "La prédication conclut la série sur le fruit de l'Esprit en Galates 5:22, en se concentrant sur la fidélité et la douceur (la tempérance étant reportée au dimanche suivant). Le prédicateur rappelle d'abord le contexte de la lettre aux Galates — la crise de division entre judaïsants et antinomiens — et explique que la solution passe par la conscience de la nouvelle nature reçue en Christ. Il développe ensuite la fidélité comme allégeance radicale à Christ proportionnelle à notre crainte de Dieu, et la douceur comme soumission volontaire fondée sur l'humiliation de l'Évangile, illustrée par les béatitudes et l'exemple de Christ lui-même.",
+    "transcript_ref": "data/catalog/transcripts/sc-2193798131.txt",
+    "primary_scripture": "Galates 5:22",
+    "scripture_refs": [
+      "2 Timothée 2:10-13",
+      "Matthieu 5:3-5",
+      "Jacques 3:17-18",
+      "Ésaïe 40"
+    ],
+    "series_hint": "Série sur le fruit de l'Esprit (Galates 5:22) — derniers éléments, suite et fin annoncée au dimanche suivant",
+    "captions_ref": "data/catalog/transcripts/sc-2193798131.vtt"
   },
   {
     "id": "sc-2188664595",
@@ -2183,9 +2223,27 @@
     },
     "youtube_match": null,
     "translation_candidates": [],
-    "topics": [],
-    "summary": null,
-    "transcript_ref": null
+    "topics": [
+      "Joie chrétienne",
+      "Mission et implantation d'églises",
+      "Soutien des ministres de l'Évangile",
+      "Contentement chrétien",
+      "Providence divine",
+      "Adoration et offrandes",
+      "Vie communautaire de l'Église"
+    ],
+    "summary": "Le prédicateur médite Philippiens 4.18-20 dans le cadre d'une série sur les sources de la joie chrétienne pendant le pèlerinage terrestre. Il montre que les dons offerts aux ministres de l'Évangile constituent une véritable adoration, comparables aux offrandes les plus agréables à Dieu dans l'Ancien Testament, et appelle l'Église à une maturité missionnaire généreuse. La prédication se conclut sur la grande promesse de Philippiens 4.19 : Dieu, notre Père céleste, pourvoira à tous nos besoins selon ses richesses avec gloire en Jésus-Christ, suscitant une doxologie d'adoration.",
+    "transcript_ref": "data/catalog/transcripts/sc-2117744874.txt",
+    "primary_scripture": "Philippiens 4:18-20",
+    "scripture_refs": [
+      "Philippiens 3",
+      "Philippiens 4:1-23",
+      "Matthieu 6:33",
+      "Matthieu 10:40",
+      "Matthieu 25:40"
+    ],
+    "series_hint": "Série sur les sources de la joie chrétienne dans Philippiens 4",
+    "captions_ref": "data/catalog/transcripts/sc-2117744874.vtt"
   },
   {
     "id": "sc-2117114544",
@@ -3274,9 +3332,33 @@
     },
     "youtube_match": null,
     "translation_candidates": [],
-    "topics": [],
-    "summary": null,
-    "transcript_ref": null
+    "topics": [
+      "Incarnation",
+      "Mystère de la piété",
+      "Mission et évangélisation",
+      "Proclamation de l'Évangile",
+      "Identité et mission de l'Église",
+      "Résolutions chrétiennes / Nouvel An",
+      "Témoignage et martyrs"
+    ],
+    "summary": "Le prédicateur médite sur 1 Timothée 3:14-16 dans le cadre d'une série de Noël, en se concentrant sur la sixième facette du credo apostolique : l'évangile 'prêché aux gentils' comme preuve incontestable de l'incarnation de Dieu en chair. Il montre que ce mystère de la piété — manifestation, justification, témoignage angélique, proclamation aux nations, foi et glorification du Christ — définit l'identité, la mission et la joie de l'Église. L'appel pratique est de renouveler pour 2025 la conviction ferme dans ces mystères révélés, de les confesser publiquement avec joie et de proclamer l'évangile avec l'onction du Saint-Esprit à toutes les nations.",
+    "transcript_ref": "data/catalog/transcripts/sc-2007594779.txt",
+    "primary_scripture": "1 Timothée 3:14-16",
+    "scripture_refs": [
+      "Galates 3:8",
+      "Romains 1:1-4",
+      "Romains 15:8-9",
+      "Actes 3:25-26",
+      "Actes 13",
+      "Éphésiens 2:14-16",
+      "Éphésiens 3:1-6",
+      "Luc 24:46-47",
+      "Matthieu 24:14",
+      "Matthieu 28:18-20",
+      "2 Corinthiens 5:17-21"
+    ],
+    "series_hint": "Série de Noël — méditation sur les facettes du mystère de l'incarnation (1 Timothée 3:16), présentée comme une série de plusieurs dimanches",
+    "captions_ref": "data/catalog/transcripts/sc-2007594779.vtt"
   },
   {
     "id": "sc-2006543831",
@@ -4359,9 +4441,27 @@
     },
     "youtube_match": null,
     "translation_candidates": [],
-    "topics": [],
-    "summary": null,
-    "transcript_ref": null
+    "topics": [
+      "Création",
+      "Herméneutique",
+      "Image de Dieu",
+      "Anthropologie biblique",
+      "Confession de foi",
+      "Perspicuité des Écritures",
+      "Sabbat"
+    ],
+    "summary": "Cette leçon introduit le chapitre 4 de la confession de foi baptiste réformée consacré à la création. Le prédicateur défend une lecture naturelle et littérale de Genèse 1:1–2:3, soulignant que les six jours de création doivent être compris comme des jours ordinaires de 24 heures, conformément à l'interprétation historique de l'Église et aux références intra-bibliques du Christ et des apôtres. Il s'oppose aux tentatives d'accommoder le texte à la théorie de l'évolution, insistant sur la création ex nihilo, la création selon les espèces, et la place centrale de l'être humain comme image de Dieu et couronne de la création.",
+    "transcript_ref": "data/catalog/transcripts/sc-1947861891.txt",
+    "primary_scripture": "Genèse 1:1-2:3",
+    "scripture_refs": [
+      "Genèse 2:1-3",
+      "Marc 10",
+      "Exode 20",
+      "Hébreux 11",
+      "Psaumes 8"
+    ],
+    "series_hint": "Confession de foi ch.4 (La Création)",
+    "captions_ref": "data/catalog/transcripts/sc-1947861891.vtt"
   },
   {
     "id": "sc-1943259707",
@@ -5444,9 +5544,33 @@
     },
     "youtube_match": null,
     "translation_candidates": [],
-    "topics": [],
-    "summary": null,
-    "transcript_ref": null
+    "topics": [
+      "Jugement de Dieu",
+      "Sainteté et justice de Dieu",
+      "Prophétie et accomplissement",
+      "Alliance et fidélité",
+      "Discipline ecclésiale",
+      "Espérance et restauration",
+      "Idolâtrie et péché"
+    ],
+    "summary": "Le prédicateur expose Ézéchiel 5:8-17 en replaçant le jugement de Jérusalem dans son contexte : Dieu, Dieu jaloux et unique, exécute lui-même ses jugements annoncés depuis des siècles (Lévitique, Deutéronome) à cause du péché persistant d'Israël, utilisant Babylone comme instrument. Ce jugement public, visible de toutes les nations, est à la fois un acte de sainte justice, un avertissement pour les peuples environnants et, en définitive, une correction temporaire pleine d'espérance, car Dieu restaurera Jérusalem et a accompli en Christ la pleine peine du péché pour les croyants.",
+    "transcript_ref": "data/catalog/transcripts/sc-1900264623.txt",
+    "primary_scripture": "Ézéchiel 5:8-17",
+    "scripture_refs": [
+      "Ézéchiel 5:1-7",
+      "Lévitique",
+      "Deutéronome",
+      "Ésaïe 26:10",
+      "Jérémie",
+      "Daniel 9",
+      "2 Pierre 3:8-10",
+      "1 Corinthiens 10:6-13",
+      "1 Pierre 4:17-19",
+      "Luc 23:26-31",
+      "Job 34:26"
+    ],
+    "series_hint": "Série de prédications sur le livre d'Ézéchiel",
+    "captions_ref": "data/catalog/transcripts/sc-1900264623.vtt"
   },
   {
     "id": "sc-1900255956",
@@ -6529,9 +6653,37 @@
     },
     "youtube_match": null,
     "translation_candidates": [],
-    "topics": [],
-    "summary": null,
-    "transcript_ref": null
+    "topics": [
+      "Endurcissement du cœur",
+      "Persévérance",
+      "Régénération",
+      "Souveraineté de Dieu",
+      "Jugement et colère de Dieu",
+      "Saint-Esprit",
+      "Sanctification"
+    ],
+    "summary": "Le prédicateur expose Hébreux 3:7-11 en définissant l'endurcissement du cœur non comme des actes de rébellion manifeste, mais comme l'absence de réponse conforme aux attentes de Dieu après avoir été exposé à ses vertus en Christ. S'appuyant sur l'exemple d'Israël dans le désert et des parallèles tirés de Romains 1, de Luc 17 et d'Hébreux 2, il souligne l'urgence et la gravité extrême de cet endurcissement, équivalent à fouler au pied le Fils de Dieu. Il conclut en encourageant les auditeurs à chercher Dieu de tout leur cœur, assurés de son intentionnalité à se faire connaître à ceux qui le cherchent sincèrement.",
+    "transcript_ref": "data/catalog/transcripts/sc-1747280997.txt",
+    "primary_scripture": "Hébreux 3:7-11",
+    "scripture_refs": [
+      "Hébreux 1",
+      "Hébreux 2:1-3",
+      "Hébreux 3:1",
+      "Romains 1:18-26",
+      "Luc 17:12-19",
+      "Luc 12:48-49",
+      "Jean 16:13-14",
+      "Ésaïe 6",
+      "Exode 3:2",
+      "Exode 19:16-18",
+      "Genèse 18",
+      "Josué 5:13-15",
+      "Psaume 139",
+      "Psaume 90",
+      "Jérémie 31"
+    ],
+    "series_hint": "Série expositoire sur l'Épître aux Hébreux (après Hébreux 1 et 2)",
+    "captions_ref": "data/catalog/transcripts/sc-1747280997.vtt"
   },
   {
     "id": "sc-1747279587",
@@ -7428,9 +7580,28 @@
     },
     "youtube_match": null,
     "translation_candidates": [],
-    "topics": [],
-    "summary": null,
-    "transcript_ref": null
+    "topics": [
+      "Baptême du croyant",
+      "Théologie des alliances",
+      "Ecclésiologie",
+      "Herméneutique biblique",
+      "Pédobaptisme",
+      "Sotériologie",
+      "Ordonnances de l'Église"
+    ],
+    "summary": "Cette leçon (leçon 3 sur le baptême du croyant) présente et défend la position crédobaptiste réformée en la distinguant du pédobaptisme presbytérien et congrégationaliste, ainsi que des conceptions catholique et luthérienne qui attribuent au baptême une grâce opérée automatiquement. Le prédicateur développe la théologie des alliances pour montrer que la Nouvelle Alliance, caractérisée par la foi et la circoncision du cœur, exige que seuls les croyants reçoivent le baptême comme signe et sceau d'une réalité spirituelle déjà présente. Il répond aussi aux arguments pédobaptistes (baptêmes de familles, Actes 2:39, continuité de la circoncision) et souligne l'importance de fonder ses convictions sur les Écritures plutôt que sur la tradition ou l'expérience personnelle.",
+    "transcript_ref": "data/catalog/transcripts/sc-1650117738.txt",
+    "primary_scripture": "Actes 2:39",
+    "scripture_refs": [
+      "Jérémie 31",
+      "Galates",
+      "Romains 4",
+      "Colossiens 2",
+      "Matthieu 10:34-36",
+      "Éphésiens 1:4"
+    ],
+    "series_hint": "Série de leçons sur le baptême (Leçon 3)",
+    "captions_ref": "data/catalog/transcripts/sc-1650117738.vtt"
   },
   {
     "id": "yt-snB851daJXk",
@@ -8327,9 +8498,27 @@
     },
     "youtube_match": null,
     "translation_candidates": [],
-    "topics": [],
-    "summary": null,
-    "transcript_ref": null
+    "topics": [
+      "Prière",
+      "Souffrance et persévérance",
+      "Repentance",
+      "Christologie",
+      "Miséricorde de Dieu",
+      "Sainteté et intégrité",
+      "Glorification de Dieu"
+    ],
+    "summary": "Dans cette quatrième partie d'une série sur la prière à partir du Psaume 40, le prédicateur rappelle que David, type du Christ, nous enseigne à prier avec un cœur fixé sur l'éternel, reconnaissant les bienfaits de Dieu et déterminé à lui obéir même dans la souffrance. Il souligne que la prière authentique s'appuie davantage sur la miséricorde et les compassions de Dieu que sur notre propre innocence, à l'image du Christ au Gethsémani qui a endure la croix pour purger nos péchés. La glorification de Dieu passe par la persévérance dans l'intégrité au milieu des épreuves, rendue possible par le Saint-Esprit et fondée sur la certitude que la grâce surabonde là où le péché abonde.",
+    "transcript_ref": "data/catalog/transcripts/yt-IqNmh_XGULE.txt",
+    "primary_scripture": "Psaume 40:1-17",
+    "scripture_refs": [
+      "Ésaïe 53",
+      "Matthieu 26:36-46",
+      "Luc 22:43-46",
+      "Hébreux 5:7-9",
+      "Psaume 51"
+    ],
+    "series_hint": "Prier selon le cœur de Dieu (Partie IV)",
+    "captions_ref": "data/catalog/transcripts/yt-IqNmh_XGULE.vtt"
   },
   {
     "id": "yt-CZkmvAvA4ds",

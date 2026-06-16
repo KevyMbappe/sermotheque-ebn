@@ -79,7 +79,8 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **M4** — fold YT orphans into one unified catalog (canonical schema, 26 series)
 - [x] **M5** — per-sermon enrichment pipeline (`build_entry`) + timestamps + live cost tracking
 - [x] **M5h** — matcher hardening: duration only corroborates (18 overlaps + 4 translations; **union 517**; decision #43)
-- [ ] Enrichment writeback layer (decision #44) → full ASR enrichment pass (transcripts, topics, summaries)
+- [x] **Enrichment writeback layer** (decision #44) — id-keyed store survives rebuilds
+- [ ] Full ASR enrichment pass across the 517 (transcripts, topics, summaries) — ~$31 on Sonnet
 - [ ] JSON Schema + WordPress import → website sermon library (first public deliverable)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 
