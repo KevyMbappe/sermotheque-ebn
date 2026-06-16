@@ -48,7 +48,7 @@ WordPress **authors but does not own**. The canonical dataset (this repo's `data
 - **SoundCloud is the catalog spine** (its titles are 74% structured vs 20% on YouTube). Match YouTube videos *in* by title/date.
 - **Scripture:** canonical **OSIS** IDs + FR/EN parser → browse-by-book.
 - **Transcripts:** ASR (Whisper-class) on clean SoundCloud audio is the *metadata engine* (auto-suggest topics/summary/scripture); correct opportunistically. **ASR backend is pluggable** (decision #41): mlx-whisper local on Mac for the backfill, cloud Whisper API (e.g. Groq) for the church's Windows machines in production — same injected `transcribe_fn` contract. **Timestamps captured in the same pass** (decision #42): each sermon yields `.txt` (plain) + `.vtt` (subtitle-ready segment timing) + `.json` (word-level timing + confidence) — free at ASR time, and the basis for EN/PT subtitles, deep-linking, and search-to-moment.
-- **Enrichment model:** Claude **`claude-sonnet-4-6`**, ~**$0.06/sermon** measured (decision #40; ~$23 for the full 467). Haiku 4.5 is ⅓ the cost and nearly as good, but Sonnet wins on French precision + correct heresy naming — kept as default, Haiku is the budget fallback.
+- **Enrichment model:** Claude **`claude-sonnet-4-6`**, ~**$0.078/sermon** with the full WP schema (decision #40 measured $0.06 on the earlier lean schema; **~$40 for the full 517**). Haiku 4.5 is ⅓ the cost and nearly as good, but Sonnet wins on French precision + correct heresy naming — kept as default, Haiku is the budget fallback for bulk.
 - **Topics:** curated vocabulary, AI-bootstrapped; labels FR/EN/PT.
 - **EN/FR conference versions:** independent records linked by `translation_of`.
 - **Audit:** git history of the export. **Search:** prebuilt static index (no server).
@@ -95,7 +95,7 @@ cp .env.example .env        # then put your ANTHROPIC_API_KEY in .env
 Everything the pipeline needs lives **inside the project** (never `/tmp`):
 - **`.venv/`** (gitignored) — yt-dlp ≥ 2026.x, mlx-whisper, anthropic (see `requirements.txt`). `transcribe.py` defaults to `.venv/bin/*` (override via `SERMO_YTDLP` / `SERMO_MLX_WHISPER`).
 - **`cache/`** (gitignored) — downloaded audio + scratch; audio is deleted after transcription.
-- **`.env`** (gitignored; template `.env.example`) holds `ANTHROPIC_API_KEY` for the enrich step (model `claude-sonnet-4-6`, **~$0.06/sermon measured** — full transcript ≈ 13–16k input tok + 1.5k out; Haiku 4.5 ≈ $0.02/sermon) — the CLI auto-loads it. Without a key the deterministic steps still run; inject your own `enrich` fn. *(`.venv` ≈ node_modules ← `requirements.txt`; `.env` ≈ Node's `.env` ← `.env.example`.)*
+- **`.env`** (gitignored; template `.env.example`) holds `ANTHROPIC_API_KEY` for the enrich step (model `claude-sonnet-4-6`, **~$0.078/sermon** with the full schema; Haiku 4.5 ≈ ⅓) — the CLI auto-loads it. Without a key the deterministic steps still run; inject your own `enrich` fn. *(`.venv` ≈ node_modules ← `requirements.txt`; `.env` ≈ Node's `.env` ← `.env.example`.)*
 - The only thing *outside* the project is the Whisper model (~1.6 GB) in the standard `~/.cache/huggingface` shared ML cache — conventional and persistent, not scratch.
 - Nothing critical is unrecoverable: the pipeline is committed, audio re-downloadable, transcripts regenerable.
 

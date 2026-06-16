@@ -9,9 +9,9 @@ the measured evidence.
 
 ## TL;DR
 
-- **Default model: `claude-sonnet-4-6`. ~$0.06/sermon measured ⇒ ~$12 for the 239 SoundCloud sermons, ~$23 for the full 467-record union.** One-time, not recurring.
-- **Haiku 4.5 is the budget fallback** — ~⅓ the cost, nearly as good, but it slips on French precision (see below).
-- A full transcript is ≈ **13–16k input tokens + ~1.5k output**; that's the whole per-call cost (no caching needed — each sermon is a distinct one-shot call).
+- **Default model: `claude-sonnet-4-6`. ~$0.078/sermon with the full production schema ⇒ ~$19 for the 239 SoundCloud sermons, ~$40 for the full 517-record union.** One-time, not recurring. *(The bake-off below measured $0.06 on the earlier lean schema; the production schema — description, invitation, key_points, chapters, topics, references, key_quotes, questions, scripture — adds ~$0.018 of output.)*
+- **Haiku 4.5 is the budget fallback** — ~⅓ the cost, nearly as good, but it slips on French precision (see below). With the full union exceeding a ~$22 credit on Sonnet, a sensible split is Sonnet for the SC spine (~$19) + Haiku for the YouTube bulk.
+- A full transcript is ≈ **13–16k input tokens + ~1.5–2k output**; that's the whole per-call cost (no caching needed — each sermon is a distinct one-shot call).
 
 ## Claude pricing reference (per 1M tokens, 2026-06)
 
