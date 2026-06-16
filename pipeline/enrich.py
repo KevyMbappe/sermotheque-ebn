@@ -29,9 +29,7 @@ ENRICH_SCHEMA = {
                                    "title": {"type": "string", "description": "short section title"},
                                    "anchor": {"type": "string", "description": "a phrase copied VERBATIM (exact words) from the transcript where this section begins — used to locate its timestamp."}}}},
         "topics": {"type": "array", "items": {"type": "string"},
-                   "description": "3-7 BROAD subjects for browsing; prefer the controlled vocabulary (e.g. 'Christologie', 'Prière')."},
-        "doctrines": {"type": "array", "items": {"type": "string"},
-                      "description": "Specific doctrines/positions actually expounded or defended — FINER than topics, don't just echo them (e.g. 'union hypostatique', 'naissance virginale', 'imputation de la justice'). Empty if none."},
+                   "description": "4-8 theological tags, broad to specific — both subjects and the precise doctrines taught (e.g. 'Christologie', 'Union hypostatique', 'Prière'). Prefer the controlled vocabulary; most specific last."},
         "references": {"type": "array", "items": {"type": "string"},
                        "description": "People/works/confessions actually CITED (e.g. 'Jean Calvin', 'Confession de foi de 1689', 'Augustin'). Confirm, don't invent; empty if none."},
         "key_quotes": {"type": "array", "items": {"type": "string"},
@@ -44,7 +42,7 @@ ENRICH_SCHEMA = {
         "series_hint": {"type": "string", "description": "Series/study context mentioned (e.g. 'Confession de foi ch.8'), or empty."},
     },
     "required": ["description", "invitation", "summary", "key_points", "chapters", "topics",
-                 "doctrines", "references", "key_quotes", "questions",
+                 "references", "key_quotes", "questions",
                  "primary_scripture", "scripture_refs", "series_hint"],
     "additionalProperties": False,
 }
@@ -73,7 +71,7 @@ renvoie un JSON (tout en français):
 - summary: un résumé fidèle de 2-3 phrases;
 - key_points: 3-6 points clés retraçant le déroulé;
 - chapters: 3-7 sections en ordre, chacune avec un titre (title) et une phrase d'ancrage (anchor) copiée TEXTUELLEMENT de la transcription au début de la section (servira à retrouver son minutage);
-- topics: 3-7 sujets LARGES pour la navigation; doctrines: les doctrines/positions précises réellement exposées (PLUS FINES que topics, ne les répète pas);
+- topics: 4-8 étiquettes théologiques, du général au précis (sujets ET doctrines exposées, ex: Christologie, Union hypostatique, Prière); privilégie le vocabulaire contrôlé;
 - references: personnes/œuvres/confessions réellement CITÉES — n'invente pas, vide si aucune;
 - key_quotes: 1-3 phrases marquantes copiées TEXTUELLEMENT (mots exacts) de la transcription;
 - questions: 2-4 questions de réflexion pour un groupe (aides générées);
