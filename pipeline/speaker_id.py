@@ -37,9 +37,14 @@ OVERRIDES = ROOT / "data" / "catalog" / "speaker_overrides.json"  # human-confir
 # a clean gap. The accept floor sits IN that gap so only same-speaker-grade matches auto-apply;
 # matches in the overlap zone (e.g. a sermon vs a thin 2-example centroid in different audio
 # conditions) fall to "ambiguous" and are surfaced as candidates, not written.
-SIM_ACCEPT = 0.90     # minimum similarity to the nearest centroid to trust an audio match
+SIM_ACCEPT = 0.90     # floor for an OPEN-SET match (conference talk: any guest could be the speaker)
+# Regular (non-conference) sermons are a CLOSED set of 5 acoustically-distinct preachers — a
+# leave-one-out among them is 99% correct, so the reliable signal is "nearest regular, won by a
+# clear margin", not a high absolute similarity (which recording/era variation alone can depress).
+# So for the closed set we trust a lower floor as long as the margin is clear (#52).
+SIM_ACCEPT_REGULAR = 0.80
 MARGIN_MIN = 0.03     # nearest must beat the runner-up by at least this (else "ambiguous")
-CANDIDATE_FLOOR = 0.80   # ambiguous matches above this are worth surfacing for human review
+CANDIDATE_FLOOR = 0.78   # ambiguous matches above this are worth surfacing for human review
 
 
 # ----- vector math (unit-normalized embeddings, cosine) ---------------------------------------
@@ -102,8 +107,12 @@ def classify(vec, centroids):
     return spk, sim, margin
 
 
-def is_confident(sim, margin):
-    return sim >= SIM_ACCEPT and margin >= MARGIN_MIN
+def is_confident(sim, margin, *, closed_set=False):
+    """A match is trusted if it clears the similarity floor AND beats the runner-up by the margin.
+    closed_set (a regular non-conference sermon — one of 5 distinct voices) uses a lower floor:
+    the margin carries the decision there, since absolute similarity varies with the recording (#52)."""
+    floor = SIM_ACCEPT_REGULAR if closed_set else SIM_ACCEPT
+    return sim >= floor and margin >= MARGIN_MIN
 
 
 # ----- attribution over the whole catalog ------------------------------------------------------
@@ -220,7 +229,7 @@ def attribute(rows, voiceprints, overrides):
         runner = sorted(((cosine(vec, c), s) for s, c in cents.items()), reverse=True)
         rec.update(predicted=spk, sim=round(sim, 4), margin=round(margin, 4),
                    runner_up=(runner[1][1] if len(runner) > 1 else None), n_examples=counts.get(spk))
-        if not is_confident(sim, margin):
+        if not is_confident(sim, margin, closed_set=not cur.get("is_conference")):
             rec["decision"] = "ambiguous"
         elif counts.get(spk, 0) < MIN_EXAMPLES:
             rec["decision"] = "review"               # centroid too thin to trust automatically

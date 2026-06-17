@@ -5,6 +5,12 @@
     "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"
   },
+  "sc-1650134268": {
+    "confidence": 0.8604,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Loïc Rakotozafy",
+    "speaker": "David Pelosi"
+  },
   "sc-1651552182": {
     "confidence": 0.9734,
     "provenance": "audio-fingerprint",
@@ -83,6 +89,24 @@
     "runner_up": "Nathanaël Fis",
     "speaker": "Loïc Rakotozafy"
   },
+  "sc-1747263570": {
+    "confidence": 0.8933,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Loïc Rakotozafy"
+  },
+  "sc-1747265775": {
+    "confidence": 0.88,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Loïc Rakotozafy"
+  },
+  "sc-1747271847": {
+    "confidence": 0.8203,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Loïc Rakotozafy"
+  },
   "sc-1747277709": {
     "confidence": 0.9234,
     "provenance": "audio-fingerprint",
@@ -91,6 +115,24 @@
   },
   "sc-1747279587": {
     "confidence": 0.9187,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Loïc Rakotozafy"
+  },
+  "sc-1747280997": {
+    "confidence": 0.897,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Loïc Rakotozafy"
+  },
+  "sc-1747282587": {
+    "confidence": 0.8971,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Loïc Rakotozafy"
+  },
+  "sc-1747285392": {
+    "confidence": 0.8875,
     "provenance": "audio-fingerprint",
     "runner_up": "David Pelosi",
     "speaker": "Loïc Rakotozafy"
@@ -173,6 +215,12 @@
     "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"
   },
+  "sc-1783411983": {
+    "confidence": 0.8976,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Christian Bouedjoro",
+    "speaker": "David Pelosi"
+  },
   "sc-1783414731": {
     "confidence": 0.9573,
     "provenance": "audio-fingerprint",
@@ -195,6 +243,18 @@
     "confidence": 0.9634,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1824003237": {
+    "confidence": 0.8547,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Loïc Rakotozafy",
+    "speaker": "David Pelosi"
+  },
+  "sc-1824012756": {
+    "confidence": 0.8515,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Loïc Rakotozafy",
     "speaker": "David Pelosi"
   },
   "sc-1824014199": {
@@ -335,8 +395,20 @@
     "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"
   },
+  "sc-1925937050": {
+    "confidence": 0.8882,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
   "sc-1925938103": {
     "confidence": 0.969,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1925946422": {
+    "confidence": 0.8767,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"
@@ -345,6 +417,12 @@
     "confidence": 0.9511,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1925957723": {
+    "confidence": 0.8764,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Loïc Rakotozafy",
     "speaker": "David Pelosi"
   },
   "sc-1925968481": {
@@ -479,6 +557,12 @@
     "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"
   },
+  "sc-2167745982": {
+    "confidence": 0.8962,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Nathanaël Fis"
+  },
   "sc-2167748475": {
     "confidence": 0.9656,
     "provenance": "audio-fingerprint",
@@ -507,6 +591,12 @@
     "confidence": 0.9707,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-2193798131": {
+    "confidence": 0.877,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Christian Bouedjoro",
     "speaker": "David Pelosi"
   },
   "sc-2205625143": {
@@ -569,10 +659,28 @@
     "runner_up": "Nathanaël Fis",
     "speaker": "Stephan Kongo"
   },
+  "sc-2296940147": {
+    "confidence": 0.8947,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-2309532407": {
+    "confidence": 0.8795,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Nathanaël Fis"
+  },
   "sc-2338530545": {
     "confidence": 0.9503,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "yt-FDcy9KUQM6s": {
+    "confidence": 0.8614,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Loïc Rakotozafy",
     "speaker": "David Pelosi"
   },
   "yt-HOjW63LMfhQ": {
@@ -586,6 +694,12 @@
     "provenance": "audio-fingerprint",
     "runner_up": "Paulo Junior",
     "speaker": "Joël Beeke"
+  },
+  "yt-LAcVjq-mfJc": {
+    "confidence": 0.8166,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Loïc Rakotozafy",
+    "speaker": "David Pelosi"
   },
   "yt-NDCyRMRt6xw": {
     "confidence": 0.9335,
@@ -605,6 +719,12 @@
     "runner_up": "Brian Borgman",
     "speaker": "Joël Beeke"
   },
+  "yt-nTrSEHDkXqM": {
+    "confidence": 0.8244,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Loïc Rakotozafy",
+    "speaker": "David Pelosi"
+  },
   "yt-r2phMiy2ymg": {
     "confidence": 0.9147,
     "provenance": "audio-fingerprint",
@@ -617,11 +737,23 @@
     "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"
   },
+  "yt-uNPP4M4Aqpc": {
+    "confidence": 0.8891,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Loïc Rakotozafy"
+  },
   "yt-uhX8wbxSQ1g": {
     "confidence": 0.9082,
     "provenance": "audio-fingerprint",
     "runner_up": "Loïc Rakotozafy",
     "speaker": "David Pelosi"
+  },
+  "yt-uoOC4Tel1i4": {
+    "confidence": 0.8321,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Stephan Kongo"
   },
   "yt-yCBKVjfAfhQ": {
     "confidence": 0.9426,
