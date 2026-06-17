@@ -23,6 +23,14 @@ class TestEnrichmentStore(unittest.TestCase):
         self.assertEqual(out[0]["scripture_osis"], "Ps.40.1")
         self.assertEqual(out[1]["topics"], [])              # no store entry → unchanged
 
+    def test_detected_language_writes_back_over_title_guess(self):
+        # The catalog row is title-labeled French; the store carries the ASR-detected English (#48).
+        rows = [{"id": "yt-1", "title": "Being a Witness", "language": "fr", "topics": []}]
+        store = {"yt-1": {"language": "en", "summary": "S"}}
+        out, merged = apply(rows, store)
+        self.assertEqual(merged, 1)
+        self.assertEqual(out[0]["language"], "en")           # audio truth overrides the title guess
+
     def test_store_entry_for_unknown_id_is_ignored(self):
         rows = [{"id": "sc-1", "topics": []}]
         _, merged = apply(rows, {"sc-999": {"topics": ["X"]}})

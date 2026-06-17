@@ -23,7 +23,11 @@ STORE = ROOT / "data" / "catalog" / "enrichment.json"
 # The fields produced by enrichment (build_entry output) that must survive a structural
 # rebuild. Everything else on a catalog row is structural (re-derived from title/inventory).
 # (speaker is structural — set by the default-speaker rule in the build, #45 — not stored here.)
-ENRICHMENT_FIELDS = ("description", "invitation", "summary", "key_points", "chapters",
+# `language` is the exception that proves the rule: it's STRUCTURAL by default (title guess)
+# but, once we've transcribed, the ASR-detected language is the audio truth, so it's stored
+# here to override the unreliable title-derived value across rebuilds (#48).
+ENRICHMENT_FIELDS = ("language",
+                     "description", "invitation", "summary", "key_points", "chapters",
                      "topics", "references", "key_quotes", "questions",
                      "primary_scripture", "scripture_refs", "series_hint",
                      "transcript_ref", "raw_ref", "captions_ref", "segments_ref")

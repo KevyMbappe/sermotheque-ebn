@@ -111,6 +111,19 @@ class TestBuildEntry(unittest.TestCase):
         self.assertIsNone(e["segments_ref"])
         self.assertIsNone(e["raw_ref"])
 
+    def test_detected_language_overrides_title_guess(self):
+        # Title parses as French (default), but the audio is English → entry follows the audio (#48).
+        rich_en = {**self.RICH, "language": "en"}
+        e = build_entry(SOURCE, transcribe=lambda s: rich_en, enrich=lambda t, p: ENRICHMENT,
+                        transcripts_dir=self.tmp)
+        self.assertEqual(parse_title(SOURCE["raw_title"])["language"], "fr")  # title guess
+        self.assertEqual(e["language"], "en")                                  # audio truth wins
+
+    def test_language_falls_back_to_title_without_detection(self):
+        # A plain-string transcriber carries no detected language → keep the title guess.
+        e = self._build()
+        self.assertEqual(e["language"], "fr")
+
     def test_date_falls_back_to_source_upload_date(self):
         # Title has no date prefix; YouTube's upload_date (YYYYMMDD) should fill it.
         src = {"youtube_id": "X", "raw_title": "Prier | Psaume 40 : 1 - 17", "upload_date": "20260607"}

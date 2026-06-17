@@ -27,13 +27,13 @@ ENRICH_SCHEMA = {
                                "required": ["title", "anchor"],
                                "properties": {
                                    "title": {"type": "string", "description": "short section title"},
-                                   "anchor": {"type": "string", "description": "a phrase copied VERBATIM (exact words) from the transcript where this section begins — used to locate its timestamp."}}}},
+                                   "anchor": {"type": "string", "description": "a phrase copied VERBATIM (exact words, IN THE TRANSCRIPT'S OWN LANGUAGE — do NOT translate it) from the transcript where this section begins — used to locate its timestamp."}}}},
         "topics": {"type": "array", "items": {"type": "string"},
                    "description": "4-8 theological tags, broad to specific — both subjects and the precise doctrines taught (e.g. 'Christologie', 'Union hypostatique', 'Prière'). Prefer the controlled vocabulary; most specific last."},
         "references": {"type": "array", "items": {"type": "string"},
                        "description": "People/works/confessions actually CITED (e.g. 'Jean Calvin', 'Confession de foi de 1689', 'Augustin'). Confirm, don't invent; empty if none."},
         "key_quotes": {"type": "array", "items": {"type": "string"},
-                       "description": "1-3 striking sentences copied VERBATIM (exact words) from the transcript — used for clips/search; timestamps are attached afterwards."},
+                       "description": "1-3 striking sentences copied VERBATIM (exact words, IN THE TRANSCRIPT'S OWN LANGUAGE — do NOT translate) from the transcript — used for clips/search; timestamps are attached afterwards."},
         "questions": {"type": "array", "items": {"type": "string"},
                       "description": "2-4 reflection/discussion questions for a small group (these are study aids — generated, not quoted)."},
         "primary_scripture": {"type": "string", "description": "Main passage preached (e.g. 'Luc 1:26-38'), or empty."},
@@ -64,8 +64,10 @@ def cost_of(model: str, in_tok: int, out_tok: int) -> float:
 
 
 PROMPT = """Tu enrichis le catalogue de prédications d'une église réformée baptiste francophone.
-À partir de la TRANSCRIPTION (français, générée automatiquement — ignore les coquilles d'ASR),
-renvoie un JSON (tout en français):
+À partir de la TRANSCRIPTION (en français OU en anglais, générée automatiquement — ignore les
+coquilles d'ASR), renvoie un JSON. Rédige tout en français — SAUF les champs `anchor` (dans
+chapters) et `key_quotes`, qui sont des copies TEXTUELLES de la transcription et doivent rester
+dans la langue de la transcription (ne les traduis pas, sinon on ne peut pas retrouver leur minutage):
 - description: UNE phrase accrocheuse (≤30 mots) à afficher sous la vidéo (une accroche, pas un résumé);
 - invitation: 2-4 phrases chaleureuses mais SOBRES, donnant envie d'écouter (pas de clichés marketing, pas de 'plongez dans');
 - summary: un résumé fidèle de 2-3 phrases;

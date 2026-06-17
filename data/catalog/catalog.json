@@ -9,7 +9,7 @@
     "audio_duration": 3389,
     "video_duration": null,
     "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": "ser-evangile-de-luc",
     "series_name": "Évangile de Luc",
     "series_part": null,
@@ -2428,7 +2428,7 @@
     "audio_duration": 4006,
     "video_duration": null,
     "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": "ser-joie-chretienne",
     "series_name": "Joie chrétienne",
     "series_part": null,
@@ -3663,7 +3663,7 @@
     "audio_duration": 3615,
     "video_duration": null,
     "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": "ser-noel-le-plus-glorieux-des-mysteres",
     "series_name": "Noël le plus glorieux des mystères",
     "series_part": null,
@@ -4896,7 +4896,7 @@
     "audio_duration": 3009,
     "video_duration": null,
     "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": "ser-etude-genese",
     "series_name": "Étude — Genèse",
     "series_part": null,
@@ -5930,8 +5930,8 @@
     "date": "2024-08-25",
     "audio_duration": 3868,
     "video_duration": null,
-    "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker": "Nathanaël Fis",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": "ser-epitre-de-jacques",
     "series_name": "Épître de Jacques",
     "series_part": null,
@@ -6210,8 +6210,8 @@
     "date": "2024-08-19",
     "audio_duration": 3496,
     "video_duration": null,
-    "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker": "Stephan Kongo",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": "ser-etude-ezechiel",
     "series_name": "Étude — Ézéchiel",
     "series_part": null,
@@ -6333,8 +6333,8 @@
     "date": "2024-08-19",
     "audio_duration": 3867,
     "video_duration": null,
-    "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker": "Stephan Kongo",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": "ser-etude-ezechiel",
     "series_name": "Étude — Ézéchiel",
     "series_part": null,
@@ -6389,8 +6389,8 @@
     "date": "2024-08-19",
     "audio_duration": 3374,
     "video_duration": null,
-    "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker": "Stephan Kongo",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": "ser-etude-ezechiel",
     "series_name": "Étude — Ézéchiel",
     "series_part": null,
@@ -6704,7 +6704,7 @@
     "audio_duration": 3805,
     "video_duration": null,
     "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": "ser-epitre-aux-galates",
     "series_name": "Épître aux Galates",
     "series_part": null,
@@ -8650,8 +8650,8 @@
     "date": "2023-10-29",
     "audio_duration": 3596,
     "video_duration": null,
-    "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker": "Stephan Kongo",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": null,
     "series_name": null,
     "series_part": 6,
@@ -8894,7 +8894,7 @@
     "audio_duration": 4068,
     "video_duration": null,
     "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": null,
     "series_name": null,
     "series_part": 2,
@@ -8960,8 +8960,8 @@
     "date": "2023-10-28",
     "audio_duration": 3553,
     "video_duration": null,
-    "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker": "Stephan Kongo",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": null,
     "series_name": null,
     "series_part": 3,
@@ -9076,7 +9076,7 @@
     "audio_duration": 3461,
     "video_duration": null,
     "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": null,
     "series_name": null,
     "series_part": 4,
@@ -9190,7 +9190,7 @@
     "audio_duration": 4272,
     "video_duration": null,
     "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": null,
     "series_name": null,
     "series_part": 5,
@@ -9779,7 +9779,7 @@
     "source": "youtube",
     "raw_title": "Paul, the Theologian, Evangelist, and Christian (Gal. 1:1-5) [GAL.003]",
     "title": "Paul, the Theologian, Evangelist, and Christian [GAL.003]",
-    "language": "en",
+    "language": "fr",
     "date": null,
     "audio_duration": null,
     "video_duration": 3600,
@@ -9803,51 +9803,51 @@
     "youtube_match": null,
     "translation_candidates": [],
     "topics": [
-      "Sotériologie",
+      "Épître aux Galates",
       "Justification par la foi",
-      "Grâce souveraine",
-      "Apostolat et autorité apostolique",
+      "Apostolat",
       "Sanctification",
+      "Théologie et formation chrétienne",
       "Évangélisation et mission",
-      "Théologie paulinienne",
-      "Vocation chrétienne"
+      "Grâce souveraine",
+      "Identité chrétienne en Christ"
     ],
-    "summary": "Le prédicateur présente Paul sous trois angles complémentaires : chef-d'œuvre de la grâce préparatoire de Dieu avant sa conversion, trophée de la grâce salvatrice lors de sa rencontre avec Christ, et modèle de coopération diligente avec la grâce rédemptrice du Saint-Esprit dans sa vie chrétienne. Cette triple lecture éclaire à la fois la défense paulinienne de son apostolat dans Galates 1 et les enjeux de la justification par la foi que la lettre entend défendre. L'appel final est que chaque croyant imite Paul en s'engageant avec la même diligence dans la théologie, l'évangélisation et la conformité à Christ.",
+    "summary": "La prédication s'inscrit dans une série sur Galates et rappelle d'abord le contexte de la lettre : Paul défend son apostolat et la suffisance de la justification par la foi face aux judaïsants. L'orateur développe ensuite trois aspects de Paul en tant qu'homme chrétien coopérant avec la grâce rédemptrice du Saint-Esprit : sa formation théologique rigoureuse et passionnée, son évangélisation centrée sur l'implantation d'églises locales, et son identité fondamentale comme esclave du Christ. Ces trois dimensions sont présentées comme des modèles concrets pour tous les croyants.",
     "transcript_ref": "data/catalog/transcripts/yt-NDCyRMRt6xw.txt",
-    "description": "Paul : théologien, évangéliste, chrétien — trois visages d'un homme façonné par la grâce pour changer le monde.",
-    "invitation": "Cette prédication invite à regarder Paul non comme une figure inaccessible, mais comme un homme ordinaire transformé par une grâce extraordinaire. On y découvre comment sa formation intellectuelle, sa conversion radicale et sa coopération constante avec le Saint-Esprit ont fait de lui un modèle pour chaque chrétien. Si vous vous interrogez sur le rôle de vos capacités naturelles dans votre vocation, ou sur le lien entre théologie et vie chrétienne concrète, ce message vous donnera matière à réfléchir.",
+    "description": "Paul : théologien de feu, évangéliste infatigable, chrétien avant tout — un modèle de coopération avec la grâce de Dieu.",
+    "invitation": "Cette prédication prend le temps de regarder Paul non comme une icône inaccessible, mais comme un homme qui a délibérément coopéré avec la grâce de Dieu à chaque étape de sa vie. En suivant trois dimensions de son parcours — théologien, évangéliste, chrétien —, l'orateur invite chaque auditeur à faire de même avec ses propres capacités et son histoire. C'est une réflexion sérieuse sur ce que signifie présenter sa vie comme un culte agréable à Dieu. Utile autant pour les nouveaux croyants que pour ceux qui cherchent à approfondir leur vocation.",
     "key_points": [
-      "Paul a été préparé souverainement par Dieu avant sa conversion : sa formation grecque, romaine et hébraïque, sa rigueur intellectuelle et son zèle étaient déjà l'œuvre de la grâce prévenante.",
-      "Sa conversion — alors qu'il persécutait l'Église — fait de lui le trophée par excellence de la grâce salvatrice, ce qui fonde son autorité pour défendre la justification par la foi seule.",
-      "En tant que chrétien, Paul a coopéré activement avec la grâce rédemptrice du Saint-Esprit : période de retraite en Arabie, étude constante des Écritures, effort théologique progressif.",
-      "Comme évangéliste, Paul s'adaptait à ses auditoires sans jamais compromettre l'Évangile, et son ministère visait toujours la formation d'églises locales solidement établies plutôt que de simples conversions individuelles.",
-      "Paul demeure avant tout un chrétien dont l'identité est enracinée dans l'intimité avec Christ — 'vivre c'est Christ, mourir est un gain' — et c'est de là que découlent sa théologie et son service.",
-      "Le prédicateur applique ces trois dimensions à l'assemblée : exercer sa connaissance de Dieu, s'engager dans l'évangélisation et chercher la conformité à Christ par une coopération diligente avec le Saint-Esprit."
+      "Rappel du contexte de Galates : des faux enseignants remettent en cause l'autorité de Paul et ajoutent des exigences judaïques à l'évangile.",
+      "La justification par la foi est suffisante non seulement pour le salut mais aussi pour déclencher une sanctification efficace.",
+      "Paul, avant sa conversion, était déjà un chef-d'œuvre de la grâce préparatoire de Dieu ; après sa conversion, il est un trophée de la grâce salvatrice.",
+      "En tant que théologien, Paul a coopéré diligemment avec Dieu par l'étude des Écritures, la réflexion et une connaissance intime de Christ.",
+      "En tant qu'évangéliste, Paul adaptait ses méthodes à son auditoire sans jamais compromettre le message, toujours ancré dans une église locale.",
+      "En tant que chrétien, Paul trouvait son identité dans l'union avec Christ ('vivre c'est Christ') et c'est cette passion qui alimentait tout le reste."
     ],
     "chapters": [
       {
         "t": 8,
-        "title": "Rappel du contexte de la lettre aux Galates"
+        "title": "Introduction : contexte et enjeux de la lettre aux Galates"
       },
       {
-        "t": 822,
-        "title": "Paul, trophée de la grâce salvatrice"
+        "t": 929,
+        "title": "Paul, modèle de coopération avec la grâce rédemptrice"
       },
       {
         "t": 1416,
-        "title": "Paul, modèle de coopération avec le Saint-Esprit — le théologien"
+        "title": "Paul théologien : la connaissance de Dieu comme moteur de la vie chrétienne"
       },
       {
         "t": 2592,
-        "title": "Paul, modèle de coopération avec le Saint-Esprit — l'évangéliste"
+        "title": "Paul évangéliste : mission, église locale et sacrifice"
       },
       {
         "t": 3292,
-        "title": "Paul, avant tout chrétien et imitateur du Christ"
+        "title": "Paul chrétien : identité en Christ comme fondement de tout"
       },
       {
         "t": null,
-        "title": "Paul, chef-d'œuvre de la grâce préparatoire"
+        "title": "Révision : Paul, trophée de la grâce préparatoire et salvatrice"
       }
     ],
     "references": [
@@ -9855,14 +9855,9 @@
       "Philippe Schaff",
       "Robert Reymond",
       "Gresham Machen",
-      "Gamaliel",
-      "Lloyd-Jones"
+      "Gamaliel"
     ],
     "key_quotes": [
-      {
-        "t": 315,
-        "text": "c'est pour la liberté que Christ vous a affranchie, ce n'est pas pour revenir en arrière et être enchaîné par toutes ces emphases judaïsantes"
-      },
       {
         "t": 2431,
         "text": "les doctrines déterminent l'expérience des vies qu'on aura"
@@ -9870,13 +9865,17 @@
       {
         "t": 3541,
         "text": "vivre c'est Christ mourir est un gant"
+      },
+      {
+        "t": 2971,
+        "text": "je me suis fait tout à tous afin de sauver de toute manière quelques-uns j'ai fait tout à cause de l'évangile afin d'y avoir part"
       }
     ],
     "questions": [
-      "En quoi la connaissance précise de Dieu (la théologie) influence-t-elle concrètement votre manière de vivre et de sanctifier votre vie au quotidien ?",
-      "Comment distinguez-vous, dans votre propre parcours, l'œuvre préparatoire de Dieu avant votre conversion et la coopération que Dieu vous demande après votre conversion ?",
-      "Qu'est-ce que le modèle d'évangélisation de Paul — centré sur l'église locale, sans compromis sur l'Évangile — remet en question dans vos pratiques ou conceptions actuelles du témoignage ?",
-      "Paul se définit avant tout comme un 'esclave du Christ' plutôt que comme apôtre : quelle place occupe l'intimité avec Christ dans votre identité chrétienne, au-delà de vos activités et de vos dons ?"
+      "En quoi la connaissance théologique précise de Dieu transforme-t-elle concrètement la façon dont vous vivez au quotidien ?",
+      "Comment coopérez-vous activement avec la grâce de Dieu dans votre propre formation spirituelle — par l'étude, la prière, l'implication dans l'église locale ?",
+      "Qu'est-ce qui, dans votre histoire personnelle avant ou après la conversion, pourrait être vu comme une préparation souveraine de Dieu pour votre vocation particulière ?",
+      "Paul ne séparait jamais l'évangélisation de l'implantation d'une église locale. Comment cela remet-il en question votre compréhension personnelle de la mission chrétienne ?"
     ],
     "primary_scripture": "Galates 1:1-5",
     "scripture_refs": [
@@ -9887,15 +9886,14 @@
       "Romains 8",
       "Romains 9",
       "1 Corinthiens 2:1-5",
-      "2 Corinthiens 11-12",
+      "2 Corinthiens 11:23-12:10",
       "Philippiens 3",
-      "Matthieu 16",
-      "Marc 8",
       "Actes 9",
-      "Actes 13-16",
-      "2 Timothée 4"
+      "Actes 13",
+      "Actes 16",
+      "Marc 8"
     ],
-    "series_hint": "Série sur l'épître aux Galates — prédication GAL.003",
+    "series_hint": "Série sur l'épître aux Galates — GAL.003",
     "raw_ref": "data/catalog/transcripts/yt-NDCyRMRt6xw.raw.txt",
     "captions_ref": "data/catalog/transcripts/yt-NDCyRMRt6xw.vtt"
   },
@@ -9904,7 +9902,7 @@
     "source": "youtube",
     "raw_title": "Being a Witness of Christ",
     "title": "Being a Witness of Christ",
-    "language": "en",
+    "language": "fr",
     "date": null,
     "audio_duration": null,
     "video_duration": 3205,
@@ -9932,22 +9930,21 @@
       "Témoignage chrétien",
       "Conversion authentique",
       "Pneumatologie",
-      "Missiologie",
-      "Actes des Apôtres",
       "Sotériologie",
-      "Vocation du laïcat"
+      "Missiologie",
+      "Obéissance et soumission au Saint-Esprit"
     ],
-    "summary": "À partir d'Actes 8, le prédicateur montre comment la conversion authentique de l'eunuque éthiopien est le fruit d'une évangélisation véritablement biblique, incarnée par Philippe. Il développe deux marques essentielles du témoin chrétien : la soumission à la direction du Christ et du Saint-Esprit, et la proclamation de Christ lui-même à partir des Écritures. Le sermon appelle chaque chrétien à embrasser son identité de témoin comme la signification la plus sublime de sa vie terrestre.",
+    "summary": "À partir d'Actes 8, le prédicateur montre que la conversion authentique de l'eunuque éthiopien est le fruit d'une évangélisation bibliquement fidèle menée par Philippe. Il établit un contraste saisissant avec la fausse conversion de Simon le magicien pour souligner que de faux moyens d'évangélisation produisent de fausses conversions. Le modèle de Philippe — soumission à la direction du Saint-Esprit et proclamation explicite de Christ à partir de l'Écriture — est présenté comme le paradigme pour tout chrétien.",
     "transcript_ref": "data/catalog/transcripts/yt-Tqu-GLCEgbA.txt",
-    "description": "Être témoin du Christ, c'est l'identité première du chrétien — et l'évangélisation authentique en est la preuve vivante.",
-    "invitation": "Ce sermon repart d'un récit souvent survolé — la conversion de l'eunuque éthiopien — pour poser deux questions qui engagent toute la vie chrétienne : qu'est-ce qu'évangéliser vraiment, et qu'est-ce qu'une vraie conversion ? La prédication est ancrée dans Actes 8 et suit pas à pas le modèle de Philippe, entre soumission à l'Esprit et proclamation centrée sur Christ. Elle invite chaque auditeur à redécouvrir que témoigner n'est pas une option parmi d'autres, mais la vocation la plus noble que l'on puisse embrasser.",
+    "description": "Être témoin du Christ, c'est l'identité première du chrétien — une mission plus noble que tout autre projet de vie.",
+    "invitation": "Ce message repart du récit de Philippe et de l'eunuque éthiopien pour poser deux questions que tout chrétien doit affronter : qu'est-ce qu'une vraie évangélisation, et qu'est-ce qu'une vraie conversion ? Le prédicateur montre, texte en main, que ces deux réalités sont inséparables et que les confondre coûte cher à l'Église. Une prédication sobre et exigeante, qui replace le témoignage au cœur de l'identité chrétienne.",
     "key_points": [
-      "La nature de l'évangélisation détermine la nature de la conversion : de faux moyens produisent de fausses conversions, comme l'illustre le contre-exemple de Simon le Magicien.",
-      "L'Esprit-Saint a pour fonction première de révéler Christ et de faire de chaque croyant un témoin oculaire, selon Actes 1:8.",
-      "Philippe est soumis rapidement et sacrificiellement à la direction du Seigneur, quittant un réveil spectaculaire en Samarie pour aller seul dans le désert.",
-      "La soumission à l'Esprit place le témoin dans des circonstances avantageuses : l'eunuque lisait Ésaïe 53 au moment précis de la rencontre.",
-      "L'évangélisation authentique consiste à proclamer Christ à partir des Écritures, non à présenter une opinion personnelle ou une promesse d'amélioration de vie.",
-      "La réponse de l'eunuque — baptême et confession de foi — est le fruit naturel d'une évangélisation fidèle, et le modèle pour toute l'Église jusqu'aux extrémités de la terre."
+      "La nature de l'évangélisation détermine la nature de la conversion : de faux moyens produisent de faux résultats.",
+      "Le contraste entre Simon le magicien (fausse conversion, intéressé par la puissance) et l'eunuque éthiopien (vraie conversion) structure le passage.",
+      "Actes 1:8 fixe le cadre : le Saint-Esprit nous est donné non d'abord pour les dons spectaculaires, mais pour faire de nous des témoins de Christ.",
+      "Philippe est modèle de soumission rapide et sacrificielle à la direction du Seigneur, même contre-intuitive (quitter Samarie pour le désert).",
+      "L'évangélisation authentique consiste à annoncer Christ lui-même à partir de l'Écriture (ici Ésaïe 53), non une simple 'amélioration de vie'.",
+      "La réponse de foi de l'eunuque ('Je crois que Jésus-Christ est le Fils de Dieu') ne peut venir que d'une évangélisation authentique."
     ],
     "chapters": [
       {
@@ -9955,60 +9952,60 @@
         "title": "Introduction : renouveler nos convictions de rentrée"
       },
       {
-        "t": 293,
-        "title": "Le contraste Simon le Magicien / l'eunuque éthiopien"
+        "t": 298,
+        "title": "Fausse conversion vs vraie conversion : le contraste du chapitre 8"
       },
       {
         "t": 807,
         "title": "Actes 1:8 — Vous serez mes témoins"
       },
       {
-        "t": 1511,
-        "title": "Philippe : soumis à la direction du Seigneur"
-      },
-      {
-        "t": 2741,
-        "title": "Conclusion : l'appel à tous les témoins"
-      },
-      {
-        "t": 2849,
-        "title": "Proclamer Christ à partir des Écritures"
-      },
-      {
-        "t": null,
+        "t": 1386,
         "title": "Une soumission sacrificielle et avantageuse"
+      },
+      {
+        "t": 1511,
+        "title": "Philippe : un messager soumis à la direction du Seigneur"
+      },
+      {
+        "t": 2211,
+        "title": "Proclamer Christ à partir de l'Écriture"
+      },
+      {
+        "t": 3145,
+        "title": "La réponse de l'eunuque : la vraie conversion"
       }
     ],
     "references": [
       "Tertullien",
       "Jonathan Edwards",
-      "Martyn Lloyd-Jones",
-      "Jean Calvin"
+      "Lloyd-Jones",
+      "Calvin"
     ],
     "key_quotes": [
       {
         "t": 807,
-        "text": "vous recevrez les Saint-Esprit et vous serez mes témoins"
+        "text": "vous recevrez les Saint-Esprits et vous serrez mes témoins"
       },
       {
-        "t": 1744,
-        "text": "il n'y a aucune tâche que vous pouvez faire dans cette vie qui pourrait être plus noble plus digne que d'être confus comme un ange des dieux qui apporte les bonnes nouvelles du salut"
+        "t": 588,
+        "text": "l'évangélisation existe car l'adoration n'existe pas encore pour beaucoup"
       },
       {
         "t": 2849,
-        "text": "Philippe ouvrant la bouche et commençant par ses passages lui annonça la bonne nouvelle de Jésus"
+        "text": "Philippe ouvrant la bouche et commençant par ces passages lui annonça à la bonne nouvelle de Jésus"
       }
     ],
     "questions": [
-      "En quoi la nature de l'évangélisation que vous pratiquez influence-t-elle la qualité des conversions que vous observez autour de vous ?",
-      "Quels sacrifices concrets seriez-vous prêts à faire — comme Philippe quittant la Samarie pour le désert — pour vous rendre disponible à l'évangélisation ?",
-      "Comment distinguer une vraie conversion d'une fausse, à la lumière du contraste entre Simon le Magicien et l'eunuque éthiopien ?",
-      "Qu'est-ce que cela change dans votre manière d'évangéliser de savoir que c'est le Christ ressuscité, assis sur son trône, qui envoie et qui sauve ?"
+      "En quoi la nature de l'évangélisation que nous pratiquons influe-t-elle directement sur la qualité des conversions que nous observons ?",
+      "Qu'est-ce qui distingue concrètement un témoin oculaire de Christ (au sens de quelqu'un qui l'a vraiment connu) de quelqu'un qui n'a fait qu'en entendre parler ?",
+      "Philippe quitte une évangélisation 'spectaculaire' pour aller seul dans le désert : quels sacrifices concrets êtes-vous prêts à faire pour avancer le règne de Dieu dans votre entourage ?",
+      "Pourquoi est-il insuffisant de présenter un 'Jésus qui améliore la vie' plutôt que 'Christ et lui crucifié' ? Quelles en sont les conséquences pratiques pour votre manière de partager l'Évangile ?"
     ],
-    "primary_scripture": "Actes 8:26-38",
+    "primary_scripture": "Actes 8:26-39",
     "scripture_refs": [
       "Actes 1:8",
-      "Actes 8:4-25",
+      "Actes 8:9-24",
       "Ésaïe 53",
       "Éphésiens 5-6",
       "Matthieu 28:18-20"
@@ -10140,7 +10137,7 @@
     "audio_duration": null,
     "video_duration": 3405,
     "speaker": "David Pelosi",
-    "speaker_provenance": "default-rule",
+    "speaker_provenance": "audio-fingerprint",
     "series_id": null,
     "series_name": null,
     "series_part": null,
@@ -10604,7 +10601,7 @@
     "source": "youtube",
     "raw_title": "Authentic Conversion, Responsible Ambassadors",
     "title": "Authentic Conversion, Responsible Ambassadors",
-    "language": "en",
+    "language": "fr",
     "date": null,
     "audio_duration": null,
     "video_duration": 4480,
@@ -10628,61 +10625,100 @@
     "youtube_match": null,
     "translation_candidates": [],
     "topics": [
-      "Sotériologie",
-      "Conversion",
-      "Régénération",
       "Évangélisation",
-      "Mission chrétienne",
-      "Ambassadeurs du Christ",
-      "Vie chrétienne",
-      "Témoignage"
+      "Témoignage chrétien",
+      "Conversion et régénération",
+      "Baptême",
+      "Ecclésiologie",
+      "Justice substitutive",
+      "Pneumatologie",
+      "Prédication expositionnelle"
     ],
-    "summary": "La prédication articule deux réalités indissociables : la conversion authentique, qui est une œuvre souveraine de Dieu dans le cœur humain, et la responsabilité missionnaire qui en découle pour chaque croyant. Le prédicateur montre que celui qui a vraiment été transformé par l'Évangile ne peut rester passif, mais est constitué ambassadeur du Christ dans son milieu. L'appel final presse l'auditeur à examiner la réalité de sa conversion et la fidélité de son témoignage.",
+    "summary": "À partir d'Actes 8, le prédicateur examine Philippe comme modèle d'ambassadeur responsable du Christ : soumis à la direction du Saint-Esprit, engagé ordinairement dans l'évangélisation, et proclamant Christ selon les Écritures avec autorité. Il insiste sur le lien indissociable entre évangélisation biblique, conversion authentique et intégration visible dans l'église locale par le baptême. En contrepoint, il critique les méthodes émotionnalistes modernes et les baptêmes spontanés déconnectés de l'église.",
     "transcript_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.txt",
-    "description": "Être converti ne suffit pas : le croyant est appelé à devenir un ambassadeur responsable de l'Évangile devant le monde.",
-    "invitation": "Cette prédication interroge ce que signifie une conversion authentique et ce qu'elle implique concrètement pour la vie chrétienne. Elle explore le lien entre la transformation intérieure et la vocation missionnaire de tout croyant. Si vous vous demandez comment votre foi devrait façonner votre témoignage quotidien, cette étude mérite votre attention.",
+    "description": "Être témoin du Christ n'est pas ce que vous faites — c'est ce que vous êtes, et cela change tout.",
+    "invitation": "Ce sermon explore le récit de Philippe et l'eunuque éthiopien pour dégager un modèle biblique d'évangélisation souvent négligé. Le prédicateur aborde sans détour les dérives de l'évangélisme émotionnaliste moderne et pose la question de ce que signifie une conversion authentique. Si vous vous demandez comment témoigner avec intégrité — ou si votre église accueille des membres avec sérieux — cette prédication offre des repères solides et exigeants.",
     "key_points": [
-      "La conversion authentique est une transformation radicale opérée par Dieu, non une simple décision humaine.",
-      "Une conversion véritable produit des fruits visibles et un changement de vie durable.",
-      "Tout croyant est constitué ambassadeur du Christ, investi d'une mission de réconciliation.",
-      "Cette ambassade exige fidélité au message de l'Évangile, sans compromis ni honte.",
-      "L'examen de conscience est nécessaire : suis-je vraiment converti, et est-ce que j'assume ma responsabilité d'ambassadeur ?"
+      "Philippe illustre une soumission prompte et ordinaire à la direction du Saint-Esprit, sans attendre de manifestations spectaculaires.",
+      "Une évangélisation biblique est relationnelle, centrée sur Christ selon les Écritures, et doctrinalement précise (justice substitutive, double nature du Christ, mort et résurrection réelles).",
+      "L'authenticité du témoin prime : 'vous serez mes témoins' est une question d'être avant d'être une question de faire.",
+      "Les signes de conversion authentique chez l'eunuque (recherche sincère, désir volontaire du baptême, profession de foi du cœur, joie) servent de paramètres pour l'accueil responsable des membres.",
+      "Le baptême n'est pas un rite séparé de la conversion mais son officialisation publique, liant le croyant à l'église locale, ambassade visible du royaume du Christ.",
+      "Comme Philippe à Césarée, le témoignage fidèle s'exerce avec joie à toutes les étapes de la vie, en mouvement ou de manière stable."
     ],
     "chapters": [
       {
-        "t": null,
-        "title": "Introduction : deux réalités liées"
+        "t": 121,
+        "title": "La prédication expositionnelle et la Providence"
       },
       {
-        "t": null,
-        "title": "Qu'est-ce qu'une conversion authentique ?"
+        "t": 414,
+        "title": "L'identité du chrétien : ambassadeur du royaume"
       },
       {
-        "t": null,
-        "title": "Les fruits d'une vraie conversion"
+        "t": 588,
+        "title": "Être soumis à la direction du Saint-Esprit"
       },
       {
-        "t": null,
-        "title": "La vocation d'ambassadeur du Christ"
+        "t": 898,
+        "title": "Proclamer Christ selon l'Écriture"
       },
       {
-        "t": null,
-        "title": "Les exigences de l'ambassade évangélique"
+        "t": 2408,
+        "title": "Signes d'une conversion authentique"
       },
       {
-        "t": null,
-        "title": "Appel à l'examen et à la fidélité"
+        "t": 3609,
+        "title": "Le baptême : officialisation publique de la foi"
+      },
+      {
+        "t": 4365,
+        "title": "Persévérer avec joie dans l'avancée du royaume"
       }
     ],
     "questions": [
-      "Quels signes concrets dans votre vie témoignent d'une conversion authentique plutôt que d'une simple adhésion intellectuelle ?",
-      "En quoi la métaphore de l'ambassadeur change-t-elle votre manière de comprendre votre responsabilité vis-à-vis de l'Évangile ?",
-      "Quels obstacles pratiques vous empêchent d'assumer pleinement votre rôle d'ambassadeur du Christ dans votre entourage ?",
-      "Comment distinguer une transformation spirituelle réelle d'un changement de comportement purement humain ?"
+      "En quoi votre manière personnelle de partager l'évangile ressemble-t-elle ou diffère-t-elle du modèle de Philippe : sensibilité au Saint-Esprit, relation réelle, proclamation de Christ selon les Écritures ?",
+      "Quels signes concrets d'une conversion authentique cherchez-vous — ou devriez-vous chercher — avant d'accompagner quelqu'un vers le baptême ?",
+      "Le prédicateur affirme que le baptême est l'officialisation publique d'une allégeance à Christ au sein de son église visible. Qu'est-ce que cela change dans votre compréhension de la membership d'église ?",
+      "Comment distinguer une évangélisation animée par un amour réel des perdus d'une évangélisation motivée par la culpabilité ou la méthode ?"
     ],
-    "primary_scripture": "2 Corinthiens 5:17-20",
+    "primary_scripture": "Actes 8:26-40",
     "raw_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.vtt",
+    "key_quotes": [
+      {
+        "t": 1092,
+        "text": "vous serrez mes témoins ce n'est pas une question de faire c'est une question d'être"
+      },
+      {
+        "t": 1434,
+        "text": "Philippe bouche grande ouverte a commencé à annoncer Christ à partir de ses passages dans les littérales"
+      },
+      {
+        "t": 3505,
+        "text": "si ton intérêt pour Christ n'a pas duré une semaine je suis content de ne pas l'avoir fait car ce n'est pas signe d'une conversion authentique"
+      }
+    ],
+    "scripture_refs": [
+      "Ésaïe 53",
+      "Actes 1:8",
+      "Actes 6",
+      "Actes 8:4-8",
+      "Matthieu 16",
+      "Matthieu 28:19-20",
+      "Éphésiens 5-6",
+      "1 Corinthiens 1:21",
+      "Galates (placarder Christ crucifié)",
+      "Jean 6"
+    ],
+    "references": [
+      "Lloyd-Jones",
+      "Billy Graham",
+      "David Hume",
+      "George Whitefield",
+      "Tinkler"
+    ],
+    "series_hint": "Série expositionnelle sur les Actes des Apôtres"
   },
   {
     "id": "yt-HGLROgzi8Z0",

@@ -188,7 +188,9 @@ def build_entry(source: dict, *, transcribe, enrich, on_progress=None,
                    else "youtube"),
         "raw_title": raw_title,
         "title": parsed["title"],
-        "language": parsed["language"],
+        # Language from the AUDIO (ASR auto-detect, #48) overrides the title guess — the
+        # catalog's title-derived language is unreliable (EN titles on FR sermons & vice-versa).
+        "language": tr.get("language") or parsed["language"],
         "date": date,
         "speaker": parsed["speaker"] or enrichment.get("speaker_hint") or None,
         "speaker_provenance": parsed["speaker_provenance"],

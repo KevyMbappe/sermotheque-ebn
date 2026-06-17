@@ -50,6 +50,43 @@ def clean_transcript(text: str) -> str:
     return text
 
 
+# --- content-based language detection (decision #48) ---------------------------
+# Whisper's 30-second language guess is unreliable on our corpus: a French intro on an
+# English talk → "fr" → garbage; a French sermon opening with "Thank you" → "en". The
+# transcript TEXT itself is the reliable signal — thousands of words of distinctive
+# function words. This decides the catalog `language` label (not the ASR detector).
+_FR_WORDS = frozenset("le la les de des du un une et est que qui dans pour pas plus nous "
+                      "vous ce cette il elle son sa ses mais avec sur par ne au aux on "
+                      "comme tout être avoir fait dieu".split())
+_EN_WORDS = frozenset("the of and to a in is that it was for on are with as his they be at "
+                      "this have from not but by you we god he which will all would there".split())
+
+
+def detect_language(text: str) -> str | None:
+    """'fr' / 'en' from function-word frequency over the transcript, or None if unclear
+    (too little text, or no decisive margin). Robust on long transcripts; ignores ASR
+    artifacts. Used to set the catalog language label from the audio's actual content."""
+    words = re.findall(r"[a-zà-ÿ]+", text.lower())
+    if len(words) < 30:
+        return None
+    fr = sum(w in _FR_WORDS for w in words)
+    en = sum(w in _EN_WORDS for w in words)
+    if max(fr, en) == 0:
+        return None
+    return "fr" if fr >= en * 1.3 else "en" if en >= fr * 1.3 else None
+
+
+def _looks_garbage(text: str) -> bool:
+    """True when ASR produced near-empty output (wrong language on speech, or non-speech):
+    real characters collapse to a tiny fraction of the transcript. A correct transcript
+    sits ~0.75-0.85; a forced-wrong-language one (e.g. English audio decoded as French)
+    is ~0.01 ('...!\\n' repeated). Threshold 0.3 separates them with wide margin."""
+    if not text:
+        return True
+    real = re.sub(r"[\s.!?¿¡…]+", "", text)
+    return len(real) / len(text) < 0.3
+
+
 def count_artifacts(text: str) -> int:
     """How many systematic ASR artifacts (the _CLEAN_RULES patterns) appear in the text.
     A lusophone/non-native accent inflates this — a speaker signal in the raw transcript (#46)."""
@@ -90,23 +127,47 @@ def probe_metadata(url, ytdlp=YTDLP):
             "duration": int(float(dur)) if dur else None}
 
 
-def download_audio(url, cache_dir=CACHE, ytdlp=YTDLP, verbose=False):
-    """Download a SoundCloud/YouTube URL to mp3 in the cache. Returns the path."""
+DL_RETRIES = 3        # YouTube throttles with transient HTTP 403s; a short backoff clears them
+DL_BACKOFF = 10       # seconds, multiplied by the attempt number (10s, 20s, …)
+
+
+def download_audio(url, cache_dir=CACHE, ytdlp=YTDLP, verbose=False, retries=DL_RETRIES):
+    """Download a SoundCloud/YouTube URL to mp3 in the cache. Returns the path.
+
+    Retries with linear backoff (decision #48): YouTube intermittently answers downloads
+    with HTTP 403 (anti-bot throttling) — in the 30-sermon batch 3/12 YT videos hit it and
+    every one succeeded on a plain retry. SoundCloud has not shown this. Retrying here (not
+    just at the runner level) means a 403 costs seconds, not a re-queued sermon."""
+    import time
     cache_dir = Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
     out = cache_dir / f"{_slug(url)}.%(ext)s"
-    _run([ytdlp, "-x", "--audio-format", "mp3", "--no-warnings", "-o", str(out), url], verbose, DL_TIMEOUT)
+    cmd = [ytdlp, "-x", "--audio-format", "mp3", "--no-warnings", "-o", str(out), url]
+    last = None
+    for attempt in range(1, retries + 1):
+        try:
+            _run(cmd, verbose, DL_TIMEOUT)
+            break
+        except subprocess.CalledProcessError as e:   # transient (403/network); retry with backoff
+            last = e
+            if attempt == retries:
+                raise
+            wait = DL_BACKOFF * attempt
+            print(f"  download attempt {attempt}/{retries} failed ({url}); retrying in {wait}s",
+                  file=sys.stderr, flush=True)
+            time.sleep(wait)
     mp3s = sorted(cache_dir.glob(f"{_slug(url)}.mp3"))
     if not mp3s:
-        raise RuntimeError(f"download produced no mp3 for {url}")
+        raise RuntimeError(f"download produced no mp3 for {url}" + (f" (last error: {last})" if last else ""))
     return mp3s[0]
 
 
 _SIDECAR_EXTS = (".txt", ".vtt", ".srt", ".tsv", ".json")
 
 
-def asr(audio_path, model=MODEL, mlx_whisper=MLX_WHISPER, word_timestamps=False, verbose=False):
-    """Transcribe an audio file with mlx-whisper (French). Returns {text, vtt, segments, language}.
+def asr(audio_path, model=MODEL, mlx_whisper=MLX_WHISPER, word_timestamps=False, verbose=False,
+        language=None):
+    """Transcribe an audio file with mlx-whisper. Returns {text, vtt, segments, language}.
       • text      — plain transcript (drives enrichment + search).
       • vtt       — subtitle-ready WebVTT, segment timestamps (→ EN/PT subtitles,
                     audio-synced reading, deep-linking). Persisted by default.
@@ -114,25 +175,38 @@ def asr(audio_path, model=MODEL, mlx_whisper=MLX_WHISPER, word_timestamps=False,
                     free. With word_timestamps=True each segment also gets per-word
                     timing (`words[]`) — heavier; opt-in (see #42). Not persisted unless
                     build_entry(persist_segments=True).
+
+    `language` pins the ASR language; **None (default) auto-detects** (decision #48).
+    We used to force French — but the catalog `language` is title-derived and unreliable
+    (English titles on French sermons, and vice-versa), so forcing fr turned genuinely
+    English audio into a transcript of pure '...'. Auto-detect reads the audio truth; the
+    detected language flows back into the entry and overrides the title guess.
     """
     audio_path = Path(audio_path)
     stem, out = audio_path.stem, audio_path.parent
-    _run([mlx_whisper, str(audio_path), "--model", model, "--language", "fr",
-          "--output-dir", str(out), "--output-name", stem,
-          "--output-format", "all", "--word-timestamps", "True" if word_timestamps else "False",
-          "--verbose", "False"],   # progress bar, not a live segment dump
-         verbose, ASR_TIMEOUT)
+    # Clear any prior sidecars for this stem first: mlx-whisper skips regenerating when its
+    # output already exists, so a retry in a different language would otherwise read back the
+    # stale transcript (the #48 fr→en retry silently kept the garbage). Guarantees a fresh run.
+    for ext in _SIDECAR_EXTS:
+        (out / f"{stem}{ext}").unlink(missing_ok=True)
+    cmd = [mlx_whisper, str(audio_path), "--model", model,
+           "--output-dir", str(out), "--output-name", stem,
+           "--output-format", "all", "--word-timestamps", "True" if word_timestamps else "False",
+           "--verbose", "False"]    # progress bar, not a live segment dump
+    if language:                    # else mlx-whisper auto-detects from the audio
+        cmd += ["--language", language]
+    _run(cmd, verbose, ASR_TIMEOUT)
     data = json.loads((out / f"{stem}.json").read_text(encoding="utf-8"))
     return {
         "text": (out / f"{stem}.txt").read_text(encoding="utf-8"),
         "vtt": (out / f"{stem}.vtt").read_text(encoding="utf-8"),
         "segments": data.get("segments", []),
-        "language": data.get("language", "fr"),
+        "language": data.get("language") or language,
     }
 
 
 def make_transcriber(*, keep_audio=False, model=MODEL, word_timestamps=False, verbose=False,
-                     embed=None):
+                     embed=None, language=None):
     """Build the real transcribe_fn(source) -> {text, vtt, segments, language}.
 
     `source` must provide an audio location: either a pre-downloaded `audio_path`,
@@ -151,10 +225,23 @@ def make_transcriber(*, keep_audio=False, model=MODEL, word_timestamps=False, ve
             if not url:
                 raise ValueError("transcribe: source needs audio_path or a url")
             audio = downloaded = download_audio(url, verbose=verbose)
-        result = asr(audio, model=model, word_timestamps=word_timestamps, verbose=verbose)
+        # Default to French (the corpus is FR-dominant and forcing fr is proven on the 489
+        # SC sermons); auto-detect is unreliable here (#48). If that yields garbage — genuinely
+        # English audio decoded as French collapses to '...' — retry once forcing English.
+        primary = language or "fr"
+        result = asr(audio, model=model, word_timestamps=word_timestamps, verbose=verbose,
+                     language=primary)
+        if language is None and _looks_garbage(result["text"]):
+            alt = "en" if primary == "fr" else "fr"
+            print(f"  transcript looks empty under '{primary}'; retrying as '{alt}'",
+                  file=sys.stderr, flush=True)
+            result = asr(audio, model=model, word_timestamps=word_timestamps, verbose=verbose,
+                         language=alt)
         result["text_raw"] = result["text"]          # uncleaned ASR — preserves the accent signature (#45)
         result["text"] = clean_transcript(result["text"])
         result["vtt"] = clean_transcript(result["vtt"])
+        # Label from the transcript CONTENT, not Whisper's 30s guess (#48); fall back to ASR's.
+        result["language"] = detect_language(result["text"]) or result.get("language") or primary
         if embed:                                    # voiceprint from the same audio (#46)
             try:
                 result["embedding"] = embed(audio)
