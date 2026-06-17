@@ -15,14 +15,15 @@ YouTube, SoundCloud, the website, and any future mobile/TV apps are all just *re
 
 ## Status
 
-🟢 **Planning complete · M1 catalog built · series clustering done.** Catalog is data-driven and reproducible.
+🟢 **Planning complete · catalog built · enrichment validated at batch scale.** Catalog is data-driven and reproducible; a 30-sermon checkpoint (2026-06-17) confirmed cost and quality before the full pass.
 
 | | |
 |---|---|
-| Sermons cataloged | **239** (from SoundCloud titles) |
+| Catalog size | **517** distinct sermons (239 SoundCloud + 278 YouTube-only) |
+| Enriched so far | **39 (~7.5%)** · voiceprints captured for **46** |
+| Measured enrichment cost | **$0.0705/sermon** (Sonnet 4.6) ⇒ **~$36 for all 517** |
 | Scripture coverage (OSIS) | **82%**, across 24 books of the Bible |
-| Series auto-clustered | **22** (e.g. Épître aux Galates ×69, aux Hébreux ×28) |
-| YouTube inventory | 300 cut sermons + 102 full services |
+| Series auto-clustered | **26** (e.g. Épître aux Galates ×71, aux Hébreux ×28) |
 | YouTube ↔ SoundCloud | largely **complementary** — corroborated matcher (decision #43) confirms 18 overlaps + 4 translations; true catalog = **union (517)** |
 
 ## Architecture
@@ -80,7 +81,10 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **M5** — per-sermon enrichment pipeline (`build_entry`) + timestamps + live cost tracking
 - [x] **M5h** — matcher hardening: duration only corroborates (18 overlaps + 4 translations; **union 517**; decision #43)
 - [x] **Enrichment writeback layer** (decision #44) — id-keyed store survives rebuilds
-- [ ] Full ASR enrichment pass across the 517 (transcripts, topics, summaries) — ~$31 on Sonnet
+- [x] **Production runner + default-speaker rule** (decision #45) — resumable, logfile, live cost
+- [x] **Voiceprint capture** (decision #46) — Resemblyzer embedding captured in-pass, id-keyed store
+- [x] **M5n — 30-sermon checkpoint** (decision #47): 39 enriched (~7.5%), 46 voiceprints, **$0.0705/sermon ⇒ ~$36/517**
+- [ ] Full ASR enrichment pass across the 517 (transcripts, topics, summaries) — **~$36 on Sonnet**
 - [ ] JSON Schema + WordPress import → website sermon library (first public deliverable)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 

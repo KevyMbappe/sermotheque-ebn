@@ -24,6 +24,792 @@
     ],
     "transcript_ref": "data/catalog/transcripts/sc-1650117738.txt"
   },
+  "sc-1650134268": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1650134268.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Transition des Dix Commandements vers Galates"
+      },
+      {
+        "t": 605,
+        "title": "Pourquoi la prédication expositionnelle"
+      },
+      {
+        "t": 765,
+        "title": "Style littéraire de l'épître et cœur pastoral de Paul"
+      },
+      {
+        "t": 1332,
+        "title": "Destinataires et date de la lettre"
+      },
+      {
+        "t": 1972,
+        "title": "Galates dans l'histoire : Chrysostome, Calvin, Luther"
+      },
+      {
+        "t": 3222,
+        "title": "La justification par la foi : position et imputation"
+      },
+      {
+        "t": 3561,
+        "title": "Structure de la lettre : autorité, justification, sanctification"
+      }
+    ],
+    "description": "Avant d'ouvrir Galates, comprendre pourquoi cette lettre a libéré Luther — et peut encore nous libérer aujourd'hui.",
+    "invitation": "Cette prédication introduit une nouvelle série sur l'épître aux Galates en posant les fondements historiques, littéraires et théologiques nécessaires pour bien la lire. Le prédicateur explique pourquoi Paul a écrit avec une telle passion, qui étaient les destinataires, et quel danger précis menaçait ces jeunes églises. C'est une entrée en matière solide pour quiconque veut comprendre la justification par la foi sans la caricaturer ni la réduire.",
+    "key_points": [
+      "La lettre aux Galates est probablement la première épître paulinienne, écrite juste après le premier voyage missionnaire et avant le concile de Jérusalem (vers 49 ap. J.-C.).",
+      "Les destinataires sont probablement les églises du sud de la Galatie, des populations majoritairement païennes aux tendances superstitieuses, tentées d'ajouter des rituels à la foi en Christ.",
+      "Le danger n'est pas un rejet de Jésus, mais l'idée que Jésus seul ne suffit pas : 'Jésus plus quelque chose', une subtilité qui a aussi caractérisé la crise de la Réforme.",
+      "Paul défend son autorité apostolique non par orgueil, mais pour protéger le fondement de l'évangile que ses opposants cherchaient à miner en discréditant sa personne.",
+      "La justification par la foi signifie une déclaration légale : l'obéissance parfaite du Christ est imputée au croyant, et la condamnation du croyant est imputée au Christ — rien ne peut y être ajouté.",
+      "La sanctification découle naturellement de la justification : celui qui est véritablement né de nouveau progresse par la contemplation de l'œuvre du Christ, non par la performance rituelle."
+    ],
+    "key_quotes": [
+      {
+        "t": 2325,
+        "text": "c'est Galate qui m'a affranchi c'est mon épouse vous avez le nom de son épouse il dit j'ai une relation maritale c'est Galate qui m'a fait comprendre ma liberté en Christ"
+      },
+      {
+        "t": 2576,
+        "text": "si vous voulez revenir à la moindre goûte de la loi rappelez-vous que vous êtes sous tous les systèmes de la loi"
+      },
+      {
+        "t": 2190,
+        "text": "Goliath n'est pas nos challenges dans la vie il représente la paralysation d'Israël et David ne nous représente pas si tant il représente Jésus lui-même"
+      }
+    ],
+    "primary_scripture": "Galates 1:1-9",
+    "questions": [
+      "En quoi la distinction entre 'Jésus seul' et 'Jésus plus quelque chose' est-elle encore pertinente dans votre compréhension personnelle du salut ?",
+      "Comment reconnaître concrètement dans votre vie des attitudes superstitieuses ou légalistes qui ajoutent quelque chose à l'obéissance parfaite de Christ ?",
+      "Pourquoi est-il important que Paul défende son autorité apostolique avant d'exposer sa doctrine ? Qu'est-ce que cela nous dit sur le lien entre autorité et message ?",
+      "De quelle manière la justification par la foi devrait-elle transformer notre rapport à la sanctification, en évitant à la fois le légalisme et la licence ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1650134268.raw.txt",
+    "references": [
+      "Gamaliel",
+      "Chrysostome",
+      "Origène",
+      "Jean Calvin",
+      "Martin Luther",
+      "Lloyd Jones",
+      "Catherine von Bora"
+    ],
+    "scripture_refs": [
+      "Galates 3:10",
+      "Galates 4:19",
+      "Romains",
+      "Apocalypse",
+      "1 Corinthiens 2:2"
+    ],
+    "series_hint": "Introduction à la série expositionnelle sur l'épître aux Galates",
+    "summary": "Le prédicateur présente Galates comme l'une des premières lettres de Paul, rédigée après son premier voyage missionnaire pour défendre l'évangile de la justification par la foi contre des judéo-chrétiens qui exigeaient l'observance de la loi. Il retrace le contexte historique des Galates (Celtes installés en Asie Mineure), leur tendance à la superstition, et l'urgence pastorale qui pousse Paul à écrire avec autant d'émotion. Il souligne enfin l'importance de cette lettre dans l'histoire de l'interprétation biblique, de Chrysostome à Luther, et annonce les trois grands thèmes : autorité apostolique, justification par la foi, et sanctification par l'Esprit.",
+    "topics": [
+      "Herméneutique",
+      "Prédication expositionnelle",
+      "Ecclésiologie",
+      "Épître aux Galates",
+      "Justification par la foi",
+      "Imputation",
+      "Autorité apostolique",
+      "Sanctification"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1650134268.txt"
+  },
+  "sc-1651552182": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1651552182.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Récapitulatif des leçons précédentes"
+      },
+      {
+        "t": 168,
+        "title": "L'être avant le faire : qualifications spirituelles"
+      },
+      {
+        "t": 898,
+        "title": "Les quatre qualifications personnelles : dignité, duplicité, sobriété, gain"
+      },
+      {
+        "t": 2259,
+        "title": "Première qualification relationnelle : conserver les mystères de la foi"
+      },
+      {
+        "t": 2892,
+        "title": "Deuxième qualification : être mis à l'épreuve et irréprochable dans le service"
+      },
+      {
+        "t": 3217,
+        "title": "Troisième qualification : irréprochable moralement"
+      },
+      {
+        "t": 3490,
+        "title": "Quatrième qualification : une vie de famille fidèle et exemplaire"
+      }
+    ],
+    "description": "Avant de servir l'Église, un diacre doit d'abord savoir gouverner sa propre maison — et y aimer comme Christ aime.",
+    "invitation": "Cette leçon explore les qualifications que la Bible exige des diacres, non pas ce qu'ils font, mais ce qu'ils sont. Elle montre pourquoi l'intégrité morale, la saine doctrine et la vie de famille ne sont pas des détails secondaires mais les fondements mêmes du service. Si vous vous interrogez sur ce que Dieu attend d'un serviteur fidèle dans son Église, cette étude vous donnera des repères solides et pratiques.",
+    "key_points": [
+      "Rappel des leçons précédentes : le diaconat libère les anciens pour la prière et l'enseignement, et ses qualifications sont universelles, solennelles et non négociables.",
+      "Les qualifications sont spirituelles : elles sont l'œuvre du Saint-Esprit, non le produit d'une capacité humaine, ce qui exclut tout orgueil chez celui qui les possède.",
+      "Les quatre qualifications personnelles déjà vues (dignité, exemption de duplicité, sobriété, éloignement du gain sordide) forment le caractère intérieur du diacre.",
+      "Première qualification relationnelle : conserver les mystères de la foi dans une conscience pure — le diacre doit connaître et vivre l'évangile, même s'il n'a pas la profondeur doctrinale d'un ancien.",
+      "Deuxième et troisième qualifications relationnelles : être mis à l'épreuve avant d'être confirmé, et demeurer moralement irréprochable — une disqualification morale suspend l'exercice de l'office.",
+      "Quatrième qualification relationnelle : diriger sa maison de manière exemplaire — son rapport à son épouse, à ses enfants et à la gestion du foyer révèle sa capacité à servir la maison de Dieu."
+    ],
+    "key_quotes": [
+      {
+        "t": null,
+        "text": "la seule chose plus forte qu'est de craindre les hommes c'est de craindre Dieu"
+      },
+      {
+        "t": 1485,
+        "text": "l'excellence avec laquelle on sert les seigneurs elle est proportionnelle à la conception qu'on a de la dignité des dieux à qui nous servons et au sens des privilèges qu'on a de les servir"
+      },
+      {
+        "t": 3792,
+        "text": "c'était pour voir comment tu traites ton épouse et tes enfants"
+      }
+    ],
+    "primary_scripture": "1 Timothée 3:8-13",
+    "questions": [
+      "En quoi la vie familiale d'un diacre est-elle un révélateur plus fiable de sa spiritualité que ses capacités ou ses accomplissements visibles à l'église ?",
+      "Comment votre église évalue-t-elle concrètement les candidats au diaconat avant de les confirmer dans leurs fonctions ? Quelles responsabilités progressives leur confie-t-elle ?",
+      "Quelle est la différence entre être disqualifié pour un office et perdre son salut ? Pourquoi cette distinction est-elle importante pour la santé de l'Église ?",
+      "En quoi le fait de « conserver les mystères de la foi dans une conscience pure » est-il une exigence aussi bien doctrinale que morale pour un diacre ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1651552182.raw.txt",
+    "references": [
+      "Lloyd-Jones",
+      "MacArthur",
+      "HeartCry",
+      "Paul Hachère",
+      "Andy Hamilton"
+    ],
+    "scripture_refs": [
+      "Actes 6",
+      "1 Timothée 3:14-16",
+      "Matthieu 7",
+      "Éphésiens 5"
+    ],
+    "series_hint": "Cours sur le diaconat — Leçon n°5",
+    "summary": "Le prédicateur passe en revue les qualifications bibliques des diacres telles qu'exposées en 1 Timothée 3, en insistant sur la priorité de l'être sur le faire. Il développe quatre qualifications relationnelles : conserver les mystères de la foi avec une conscience pure, être éprouvé et irréprochable dans le service, être moralement sans tache, et diriger sa maison avec équilibre et amour. Il conclut que la vie familiale authentique est le premier terrain d'entraînement et le meilleur révélateur de la spiritualité d'un diacre.",
+    "topics": [
+      "Ecclésiologie",
+      "Diaconat",
+      "Qualifications des officiers d'Église",
+      "Leadership serviteur",
+      "Intégrité morale",
+      "Vie de famille et ministère",
+      "Doctrine et conscience pure",
+      "1 Timothée 3"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1651552182.txt"
+  },
+  "sc-1651552212": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1651552212.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Introduction et rappel des leçons précédentes"
+      },
+      {
+        "t": 597,
+        "title": "Les dangers des critères pragmatiques"
+      },
+      {
+        "t": 804,
+        "title": "L'emphase biblique : l'être avant le faire"
+      },
+      {
+        "t": 1013,
+        "title": "Fondement solennel : la maison de Dieu vivant (1 Tm 3.14-16)"
+      },
+      {
+        "t": 1535,
+        "title": "Les qualifications sont spirituelles"
+      },
+      {
+        "t": 1905,
+        "title": "Première et deuxième qualifications : dignité et absence de duplicité"
+      },
+      {
+        "t": 2565,
+        "title": "Troisième et quatrième qualifications : sobriété et éloignement des gains honteux"
+      }
+    ],
+    "description": "Avant de nommer un diacre, l'Église doit regarder l'être, pas seulement le faire — la Bible l'exige.",
+    "invitation": "Cette leçon pose une question que beaucoup d'Églises évitent : sur quoi se fonde le choix d'un diacre ? L'enseignant travaille le texte de 1 Timothée 3 avec soin et franchise, en confrontant les critères pragmatiques qui tentent souvent les communautés aux exigences spirituelles claires de l'Écriture. Une étude utile pour toute Église qui réfléchit sérieusement à son ordre et à ses ministères.",
+    "key_points": [
+      "Rappel du cadre biblique : deux offices formels dans l'Église, les anciens et les diacres, chacun avec un rôle distinct",
+      "Mise en garde contre les motivations pragmatiques (compétences, ancienneté, désir de fidéliser) qui conduisent à nommer des diacres non qualifiés",
+      "Principe fondamental : l'être précède le faire — les qualifications sont spirituelles, universelles et non négociables (1 Tm 3.14-16)",
+      "Première qualification : la dignité — honneur, sérieux, exemplarité dans la repentance et le service",
+      "Deuxième qualification : l'éloignement de la duplicité — langue et cœur cohérents, discrétion dans les situations pastorales délicates",
+      "Troisième et quatrième qualifications : sobriété (maîtrise de soi et des appétits) et détachement des gains honteux (gestion saine de l'argent)"
+    ],
+    "key_quotes": [
+      {
+        "t": 806,
+        "text": "L'être vient toujours avant les fers car si Dieu est derrière ces dons qu'il donne à l'Église, si un diacre, elle est produit de l'agence surnaturelle des dieux entre nous, ce n'est pas à nous de chercher à fabriquer un diacre, produire un diacre, c'est à nous de reconnaître ces dons qu'il donne à l'Église."
+      },
+      {
+        "t": 1954,
+        "text": "Il est plus connu par le fait qu'il ne reste pas dans un même péché et par la manière comme il réagit en péché qu'il est par le fait de ne pas péché."
+      },
+      {
+        "t": 891,
+        "text": "les fers peuvent varier selon les temps, selon les caractéristiques de notre génération, selon les contextes. Et nous pouvons imaginer des exercices qu'un diacre peut faire aujourd'hui qui n'avait pas de place pour être faits à l'époque des Paul lorsqu'il a écrit à Timothée."
+      }
+    ],
+    "primary_scripture": "1 Timothée 3:8-16",
+    "questions": [
+      "En quoi le principe 'l'être avant le faire' change-t-il concrètement la manière dont votre Église identifie ses serviteurs ?",
+      "Quels critères pragmatiques vous semblent les plus tentants dans votre contexte, et comment les Écritures les corrigent-ils ?",
+      "Comment la qualification de 'dignité' se manifeste-t-elle différemment d'une perfection morale apparente ? Quels comportements concrets l'illustrent ?",
+      "Pourquoi le détachement de l'argent est-il particulièrement crucial pour ceux qui exercent un rôle de diacre, et comment une Église peut-elle protéger ses serviteurs à cet égard ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1651552212.raw.txt",
+    "references": [
+      "Augustin",
+      "John Wesley"
+    ],
+    "scripture_refs": [
+      "Actes 6:2-3",
+      "1 Timothée 3:14-16",
+      "Éphésiens 4"
+    ],
+    "series_hint": "Série d'enseignements sur le diaconat — Leçon n°4",
+    "summary": "Cette quatrième leçon sur le diaconat porte sur les qualifications bibliques du diacre telles qu'elles apparaissent en Actes 6 et en 1 Timothée 3. L'enseignant montre que l'Écriture met délibérément l'accent sur l'être plutôt que sur le faire, en avertissant contre les motivations pragmatiques qui poussent à nommer des diacres selon leurs capacités pratiques plutôt que selon leur maturité spirituelle. Quatre qualifications morales et personnelles sont ensuite développées : la dignité, l'éloignement de la duplicité, la sobriété, et le détachement des gains honteux.",
+    "topics": [
+      "Ecclésiologie",
+      "Offices de l'Église",
+      "Diaconat",
+      "Qualifications des diacres",
+      "Sanctification et caractère chrétien",
+      "Leadership dans l'Église",
+      "Éthique du service",
+      "Remplissage du Saint-Esprit"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1651552212.txt"
+  },
+  "sc-1651552227": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1651552227.vtt",
+    "chapters": [
+      {
+        "t": 36,
+        "title": "Introduction : la genèse des diacres"
+      },
+      {
+        "t": 179,
+        "title": "Lecture et contexte d'Actes 6.1-7"
+      },
+      {
+        "t": 846,
+        "title": "La priorité du ministère de la Parole"
+      },
+      {
+        "t": 1172,
+        "title": "L'implication de l'assemblée dans le choix"
+      },
+      {
+        "t": 1495,
+        "title": "Les qualités requises pour les sept"
+      },
+      {
+        "t": 1806,
+        "title": "La répartition du travail et la préservation de l'unité"
+      },
+      {
+        "t": 2539,
+        "title": "Conclusion : portée spirituelle du diaconat"
+      }
+    ],
+    "description": "Actes 6 révèle pourquoi l'Église a besoin de diacres : non pour les tâches secondaires, mais pour que la Parole progresse sans entrave.",
+    "invitation": "Cette leçon explore la naissance du diaconat à partir d'Actes 6, en montrant comment une crise de distribution de repas a failli fracasser l'Église primitive. L'enseignant remonte aux raisons profondes de ce rôle : protéger l'unité de l'Église, soulager les anciens et permettre à la Parole d'avancer. Une étude concrète et ancrée dans le texte, utile à quiconque réfléchit à son engagement dans une assemblée locale.",
+    "key_points": [
+      "La croissance de l'Église primitive a engendré des tensions culturelles profondes entre Juifs hellénistes et Juifs palestiniens, menaçant l'unité de l'Église.",
+      "Les apôtres répondent à la crise non par l'autorité unilatérale, mais avec douceur et sagesse, en convoquant toute l'assemblée (modèle congrégationaliste).",
+      "La priorité absolue du ministère de la Parole et de la prière justifie la création d'un rôle distinct pour gérer les besoins pratiques.",
+      "Les qualités requises pour les sept — réputation, plénitude du Saint-Esprit, sagesse — posent les bases des critères bibliques du diaconat (1 Timothée 3.8-12).",
+      "Le choix de sept Juifs hellénistes pour régler un conflit impliquant ces mêmes Juifs illustre que le rôle premier du diacre est de préserver l'unité, non de représenter des intérêts.",
+      "Le fruit visible (Actes 6.7 : la Parole se répand, les disciples s'accroissent) prouve le lien entre le service des diacres et la progression de l'Évangile."
+    ],
+    "key_quotes": [
+      {
+        "t": 2255,
+        "text": "Le premier travail des diacres, ce sera d'abord de s'assurer que l'unité de l'Église est préservée."
+      },
+      {
+        "t": 2278,
+        "text": "Les anciens ont besoin de diacres qui servent de façon pratique et les diacres ont besoin d'anciens qui dirigent spirituellement."
+      },
+      {
+        "t": 1735,
+        "text": "C'était des personnes qui étaient proactives à grandir dans la sainteté. Et à cause de cette proactivité, il y avait des fruits qui étaient évidents pour tous."
+      }
+    ],
+    "primary_scripture": "Actes 6:1-7",
+    "questions": [
+      "En quoi la crise décrite en Actes 6 ressemble-t-elle à des tensions que vous avez observées dans une Église locale ? Comment aurait-on pu mal la gérer ?",
+      "Pourquoi les apôtres insistent-ils autant sur les qualités spirituelles (plénitude du Saint-Esprit, sagesse) pour un rôle apparemment pratique ? Qu'est-ce que cela révèle sur la nature du diaconat ?",
+      "Comment votre assemblée implique-t-elle concrètement ses membres dans le discernement et la validation des serviteurs ? Que pourrait-on améliorer ?",
+      "Quel lien personnel voyez-vous entre votre propre croissance spirituelle et votre capacité à contribuer à l'unité et au service de votre Église ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1651552227.raw.txt",
+    "references": [
+      "John Stott",
+      "Marc Dever",
+      "Paul Washer",
+      "Nine Marks",
+      "Gospel Coalition"
+    ],
+    "scripture_refs": [
+      "1 Pierre 5:2-3",
+      "1 Timothée 3:8-12"
+    ],
+    "series_hint": "Formation des diacres et des anciens — Leçon n°3",
+    "summary": "À partir d'Actes 6.1-7, l'enseignant retrace l'origine des diacres dans l'Église primitive : face à une plainte des Juifs hellénistes concernant la distribution des repas aux veuves, les apôtres convoquent l'assemblée et choisissent sept hommes remplis du Saint-Esprit, de foi et de sagesse. Ce texte fondateur pose quatre bases pour comprendre le diaconat : la priorité du ministère de la Parole, l'implication de l'assemblée, les qualités requises, et la répartition des tâches pour préserver l'unité de l'Église. L'exemple d'Étienne et de Philippe montre que ce service pratique peut porter une portée spirituelle considérable.",
+    "topics": [
+      "Ecclésiologie",
+      "Gouvernance de l'Église",
+      "Diaconat",
+      "Unité de l'Église",
+      "Ministère de la Parole",
+      "Congrégationnalisme",
+      "Actes des Apôtres"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1651552227.txt"
+  },
+  "sc-1651552254": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1651552254.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Ouverture et lecture biblique"
+      }
+    ],
+    "description": "Que dit la Bible sur les diacres et leur rôle vital dans l'Église ? 1 Timothée 3 répond avec précision.",
+    "invitation": "Cette leçon examine les qualifications et la mission des diacres telles qu'elles sont décrites en 1 Timothée 3.8-13. C'est une étude utile pour toute église qui réfléchit à son organisation et à ses ministères de service. La transcription disponible est malheureusement trop lacunaire pour en restituer le contenu détaillé, mais le texte de référence lui-même mérite d'être lu et médité attentivement.",
+    "key_points": [
+      "Lecture de 1 Timothée 3.8-13 comme texte de base",
+      "Introduction aux qualifications morales et spirituelles des diacres",
+      "Deuxième leçon d'une série sur la vie et la structure de l'Église locale"
+    ],
+    "key_quotes": [
+      {
+        "t": 0,
+        "text": "J'aimerais qu'on ouvre la Bible dans la première lettre d'Épaule à Timothée."
+      }
+    ],
+    "primary_scripture": "1 Timothée 3:8-13",
+    "questions": [
+      "Quelles qualifications Paul exige-t-il des diacres en 1 Timothée 3.8-13, et pourquoi ces critères sont-ils importants pour la santé d'une église ?",
+      "En quoi le ministère des diacres se distingue-t-il de celui des anciens, selon ce passage et le contexte plus large du Nouveau Testament ?",
+      "Comment votre église locale évalue-t-elle et reconnaît-elle ceux qui sont appelés au service diaconal ?",
+      "Quelle est la promesse attachée à un bon exercice du diaconat au verset 13, et qu'implique-t-elle pour la motivation du serviteur ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1651552254.raw.txt",
+    "series_hint": "Leçon n°2 — série sur l'organisation et les ministères de l'Église locale",
+    "summary": "La prédication s'appuie sur 1 Timothée 3.8-13, passage consacré aux qualifications requises des diacres dans l'Église locale. Le texte biblique lu en ouverture constitue le fondement de cette deuxième leçon d'une série sur l'organisation ecclésiale. La transcription automatique n'a pas restitué le développement homilétique au-delà de l'introduction et de la lecture du texte.",
+    "topics": [
+      "Ecclésiologie",
+      "Ministères de l'Église",
+      "Diaconat",
+      "Qualifications des serviteurs",
+      "Organisation ecclésiale"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1651552254.txt"
+  },
+  "sc-1651552257": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1651552257.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Introduction et lecture d'Actes 6.1-7"
+      },
+      {
+        "t": 301,
+        "title": "Contexte de la série et objectif de la leçon"
+      },
+      {
+        "t": 657,
+        "title": "L'Église : organisme et institution"
+      },
+      {
+        "t": 1321,
+        "title": "Les causes de l'institution des diacres : croissance et conflit"
+      },
+      {
+        "t": 1699,
+        "title": "La bataille spirituelle : le danger de la distraction"
+      },
+      {
+        "t": 1952,
+        "title": "Le rôle spirituel des diacres et conclusion"
+      },
+      {
+        "t": 2771,
+        "title": "La tâche primaire de l'Église : prière et Parole"
+      }
+    ],
+    "description": "Quand l'Église s'organise selon la Parole, elle libère la prédication — et c'est là que tout commence.",
+    "invitation": "Cette première leçon d'une série sur le diaconat repart des origines : pourquoi l'Église primitive a-t-elle institué des diacres, et qu'est-ce que cela révèle sur ce qui est vraiment central dans la vie d'une église ? Le prédicateur prend le temps de poser les fondements bibliques avant d'entrer dans les qualifications ou les rôles précis. Une étude utile pour toute congrégation qui réfléchit sérieusement à sa structure et à ses priorités.",
+    "key_points": [
+      "La croissance de l'Église et un conflit interne (Actes 6) ont rendu nécessaire une organisation plus formelle, donnant naissance à l'office des diacres.",
+      "L'Église est à la fois un organisme vivant et une institution divine ordonnée — les deux extrêmes (hyper-institutionnalisme et rejet de toute structure) sont à éviter.",
+      "La tâche primaire irremplaçable de l'Église est la prière et la proclamation de la Parole ; les diacres existent pour préserver cette priorité.",
+      "Satan cherche à distraire l'Église de ses armes les plus puissantes (prière et enseignement), que ce soit par la persécution, le péché, les hérésies ou les divisions.",
+      "Le rôle des diacres est profondément spirituel : en servant les tables, ils permettent aux anciens de se consacrer entièrement à la Parole et à la prière.",
+      "L'identification des diacres est une responsabilité de toute la communauté, qui doit agir de manière informée et guidée par l'Écriture."
+    ],
+    "key_quotes": [
+      {
+        "t": 2011,
+        "text": "la chose la plus spirituelle que l'église aurait pu faire à ces moments là c'était que ceux qui se chargent de ces problèmes pratiques dans la vie de l'église ne soient pas les anciens ne soient pas ceux qui étaient chargés principalement de la prière et de la parole de Dieu"
+      },
+      {
+        "t": 2664,
+        "text": "les mêmes tâches qui ont engendré cette croissance à l'église ce sont les mêmes tâches qui vont caractériser la vie du pasteur il a prié il a prêché la bible"
+      },
+      {
+        "t": 929,
+        "text": "la mauvaise expérience ne justifie jamais l'abandon de ce qui est biblique"
+      }
+    ],
+    "primary_scripture": "Actes 6:1-7",
+    "questions": [
+      "En quoi la distinction entre l'Église comme organisme et l'Église comme institution vous aide-t-elle à mieux comprendre la structure que vous vivez dans votre propre assemblée ?",
+      "Quelles formes concrètes de distraction — bonnes ou mauvaises en elles-mêmes — risquent de détourner vos anciens de la prière et de la Parole dans votre contexte ?",
+      "Comment votre participation personnelle à l'identification des diacres exprime-t-elle votre responsabilité de membre de l'Église ?",
+      "Si la prédication de la Parole et la prière sont les moyens premiers de croissance de l'Église, comment cela devrait-il remodeler vos attentes envers vos pasteurs ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1651552257.raw.txt",
+    "references": [
+      "Martyn Lloyd-Jones",
+      "John MacArthur"
+    ],
+    "scripture_refs": [
+      "1 Timothée 3",
+      "Éphésiens 4",
+      "Actes 2:37-45",
+      "Actes 4",
+      "Actes 8",
+      "1 Corinthiens 9:14",
+      "Psaume 19",
+      "Psaume 104",
+      "Éphésiens 2"
+    ],
+    "series_hint": "Série sur le ministère des diacres — Leçon n°1 (leçon introductoire)",
+    "summary": "À partir d'Actes 6.1-7, ce message introductif explore pourquoi l'Église primitive a institué les diacres : non pour diminuer le service pratique, mais pour libérer les apôtres à la prière et à la proclamation de la Parole, qui demeurent la tâche primaire de l'Église. Le prédicateur montre que l'Église est à la fois un organisme vivant et une institution ordonnée, et que la structure biblique légère — anciens et diacres — sert à préserver ce qui est irremplaçable : prêcher l'Évangile et prier. Il conclut que les diacres exercent une fonction profondément spirituelle en catalysant ainsi le ministère de la Parole.",
+    "topics": [
+      "Ecclésiologie",
+      "Gouvernance de l'Église",
+      "Office des diacres",
+      "Office des anciens/pasteurs",
+      "Priorité de la prédication",
+      "Prière",
+      "Organisation et structure de l'Église",
+      "Résistance spirituelle et distraction"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1651552257.txt"
+  },
+  "sc-1652069766": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1652069766.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Introduction : trois portraits de diacres"
+      },
+      {
+        "t": 260,
+        "title": "Première mission : répondre à des besoins tangibles"
+      },
+      {
+        "t": 652,
+        "title": "Deuxième mission : protéger et promouvoir l'unité"
+      },
+      {
+        "t": 1545,
+        "title": "Troisième mission : soutenir le ministère des anciens"
+      },
+      {
+        "t": 2849,
+        "title": "Ministère de compassion et évangile social : trouver l'équilibre"
+      },
+      {
+        "t": 3513,
+        "title": "La structure biblique : anciens, diacres, assemblée"
+      },
+      {
+        "t": 3519,
+        "title": "Conclusion : rester soumis à la Parole"
+      }
+    ],
+    "description": "Ni simples serveurs ni pseudo-pasteurs : que font vraiment les diacres selon la Bible ?",
+    "invitation": "Cette leçon aborde une question souvent mal résolue dans les églises : quel est le vrai travail des diacres ? À partir d'exemples concrets et de textes bibliques précis, l'enseignant trace une ligne claire entre le rôle des anciens et celui des diacres, et montre pourquoi cette distinction protège la santé de l'église. C'est une étude utile autant pour ceux qui exercent ce ministère que pour ceux qui réfléchissent à la gouvernance de leur assemblée.",
+    "key_points": [
+      "Les diacres sont choisis parmi ceux qui servent déjà de façon discrète et fidèle, pas parmi les oisifs ou les ambitieux.",
+      "Leur première mission est de répondre à des besoins tangibles et d'anticiper les problèmes pour alléger les anciens.",
+      "Leur deuxième mission est de protéger l'unité de l'église, en promouvant la paix et en évitant tout esprit partisan.",
+      "Leur troisième mission est de servir et soutenir le ministère des anciens, non de s'y substituer ni de le concurrencer.",
+      "La structure biblique est claire : les anciens conduisent, les diacres facilitent, l'assemblée accomplit le ministère.",
+      "L'équilibre entre enseignement de la Parole et ministère de compassion doit être maintenu ; aucun des deux ne doit écraser l'autre."
+    ],
+    "key_quotes": [
+      {
+        "t": 642,
+        "text": "Le rôle des diacres n'est pas d'administrer l'église. Le rôle des diacres est de toujours être là pour soutenir les anciens qui sont en train d'administrer."
+      },
+      {
+        "t": 1106,
+        "text": "Les diacres sont là en service pour toute la communauté et ils doivent s'assurer que dans le but de maintenir l'unité de l'Église, c'est d'encourager, par exemple, quand on parle de la communion fraternelle, c'est que toute l'Église soit en train de vivre la communion fraternelle."
+      },
+      {
+        "t": 2925,
+        "text": "l'église n'est pas là pour éradiquer la pauvreté, l'église est là pour éradiquer la source de tous les malheurs de l'homme, le péché"
+      }
+    ],
+    "primary_scripture": "Actes 6:1-7",
+    "questions": [
+      "En quoi la distinction entre le rôle des anciens et celui des diacres protège-t-elle concrètement la santé d'une église locale ?",
+      "Comment discerner si un frère ou une sœur est prêt à servir comme diacre, au-delà de ses compétences pratiques ?",
+      "Que faire lorsque, dans votre église, les frontières entre le rôle des diacres et celui des anciens sont floues ou confondues ?",
+      "Comment votre église maintient-elle l'équilibre entre l'enseignement de la Parole et le ministère de compassion envers les nécessiteux ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1652069766.raw.txt",
+    "references": [
+      "Marc Dever",
+      "Actes 6",
+      "Philippiens 1.1",
+      "1 Timothée 3",
+      "1 Corinthiens 13"
+    ],
+    "scripture_refs": [
+      "Matthieu 5:9",
+      "Proverbes 19:11",
+      "1 Corinthiens 1:10-11",
+      "1 Corinthiens 13:7",
+      "Philippiens 1:1",
+      "Philippiens 4:2",
+      "1 Timothée 3:1-13",
+      "Actes 20:28",
+      "1 Thessaloniciens 5",
+      "Actes 17"
+    ],
+    "series_hint": "Étude sur le diaconat — Leçon n°6 (caractère et œuvre des diacres)",
+    "summary": "La leçon définit l'œuvre diaconale autour de trois missions : répondre à des besoins tangibles, protéger et promouvoir l'unité de l'église, et soutenir le ministère des anciens. L'enseignant insiste sur le fait que les diacres ne sont pas des pseudo-anciens ni de simples exécutants, mais des serviteurs qui facilitent le travail pastoral et coordonnent l'assemblée. Il rappelle aussi l'équilibre biblique entre ministère de la Parole et ministère de compassion, les deux allant de pair sans que l'un écrase l'autre.",
+    "topics": [
+      "Ecclésiologie",
+      "Gouvernance de l'église",
+      "Diaconat",
+      "Rôle des anciens",
+      "Ministère de compassion",
+      "Unité de l'église",
+      "Leadership serviteur"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1652069766.txt"
+  },
+  "sc-1736800041": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1736800041.vtt",
+    "chapters": [
+      {
+        "t": 166,
+        "title": "Introduction et récapitulatif du cours précédent"
+      },
+      {
+        "t": 560,
+        "title": "Le vrai objectif de l'intendance : la parabole des talents revisitée"
+      },
+      {
+        "t": 1067,
+        "title": "L'intendance comme reflet de l'image de Dieu"
+      },
+      {
+        "t": 1727,
+        "title": "Fidélité vs résultats"
+      },
+      {
+        "t": 2019,
+        "title": "À quoi ressemble concrètement la fidélité"
+      },
+      {
+        "t": 2273,
+        "title": "Investir en vue de l'éternité"
+      },
+      {
+        "t": 2443,
+        "title": "Conclusion : tout miser sur les promesses de Dieu"
+      }
+    ],
+    "description": "Et si votre budget, votre agenda et vos talents étaient le CV de Dieu — la preuve vivante de son caractère ?",
+    "invitation": "Ce cours sur l'intendance dépasse la simple gestion des finances personnelles. Nathanaël Fis montre que la manière dont nous utilisons nos biens, notre temps et nos dons dit quelque chose de vrai ou de faux sur qui est Dieu. Une réflexion qui touche à la foi elle-même, pas seulement à nos habitudes de dépenses.",
+    "key_points": [
+      "Tout ce que nous possédons appartient à Dieu ; nous en sommes des intendants, non des propriétaires.",
+      "La parabole des talents est une parabole sur la foi : le troisième serviteur va en enfer non pour avoir perdu le talent, mais parce qu'il ne faisait pas confiance à son maître.",
+      "Le but de l'intendance est de refléter le caractère de Dieu — notre vie devient le 'CV de Dieu' par notre obéissance fidèle.",
+      "Créés à l'image de Dieu (Gn 1,27), nous reflétons cette image par nos relations et notre travail ; le péché a déformé ce miroir, mais la nouvelle naissance le restaure.",
+      "La fidélité, pas les résultats, est notre responsabilité : Dieu se charge des résultats, nous nous chargeons de l'obéissance.",
+      "Nous pouvons investir nos biens dès aujourd'hui en vue de l'éternité, convertissant ce qui va périr en trésor qui demeure."
+    ],
+    "key_quotes": [
+      {
+        "t": 801,
+        "text": "La double vie de ce troisième serviteur montre qu'il n'avait pas la foi et c'est ce manque de foi qui l'a amené à être infidèle dans son intendance."
+      },
+      {
+        "t": 1401,
+        "text": "Par notre fidélité, notre vie devient le CV de Dieu. Elle met en évidence sa bonté, sa valeur, sa préciosité."
+      },
+      {
+        "t": null,
+        "text": "La fidélité, elle dure parce que l'obéissance fidèle met en évidence la gloire et la bonté de Dieu qui, elles, dureront pour toujours."
+      }
+    ],
+    "primary_scripture": "Matthieu 25:14-30",
+    "questions": [
+      "En quoi la manière dont vous gérez vos finances ou votre temps dit-elle quelque chose de vrai ou de faux sur le caractère de Dieu dans votre entourage ?",
+      "Quelle est la différence concrète entre évaluer sa vie selon les résultats et l'évaluer selon la fidélité ? Donnez un exemple tiré de votre propre expérience.",
+      "Le troisième serviteur 'couvrait ses arrières' au cas où le maître ne reviendrait pas. Dans quels domaines de votre vie adoptez-vous une attitude similaire ?",
+      "Comment l'idée d''investir en vue de l'éternité' change-t-elle vos priorités actuelles en matière d'argent, de temps ou de dons ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1736800041.raw.txt",
+    "scripture_refs": [
+      "1 Chroniques 29:10-16",
+      "Psaume 50:12",
+      "Genèse 1:27-28",
+      "Genèse 3",
+      "Jacques 2:19",
+      "Romains 8:29",
+      "1 Corinthiens 4:7",
+      "1 Corinthiens 10:31",
+      "Proverbes 23:4-5",
+      "Éphésiens 5:19",
+      "Matthieu 6:19-21",
+      "Matthieu 6:33",
+      "Marc 12:41-44"
+    ],
+    "series_hint": "Série sur l'intendance — deuxième cours (le premier ayant été donné par le pasteur Stéphane sur la parabole des talents)",
+    "summary": "Nathanaël Fis soutient que l'objectif premier de l'intendance n'est pas d'aider Dieu — qui n'a besoin de rien — mais de refléter fidèlement son caractère bon et digne de confiance. S'appuyant sur la parabole des talents, il montre que l'infidélité du troisième serviteur est d'abord un problème de foi : il ne connaissait pas vraiment son maître. La fidélité, et non les résultats, constitue donc le cœur de l'intendance chrétienne, car elle proclame l'Évangile par notre façon de vivre.",
+    "topics": [
+      "Intendance",
+      "Théologie de la création",
+      "Image de Dieu (Imago Dei)",
+      "Foi salvatrice",
+      "Sanctification",
+      "Eschatologie pratique",
+      "Parabole des talents",
+      "Gloire de Dieu"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1736800041.txt"
+  },
+  "sc-1737731010": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1737731010.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Introduction : l'épître aux Hébreux, doctrine et appel à répondre"
+      },
+      {
+        "t": 255,
+        "title": "L'historique des destinataires : un zèle remarquable devenu froid"
+      },
+      {
+        "t": 1050,
+        "title": "Réconfort : la justice de Dieu comme fondement du statut de bien-aimé"
+      },
+      {
+        "t": 1807,
+        "title": "La persévérance animée par le zèle — verset 11"
+      },
+      {
+        "t": 2049,
+        "title": "La nature combative de la persévérance : s'opposer à l'immobilisme"
+      },
+      {
+        "t": 2349,
+        "title": "Comment persévérer : imiter les témoins de la foi"
+      },
+      {
+        "t": 2810,
+        "title": "Vers quoi persévérer : la nature certaine de l'espérance chrétienne"
+      }
+    ],
+    "description": "Quand la beauté de Christ se ternit devant nos yeux, comment raviver un zèle qui s'épuise et conserver jusqu'au bout une espérance certaine ?",
+    "invitation": "Cette prédication s'adresse à ceux qui ont cru avec ferveur et se retrouvent aujourd'hui essoufflés. Elle confronte honnêtement la tendance naturelle au relâchement spirituel, sans minimiser le danger ni écraser l'âme. L'auteur de l'épître aux Hébreux guide ses lecteurs non vers un effort de volonté à nu, mais vers une espérance ancrée dans le caractère même de Dieu. Une parole qui remet l'éternité à sa juste place et rappelle que la vraie foi, don de Dieu, produit nécessairement de la persévérance.",
+    "key_points": [
+      "Le contexte des destinataires : des Juifs convertis ayant enduré persécution et déracinement, dont le zèle initial s'est ensuite évaporé",
+      "Le réconfort fondé non sur l'examen de soi mais sur la justice de Dieu, qui n'oublie aucune œuvre accomplie pour son nom",
+      "La nature combative de la persévérance : elle s'oppose à l'immobilisme, car notre nature déchue érode naturellement les affections pour Christ",
+      "La vraie foi salvatrice se reconnaît à la persévérance — ce qui exclut les fois éphémères, traditionnelles ou rituelles",
+      "Le moyen de grâce proposé au verset 12 : imiter ceux qui, par la foi et la persévérance, ont hérité des promesses, notamment les martyrs huguenots",
+      "L'espérance chrétienne est sûre et certaine parce qu'elle repose sur les promesses définies de la Parole de Dieu, et non sur nos désirs"
+    ],
+    "key_quotes": [
+      {
+        "t": 1597,
+        "text": "La vraie foi salvatrice est celle qui produit des fruits en nous."
+      },
+      {
+        "t": 2072,
+        "text": "Si vous voulez que la perception de la beauté des promesses de Dieu soit toujours vibrante dans votre cœur, vous n'avez rien à faire."
+      },
+      {
+        "t": 2664,
+        "text": "Imitons la foi et la persévérance de ceux qui nous ont précédés."
+      }
+    ],
+    "primary_scripture": "Hébreux 6:11-12",
+    "questions": [
+      "En quoi la justice de Dieu est-elle présentée ici comme source de réconfort plutôt que de crainte, et comment cela change-t-il votre façon de vous approcher de lui ?",
+      "Quel zèle particulier avez-vous manifesté dans les premières heures de votre vie chrétienne, et comment pourriez-vous l'appliquer aujourd'hui à la conservation de votre espérance ?",
+      "L'imitation des témoins de la foi (martyrs, huguenots, héros bibliques) est proposée comme moyen de grâce concret : quelle histoire ou quel exemple vous a le plus marqué, et pourquoi ?",
+      "Quelle différence concrète cela fait-il de distinguer les promesses définies de la Parole de Dieu de nos propres désirs placés dans la catégorie 'promesses de Dieu' ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1737731010.raw.txt",
+    "references": [
+      "Nathaniel (prédication sur l'épître de Jacques)",
+      "Musée du Désert (huguenots, sud de la France)"
+    ],
+    "scripture_refs": [
+      "Hébreux 4:16",
+      "Hébreux 5",
+      "Hébreux 6:9-10",
+      "Hébreux 10",
+      "Hébreux 12",
+      "Apocalypse 22",
+      "Romains 8:28",
+      "Romains 8:30",
+      "Jean 16:33",
+      "Matthieu 11:28",
+      "Jean 3:36"
+    ],
+    "series_hint": "Série expositoire verset par verset sur l'épître aux Hébreux, commencée en 2020 au chapitre 2",
+    "summary": "À partir d'Hébreux 6.11-12, le prédicateur rappelle que le zèle des premiers convertis juifs s'est progressivement érodé, les exposant au danger de retourner aux rites de l'ancienne alliance. Il montre que la vraie foi salvatrice se manifeste inévitablement par la persévérance, et que cette persévérance doit être activement nourrie par les moyens de grâce — dont l'imitation des témoins qui nous ont précédés dans la foi. L'espérance chrétienne n'est pas une vague aspiration mais une certitude ancrée dans les promesses écrites de Dieu, scellées par le sang de Jésus-Christ.",
+    "topics": [
+      "Sotériologie",
+      "Persévérance des saints",
+      "Espérance chrétienne",
+      "Foi salvatrice",
+      "Justification par la foi seule",
+      "Moyens de grâce",
+      "Épître aux Hébreux",
+      "Sacerdoce de Christ"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1737731010.txt"
+  },
   "sc-1747280997": {
     "_model": "claude-sonnet-4-6",
     "captions_ref": "data/catalog/transcripts/sc-1747280997.vtt",
@@ -58,6 +844,287 @@
     ],
     "transcript_ref": "data/catalog/transcripts/sc-1747280997.txt"
   },
+  "sc-1815112302": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1815112302.vtt",
+    "chapters": [
+      {
+        "t": 309,
+        "title": "Introduction et contexte de Jacob"
+      },
+      {
+        "t": 766,
+        "title": "La rencontre à Peniel"
+      },
+      {
+        "t": 884,
+        "title": "Première bénédiction : la persévérance contagieuse"
+      },
+      {
+        "t": 1393,
+        "title": "Deuxième bénédiction : la prière contagieuse"
+      },
+      {
+        "t": 1993,
+        "title": "Troisième bénédiction : la repentance contagieuse"
+      },
+      {
+        "t": 2942,
+        "title": "Quatrième bénédiction : la puissance contagieuse"
+      },
+      {
+        "t": null,
+        "title": "Conclusion : le Dieu de Jacob"
+      }
+    ],
+    "description": "Quand Dieu lutte contre nous pour nous bénir : cinq formes d'une bénédiction qui se transmet.",
+    "invitation": "Ce message part d'un récit déroutant — un homme qui combat Dieu toute la nuit et en sort boiteux, mais béni. Joël Beeke y déploie cinq dimensions d'une bénédiction que Jacob a reçue à Peniel et qui, selon lui, peut marquer n'importe quelle vie. Une prédication exigeante, nourrie de la tradition réformée et puritaine, qui invite à prendre la prière et la repentance au sérieux.",
+    "key_points": [
+      "Jacob, homme trompeur et fugitif, est poursuivi par la grâce de Dieu depuis Béthel jusqu'à Peniel.",
+      "La lutte nocturne avec l'ange (Christophanie) révèle que les épreuves sont des rendez-vous avec Dieu lui-même.",
+      "La première bénédiction est la persévérance : ne pas lâcher Dieu, même épuisé, jusqu'à recevoir sa bénédiction.",
+      "La deuxième est la prière comme cœur de la vie, illustrée par Luther qui priait davantage les jours chargés.",
+      "La repentance contagieuse : Jacob admet enfin son nom (trompeur) — reconnaître ce qu'on est devant Dieu, c'est le chemin de la paix.",
+      "La puissance et le prix : brisé, Jacob devient Israël ; la boiterie permanente témoigne d'une 'miséricorde sévère' qui rapproche de Dieu et attire le regard du monde."
+    ],
+    "key_quotes": [
+      {
+        "t": null,
+        "text": "Jacob gagne alors qu'il se rend."
+      },
+      {
+        "t": null,
+        "text": "Vous n'êtes jamais plus forts que lorsque vous vous repentez devant Dieu."
+      },
+      {
+        "t": 2989,
+        "text": "Dieu parfois nous accorde des choses que nous pensons ne pas supporter. Et nous enlève des choses que nous pensons ne pas pouvoir abandonner."
+      }
+    ],
+    "primary_scripture": "Genèse 32:24-32",
+    "questions": [
+      "Dans quelles circonstances avez-vous personnellement fait l'expérience d'une 'lutte avec Dieu' ? Qu'en avez-vous retenu ?",
+      "Beeke dit que la prière était 'le cœur de la vie' pour Luther et les Puritains. Qu'est-ce que cela révèle sur la place que vous accordez à la prière dans votre quotidien ?",
+      "Jacob ne reconnaît son vrai nom qu'à Peniel. Y a-t-il des péchés ou des traits de caractère que vous avez du mal à reconnaître honnêtement devant Dieu ?",
+      "Comment les 'miséricordes sévères' — épreuves, faiblesses, blessures — peuvent-elles devenir une bénédiction contagieuse pour ceux qui vous entourent ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1815112302.raw.txt",
+    "references": [
+      "Jean Calvin",
+      "Martin Luther",
+      "Alexander White",
+      "John Bunyan",
+      "Philip Melanchthon"
+    ],
+    "scripture_refs": [
+      "Genèse 32:9-12",
+      "Osée 12:4",
+      "Psaume 32",
+      "Ésaïe 59",
+      "Proverbes",
+      "Psaume 144",
+      "2 Corinthiens 12:10",
+      "Jérémie 18:6"
+    ],
+    "summary": "À partir de la lutte de Jacob avec l'ange à Peniel (Genèse 32), Joël Beeke identifie cinq bénédictions contagieuses : la persévérance, la prière, la repentance, la puissance et le prix de la souffrance. Il montre que Jacob gagne précisément lorsqu'il s'abandonne, et que la faiblesse acceptée devant Dieu est la voie vers la vraie force. Ces bénédictions, reçues dans la solitude et l'épreuve, ont vocation à se transmettre autour de soi.",
+    "topics": [
+      "Sanctification",
+      "Prière",
+      "Repentance",
+      "Persévérance",
+      "Christophanie",
+      "Providence et souffrance",
+      "Réveil et réforme",
+      "Bénédiction divine"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1815112302.txt"
+  },
+  "sc-1824015846": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1824015846.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Rappel du contexte et enjeux de la lettre"
+      },
+      {
+        "t": 813,
+        "title": "L'appel direct de Dieu et la corroboration par l'Église"
+      },
+      {
+        "t": 1301,
+        "title": "L'exclusivité de la vocation apostolique"
+      },
+      {
+        "t": 1816,
+        "title": "La définition apostolique de l'Évangile : grâce et paix"
+      },
+      {
+        "t": 2521,
+        "title": "Le fondement de l'Évangile : l'œuvre substitutive du Christ"
+      },
+      {
+        "t": 2533,
+        "title": "L'objectif de l'Évangile : nous arracher du présent siècle mauvais"
+      },
+      {
+        "t": 3614,
+        "title": "La gloire exclusive rendue à Dieu"
+      }
+    ],
+    "description": "Quand l'autorité apostolique est attaquée, c'est l'Évangile lui-même qui est en jeu — pour les Galates et pour nous aujourd'hui.",
+    "invitation": "Cette prédication examine pourquoi la vocation apostolique est unique et non reproductible, et ce que cela signifie concrètement pour la confiance que nous pouvons accorder à l'Évangile. À travers Galates 1:1-5, le prédicateur montre que la défense de l'autorité de Paul n'est pas un combat d'ego, mais la protection des fondements mêmes de la foi chrétienne. Si vous vous demandez pourquoi l'Église ne peut pas s'appuyer sur de nouveaux apôtres, ou comment l'Évangile résumé en 'grâce et paix' suffit pour toute la vie chrétienne, cette étude vous donnera des éléments solides pour y répondre.",
+    "key_points": [
+      "Les faux maîtres en Galatie attaquent l'autorité apostolique de Paul comme stratégie pour corrompre la compréhension de l'Évangile et y ajouter les œuvres de la loi.",
+      "La vocation apostolique est exclusive par son origine : un appel direct de Jésus-Christ ressuscité, corroboré par l'Église locale, et non reproductible dans l'histoire.",
+      "Les apôtres ont reçu la tâche unique de définir, protéger et promouvoir l'Évangile de manière infaillible ; sans eux, il n'y aurait aucune assurance dans la Bible.",
+      "L'essence de l'Évangile se résume en deux termes : grâce (action souveraine de Dieu envers nous) et paix (réconciliation avec Dieu, soi-même et les autres), rendues possibles par l'œuvre de Christ.",
+      "Le fondement de l'Évangile est l'œuvre substitutive du Christ qui 's'est donné lui-même pour nos péchés' — toute addition à cette œuvre exprime un mépris envers la personne de Jésus-Christ.",
+      "L'objectif de l'Évangile est la rédemption et la restauration complète du peuple de Dieu, inaugurée à la croix et achevée au retour du Christ, ce qui doit marquer le chrétien d'optimisme plutôt que de victimisation."
+    ],
+    "key_quotes": [
+      {
+        "t": 542,
+        "text": "s'il n'y a pas eu cette vocation particulière, ces apôtres avec un A majuscule, nous n'avons aucune assurance dans la Bible"
+      },
+      {
+        "t": 2039,
+        "text": "la grâce est la fontaine de toutes les bonnes choses qu'on reçoit et la paix est la couronne de toutes les bénédictions"
+      },
+      {
+        "t": 2964,
+        "text": "personne n'oserait imaginer que Christ le fils de Dieu lui-même incarné pour mourir dans une croix serait la réponse à notre condition"
+      }
+    ],
+    "primary_scripture": "Galates 1:1-5",
+    "questions": [
+      "En quoi l'attaque contre l'autorité apostolique de Paul était-elle en réalité une attaque contre l'Évangile lui-même ? Pouvez-vous identifier des situations analogues dans l'Église aujourd'hui ?",
+      "Pourquoi est-il important que la vocation apostolique soit à la fois d'origine divine et corroborée par une Église locale ? Quelles conséquences pratiques cela a-t-il pour la reconnaissance des ministères aujourd'hui ?",
+      "Comment les termes 'grâce' et 'paix' résument-ils l'ensemble de la vie chrétienne, de la conversion à la glorification ? En quoi les Galates s'écartaient-ils de ce cadre ?",
+      "De quelle manière la compréhension que Christ 's'est donné lui-même' — et non seulement son sacrifice — change-t-elle notre façon de vivre la sanctification au quotidien ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1824015846.raw.txt",
+    "references": [
+      "Lightfoot"
+    ],
+    "scripture_refs": [
+      "Éphésiens 2:20",
+      "1 Corinthiens 3:10-15",
+      "1 Corinthiens 15:8",
+      "Jean 8:12",
+      "Matthieu 5:13-14",
+      "Romains 8:28"
+    ],
+    "series_hint": "Série d'enseignements sur l'épître aux Galates",
+    "summary": "Paul défend son autorité apostolique dès les premiers versets de Galates non pour protéger sa réputation, mais parce que des faux maîtres minent cette autorité afin de détourner l'Église du seul Évangile qui sauve. Le prédicateur montre que la vocation apostolique est exclusive par son appel direct de Dieu et par la tâche unique de définir, protéger et promouvoir l'Évangile une fois pour toutes. L'introduction de la lettre présente déjà l'essentiel de cet Évangile : grâce et paix fondées sur l'œuvre substitutive de Christ, accomplie selon la volonté du Père, pour nous arracher du présent siècle mauvais et rendre gloire à Dieu seul.",
+    "topics": [
+      "Ecclésiologie",
+      "Autorité biblique",
+      "Apostolat",
+      "Canon du Nouveau Testament",
+      "Sola Gratia",
+      "Œuvre substitutive du Christ",
+      "Sanctification",
+      "Eschatologie rédemptrice"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1824015846.txt"
+  },
+  "sc-1900255956": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1900255956.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Contexte : Ézéchiel à Babylone et les signes prophétiques"
+      },
+      {
+        "t": 392,
+        "title": "La tête rasée : signe du jugement sur Jérusalem"
+      },
+      {
+        "t": 574,
+        "title": "Les privilèges accordés à Jérusalem"
+      },
+      {
+        "t": 1261,
+        "title": "Application à l'Église : héritière du même mandat"
+      },
+      {
+        "t": 1471,
+        "title": "La culpabilité de Jérusalem : mépris et perversion de la loi"
+      },
+      {
+        "t": 2817,
+        "title": "La souillure du sanctuaire et le retrait de Dieu"
+      },
+      {
+        "t": 3284,
+        "title": "Conclusion et avertissement selon Romains 2"
+      }
+    ],
+    "description": "Jérusalem, placée au cœur du monde pour en être la lumière, a trahi cette mission — et ses privilèges mêmes ont aggravé sa culpabilité.",
+    "invitation": "Cette prédication sur Ézéchiel 5 prend le temps d'expliquer pourquoi le jugement de Dieu sur Jérusalem n'est ni arbitraire ni cruel : il est le fruit de siècles de patience divine ignorée. On y découvre que les privilèges reçus sans gratitude ni obéissance deviennent eux-mêmes un motif de condamnation. C'est un texte qui interpelle directement l'Église aujourd'hui, héritière du même mandat de lumière. Une prédication sobre et rigoureuse, utile pour quiconque veut comprendre la cohérence du plan de Dieu à travers les deux Testaments.",
+    "key_points": [
+      "Dieu avait accordé à Jérusalem un double privilège : être choisie parmi toutes les nations et être placée au centre du monde connu pour en être la lumière.",
+      "Ce mandat missionnaire d'Israël — répandre la sagesse divine parmi les nations — trouve son accomplissement dans l'Église, héritière de la même vocation (1 Pierre 2.9).",
+      "Premier point de culpabilité : Israël a méprisé et ignoré les commandements de Dieu, oubliant le devoir de mémoire transmis de génération en génération.",
+      "Deuxième culpabilité : ils ont perverti la loi en y ajoutant des coutumes païennes et en en retranchant d'autres, établissant leur propre justice au lieu de celle de Dieu.",
+      "Troisième et quatrième culpabilités : Jérusalem s'est rendue plus coupable que les nations idolâtres, et a finalement souillé le sanctuaire lui-même en y introduisant de fausses idoles, provoquant le retrait de la présence de Dieu.",
+      "Avertissement final tiré de Romains 2 : se glorifier de la loi et des privilèges divins sans obéissance effective est exactement le piège dans lequel Israël est tombé — un piège que l'Église doit éviter."
+    ],
+    "key_quotes": [
+      {
+        "t": 365,
+        "text": "La patience de Dieu a été sur eux pendant plusieurs siècles, et pendant plusieurs siècles, ils n'ont fait qu'accumuler des offenses, ils ne se sont pas repentis comme ils le devaient, jusqu'à ce qu'arrive ce moment."
+      },
+      {
+        "t": 2178,
+        "text": "Eux qui devaient être une lumière, eux qui devaient apporter la preuve du Dieu vivant, du Dieu unique et vivant, se sont détournés de ce Dieu unique et vivant et ils en ont fait un Dieu de honte."
+      },
+      {
+        "t": 3365,
+        "text": "car le nom de Dieu est à cause de vous blasphémé parmi les païens, comme cela est écrit."
+      }
+    ],
+    "primary_scripture": "Ézéchiel 5:5-7",
+    "questions": [
+      "En quoi les privilèges spirituels reçus (connaissance de la Bible, appartenance à une église, sacrements) peuvent-ils devenir un facteur aggravant si nous ne les accompagnons pas d'une vie d'obéissance et de gratitude ?",
+      "Comment votre famille ou votre église transmet-elle concrètement le « devoir de mémoire » de l'œuvre de Dieu d'une génération à l'autre ?",
+      "Ézéchiel montre qu'Israël enviait les nations sous malédiction. Dans quels domaines de votre vie êtes-vous tenté d'envier le monde plutôt que de vous réjouir des bénédictions spirituelles que Dieu vous a données ?",
+      "Romains 2.17-24 avertit contre le fait d'enseigner aux autres ce qu'on ne pratique pas soi-même. Comment ce texte vous interpelle-t-il personnellement dans votre témoignage chrétien ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1900255956.raw.txt",
+    "references": [
+      "Jérémie",
+      "Martin Lloyd-Jones",
+      "Paul (épître aux Romains)"
+    ],
+    "scripture_refs": [
+      "Ézéchiel 5:1-10",
+      "Ézéchiel 5:11",
+      "Deutéronome 4:1-2",
+      "Deutéronome 4:6",
+      "Deutéronome 8:11-14",
+      "Psaume 68:16",
+      "1 Pierre 2:9-10",
+      "1 Corinthiens 3",
+      "Romains 2:17-24",
+      "Ésaïe 7:20"
+    ],
+    "series_hint": "Série de prédications sur le livre d'Ézéchiel",
+    "summary": "Ézéchiel 5.5-7 révèle que le jugement de Dieu sur Jérusalem n'est pas une décision soudaine, mais l'aboutissement de siècles de désobéissance malgré des privilèges exceptionnels : être placée au centre des nations pour y rayonner la sagesse divine. Jérusalem s'est rendue coupable non seulement d'avoir ignoré les commandements de Dieu, mais de les avoir pervertis, tombant ainsi plus bas que les nations païennes qui l'entouraient. Le prédicateur applique cette leçon à l'Église, appelée comme Israël à être lumière du monde, et met en garde contre la tentation de bénéficier des bénédictions de Dieu sans la vie de sanctification qui doit les accompagner.",
+    "topics": [
+      "Prophétie",
+      "Jugement de Dieu",
+      "Alliance et loi",
+      "Élection et privilèges",
+      "Idolâtrie",
+      "Sanctification",
+      "Mission de l'Église",
+      "Désobéissance et ses conséquences"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1900255956.txt"
+  },
   "sc-1900264623": {
     "_model": "claude-sonnet-4-6",
     "captions_ref": "data/catalog/transcripts/sc-1900264623.vtt",
@@ -88,6 +1155,324 @@
     ],
     "transcript_ref": "data/catalog/transcripts/sc-1900264623.txt"
   },
+  "sc-1900268571": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1900268571.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Introduction et contexte du livre d'Ézéchiel"
+      },
+      {
+        "t": 222,
+        "title": "Récapitulatif des signes du chapitre 4"
+      },
+      {
+        "t": 512,
+        "title": "Le signe du rasage (Ézéchiel 5:1-2)"
+      },
+      {
+        "t": 1237,
+        "title": "La division des cheveux en trois parties et leur signification"
+      },
+      {
+        "t": 1688,
+        "title": "Illustration : l'arche de l'alliance chez les Philistins"
+      },
+      {
+        "t": 2106,
+        "title": "Le reste préservé et le feu qui le poursuit (verset 3-4)"
+      },
+      {
+        "t": 3230,
+        "title": "Application et appel à la sainteté (1 Pierre 1)"
+      }
+    ],
+    "description": "Ézéchiel se rase la tête devant le peuple : un geste silencieux qui annonce la destruction imminente de Jérusalem.",
+    "invitation": "Cette prédication suit pas à pas le signe prophétique du rasage ordonné par Dieu à Ézéchiel en Ézéchiel 5:1-4. Elle montre comment Dieu communique un jugement solennel par des actes symboliques, et pourquoi ce jugement est à la fois juste et équitable. C'est aussi une invitation à réfléchir à ce que les jugements temporaires de Dieu disent à l'Église et aux nations aujourd'hui.",
+    "key_points": [
+      "Récapitulatif du contexte : Ézéchiel, prophète en exil à Babylone, est établi comme sentinelle chargée d'avertir le peuple du jugement à venir (chapitres 1-4).",
+      "Le signe du rasage total symbolise le rejet définitif de Jérusalem par Dieu : plus de temps de sursis, le jugement ira jusqu'au bout.",
+      "La division en trois parties des cheveux représente les trois destins du peuple — mort par la famine et l'incendie, mort par l'épée, et dispersion parmi les nations —, tous accomplis littéralement selon Jérémie 39.",
+      "La balance à peser rappelle que les jugements de Dieu s'exercent toujours avec équité et droiture, non sous l'impulsion arbitraire.",
+      "L'exemple de l'arche de l'alliance chez les Philistins (1 Samuel 4-6) illustre que Dieu exerce ses jugements de façon reconnaissable, pour mettre à nu la culpabilité et appeler à la repentance.",
+      "Application : l'Église elle-même n'est pas à l'abri du jugement ; le seul critère que Dieu honore est la fidélité à sa Parole, et les jugements temporaires annoncent un jugement final certain."
+    ],
+    "key_quotes": [
+      {
+        "t": 1062,
+        "text": "Les critères de Dieu seront toujours des critères basés sur sa vérité, sur sa droiture."
+      },
+      {
+        "t": 2670,
+        "text": "Dieu ne bénit pas là où il y a le péché."
+      },
+      {
+        "t": 2607,
+        "text": "Le seul critère que Dieu honore c'est le fait qu'une église soit fidèle à sa parole."
+      }
+    ],
+    "primary_scripture": "Ézéchiel 5:1-4",
+    "questions": [
+      "En quoi le fait qu'Ézéchiel soit lui-même affecté par le sort de Jérusalem change-t-il la façon dont vous comprenez le rôle d'un prédicateur ou d'un serviteur de Dieu ?",
+      "Comment reconnaître la main de Dieu dans les jugements temporaires que traversent les nations ou l'Église, sans tomber dans une lecture trop rapide des événements ?",
+      "Ézéchiel 5 montre que Dieu juge son propre peuple avant les nations. Quelle responsabilité cela place-t-il sur ceux qui se réclament de l'Évangile ?",
+      "À partir de 1 Pierre 1:13-21, qu'est-ce que la sainteté pratique a à voir avec notre compréhension du jugement de Dieu ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1900268571.raw.txt",
+    "references": [
+      "Ésaïe",
+      "Jérémie",
+      "1 Pierre"
+    ],
+    "scripture_refs": [
+      "Ézéchiel 1",
+      "Ézéchiel 2",
+      "Ézéchiel 3",
+      "Ézéchiel 4",
+      "1 Samuel 4",
+      "1 Samuel 6",
+      "Jérémie 39",
+      "Jérémie 42",
+      "Ésaïe 5:16-21",
+      "1 Corinthiens 11:31",
+      "1 Pierre 1:8-21"
+    ],
+    "series_hint": "Série de prédications sur le livre d'Ézéchiel (commencée environ 3-4 ans avant cette prédication)",
+    "summary": "Dans Ézéchiel 5:1-4, Dieu ordonne à Ézéchiel de se raser entièrement la tête et la barbe, puis de diviser ses cheveux en trois parties — à brûler, à tailler au rasoir et à disperser au vent — pour symboliser les trois sorts qui attendaient les habitants de Jérusalem lors de la conquête babylonienne. Ce signe confirme que le jugement divin est désormais irrévocable, exercé avec équité selon la vérité de Dieu et non selon des critères humains. Le prédicateur y voit aussi un avertissement permanent : les jugements temporaires de Dieu appellent à la repentance, et un jugement final, plus grand encore, attend tous ceux qui rejettent sa parole.",
+    "topics": [
+      "Prophétie",
+      "Jugement divin",
+      "Sainteté de Dieu",
+      "Signes prophétiques",
+      "Repentance",
+      "Ézéchiel — actes symboliques",
+      "Justice et équité divines",
+      "Jugement temporaire et jugement final"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1900268571.txt"
+  },
+  "sc-1903866746": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1903866746.vtt",
+    "chapters": [
+      {
+        "t": 110,
+        "title": "Introduction : contexte et thème central de Jacques"
+      },
+      {
+        "t": 608,
+        "title": "La chaîne de la parole : du verset 18 aux versets 26-27"
+      },
+      {
+        "t": 1333,
+        "title": "Troisième catégorie : pratiquer sans que le cœur soit transformé (v.26)"
+      },
+      {
+        "t": 1547,
+        "title": "L'hypocrisie des pharisiens comme miroir avertisseur"
+      },
+      {
+        "t": 2325,
+        "title": "La circoncision du cœur : constante de toute l'histoire de la rédemption"
+      },
+      {
+        "t": 2912,
+        "title": "Le cercle vertueux : les bonnes œuvres sanctifient le cœur qui les produit"
+      },
+      {
+        "t": 3755,
+        "title": "Conclusion : ne pas séparer le cœur des œuvres"
+      }
+    ],
+    "description": "Peut-on être religieux et avoir le cœur loin de Dieu ? Jacques démonte l'illusion et trace la voie d'une foi qui transforme de l'intérieur.",
+    "invitation": "Ce sermon prend au sérieux une question que beaucoup préfèrent esquiver : ma foi est-elle réelle ou seulement apparente ? À partir de Jacques 1.26-27, le prédicateur déroule avec rigueur ce que Jacques appelle la 'religion pure et sans tache' — une foi qui engage le cœur, pas seulement les actes extérieurs. Si vous cherchez une aide concrète pour examiner l'authenticité de votre vie chrétienne, cette prédication vous en donnera les outils. Elle est également utile pour quiconque se demande pourquoi les bonnes œuvres comptent sans pourtant mériter le salut.",
+    "key_points": [
+      "Jacques écrit à des chrétiens d'origine juive dispersés et persécutés, ce qui éclaire ses thèmes : persécution, pauvreté, vraie religion, foi et œuvres — tous liés à la mise à l'épreuve de la vraie foi.",
+      "Le chapitre 1 forme une 'chaîne de la parole' : engendrement par la parole, écoute, réception, mise en pratique, et finalement transformation du cœur.",
+      "Deux illusions religieueses sont dénoncées : écouter sans pratiquer (v.22) et pratiquer sans que le cœur soit transformé (v.26) — les deux aboutissent à une foi vaine.",
+      "L'exemple des pharisiens illustre l'hypocrisie religieuse : zèle extérieur, langue qui trahit un cœur plein d'orgueil et de convoitise, tradition humaine substituée à la loi de Dieu.",
+      "La circoncision du cœur n'est pas une nouveauté néo-testamentaire : Deutéronome, Jérémie, Ézéchiel et la promesse de la Nouvelle Alliance attestent que Dieu l'a toujours exigée et promise.",
+      "Les bonnes œuvres (v.27 : visiter orphelins et veuves) ne sont pas seulement le fruit d'un cœur régénéré ; elles agissent en retour sur ce cœur pour le sanctifier — formant un cercle vertueux."
+    ],
+    "key_quotes": [
+      {
+        "t": 1542,
+        "text": "car c'est de l'abondance du cœur que la bouche parle."
+      },
+      {
+        "t": 2802,
+        "text": "Le juif, ce n'est pas celui qui en a les apparences. Et la circoncision, ce n'est pas celle qui est visible dans la chair. Mais le juif, c'est celui qui l'est intérieurement. Et la circoncision, c'est celle du cœur, selon l'esprit et non selon la lettre."
+      },
+      {
+        "t": 2940,
+        "text": "Notre cœur, régénéré par Dieu et abreuvé par Christ, produit de bonnes œuvres. Dieu utilise ces bonnes œuvres que nous pratiquons avec persévérance pour sanctifier notre cœur qui est ainsi toujours plus disposé et capable de produire ces bonnes œuvres et ainsi de suite."
+      }
+    ],
+    "primary_scripture": "Jacques 1:26-27",
+    "questions": [
+      "En quoi la mise en pratique extérieure de la parole peut-elle devenir un substitut trompeur à la transformation intérieure du cœur ? Comment le détecter dans sa propre vie ?",
+      "Jacques cite la langue comme révélateur de l'état du cœur. Quel rôle concret notre manière de parler joue-t-elle dans l'examen de notre vie spirituelle ?",
+      "Comment comprenez-vous le 'cercle vertueux' entre cœur régénéré et bonnes œuvres ? En quoi cette vision change-t-elle notre motivation à servir les plus démunis ?",
+      "La circoncision du cœur est exigée dès l'Ancien Testament. Qu'est-ce que cela nous apprend sur la continuité de la vraie religion à travers toute l'histoire de la rédemption ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1903866746.raw.txt",
+    "references": [
+      "Jacques (frère du Seigneur)",
+      "Paul (épîtres aux Galates, Romains, 1 Corinthiens, Éphésiens, Philippiens)",
+      "Esaïe",
+      "Jérémie",
+      "Ézéchiel",
+      "Deutéronome",
+      "Matthieu 15",
+      "Luc 14",
+      "Jean 4, 15",
+      "Hébreux 12",
+      "1 Jean 3",
+      "Romains 2",
+      "Romains 8"
+    ],
+    "scripture_refs": [
+      "Jacques 1:2-4",
+      "Jacques 1:5-8",
+      "Jacques 1:9-11",
+      "Jacques 1:12",
+      "Jacques 1:13-17",
+      "Jacques 1:18-25",
+      "Actes 8",
+      "Galates",
+      "Romains 2:28-29",
+      "Romains 8",
+      "Romains 13:14",
+      "Matthieu 15:1-9",
+      "Matthieu 25",
+      "Luc 14:12-14",
+      "Jean 4:21",
+      "Jean 15:10",
+      "1 Jean 3:18",
+      "Philippiens 2:3",
+      "Éphésiens 2:10",
+      "1 Corinthiens 9",
+      "Hébreux 12:11",
+      "Deutéronome 10:16",
+      "Deutéronome 30:6",
+      "Jérémie 4:4",
+      "Jérémie 9:25",
+      "Ézéchiel 36:26",
+      "Esaïe 1",
+      "Esaïe 58:6",
+      "Proverbes 19:17",
+      "2 Timothée 3"
+    ],
+    "series_hint": "Série sur l'Épître de Jacques, chapitre 1 — dans le cadre d'études parallèles sur Galates et Hébreux",
+    "summary": "À partir de Jacques 1.26-27, le prédicateur expose le dernier maillon d'une 'chaîne de la parole' qui va de la nouvelle naissance jusqu'à la pratique des bonnes œuvres : la circoncision du cœur. Il montre que toute pratique religieuse extérieure — même assidue — est vaine si le cœur n'est pas engagé et progressivement transformé par l'Évangile, à l'image des pharisiens que Jésus condamnait. Il conclut en montrant que les bonnes œuvres ne sont pas seulement le fruit d'un cœur régénéré, mais aussi l'outil que Dieu utilise pour le sanctifier davantage, formant ainsi un cercle vertueux.",
+    "topics": [
+      "Sotériologie",
+      "Sanctification",
+      "Religion et hypocrisie",
+      "Foi et œuvres",
+      "Circoncision du cœur",
+      "Pharisaïsme",
+      "Loi et Évangile",
+      "Nouvelle Alliance"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1903866746.txt"
+  },
+  "sc-1943259707": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1943259707.vtt",
+    "chapters": [
+      {
+        "t": 17,
+        "title": "Introduction : le Sola Deo Gloria"
+      },
+      {
+        "t": 224,
+        "title": "Le texte : Romains 11.32-36 et la doxologie de Paul"
+      },
+      {
+        "t": 478,
+        "title": "1re vérité : la gloire de Dieu, fondement de toute existence"
+      },
+      {
+        "t": 1079,
+        "title": "2e vérité : la révélation salvatrice nécessaire contre l'idolâtrie"
+      },
+      {
+        "t": 1847,
+        "title": "3e vérité : la croix, manifestation suprême de la gloire salvatrice"
+      },
+      {
+        "t": 2465,
+        "title": "4e vérité : une vie concrète pour la gloire de Dieu"
+      },
+      {
+        "t": 2522,
+        "title": "De lui, par lui, pour lui : application pratique"
+      }
+    ],
+    "description": "Contempler la gloire de Dieu n'est pas une fin en soi — c'est le moteur inévitable d'une vie entièrement vécue pour sa gloire.",
+    "invitation": "Cette prédication explore le lien entre la vraie connaissance de Dieu et la manière dont elle transforme concrètement l'existence chrétienne. À partir de Romains 11.32-36, David Pelosi retrace le mouvement qui va de la doctrine à l'adoration, et de l'adoration à une vie offerte pour la gloire de Dieu seul. Une réflexion ancrée dans la Réforme protestante qui invite à examiner ce qui occupe vraiment la place de Dieu dans nos cœurs.",
+    "key_points": [
+      "Le sola Deo Gloria de la Réforme ne se réduit pas à purifier le culte extérieur ; il vise la contemplation du vrai Dieu conduisant à vivre pour sa gloire.",
+      "La gloire de Dieu est le fondement ontologique de toute existence : 'de lui, par lui et pour lui sont toutes choses' est d'abord un constat avant d'être une exhortation.",
+      "L'idolâtrie est la racine de tout péché et l'antonyme de l'adoration ; le cœur humain est une 'fabrique d'idoles' incapable de s'en délivrer seul.",
+      "C'est la révélation salvatrice de Dieu en Jésus-Christ — l'iconoclasme cosmique de la croix — qui brise les idoles et rend possible une vie pour la gloire de Dieu.",
+      "Cette vie s'exprime concrètement dans toutes les vocations (travail, famille, société), vécues 'devant les yeux de Dieu' avec diligence, intégrité et humilité.",
+      "La conscience de vivre 'par lui' pousse à proclamer l'Évangile publiquement et à représenter Christ auprès des autres, jusqu'à la mort si nécessaire."
+    ],
+    "key_quotes": [
+      {
+        "t": 293,
+        "text": "La théologie morte ne sauve personne. La vraie théologie, elle doit toujours déclencher l'adoration."
+      },
+      {
+        "t": 1203,
+        "text": "les cœurs humains est une fabrique d'idole une usine d'idole"
+      },
+      {
+        "t": null,
+        "text": "car toutes les étoiles auxquelles on s'accroche une fois que le soleil s'élève elles disparaissent leur rayonnement disparaissent"
+      }
+    ],
+    "primary_scripture": "Romains 11:32-36",
+    "questions": [
+      "Quelles sont les 'idoles' concrètes qui occupent aujourd'hui la place de Dieu dans votre cœur, et comment la contemplation de la croix peut-elle les déloger ?",
+      "En quoi la relation entre doctrine et adoration — illustrée par la doxologie de Paul en Romains 11 — devrait-elle changer la façon dont vous étudiez la Bible ?",
+      "Comment vivez-vous votre vocation professionnelle ou familiale 'devant les yeux de Dieu' ? Quels ajustements concrets cela demande-t-il ?",
+      "Paul demande en Romains 12 d'offrir nos corps comme sacrifice vivant. Qu'est-ce qui, dans votre vie actuelle, résiste encore à cet acte de consécration ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1943259707.raw.txt",
+    "references": [
+      "Jean Calvin",
+      "Augustin",
+      "R.C. Sproul",
+      "Martyn Lloyd-Jones",
+      "Thomas Chalmers"
+    ],
+    "scripture_refs": [
+      "Romains 12:1",
+      "Ésaïe 6",
+      "Galates 5",
+      "Philippiens 3",
+      "Actes 11:26",
+      "Matthieu 25:40",
+      "Matthieu 28:19-20"
+    ],
+    "series_hint": "Série sur l'épître aux Galates (mentionnée en parallèle)",
+    "summary": "À partir de la doxologie de Romains 11.32-36, David Pelosi montre que la gloire de Dieu est à la fois le fondement et la fin d'une vie chrétienne authentique. Il établit que l'idolâtrie — racine de tout péché — ne peut être brisée que par une révélation salvatrice de Dieu en Jésus-Christ, qui seule produit l'adoration véritable. Cette adoration déborde alors inévitablement dans une vie intentionnellement vécue pour la gloire de Dieu dans toutes les sphères de l'existence.",
+    "topics": [
+      "Théologie de la gloire",
+      "Sola Deo Gloria",
+      "Adoration et doctrine",
+      "Idolâtrie",
+      "Réforme protestante",
+      "Sotériologie",
+      "Vocation chrétienne",
+      "Vie chrétienne pratique"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1943259707.txt"
+  },
   "sc-1947861891": {
     "_model": "claude-sonnet-4-6",
     "captions_ref": "data/catalog/transcripts/sc-1947861891.vtt",
@@ -111,6 +1496,101 @@
       "Sabbat"
     ],
     "transcript_ref": "data/catalog/transcripts/sc-1947861891.txt"
+  },
+  "sc-1996734623": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-1996734623.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Introduction : l'apôtre Jean après Noël"
+      },
+      {
+        "t": 1307,
+        "title": "Jean Baptiste, témoin fidèle de la lumière"
+      },
+      {
+        "t": 1481,
+        "title": "Le monde déchu rejette la lumière (v. 10-11)"
+      },
+      {
+        "t": 1577,
+        "title": "La nature corrompue et le péché originel"
+      },
+      {
+        "t": 2202,
+        "title": "La foi salvatrice : connaissance, assentiment, confiance, affection"
+      },
+      {
+        "t": 2604,
+        "title": "Le triomphe de la grâce : la nouvelle naissance (v. 12-13)"
+      },
+      {
+        "t": 2789,
+        "title": "Appel conclusif : réconciliation et assurance"
+      }
+    ],
+    "description": "La lumière de Christ a percé le cœur de pierre des pécheurs : voilà le triomphe que Jean 1 nous invite à contempler.",
+    "invitation": "Ce sermon explore l'un des passages les plus denses du prologue de Jean : pourquoi le monde a rejeté la lumière, ce que signifie vraiment croire en Christ, et comment Dieu seul opère la nouvelle naissance. Christian Bouedjoro tisse ensemble doctrine du péché originel, nature de la foi salvatrice et souveraineté de la grâce divine. Une prédication rigoureuse qui débouche sur une invitation concrète à l'assurance et au témoignage.",
+    "key_points": [
+      "Jean Baptiste, témoin fidèle, distingue la chandelle (lui-même) du Soleil de justice (Christ) ; la lumière éclaire tout homme mais le monde l'a rejetée sans excuse.",
+      "Le rejet du monde s'explique par le péché originel : nature corrompue héritée d'Adam, volonté enchaînée, incapacité totale à se tourner vers Dieu de soi-même.",
+      "L'hostilité des 'siens' (Israël) culmine à la croix, mais tous les peuples y étaient représentés ; nul n'est sans excuse.",
+      "La foi salvatrice comporte quatre dimensions : connaissance du contenu, assentiment intellectuel, confiance personnelle en Christ, et affection renouvelée par le Saint-Esprit.",
+      "La nouvelle naissance est entièrement l'œuvre de Dieu : ni sang, ni volonté de la chair, ni volonté de l'homme, mais de Dieu seul (Jn 1.13).",
+      "Les croyants reçoivent le privilège de l'adoption filiale et sont appelés à témoigner fidèlement de l'évangile."
+    ],
+    "key_quotes": [
+      {
+        "t": 209,
+        "text": "le gros bon sens devrait nous faire comprendre que si ce que nous croyons ne change rien à notre vie, alors cela ne fait aucune différence pour Dieu non plus"
+      },
+      {
+        "t": 2190,
+        "text": "la lumière a triomphé des ténèbres avec une telle puissance qu'elle est allée jusqu'à rendre des enfants de colère enfants de Dieu"
+      },
+      {
+        "t": 3087,
+        "text": "lesquels sont nés non du sang ni de la volonté de la chair ni de la volonté de l'homme mais de Dieu"
+      }
+    ],
+    "primary_scripture": "Jean 1:6-13",
+    "questions": [
+      "En quoi la doctrine du péché originel (nature corrompue, volonté enchaînée) change-t-elle notre façon de comprendre l'évangélisation et nos attentes face aux refus ?",
+      "Quelles sont les quatre dimensions de la foi salvatrice présentées dans ce sermon, et laquelle vous semble la plus souvent négligée dans votre milieu ?",
+      "Comment l'assurance d'être enfant de Dieu devrait-elle influencer concrètement votre vie quotidienne et votre témoignage ?",
+      "Si c'est Dieu seul qui opère la nouvelle naissance, pourquoi est-il encore urgent de proclamer l'évangile avec empressement ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-1996734623.raw.txt",
+    "references": [
+      "A.W. Tozer",
+      "Grégoire de Nazianze"
+    ],
+    "scripture_refs": [
+      "Jean 1:1-5",
+      "Jean 1:14",
+      "Jean 8:12",
+      "Romains 1:20-21",
+      "Éphésiens 2:1-8",
+      "1 Corinthiens 2:11-14",
+      "Ésaïe 53:4-7",
+      "Actes 4:27-28",
+      "Proverbes 28:1",
+      "2 Corinthiens 5:20"
+    ],
+    "series_hint": "Série de prédications sur l'Évangile de Jean",
+    "summary": "En parcourant Jean 1.6-13, le prédicateur montre que Jean Baptiste est le témoin fidèle de la lumière, que le monde — juifs et non-juifs — a rejeté cette lumière en raison d'une nature corrompue héritée d'Adam, et que c'est pourtant la grâce souveraine de Dieu seul qui triomphe des ténèbres pour faire des croyants des enfants de Dieu. La foi salvatrice y est définie avec précision : connaissance, assentiment, confiance personnelle et affection renouvelée par l'Esprit. Le sermon s'achève par un appel à la repentance pour les incroyants et à l'assurance joyeuse pour les croyants.",
+    "topics": [
+      "Christologie",
+      "Incarnation",
+      "Péché originel",
+      "Dépravation totale",
+      "Régénération",
+      "Foi salvatrice",
+      "Adoption filiale",
+      "Grâce souveraine"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-1996734623.txt"
   },
   "sc-2007594779": {
     "_model": "claude-sonnet-4-6",
@@ -142,6 +1622,103 @@
     ],
     "transcript_ref": "data/catalog/transcripts/sc-2007594779.txt"
   },
+  "sc-2106554973": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-2106554973.vtt",
+    "chapters": [
+      {
+        "t": 22,
+        "title": "Introduction : le Psaume 1 comme condensé de l'histoire humaine"
+      },
+      {
+        "t": 269,
+        "title": "L'homme heureux : une joie qui ne dépend pas des circonstances"
+      },
+      {
+        "t": 370,
+        "title": "L'arbre transplanté : image de la grâce et du contentement appris"
+      },
+      {
+        "t": 560,
+        "title": "La misère spirituelle de l'homme que Dieu rejette"
+      },
+      {
+        "t": 1018,
+        "title": "Ne pas marcher selon le conseil des méchants"
+      },
+      {
+        "t": 1691,
+        "title": "Méditer la Parole jour et nuit"
+      },
+      {
+        "t": 3165,
+        "title": "Conclusion : deux destinées, l'appel à persévérer"
+      }
+    ],
+    "description": "Deux voies, une seule issue : le Psaume 1 pose la question fondamentale de chaque vie humaine — de quel côté se tient-on devant Dieu ?",
+    "invitation": "Le Psaume 1 est court, mais il trace en quelques versets la ligne de partage de toute existence humaine. Cette prédication prend le temps de déplier ce contraste classique sans l'édulcorer : qu'est-ce que le vrai bonheur selon Dieu, et que révèle la vie sans lui ? Un message sobre et direct, qui invite à l'examen personnel autant qu'à l'action de grâce.",
+    "key_points": [
+      "Le Psaume 1 est une introduction à tout le psautier et un condensé de l'histoire de l'humanité depuis la chute.",
+      "L'homme heureux n'est pas celui que les circonstances favorisent, mais celui dont les racines puisent en Dieu comme un arbre planté près d'un courant d'eau.",
+      "Ce bonheur implique de ne pas marcher selon le conseil des méchants, ni de s'arrêter sur la voie des pécheurs, ni de s'asseoir en compagnie des moqueurs.",
+      "Méditer la Parole jour et nuit est une discipline active — lire, étudier, mémoriser, intérioriser — qui façonne la pensée et la conduite.",
+      "Le méchant est comme la paille que le vent dissipe : sans consistance, sans paix, et sans perspective au-delà du jugement.",
+      "L'Éternel connaît la voie des justes : la conclusion du psaume est un appel à vivre dans l'attente de Christ, sans tache et irrépréhensibles."
+    ],
+    "key_quotes": [
+      {
+        "t": 489,
+        "text": "La parole de Dieu ne nous dit pas que c'est quelqu'un qui nage dans un océan de béatitude, qui n'a pas de problème dans la vie, où toutes les choses, tout ce qu'il fait lui réussit."
+      },
+      {
+        "t": 2110,
+        "text": "Si nous ne sommes pas en train de vivre cette réalité de nous nourrir auprès de ce courant d'eau, nous sommes en train d'aller vers le conseil impie, nous sommes en train d'aller sur la voie des pécheurs, nous sommes en train de nous asseoir avec les moqueurs."
+      },
+      {
+        "t": 2198,
+        "text": "Cette parole est là pour faire grandir Christ en nous."
+      }
+    ],
+    "primary_scripture": "Psaumes 1",
+    "questions": [
+      "En quoi votre façon de réagir aux difficultés révèle-t-elle où sont réellement vos racines — dans le courant d'eau qu'est Christ ou ailleurs ?",
+      "Quelles sont les formes concrètes du 'conseil des impies' auxquelles vous êtes le plus exposé, et comment y résistez-vous ?",
+      "Le prédicateur distingue lire, étudier, mémoriser et méditer la Parole. Laquelle de ces pratiques est la plus négligée dans votre vie, et pourquoi ?",
+      "Comment l'action de grâce — même dans la disette — peut-elle devenir une discipline spirituelle plutôt qu'un simple sentiment ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-2106554973.raw.txt",
+    "references": [
+      "Paul (Philippiens 4.11-13)",
+      "Jérémie 17.7-8",
+      "Josué 1.8",
+      "2 Pierre 3",
+      "Romains 1.28-32",
+      "Matthieu 7.13-14"
+    ],
+    "scripture_refs": [
+      "Philippiens 4.11-13",
+      "Philippiens 4.6-7",
+      "Jérémie 17.7-8",
+      "Josué 1.8",
+      "Romains 1.28-32",
+      "2 Pierre 3.3-14",
+      "Matthieu 7.13-14",
+      "1 Rois 21 (Akab et Jézabel)"
+    ],
+    "series_hint": "Prédication ponctuelle sur le Psaume 1, mentionnant une continuité avec une série en cours sur Ézéchiel et Philippiens.",
+    "summary": "Le Psaume 1 présente deux voies opposées : l'homme heureux qui trouve son plaisir dans la loi de l'Éternel, comparé à un arbre transplanté près d'un courant d'eau, et le méchant semblable à la paille que le vent dissipe. Le prédicateur insiste sur le fait que ce bonheur n'est pas l'absence de difficulté, mais un contentement appris en Dieu — comme Paul le décrit en Philippiens 4. Le psaume se conclut sur les destinées parallèles des justes et des impies, rappelant que l'Éternel connaît la voie des justes tandis que celle des méchants mène à la ruine.",
+    "topics": [
+      "Psaumes de sagesse",
+      "Anthropologie biblique",
+      "Sanctification",
+      "Bonheur selon Dieu",
+      "Méditation de la Parole",
+      "Jugement divin",
+      "Persévérance des saints",
+      "Les deux voies"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-2106554973.txt"
+  },
   "sc-2117744874": {
     "_model": "claude-sonnet-4-6",
     "captions_ref": "data/catalog/transcripts/sc-2117744874.vtt",
@@ -165,6 +1742,98 @@
       "Vie communautaire de l'Église"
     ],
     "transcript_ref": "data/catalog/transcripts/sc-2117744874.txt"
+  },
+  "sc-2166477156": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/sc-2166477156.vtt",
+    "chapters": [
+      {
+        "t": 54,
+        "title": "Introduction : deux vérités cruciales"
+      },
+      {
+        "t": 775,
+        "title": "Le fil conducteur d'Actes : vous serez mes témoins"
+      },
+      {
+        "t": 1353,
+        "title": "Philippe quitte Samarie pour le désert"
+      },
+      {
+        "t": 1480,
+        "title": "Être soumis à la direction du Seigneur"
+      },
+      {
+        "t": 2500,
+        "title": "Participer de manière ordinaire et intentionnelle"
+      },
+      {
+        "t": 2817,
+        "title": "Proclamer Christ à partir de l'Écriture"
+      },
+      {
+        "t": null,
+        "title": "Une soumission sacrificielle et avantageuse"
+      }
+    ],
+    "description": "Témoigner de Christ n'est pas une option pour le chrétien — c'est le sens même de sa vie de ce côté de la gloire.",
+    "invitation": "Cette prédication sur Actes 8 repose une question que l'on esquive facilement : suis-je vraiment un témoin de Jésus-Christ ? David Pelosi examine le modèle de Philippe avec l'eunuque éthiopien pour montrer ce que l'évangélisation biblique est — et n'est pas. Une prédication utile autant pour clarifier sa propre foi que pour repenser sa pratique du témoignage.",
+    "key_points": [
+      "Le contraste entre la fausse conversion de Simon le magicien et la conversion authentique de l'eunuque illustre l'enjeu d'une évangélisation fidèle.",
+      "Actes 1.8 pose le cadre : recevoir le Saint-Esprit, c'est être témoin de Christ — une vocation pour tous les chrétiens, pas seulement pour des professionnels.",
+      "Philippe est un modèle de soumission prompte et sacrificielle à la direction du Seigneur, quittant un ministère spectaculaire pour aller au désert.",
+      "La soumission au Saint-Esprit n'est pas passive : elle se traduit par une disponibilité intentionnelle et ordinaire à saisir les occasions d'évangélisation.",
+      "L'évangélisation authentique consiste à annoncer Christ à partir de l'Écriture — ici Ésaïe 53 — et non à proposer un Jésus qui améliore la vie.",
+      "La vraie conversion naît d'une vraie évangélisation : jusqu'à ce que Christ soit clairement annoncé selon l'Écriture, il n'y a pas encore eu évangélisation."
+    ],
+    "key_quotes": [
+      {
+        "t": 557,
+        "text": "l'évangélisation existe car l'adoration n'existe pas encore pour beaucoup"
+      },
+      {
+        "t": 3138,
+        "text": "jusqu'à ce qu'une personne ne répond pas ça elle n'a pas été sauvée mais elle ne peut pas répondre ça si une évangélisation authentique n'a pas eu lieu dans sa vie"
+      },
+      {
+        "t": 2817,
+        "text": "Philippe ouvrant la bouche et commençant par ses passages lui annoncer la bonne nouvelle de Jésus"
+      }
+    ],
+    "primary_scripture": "Actes 8:26-35",
+    "questions": [
+      "En quoi la distinction entre Simon le magicien et l'eunuque éthiopien nous aide-t-elle à évaluer honnêtement notre propre conversion ?",
+      "Quels sacrifices concrets la soumission à Christ comme Seigneur devrait-elle produire dans notre agenda quotidien pour l'évangélisation ?",
+      "Quelle est la différence entre 'parler de Jésus' et 'annoncer Christ à partir de l'Écriture' ? Comment cela change-t-il notre manière de partager l'Évangile ?",
+      "Comment cultiver une sensibilité à la direction du Saint-Esprit tout en restant ancré dans les orientations claires de la Parole ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/sc-2166477156.raw.txt",
+    "references": [
+      "Tertullien",
+      "Lloyd-Jones",
+      "Jean Calvin",
+      "Jonathan Edwards"
+    ],
+    "scripture_refs": [
+      "Actes 1:8",
+      "Actes 6",
+      "Actes 8:1-25",
+      "Ésaïe 53",
+      "Éphésiens 5-6",
+      "Matthieu 28:18-20"
+    ],
+    "summary": "À partir d'Actes 8.26–35, le prédicateur montre que la conversion authentique de l'eunuque éthiopien est le fruit d'une évangélisation véritablement biblique, portée par un Philippe soumis à la direction du Saint-Esprit. Il souligne que témoigner de Christ est la vocation première de tout chrétien, et que ce témoignage suppose une proclamation explicite de Jésus-Christ à partir de l'Écriture, non une simple amélioration de vie. La prédication s'inscrit dans le fil conducteur du livre des Actes : l'Évangile qui avance, à travers des instruments ordinaires, jusqu'aux extrémités de la terre.",
+    "topics": [
+      "Évangélisation",
+      "Témoignage chrétien",
+      "Conversion authentique",
+      "Pneumatologie",
+      "Mission mondiale",
+      "Souveraineté de Dieu dans le salut",
+      "Herméneutique christocentrique",
+      "Actes des Apôtres"
+    ],
+    "transcript_ref": "data/catalog/transcripts/sc-2166477156.txt"
   },
   "sc-2193798131": {
     "_model": "claude-sonnet-4-6",
@@ -285,6 +1954,153 @@
     ],
     "transcript_ref": "data/catalog/transcripts/sc-2338530545.txt"
   },
+  "yt-FDcy9KUQM6s": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/yt-FDcy9KUQM6s.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Introduction : imaginer la cécité et le désir de voir"
+      },
+      {
+        "t": 198,
+        "title": "L'aspiration universelle à voir Dieu et sa gloire"
+      },
+      {
+        "t": 624,
+        "title": "Le contexte de Marc 8 : la cécité spirituelle progressive"
+      },
+      {
+        "t": 896,
+        "title": "Premier point : reconnaître son besoin"
+      },
+      {
+        "t": 1185,
+        "title": "Deuxième point : se confier complètement au Christ"
+      },
+      {
+        "t": 1801,
+        "title": "Troisième point : permettre au Christ d'évaluer constamment notre vision"
+      },
+      {
+        "t": 2085,
+        "title": "Quatrième point : regarder fixement et exclusivement le Christ"
+      }
+    ],
+    "description": "Voir Dieu est l'aspiration la plus profonde de tout être humain — mais cela exige une guérison que seul le Christ peut opérer.",
+    "invitation": "Cette prédication part d'une question simple et vertigineuse : comment peut-on voir Dieu ? À partir du miracle de l'aveugle de Bethsaïda en Marc 8, le prédicateur montre que notre cécité spirituelle est réelle, que personne ne peut s'en guérir seul, et que Christ est à la fois le point de départ et la lentille permanente à travers laquelle nous voyons Dieu. Une prédication honnête, ancrée dans le texte, avec des applications concrètes pour les non-croyants comme pour les chrétiens de longue date.",
+    "key_points": [
+      "L'aspiration à voir Dieu est le désir le plus profond de tout être humain, souvent poursuivi inconsciemment à travers d'autres quêtes.",
+      "La gloire de Dieu est si intense que même les anges doivent se voiler la face ; personne ne peut voir Dieu sans qu'il se révèle lui-même.",
+      "Le miracle de l'aveugle en Marc 8 illustre la cécité spirituelle persistante — même chez les disciples — et le caractère progressif de la guérison.",
+      "Quatre conditions pour voir Dieu : reconnaître son besoin, se confier entièrement au Christ, accepter l'évaluation continuelle du Christ, et fixer le regard sur lui exclusivement.",
+      "L'évangélisation consiste à amener les personnes à la présence du Christ et à prier pour elles — ni plus, ni moins.",
+      "La deuxième touche du Christ représente la croissance spirituelle continue et l'appel à ne jamais se contenter d'une vision partielle."
+    ],
+    "key_quotes": [
+      {
+        "t": 789,
+        "text": "les Christs, ça veut dire Dieu lui-même, il n'est pas que les points de départs au travers desquels nous voyons à Dieu, il est les lentilles perpétuelles au travers desquelles nous verrons à Dieu chaque fois plus claires"
+      },
+      {
+        "t": 1666,
+        "text": "L'évangélisation n'est jamais plus que ce que ces hommes ils ont fait. Mais n'est jamais moins."
+      },
+      {
+        "t": 2430,
+        "text": "je crois dans le christianisme comme je crois que le soleil est né non seulement par ce que je vois mais parce que par lui je vois tout le reste"
+      }
+    ],
+    "primary_scripture": "Marc 8:22-26",
+    "questions": [
+      "En quoi la guérison de l'aveugle en deux étapes vous parle-t-elle de votre propre parcours spirituel ? Y a-t-il eu une première et une deuxième « touche » dans votre vie ?",
+      "Qu'est-ce qui vous empêche d'être totalement honnête avec Christ sur l'état de votre vision spirituelle, comme l'a été l'aveugle de Bethsaïda ?",
+      "Comment votre manière d'évangéliser ressemble-t-elle (ou diffère-t-elle) de celle des amis qui ont amené l'aveugle à Jésus ?",
+      "Que signifie concrètement 'regarder fixement et exclusivement le Christ' dans votre vie quotidienne cette semaine ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/yt-FDcy9KUQM6s.raw.txt",
+    "references": [
+      "Augustin",
+      "C.S. Lewis"
+    ],
+    "scripture_refs": [
+      "1 Corinthiens 13:12",
+      "Hébreux 1:1-2",
+      "1 Pierre 2:9"
+    ],
+    "series_hint": "Des Yeux pour Voir - épisode 04 (étude de Marc 8)",
+    "summary": "À partir du miracle de la guérison progressive de l'aveugle de Bethsaïda (Marc 8), la prédication explore la cécité spirituelle comme condition universelle et la nécessité d'une intervention divine pour la surmonter. Le prédicateur développe quatre étapes pratiques : reconnaître son besoin, se confier entièrement au Christ, permettre à Christ d'évaluer constamment notre vision, et regarder fixement et exclusivement Christ. Il souligne que la guérison spirituelle est à la fois un don initial (la conversion) et un processus progressif, nécessitant des touches répétées de Dieu.",
+    "topics": [
+      "Sotériologie",
+      "Cécité spirituelle",
+      "Régénération",
+      "Sanctification progressive",
+      "Révélation de Dieu",
+      "Gloire de Dieu",
+      "Évangélisation",
+      "Vision de Dieu"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-FDcy9KUQM6s.txt"
+  },
+  "yt-HOjW63LMfhQ": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.vtt",
+    "chapters": [
+      {
+        "t": null,
+        "title": "Introduction : deux réalités liées"
+      },
+      {
+        "t": null,
+        "title": "Qu'est-ce qu'une conversion authentique ?"
+      },
+      {
+        "t": null,
+        "title": "Les fruits d'une vraie conversion"
+      },
+      {
+        "t": null,
+        "title": "La vocation d'ambassadeur du Christ"
+      },
+      {
+        "t": null,
+        "title": "Les exigences de l'ambassade évangélique"
+      },
+      {
+        "t": null,
+        "title": "Appel à l'examen et à la fidélité"
+      }
+    ],
+    "description": "Être converti ne suffit pas : le croyant est appelé à devenir un ambassadeur responsable de l'Évangile devant le monde.",
+    "invitation": "Cette prédication interroge ce que signifie une conversion authentique et ce qu'elle implique concrètement pour la vie chrétienne. Elle explore le lien entre la transformation intérieure et la vocation missionnaire de tout croyant. Si vous vous demandez comment votre foi devrait façonner votre témoignage quotidien, cette étude mérite votre attention.",
+    "key_points": [
+      "La conversion authentique est une transformation radicale opérée par Dieu, non une simple décision humaine.",
+      "Une conversion véritable produit des fruits visibles et un changement de vie durable.",
+      "Tout croyant est constitué ambassadeur du Christ, investi d'une mission de réconciliation.",
+      "Cette ambassade exige fidélité au message de l'Évangile, sans compromis ni honte.",
+      "L'examen de conscience est nécessaire : suis-je vraiment converti, et est-ce que j'assume ma responsabilité d'ambassadeur ?"
+    ],
+    "primary_scripture": "2 Corinthiens 5:17-20",
+    "questions": [
+      "Quels signes concrets dans votre vie témoignent d'une conversion authentique plutôt que d'une simple adhésion intellectuelle ?",
+      "En quoi la métaphore de l'ambassadeur change-t-elle votre manière de comprendre votre responsabilité vis-à-vis de l'Évangile ?",
+      "Quels obstacles pratiques vous empêchent d'assumer pleinement votre rôle d'ambassadeur du Christ dans votre entourage ?",
+      "Comment distinguer une transformation spirituelle réelle d'un changement de comportement purement humain ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.raw.txt",
+    "summary": "La prédication articule deux réalités indissociables : la conversion authentique, qui est une œuvre souveraine de Dieu dans le cœur humain, et la responsabilité missionnaire qui en découle pour chaque croyant. Le prédicateur montre que celui qui a vraiment été transformé par l'Évangile ne peut rester passif, mais est constitué ambassadeur du Christ dans son milieu. L'appel final presse l'auditeur à examiner la réalité de sa conversion et la fidélité de son témoignage.",
+    "topics": [
+      "Sotériologie",
+      "Conversion",
+      "Régénération",
+      "Évangélisation",
+      "Mission chrétienne",
+      "Ambassadeurs du Christ",
+      "Vie chrétienne",
+      "Témoignage"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.txt"
+  },
   "yt-IqNmh_XGULE": {
     "_model": "claude-sonnet-4-6",
     "captions_ref": "data/catalog/transcripts/yt-IqNmh_XGULE.vtt",
@@ -308,5 +2124,794 @@
       "Glorification de Dieu"
     ],
     "transcript_ref": "data/catalog/transcripts/yt-IqNmh_XGULE.txt"
+  },
+  "yt-LAcVjq-mfJc": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/yt-LAcVjq-mfJc.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Contenu non disponible"
+      }
+    ],
+    "description": "La Bible suffit-elle vraiment, et peut-on la comprendre ? Deux affirmations réformées qui changent tout.",
+    "invitation": "Ces deux propriétés de l'Écriture — sa suffisance et sa clarté — sont souvent niées ou mal comprises, même dans les milieux évangéliques. Cette prédication les examine sérieusement, à partir des textes bibliques eux-mêmes. Une étude utile pour quiconque se demande si la Bible seule peut vraiment guider la vie chrétienne.",
+    "key_points": [
+      "La transcription ne contient aucun contenu prêchable exploitable",
+      "Le titre indique un enseignement sur la suffisance de l'Écriture",
+      "Le titre indique un enseignement sur la clarté (perspicuité) de l'Écriture",
+      "Il s'agit du quatrième épisode d'une série en cinq parties sur la Parole de Dieu"
+    ],
+    "questions": [
+      "En quoi la doctrine de la suffisance de l'Écriture remet-elle en question le recours à des traditions ou enseignements extra-bibliques ?",
+      "Que signifie affirmer que la Bible est 'claire' sans prétendre qu'elle est toujours facile à interpréter ?",
+      "Comment la suffisance de l'Écriture doit-elle orienter concrètement la vie d'un chrétien au quotidien ?",
+      "Quels passages bibliques vous semblent les plus convaincants pour défendre la clarté de l'Écriture ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/yt-LAcVjq-mfJc.raw.txt",
+    "series_hint": "Parole de Dieu 4/5",
+    "summary": "La transcription fournie ne contient pas de contenu exploitable : elle se limite à la répétition de la phrase « La parole de Dieu » sans aucun développement textuel. Il est donc impossible de produire un résumé fidèle, des points clés, des citations verbatim ou des chapitres ancrés dans le transcript. Les champs ci-dessous reflètent uniquement ce qui peut être confirmé à partir du titre de la série.",
+    "topics": [
+      "Bibliologie",
+      "Parole de Dieu",
+      "Suffisance de l'Écriture",
+      "Perspicuité de l'Écriture",
+      "Sola Scriptura"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-LAcVjq-mfJc.txt"
+  },
+  "yt-NDCyRMRt6xw": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/yt-NDCyRMRt6xw.vtt",
+    "chapters": [
+      {
+        "t": 8,
+        "title": "Rappel du contexte de la lettre aux Galates"
+      },
+      {
+        "t": 822,
+        "title": "Paul, trophée de la grâce salvatrice"
+      },
+      {
+        "t": 1416,
+        "title": "Paul, modèle de coopération avec le Saint-Esprit — le théologien"
+      },
+      {
+        "t": 2592,
+        "title": "Paul, modèle de coopération avec le Saint-Esprit — l'évangéliste"
+      },
+      {
+        "t": 3292,
+        "title": "Paul, avant tout chrétien et imitateur du Christ"
+      },
+      {
+        "t": null,
+        "title": "Paul, chef-d'œuvre de la grâce préparatoire"
+      }
+    ],
+    "description": "Paul : théologien, évangéliste, chrétien — trois visages d'un homme façonné par la grâce pour changer le monde.",
+    "invitation": "Cette prédication invite à regarder Paul non comme une figure inaccessible, mais comme un homme ordinaire transformé par une grâce extraordinaire. On y découvre comment sa formation intellectuelle, sa conversion radicale et sa coopération constante avec le Saint-Esprit ont fait de lui un modèle pour chaque chrétien. Si vous vous interrogez sur le rôle de vos capacités naturelles dans votre vocation, ou sur le lien entre théologie et vie chrétienne concrète, ce message vous donnera matière à réfléchir.",
+    "key_points": [
+      "Paul a été préparé souverainement par Dieu avant sa conversion : sa formation grecque, romaine et hébraïque, sa rigueur intellectuelle et son zèle étaient déjà l'œuvre de la grâce prévenante.",
+      "Sa conversion — alors qu'il persécutait l'Église — fait de lui le trophée par excellence de la grâce salvatrice, ce qui fonde son autorité pour défendre la justification par la foi seule.",
+      "En tant que chrétien, Paul a coopéré activement avec la grâce rédemptrice du Saint-Esprit : période de retraite en Arabie, étude constante des Écritures, effort théologique progressif.",
+      "Comme évangéliste, Paul s'adaptait à ses auditoires sans jamais compromettre l'Évangile, et son ministère visait toujours la formation d'églises locales solidement établies plutôt que de simples conversions individuelles.",
+      "Paul demeure avant tout un chrétien dont l'identité est enracinée dans l'intimité avec Christ — 'vivre c'est Christ, mourir est un gain' — et c'est de là que découlent sa théologie et son service.",
+      "Le prédicateur applique ces trois dimensions à l'assemblée : exercer sa connaissance de Dieu, s'engager dans l'évangélisation et chercher la conformité à Christ par une coopération diligente avec le Saint-Esprit."
+    ],
+    "key_quotes": [
+      {
+        "t": 315,
+        "text": "c'est pour la liberté que Christ vous a affranchie, ce n'est pas pour revenir en arrière et être enchaîné par toutes ces emphases judaïsantes"
+      },
+      {
+        "t": 2431,
+        "text": "les doctrines déterminent l'expérience des vies qu'on aura"
+      },
+      {
+        "t": 3541,
+        "text": "vivre c'est Christ mourir est un gant"
+      }
+    ],
+    "primary_scripture": "Galates 1:1-5",
+    "questions": [
+      "En quoi la connaissance précise de Dieu (la théologie) influence-t-elle concrètement votre manière de vivre et de sanctifier votre vie au quotidien ?",
+      "Comment distinguez-vous, dans votre propre parcours, l'œuvre préparatoire de Dieu avant votre conversion et la coopération que Dieu vous demande après votre conversion ?",
+      "Qu'est-ce que le modèle d'évangélisation de Paul — centré sur l'église locale, sans compromis sur l'Évangile — remet en question dans vos pratiques ou conceptions actuelles du témoignage ?",
+      "Paul se définit avant tout comme un 'esclave du Christ' plutôt que comme apôtre : quelle place occupe l'intimité avec Christ dans votre identité chrétienne, au-delà de vos activités et de vos dons ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/yt-NDCyRMRt6xw.raw.txt",
+    "references": [
+      "James Dunn",
+      "Philippe Schaff",
+      "Robert Reymond",
+      "Gresham Machen",
+      "Gamaliel",
+      "Lloyd-Jones"
+    ],
+    "scripture_refs": [
+      "Galates 1:13-16",
+      "Galates 5:1",
+      "Romains 6",
+      "Romains 7",
+      "Romains 8",
+      "Romains 9",
+      "1 Corinthiens 2:1-5",
+      "2 Corinthiens 11-12",
+      "Philippiens 3",
+      "Matthieu 16",
+      "Marc 8",
+      "Actes 9",
+      "Actes 13-16",
+      "2 Timothée 4"
+    ],
+    "series_hint": "Série sur l'épître aux Galates — prédication GAL.003",
+    "summary": "Le prédicateur présente Paul sous trois angles complémentaires : chef-d'œuvre de la grâce préparatoire de Dieu avant sa conversion, trophée de la grâce salvatrice lors de sa rencontre avec Christ, et modèle de coopération diligente avec la grâce rédemptrice du Saint-Esprit dans sa vie chrétienne. Cette triple lecture éclaire à la fois la défense paulinienne de son apostolat dans Galates 1 et les enjeux de la justification par la foi que la lettre entend défendre. L'appel final est que chaque croyant imite Paul en s'engageant avec la même diligence dans la théologie, l'évangélisation et la conformité à Christ.",
+    "topics": [
+      "Sotériologie",
+      "Justification par la foi",
+      "Grâce souveraine",
+      "Apostolat et autorité apostolique",
+      "Sanctification",
+      "Évangélisation et mission",
+      "Théologie paulinienne",
+      "Vocation chrétienne"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-NDCyRMRt6xw.txt"
+  },
+  "yt-PEe-gsxWu3A": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/yt-PEe-gsxWu3A.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "L'immuabilité de la Parole"
+      },
+      {
+        "t": 13,
+        "title": "Contre la prédication à la carte"
+      },
+      {
+        "t": 26,
+        "title": "La Parole accomplit l'œuvre"
+      },
+      {
+        "t": 42,
+        "title": "Gouverner l'Église par la Parole seule"
+      },
+      {
+        "t": 51,
+        "title": "La suffisance de l'Écriture"
+      },
+      {
+        "t": 95,
+        "title": "Éprouver les expériences spirituelles"
+      }
+    ],
+    "description": "La Parole de Dieu suffit — mais pourquoi la croyons-nous, et comment cela transforme-t-il notre vie d'église ?",
+    "invitation": "Cette conférence pose une question fondamentale : peut-on faire confiance à la Bible telle qu'elle est, sans la réinventer pour chaque époque ? L'intervenant défend avec clarté la suffisance et l'immuabilité de l'Écriture, contre les tentations d'adaptation culturelle. Une réflexion utile pour quiconque veut comprendre pourquoi l'Église réformée place la Parole au centre de tout.",
+    "key_points": [
+      "La Bible ne change pas d'une génération ou d'une culture à l'autre : son autorité est permanente.",
+      "La tentation de réduire la Bible à quelques versets favorables plutôt qu'une exposition complète et christocentrique est dénoncée.",
+      "La Parole de Dieu accomplit l'œuvre de Dieu : il n'est pas nécessaire de réinventer le christianisme pour le 21e siècle.",
+      "Les anciens dirigent l'Église par la Parole seule.",
+      "La Bible est à la fois divine et suffisante : ces deux affirmations sont liées dans le même texte.",
+      "Toute expérience spirituelle doit être éprouvée par la Parole ; le Saint-Esprit qui inspire l'Écriture est le même qui apporte la présence de Dieu."
+    ],
+    "key_quotes": [
+      {
+        "t": 26,
+        "text": "La parole de Dieu fait l'œuvre de Dieu."
+      },
+      {
+        "t": 64,
+        "text": "Le même texte qui dit que la Bible est divine, aussi dit que la Bible est suffisante."
+      },
+      {
+        "t": 95,
+        "text": "Et nous ne pouvons jamais considérer comme authentique une expérience spirituelle qui ne respecte pas la parole de Dieu."
+      }
+    ],
+    "questions": [
+      "En quoi le principe de la suffisance de l'Écriture change-t-il concrètement la manière dont votre église prend ses décisions ?",
+      "Quelles formes prend aujourd'hui la tentation de réinventer le christianisme pour l'adapter à notre culture, et comment y résister ?",
+      "Comment s'assurer que notre prédication est réellement christocentrique plutôt que sélective ?",
+      "De quelle manière le Saint-Esprit et la Parole écrite travaillent-ils ensemble dans notre vie spirituelle ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/yt-PEe-gsxWu3A.raw.txt",
+    "series_hint": "7ème Conférence Bonne Nouvelle — Paris, 05 et 06 mai 2023",
+    "summary": "La prédication affirme que la Parole de Dieu est immuable et suffisante : elle ne doit pas être réadaptée d'une culture ou d'une génération à l'autre. L'Église est dirigée par la Parole seule, et c'est en elle qu'on trouve tout ce dont la vie chrétienne a besoin. Toute expérience spirituelle prétendue doit être éprouvée à l'aune de l'Écriture, inspirée par le Saint-Esprit lui-même.",
+    "topics": [
+      "Écriture Sainte",
+      "Autorité de la Bible",
+      "Suffisance de l'Écriture",
+      "Sola Scriptura",
+      "Gouvernance de l'Église",
+      "Inspiration du Saint-Esprit",
+      "Discernement spirituel",
+      "Prédication christocentrique"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-PEe-gsxWu3A.txt"
+  },
+  "yt-Tqu-GLCEgbA": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/yt-Tqu-GLCEgbA.vtt",
+    "chapters": [
+      {
+        "t": 30,
+        "title": "Introduction : renouveler nos convictions de rentrée"
+      },
+      {
+        "t": 293,
+        "title": "Le contraste Simon le Magicien / l'eunuque éthiopien"
+      },
+      {
+        "t": 807,
+        "title": "Actes 1:8 — Vous serez mes témoins"
+      },
+      {
+        "t": 1511,
+        "title": "Philippe : soumis à la direction du Seigneur"
+      },
+      {
+        "t": 2741,
+        "title": "Conclusion : l'appel à tous les témoins"
+      },
+      {
+        "t": 2849,
+        "title": "Proclamer Christ à partir des Écritures"
+      },
+      {
+        "t": null,
+        "title": "Une soumission sacrificielle et avantageuse"
+      }
+    ],
+    "description": "Être témoin du Christ, c'est l'identité première du chrétien — et l'évangélisation authentique en est la preuve vivante.",
+    "invitation": "Ce sermon repart d'un récit souvent survolé — la conversion de l'eunuque éthiopien — pour poser deux questions qui engagent toute la vie chrétienne : qu'est-ce qu'évangéliser vraiment, et qu'est-ce qu'une vraie conversion ? La prédication est ancrée dans Actes 8 et suit pas à pas le modèle de Philippe, entre soumission à l'Esprit et proclamation centrée sur Christ. Elle invite chaque auditeur à redécouvrir que témoigner n'est pas une option parmi d'autres, mais la vocation la plus noble que l'on puisse embrasser.",
+    "key_points": [
+      "La nature de l'évangélisation détermine la nature de la conversion : de faux moyens produisent de fausses conversions, comme l'illustre le contre-exemple de Simon le Magicien.",
+      "L'Esprit-Saint a pour fonction première de révéler Christ et de faire de chaque croyant un témoin oculaire, selon Actes 1:8.",
+      "Philippe est soumis rapidement et sacrificiellement à la direction du Seigneur, quittant un réveil spectaculaire en Samarie pour aller seul dans le désert.",
+      "La soumission à l'Esprit place le témoin dans des circonstances avantageuses : l'eunuque lisait Ésaïe 53 au moment précis de la rencontre.",
+      "L'évangélisation authentique consiste à proclamer Christ à partir des Écritures, non à présenter une opinion personnelle ou une promesse d'amélioration de vie.",
+      "La réponse de l'eunuque — baptême et confession de foi — est le fruit naturel d'une évangélisation fidèle, et le modèle pour toute l'Église jusqu'aux extrémités de la terre."
+    ],
+    "key_quotes": [
+      {
+        "t": 807,
+        "text": "vous recevrez les Saint-Esprit et vous serez mes témoins"
+      },
+      {
+        "t": 1744,
+        "text": "il n'y a aucune tâche que vous pouvez faire dans cette vie qui pourrait être plus noble plus digne que d'être confus comme un ange des dieux qui apporte les bonnes nouvelles du salut"
+      },
+      {
+        "t": 2849,
+        "text": "Philippe ouvrant la bouche et commençant par ses passages lui annonça la bonne nouvelle de Jésus"
+      }
+    ],
+    "primary_scripture": "Actes 8:26-38",
+    "questions": [
+      "En quoi la nature de l'évangélisation que vous pratiquez influence-t-elle la qualité des conversions que vous observez autour de vous ?",
+      "Quels sacrifices concrets seriez-vous prêts à faire — comme Philippe quittant la Samarie pour le désert — pour vous rendre disponible à l'évangélisation ?",
+      "Comment distinguer une vraie conversion d'une fausse, à la lumière du contraste entre Simon le Magicien et l'eunuque éthiopien ?",
+      "Qu'est-ce que cela change dans votre manière d'évangéliser de savoir que c'est le Christ ressuscité, assis sur son trône, qui envoie et qui sauve ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/yt-Tqu-GLCEgbA.raw.txt",
+    "references": [
+      "Tertullien",
+      "Jonathan Edwards",
+      "Martyn Lloyd-Jones",
+      "Jean Calvin"
+    ],
+    "scripture_refs": [
+      "Actes 1:8",
+      "Actes 8:4-25",
+      "Ésaïe 53",
+      "Éphésiens 5-6",
+      "Matthieu 28:18-20"
+    ],
+    "summary": "À partir d'Actes 8, le prédicateur montre comment la conversion authentique de l'eunuque éthiopien est le fruit d'une évangélisation véritablement biblique, incarnée par Philippe. Il développe deux marques essentielles du témoin chrétien : la soumission à la direction du Christ et du Saint-Esprit, et la proclamation de Christ lui-même à partir des Écritures. Le sermon appelle chaque chrétien à embrasser son identité de témoin comme la signification la plus sublime de sa vie terrestre.",
+    "topics": [
+      "Évangélisation",
+      "Témoignage chrétien",
+      "Conversion authentique",
+      "Pneumatologie",
+      "Missiologie",
+      "Actes des Apôtres",
+      "Sotériologie",
+      "Vocation du laïcat"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-Tqu-GLCEgbA.txt"
+  },
+  "yt-gj17HMaMOyY": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/yt-gj17HMaMOyY.vtt",
+    "chapters": [
+      {
+        "t": 0,
+        "title": "Début du sermon"
+      }
+    ],
+    "description": "La transcription de ce sermon est inexploitable — le contenu audio n'a pas été capturé correctement par la reconnaissance automatique.",
+    "invitation": "Ce sermon sur la Bible (3ème partie) n'a pas pu être analysé en raison d'une transcription automatique totalement corrompue. Les données affichées sont minimales et ne reflètent pas le contenu réel de la prédication. Nous vous invitons à écouter directement l'enregistrement audio ou vidéo.",
+    "key_points": [
+      "Transcription ASR corrompue — aucun contenu exploitable",
+      "Le titre indique une série sur la Bible, 3ème partie",
+      "Aucun argument, passage ou développement n'est reconstituable"
+    ],
+    "questions": [
+      "Qu'est-ce que la Bible révèle sur la nature et le caractère de Dieu ?",
+      "Comment approcher l'étude de la Bible de manière à la fois rigoureuse et dévotionnelle ?",
+      "En quoi la Bible est-elle suffisante pour guider la vie chrétienne au quotidien ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/yt-gj17HMaMOyY.raw.txt",
+    "series_hint": "La Bible — 3ème partie",
+    "summary": "La transcription fournie est non exploitable : elle consiste en répétitions de fragments sans sens ('Le verset 45', 'Je vais marcher 45') générés par une erreur de reconnaissance vocale. Le contenu réel du sermon sur la Bible (3ème partie) ne peut pas être résumé à partir de ce matériau.",
+    "topics": [
+      "Bible",
+      "Révélation",
+      "Écriture Sainte"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-gj17HMaMOyY.txt"
+  },
+  "yt-nTrSEHDkXqM": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/yt-nTrSEHDkXqM.vtt",
+    "chapters": [
+      {
+        "t": 22,
+        "title": "La connaissance du bien et du mal : Dieu et l'homme"
+      },
+      {
+        "t": 268,
+        "title": "Le proto-évangile et les chérubins"
+      },
+      {
+        "t": 364,
+        "title": "La punition du serpent et la question du littéral"
+      },
+      {
+        "t": 754,
+        "title": "La chute et la complémentarité homme-femme"
+      },
+      {
+        "t": 1331,
+        "title": "Les arbres du jardin et le pacte des œuvres"
+      },
+      {
+        "t": 1533,
+        "title": "'Comme l'un d'entre nous' : pluriel divin et question de traduction"
+      },
+      {
+        "t": null,
+        "title": "Grâce souveraine : pourquoi Dieu interdit l'arbre de vie après la chute"
+      }
+    ],
+    "description": "Genèse 1-3 sous la loupe : questions vives sur la connaissance, la chute, le serpent et la complémentarité homme-femme.",
+    "invitation": "Cette session de questions-réponses prolonge l'étude de Genèse 1-3 avec des échanges francs sur des passages souvent mal compris. On y aborde la nature de la connaissance du bien et du mal, le sens de l'arbre de vie, la punition du serpent et les implications de la chute sur les relations homme-femme. Un format vivant, ancré dans le texte, qui invite à penser sans esquiver les difficultés.",
+    "key_points": [
+      "La connaissance du bien et du mal chez l'homme est une connaissance expérientielle du mal, distincte de la connaissance omnisciente et normative de Dieu.",
+      "Dieu empêche l'homme de manger de l'arbre de vie après la chute par grâce souveraine, pour que la condition corrompue ne devienne pas éternelle.",
+      "Le proto-évangile (Gn 3:15) annonce Christ à travers le singulier 'descendance', tel que l'apôtre Paul l'exploite.",
+      "Les chérubins gardant l'Eden symbolisent l'humanité glorifiée et restaurée, promesse d'un retour futur au paradis.",
+      "La punition de l'homme et de la femme touche l'essence et l'utilité de chacun, révélant la rupture de la complémentarité voulue par Dieu à l'image de la Trinité.",
+      "Les arbres du jardin sont des signes choisis par Dieu dans le cadre d'un pacte, dont la portée dépasse leur matérialité, avec un écho eucharistique dans le 'prends et mange'."
+    ],
+    "key_quotes": [
+      {
+        "t": 1466,
+        "text": "Entre les prends et mange du Christ et les prends et mange de la pomme, Dieu a dû beaucoup souffrir."
+      },
+      {
+        "t": 211,
+        "text": "Il y a des dimensions des dieux qu'on ne connaissait pas sans la chute, la grâce, la miséricorde."
+      },
+      {
+        "t": 1218,
+        "text": "Les noms que la Bible utilise pour les Saint-Esprits, c'est le même noms que la Bible utilise pour la femme."
+      }
+    ],
+    "primary_scripture": "Genèse 1-3",
+    "questions": [
+      "En quoi la connaissance expérientielle du mal acquise lors de la chute diffère-t-elle fondamentalement de la connaissance que Dieu a du bien et du mal ?",
+      "Comment la grâce souveraine de Dieu se manifeste-t-elle dès Genèse 3, avant même la révélation complète de l'Évangile ?",
+      "De quelle manière la complémentarité originelle de l'homme et de la femme reflète-t-elle la relation intratrinitaire, et comment la chute a-t-elle brisé cette harmonie ?",
+      "Comment lire les éléments symboliques de Genèse (arbres, serpent, chérubins) de façon littérale sans compromettre les vérités doctrinales qu'ils portent ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/yt-nTrSEHDkXqM.raw.txt",
+    "references": [
+      "René Girard",
+      "Paul (apôtre)"
+    ],
+    "scripture_refs": [
+      "Genèse 3:15",
+      "Genèse 3:16",
+      "Éphésiens (allusion au choix avant la fondation du monde)",
+      "Romains 8 (la création qui gémit)",
+      "Jean (le Paraclet)"
+    ],
+    "series_hint": "Questions et Réponses – Leçons 1 à 3 (Genèse 1-3)",
+    "summary": "Cette session de questions-réponses explore plusieurs enjeux théologiques de Genèse 1-3 : la différence entre la connaissance divine et la connaissance humaine expérimentale du mal, la grâce souveraine de Dieu empêchant l'homme de manger de l'arbre de vie après la chute, et les implications de la punition sur la complémentarité homme-femme. Le proto-évangile, le symbolisme des chérubins et la nature des arbres du jardin sont également discutés à la lumière du Nouveau Testament.",
+    "topics": [
+      "Herméneutique",
+      "Théologie de la création",
+      "Anthropologie biblique",
+      "Hamartologie",
+      "Proto-évangile",
+      "Pacte des œuvres",
+      "Complémentarité homme-femme",
+      "Grâce souveraine"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-nTrSEHDkXqM.txt"
+  },
+  "yt-sjG__9VrXM0": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/yt-sjG__9VrXM0.vtt",
+    "chapters": [
+      {
+        "t": 30,
+        "title": "Introduction : la Bible, un mois pour en parler"
+      },
+      {
+        "t": 181,
+        "title": "La vie chrétienne n'est pas toujours facile"
+      },
+      {
+        "t": 785,
+        "title": "Trois questions avant d'ouvrir la Bible"
+      },
+      {
+        "t": 1357,
+        "title": "Pourquoi le Dieu des chrétiens ?"
+      },
+      {
+        "t": 1885,
+        "title": "Jésus : peut-on vraiment inventer cette histoire ?"
+      },
+      {
+        "t": 2295,
+        "title": "La répentance revisitée"
+      },
+      {
+        "t": 2546,
+        "title": "Conclusion : lire la Bible par amour, pas par obligation"
+      }
+    ],
+    "description": "Si Dieu existe vraiment, pourquoi lui consacrons-nous si peu de place ? Une question qui brûle — et qui change tout.",
+    "invitation": "Ce sermon aborde la question la plus fondamentale avant de parler de la Bible : pourquoi croire que Dieu existe, et pourquoi faire confiance au Dieu des chrétiens ? Le pasteur partage son propre cheminement avec une honnêteté rare, sans esquiver le doute. Une prédication sobre et directe, utile autant aux nouveaux venus qu'aux croyants de longue date.",
+    "key_points": [
+      "La Bible est présentée comme bien plus qu'un simple livre : un guide essentiel pour la vie chrétienne, y compris dans les moments difficiles.",
+      "Première question fondamentale : est-ce que Dieu existe ? Le pasteur témoigne de son propre questionnement et juge l'évolution seule insuffisante pour expliquer la complexité humaine.",
+      "Deuxième question : pourquoi le Dieu des chrétiens ? Réponse centrée sur la personne unique et incomparable de Jésus-Christ, confirmée par l'histoire.",
+      "Troisième question : que pense-t-on soi-même de Jésus ? Le pasteur raisonne qu'il est plus difficile de croire que quelqu'un ait inventé et maintenu cette histoire pendant 2000 ans que d'accepter sa véracité.",
+      "La répentance est redéfinie : non seulement pour les péchés, mais pour le décalage entre ce que l'on croit et la place réelle accordée à Dieu dans sa vie.",
+      "Appel final à lire la Bible par désir et non par obligation, illustré par l'histoire d'un arrière-arrière-grand-père converti en lisant une Bible trouvée dans une poubelle."
+    ],
+    "key_quotes": [
+      {
+        "t": 1158,
+        "text": "je pense être impossible le fait de croire que tous les dilemmes d'univers, tous les problèmes, tous les drames des personnes, toute la dépression, toute la tristesse, toute la recherche que nous avons, soyons-nous chrétiens ou pas chrétiens, pour avoir une vie un peu mieux, pour avoir une vie un peu... pour réussir dans la vie. Je pense que c'est vraiment, vraiment impossible que tout ça soit devenu juste de l'évolution d'une espèce."
+      },
+      {
+        "t": 2098,
+        "text": "c'est encore plus difficile pour moi de croire qu'une personne a pu inventer cette histoire et a pu tenir cette histoire pendant 2000 ans que le fait de cette histoire, est-ce que cette histoire est vraie ?"
+      },
+      {
+        "t": 2245,
+        "text": "Si je crois que Dieu existe et ça, il a, c'est tout, quand je parle de ça, là, à ces moments, là, quand je suis en train de vous parler, je suis en train de réfléchir et je suis en train de me dire qu'est-ce que je suis en train de faire de ma vie ?"
+      }
+    ],
+    "primary_scripture": "Psaumes 19:8",
+    "questions": [
+      "Quelles sont les raisons personnelles — sociales, intellectuelles ou spirituelles — qui fondent votre propre croyance en Dieu ? Avez-vous déjà pris le temps de les examiner honnêtement ?",
+      "Face aux trois questions posées dans ce sermon (Dieu existe-t-il ? Pourquoi le Dieu des chrétiens ? Que pensez-vous de Jésus ?), laquelle vous a le plus interpellé et pourquoi ?",
+      "Quelle proportion réelle de votre temps et de vos priorités quotidiennes reflète ce que vous dites croire ? Y a-t-il un écart que vous reconnaissez ?",
+      "Comment passer d'une lecture de la Bible vécue comme une obligation à une lecture vécue comme un désir ? Qu'est-ce qui pourrait changer concrètement pour vous ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/yt-sjG__9VrXM0.raw.txt",
+    "scripture_refs": [
+      "Psaumes 23",
+      "Psaumes 1",
+      "Colossiens 3:16"
+    ],
+    "series_hint": "Série mensuelle sur la Bible — 1ère partie (mois de février)",
+    "summary": "Le pasteur ouvre une série mensuelle sur la Bible en posant trois questions préalables : Dieu existe-t-il ? Pourquoi le Dieu des chrétiens plutôt qu'un autre ? Et que pense-t-on personnellement de Jésus ? Il argumente que sans réponses solides à ces questions, la lecture de la Bible reste sans fondement. Il conclut en invitant chacun à évaluer honnêtement la place réelle accordée à Dieu dans sa vie.",
+    "topics": [
+      "Apologétique",
+      "Autorité de la Bible",
+      "Existence de Dieu",
+      "Unicité de Jésus-Christ",
+      "Christologie",
+      "Repentance",
+      "Lecture de la Bible",
+      "Foi et doute"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-sjG__9VrXM0.txt"
+  },
+  "yt-uNPP4M4Aqpc": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/yt-uNPP4M4Aqpc.vtt",
+    "chapters": [
+      {
+        "t": 69,
+        "title": "La pertinence de l'Évangile et l'adaptation culturelle"
+      },
+      {
+        "t": 748,
+        "title": "Gouvernance ecclésiale et unité doctrinale des anciens"
+      },
+      {
+        "t": 1295,
+        "title": "Guérison divine, souveraineté de Dieu et prière"
+      },
+      {
+        "t": 1932,
+        "title": "Prière, étude et puissance du Saint-Esprit"
+      },
+      {
+        "t": 3475,
+        "title": "Le don des langues et la prophétie : une évaluation cessationniste"
+      },
+      {
+        "t": 3804,
+        "title": "Les promesses de la nouvelle alliance (Jérémie 31, Joël, Actes 2)"
+      },
+      {
+        "t": 5137,
+        "title": "Appel à la souffrance et à la fidélité dans le ministère"
+      }
+    ],
+    "description": "Paul Washer répond sans détour : pertinence, guérison, langues, prophétie — et pourquoi la parole et la prière restent les seules vraies armes du ministère.",
+    "invitation": "Cette séance de questions-réponses avec Paul Washer aborde sans esquive des sujets qui divisent souvent les chrétiens : l'adaptation de l'Évangile aux cultures, les dons miraculeux aujourd'hui, la gouvernance des anciens, et la place du Saint-Esprit dans le ministère. Washer parle avec franchise, parfois avec rudesse, mais toujours pour ramener ses auditeurs à la Parole et à la prière comme fondements du travail pastoral. Une conversation utile pour quiconque réfléchit sérieusement à l'église, à la mission et à la vie spirituelle.",
+    "key_points": [
+      "La vérité de l'Évangile n'a pas besoin d'être 'pertinente' mais d'être clairement expliquée, quel que soit le contexte culturel ou tribal.",
+      "La prière d'intercession et l'étude sérieuse de la Parole sont les seules armes authentiques du ministère ; les stratégies humaines en sont des substituts appauvris.",
+      "L'unité doctrinale parmi les anciens est indispensable : des anciens aux convictions divergentes communiquent que la vérité est sans importance.",
+      "Dieu guérit encore aujourd'hui selon sa volonté souveraine, mais le prétendu don de guérison tel que présenté dans les milieux charismatiques est introuvable dans la réalité.",
+      "Le don des langues était une langue humaine vérifiable ; la prophétie néo-apostolique non biblique dépouille les ministères de leur puissance plutôt que de les renforcer.",
+      "Tout le ministère est surnaturel et requiert la puissance du Saint-Esprit ; les promesses de la nouvelle alliance (Jérémie 31, Joël/Actes 2) garantissent une connaissance abondante de Dieu et la puissance pour vivre et prêcher."
+    ],
+    "key_quotes": [
+      {
+        "t": 103,
+        "text": "Nous n'avons jamais à rendre la vérité pertinente. Nous avons besoin de rendre la vérité compréhensible."
+      },
+      {
+        "t": 1608,
+        "text": "La faiblesse n'a jamais handicapé un homme de Dieu. Jamais. Parce que lorsque nous sommes faibles, il est fort."
+      },
+      {
+        "t": 5137,
+        "text": "je suis désolé de vous dire mais vous n'allez pas affecter Paris sans souffrance"
+      }
+    ],
+    "questions": [
+      "Comment distinguer, dans votre propre ministère, l'adaptation culturelle légitime d'un message et la trahison du contenu de l'Évangile ?",
+      "Quelle place la prière d'intercession occupe-t-elle concrètement dans votre vie et dans la vie de votre église, et que révèle honnêtement la réponse à cette question ?",
+      "Paul Washer insiste sur l'unité doctrinale des anciens : dans quelle mesure votre église a-t-elle clarifié ses convictions communes, et comment gérez-vous les désaccords réels entre responsables ?",
+      "Comment tenir ensemble la confiance en la souveraineté de Dieu et la ferveur dans la prière pour les guérisons, sans tomber ni dans le fatalisme ni dans la manipulation ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/yt-uNPP4M4Aqpc.raw.txt",
+    "references": [
+      "Charles Spurgeon",
+      "Martin Lloyd-Jones",
+      "Bethany Jones",
+      "Ian Murray (Pentecôte aujourd'hui ?)",
+      "Justin Peters",
+      "Jean Calvin",
+      "Confession de l'Ontario"
+    ],
+    "scripture_refs": [
+      "Éphésiens 4",
+      "Luc 18",
+      "Actes 1:8",
+      "Galates 5",
+      "1 Corinthiens 3",
+      "1 Corinthiens 14",
+      "Éphésiens 2:20",
+      "Jérémie 31:33-34",
+      "Ézéchiel 36",
+      "Actes 2:16-21",
+      "Colossiens 4"
+    ],
+    "series_hint": "Matinée pastorale — séance de questions-réponses",
+    "summary": "Paul Washer répond à des questions pastorales variées lors d'une matinée à Paris : il défend la suffisance de l'Évangile tel quel face aux cultures, rappelle que la prière et l'étude des Écritures sont les seules vraies armes du ministère, et appelle à une gouvernance ecclésiale fondée sur l'unité doctrinale des anciens. Il traite également du don des langues, des guérisons et de la prophétie en critiquant les dérives charismatiques, tout en affirmant que Dieu guérit encore aujourd'hui selon sa souveraineté. L'ensemble repose sur la conviction que rien ne peut être accompli sans la puissance du Saint-Esprit et qu'une vie de prière et de sainteté est indispensable à tout ministère fécond.",
+    "topics": [
+      "Missiologie",
+      "Suffisance des Écritures",
+      "Ecclésiologie",
+      "Gouvernance par les anciens",
+      "Dons du Saint-Esprit",
+      "Cessationnisme",
+      "Prière et intercession",
+      "Nouvelle alliance"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-uNPP4M4Aqpc.txt"
+  },
+  "yt-uhX8wbxSQ1g": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/yt-uhX8wbxSQ1g.vtt",
+    "chapters": [
+      {
+        "t": 186,
+        "title": "Contexte : les attaques contre Jésus"
+      },
+      {
+        "t": 196,
+        "title": "Un scribe différent des autres"
+      },
+      {
+        "t": 222,
+        "title": "L'approche sincère du scribe"
+      },
+      {
+        "t": null,
+        "title": "Le premier commandement : aimer Dieu de tout son être"
+      },
+      {
+        "t": null,
+        "title": "Le second commandement : aimer son prochain"
+      },
+      {
+        "t": null,
+        "title": "La réponse du scribe et l'approbation de Jésus"
+      }
+    ],
+    "description": "Aimer Dieu de tout son cœur : que signifie vraiment le premier commandement, et pourquoi Jésus le place-t-il au-dessus de tout?",
+    "invitation": "Dans Marc 12, un scribe pose à Jésus une question sincère : quel est le premier commandement? Ce sermon explore ce moment rare où un expert de la loi s'approche non pour piéger Jésus, mais avec une véritable ouverture. On y réfléchit à ce que signifie aimer Dieu de tout son être — cœur, âme, intelligence, force — et à ce que cela implique concrètement pour notre vie de disciple.",
+    "key_points": [
+      "Les précédents débats opposaient Jésus aux sanhédrins, pharisiens, hérodiens et sadducéens dans une intention hostile",
+      "Un scribe — spécialiste de la loi, chargé d'étudier et de transcrire l'Écriture — s'approche avec une attitude d'admiration sincère",
+      "Jésus cite le Shema (Deutéronome 6:4-5) comme premier et plus grand commandement",
+      "Le second commandement, aimer son prochain comme soi-même (Lévitique 19:18), est présenté comme inséparable du premier",
+      "Jésus affirme qu'il n'y a pas de commandement plus grand que ces deux-là",
+      "Le scribe approuve la réponse de Jésus, reconnaissant que ces commandements valent plus que tous les holocaustes et sacrifices"
+    ],
+    "key_quotes": [
+      {
+        "t": 222,
+        "text": "Il ne semble pas être tout à fait dans l'intention de chasser Jésus mais plutôt il démontre avoir une espèce d'admiration"
+      },
+      {
+        "t": 206,
+        "text": "Leur boulot était vraiment d'étudier l'Ancien Testament complètement"
+      },
+      {
+        "t": 152,
+        "text": "Jésus donne une réponse absolue il n'est pas mouable"
+      }
+    ],
+    "primary_scripture": "Marc 12:28-34",
+    "questions": [
+      "Qu'est-ce que cela signifie concrètement d'aimer Dieu 'de toute son intelligence' dans votre vie quotidienne?",
+      "En quoi l'attitude du scribe — sincère et ouverte — diffère-t-elle de celle des autres interlocuteurs de Jésus, et qu'est-ce que cela nous apprend sur la manière d'approcher la Parole?",
+      "Comment les deux grands commandements — aimer Dieu et aimer le prochain — s'articulent-ils dans votre vie d'église et de communauté?",
+      "Peut-on vraiment prétendre aimer Dieu tout en négligeant l'amour du prochain? Pourquoi Jésus les unit-il si étroitement?"
+    ],
+    "raw_ref": "data/catalog/transcripts/yt-uhX8wbxSQ1g.raw.txt",
+    "scripture_refs": [
+      "Deutéronome 6:4-5",
+      "Lévitique 19:18"
+    ],
+    "series_hint": "Chasse au Roi, prédication 4/8",
+    "summary": "Dans Marc 12, après plusieurs échanges conflictuels avec les chefs religieux d'Israël, un scribe se distingue en abordant Jésus avec une attitude d'admiration plutôt qu'hostilité. Jésus lui répond en citant le Shema d'Israël : aimer Dieu de tout son cœur, de toute son âme, de toute son intelligence et de toute sa force, puis aimer son prochain comme soi-même. Le sermon souligne que ces deux commandements résument toute la loi et les prophètes, et invite les auditeurs à examiner la sincérité et la totalité de leur amour pour Dieu.",
+    "topics": [
+      "Éthique biblique",
+      "Loi et Évangile",
+      "Grands commandements",
+      "Amour de Dieu",
+      "Amour du prochain",
+      "Shema Israël",
+      "Discipulat",
+      "Cœur et obéissance"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-uhX8wbxSQ1g.txt"
+  },
+  "yt-yCBKVjfAfhQ": {
+    "_model": "claude-sonnet-4-6",
+    "captions_ref": "data/catalog/transcripts/yt-yCBKVjfAfhQ.vtt",
+    "chapters": [
+      {
+        "t": 916,
+        "title": "Les ténèbres cosmiques comme jugement de Dieu"
+      },
+      {
+        "t": 986,
+        "title": "La création gémissante et le théâtre du jugement"
+      },
+      {
+        "t": 1296,
+        "title": "Le Jour du Seigneur dans les prophètes"
+      },
+      {
+        "t": 1973,
+        "title": "Le cri d'abandon et la réprobation surnaturelle"
+      },
+      {
+        "t": 2859,
+        "title": "L'abomination condensée sur le Fils"
+      },
+      {
+        "t": 3240,
+        "title": "La dignité du Christ créditée aux croyants"
+      },
+      {
+        "t": 3338,
+        "title": "Réponses à la croix : condamnation ou salut"
+      }
+    ],
+    "description": "À la croix, Jésus subit l'abandon de Dieu à notre place — l'enfer condensé sur l'Innocent pour que nous soyons couverts de sa dignité.",
+    "invitation": "Ce sermon médite l'un des cris les plus énigmatiques de toute l'Écriture : 'Mon Dieu, mon Dieu, pourquoi m'as-tu abandonné ?' Le prédicateur prend le temps d'ancrer ce cri dans la théologie biblique du Jour du Seigneur, dans la réalité de la colère divine et dans la profondeur de la substitution vicaire. C'est une prédication qui ne cherche pas à rassurer à bon marché, mais à faire mesurer ce que l'évangile coûte — et ce qu'il donne.",
+    "key_points": [
+      "Les ténèbres de midi au Calvaire sont un acte souverain de Dieu, non de Satan, signalant un jugement cosmique.",
+      "Les prophètes (Joël, Amos, Sophonie) décrivent le Jour du Seigneur par l'obscurcissement du soleil — signe que la croix anticipe ce jugement final.",
+      "La création souffre et gémit (Romains 8) parce que l'homme l'a détournée de sa vocation de glorification de Dieu.",
+      "Le cri de Jésus en Marc 15.34 atteste un abandon réel de la part du Père : Christ subit la réprobation que méritent les pécheurs.",
+      "L'unicité de cet abandon tient à l'arrière-plan du Fils éternel et à la condensation de la vilité de tous les rachetés reposant sur lui.",
+      "Ceux qui sont en Christ sont désormais couverts de sa dignité : Dieu cherche les ténèbres en eux et ne les trouve pas."
+    ],
+    "key_quotes": [
+      {
+        "t": 2307,
+        "text": "Christ nous a racheté de la malédiction en étant devenu malédiction pour nous"
+      },
+      {
+        "t": 3004,
+        "text": "les pères contemplaient les fils et voyaient la laideur condensée de tous les êtres humains les plus vils et méchants de toute l'histoire"
+      },
+      {
+        "t": 3210,
+        "text": "Dieu cherche des ténèbres en nous et ne trouve pas car nous sommes revêtus du Christ"
+      }
+    ],
+    "primary_scripture": "Marc 15:33-36",
+    "questions": [
+      "En quoi la compréhension prophétique du 'Jour du Seigneur' (Joël, Amos, Sophonie) transforme-t-elle votre lecture des trois heures de ténèbres au Calvaire ?",
+      "Pourquoi le prédicateur insiste-t-il sur le fait que l'abandon du Christ était d'un ordre qualitativement unique, lié à son arrière-plan de communion trinitaire éternelle ?",
+      "Comment la réalité de la colère de Dieu envers le péché — et non seulement envers les actes — change-t-elle votre compréhension de l'évangile et de votre propre besoin de grâce ?",
+      "Si les croyants sont désormais 'couverts de la dignité du Christ', quelles conséquences pratiques cela a-t-il sur la manière dont vous vous présentez devant Dieu dans la prière et dans la vie quotidienne ?"
+    ],
+    "raw_ref": "data/catalog/transcripts/yt-yCBKVjfAfhQ.raw.txt",
+    "references": [
+      "Jonathan Edwards",
+      "Joël 1.15 ; 2.10 ; 2.30",
+      "Amos 5 ; 8.9",
+      "Sophonie 1.14",
+      "Romains 8",
+      "Galates 3",
+      "2 Corinthiens 5.21",
+      "Psaume 27",
+      "Matthieu (ténèbres du dehors)",
+      "Marc 13",
+      "Habacuc"
+    ],
+    "scripture_refs": [
+      "Romains 8",
+      "Joël 1:15",
+      "Joël 2:10",
+      "Joël 2:30",
+      "Amos 5:18",
+      "Amos 8:9",
+      "Sophonie 1:14",
+      "Psaume 27:1",
+      "Galates 3:13",
+      "2 Corinthiens 5:21",
+      "Marc 13:24-26",
+      "Matthieu (ténèbres du dehors)"
+    ],
+    "series_hint": "cROIx — prédication 08/13",
+    "summary": "À partir de Marc 15, le prédicateur montre que les trois heures de ténèbres au Calvaire constituent une anticipation du Jour du Seigneur annoncé par les prophètes : un jugement cosmique établi par Dieu lui-même. Le cri d'abandon de Jésus révèle qu'il a subi une réprobation réelle et surnaturelle, portant la laideur condensée de tous les pécheurs, afin que ceux qui sont en Christ soient revêtus de sa dignité devant le Père. L'enfer est ainsi compris comme la dilution éternelle de ce que Christ a vécu de manière concentrée pendant ces trois heures.",
+    "topics": [
+      "Sotériologie",
+      "Eschatologie",
+      "Jour du Seigneur",
+      "Substitution pénale vicaire",
+      "Colère de Dieu",
+      "Abandon du Christ",
+      "Imputation",
+      "Justification"
+    ],
+    "transcript_ref": "data/catalog/transcripts/yt-yCBKVjfAfhQ.txt"
   }
 }
