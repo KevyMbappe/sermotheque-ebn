@@ -68,6 +68,13 @@ MIN_EXAMPLES = 2      # a centroid from a single sermon is too thin to auto-appl
 COHESION_MIN = 0.88   # within a one-preacher series, a member below this cosine-to-series-centroid
                       # is an outlier (a guest week / a sermon the regular preacher didn't take)
 
+# The regular preaching roster: Pastor David + the elders. Everyone else in the data is a
+# conference GUEST (CBN speakers — Beeke, Borgman, Parsons, Mbewe, Jonas Hensworth, …). A regular
+# (non-conference) sermon can only be one of these five, so guest centroids are not candidates for
+# it — otherwise a thin one-example guest centroid wrongly attracts David/elder sermons (#51).
+REGULAR_PREACHERS = {"David Pelosi", "Stephan Kongo", "Nathanaël Fis",
+                     "Loïc Rakotozafy", "Christian Bouedjoro"}
+
 # Domain priors (church knowledge, #50): a long expository series is owned by one preacher —
 # David preached Galatians for 3+ years; an elder takes a whole book when David is away (Stephan
 # → Ezekiel, Nathanaël → James). These seed ground truth where titles are silent, BUT each series
@@ -77,6 +84,8 @@ SERIES_SPEAKER = {
     "Épître aux Galates": "David Pelosi",
     "Étude — Ézéchiel": "Stephan Kongo",
     "Épître de Jacques": "Nathanaël Fis",
+    "Épître aux Hébreux": "Loïc Rakotozafy",     # #51: voiceprint-confirmed (25/28 cohere, nearest Loïc 0.95)
+    "Évangile de Jean": "Christian Bouedjoro",   # #51: voiceprint-confirmed (3/4 cohere, nearest Christian 0.96)
 }
 
 
@@ -199,6 +208,14 @@ def attribute(rows, voiceprints, overrides):
         if any(vid == i for items in gt.values() for i, _ in items):
             held = {spk: [(i, v) for i, v in items if i != vid] for spk, items in gt.items()}
             cents = build_centroids({s: it for s, it in held.items() if it})
+        # A regular (non-conference) sermon can only be a regular preacher — drop guest centroids
+        # so a thin guest example can't attract it (#51). Conference talks keep all candidates.
+        if not cur.get("is_conference"):
+            regular = {s: c for s, c in cents.items() if s in REGULAR_PREACHERS}
+            if regular:
+                cents = regular
+        if not cents:
+            rec["decision"] = "no-centroid"; out.append(rec); continue
         spk, sim, margin = classify(vec, cents)
         runner = sorted(((cosine(vec, c), s) for s, c in cents.items()), reverse=True)
         rec.update(predicted=spk, sim=round(sim, 4), margin=round(margin, 4),
