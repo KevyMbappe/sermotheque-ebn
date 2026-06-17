@@ -22,6 +22,7 @@ not part of the one-shot capture. Pure stdlib (the embeddings are already floats
 """
 import json
 import math
+import re
 from pathlib import Path
 
 import voiceprint_store
@@ -64,6 +65,19 @@ def centroid(vectors):
 
 
 MIN_EXAMPLES = 2      # a centroid from a single sermon is too thin to auto-apply (→ "review")
+COHESION_MIN = 0.88   # within a one-preacher series, a member below this cosine-to-series-centroid
+                      # is an outlier (a guest week / a sermon the regular preacher didn't take)
+
+# Domain priors (church knowledge, #50): a long expository series is owned by one preacher —
+# David preached Galatians for 3+ years; an elder takes a whole book when David is away (Stephan
+# → Ezekiel, Nathanaël → James). These seed ground truth where titles are silent, BUT each series
+# member is still verified by within-series cohesion (below) and outliers are flagged, never blindly
+# trusted — "usually one preacher" is not "always".
+SERIES_SPEAKER = {
+    "Épître aux Galates": "David Pelosi",
+    "Étude — Ézéchiel": "Stephan Kongo",
+    "Épître de Jacques": "Nathanaël Fis",
+}
 
 
 def build_centroids(labeled):
@@ -85,19 +99,65 @@ def is_confident(sim, margin):
 
 # ----- attribution over the whole catalog ------------------------------------------------------
 
-def ground_truth(rows, voiceprints, overrides):
-    """{speaker: [(id, vec)]} from RELIABLE labels only: human overrides + title-provenance.
-    Default-rule labels are excluded on purpose — they're the unverified guesses under test."""
+def is_panel(title):
+    """True for a multi-speaker recording (a panel / conference line-up). Such audio averages
+    several voices, so it must NOT seed a speaker centroid even when the title names someone.
+    Catches the 'Nth … Conference: A, B, C and D' listing; a single '… | Name | CBN7' talk is fine."""
+    t = title or ""
+    return bool(re.search(r"conference:\s*\S", t, re.I)) or (t.count(",") >= 2 and re.search(r"\sand\s", t, re.I))
+
+
+def series_labels(rows, voiceprints):
+    """Series-prior ground truth with within-series cohesion verification (#50).
+    For each SERIES_SPEAKER series: build the series voiceprint centroid, keep members whose
+    cosine to it ≥ COHESION_MIN (the regular preacher), and flag the rest as outliers (a guest /
+    a different preacher that week). Returns (labeled{speaker:[(id,vec)]}, outliers[(id,series,assumed,sim)])."""
+    import collections
     by_id = {r["id"]: r for r in rows}
-    labeled = {}
+    groups = collections.defaultdict(list)
     for vid, vp in voiceprints.items():
         vec = vp.get("embedding")
         if not vec:
             continue
-        spk = overrides.get(vid) or (by_id.get(vid, {}).get("speaker")
-                                     if by_id.get(vid, {}).get("speaker_provenance") == "title" else None)
+        row = by_id.get(vid, {})
+        s = row.get("series_name")
+        if s in SERIES_SPEAKER and not is_panel(row.get("raw_title")):
+            groups[s].append((vid, vec))
+    labeled, outliers = collections.defaultdict(list), []
+    for s, items in groups.items():
+        spk = SERIES_SPEAKER[s]
+        c = centroid([v for _, v in items])
+        for vid, vec in items:
+            sim = cosine(vec, c)
+            (labeled[spk].append((vid, vec)) if sim >= COHESION_MIN
+             else outliers.append((vid, s, spk, round(sim, 3))))
+    return labeled, outliers
+
+
+def ground_truth(rows, voiceprints, overrides, use_series=True):
+    """{speaker: [(id, vec)]} from RELIABLE labels: human overrides + title-provenance + (verified)
+    series priors, excluding multi-speaker panels. Default-rule labels are excluded — they're the
+    unverified guesses under test. Title/override labels win over a series prior for the same id."""
+    by_id = {r["id"]: r for r in rows}
+    labeled = {}
+    claimed = set()
+    for vid, vp in voiceprints.items():
+        vec = vp.get("embedding")
+        if not vec:
+            continue
+        row = by_id.get(vid, {})
+        if vid not in overrides and is_panel(row.get("raw_title")):
+            continue                      # don't let a panel recording seed a centroid
+        spk = overrides.get(vid) or (row.get("speaker")
+                                     if row.get("speaker_provenance") == "title" else None)
         if spk:
-            labeled.setdefault(spk, []).append((vid, vec))
+            labeled.setdefault(spk, []).append((vid, vec)); claimed.add(vid)
+    if use_series:
+        series_lab, _ = series_labels(rows, voiceprints)
+        for spk, items in series_lab.items():
+            for vid, vec in items:
+                if vid not in claimed:    # title/override is more specific than a series prior
+                    labeled.setdefault(spk, []).append((vid, vec)); claimed.add(vid)
     return labeled
 
 
@@ -228,9 +288,25 @@ def main():
     overrides = _load_overrides()
     gt = ground_truth(rows, vps, overrides)
 
-    print(f"voiceprints: {len(vps)} | ground-truth speakers (title + human): {len(gt)}")
+    print(f"voiceprints: {len(vps)} | ground-truth speakers (title + series + human): {len(gt)}")
     for spk, items in sorted(gt.items(), key=lambda kv: -len(kv[1])):
         print(f"   {spk:22} {len(items)} example(s)")
+
+    # Series-prior cohesion: does each owned series really cluster as one voice? (#50)
+    _, series_out = series_labels(rows, vps)
+    print("\nseries-prior cohesion (domain knowledge → verified by voiceprint):")
+    sl, _ = series_labels(rows, vps)
+    import collections as _c
+    inser = _c.Counter()
+    for spk, items in sl.items():
+        inser[spk] += len(items)
+    for s, spk in SERIES_SPEAKER.items():
+        kept = sum(1 for r in rows if r.get("series_name") == s and r["id"] in vps
+                   and any(r["id"] == i for i, _ in sl.get(spk, [])))
+        tot = sum(1 for r in rows if r.get("series_name") == s and r["id"] in vps)
+        out = [o for o in series_out if o[1] == s]
+        print(f"   {s[:22]:22} → {spk:16} {kept}/{tot} cohere"
+              + (f"  ⚑ outliers: {[(o[0], o[3]) for o in out]}" if out else ""))
 
     # Leave-one-out over ground truth → accuracy + similarity calibration.
     correct = total = 0

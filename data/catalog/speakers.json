@@ -1,150 +1,468 @@
 {
+  "sc-1650117738": {
+    "confidence": 0.9108,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
   "sc-1651552182": {
-    "confidence": 0.9632,
+    "confidence": 0.9734,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"
   },
   "sc-1651552212": {
-    "confidence": 0.9478,
+    "confidence": 0.9683,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"
   },
   "sc-1651552227": {
-    "confidence": 0.9692,
+    "confidence": 0.9671,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "Stephan Kongo"
   },
   "sc-1651552254": {
-    "confidence": 0.9674,
+    "confidence": 0.9739,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1651552257": {
+    "confidence": 0.9082,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"
   },
   "sc-1652069766": {
-    "confidence": 0.9609,
+    "confidence": 0.9582,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "Stephan Kongo"
   },
-  "sc-1690634472": {
-    "confidence": 0.9432,
+  "sc-1690623990": {
+    "confidence": 0.9444,
     "provenance": "audio-fingerprint",
-    "runner_up": "Nathanaël Fis",
+    "runner_up": "Paulo Junior",
+    "speaker": "David Pelosi"
+  },
+  "sc-1690626048": {
+    "confidence": 0.942,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Paulo Junior",
+    "speaker": "David Pelosi"
+  },
+  "sc-1690634472": {
+    "confidence": 0.9296,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
     "speaker": "Stephan Kongo"
   },
   "sc-1690636275": {
-    "confidence": 0.9569,
+    "confidence": 0.9502,
     "provenance": "audio-fingerprint",
-    "runner_up": "Nathanaël Fis",
+    "runner_up": "David Pelosi",
     "speaker": "Stephan Kongo"
   },
   "sc-1736800041": {
-    "confidence": 0.9706,
+    "confidence": 0.9721,
     "provenance": "audio-fingerprint",
-    "runner_up": "Loïc Rakotozafy",
+    "runner_up": "David Pelosi",
     "speaker": "Nathanaël Fis"
   },
   "sc-1736838363": {
-    "confidence": 0.9619,
+    "confidence": 0.9686,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "Stephan Kongo"
   },
   "sc-1757740353": {
-    "confidence": 0.948,
+    "confidence": 0.9604,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "Stephan Kongo"
   },
+  "sc-1783383399": {
+    "confidence": 0.967,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1783388496": {
+    "confidence": 0.9656,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1783414731": {
+    "confidence": 0.9573,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Paulo Junior",
+    "speaker": "David Pelosi"
+  },
+  "sc-1788683833": {
+    "confidence": 0.9611,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1823993748": {
+    "confidence": 0.9634,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1824014199": {
+    "confidence": 0.9352,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
   "sc-1824015846": {
-    "confidence": 0.9091,
+    "confidence": 0.9392,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1834617897": {
+    "confidence": 0.9528,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1848634356": {
+    "confidence": 0.9417,
     "provenance": "audio-fingerprint",
     "runner_up": "Christian Bouedjoro",
     "speaker": "David Pelosi"
   },
-  "sc-1859238936": {
-    "confidence": 0.9715,
+  "sc-1848644817": {
+    "confidence": 0.9058,
     "provenance": "audio-fingerprint",
-    "runner_up": "Nathanaël Fis",
+    "runner_up": "Paulo Junior",
+    "speaker": "David Pelosi"
+  },
+  "sc-1859238936": {
+    "confidence": 0.9731,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
     "speaker": "Stephan Kongo"
   },
   "sc-1900255956": {
-    "confidence": 0.9595,
+    "confidence": 0.9698,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "Stephan Kongo"
   },
   "sc-1900264623": {
-    "confidence": 0.9501,
+    "confidence": 0.9645,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "Stephan Kongo"
   },
   "sc-1900268571": {
-    "confidence": 0.9644,
+    "confidence": 0.9717,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "Stephan Kongo"
   },
-  "sc-1903866746": {
-    "confidence": 0.9431,
+  "sc-1903852337": {
+    "confidence": 0.9705,
     "provenance": "audio-fingerprint",
     "runner_up": "David Pelosi",
     "speaker": "Nathanaël Fis"
   },
-  "sc-1943259707": {
-    "confidence": 0.9799,
+  "sc-1903858688": {
+    "confidence": 0.9715,
     "provenance": "audio-fingerprint",
-    "runner_up": "Christian Bouedjoro",
+    "runner_up": "David Pelosi",
+    "speaker": "Nathanaël Fis"
+  },
+  "sc-1903860197": {
+    "confidence": 0.983,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Nathanaël Fis"
+  },
+  "sc-1903861574": {
+    "confidence": 0.9743,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Nathanaël Fis"
+  },
+  "sc-1903866746": {
+    "confidence": 0.9743,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Nathanaël Fis"
+  },
+  "sc-1914361541": {
+    "confidence": 0.9704,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1920885503": {
+    "confidence": 0.9584,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1921719686": {
+    "confidence": 0.944,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1921720505": {
+    "confidence": 0.973,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1922530361": {
+    "confidence": 0.9728,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1922531474": {
+    "confidence": 0.9439,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1922876054": {
+    "confidence": 0.9662,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1925938103": {
+    "confidence": 0.969,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1925951444": {
+    "confidence": 0.9511,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1925968481": {
+    "confidence": 0.9705,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "sc-1943259707": {
+    "confidence": 0.973,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"
   },
   "sc-1947861891": {
-    "confidence": 0.9429,
+    "confidence": 0.9486,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"
   },
   "sc-2007594779": {
-    "confidence": 0.9692,
+    "confidence": 0.9574,
     "provenance": "audio-fingerprint",
-    "runner_up": "Christian Bouedjoro",
+    "runner_up": "Paulo Junior",
     "speaker": "David Pelosi"
   },
+  "sc-2043159028": {
+    "confidence": 0.9396,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Stephan Kongo"
+  },
+  "sc-2091255438": {
+    "confidence": 0.9768,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "Stephan Kongo"
+  },
   "sc-2106554973": {
-    "confidence": 0.9629,
+    "confidence": 0.9729,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "Stephan Kongo"
   },
   "sc-2117744874": {
-    "confidence": 0.9801,
+    "confidence": 0.9523,
     "provenance": "audio-fingerprint",
     "runner_up": "Christian Bouedjoro",
     "speaker": "David Pelosi"
   },
+  "sc-2133657198": {
+    "confidence": 0.9672,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "Stephan Kongo"
+  },
+  "sc-2137660878": {
+    "confidence": 0.9741,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "Stephan Kongo"
+  },
+  "sc-2151088182": {
+    "confidence": 0.9244,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Stephan Kongo"
+  },
+  "sc-2151088524": {
+    "confidence": 0.9804,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Nathanaël Fis"
+  },
+  "sc-2158843158": {
+    "confidence": 0.9833,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Nathanaël Fis"
+  },
+  "sc-2158843905": {
+    "confidence": 0.9833,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Nathanaël Fis"
+  },
+  "sc-2163682815": {
+    "confidence": 0.9686,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "Stephan Kongo"
+  },
   "sc-2166477156": {
-    "confidence": 0.9799,
+    "confidence": 0.9596,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Paulo Junior",
+    "speaker": "David Pelosi"
+  },
+  "sc-2167748475": {
+    "confidence": 0.9656,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Nathanaël Fis"
+  },
+  "sc-2167749246": {
+    "confidence": 0.9689,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Nathanaël Fis"
+  },
+  "sc-2167749627": {
+    "confidence": 0.9706,
+    "provenance": "audio-fingerprint",
+    "runner_up": "David Pelosi",
+    "speaker": "Nathanaël Fis"
+  },
+  "sc-2170364553": {
+    "confidence": 0.9602,
     "provenance": "audio-fingerprint",
     "runner_up": "Christian Bouedjoro",
+    "speaker": "David Pelosi"
+  },
+  "sc-2174499144": {
+    "confidence": 0.9707,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Paulo Junior",
     "speaker": "David Pelosi"
   },
   "sc-2205625143": {
-    "confidence": 0.9706,
+    "confidence": 0.9682,
     "provenance": "audio-fingerprint",
     "runner_up": "Loïc Rakotozafy",
     "speaker": "Nathanaël Fis"
   },
+  "sc-2258331260": {
+    "confidence": 0.9574,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Paulo Junior",
+    "speaker": "David Pelosi"
+  },
+  "sc-2258368859": {
+    "confidence": 0.9584,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Christian Bouedjoro",
+    "speaker": "Nathanaël Fis"
+  },
+  "sc-2259630446": {
+    "confidence": 0.9405,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "Stephan Kongo"
+  },
+  "sc-2279697239": {
+    "confidence": 0.9533,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "Stephan Kongo"
+  },
   "sc-2338530545": {
-    "confidence": 0.9485,
+    "confidence": 0.9503,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Paulo Junior",
+    "speaker": "David Pelosi"
+  },
+  "yt-HOjW63LMfhQ": {
+    "confidence": 0.9017,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Vincent Lemieux",
+    "speaker": "David Pelosi"
+  },
+  "yt-JOgOLb3Ij2U": {
+    "confidence": 0.9395,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Paulo Junior",
+    "speaker": "Joël Beeke"
+  },
+  "yt-NDCyRMRt6xw": {
+    "confidence": 0.9335,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"
   },
+  "yt-Tqu-GLCEgbA": {
+    "confidence": 0.9096,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Vincent Lemieux",
+    "speaker": "David Pelosi"
+  },
+  "yt-WNAfTDl54b8": {
+    "confidence": 0.9484,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Brian Borgman",
+    "speaker": "Joël Beeke"
+  },
+  "yt-r2phMiy2ymg": {
+    "confidence": 0.9147,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Vincent Lemieux",
+    "speaker": "David Pelosi"
+  },
+  "yt-snB851daJXk": {
+    "confidence": 0.9328,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Nathanaël Fis",
+    "speaker": "David Pelosi"
+  },
+  "yt-uhX8wbxSQ1g": {
+    "confidence": 0.9082,
+    "provenance": "audio-fingerprint",
+    "runner_up": "Pascal Denault",
+    "speaker": "David Pelosi"
+  },
   "yt-yCBKVjfAfhQ": {
-    "confidence": 0.9068,
+    "confidence": 0.9426,
     "provenance": "audio-fingerprint",
     "runner_up": "Nathanaël Fis",
     "speaker": "David Pelosi"

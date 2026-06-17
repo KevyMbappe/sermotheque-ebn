@@ -86,6 +86,47 @@ class TestAttribution(unittest.TestCase):
         self.assertEqual(store["g_default"], {"speaker": "Zoe", "provenance": "human"})
 
 
+class TestPanelExclusion(unittest.TestCase):
+    def test_panel_title_detected(self):
+        self.assertTrue(S.is_panel("10th Good News Conference: Brian Borgman, Don Currin, Joel Favre and David Pelosi"))
+
+    def test_single_speaker_conference_talk_is_not_panel(self):
+        self.assertFalse(S.is_panel("Encountered by God | Professor David Pelosi | CBN8 Paris 2024"))
+
+    def test_normal_sermon_title_is_not_panel(self):
+        self.assertFalse(S.is_panel("La Piété Avec Contentement | Pr. David Pelosi"))
+
+    def test_panel_excluded_from_ground_truth(self):
+        rows = [{"id": "p1", "speaker": "David Pelosi", "speaker_provenance": "title",
+                 "raw_title": "Conference: A, B and David Pelosi"},
+                {"id": "s1", "speaker": "David Pelosi", "speaker_provenance": "title",
+                 "raw_title": "Sermon | Pr. David Pelosi"}]
+        vps = {"p1": _vp([1, 0, 0]), "s1": _vp([1, 0, 0])}
+        gt = S.ground_truth(rows, vps, overrides={})
+        self.assertEqual([i for i, _ in gt["David Pelosi"]], ["s1"])   # panel p1 excluded
+
+
+class TestSeriesPrior(unittest.TestCase):
+    def test_cohesive_series_seeds_ground_truth_and_flags_outlier(self):
+        # A series owned by one preacher: 3 cohesive members + 1 outlier (a different voice that week).
+        spk = next(iter(S.SERIES_SPEAKER)); owner = S.SERIES_SPEAKER[spk]
+        rows = [{"id": f"x{i}", "series_name": spk, "raw_title": f"Sermon {i}"} for i in range(4)]
+        vps = {"x0": _vp([1, 0, 0]), "x1": _vp([0.99, 0.01, 0]), "x2": _vp([0.98, 0.02, 0]),
+               "x3": _vp([0, 1, 0])}   # x3 is a clear outlier (different voice)
+        labeled, outliers = S.series_labels(rows, vps)
+        kept = {i for i, _ in labeled[owner]}
+        self.assertEqual(kept, {"x0", "x1", "x2"})
+        self.assertEqual([o[0] for o in outliers], ["x3"])
+
+    def test_title_label_beats_series_prior_for_same_id(self):
+        spk = next(iter(S.SERIES_SPEAKER))
+        rows = [{"id": "z", "series_name": spk, "raw_title": "S", "speaker": "Someone Else",
+                 "speaker_provenance": "title"}]
+        gt = S.ground_truth(rows, {"z": _vp([1, 0, 0])}, overrides={})
+        self.assertIn("Someone Else", gt)                       # title wins
+        self.assertNotIn(S.SERIES_SPEAKER[spk], gt)
+
+
 class TestLadderApply(unittest.TestCase):
     def test_audio_overrides_default_rule_not_title(self):
         rows = [{"id": "x", "speaker": "Ann", "speaker_provenance": "default-rule"},
