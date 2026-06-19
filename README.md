@@ -85,9 +85,11 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **Voiceprint capture** (decision #46) — Resemblyzer embedding captured in-pass, id-keyed store
 - [x] **M5n — 30-sermon checkpoint** (decision #47): 39 enriched (~7.5%), 46 voiceprints, **$0.0705/sermon ⇒ ~$36/517**
 - [x] **M5o — language from audio** (decision #48): forced-fr default → retry-en on garbage → label from transcript content; YouTube download retry
-- [x] **M5p — audio speaker attribution** (decision #49): voiceprint centroids → 15 rows `audio-fingerprint` (Ézéchiel sermons → Stephan); LOO 10/10
-- [ ] Full ASR enrichment pass across the 517 (transcripts, topics, summaries) — **~$36 on Sonnet**
-- [ ] JSON Schema + WordPress import → website sermon library (first public deliverable)
+- [x] **M5p–q — audio speaker attribution + series priors** (decisions #49–#52): all 5 preachers' voices learned (David, Loïc→Hébreux, Stephan→Ézéchiel, Nathanaël→Jacques, Christian→Jean); 100 rows `audio-fingerprint`; LOO 99% among the 5
+- [x] **M5s — capture/enrich decoupled** (decision #52): `--no-enrich` capture-only pass ($0 API) + transcript-cache-aware enrich (no re-ASR); rebuild preserves attribution
+- [x] **M5t — frozen record contract** (decision #53): `schema.py` + `sermon.schema.json` (WP-import contract), validated in `build.py`; **Sonnet-only locked**
+- [ ] Full pass across the 517 — capture-only (~$0) then enrich (**~$36 on Sonnet**)
+- [ ] WordPress import → website sermon library (first public deliverable)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 
 ## Key decisions

@@ -1,0 +1,326 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eglisebonnenouvelle.com/schemas/sermon.json",
+  "title": "Sermothèque EBN — canonical sermon record",
+  "type": "object",
+  "required": [
+    "id",
+    "source",
+    "raw_title",
+    "title",
+    "language",
+    "date",
+    "audio_duration",
+    "video_duration",
+    "speaker",
+    "speaker_provenance",
+    "series_id",
+    "series_name",
+    "series_part",
+    "series_order",
+    "scripture_osis",
+    "scripture_display",
+    "scripture_book",
+    "scripture_chapter",
+    "scripture_confident",
+    "kind",
+    "is_conference",
+    "media",
+    "youtube_match",
+    "translation_candidates",
+    "topics",
+    "summary",
+    "transcript_ref"
+  ],
+  "properties": {
+    "id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "raw_title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "title": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "language": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "date": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "audio_duration": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "video_duration": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "speaker": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "speaker_provenance": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "series_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "series_name": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "series_part": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "series_order": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "scripture_osis": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scripture_display": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scripture_book": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scripture_chapter": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "scripture_confident": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "kind": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "is_conference": {
+      "type": [
+        "boolean",
+        "null"
+      ]
+    },
+    "media": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "youtube_match": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "translation_candidates": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ]
+      }
+    },
+    "topics": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "summary": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "transcript_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "description": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "invitation": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "key_points": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "chapters": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ]
+      }
+    },
+    "references": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "key_quotes": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "object",
+          "null"
+        ]
+      }
+    },
+    "questions": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "primary_scripture": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "scripture_refs": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
+    "series_hint": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "raw_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "captions_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "segments_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
