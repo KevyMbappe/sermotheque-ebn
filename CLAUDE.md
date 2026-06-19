@@ -93,6 +93,8 @@ cp .env.example .env        # then put your ANTHROPIC_API_KEY in .env
 # the catalog-wide pass (resumable, logfile, live cost — the real backfill):
 ./.venv/bin/python pipeline/run_enrichment.py --source soundcloud   # 239 SC spine, ~16h, ~$15
 ./.venv/bin/python pipeline/run_enrichment.py --source all --limit 3 # smoke test first
+# capture-only (the irreversible one-shot, $0 API): transcribe + voiceprint, enrich later from disk
+./.venv/bin/python pipeline/run_enrichment.py --source all --no-enrich   # bank transcripts+voiceprints (#52)
 ```
 Everything the pipeline needs lives **inside the project** (never `/tmp`):
 - **`.venv/`** (gitignored) — yt-dlp ≥ 2026.x, mlx-whisper, anthropic (see `requirements.txt`). `transcribe.py` defaults to `.venv/bin/*` (override via `SERMO_YTDLP` / `SERMO_MLX_WHISPER`).

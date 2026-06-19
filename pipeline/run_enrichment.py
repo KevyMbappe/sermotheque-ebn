@@ -24,8 +24,8 @@ import sys
 import time
 from pathlib import Path
 
-from build_entry import build_entry, load_dotenv
-from transcribe import make_transcriber, YTDLP, CACHE
+from build_entry import build_entry, load_dotenv, entry_id, TRANSCRIPTS
+from transcribe import make_transcriber, detect_language, YTDLP, CACHE
 from enrich import make_enricher, cost_of
 from embed import make_embedder
 from enrichment_store import save_entry, load_store, writeback, STORE
@@ -33,6 +33,27 @@ from enrichment_store import save_entry, load_store, writeback, STORE
 ROOT = Path(__file__).resolve().parent.parent
 CAT = ROOT / "data" / "catalog" / "catalog.json"
 LOG = ROOT / "logs" / "enrichment.log"
+
+
+def make_cached_transcriber(real_transcribe, transcripts_dir=TRANSCRIPTS):
+    """Wrap the real (download+ASR) transcriber so a sermon that ALREADY has a committed
+    transcript is read from disk instead of re-ASR'd (#52). This is what makes the two-pass
+    split pay off: the capture pass banks transcripts+voiceprints once (the thermal one-shot),
+    and a later enrich pass reads them back for free — re-running enrichment never re-heats ASR.
+    Cache miss (no transcript on disk) → the real transcriber downloads, ASRs and embeds."""
+    def transcribe(source):
+        eid = entry_id(source)
+        txt = Path(transcripts_dir) / f"{eid}.txt"
+        if txt.exists():
+            text = txt.read_text(encoding="utf-8")
+            vtt = Path(transcripts_dir) / f"{eid}.vtt"
+            raw = Path(transcripts_dir) / f"{eid}.raw.txt"
+            return {"text": text,
+                    "vtt": vtt.read_text(encoding="utf-8") if vtt.exists() else "",
+                    "text_raw": raw.read_text(encoding="utf-8") if raw.exists() else text,
+                    "language": detect_language(text) or "fr", "segments": []}
+        return real_transcribe(source)
+    return transcribe
 SC_CHANNEL = "https://soundcloud.com/ebn-paris/tracks"
 SC_URL_CACHE = CACHE / "sc_urls.tsv"
 
@@ -95,6 +116,9 @@ def main():
     ap.add_argument("--model", default="claude-sonnet-4-6")
     ap.add_argument("--segments", action="store_true", help="also persist word-level .json")
     ap.add_argument("--no-voiceprint", action="store_true", help="skip the speaker-embedding capture (#46)")
+    ap.add_argument("--no-enrich", action="store_true",
+                    help="CAPTURE-ONLY pass (#52): transcribe + voiceprint, NO Claude call — banks the "
+                         "one-shot audio artifacts at zero API cost; enrich later from the committed transcripts")
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args()
     load_dotenv()
@@ -109,19 +133,29 @@ def main():
         logfh.write(msg + "\n"); logfh.flush()
 
     rows = json.loads(CAT.read_text(encoding="utf-8"))
-    done = set(load_store())
+    # "Done" differs by mode: capture-only is done once the transcript is on disk (the thermal
+    # one-shot); enrich is done once the sermon is in the enrichment store.
+    if args.no_enrich:
+        done = {r["id"] for r in rows if (TRANSCRIPTS / f"{r['id']}.txt").exists()}
+    else:
+        done = set(load_store())
     ids = [s.strip() for s in args.ids.split(",")] if args.ids else None
     targets = select_targets(rows, done, source=args.source, ids=ids, limit=args.limit)
     sc_map = soundcloud_url_map(verbose) if any((r.get("media") or {}).get("soundcloud_id")
                                                 for r in targets) else {}
 
-    log(f"=== enrichment pass: {len(targets)} sermons (source={args.source}, model={args.model}, "
+    mode = "CAPTURE-ONLY (transcribe + voiceprint, no enrich)" if args.no_enrich else "enrich"
+    log(f"=== {mode}: {len(targets)} sermons (source={args.source}, model={args.model}, "
         f"{len(done)} already done) ===")
     embedder = None if args.no_voiceprint else make_embedder()   # one VoiceEncoder for the whole run
-    transcribe = make_transcriber(verbose=verbose, word_timestamps=args.segments, embed=embedder)
+    real_transcribe = make_transcriber(verbose=verbose, word_timestamps=args.segments, embed=embedder)
+    transcribe = make_cached_transcriber(real_transcribe)        # reuse committed transcripts (no re-ASR)
     cost = {}                                          # reused each sermon; the enricher writes into it
-    enricher = make_enricher(model=args.model,         # build the Anthropic client ONCE, not per sermon
-                             on_usage=lambda i, o: cost.update(usd=cost_of(args.model, i, o), i=i, o=o))
+    if args.no_enrich:
+        enricher = lambda transcript, parsed: {}       # no Claude call; transcript+voiceprint still persist
+    else:
+        enricher = make_enricher(model=args.model,     # build the Anthropic client ONCE, not per sermon
+                                 on_usage=lambda i, o: cost.update(usd=cost_of(args.model, i, o), i=i, o=o))
     total, ok, t_all = 0.0, 0, time.monotonic()
 
     for n, row in enumerate(targets, 1):
@@ -137,14 +171,22 @@ def main():
                 persist_segments=args.segments)
         except Exception as e:
             log(f"      FAILED: {e!r}"); continue       # not stored → resume retries it next run
+        if args.no_enrich:                              # capture-only: transcript+voiceprint persisted by
+            ok += 1                                     # build_entry; deliberately NOT stored, so the later
+            log(f"      ✓ {time.monotonic()-t0:.0f}s · captured (no enrich)")  # enrich pass still processes it
+            continue
         save_entry(entry, model=args.model)        # durable now — resume skips it next time
         c = cost.get("usd", 0.0); total += c; ok += 1
         log(f"      ✓ {time.monotonic()-t0:.0f}s · {cost.get('i',0):,}+{cost.get('o',0)} tok · "
             f"${c:.4f} · running total ${total:.4f}")
 
-    merged = writeback()                            # reflect new enrichment in catalog.json/.csv
-    log(f"=== done: {ok}/{len(targets)} enriched · ${total:.4f} · {(time.monotonic()-t_all)/60:.0f} min "
-        f"· catalog now has {merged} enriched rows ===")
+    if args.no_enrich:
+        log(f"=== done: {ok}/{len(targets)} captured · {(time.monotonic()-t_all)/60:.0f} min · "
+            f"transcripts+voiceprints banked (enrich later from disk, no re-ASR) ===")
+    else:
+        merged = writeback()                        # reflect new enrichment in catalog.json/.csv
+        log(f"=== done: {ok}/{len(targets)} enriched · ${total:.4f} · {(time.monotonic()-t_all)/60:.0f} min "
+            f"· catalog now has {merged} enriched rows ===")
 
 
 if __name__ == "__main__":

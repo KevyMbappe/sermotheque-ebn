@@ -10676,15 +10676,13 @@
         "title": "Persévérer avec joie dans l'avancée du royaume"
       }
     ],
-    "questions": [
-      "En quoi votre manière personnelle de partager l'évangile ressemble-t-elle ou diffère-t-elle du modèle de Philippe : sensibilité au Saint-Esprit, relation réelle, proclamation de Christ selon les Écritures ?",
-      "Quels signes concrets d'une conversion authentique cherchez-vous — ou devriez-vous chercher — avant d'accompagner quelqu'un vers le baptême ?",
-      "Le prédicateur affirme que le baptême est l'officialisation publique d'une allégeance à Christ au sein de son église visible. Qu'est-ce que cela change dans votre compréhension de la membership d'église ?",
-      "Comment distinguer une évangélisation animée par un amour réel des perdus d'une évangélisation motivée par la culpabilité ou la méthode ?"
+    "references": [
+      "Lloyd-Jones",
+      "Billy Graham",
+      "David Hume",
+      "George Whitefield",
+      "Tinkler"
     ],
-    "primary_scripture": "Actes 8:26-40",
-    "raw_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.vtt",
     "key_quotes": [
       {
         "t": 1092,
@@ -10699,6 +10697,13 @@
         "text": "si ton intérêt pour Christ n'a pas duré une semaine je suis content de ne pas l'avoir fait car ce n'est pas signe d'une conversion authentique"
       }
     ],
+    "questions": [
+      "En quoi votre manière personnelle de partager l'évangile ressemble-t-elle ou diffère-t-elle du modèle de Philippe : sensibilité au Saint-Esprit, relation réelle, proclamation de Christ selon les Écritures ?",
+      "Quels signes concrets d'une conversion authentique cherchez-vous — ou devriez-vous chercher — avant d'accompagner quelqu'un vers le baptême ?",
+      "Le prédicateur affirme que le baptême est l'officialisation publique d'une allégeance à Christ au sein de son église visible. Qu'est-ce que cela change dans votre compréhension de la membership d'église ?",
+      "Comment distinguer une évangélisation animée par un amour réel des perdus d'une évangélisation motivée par la culpabilité ou la méthode ?"
+    ],
+    "primary_scripture": "Actes 8:26-40",
     "scripture_refs": [
       "Ésaïe 53",
       "Actes 1:8",
@@ -10711,14 +10716,9 @@
       "Galates (placarder Christ crucifié)",
       "Jean 6"
     ],
-    "references": [
-      "Lloyd-Jones",
-      "Billy Graham",
-      "David Hume",
-      "George Whitefield",
-      "Tinkler"
-    ],
-    "series_hint": "Série expositionnelle sur les Actes des Apôtres"
+    "series_hint": "Série expositionnelle sur les Actes des Apôtres",
+    "raw_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.raw.txt",
+    "captions_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.vtt"
   },
   {
     "id": "yt-HGLROgzi8Z0",
