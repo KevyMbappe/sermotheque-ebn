@@ -1,7 +1,7 @@
 # PRD — Église Bonne Nouvelle App Suite
 
 **Status:** Draft v2 — content-foundation-first reframe
-**Last updated:** 2026-06-13
+**Last updated:** 2026-07-30
 **Owner:** kevy@merca.team
 **Existing site:** https://www.eglisebonnenouvelle.com (WordPress, theme `EBN_Version_Finale`)
 **Sermon sources today:** YouTube (`@eglisebonnenouvelle855`) + SoundCloud
@@ -252,3 +252,7 @@ This is the heart of Phase 1: a repeatable per-sermon workflow that produces ric
 34. Counts: 300 cut-sermon videos, 102 service streams, 239 SoundCloud tracks (402 YT total). Assumption "few cut sermons" was wrong — the sermon archive is already large; service-mining is NOT needed for the catalog; backfill is a mostly-automated import.
 35. SoundCloud is the canonical catalog spine (74% structured titles vs 20% on YT); title-parsing gives a free first-pass of title/scripture/speaker; YT videos matched in by title/date.
 36. Content is NOT single-language — English conference sermons exist → add optional `language` field (default FR). (Softens #12.)
+
+**Consumption layer — first surfaces (2026-07-30):**
+37. **A static web app is the first consumption surface** (`apps/web-poc/`, WIP — full rationale in SERMOTHEQUE.md #54): React 18 + Vite 6, **build-time projection of the canonical catalog**, no API and no server. It is the first thing to *read* the dataset rather than build it, and it validates the "apps are replaceable windows" claim in practice. Scope is **elder demo + de-risking the WordPress sermon library** — it does not displace #2 (headless WP as CMS) or the WP-first web surface in #4. Its player abstraction (one `seekTo`/`onTime` interface over the SoundCloud Widget and YouTube IFrame APIs) is the first working sketch of what the apps will need.
+38. **UNRESOLVED — a native Xcode project sits at the repo root** (`Sermothèque EBN/`, an untouched default SwiftUI/SwiftData template). This **contradicts #9 (Expo dev builds)** and #5 (Android TV + Fire TV first, Apple TV fast-follow). No decision was recorded to move to native iOS, and the template contains no project code. Logged here so the contradiction isn't silently carried: either remove it, or write the decision that supersedes #9 and re-phase the surfaces in §3.
