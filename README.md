@@ -15,16 +15,20 @@ YouTube, SoundCloud, the website, and any future mobile/TV apps are all just *re
 
 ## Status
 
-🟢 **Planning complete · catalog built · enrichment validated at batch scale.** Catalog is data-driven and reproducible; a 30-sermon checkpoint (2026-06-17) confirmed cost and quality before the full pass.
+🟡 **Catalog built · backfill in flight (paused).** The pipeline is validated end to end and the catalog is reproducible from raw. The catalog-wide capture pass ran to ~27% and **stopped there**; resuming it is the critical path (see the roadmap).
 
 | | |
 |---|---|
 | Catalog size | **517** distinct sermons (239 SoundCloud + 278 YouTube-only) |
-| Enriched so far | **39 (~7.5%)** · voiceprints captured for **46** |
-| Measured enrichment cost | **$0.0705/sermon** (Sonnet 4.6) ⇒ **~$36 for all 517** |
-| Scripture coverage (OSIS) | **82%**, across 24 books of the Bible |
+| Transcribed (one-shot, audio) | **139/517 (~27%)** — `.txt` + `.vtt` committed · voiceprints for **217** |
+| Enriched (re-runnable, text) | **139/517 (~27%)** — 126 SoundCloud, 13 YouTube |
+| Speaker attribution | 100 `audio-fingerprint` · 45 `title` · 331 `default-rule` · 41 blank |
+| Measured enrichment cost | **$0.0705/sermon** (Sonnet 4.6) ⇒ **~$27 for the 378 remaining** |
+| Scripture coverage (OSIS) | **196/239 (82%)** on the SoundCloud spine · **215/517 (42%)** across the union, 28 books |
 | Series auto-clustered | **26** (e.g. Épître aux Galates ×71, aux Hébreux ×28) |
 | YouTube ↔ SoundCloud | largely **complementary** — corroborated matcher (decision #43) confirms 18 overlaps + 4 translations; true catalog = **union (517)** |
+
+> ⚠️ **Audit this before resuming the pass:** 79 ids hold a voiceprint but no committed transcript, though `build_entry` writes both from the same download. See `docs/SERMOTHEQUE.md` §7b (M5u).
 
 ## Architecture
 
@@ -56,7 +60,10 @@ pipeline/
   build.py             Run the whole pipeline in order (parse → match → fold → cluster)
 data/
   raw/                 Raw YouTube/SoundCloud inventories (via yt-dlp)
-  catalog/             The canonical dataset: catalog.json/.csv, series.json, youtube_orphans.json
+  catalog/             The canonical dataset: catalog.json/.csv, series.json, youtube_orphans.json,
+                       enrichment.json, voiceprints.json, speakers.json, transcripts/
+apps/
+  web-poc/             WIP — static React/Vite window onto the catalog (decision #54)
 ```
 
 ## Quickstart
@@ -88,7 +95,11 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **M5p–q — audio speaker attribution + series priors** (decisions #49–#52): all 5 preachers' voices learned (David, Loïc→Hébreux, Stephan→Ézéchiel, Nathanaël→Jacques, Christian→Jean); 100 rows `audio-fingerprint`; LOO 99% among the 5
 - [x] **M5s — capture/enrich decoupled** (decision #52): `--no-enrich` capture-only pass ($0 API) + transcript-cache-aware enrich (no re-ASR); rebuild preserves attribution
 - [x] **M5t — frozen record contract** (decision #53): `schema.py` + `sermon.schema.json` (WP-import contract), validated in `build.py`; **Sonnet-only locked**
-- [ ] Full pass across the 517 — capture-only (~$0) then enrich (**~$36 on Sonnet**)
+- [x] **M5u — capture batch started** (2026-06-20): 139 transcripts + 217 voiceprints banked at $0 API — **pass paused at ~27%**
+- [x] **M5v — enrich from disk** (2026-06-22): store 39 → **139 enriched**, no re-ASR, ~$7 on Sonnet
+- [ ] **Finish the capture pass** — the only irreversible work; resume `run_enrichment.py --no-enrich` (Apple Silicon required for mlx-whisper)
+- [ ] **Enrich the remaining 378** — from committed transcripts, no re-ASR (**~$27 on Sonnet**)
+- [ ] **POC web** (`apps/web-poc/`, WIP, decision #54) — static React/Vite window onto the catalog: elder demo + de-risks the WP library. Remaining: verify the sermon page on screen, the YouTube player path, and deploy (`docs/plans/WEB-POC-STATUS.md`)
 - [ ] WordPress import → website sermon library (first public deliverable)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 

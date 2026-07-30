@@ -58,8 +58,10 @@ dé-risquer la future bibliothèque WordPress.
    ⚠️ **Le repo est privé** : Pages sur repo privé demande un plan payant. Repli à trancher au
    moment du déploiement — rendre le repo public, ou pousser seulement `dist/` vers un petit
    repo public `sermotheque-poc`.
-6. **Protocole de maintenance** (voir `CLAUDE.md`) : entrée build-log `docs/SERMOTHEQUE.md`
-   (M6a), MAJ du statut dans `CLAUDE.md` + `README.md` une fois le POC livré.
+6. ~~**Protocole de maintenance**~~ — ✅ fait le 2026-07-30 : entrée build-log **M6a** +
+   **décision #54** dans `docs/SERMOTHEQUE.md`, statut/roadmap resynchronisés dans `CLAUDE.md`,
+   `README.md`, `docs/PRD.md` (#37) et `docs/SYNTHESE.md`. À re-toucher quand le POC sera
+   réellement livré (page sermon vérifiée + déployée).
 
 ## Pièges connus / décisions déjà prises
 
@@ -78,6 +80,9 @@ dé-risquer la future bibliothèque WordPress.
 - **Capture audio : en pause à 139/517 transcriptions** (+ 217 empreintes vocales), 0 échec.
   Reprendre avec `./.venv/bin/python pipeline/run_enrichment.py --source all --no-enrich`
   (résumable, $0 d'API, mais plusieurs heures de calcul/chauffe).
-- **Enrichissement : 139 fiches** ; les ~378 restantes coûteront **~25 $** en Sonnet une fois
-  capturées (lecture depuis les transcriptions commitées, sans re-ASR).
+- **Enrichissement : 139 fiches** ; les 378 restantes coûteront **~27 $** en Sonnet une fois
+  capturées (378 × 0,0705 $ ; lecture depuis les transcriptions commitées, sans re-ASR).
+- ⚠️ **79 identifiants ont une empreinte vocale mais aucune transcription commitée** (59 SC /
+  20 YT) alors que les deux sont écrites depuis le même téléchargement — à auditer avant de
+  relancer la capture, sinon ces 79 seront re-téléchargés et re-transcrits pour rien.
 - 88 tests passent (`python3 -m unittest discover -s tests`).

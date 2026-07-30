@@ -6,6 +6,7 @@ bold/italic/code/links. Renders UTF-8 (French accents) and emoji correctly.
 
 Usage:  python3 tools/md_to_pdf.py docs/SYNTHESE.md docs/SYNTHESE.pdf
 """
+import glob
 import html
 import re
 import subprocess
@@ -13,7 +14,25 @@ import sys
 import tempfile
 from pathlib import Path
 
-CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+def _find_chrome():
+    """First Chrome/Chromium we can find. Override with SERMO_CHROME."""
+    import os
+    import shutil
+
+    if env := os.environ.get("SERMO_CHROME"):
+        return env
+    candidates = [
+        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        "/Applications/Chromium.app/Contents/MacOS/Chromium",
+    ]
+    for name in ("google-chrome", "chromium", "chromium-browser"):
+        if p := shutil.which(name):
+            candidates.append(p)
+    candidates += sorted(glob.glob("/opt/pw-browsers/chromium-*/chrome-linux/chrome"))
+    for c in candidates:
+        if Path(c).exists():
+            return c
+    raise SystemExit("No Chrome/Chromium found — set SERMO_CHROME to its path.")
 
 CSS = """
 @page { size: A4; margin: 17mm 16mm; }
@@ -97,16 +116,22 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         hp = Path(tmp) / "doc.html"
         hp.write_text(htmlc, encoding="utf-8")
-        cmd = [CHROME, "--headless=new", "--disable-gpu", "--no-first-run",
+        cmd = [_find_chrome(), "--headless=new", "--disable-gpu", "--no-first-run",
                "--no-default-browser-check", "--disable-extensions", "--no-pdf-header-footer",
+               # Chromium refuses to start as root without this (Linux containers/CI).
+               "--no-sandbox",
                f"--user-data-dir={tmp}/profile", f"--print-to-pdf={dst}", f"file://{hp}"]
         # Headless Chrome sometimes writes the PDF but hangs on exit — cap it and move on.
+        # Stamp the target first so a stale file can't be mistaken for a fresh render.
+        before = dst.stat().st_mtime if dst.exists() else None
         try:
-            subprocess.run(cmd, capture_output=True, timeout=90)
+            proc = subprocess.run(cmd, capture_output=True, timeout=90)
         except subprocess.TimeoutExpired:
-            pass
-    if not dst.exists() or dst.stat().st_size == 0:
-        raise SystemExit("PDF was not produced")
+            proc = None
+    fresh = dst.exists() and dst.stat().st_size > 0 and dst.stat().st_mtime != before
+    if not fresh:
+        err = (proc.stderr.decode(errors="replace")[-500:] if proc and proc.stderr else "")
+        raise SystemExit(f"PDF was not produced (target unchanged). {err}")
     print(f"Wrote {dst} ({dst.stat().st_size // 1024} KB)")
 
 
