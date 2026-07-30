@@ -20,3 +20,9 @@ cache/
 *.mp3
 *.m4a
 *.wav
+
+# Réglages locaux de l'agent (launch.json est partagé, pas les préférences machine)
+.claude/settings.local.json
+.claude/worktrees/
+# État d'interface Xcode (binaire, propre à chaque machine)
+**/xcuserdata/
