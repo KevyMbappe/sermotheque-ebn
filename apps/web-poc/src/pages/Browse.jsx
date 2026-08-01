@@ -2,6 +2,7 @@ import { useState } from "react";
 import SermonCard from "../components/SermonCard.jsx";
 import { bookLabel, bookRank, countBy } from "../lib/data.js";
 import { href } from "../lib/router.js";
+import SearchBox, { matches } from "../components/SearchBox.jsx";
 import { buildPassageIndex } from "../lib/passages.js";
 
 /**
@@ -18,16 +19,20 @@ const MODES = {
  * qui n'apparaissaient nulle part.
  */
 function BrowseBooks({ sermons }) {
-  const index = buildPassageIndex(sermons).sort((a, b) => bookRank(a.book) - bookRank(b.book));
-  const preachedCount = index.filter((b) => b.preached.length > 0).length;
+  const [q, setQ] = useState("");
+  const all = buildPassageIndex(sermons).sort((a, b) => bookRank(a.book) - bookRank(b.book));
+  const index = all.filter((b) => matches(q, bookLabel(b.book), b.book));
+  const preachedCount = all.filter((b) => b.preached.length > 0).length;
 
   return (
     <>
       <h1 className="page-title">Parcourir par livre biblique</h1>
       <p className="results-count">
-        <strong>{index.length}</strong> livres touchés — {preachedCount} exposés dans un sermon,
+        <strong>{all.length}</strong> livres touchés — {preachedCount} exposés dans un sermon,
         les autres cités à l'intérieur des sermons.
       </p>
+      <SearchBox value={q} onChange={setQ} placeholder="Chercher un livre biblique…"
+                 label="Chercher un livre" count={index.length} />
       <ul className="book-grid">
         {index.map((b) => (
           <li key={b.book}>
@@ -47,14 +52,21 @@ function BrowseBooks({ sermons }) {
 
 export default function Browse({ sermons, mode }) {
   if (mode === "book") return <BrowseBooks sermons={sermons} />;
-  const cfg = MODES[mode];
+  return <BrowseGroups sermons={sermons} cfg={MODES[mode]} />;
+}
+
+function BrowseGroups({ sermons, cfg }) {
   const [open, setOpen] = useState(null);
-  const groups = countBy(sermons, cfg.key, cfg.rank ? { rank: cfg.rank } : undefined);
+  const [q, setQ] = useState("");
+  const all = countBy(sermons, cfg.key, cfg.rank ? { rank: cfg.rank } : undefined);
+  const groups = all.filter((g) => matches(q, cfg.label(g.value)));
 
   return (
     <>
       <h1 className="page-title">{cfg.title}</h1>
-      <p className="results-count">{groups.length} entrées</p>
+      <p className="results-count">{all.length} entrées</p>
+      <SearchBox value={q} onChange={setQ} placeholder="Chercher une série…"
+                 label="Chercher une série" count={groups.length} />
 
       <ul className="groups">
         {groups.map(({ value, count }) => {

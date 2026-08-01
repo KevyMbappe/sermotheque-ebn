@@ -184,6 +184,9 @@ button { font: inherit; cursor: pointer; }
 .chip-link:hover { border-color: var(--accent); color: var(--accent); }
 .refs-verbatim { margin-top: .5rem; font-size: .8rem; line-height: 1.5; }
 
+.searchbox { margin-bottom: 1rem; }
+.searchbox .results-count { margin: .4rem 0 0; }
+
 .quote-actions { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
 .chapter-share { display: block; padding: 0 0 .4rem 3.4rem; }
 .chapter-share button { font-size: .78rem; opacity: .75; }

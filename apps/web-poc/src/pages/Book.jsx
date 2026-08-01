@@ -1,4 +1,6 @@
+import { useState } from "react";
 import SermonCard from "../components/SermonCard.jsx";
+import SearchBox, { matches } from "../components/SearchBox.jsx";
 import { bookLabel } from "../lib/data.js";
 import { href } from "../lib/router.js";
 import { buildPassageIndex } from "../lib/passages.js";
@@ -9,6 +11,7 @@ import { buildPassageIndex } from "../lib/passages.js";
  * c'est elle qui fait passer le catalogue de 28 à 54 livres consultables.
  */
 export default function Book({ sermons, book }) {
+  const [q, setQ] = useState("");
   const entry = buildPassageIndex(sermons).find((b) => b.book === book);
   const label = bookLabel(book);
 
@@ -28,8 +31,28 @@ export default function Book({ sermons, book }) {
 
   // Les allusions au livre entier (chapitre 0) sont réelles mais moins précises :
   // on les garde à part plutôt que de les faire passer pour un chapitre.
-  const chapters = entry.chapters.filter((c) => c.chapter > 0);
-  const wholeBook = entry.chapters.find((c) => c.chapter === 0);
+  const wholeBookRaw = entry.chapters.find((c) => c.chapter === 0);
+
+  // La recherche porte sur TOUT ce que la page liste — la grille, l'index chapitre par
+  // chapitre ET les mentions sans chapitre. Oublier une section la laisserait affichée
+  // pendant une recherche, et fausserait le compte.
+  const keep = (s) => matches(q, s.title, s.description, s.speaker, s.scripture_display);
+  const preached = entry.preached.filter(keep);
+  const chapters = entry.chapters
+    .filter((c) => c.chapter > 0)
+    .map((c) => ({ ...c, preached: c.preached.filter(keep), cited: c.cited.filter(keep) }))
+    .filter((c) => c.preached.length || c.cited.length);
+  const wholeBook = wholeBookRaw
+    ? { ...wholeBookRaw, preached: wholeBookRaw.preached.filter(keep), cited: wholeBookRaw.cited.filter(keep) }
+    : null;
+
+  // Un sermon peut figurer à la fois dans la grille et dans l'index des chapitres :
+  // on compte des SERMONS distincts, pas des lignes affichées.
+  const hits = new Set([
+    ...preached.map((s) => s.id),
+    ...chapters.flatMap((c) => [...c.preached, ...c.cited].map((s) => s.id)),
+    ...(wholeBook ? [...wholeBook.preached, ...wholeBook.cited].map((s) => s.id) : []),
+  ]).size;
 
   return (
     <>
@@ -45,11 +68,16 @@ export default function Book({ sermons, book }) {
         )}
       </p>
 
-      {entry.preached.length > 0 && (
+      {entry.preached.length + entry.cited.length > 4 && (
+        <SearchBox value={q} onChange={setQ} placeholder="Chercher dans ces sermons…"
+                   label="Chercher dans ces sermons" count={hits} />
+      )}
+
+      {preached.length > 0 && (
         <section className="passage-block">
           <h2>Sermons sur {label}</h2>
           <div className="grid">
-            {entry.preached.map((s) => <SermonCard key={s.id} sermon={s} />)}
+            {preached.map((s) => <SermonCard key={s.id} sermon={s} />)}
           </div>
         </section>
       )}
