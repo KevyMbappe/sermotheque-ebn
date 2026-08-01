@@ -210,6 +210,56 @@ où les deux clés coïncident.
 Mesuré : après sélection de « Galates », les livres restent à **23/23**, les séries tombent à
 3 et les thèmes à 33 ; 0 option désactivée.
 
+## 🆕 Restructuration de la fiche sermon — 2026-08-01
+
+Retours d'usage : « trop de blocs texte, ça fait peur » et « la transcription est trop loin
+du lecteur ». Les deux disent la même chose : la page affichait **tout ce que le pipeline
+avait produit**, empilé dans l'ordre où c'était commode à rendre. Un inventaire, pas une
+hiérarchie. Elle mélangeait aussi deux usages qui se disputaient l'écran — **écouter**
+(lecteur, chapitres, transcription) et **étudier** (résumé, points clés, citations, questions).
+
+- **Ordre revu** : lecteur → chapitres → transcription → résumé → le reste. Chapitres et
+  transcription sont désormais collés au lecteur : ils en font partie.
+- **Tout est replié sauf le résumé** (`components/Section.jsx`) : chaque bloc annonce son
+  titre et son nombre d'éléments, et s'ouvre d'un clic. Rien n'est supprimé.
+- **L'invitation a quitté l'en-tête.** 8 lignes en italique séparaient le titre du lecteur :
+  sur mobile, le lecteur commençait à ~1 250 px. Elle ouvre maintenant le résumé, et
+  **le lecteur commence à 414 px** — visible sans défiler.
+- **Barre de lecture collante** (`components/StickyPlayer.jsx`) : ⏮10 s, lecture/pause,
+  ⏭15 s, titre, position, retour au lecteur.
+
+### Choix de conception de la barre collante
+
+- **On ne duplique pas le lecteur** : un second iframe voudrait dire deux flux à synchroniser.
+  La barre pilote celui qui joue déjà, via `lib/player.js` (étendu avec `toggle()` et
+  `nudge(±s)`).
+- **Ancrée en bas**, pas sous l'en-tête : c'est là qu'arrive le pouce, et ça n'empile pas deux
+  bandeaux collants.
+- **Elle n'apparaît que si le lecteur est hors écran** (IntersectionObserver) et **jamais si le
+  pilote n'a pas pu se brancher** — un bouton pause qui ne met rien en pause serait pire que
+  pas de bouton.
+- Sous 560 px les éléments secondaires s'effacent ; sous 380 px il ne reste que les commandes.
+
+### Vérification : il a fallu simuler le SDK
+
+Le conteneur bloque `w.soundcloud.com`, donc le pilote ne se branche jamais et la barre ne
+s'affiche pas — exactement la dégradation voulue, mais elle empêche de tester. Le test sert
+donc un **faux SDK SoundCloud** via l'interception réseau de Playwright, ce qui permet de
+vérifier pour de vrai : apparition au défilement, bascule lecture/pause, et `↺10` depuis 60 s
+qui ramène bien à 50 s.
+⚠️ Piège : Playwright donne la priorité à la route enregistrée **en dernier**. La règle large
+(`player/**`) doit venir AVANT la règle précise (`player/api.js`), sinon l'iframe factice sert
+aussi le script et le stub ne se charge jamais.
+
+### Deux constats du même test
+
+- Sur desktop, la barre ne se déclenche plus au bas de page : **la fiche ne fait plus que
+  1 601 px**, le lecteur reste visible. Ce n'est pas un défaut, c'est la restructuration qui
+  opère.
+- Replier les chapitres a rendu leurs boutons « Partager » invisibles (9 → 0). Un **partage du
+  sermon entier** a donc été ajouté dans l'en-tête ; le partage horodaté reste dans les
+  chapitres et les citations, là où l'instant a un sens.
+
 ## ⏳ Reste à faire
 
 1. ~~**Page sermon**~~ — ✅ 2026-08-01. Rendu vérifié en émulation (en-tête, invitation, résumé,

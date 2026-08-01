@@ -340,7 +340,7 @@ button { font: inherit; cursor: pointer; }
 /* ---------- fiche de groupe de maison (impression) ---------- */
 
 .print-only { display: none; }
-.sermon-actions { margin: .8rem 0 0; }
+.sermon-actions { margin: .8rem 0 0; display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
 
 /**
  * Le sermon a déjà tout ce qu'il faut pour un groupe de maison : résumé, points clés,
@@ -382,4 +382,102 @@ button { font: inherit; cursor: pointer; }
 
   a { text-decoration: none; color: #000; }
   .chip { border: .5pt solid #bbb; }
+}
+
+/* ---------- blocs repliables ---------- */
+
+.section h2 { margin: 0; }
+.section-toggle {
+  display: flex; align-items: center; gap: .55rem; width: 100%;
+  padding: 0; border: 0; background: none; text-align: left;
+  font: inherit; color: inherit;
+}
+.section-caret {
+  color: var(--accent); font-size: .8em; width: 1em;
+  transition: transform .15s ease;
+}
+.section-title { flex: 1; }
+.section-count {
+  font-family: ui-sans-serif, system-ui, sans-serif; font-size: .7rem; font-weight: 600;
+  padding: .1rem .45rem; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent);
+}
+.section-toggle:hover .section-title { color: var(--accent); }
+.section.is-closed .section-body { display: none; }
+.section.is-open .section-body { margin-top: .8rem; }
+/* Fermé, le bloc n'est plus qu'une ligne : c'est ce qui fait retomber la page de
+   « mur de texte » à « sommaire qu'on déplie ». */
+.section.is-closed { padding-top: .85rem; padding-bottom: .85rem; }
+
+/* ---------- barre de lecture collante ---------- */
+
+.sticky-player {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  box-shadow: 0 -2px 14px rgba(28, 26, 23, .10);
+  /* Se glisse au-dessus de la barre système sur iOS. */
+  padding-bottom: env(safe-area-inset-bottom, 0);
+  animation: sp-in .18s ease-out;
+}
+@keyframes sp-in { from { transform: translateY(100%); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .sticky-player { animation: none; } }
+
+.sticky-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; gap: .4rem;
+  padding: .55rem clamp(.6rem, 3vw, 2rem);
+}
+.sp-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .1rem;
+  min-width: 40px; height: 40px; padding: 0 .5rem;
+  border: 1px solid var(--line); border-radius: 10px;
+  background: var(--bg); color: var(--ink);
+  font-family: ui-sans-serif, system-ui, sans-serif; font-size: .95rem;
+}
+.sp-btn:hover { border-color: var(--accent); color: var(--accent); }
+.sp-btn-num { font-size: .62rem; font-weight: 700; letter-spacing: -.02em; }
+.sp-play {
+  background: var(--accent); border-color: var(--accent); color: #fff;
+  min-width: 46px; height: 46px; font-size: 1rem;
+}
+.sp-play:hover { color: #fff; filter: brightness(1.07); }
+
+.sp-meta {
+  flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.25;
+  padding-left: .3rem;
+}
+.sp-title {
+  font-size: .88rem; font-weight: 600;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.sp-scripture {
+  font-family: ui-sans-serif, system-ui, sans-serif; font-size: .72rem; color: var(--accent);
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+.sp-time {
+  font-family: ui-monospace, monospace; font-size: .8rem; color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.sp-up { border-style: dashed; }
+
+/* La barre masquerait la fin de la page : on rend la hauteur au corps. */
+body.has-sticky-player .site-footer { padding-bottom: 5.5rem; }
+
+/* Sous 560px, le titre et le retour au lecteur cèdent la place aux commandes :
+   ce qu'on vient chercher ici, c'est pause et « reviens dix secondes ». */
+@media (max-width: 560px) {
+  .sp-scripture, .sp-up { display: none; }
+  .sp-time { display: none; }
+}
+@media (max-width: 380px) {
+  .sp-meta { display: none; }
+  .sticky-inner { justify-content: center; gap: .6rem; }
+}
+
+/* À l'impression, tout s'ouvre : la fiche de groupe doit tout montrer. */
+@media print {
+  .section.is-closed .section-body { display: block !important; }
+  .section-caret, .section-count { display: none !important; }
+  .sticky-player { display: none !important; }
 }
