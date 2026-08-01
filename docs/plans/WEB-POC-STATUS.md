@@ -45,6 +45,34 @@ dé-risquer la future bibliothèque WordPress.
 - **Vérifié** : `npm install` OK (39 paquets), serveur de dev OK, **accueil rendu correctement
   à l'écran** (capture d'écran : 131 prédications, filtres, cartes complètes).
 
+## 🆕 Ajouté le 2026-08-01 — partage et aperçus de lien
+
+- **Routage par CHEMIN au lieu de `#`** (`src/lib/router.js`). Raison : les gens partagent
+  en copiant l'URL de leur barre d'adresse, et tout ce qui suit un `#` n'est jamais envoyé
+  au serveur — WhatsApp, Facebook et les moteurs voyaient donc *tous* les liens comme la
+  même page d'accueil. Le routeur intercepte les clics internes (navigation instantanée,
+  sans rechargement), respecte le clic-milieu / ⌘-clic, et gère le bouton Retour.
+- **Une page HTML pré-rendue par prédication** (`scripts/prerender.mjs`, lancé après
+  `vite build`) : 131 pages sermon + 3 pages de navigation + accueil + `404.html`. Chacune
+  porte ses propres `<title>`, `description`, Open Graph et `canonical`, plus un `<noscript>`
+  lisible sans JavaScript. Le titre retombe sur la seule accroche quand « titre — prédicateur ·
+  passage » dépasse 95 caractères, pour ne pas être tronqué n'importe où par les réseaux.
+- **Liens horodatés `?t=754`** : à l'arrivée le lecteur démarre à cet instant ; inversement,
+  tout saut de chapitre ou de citation met l'URL à jour via `replaceState`, donc **l'adresse
+  affichée pointe toujours sur le moment écouté**.
+- **Bouton « Partager » sur chaque chapitre et chaque citation** (`components/ShareAt.jsx`) :
+  `navigator.share` sur mobile, presse-papier sinon, et affichage de l'URL en dernier recours
+  (le presse-papier est refusé hors HTTPS). ⚠️ Le partage **ne dépend pas du lecteur** : les
+  horodatages viennent des données, donc un lien reste copiable même si le SDK SoundCloud
+  n'a pas chargé.
+
+**Vérifié** (Playwright) : accès direct à une page pré-rendue, `?t=` lu, clic carte →
+`pushState` sans rechargement, bouton Retour, navigation d'en-tête, 9 boutons de partage sur
+la fiche témoin, 0 erreur JS, et toujours aucun débordement horizontal de 320 à 768 px.
+
+**Limite connue** : pas de vignette (`og:image`) — les aperçus affichent titre + description,
+sans image. En générer une par prédication demanderait un rendu graphique au build.
+
 ## ⏳ Reste à faire
 
 1. ~~**Page sermon**~~ — ✅ 2026-08-01. Rendu vérifié en émulation (en-tête, invitation, résumé,

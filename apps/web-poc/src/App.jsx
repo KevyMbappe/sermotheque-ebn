@@ -1,29 +1,25 @@
 import { useEffect, useState } from "react";
 import { loadCatalog } from "./lib/data.js";
+import { currentPath, href, startRouter, subscribe } from "./lib/router.js";
 import Home from "./pages/Home.jsx";
 import Sermon from "./pages/Sermon.jsx";
 import Browse from "./pages/Browse.jsx";
 
 /**
- * Routing par hash — GitHub Pages sert des fichiers statiques : pas de réécriture serveur,
- * donc `#/sermon/sc-123` est la façon la plus robuste d'avoir des URLs partageables.
- * Routes : #/ · #/sermon/:id · #/livres · #/series · #/predicateurs
+ * Routage par chemin — voir lib/router.js pour le pourquoi (partage et aperçus de lien).
+ * Routes : / · /sermon/:id · /livres · /series · /predicateurs
  */
-function useHashRoute() {
-  const [hash, setHash] = useState(() => window.location.hash.slice(1) || "/");
+function useRoute() {
+  const [path, setPath] = useState(currentPath);
   useEffect(() => {
-    const on = () => {
-      setHash(window.location.hash.slice(1) || "/");
-      window.scrollTo(0, 0);
-    };
-    window.addEventListener("hashchange", on);
-    return () => window.removeEventListener("hashchange", on);
+    startRouter();
+    return subscribe(() => setPath(currentPath()));
   }, []);
-  return hash;
+  return path;
 }
 
 export default function App() {
-  const route = useHashRoute();
+  const route = useRoute();
   const [state, setState] = useState({ loading: true, sermons: [], error: null });
 
   useEffect(() => {
@@ -37,7 +33,7 @@ export default function App() {
   return (
     <>
       <header className="site-header">
-        <a className="brand" href="#/">
+        <a className="brand" href={href("/")}>
           <span className="brand-mark">EBN</span>
           <span>
             <strong>Sermothèque</strong>
@@ -45,9 +41,9 @@ export default function App() {
           </span>
         </a>
         <nav className="site-nav">
-          <a href="#/livres">Livres</a>
-          <a href="#/series">Séries</a>
-          <a href="#/predicateurs">Prédicateurs</a>
+          <a href={href("/livres")}>Livres</a>
+          <a href={href("/series")}>Séries</a>
+          <a href={href("/predicateurs")}>Prédicateurs</a>
         </nav>
       </header>
 
@@ -82,7 +78,7 @@ function Route({ route, sermons }) {
       <Sermon sermon={sermon} all={sermons} />
     ) : (
       <p className="state">
-        Prédication introuvable. <a href="#/">Retour au catalogue</a>
+        Prédication introuvable. <a href={href("/")}>Retour au catalogue</a>
       </p>
     );
   }
