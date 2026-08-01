@@ -50,12 +50,14 @@ Le travail se fait en deux temps, volontairement séparés : **(1)** écouter l'
 | Phase | Objectif | État |
 |---|---|---|
 | **1 — Fondation du catalogue** | Base de données unifiée et enrichie | **En cours — 27 %** |
-| **2 — Publication web** | Section « Prédications » sur le site : recherche par livre, série, prédicateur | Maquette fonctionnelle |
+| **2 — Publication web** | Section « Prédications » sur le site : recherche par livre, série, prédicateur | **Maquette en ligne** |
 | **3 — Applications** | Mobile + TV : un lieu dédié pour écouter/regarder, sans la distraction de YouTube | Ultérieur |
 
 **Détail Phase 1, ce qu'il reste :** terminer la transcription des **378 prédications** restantes, puis leur enrichissement (≈ 27 $). Le contenu YouTube (conférences) est déjà intégré au catalogue.
 
-**Détail Phase 2 :** une **maquette de site** est en cours (navigation par série / livre / prédicateur, lecteur audio, texte de la prédication défilant en synchronisation avec l'audio, saut direct à un point du message). Elle sert à **montrer concrètement aux anciens ce que le catalogue permet**, avant d'intégrer la bibliothèque dans le site WordPress existant. Elle lit directement le catalogue : elle se remplira donc d'elle-même à mesure que la Phase 1 avance.
+**🌐 La maquette est consultable dès maintenant : https://kevymbappe.github.io/sermotheque-ebn/** — 131 prédications, sur ordinateur comme sur téléphone. Elle se remplira d'elle-même au fur et à mesure : chaque nouvelle prédication traitée y apparaît sans aucune intervention.
+
+**Détail Phase 2 :** cette **maquette de site** (navigation par série / livre / prédicateur, lecteur audio, texte de la prédication défilant en synchronisation avec l'audio, saut direct à un point du message). Elle sert à **montrer concrètement aux anciens ce que le catalogue permet**, avant d'intégrer la bibliothèque dans le site WordPress existant. Elle lit directement le catalogue : elle se remplira donc d'elle-même à mesure que la Phase 1 avance.
 
 ## Ce dont nous avons besoin
 
