@@ -45,14 +45,13 @@ dé-risquer la future bibliothèque WordPress.
 
 ## ⏳ Reste à faire
 
-1. **Page sermon — rendu vérifié le 2026-08-01, interaction NON vérifiée.** `#/sermon/sc-2338530545`
-   s'affiche entièrement (en-tête, invitation, résumé, points clés, chapitres, transcription).
-   Mais **le saut au timestamp reste à valider sur un vrai réseau** : le conteneur de dev bloque
-   les domaines externes, donc le SDK SoundCloud ne se charge jamais. La **dégradation gracieuse
-   a bien fonctionné** (message + lien « Ouvrir sur SoundCloud ») — première preuve live de ce
-   repli. ⚠️ C'est toujours LE point à valider, et il faut une machine avec accès réseau.
+1. ~~**Page sermon**~~ — ✅ 2026-08-01. Rendu vérifié en émulation (en-tête, invitation, résumé,
+   points clés, chapitres, transcription), et **le saut au timestamp a été confirmé sur desktop
+   par l'auteur** : clic sur un chapitre → le lecteur saute au bon endroit. La dégradation
+   gracieuse a aussi été observée (conteneur sans accès à SoundCloud : message + lien direct).
+   C'était LE point à valider — il l'est.
 2. **Vérifier un sermon YouTube** (ex. `#/sermon/yt-IqNmh_XGULE`) — l'API IFrame est un chemin
-   de code distinct de SoundCloud, jamais exécuté encore (même blocage réseau ici).
+   de code distinct de SoundCloud, encore jamais exercé (le conteneur de dev bloque YouTube).
 3. **Vérifier un sermon EN** (badge langue ; l'enrichissement reste en français, c'est voulu).
 4. ~~**`npm run build`**~~ — ✅ 2026-08-01 : premier build réel (38 modules, 164 Ko JS / 53 Ko
    gzip), servi par `vite preview`, routing par hash OK.
@@ -67,7 +66,7 @@ dé-risquer la future bibliothèque WordPress.
    en-tête sans `flex-wrap`, enfants de `.filters` à `min-width:auto`, `.grid` en
    `minmax(280px,…)`. Toutes les largeurs sont propres. À noter : le CSS reste **fluide mais
    pas mobile-first** (base desktop + un point de rupture `max-width: 820px`).
-6. ~~**Protocole de maintenance**~~ — ✅ fait le 2026-07-30 : entrée build-log **M6a** +
+7. ~~**Protocole de maintenance**~~ — ✅ fait le 2026-07-30 : entrée build-log **M6a** +
    **décision #54** dans `docs/SERMOTHEQUE.md`, statut/roadmap resynchronisés dans `CLAUDE.md`,
    `README.md`, `docs/PRD.md` (#37) et `docs/SYNTHESE.md`. À re-toucher quand le POC sera
    réellement livré (page sermon vérifiée + déployée).

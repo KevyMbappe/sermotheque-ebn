@@ -96,10 +96,12 @@ button { font: inherit; cursor: pointer; }
   padding: .5rem .7rem; border: 1px solid var(--line); border-radius: 8px;
   background: var(--surface); color: var(--ink);
   font-family: ui-sans-serif, system-ui, sans-serif; font-size: .88rem;
-  /* un <select> a une largeur intrinsèque = son option la plus longue ("Épître aux
-     Colossiens…") : sans min-width:0 il refuse de rétrécir et pousse la page. */
-  min-width: 0; max-width: 100%; flex: 1 1 12rem;
+  min-width: 0; max-width: 100%;
 }
+/* Seuls les <select> s'étirent : leur largeur intrinsèque vaut leur option la plus longue
+   ("Épître aux Colossiens…"), donc sans base flex + min-width:0 ils poussent la page.
+   Le bouton « Réinitialiser » garde sa largeur naturelle. */
+.selects select { flex: 1 1 12rem; }
 .clear { color: var(--accent); border-color: var(--accent); background: transparent; }
 
 .results-count {
@@ -140,6 +142,9 @@ button { font: inherit; cursor: pointer; }
 }
 .tag-lang, .tag-conf { background: transparent; border: 1px solid var(--line); color: var(--muted); }
 .voice-badge { color: var(--accent); margin-left: .3rem; font-size: .9em; }
+/* Attribution supposée : visible sans crier, et surtout jamais confondue avec le ♪ vérifié. */
+.guess-badge { color: var(--muted); margin-left: .3rem; font-size: .85em; cursor: help; }
+.guess-note { color: var(--muted); font-size: .85em; font-style: italic; cursor: help; }
 
 .more {
   display: block; margin: 1.5rem auto 0; padding: .6rem 1.2rem;

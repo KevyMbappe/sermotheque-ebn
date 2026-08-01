@@ -37,7 +37,7 @@ Les prédications sont aujourd'hui **dispersées** sur YouTube et SoundCloud, sa
 - ✅ **Catalogue unifié des 517 prédications**, sous un format unique et figé.
 - ✅ **Transcription automatique + enrichissement par IA validés et lancés :** à ce jour **139 prédications sur 517 (27 %)** sont transcrites (avec minutage, pour lire le texte synchronisé avec l'audio) **et enrichies** (résumé, plan, sujets, citations, versets cités dans le corps du message). Coût mesuré : **7 centimes de dollar par prédication** — soit **environ 27 $ pour terminer les 378 restantes**.
 - ✅ **Reconnaissance du prédicateur à la voix :** une « empreinte vocale » a été calculée pour **217 prédications**, ce qui permet d'attribuer automatiquement un message à l'un des 5 prédicateurs réguliers (David, Loïc, Stephan, Nathanaël, Christian) même quand le titre ne le mentionne pas — avec 99 % de justesse sur les tests. **100 prédications** ont ainsi été attribuées par la voix.
-- ✅ Tout est **versionné et sauvegardé** (dépôt privé) : durable, et reprenable par n'importe qui, à tout moment.
+- ✅ Tout est **versionné et sauvegardé** : durable, et reprenable par n'importe qui, à tout moment. Le dépôt est **public** depuis le 1er août 2026 — les prédications étant déjà publiques sur YouTube et SoundCloud, cela ne dévoile rien de nouveau, et cela rend l'hébergement du site gratuit.
 
 ## Où en sommes-nous exactement
 

@@ -39,6 +39,15 @@ export default function Sermon({ sermon: s, all }) {
           {s.speaker_provenance === "audio-fingerprint" && (
             <span className="voice-badge" title="Identifié par empreinte vocale">♪</span>
           )}
+          {/* Sur la fiche, on a la place de l'écrire en toutes lettres plutôt qu'en badge. */}
+          {s.speaker_provenance === "default-rule" && (
+            <span
+              className="guess-note"
+              title="Le prédicateur n'est pas nommé dans le titre et sa voix n'a pas encore été analysée."
+            >
+              {" "}(attribution par défaut, à confirmer)
+            </span>
+          )}
           {s.date && <> · {fmtDate(s.date)}</>}
           {s.duration ? <> · {fmtDuration(s.duration)}</> : null}
           {s.series_name && (

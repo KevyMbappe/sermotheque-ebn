@@ -19,6 +19,16 @@ export default function SermonCard({ sermon: s }) {
           {s.speaker_provenance === "audio-fingerprint" && (
             <span className="voice-badge" title="Identifié par empreinte vocale">♪</span>
           )}
+          {/* À l'inverse, `default-rule` est une SUPPOSITION (« si personne n'est nommé dans le
+              titre, c'est le pasteur »). On crédite une personne réelle : il faut le dire. */}
+          {s.speaker_provenance === "default-rule" && (
+            <span
+              className="guess-badge"
+              title="Attribution par défaut, non confirmée : le prédicateur n'est pas nommé dans le titre et sa voix n'a pas encore été analysée."
+            >
+              ?
+            </span>
+          )}
         </span>
         {s.series_name && <span className="dot">·</span>}
         {s.series_name && <span className="series">{s.series_name}</span>}

@@ -29,7 +29,7 @@ Script Node `apps/web-poc/scripts/build-data.mjs` :
 ### 3. Déploiement GitHub Pages
 - Workflow `.github/workflows/deploy-poc.yml` : sur push de `apps/web-poc/**` ou `data/catalog/**` → build Vite → deploy `actions/deploy-pages`.
 - `vite.config.js` avec `base: '/sermotheque-ebn/'` (nom du repo).
-- ⚠️ **Repo privé** : Pages sur repo privé exige un plan GitHub payant. Si bloqué au déploiement : repli = rendre le repo public **ou** publier le build seul dans un petit repo public `sermotheque-poc` (le workflow pousse `dist/`). À trancher au moment du premier deploy, pas avant.
+- ~~⚠️ **Repo privé** : Pages exige un plan payant…~~ **Caduc (2026-08-01, décision #55)** : le dépôt est passé **public**, donc Pages est gratuit et le repli (`dist/` vers un repo public séparé) est sans objet. Workflow écrit ; il se déclenche depuis `main`.
 
 ## Fichiers créés (tous nouveaux, rien de modifié hors workflow)
 ```
