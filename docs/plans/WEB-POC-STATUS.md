@@ -1,4 +1,6 @@
-# POC Web — état au 2026-07-30 (WIP)
+# POC Web — état au 2026-08-01 (EN LIGNE)
+
+> 🌐 **https://kevymbappe.github.io/sermotheque-ebn/** — 131 prédications publiées.
 
 > Note de reprise. Le plan complet est dans [`WEB-POC.md`](WEB-POC.md) ; ce fichier dit
 > **où on en est exactement** et **quoi faire ensuite**. Écrit pour qu'une nouvelle session
@@ -65,8 +67,12 @@ dé-risquer la future bibliothèque WordPress.
    Resource not accessible by integration »*. L'option `enablement: true` ne peut pas
    fonctionner : créer le site Pages exige les droits admin, que le `GITHUB_TOKEN` d'un
    workflow n'a pas. Option retirée.
-   ⏳ **Reste une action manuelle, une seule fois** : Settings → Pages → Source =
-   « GitHub Actions », puis relancer le workflow. Rien d'autre ne bloque.
+   ✅ **EN LIGNE depuis le 2026-08-01** : https://kevymbappe.github.io/sermotheque-ebn/
+   (run n°3 vert de bout en bout, `deploy-pages@v4` à 12:38:03). Il aura fallu trois passages :
+   `enablement: true` (impossible — droits admin), puis l'activation **manuelle** de Pages
+   (Settings → Pages → Source = « GitHub Actions »), qu'aucun workflow ne peut faire à ta place.
+   Le build, lui, a réussi dès le premier essai. **À retenir pour un futur déploiement : cette
+   case doit être cochée à la main, une fois, sur tout nouveau dépôt.**
 6. **Responsivité — ✅ mesurée et corrigée le 2026-08-01** (Playwright, `scrollWidth` vs
    `clientWidth` à 320/360/375/390/414/768). Trois débordements horizontaux réels corrigés :
    en-tête sans `flex-wrap`, enfants de `.filters` à `min-width:auto`, `.grid` en

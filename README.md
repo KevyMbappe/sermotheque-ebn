@@ -4,6 +4,8 @@
 
 **Église Bonne Nouvelle** is an église réformée baptiste in Poissy, France ([eglisebonnenouvelle.com](https://www.eglisebonnenouvelle.com)). Sermons are published on [YouTube](https://www.youtube.com/@eglisebonnenouvelle855) and [SoundCloud](https://soundcloud.com/ebn-paris).
 
+> 🌐 **Le catalogue en ligne : https://kevymbappe.github.io/sermotheque-ebn/** — 131 prédications enrichies, avec lecteur, chapitres horodatés et transcription synchronisée. Le site est une *projection* du dataset canonique : il se met à jour tout seul à chaque passe d'enrichissement (décisions #54/#55).
+>
 > 📄 **Présentation en français** (pour les anciens & l'équipe média) : **[docs/SYNTHESE.md](docs/SYNTHESE.md)** · **[PDF](docs/SYNTHESE.pdf)** — état du projet, données, réalisations, feuille de route.
 > *(Regénérer le PDF après modification : `python3 tools/md_to_pdf.py docs/SYNTHESE.md docs/SYNTHESE.pdf`.)*
 
@@ -63,7 +65,8 @@ data/
   catalog/             The canonical dataset: catalog.json/.csv, series.json, youtube_orphans.json,
                        enrichment.json, voiceprints.json, speakers.json, transcripts/
 apps/
-  web-poc/             WIP — static React/Vite window onto the catalog (decision #54)
+  web-poc/             Live — static React/Vite window onto the catalog (decisions #54/#55),
+                       deployed to GitHub Pages by .github/workflows/deploy-poc.yml
 ```
 
 ## Quickstart
@@ -99,8 +102,8 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **M5v — enrich from disk** (2026-06-22): store 39 → **139 enriched**, no re-ASR, ~$7 on Sonnet
 - [ ] **Finish the capture pass** — the only irreversible work; resume `run_enrichment.py --no-enrich` (Apple Silicon required for mlx-whisper)
 - [ ] **Enrich the remaining 378** — from committed transcripts, no re-ASR (**~$27 on Sonnet**)
-- [ ] **POC web** (`apps/web-poc/`, WIP, decisions #54/#55) — static React/Vite window onto the catalog: elder demo + de-risks the WP library. Build, mobile layout and Pages workflow done; remaining: verify player seek on a real network, then merge to `main` to deploy (`docs/plans/WEB-POC-STATUS.md`)
-- [ ] WordPress import → website sermon library (first public deliverable)
+- [x] **POC web DEPLOYED** (2026-08-01, decisions #54/#55) — **https://kevymbappe.github.io/sermotheque-ebn/** · 131 enriched sermons, player + chapter deep-links + synced transcript; republishes itself when `data/catalog/**` changes. Remaining polish: the YouTube IFrame path and an EN sermon (`docs/plans/WEB-POC-STATUS.md`)
+- [ ] WordPress import → sermon library on the church's own site (the POC above is a demo, not its replacement — see #54)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 
 ## Key decisions
