@@ -8,6 +8,7 @@ Usage:  python3 tools/md_to_pdf.py docs/SYNTHESE.md docs/SYNTHESE.pdf
 """
 import glob
 import html
+import os
 import re
 import subprocess
 import sys
@@ -16,7 +17,6 @@ from pathlib import Path
 
 def _find_chrome():
     """First Chrome/Chromium we can find. Override with SERMO_CHROME."""
-    import os
     import shutil
 
     if env := os.environ.get("SERMO_CHROME"):
@@ -118,9 +118,10 @@ def main():
         hp.write_text(htmlc, encoding="utf-8")
         cmd = [_find_chrome(), "--headless=new", "--disable-gpu", "--no-first-run",
                "--no-default-browser-check", "--disable-extensions", "--no-pdf-header-footer",
-               # Chromium refuses to start as root without this (Linux containers/CI).
-               "--no-sandbox",
                f"--user-data-dir={tmp}/profile", f"--print-to-pdf={dst}", f"file://{hp}"]
+        # Chromium refuses to start as root; everywhere else, keep the sandbox on.
+        if hasattr(os, "geteuid") and os.geteuid() == 0:
+            cmd.insert(1, "--no-sandbox")
         # Headless Chrome sometimes writes the PDF but hangs on exit — cap it and move on.
         # Stamp the target first so a stale file can't be mistaken for a fresh render.
         before = dst.stat().st_mtime if dst.exists() else None
