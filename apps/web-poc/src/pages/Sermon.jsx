@@ -4,7 +4,6 @@ import Chapters from "../components/Chapters.jsx";
 import Transcript from "../components/Transcript.jsx";
 import SermonCard from "../components/SermonCard.jsx";
 import ShareAt from "../components/ShareAt.jsx";
-import StickyPlayer from "../components/StickyPlayer.jsx";
 import Section from "../components/Section.jsx";
 import { bookLabel, bookRank, fmtDate, fmtDuration, KIND_FR } from "../lib/data.js";
 import { fmtTime } from "../lib/vtt.js";
@@ -15,8 +14,6 @@ import { loadTopics } from "../lib/data.js";
 export default function Sermon({ sermon: s, all }) {
   const ctrlRef = useRef(null);
   const playerRef = useRef(null);
-  const [ctrl, setCtrl] = useState(null);      // déclenche le rendu de la barre collante
-  const [playing, setPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(null);
   // `?t=` lu une seule fois, à l'arrivée : ensuite c'est la lecture qui pilote l'URL.
   const startAtRef = useRef(initialTime());
@@ -24,7 +21,6 @@ export default function Sermon({ sermon: s, all }) {
   // Callbacks stables : le lecteur ne doit pas se re-brancher à chaque tick d'horloge.
   const handleReady = useCallback((ctrl) => {
     ctrlRef.current = ctrl;
-    setCtrl(ctrl);
     // Un lien horodaté doit démarrer au bon endroit dès que le lecteur est prêt.
     const t = startAtRef.current;
     if (t != null) {
@@ -34,7 +30,6 @@ export default function Sermon({ sermon: s, all }) {
     }
   }, []);
   const handleTime = useCallback((t) => setCurrentTime(t), []);
-  const handlePlaying = useCallback((p) => setPlaying(p), []);
   const seek = useCallback((sec) => {
     ctrlRef.current?.seekTo(sec);
     setCurrentTime(sec); // retour visuel immédiat, sans attendre l'horloge du lecteur
@@ -64,6 +59,17 @@ export default function Sermon({ sermon: s, all }) {
       (a, b) => bookRank(a.book) - bookRank(b.book) || a.key.localeCompare(b.key, "fr", { numeric: true })
     );
   })();
+
+  /**
+   * Sur une fiche, c'est le LECTEUR qui doit occuper le haut de l'écran, pas la navigation.
+   * Empiler les deux bandeaux collants coûtait 40 % de la hauteur d'un téléphone. L'en-tête
+   * du site redevient donc normal ici — il remonte d'un coup de défilement vers le haut,
+   * comportement usuel sur une page d'article — et le lecteur se colle à top: 0.
+   */
+  useEffect(() => {
+    document.body.classList.add("reading");
+    return () => document.body.classList.remove("reading");
+  }, []);
 
   // Libellés du vocabulaire curé, chargés à la demande (petit fichier, mis en cache).
   const [topicLabels, setTopicLabels] = useState(new Map());
@@ -126,9 +132,11 @@ export default function Sermon({ sermon: s, all }) {
       </header>
 
 
-      <div ref={playerRef}>
-        <Player embed={s.embed} title={s.title} onReady={handleReady}
-                onTime={handleTime} onPlaying={handlePlaying} />
+      {/* Le lecteur SoundCloud/YouTube d'origine, inchangé — il devient simplement COLLANT
+          au défilement (voir .player-dock dans styles.css). Aucun lecteur de substitution :
+          on garde la barre de progression native, qui permet de reculer précisément. */}
+      <div className="player-dock" ref={playerRef}>
+        <Player embed={s.embed} title={s.title} onReady={handleReady} onTime={handleTime} />
       </div>
 
       <div className="sermon-body">
@@ -256,15 +264,6 @@ export default function Sermon({ sermon: s, all }) {
           </div>
         </section>
       )}
-
-      <StickyPlayer
-        anchorRef={playerRef}
-        ctrl={ctrl}
-        playing={playing}
-        currentTime={currentTime}
-        title={s.title}
-        scripture={s.scripture_display}
-      />
     </article>
   );
 }

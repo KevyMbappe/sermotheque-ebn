@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { loadCatalog } from "./lib/data.js";
 import { currentPath, href, startRouter, subscribe } from "./lib/router.js";
 import Home from "./pages/Home.jsx";
@@ -11,6 +11,26 @@ import { TopicsIndex, TopicPage } from "./pages/Topics.jsx";
  * Routage par chemin — voir lib/router.js pour le pourquoi (partage et aperçus de lien).
  * Routes : / · /sermon/:id · /livres[/:book] · /themes[/:id] · /series
  */
+/**
+ * Publie la hauteur réelle de l'en-tête dans `--header-h`.
+ *
+ * Le lecteur se colle JUSTE SOUS l'en-tête, qui est lui-même collant — il faut donc sa
+ * hauteur exacte. Elle n'est pas constante : l'en-tête passe à deux lignes sous ~400 px,
+ * et la nav peut se replier. Une valeur codée en dur laisserait un trou ou un chevauchement
+ * sur la moitié des téléphones ; on l'observe.
+ */
+function useHeaderHeight(ref) {
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const set = () => document.documentElement.style.setProperty("--header-h", `${el.offsetHeight}px`);
+    set();
+    const ro = new ResizeObserver(set);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [ref]);
+}
+
 function useRoute() {
   const [path, setPath] = useState(currentPath);
   useEffect(() => {
@@ -22,6 +42,8 @@ function useRoute() {
 
 export default function App() {
   const route = useRoute();
+  const headerRef = useRef(null);
+  useHeaderHeight(headerRef);
   const [state, setState] = useState({ loading: true, sermons: [], error: null });
 
   useEffect(() => {
@@ -34,7 +56,7 @@ export default function App() {
 
   return (
     <>
-      <header className="site-header">
+      <header className="site-header" ref={headerRef}>
         <a className="brand" href={href("/")}>
           <span className="brand-mark">EBN</span>
           <span>

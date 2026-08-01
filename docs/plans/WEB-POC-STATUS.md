@@ -225,40 +225,38 @@ hiérarchie. Elle mélangeait aussi deux usages qui se disputaient l'écran — 
 - **L'invitation a quitté l'en-tête.** 8 lignes en italique séparaient le titre du lecteur :
   sur mobile, le lecteur commençait à ~1 250 px. Elle ouvre maintenant le résumé, et
   **le lecteur commence à 414 px** — visible sans défiler.
-- **Barre de lecture collante** (`components/StickyPlayer.jsx`) : ⏮10 s, lecture/pause,
-  ⏭15 s, titre, position, retour au lecteur.
+- **Le bloc lecteur est devenu collant** (`.player-dock`) : il reste en haut de l'écran au
+  défilement, donc toujours atteignable pour mettre en pause ou reculer.
 
-### Choix de conception de la barre collante
+### Le lecteur d'origine est conservé — c'était le point
 
-- **On ne duplique pas le lecteur** : un second iframe voudrait dire deux flux à synchroniser.
-  La barre pilote celui qui joue déjà, via `lib/player.js` (étendu avec `toggle()` et
-  `nudge(±s)`).
-- **Ancrée en bas**, pas sous l'en-tête : c'est là qu'arrive le pouce, et ça n'empile pas deux
-  bandeaux collants.
-- **Elle n'apparaît que si le lecteur est hors écran** (IntersectionObserver) et **jamais si le
-  pilote n'a pas pu se brancher** — un bouton pause qui ne met rien en pause serait pire que
-  pas de bouton.
-- Sous 560 px les éléments secondaires s'effacent ; sous 380 px il ne reste que les commandes.
+Une première version pilotait le lecteur depuis une barre de commandes maison en bas d'écran
+(⏮10 s / lecture-pause / ⏭15 s). Elle ne remplaçait pas le lecteur — elle le télécommandait —
+mais **l'intention était plus simple et meilleure** : rendre collant le bloc lui-même.
 
-### Vérification : il a fallu simuler le SDK
+Deux avantages concrets à la version retenue :
+- on garde la **barre de progression native** de SoundCloud, qui permet de reculer
+  précisément, là où un bouton « −10 s » impose un pas fixe ;
+- moins de code : `lib/player.js` retrouve son contrat d'origine (`seekTo` + `onTime`), sans
+  `toggle`, `nudge` ni suivi d'état lecture/pause.
 
-Le conteneur bloque `w.soundcloud.com`, donc le pilote ne se branche jamais et la barre ne
-s'affiche pas — exactement la dégradation voulue, mais elle empêche de tester. Le test sert
-donc un **faux SDK SoundCloud** via l'interception réseau de Playwright, ce qui permet de
-vérifier pour de vrai : apparition au défilement, bascule lecture/pause, et `↺10` depuis 60 s
-qui ramène bien à 50 s.
-⚠️ Piège : Playwright donne la priorité à la route enregistrée **en dernier**. La règle large
-(`player/**`) doit venir AVANT la règle précise (`player/api.js`), sinon l'iframe factice sert
-aussi le script et le stub ne se charge jamais.
+### Deux mesures qui ont guidé la mise en œuvre
 
-### Deux constats du même test
+1. **`--header-h` est mesurée, pas codée en dur.** L'en-tête passe à deux lignes sous ~400 px
+   (80 px sur desktop, 115 px sur mobile) : une valeur fixe laisserait un trou ou un
+   chevauchement selon le téléphone. Un `ResizeObserver` la publie en variable CSS.
+2. **Empiler deux bandeaux collants coûtait 40 % de la hauteur d'un téléphone.** Sur une
+   fiche, `body.reading` rend donc l'en-tête du site normal : c'est le lecteur qui prend le
+   haut de l'écran, l'en-tête revient d'un coup de défilement vers le haut (comportement
+   usuel sur une page d'article).
 
-- Sur desktop, la barre ne se déclenche plus au bas de page : **la fiche ne fait plus que
-  1 601 px**, le lecteur reste visible. Ce n'est pas un défaut, c'est la restructuration qui
-  opère.
-- Replier les chapitres a rendu leurs boutons « Partager » invisibles (9 → 0). Un **partage du
-  sermon entier** a donc été ajouté dans l'en-tête ; le partage horodaté reste dans les
-  chapitres et les citations, là où l'instant a un sens.
+| | en-tête collant + lecteur | lecteur seul |
+|---|---|---|
+| desktop (900 px) | 327 px — 36 % | **247 px — 27 %** |
+| mobile (844 px) | 337 px — 40 % | **222 px — 26 %** |
+
+*(Mesuré ici avec le message de repli affiché, le conteneur bloquant SoundCloud ; en
+production le lecteur réel est plus compact — 120 px sous 560 px.)*
 
 ## ⏳ Reste à faire
 

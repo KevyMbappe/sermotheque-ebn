@@ -4,12 +4,12 @@ import { attachPlayer } from "../lib/player.js";
 /**
  * Lecteur embarqué + horloge partagée.
  *
- * Expose au parent via `onReady({ seekTo, toggle, nudge })`, `onTime(sec)` et `onPlaying(bool)` :
+ * Expose deux choses au parent via `onReady({ seekTo })` et `onTime(sec)` :
  * les chapitres/citations peuvent commander le saut, la transcription peut suivre.
  * Si le pilotage échoue (SDK bloqué, plateforme inattendue), l'iframe reste lisible :
  * on perd le saut au timestamp, pas l'écoute.
  */
-export default function Player({ embed, title, onReady, onTime, onPlaying }) {
+export default function Player({ embed, title, onReady, onTime }) {
   const iframeRef = useRef(null);
   const [controllable, setControllable] = useState(null); // null = en cours, false = dégradé
 
@@ -18,7 +18,7 @@ export default function Player({ embed, title, onReady, onTime, onPlaying }) {
     let ctrl = null;
     let alive = true;
 
-    attachPlayer(iframeRef.current, embed.kind, { onTime, onPlaying })
+    attachPlayer(iframeRef.current, embed.kind, { onTime })
       .then((c) => {
         if (!alive) return c.destroy?.();
         ctrl = c;

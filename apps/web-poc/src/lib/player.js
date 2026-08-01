@@ -6,13 +6,11 @@
  * asymétriques (SC = postMessage asynchrone en ms ; YT = objet JS en secondes), d'où ce
  * contrat commun :
  *
- *   attach(iframe, { onTime, onPlaying })  ->  { seekTo(sec), toggle(), nudge(sec), destroy() }
+ *   attach(iframe, { onTime })  ->  { seekTo(sec), destroy() }
  *
  * `onTime(sec)` est appelé régulièrement pendant la lecture (pour surligner la transcription).
- * `onPlaying(bool)` suit l'état lecture/pause — c'est ce qui permet à la barre collante
- * d'afficher le bon bouton sans interroger le SDK en boucle.
- * `nudge(sec)` recule (ou avance) de N secondes depuis la position courante : le geste
- * « je viens de décrocher, reviens dix secondes en arrière ».
+ * Les commandes lecture/pause restent celles du lecteur natif : il est simplement rendu
+ * collant au défilement, donc toujours atteignable, avec sa propre barre de progression.
  * Les deux SDK sont chargés à la demande, une seule fois.
  */
 
@@ -32,29 +30,22 @@ const loadScript = (src, globalKey) =>
 
 /* ---------------------------------- SoundCloud ---------------------------------- */
 
-async function attachSoundCloud(iframe, { onTime, onPlaying }) {
+async function attachSoundCloud(iframe, { onTime }) {
   const SC = await loadScript("https://w.soundcloud.com/player/api.js", "SC");
   const widget = SC.Widget(iframe);
 
   await new Promise((res) => widget.bind(SC.Widget.Events.READY, res));
 
   // PLAY_PROGRESS remonte la position en ms pendant la lecture : notre horloge.
-  let at = 0;
   widget.bind(SC.Widget.Events.PLAY_PROGRESS, (e) => {
-    if (e && typeof e.currentPosition === "number") { at = e.currentPosition / 1000; onTime?.(at); }
+    if (e && typeof e.currentPosition === "number") onTime?.(e.currentPosition / 1000);
   });
-  widget.bind(SC.Widget.Events.PLAY, () => onPlaying?.(true));
-  widget.bind(SC.Widget.Events.PAUSE, () => onPlaying?.(false));
-  widget.bind(SC.Widget.Events.FINISH, () => onPlaying?.(false));
 
   return {
     seekTo(sec) {
-      at = sec;
       widget.seekTo(sec * 1000); // SC parle en millisecondes
       widget.play();
     },
-    toggle() { widget.toggle(); },
-    nudge(delta) { this.seekTo(Math.max(0, at + delta)); },
     destroy() {
       try { widget.unbind(SC.Widget.Events.PLAY_PROGRESS); } catch { /* iframe déjà démontée */ }
     },
@@ -63,7 +54,7 @@ async function attachSoundCloud(iframe, { onTime, onPlaying }) {
 
 /* ----------------------------------- YouTube ------------------------------------ */
 
-async function attachYouTube(iframe, { onTime, onPlaying }) {
+async function attachYouTube(iframe, { onTime }) {
   await loadScript("https://www.youtube.com/iframe_api", "YT");
   // L'API n'est utilisable qu'une fois `onYouTubeIframeAPIReady` passé.
   await new Promise((res) => {
@@ -78,12 +69,9 @@ async function attachYouTube(iframe, { onTime, onPlaying }) {
 
   // YT n'émet pas de progression : on interroge la position pendant la lecture.
   let timer = null;
-  let playing = false;
   const tick = () => {
     const st = player.getPlayerState?.();
-    const now = st === window.YT.PlayerState.PLAYING;
-    if (now !== playing) { playing = now; onPlaying?.(now); }
-    if (now) onTime?.(player.getCurrentTime());
+    if (st === window.YT.PlayerState.PLAYING) onTime?.(player.getCurrentTime());
   };
   timer = setInterval(tick, 500);
 
@@ -92,8 +80,6 @@ async function attachYouTube(iframe, { onTime, onPlaying }) {
       player.seekTo(sec, true);
       player.playVideo();
     },
-    toggle() { playing ? player.pauseVideo() : player.playVideo(); },
-    nudge(delta) { this.seekTo(Math.max(0, (player.getCurrentTime?.() || 0) + delta)); },
     destroy() {
       clearInterval(timer);
       try { player.destroy?.(); } catch { /* déjà détruit */ }
