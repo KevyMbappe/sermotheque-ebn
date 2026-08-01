@@ -14,6 +14,15 @@ export async function loadCatalog() {
   return cache;
 }
 
+/** Le vocabulaire curé des thèmes (#57) : id → libellé, dans l'ordre du vocabulaire. */
+let topicsCache = null;
+export async function loadTopics() {
+  if (topicsCache) return topicsCache;
+  const res = await fetch(`${BASE}data/topics.json`);
+  topicsCache = res.ok ? await res.json() : [];
+  return topicsCache;
+}
+
 export async function loadVtt(id) {
   const res = await fetch(`${BASE}data/vtt/${id}.vtt`);
   if (!res.ok) throw new Error("transcription indisponible");
@@ -47,6 +56,7 @@ export function filterSermons(all, { q = "", ...filters } = {}) {
   const needle = fold(q).trim();
   return all.filter((s) => {
     if (filters.book && s.scripture_book !== filters.book) return false;
+    if (filters.topic && !(s.topics_canonical || []).includes(filters.topic)) return false;
     if (filters.series && s.series_name !== filters.series) return false;
     if (filters.speaker && s.speaker !== filters.speaker) return false;
     if (filters.language && s.language !== filters.language) return false;

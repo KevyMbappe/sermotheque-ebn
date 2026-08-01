@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Player from "../components/Player.jsx";
 import Chapters from "../components/Chapters.jsx";
 import Transcript from "../components/Transcript.jsx";
@@ -8,6 +8,7 @@ import { bookLabel, bookRank, fmtDate, fmtDuration, KIND_FR } from "../lib/data.
 import { fmtTime } from "../lib/vtt.js";
 import { href, initialTime, setTimeParam } from "../lib/router.js";
 import { osisPoints } from "../lib/passages.js";
+import { loadTopics } from "../lib/data.js";
 
 export default function Sermon({ sermon: s, all }) {
   const ctrlRef = useRef(null);
@@ -56,6 +57,12 @@ export default function Sermon({ sermon: s, all }) {
       (a, b) => bookRank(a.book) - bookRank(b.book) || a.key.localeCompare(b.key, "fr", { numeric: true })
     );
   })();
+
+  // Libellés du vocabulaire curé, chargés à la demande (petit fichier, mis en cache).
+  const [topicLabels, setTopicLabels] = useState(new Map());
+  useEffect(() => {
+    loadTopics().then((v) => setTopicLabels(new Map(v.map((x) => [x.id, x.label]))));
+  }, []);
 
   const sameSeries = s.series_name
     ? all.filter((o) => o.series_name === s.series_name && o.id !== s.id).slice(0, 6)
@@ -182,9 +189,21 @@ export default function Sermon({ sermon: s, all }) {
           {s.topics?.length > 0 && (
             <section className="panel">
               <h2>Thèmes</h2>
-              <ul className="chips">
-                {s.topics.map((t, i) => <li key={i} className="chip">{t}</li>)}
-              </ul>
+              {/* Les puces cliquables viennent du vocabulaire curé (#57) ; les étiquettes
+                  libres restent affichées dessous, parce que leur précision dit quelque
+                  chose du message que 44 catégories ne peuvent pas dire. */}
+              {s.topics_canonical?.length > 0 && (
+                <ul className="chips">
+                  {s.topics_canonical.map((id) => (
+                    <li key={id}>
+                      <a className="chip chip-link" href={href(`/themes/${id}/`)}>
+                        {topicLabels.get(id) || id}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <p className="muted refs-verbatim">{s.topics.join(" · ")}</p>
             </section>
           )}
 

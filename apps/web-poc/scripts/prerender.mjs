@@ -148,7 +148,40 @@ function main() {
     );
   }
 
-  // 4) Une page par prédication — le cœur du sujet.
+  // 4) Une page par thème du vocabulaire curé (#57), même raison que pour les livres.
+  const vocab = JSON.parse(readFileSync(join(DIST, "data", "topics.json"), "utf-8"));
+  const topicCounts = new Map();
+  for (const s of sermons) {
+    for (const t of s.topics_canonical || []) topicCounts.set(t, (topicCounts.get(t) || 0) + 1);
+  }
+  let topicPages = 0;
+  for (const { id, label } of vocab) {
+    const n = topicCounts.get(id);
+    if (!n) continue; // pas de page vide : elle apparaîtra quand le thème sera prêché
+    write(
+      `/themes/${id}/`,
+      render(
+        metaTags({
+          title: `${label} — prédications · ${SITE_NAME}`,
+          description: `${n} prédication${n > 1 ? "s" : ""} de l'Église Bonne Nouvelle sur le thème « ${label} », avec résumé, chapitres horodatés et transcription.`,
+          path: `themes/${id}/`,
+        })
+      )
+    );
+    topicPages++;
+  }
+  write(
+    "/themes/",
+    render(
+      metaTags({
+        title: `Parcourir par thème — ${SITE_NAME}`,
+        description: "Les prédications classées par thème doctrinal et pratique.",
+        path: "themes/",
+      })
+    )
+  );
+
+  // 5) Une page par prédication — le cœur du sujet.
   for (const s of sermons) {
     // Les réseaux coupent le titre autour de 60-70 caractères. Plutôt que de laisser
     // tronquer n'importe où, on sacrifie le suffixe (prédicateur · passage) quand le
@@ -170,8 +203,8 @@ function main() {
   );
 
   console.log(
-    `[prerender] ${sermons.length} pages de prédication + ${books.size} pages de livre biblique ` +
-      `+ ${browse.length} pages de navigation + accueil + 404`
+    `[prerender] ${sermons.length} pages de prédication + ${books.size} pages de livre ` +
+      `+ ${topicPages} pages de thème + ${browse.length} pages de navigation + accueil + 404`
   );
   console.log(`[prerender] URL publique : ${SITE}`);
   console.log(

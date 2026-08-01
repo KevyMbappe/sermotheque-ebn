@@ -18,6 +18,7 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const APP = resolve(HERE, "..");
 const ROOT = resolve(APP, "..", ".."); // racine du repo
 const CATALOG = join(ROOT, "data", "catalog", "catalog.json");
+const TOPICS = join(ROOT, "data", "catalog", "topics.json");
 const TRANSCRIPTS = join(ROOT, "data", "catalog", "transcripts");
 const OUT = join(APP, "public", "data");
 
@@ -80,6 +81,9 @@ function project(row) {
     questions: row.questions || [],
     references: row.references || [],
     topics: row.topics || [],
+    // La moitié interrogeable des thèmes (#57) : le vocabulaire curé, qui rend la
+    // navigation par thème possible là où 594 étiquettes libres l'interdisaient.
+    topics_canonical: row.topics_canonical || [],
     scripture_refs: row.scripture_refs || [],
     // La moitié interrogeable des citations (#56) : c'est elle qui porte l'index inversé.
     scripture_refs_osis: row.scripture_refs_osis || [],
@@ -108,6 +112,11 @@ for (const s of enriched) {
 }
 
 writeFileSync(join(OUT, "catalog.json"), JSON.stringify(enriched), "utf-8");
+
+// Le vocabulaire curé (#57) : seulement id + libellé + ordre. Les alias servent au
+// pipeline, pas au navigateur — inutile de les envoyer au visiteur.
+const vocab = JSON.parse(readFileSync(TOPICS, "utf-8")).topics.map(({ id, label }) => ({ id, label }));
+writeFileSync(join(OUT, "topics.json"), JSON.stringify(vocab), "utf-8");
 
 // Un petit récap : utile en CI pour voir grossir le catalogue publié.
 const withEmbed = enriched.filter((s) => s.embed).length;

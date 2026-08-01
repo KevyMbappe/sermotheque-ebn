@@ -9,6 +9,7 @@ import fold_orphans
 import cluster_series
 import enrichment_store
 import speaker_id
+import topics
 import schema
 
 if __name__ == "__main__":
@@ -22,6 +23,11 @@ if __name__ == "__main__":
     print("\n=== speaker_id (writeback) ===")
     changed = speaker_id.writeback()
     print(f"  speaker attribution applied onto {changed} catalog rows")
+    # → refresh the curated topic vocabulary + its coverage report (#57). Written after the
+    #   writeback so `unmapped` reflects the catalog as it now stands — that list is the
+    #   curation worklist for whoever extends the vocabulary next.
+    print("\n=== topics (vocabulaire curé) ===")
+    topics.write_vocabulary()
     # → validate the rebuilt catalog against the frozen contract + refresh sermon.schema.json (#53)
     print("\n=== schema (validate + emit contract) ===")
     schema.main()

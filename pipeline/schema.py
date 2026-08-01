@@ -65,6 +65,7 @@ FIELDS = {
     "primary_scripture":   (_STR,  False, None),
     "scripture_refs":      (_ARR,  False, _STR),   # free text, as the LLM wrote it ("Jean 1:14")
     "scripture_refs_osis": (_ARR,  False, _STR),   # ^ normalised to OSIS ids, derived (#56)
+    "topics_canonical":   (_ARR,  False, _STR),    # ^ topics mapped to the curated vocabulary, derived (#57)
     "series_hint":         (_STR,  False, None),
     "raw_ref":             (_STR,  False, None),
     "captions_ref":        (_STR,  False, None),

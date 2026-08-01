@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "pipeline"))
 from scripture import BOOKS, normalize_refs, parse_reference  # noqa: E402
-from enrichment_store import DERIVED_FIELDS, apply, derive, extract  # noqa: E402
+from enrichment_store import DERIVED_FIELDS, STORED_FIELDS, apply, derive, extract  # noqa: E402
 
 
 class TestSimpleCitations(unittest.TestCase):
@@ -168,7 +168,11 @@ class TestDerivedFieldWiring(unittest.TestCase):
         self.assertEqual(rows[0]["scripture_refs_osis"], ["Acts.2.38"])
 
     def test_derived_fields_are_declared(self):
-        self.assertEqual(DERIVED_FIELDS, ("scripture_refs_osis",))
+        # Ce qui compte est que le champ soit declare DERIVE (donc exclu de extract() et
+        # recalcule a chaque build), pas qu'il soit le seul : d'autres champs derives
+        # suivent le meme contrat (topics_canonical, #57).
+        self.assertIn("scripture_refs_osis", DERIVED_FIELDS)
+        self.assertNotIn("scripture_refs_osis", STORED_FIELDS)
 
 
 class TestLiveCatalog(unittest.TestCase):

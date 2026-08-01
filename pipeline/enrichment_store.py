@@ -17,6 +17,7 @@ import json
 from pathlib import Path
 
 from scripture import normalize_refs
+from topics import normalize_topics
 
 ROOT = Path(__file__).resolve().parent.parent
 CAT = ROOT / "data" / "catalog" / "catalog.json"
@@ -39,14 +40,18 @@ STORED_FIELDS = ("language",
 # sermon is enriched — but they are *re-derived on every build*, so improving the normaliser
 # improves the whole catalog without re-running a single API call.
 #   scripture_refs_osis ← scripture_refs, the LLM's free-text in-body citations → OSIS ids.
-DERIVED_FIELDS = ("scripture_refs_osis",)
+#   topics_canonical    ← topics, the LLM's free-text labels → the curated vocabulary (#57).
+DERIVED_FIELDS = ("scripture_refs_osis", "topics_canonical")
 
 ENRICHMENT_FIELDS = STORED_FIELDS + DERIVED_FIELDS
 
 
 def derive(row: dict) -> dict:
     """The derived enrichment fields for one row (pure; input is a row/entry dict)."""
-    return {"scripture_refs_osis": normalize_refs(row.get("scripture_refs"))}
+    return {
+        "scripture_refs_osis": normalize_refs(row.get("scripture_refs")),
+        "topics_canonical": normalize_topics(row.get("topics")),
+    }
 
 
 def load_store(path=STORE):

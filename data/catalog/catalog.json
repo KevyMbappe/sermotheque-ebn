@@ -131,6 +131,12 @@
       "1John.4.2",
       "Luke.24.39",
       "Mal.4.2"
+    ],
+    "topics_canonical": [
+      "trinite",
+      "incarnation",
+      "christologie",
+      "expiation"
     ]
   },
   {
@@ -283,6 +289,15 @@
       "Phil.2.6-Phil.2.8",
       "Mal.4.2",
       "1Tim.3.16"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "incarnation",
+      "christologie",
+      "expiation",
+      "soteriologie",
+      "eschatologie",
+      "confessions"
     ]
   },
   {
@@ -426,6 +441,13 @@
       "1Pet.3.18",
       "Mark.10.45",
       "Rev.21.3-Rev.21.5"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "ecriture",
+      "expiation",
+      "soteriologie",
+      "alliances"
     ]
   },
   {
@@ -547,6 +569,13 @@
       "1Tim.3.14-1Tim.3.16",
       "Rev.4-Rev.5",
       "Matt.16.13-Matt.16.17"
+    ],
+    "topics_canonical": [
+      "incarnation",
+      "christologie",
+      "expiation",
+      "alliances",
+      "confessions"
     ]
   },
   {
@@ -699,6 +728,16 @@
       "Matt.25.21",
       "John.13.35",
       "Luke.6.36"
+    ],
+    "topics_canonical": [
+      "attributs",
+      "justification",
+      "sanctification",
+      "perseverance",
+      "soteriologie",
+      "loi_evangile",
+      "prochain",
+      "eschatologie"
     ]
   },
   {
@@ -830,6 +869,15 @@
       "1Tim.3.15",
       "Heb.11",
       "1Cor.12-1Cor.14"
+    ],
+    "topics_canonical": [
+      "christologie",
+      "resurrection",
+      "pneumatologie",
+      "ecclesiologie",
+      "priere",
+      "vie_chretienne",
+      "mission"
     ]
   },
   {
@@ -971,6 +1019,15 @@
       "Luke.7",
       "John.11-John.12",
       "1Cor.15.55"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "christologie",
+      "expiation",
+      "union_christ",
+      "soteriologie",
+      "ministeres",
+      "vie_chretienne"
     ]
   },
   {
@@ -1105,6 +1162,16 @@
       "Col.1.19",
       "Jas.4.4",
       "1John.5.19"
+    ],
+    "topics_canonical": [
+      "christologie",
+      "expiation",
+      "peche",
+      "foi_repentance",
+      "sanctification",
+      "soteriologie",
+      "loi_evangile",
+      "souffrance"
     ]
   },
   {
@@ -1236,6 +1303,14 @@
       "Rom.13",
       "Matt.24.6-Matt.24.14",
       "Matt.6.9-Matt.6.13"
+    ],
+    "topics_canonical": [
+      "attributs",
+      "peche",
+      "sanctification",
+      "priere",
+      "vie_chretienne",
+      "eschatologie"
     ]
   },
   {
@@ -1367,6 +1442,15 @@
       "Matt.23.24-Matt.23.27",
       "Jude.1.12",
       "John.21.15-John.21.17"
+    ],
+    "topics_canonical": [
+      "peche",
+      "justification",
+      "sanctification",
+      "soteriologie",
+      "loi_evangile",
+      "creation",
+      "confessions"
     ]
   },
   {
@@ -1508,6 +1592,12 @@
       "John.3",
       "Matt",
       "Dan.7"
+    ],
+    "topics_canonical": [
+      "christologie",
+      "expiation",
+      "perseverance",
+      "alliances"
     ]
   },
   {
@@ -1663,6 +1753,14 @@
       "Heb.11.39-Heb.11.40",
       "Rev.21.22",
       "Gen.15"
+    ],
+    "topics_canonical": [
+      "christologie",
+      "expiation",
+      "pneumatologie",
+      "alliances",
+      "bapteme",
+      "eschatologie"
     ]
   },
   {
@@ -1808,6 +1906,15 @@
       "Gen.3.15",
       "John.1.12-John.1.13",
       "John.14.6"
+    ],
+    "topics_canonical": [
+      "attributs",
+      "expiation",
+      "pneumatologie",
+      "regeneration",
+      "soteriologie",
+      "adoration",
+      "confessions"
     ]
   },
   {
@@ -1929,6 +2036,16 @@
       "Gal.6.14",
       "Matt.7",
       "1Cor.2.2"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "expiation",
+      "justification",
+      "sanctification",
+      "soteriologie",
+      "alliances",
+      "loi_evangile",
+      "ecclesiologie"
     ]
   },
   {
@@ -2089,6 +2206,13 @@
       "Rom.9",
       "Rom.11",
       "1Pet.2.9-1Pet.2.10"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "soteriologie",
+      "alliances",
+      "ecclesiologie",
+      "eschatologie"
     ]
   },
   {
@@ -2230,6 +2354,14 @@
       "Acts.4.12",
       "1John.4.9",
       "Jas.1.17"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "attributs",
+      "foi_repentance",
+      "grace",
+      "soteriologie",
+      "eschatologie"
     ]
   },
   {
@@ -2360,6 +2492,15 @@
       "Deut",
       "Isa.61",
       "John.1"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "attributs",
+      "incarnation",
+      "peche",
+      "foi_repentance",
+      "perseverance",
+      "eschatologie"
     ]
   },
   {
@@ -2491,6 +2632,15 @@
       "Jas.1.27",
       "2Cor.8.9",
       "Rom.10.4"
+    ],
+    "topics_canonical": [
+      "attributs",
+      "christologie",
+      "peche",
+      "justification",
+      "soteriologie",
+      "loi_evangile",
+      "prochain"
     ]
   },
   {
@@ -2623,6 +2773,15 @@
       "1Tim.3.15",
       "Ezek.37",
       "Rev"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "attributs",
+      "incarnation",
+      "christologie",
+      "alliances",
+      "ecclesiologie",
+      "adoration"
     ]
   },
   {
@@ -2751,6 +2910,16 @@
       "2Tim.1.5",
       "Joel.2.13",
       "Jas.2.19"
+    ],
+    "topics_canonical": [
+      "peche",
+      "justification",
+      "regeneration",
+      "foi_repentance",
+      "soteriologie",
+      "ecclesiologie",
+      "ministeres",
+      "predication"
     ]
   },
   {
@@ -2886,6 +3055,13 @@
       "Matt.13",
       "John.8",
       "Heb.10-Heb.12"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "pneumatologie",
+      "soteriologie",
+      "alliances",
+      "bapteme"
     ]
   },
   {
@@ -3003,6 +3179,16 @@
       "2Cor",
       "Ps",
       "Acts"
+    ],
+    "topics_canonical": [
+      "expiation",
+      "regeneration",
+      "foi_repentance",
+      "grace",
+      "loi_evangile",
+      "ecclesiologie",
+      "creation",
+      "eschatologie"
     ]
   },
   {
@@ -3130,6 +3316,11 @@
       "Heb.9",
       "Gen.15",
       "2Sam.7"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "alliances",
+      "ecclesiologie"
     ]
   },
   {
@@ -3267,6 +3458,14 @@
       "Ps.40",
       "Heb.1.1-Heb.1.2",
       "Heb.10.5"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "christologie",
+      "expiation",
+      "soteriologie",
+      "alliances",
+      "confessions"
     ]
   },
   {
@@ -3385,6 +3584,15 @@
       "Ps.26",
       "Heb.12.11",
       "Gal.4.4"
+    ],
+    "topics_canonical": [
+      "providence",
+      "sanctification",
+      "perseverance",
+      "ecclesiologie",
+      "crainte_dieu",
+      "vie_chretienne",
+      "eschatologie"
     ]
   },
   {
@@ -3518,6 +3726,12 @@
       "1Cor.2",
       "Gen.3",
       "Heb.7"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "peche",
+      "justification",
+      "alliances"
     ]
   },
   {
@@ -3657,6 +3871,14 @@
       "Rev",
       "Ezek",
       "Isa.6"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "attributs",
+      "christologie",
+      "expiation",
+      "perseverance",
+      "soteriologie"
     ]
   },
   {
@@ -3784,6 +4006,12 @@
       "Ps.51",
       "Heb.7",
       "Gal.3.13"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "peche",
+      "soteriologie",
+      "alliances"
     ]
   },
   {
@@ -3911,6 +4139,12 @@
       "Gen.2.16-Gen.2.17",
       "Gen.3.12",
       "Exod.34"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "peche",
+      "justification",
+      "alliances"
     ]
   },
   {
@@ -4038,6 +4272,13 @@
       "John.13.34-John.13.35",
       "Gen.4.9",
       "Phil.3"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "sanctification",
+      "loi_evangile",
+      "ecclesiologie",
+      "vie_chretienne"
     ]
   },
   {
@@ -4178,6 +4419,15 @@
       "Jas.5.19-Jas.5.20",
       "Matt.18.15",
       "1Thess.5.11-1Thess.5.14"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "souverainete",
+      "expiation",
+      "sanctification",
+      "soteriologie",
+      "ecclesiologie",
+      "adoration"
     ]
   },
   {
@@ -4307,6 +4557,15 @@
       "Luke.19.41-Luke.19.44",
       "Matt.9.36",
       "2Cor.6.1-2Cor.6.10"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "peche",
+      "foi_repentance",
+      "prochain",
+      "mission",
+      "eschatologie",
+      "confessions"
     ]
   },
   {
@@ -4435,6 +4694,13 @@
       "Matt.11.29",
       "1Cor.12-1Cor.14",
       "1Tim.4.1-1Tim.4.3"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "justification",
+      "sanctification",
+      "loi_evangile",
+      "vie_chretienne"
     ]
   },
   {
@@ -4573,6 +4839,11 @@
       "Num.21.8-Num.21.9",
       "Rev.12",
       "1Tim.2.15"
+    ],
+    "topics_canonical": [
+      "peche",
+      "alliances",
+      "famille"
     ]
   },
   {
@@ -4628,6 +4899,13 @@
       "Matt.5.3-Matt.5.5",
       "Jas.3.17-Jas.3.18",
       "Isa.40"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "justification",
+      "regeneration",
+      "sanctification",
+      "vie_chretienne"
     ]
   },
   {
@@ -4751,6 +5029,15 @@
       "Matt.5.48",
       "John.13.3-John.13.5",
       "Luke.23.34"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "justification",
+      "union_christ",
+      "sanctification",
+      "alliances",
+      "loi_evangile",
+      "ecclesiologie"
     ]
   },
   {
@@ -4878,6 +5165,12 @@
       "Deut.8.3",
       "Deut.6.16",
       "Deut.6.13"
+    ],
+    "topics_canonical": [
+      "christologie",
+      "expiation",
+      "peche",
+      "alliances"
     ]
   },
   {
@@ -5001,6 +5294,16 @@
       "Heb.4",
       "Matt.6.33",
       "John.15"
+    ],
+    "topics_canonical": [
+      "expiation",
+      "pneumatologie",
+      "imago_dei",
+      "union_christ",
+      "sanctification",
+      "soteriologie",
+      "loi_evangile",
+      "eschatologie"
     ]
   },
   {
@@ -5132,6 +5435,12 @@
       "Jas.1.13-Jas.1.15",
       "1John.2.16",
       "Rev"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "imago_dei",
+      "peche",
+      "alliances"
     ]
   },
   {
@@ -5253,6 +5562,14 @@
       "Rom.5",
       "Heb",
       "Matt.5.9"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "justification",
+      "sanctification",
+      "perseverance",
+      "loi_evangile",
+      "eschatologie"
     ]
   },
   {
@@ -5379,6 +5696,13 @@
       "1Tim.2.14",
       "Rom.5",
       "Rev.22"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "imago_dei",
+      "peche",
+      "alliances",
+      "creation"
     ]
   },
   {
@@ -5488,7 +5812,11 @@
     "series_hint": "Séminaire de formation au diaconat — session d'évaluation des candidats",
     "raw_ref": "data/catalog/transcripts/sc-2175501204.raw.txt",
     "captions_ref": "data/catalog/transcripts/sc-2175501204.vtt",
-    "scripture_refs_osis": []
+    "scripture_refs_osis": [],
+    "topics_canonical": [
+      "ecclesiologie",
+      "ministeres"
+    ]
   },
   {
     "id": "sc-2175500673",
@@ -5617,6 +5945,13 @@
       "Matt.26",
       "John.13.13-John.13.17",
       "Gal.5"
+    ],
+    "topics_canonical": [
+      "incarnation",
+      "ecclesiologie",
+      "ministeres",
+      "famille",
+      "vie_chretienne"
     ]
   },
   {
@@ -5739,6 +6074,12 @@
       "Ps.51",
       "Phil.4.2-Phil.4.3",
       "Eph.5.18-Eph.5.21"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "ecclesiologie",
+      "ministeres",
+      "famille"
     ]
   },
   {
@@ -5862,6 +6203,13 @@
       "1Tim.3.8-1Tim.3.13",
       "Lev",
       "Num"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "ecclesiologie",
+      "ministeres",
+      "predication",
+      "confessions"
     ]
   },
   {
@@ -5998,6 +6346,16 @@
       "Gal",
       "1Cor",
       "John"
+    ],
+    "topics_canonical": [
+      "expiation",
+      "pneumatologie",
+      "regeneration",
+      "soteriologie",
+      "ecclesiologie",
+      "bapteme",
+      "predication",
+      "mission"
     ]
   },
   {
@@ -6125,6 +6483,14 @@
       "1Tim.2.14",
       "Rom.1",
       "Gal.5"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "providence",
+      "imago_dei",
+      "peche",
+      "alliances",
+      "confessions"
     ]
   },
   {
@@ -6251,6 +6617,14 @@
       "John",
       "Matt",
       "Luke"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "christologie",
+      "expiation",
+      "pneumatologie",
+      "soteriologie",
+      "mission"
     ]
   },
   {
@@ -6377,6 +6751,15 @@
       "1Cor.13.3-1Cor.13.7",
       "Phil.2.3-Phil.2.7",
       "Gal.6.10"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "sanctification",
+      "loi_evangile",
+      "ecclesiologie",
+      "prochain",
+      "crainte_dieu",
+      "mission"
     ]
   },
   {
@@ -6504,6 +6887,15 @@
       "John.1.14",
       "John.1.18",
       "Rom.8"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "attributs",
+      "resurrection",
+      "regeneration",
+      "perseverance",
+      "soteriologie",
+      "cene"
     ]
   },
   {
@@ -6625,6 +7017,14 @@
       "Exod.17.7",
       "Gen.4.7",
       "Eph.2.1-Eph.2.10"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "peche",
+      "sanctification",
+      "perseverance",
+      "vie_chretienne",
+      "eschatologie"
     ]
   },
   {
@@ -6746,6 +7146,14 @@
       "Acts.5.1-Acts.5.11",
       "Ps.52.7",
       "Col.1.23"
+    ],
+    "topics_canonical": [
+      "peche",
+      "union_christ",
+      "sanctification",
+      "ecclesiologie",
+      "prochain",
+      "vie_chretienne"
     ]
   },
   {
@@ -6877,6 +7285,13 @@
       "Rom.5.3-Rom.5.4",
       "Acts.15",
       "Phil.2.12"
+    ],
+    "topics_canonical": [
+      "providence",
+      "sanctification",
+      "perseverance",
+      "souffrance",
+      "eschatologie"
     ]
   },
   {
@@ -7003,6 +7418,13 @@
       "Isa.53",
       "Eph.5-Eph.6",
       "Matt.28.18-Matt.28.20"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "souverainete",
+      "pneumatologie",
+      "regeneration",
+      "mission"
     ]
   },
   {
@@ -7134,6 +7556,15 @@
       "Ps.51",
       "Mic.7.18-Mic.7.20",
       "Dan.9.1-Dan.9.9"
+    ],
+    "topics_canonical": [
+      "attributs",
+      "gloire",
+      "peche",
+      "foi_repentance",
+      "sanctification",
+      "alliances",
+      "eschatologie"
     ]
   },
   {
@@ -7308,6 +7739,15 @@
       "Prov.22.24",
       "Prov.25.19",
       "Matt.5.3-Matt.5.12"
+    ],
+    "topics_canonical": [
+      "peche",
+      "foi_repentance",
+      "soteriologie",
+      "alliances",
+      "prochain",
+      "crainte_homme",
+      "vie_chretienne"
     ]
   },
   {
@@ -7474,6 +7914,14 @@
       "Gal.2.10",
       "Acts.4.34",
       "John.8.44"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "attributs",
+      "sanctification",
+      "ecclesiologie",
+      "prochain",
+      "vie_chretienne"
     ]
   },
   {
@@ -7621,6 +8069,14 @@
       "1John.4.1",
       "1Cor.5.13",
       "Jer.9.24"
+    ],
+    "topics_canonical": [
+      "gloire",
+      "peche",
+      "sanctification",
+      "ecclesiologie",
+      "prochain",
+      "vie_chretienne"
     ]
   },
   {
@@ -7752,6 +8208,14 @@
       "Zech.12.10",
       "Rom.6.20-Rom.6.21",
       "Luke.15"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "attributs",
+      "peche",
+      "foi_repentance",
+      "alliances",
+      "eschatologie"
     ]
   },
   {
@@ -7898,6 +8362,16 @@
       "Ps.15",
       "1Cor.8",
       "2Tim.2.21"
+    ],
+    "topics_canonical": [
+      "gloire",
+      "imago_dei",
+      "justification",
+      "foi_repentance",
+      "sanctification",
+      "grace",
+      "crainte_homme",
+      "vie_chretienne"
     ]
   },
   {
@@ -8033,6 +8507,15 @@
       "2Cor.5.14-2Cor.5.15",
       "Luke.7.47",
       "Ps.51"
+    ],
+    "topics_canonical": [
+      "gloire",
+      "imago_dei",
+      "sanctification",
+      "crainte_homme",
+      "crainte_dieu",
+      "vie_chretienne",
+      "apologetique"
     ]
   },
   {
@@ -8168,6 +8651,16 @@
       "Jer.8.1-Jer.8.2",
       "Heb.12.22-Heb.12.29",
       "Gen.3.15"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "souverainete",
+      "christologie",
+      "peche",
+      "alliances",
+      "ministeres",
+      "adoration",
+      "eschatologie"
     ]
   },
   {
@@ -8305,6 +8798,16 @@
       "Eph.2",
       "Isa.25.8",
       "Rev.21.4"
+    ],
+    "topics_canonical": [
+      "expiation",
+      "imago_dei",
+      "peche",
+      "union_christ",
+      "sanctification",
+      "souffrance",
+      "crainte_homme",
+      "crainte_dieu"
     ]
   },
   {
@@ -8448,6 +8951,15 @@
       "1Cor.10",
       "1John.4",
       "Gen.3"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "peche",
+      "regeneration",
+      "perseverance",
+      "soteriologie",
+      "alliances",
+      "eschatologie"
     ]
   },
   {
@@ -8598,6 +9110,14 @@
       "Heb.4.13",
       "Matt.20.15",
       "Matt.23.37"
+    ],
+    "topics_canonical": [
+      "trinite",
+      "souverainete",
+      "expiation",
+      "pneumatologie",
+      "regeneration",
+      "soteriologie"
     ]
   },
   {
@@ -8751,6 +9271,16 @@
       "Rom.1.23",
       "Gen.3",
       "Heb.11"
+    ],
+    "topics_canonical": [
+      "attributs",
+      "imago_dei",
+      "peche",
+      "foi_repentance",
+      "sanctification",
+      "adoration",
+      "crainte_dieu",
+      "confessions"
     ]
   },
   {
@@ -8896,6 +9426,16 @@
       "1John.4.18",
       "Isa.6",
       "Eccl.12.13-Eccl.12.14"
+    ],
+    "topics_canonical": [
+      "imago_dei",
+      "peche",
+      "regeneration",
+      "sanctification",
+      "crainte_homme",
+      "crainte_dieu",
+      "vie_chretienne",
+      "apologetique"
     ]
   },
   {
@@ -9021,6 +9561,12 @@
       "Ps.110",
       "Matt.22",
       "Gen.14"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "christologie",
+      "expiation",
+      "alliances"
     ]
   },
   {
@@ -9153,6 +9699,14 @@
       "1Cor.10.13",
       "Heb.12",
       "Matt.5.45"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "providence",
+      "sanctification",
+      "grace",
+      "famille",
+      "eschatologie"
     ]
   },
   {
@@ -9210,6 +9764,14 @@
       "Matt.6.33",
       "Matt.10.40",
       "Matt.25.40"
+    ],
+    "topics_canonical": [
+      "providence",
+      "ecclesiologie",
+      "ministeres",
+      "adoration",
+      "vie_chretienne",
+      "mission"
     ]
   },
   {
@@ -9337,6 +9899,13 @@
       "Rom.9",
       "Heb.1.3",
       "Prov.16.33"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "providence",
+      "christologie",
+      "expiation",
+      "soteriologie"
     ]
   },
   {
@@ -9486,6 +10055,12 @@
       "Jas.1.12-Jas.1.15",
       "Esth.6",
       "Prov.16.33"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "providence",
+      "christologie",
+      "creation"
     ]
   },
   {
@@ -9620,6 +10195,13 @@
       "Matt.25.36",
       "Luke.10.7",
       "Acts"
+    ],
+    "topics_canonical": [
+      "ecclesiologie",
+      "ministeres",
+      "prochain",
+      "vie_chretienne",
+      "mission"
     ]
   },
   {
@@ -9754,6 +10336,13 @@
       "Acts.20.24",
       "Gal.1",
       "1Tim.6.17"
+    ],
+    "topics_canonical": [
+      "providence",
+      "sanctification",
+      "ministeres",
+      "prochain",
+      "vie_chretienne"
     ]
   },
   {
@@ -9887,6 +10476,15 @@
       "2Pet.3.3-2Pet.3.14",
       "Matt.7.13-Matt.7.14",
       "1Kgs.21"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "ecriture",
+      "imago_dei",
+      "sanctification",
+      "perseverance",
+      "vie_chretienne",
+      "eschatologie"
     ]
   },
   {
@@ -10024,6 +10622,12 @@
       "Acts.2",
       "Acts.8",
       "Gen.50.20"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "providence",
+      "apologetique",
+      "confessions"
     ]
   },
   {
@@ -10163,6 +10767,14 @@
       "John.14.21",
       "Ps.1",
       "Jas.1.22-Jas.1.25"
+    ],
+    "topics_canonical": [
+      "providence",
+      "imago_dei",
+      "sanctification",
+      "priere",
+      "vie_chretienne",
+      "eschatologie"
     ]
   },
   {
@@ -10295,6 +10907,14 @@
       "Gal.1",
       "Rom.8.28",
       "1Tim.6.12"
+    ],
+    "topics_canonical": [
+      "expiation",
+      "union_christ",
+      "sanctification",
+      "ecclesiologie",
+      "priere",
+      "vie_chretienne"
     ]
   },
   {
@@ -10435,6 +11055,15 @@
       "Eph.3.16-Eph.3.19",
       "Deut",
       "Heb"
+    ],
+    "topics_canonical": [
+      "ecriture",
+      "attributs",
+      "peche",
+      "sanctification",
+      "perseverance",
+      "ecclesiologie",
+      "eschatologie"
     ]
   },
   {
@@ -10551,6 +11180,13 @@
     "captions_ref": "data/catalog/transcripts/sc-2088231870.vtt",
     "scripture_refs_osis": [
       "Titus.2"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "ecclesiologie",
+      "ministeres",
+      "famille",
+      "mission"
     ]
   },
   {
@@ -10680,6 +11316,13 @@
       "1Tim.3",
       "Titus.1",
       "Matt.20.26-Matt.20.28"
+    ],
+    "topics_canonical": [
+      "union_christ",
+      "ministeres",
+      "priere",
+      "famille",
+      "vie_chretienne"
     ]
   },
   {
@@ -10790,6 +11433,12 @@
       "Gen.2.7",
       "Gen.2.18",
       "1Cor.11.8-1Cor.11.9"
+    ],
+    "topics_canonical": [
+      "imago_dei",
+      "ministeres",
+      "famille",
+      "creation"
     ]
   },
   {
@@ -10920,6 +11569,15 @@
       "Ezek.34",
       "Ezek.16",
       "Gen.3"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "christologie",
+      "expiation",
+      "perseverance",
+      "soteriologie",
+      "ministeres",
+      "eschatologie"
     ]
   },
   {
@@ -11045,6 +11703,16 @@
       "Matt.5.5",
       "Matt.5.8",
       "Matt.25.21"
+    ],
+    "topics_canonical": [
+      "trinite",
+      "pneumatologie",
+      "justification",
+      "union_christ",
+      "adoption",
+      "sanctification",
+      "loi_evangile",
+      "vie_chretienne"
     ]
   },
   {
@@ -11165,6 +11833,14 @@
     "scripture_refs_osis": [
       "Gen.1",
       "Rom.1"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "providence",
+      "imago_dei",
+      "priere",
+      "apologetique",
+      "creation"
     ]
   },
   {
@@ -11291,6 +11967,15 @@
       "Eph.5",
       "1Tim.4",
       "Phil.4"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "peche",
+      "regeneration",
+      "sanctification",
+      "soteriologie",
+      "loi_evangile",
+      "vie_chretienne"
     ]
   },
   {
@@ -11413,6 +12098,15 @@
       "1John.4.7-1John.4.16",
       "Eph.3.14-Eph.3.19",
       "Eph.2"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "christologie",
+      "pneumatologie",
+      "sanctification",
+      "perseverance",
+      "soteriologie",
+      "prochain"
     ]
   },
   {
@@ -11549,6 +12243,14 @@
       "Gal.5.18-Gal.5.19",
       "Gal.5.23",
       "Gal.6.2"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "union_christ",
+      "sanctification",
+      "loi_evangile",
+      "prochain",
+      "vie_chretienne"
     ]
   },
   {
@@ -11699,6 +12401,15 @@
       "Gal.4",
       "Phil.3.21",
       "1Cor.15.42"
+    ],
+    "topics_canonical": [
+      "christologie",
+      "imago_dei",
+      "peche",
+      "regeneration",
+      "glorification",
+      "famille",
+      "creation"
     ]
   },
   {
@@ -11848,6 +12559,15 @@
       "Acts.20",
       "Phil.1",
       "Matt.28.18-Matt.28.20"
+    ],
+    "topics_canonical": [
+      "providence",
+      "pneumatologie",
+      "justification",
+      "sanctification",
+      "perseverance",
+      "souffrance",
+      "mission"
     ]
   },
   {
@@ -11978,6 +12698,15 @@
       "Zeph.3.17",
       "Rom.1",
       "Jas.3"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "christologie",
+      "imago_dei",
+      "famille",
+      "vie_chretienne",
+      "creation",
+      "confessions"
     ]
   },
   {
@@ -12105,6 +12834,16 @@
       "Phil.2.12",
       "Phil.3.9-Phil.3.12",
       "Heb.12.1-Heb.12.3"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "pneumatologie",
+      "justification",
+      "sanctification",
+      "perseverance",
+      "grace",
+      "ecclesiologie",
+      "confessions"
     ]
   },
   {
@@ -12242,6 +12981,15 @@
       "Eph.4",
       "Ps.1.2-Ps.1.3",
       "Acts.1"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "pneumatologie",
+      "union_christ",
+      "sanctification",
+      "perseverance",
+      "grace",
+      "vie_chretienne"
     ]
   },
   {
@@ -12373,6 +13121,13 @@
       "Eph.5",
       "Acts.7",
       "Acts.17"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "imago_dei",
+      "peche",
+      "famille",
+      "apologetique"
     ]
   },
   {
@@ -12505,6 +13260,15 @@
       "Lam.4.6",
       "Ezek.34",
       "Jer.52"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "attributs",
+      "expiation",
+      "foi_repentance",
+      "alliances",
+      "ministeres",
+      "eschatologie"
     ]
   },
   {
@@ -12633,6 +13397,14 @@
       "Rom.8.14-Rom.8.18",
       "Acts.1.7-Acts.1.8",
       "2Cor.5"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "peche",
+      "adoption",
+      "sanctification",
+      "perseverance",
+      "soteriologie"
     ]
   },
   {
@@ -12767,6 +13539,14 @@
       "Eph.5",
       "Col.3.10",
       "Jas.3.9"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "christologie",
+      "imago_dei",
+      "peche",
+      "sanctification",
+      "creation"
     ]
   },
   {
@@ -12898,6 +13678,15 @@
       "Ezek.36.26-Ezek.36.27",
       "Rom.7",
       "Eph.5.18"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "justification",
+      "union_christ",
+      "sanctification",
+      "perseverance",
+      "soteriologie",
+      "loi_evangile"
     ]
   },
   {
@@ -13020,6 +13809,13 @@
       "Exod.20",
       "Rom.8",
       "Eph.5"
+    ],
+    "topics_canonical": [
+      "imago_dei",
+      "peche",
+      "famille",
+      "creation",
+      "confessions"
     ]
   },
   {
@@ -13147,6 +13943,14 @@
       "Gal.5.19",
       "Gal.5.21",
       "Gal.5.24"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "justification",
+      "sanctification",
+      "perseverance",
+      "soteriologie",
+      "loi_evangile"
     ]
   },
   {
@@ -13291,6 +14095,13 @@
       "Rev.5",
       "Ps.24",
       "1Cor.15"
+    ],
+    "topics_canonical": [
+      "christologie",
+      "expiation",
+      "ecclesiologie",
+      "adoration",
+      "eschatologie"
     ]
   },
   {
@@ -13416,6 +14227,14 @@
       "Rev.22.1-Rev.22.2",
       "Gen.2.9-Gen.2.15",
       "Ps.19"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "ecriture",
+      "trinite",
+      "christologie",
+      "apologetique",
+      "creation"
     ]
   },
   {
@@ -13549,6 +14368,15 @@
       "Acts.2",
       "Heb",
       "Dan"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "incarnation",
+      "christologie",
+      "resurrection",
+      "ecclesiologie",
+      "adoration",
+      "mission"
     ]
   },
   {
@@ -13710,6 +14538,14 @@
       "Gen.11",
       "Gen.25",
       "Gen.46"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "ecriture",
+      "christologie",
+      "imago_dei",
+      "apologetique",
+      "creation"
     ]
   },
   {
@@ -13779,6 +14615,12 @@
       "Matt.24.14",
       "Matt.28.18-Matt.28.20",
       "2Cor.5.17-2Cor.5.21"
+    ],
+    "topics_canonical": [
+      "incarnation",
+      "christologie",
+      "vie_chretienne",
+      "mission"
     ]
   },
   {
@@ -13918,6 +14760,15 @@
       "Rom.1.20",
       "Gen.1.31",
       "Exod.20.8-Exod.20.11"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "ecriture",
+      "trinite",
+      "gloire",
+      "apologetique",
+      "creation",
+      "confessions"
     ]
   },
   {
@@ -14083,6 +14934,15 @@
       "Acts.4.27-Acts.4.28",
       "Prov.28.1",
       "2Cor.5.20"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "incarnation",
+      "christologie",
+      "peche",
+      "regeneration",
+      "foi_repentance",
+      "adoption"
     ]
   },
   {
@@ -15132,6 +15992,14 @@
       "Exod.20",
       "Heb.11",
       "Ps.8"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "ecriture",
+      "imago_dei",
+      "adoration",
+      "creation",
+      "confessions"
     ]
   },
   {
@@ -15262,6 +16130,15 @@
       "Acts.11.26",
       "Matt.25.40",
       "Matt.28.19-Matt.28.20"
+    ],
+    "topics_canonical": [
+      "gloire",
+      "peche",
+      "soteriologie",
+      "ministeres",
+      "adoration",
+      "vie_chretienne",
+      "confessions"
     ]
   },
   {
@@ -16310,6 +17187,15 @@
       "Isa.58.6",
       "Prov.19.17",
       "2Tim.3"
+    ],
+    "topics_canonical": [
+      "peche",
+      "justification",
+      "regeneration",
+      "sanctification",
+      "soteriologie",
+      "alliances",
+      "loi_evangile"
     ]
   },
   {
@@ -16574,6 +17460,12 @@
       "Isa.5.16-Isa.5.21",
       "1Cor.11.31",
       "1Pet.1.8-1Pet.1.21"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "attributs",
+      "foi_repentance",
+      "eschatologie"
     ]
   },
   {
@@ -16643,6 +17535,14 @@
       "1Pet.4.17-1Pet.4.19",
       "Luke.23.26-Luke.23.31",
       "Job.34.26"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "attributs",
+      "peche",
+      "alliances",
+      "ecclesiologie",
+      "eschatologie"
     ]
   },
   {
@@ -16777,6 +17677,15 @@
       "1Cor.3",
       "Rom.2.17-Rom.2.24",
       "Isa.7.20"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "souverainete",
+      "peche",
+      "sanctification",
+      "alliances",
+      "mission",
+      "eschatologie"
     ]
   },
   {
@@ -17093,6 +18002,15 @@
       "John.8.12",
       "Matt.5.13-Matt.5.14",
       "Rom.8.28"
+    ],
+    "topics_canonical": [
+      "ecriture",
+      "expiation",
+      "sanctification",
+      "grace",
+      "ecclesiologie",
+      "ministeres",
+      "eschatologie"
     ]
   },
   {
@@ -17384,6 +18302,16 @@
       "Ps.144",
       "2Cor.12.10",
       "Jer.18.6"
+    ],
+    "topics_canonical": [
+      "providence",
+      "attributs",
+      "christologie",
+      "foi_repentance",
+      "sanctification",
+      "perseverance",
+      "ecclesiologie",
+      "priere"
     ]
   },
   {
@@ -18101,6 +19029,15 @@
       "Ps.139",
       "Ps.90",
       "Jer.31"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "attributs",
+      "pneumatologie",
+      "peche",
+      "regeneration",
+      "sanctification",
+      "perseverance"
     ]
   },
   {
@@ -18396,6 +19333,15 @@
       "John.16.33",
       "Matt.11.28",
       "John.3.36"
+    ],
+    "topics_canonical": [
+      "expiation",
+      "justification",
+      "foi_repentance",
+      "perseverance",
+      "grace",
+      "soteriologie",
+      "eschatologie"
     ]
   },
   {
@@ -18563,6 +19509,16 @@
       "Matt.6.19-Matt.6.21",
       "Matt.6.33",
       "Mark.12.41-Mark.12.44"
+    ],
+    "topics_canonical": [
+      "gloire",
+      "imago_dei",
+      "foi_repentance",
+      "sanctification",
+      "prochain",
+      "vie_chretienne",
+      "creation",
+      "eschatologie"
     ]
   },
   {
@@ -19114,6 +20070,11 @@
       "Acts.20.28",
       "1Thess.5",
       "Acts.17"
+    ],
+    "topics_canonical": [
+      "ecclesiologie",
+      "ministeres",
+      "prochain"
     ]
   },
   {
@@ -19245,6 +20206,13 @@
       "Ps.19",
       "Ps.104",
       "Eph.2"
+    ],
+    "topics_canonical": [
+      "ecclesiologie",
+      "ministeres",
+      "predication",
+      "priere",
+      "vie_chretienne"
     ]
   },
   {
@@ -19313,7 +20281,11 @@
     "series_hint": "Leçon n°2 — série sur l'organisation et les ministères de l'Église locale",
     "raw_ref": "data/catalog/transcripts/sc-1651552254.raw.txt",
     "captions_ref": "data/catalog/transcripts/sc-1651552254.vtt",
-    "scripture_refs_osis": []
+    "scripture_refs_osis": [],
+    "topics_canonical": [
+      "ecclesiologie",
+      "ministeres"
+    ]
   },
   {
     "id": "sc-1651552227",
@@ -19432,6 +20404,11 @@
     "scripture_refs_osis": [
       "1Pet.5.2-1Pet.5.3",
       "1Tim.3.8-1Tim.3.12"
+    ],
+    "topics_canonical": [
+      "ecclesiologie",
+      "ministeres",
+      "predication"
     ]
   },
   {
@@ -19551,6 +20528,13 @@
       "Acts.6.2-Acts.6.3",
       "1Tim.3.14-1Tim.3.16",
       "Eph.4"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "sanctification",
+      "ecclesiologie",
+      "ministeres",
+      "prochain"
     ]
   },
   {
@@ -19675,6 +20659,12 @@
       "1Tim.3.14-1Tim.3.16",
       "Matt.7",
       "Eph.5"
+    ],
+    "topics_canonical": [
+      "sanctification",
+      "ecclesiologie",
+      "ministeres",
+      "famille"
     ]
   },
   {
@@ -19803,6 +20793,14 @@
       "Rom",
       "Rev",
       "1Cor.2.2"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "justification",
+      "sanctification",
+      "ecclesiologie",
+      "ministeres",
+      "predication"
     ]
   },
   {
@@ -19862,6 +20860,13 @@
       "Col.2",
       "Matt.10.34-Matt.10.36",
       "Eph.1.4"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "soteriologie",
+      "alliances",
+      "ecclesiologie",
+      "bapteme"
     ]
   },
   {
@@ -19952,7 +20957,10 @@
     "series_hint": "La Bible — 3ème partie",
     "raw_ref": "data/catalog/transcripts/yt-gj17HMaMOyY.raw.txt",
     "captions_ref": "data/catalog/transcripts/yt-gj17HMaMOyY.vtt",
-    "scripture_refs_osis": []
+    "scripture_refs_osis": [],
+    "topics_canonical": [
+      "ecriture"
+    ]
   },
   {
     "id": "yt-sjG__9VrXM0",
@@ -20067,6 +21075,13 @@
       "Ps.23",
       "Ps.1",
       "Col.3.16"
+    ],
+    "topics_canonical": [
+      "ecriture",
+      "attributs",
+      "christologie",
+      "foi_repentance",
+      "apologetique"
     ]
   },
   {
@@ -20176,6 +21191,14 @@
     "scripture_refs_osis": [
       "Deut.6.4-Deut.6.5",
       "Lev.19.18"
+    ],
+    "topics_canonical": [
+      "attributs",
+      "loi_evangile",
+      "ecclesiologie",
+      "adoration",
+      "prochain",
+      "vie_chretienne"
     ]
   },
   {
@@ -20314,6 +21337,15 @@
       "Acts.13",
       "Acts.16",
       "Mark.8"
+    ],
+    "topics_canonical": [
+      "souverainete",
+      "justification",
+      "sanctification",
+      "ministeres",
+      "vie_chretienne",
+      "mission",
+      "confessions"
     ]
   },
   {
@@ -20437,6 +21469,12 @@
       "Isa.53",
       "Eph.5-Eph.6",
       "Matt.28.18-Matt.28.20"
+    ],
+    "topics_canonical": [
+      "pneumatologie",
+      "regeneration",
+      "soteriologie",
+      "mission"
     ]
   },
   {
@@ -20556,6 +21594,16 @@
       "1Cor.13.12",
       "Heb.1.1-Heb.1.2",
       "1Pet.2.9"
+    ],
+    "topics_canonical": [
+      "ecriture",
+      "attributs",
+      "gloire",
+      "peche",
+      "regeneration",
+      "sanctification",
+      "soteriologie",
+      "mission"
     ]
   },
   {
@@ -20702,6 +21750,14 @@
       "2Cor.5.21",
       "Mark.13.24-Mark.13.26",
       "Matt"
+    ],
+    "topics_canonical": [
+      "attributs",
+      "expiation",
+      "justification",
+      "soteriologie",
+      "adoration",
+      "eschatologie"
     ]
   },
   {
@@ -20764,7 +21820,10 @@
     "series_hint": "Parole de Dieu 4/5",
     "raw_ref": "data/catalog/transcripts/yt-LAcVjq-mfJc.raw.txt",
     "captions_ref": "data/catalog/transcripts/yt-LAcVjq-mfJc.vtt",
-    "scripture_refs_osis": []
+    "scripture_refs_osis": [],
+    "topics_canonical": [
+      "ecriture"
+    ]
   },
   {
     "id": "yt-oLoNQjP0ZoU",
@@ -20983,6 +22042,15 @@
       "Eph",
       "Rom.8",
       "John"
+    ],
+    "topics_canonical": [
+      "hermeneutique",
+      "souverainete",
+      "imago_dei",
+      "peche",
+      "alliances",
+      "famille",
+      "creation"
     ]
   },
   {
@@ -21183,6 +22251,15 @@
       "1Cor.1.21",
       "Gal",
       "John.6"
+    ],
+    "topics_canonical": [
+      "expiation",
+      "pneumatologie",
+      "regeneration",
+      "ecclesiologie",
+      "bapteme",
+      "predication",
+      "mission"
     ]
   },
   {
@@ -21624,6 +22701,15 @@
       "Luke.22.43-Luke.22.46",
       "Heb.5.7-Heb.5.9",
       "Ps.51"
+    ],
+    "topics_canonical": [
+      "attributs",
+      "gloire",
+      "christologie",
+      "foi_repentance",
+      "sanctification",
+      "perseverance",
+      "priere"
     ]
   },
   {
@@ -28963,6 +30049,15 @@
       "Ezek.36",
       "Acts.2.16-Acts.2.21",
       "Col.4"
+    ],
+    "topics_canonical": [
+      "ecriture",
+      "expiation",
+      "pneumatologie",
+      "alliances",
+      "ecclesiologie",
+      "ministeres",
+      "mission"
     ]
   },
   {
@@ -29416,7 +30511,14 @@
     "series_hint": "7ème Conférence Bonne Nouvelle — Paris, 05 et 06 mai 2023",
     "raw_ref": "data/catalog/transcripts/yt-PEe-gsxWu3A.raw.txt",
     "captions_ref": "data/catalog/transcripts/yt-PEe-gsxWu3A.vtt",
-    "scripture_refs_osis": []
+    "scripture_refs_osis": [],
+    "topics_canonical": [
+      "ecriture",
+      "pneumatologie",
+      "ecclesiologie",
+      "predication",
+      "vie_chretienne"
+    ]
   },
   {
     "id": "yt-yAE6stBYOMk",

@@ -5,6 +5,7 @@ import Home from "./pages/Home.jsx";
 import Sermon from "./pages/Sermon.jsx";
 import Browse from "./pages/Browse.jsx";
 import Book from "./pages/Book.jsx";
+import { TopicsIndex, TopicPage } from "./pages/Topics.jsx";
 
 /**
  * Routage par chemin — voir lib/router.js pour le pourquoi (partage et aperçus de lien).
@@ -43,6 +44,7 @@ export default function App() {
         </a>
         <nav className="site-nav">
           <a href={href("/livres")}>Livres</a>
+          <a href={href("/themes")}>Thèmes</a>
           <a href={href("/series")}>Séries</a>
           <a href={href("/predicateurs")}>Prédicateurs</a>
         </nav>
@@ -83,6 +85,9 @@ function Route({ route, sermons }) {
       </p>
     );
   }
+  const topicMatch = route.match(/^\/themes\/([a-z_]+)$/);
+  if (topicMatch) return <TopicPage sermons={sermons} topic={topicMatch[1]} />;
+  if (route === "/themes") return <TopicsIndex sermons={sermons} />;
   const bookMatch = route.match(/^\/livres\/([A-Za-z0-9]+)$/);
   if (bookMatch) return <Book sermons={sermons} book={bookMatch[1]} />;
   if (route === "/livres") return <Browse sermons={sermons} mode="book" />;
