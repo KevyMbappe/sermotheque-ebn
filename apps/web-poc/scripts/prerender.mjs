@@ -3,7 +3,7 @@
  * Sermothèque EBN — pré-rendu des pages de partage.
  *
  * Problème résolu : une SPA ne sert qu'un seul `index.html`. Quand quelqu'un colle un lien
- * de prédication dans WhatsApp ou Facebook, le robot d'aperçu ne lit que le HTML brut — il
+ * de sermon dans WhatsApp ou Facebook, le robot d'aperçu ne lit que le HTML brut — il
  * n'exécute pas React. Tous les liens affichaient donc le même encart générique, sans titre
  * ni passage biblique. Pour une Église qui diffuse par WhatsApp, c'est la différence entre
  * un lien qu'on ouvre et un lien qu'on ignore.
@@ -70,7 +70,7 @@ function noscript(s) {
     `<h1>${esc(s.title)}</h1>`,
     `<p>${esc([s.speaker, s.scripture_display, s.series_name].filter(Boolean).join(" · "))}</p>`,
     s.summary ? `<p>${esc(s.summary)}</p>` : "",
-    s.embed?.link ? `<p><a href="${esc(s.embed.link)}">Écouter la prédication</a></p>` : "",
+    s.embed?.link ? `<p><a href="${esc(s.embed.link)}">Écouter le sermon</a></p>` : "",
   ];
   return `<noscript>${bits.join("")}</noscript>`;
 }
@@ -102,7 +102,7 @@ function main() {
   };
 
   // 1) Racine : mêmes métadonnées, mais explicites (le gabarit n'a qu'un <title>).
-  const homeDesc = `Les prédications de l'Église Bonne Nouvelle (Poissy) : ${sermons.length} messages à écouter, avec résumé, chapitres horodatés et transcription — à parcourir par livre biblique, série ou prédicateur.`;
+  const homeDesc = `Les sermons de l'Église Bonne Nouvelle (Poissy) : ${sermons.length} sermons à écouter, avec résumé, chapitres horodatés et transcription — à parcourir par livre biblique, série ou prédicateur.`;
   writeFileSync(
     join(DIST, "index.html"),
     render(metaTags({ title: SITE_NAME, description: homeDesc, path: "" }))
@@ -110,16 +110,16 @@ function main() {
 
   // 2) Pages de navigation.
   const browse = [
-    ["/livres", "Parcourir par livre biblique", "Toutes les prédications classées par livre de la Bible."],
+    ["/livres", "Parcourir par livre biblique", "Tous les sermons classés par livre de la Bible."],
     ["/series", "Parcourir par série", "Les séries d'exposition suivie, dans l'ordre des textes."],
-    ["/predicateurs", "Parcourir par prédicateur", "Les prédications classées par prédicateur."],
+    ["/predicateurs", "Parcourir par prédicateur", "Les sermons classés par prédicateur."],
   ];
   for (const [path, t, d] of browse) {
     write(path, render(metaTags({ title: `${t} — ${SITE_NAME}`, description: d, path: path.slice(1) + "/" })));
   }
 
   // 3) Une page par livre biblique touché (#56). Ce sont de vraies pages d'entrée :
-  // « prédication sur Malachie » est typiquement ce qu'on cherche depuis un moteur.
+  // « sermon sur Malachie » est typiquement ce qu'on cherche depuis un moteur.
   const books = new Map();
   for (const s of sermons) {
     const add = (id, preached) => {
@@ -134,14 +134,14 @@ function main() {
   for (const [book, n] of books) {
     const label = BOOK_FR[book] || book;
     const bits = [];
-    if (n.preached) bits.push(`${n.preached} prédication${n.preached > 1 ? "s" : ""} sur ce livre`);
+    if (n.preached) bits.push(`${n.preached} sermon${n.preached > 1 ? "s" : ""} sur ce livre`);
     if (n.cited) bits.push(`${n.cited} citation${n.cited > 1 ? "s" : ""} dans d'autres messages`);
     write(
       `/livres/${book}/`,
       render(
         metaTags({
-          title: `${label} — prédications · ${SITE_NAME}`,
-          description: `${label} dans la prédication de l'Église Bonne Nouvelle : ${bits.join(" · ")}.`,
+          title: `${label} — sermons · ${SITE_NAME}`,
+          description: `${label} dans les sermons de l'Église Bonne Nouvelle : ${bits.join(" · ")}.`,
           path: `livres/${book}/`,
         })
       )
@@ -157,13 +157,13 @@ function main() {
   let topicPages = 0;
   for (const { id, label } of vocab) {
     const n = topicCounts.get(id);
-    if (!n) continue; // pas de page vide : elle apparaîtra quand le thème sera prêché
+    if (!n) continue; // pas de page vide : elle apparaîtra quand le thème sera abordé
     write(
       `/themes/${id}/`,
       render(
         metaTags({
-          title: `${label} — prédications · ${SITE_NAME}`,
-          description: `${n} prédication${n > 1 ? "s" : ""} de l'Église Bonne Nouvelle sur le thème « ${label} », avec résumé, chapitres horodatés et transcription.`,
+          title: `${label} — sermons · ${SITE_NAME}`,
+          description: `${n} sermon${n > 1 ? "s" : ""} de l'Église Bonne Nouvelle sur le thème « ${label} », avec résumé, chapitres horodatés et transcription.`,
           path: `themes/${id}/`,
         })
       )
@@ -175,13 +175,13 @@ function main() {
     render(
       metaTags({
         title: `Parcourir par thème — ${SITE_NAME}`,
-        description: "Les prédications classées par thème doctrinal et pratique.",
+        description: "Les sermons classés par thème doctrinal et pratique.",
         path: "themes/",
       })
     )
   );
 
-  // 5) Une page par prédication — le cœur du sujet.
+  // 5) Une page par sermon — le cœur du sujet.
   for (const s of sermons) {
     // Les réseaux coupent le titre autour de 60-70 caractères. Plutôt que de laisser
     // tronquer n'importe où, on sacrifie le suffixe (prédicateur · passage) quand le
@@ -203,13 +203,13 @@ function main() {
   );
 
   console.log(
-    `[prerender] ${sermons.length} pages de prédication + ${books.size} pages de livre ` +
+    `[prerender] ${sermons.length} pages de sermon + ${books.size} pages de livre ` +
       `+ ${topicPages} pages de thème + ${browse.length} pages de navigation + accueil + 404`
   );
   console.log(`[prerender] URL publique : ${SITE}`);
   console.log(
     "[prerender] note : pas de vignette (og:image) — les aperçus affichent titre + description. " +
-      "Générer une image par prédication demanderait un rendu graphique au build."
+      "Générer une image par sermon demanderait un rendu graphique au build."
   );
 }
 

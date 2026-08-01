@@ -1,11 +1,11 @@
 /**
  * Routage par CHEMIN (et non par `#`).
  *
- * Pourquoi ce changement : les gens partagent une prédication en copiant l'URL de leur
+ * Pourquoi ce changement : les gens partagent un sermon en copiant l'URL de leur
  * barre d'adresse. Avec `#/sermon/x`, tout ce qui suit le `#` n'est jamais envoyé au
  * serveur — Facebook, WhatsApp et les moteurs voient donc TOUS les liens comme la même
  * page d'accueil, sans titre ni description. Un chemin réel permet de servir une page
- * pré-rendue par prédication, avec ses propres balises Open Graph (voir scripts/prerender.mjs).
+ * pré-rendue par sermon, avec ses propres balises Open Graph (voir scripts/prerender.mjs).
  *
  * GitHub Pages ne sait pas réécrire les URLs : c'est le pré-rendu qui fournit un
  * `index.html` à chaque chemin, plus un `404.html` de repli pour tout le reste.

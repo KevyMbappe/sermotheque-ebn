@@ -51,7 +51,7 @@ export default function Transcript({ id, currentTime, onSeek }) {
         <>
           {error && (
             <p className="muted">
-              Transcription indisponible pour cette prédication.
+              Transcription indisponible pour ce sermon.
             </p>
           )}
           {!error && !text && <p className="muted">Chargement de la transcription…</p>}

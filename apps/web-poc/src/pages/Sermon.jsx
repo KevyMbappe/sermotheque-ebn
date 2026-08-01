@@ -70,7 +70,7 @@ export default function Sermon({ sermon: s, all }) {
 
   return (
     <article className="sermon">
-      <a className="back" href={href("/")}>← Toutes les prédications</a>
+      <a className="back" href={href("/")}>← Tous les sermons</a>
 
       <header className="sermon-head">
         <div className="sermon-tags">

@@ -35,7 +35,7 @@ export default function Player({ embed, title, onReady, onTime }) {
   }, [embed?.url, embed?.kind]);
 
   if (!embed) {
-    return <p className="state">Aucun média disponible pour cette prédication.</p>;
+    return <p className="state">Aucun média disponible pour ce sermon.</p>;
   }
 
   return (

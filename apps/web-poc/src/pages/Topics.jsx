@@ -24,7 +24,7 @@ export function TopicsIndex({ sermons }) {
     <>
       <h1 className="page-title">Parcourir par thème</h1>
       <p className="results-count">
-        <strong>{used.length}</strong> thèmes — vocabulaire curé, pour que deux messages sur la
+        <strong>{used.length}</strong> thèmes — vocabulaire curé, pour que deux sermons sur la
         même doctrine se retrouvent au même endroit.
       </p>
       <ul className="book-grid">
@@ -34,7 +34,7 @@ export function TopicsIndex({ sermons }) {
               <span className="book-name">{v.label}</span>
               <span className="book-counts">
                 <span className="count-preached">
-                  {counts.get(v.id)} prédication{counts.get(v.id) > 1 ? "s" : ""}
+                  {counts.get(v.id)} sermon{counts.get(v.id) > 1 ? "s" : ""}
                 </span>
               </span>
             </a>
@@ -59,7 +59,7 @@ export function TopicPage({ sermons, topic }) {
       <a className="back" href={href("/themes")}>← Tous les thèmes</a>
       <h1 className="page-title">{entry ? entry.label : topic}</h1>
       <p className="results-count">
-        {items.length} prédication{items.length > 1 ? "s" : ""}
+        {items.length} sermon{items.length > 1 ? "s" : ""}
       </p>
       {items.length > 0 ? (
         <div className="grid">
@@ -67,7 +67,7 @@ export function TopicPage({ sermons, topic }) {
         </div>
       ) : (
         <p className="state">
-          Aucune prédication publiée sur ce thème pour l'instant. Il se remplira au fil des
+          Aucun sermon publié sur ce thème pour l'instant. Il se remplira au fil des
           prochains enrichissements.
         </p>
       )}

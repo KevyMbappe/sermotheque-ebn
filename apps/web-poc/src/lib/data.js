@@ -45,7 +45,7 @@ export const bookRank = (osis) => {
 };
 
 export const KIND_FR = {
-  sermon: "Prédication",
+  sermon: "Sermon",
   teaching: "Enseignement",
   qa: "Questions/Réponses",
   teaching_or_qa: "Enseignement",
