@@ -43,7 +43,7 @@ export default function Transcript({ id, currentTime, onSeek }) {
   }, [active, follow, q]);
 
   return (
-    <section className="panel">
+    <section className="panel no-print">
       <div className="panel-head">
         <h2>Transcription</h2>
         <div className="panel-actions">

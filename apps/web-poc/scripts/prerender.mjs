@@ -22,6 +22,7 @@ import { fileURLToPath } from "node:url";
 // Même table de livres que l'application — books.js est volontairement sans dépendance
 // navigateur pour pouvoir être importé ici (voir son en-tête).
 import { BOOK_FR } from "../src/lib/books.js";
+import { available as ogAvailable, makeCard } from "./og-image.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const APP = resolve(HERE, "..");
@@ -43,8 +44,9 @@ function clamp(text, max) {
   return cut.slice(0, cut.lastIndexOf(" ")).replace(/[,;:.]$/, "") + "…";
 }
 
-function metaTags({ title, description, path }) {
+function metaTags({ title, description, path, image }) {
   const url = SITE + path.replace(/^\//, "");
+  const img = image ? SITE + image.replace(/^\//, "") : null;
   return [
     `<title>${esc(title)}</title>`,
     `<meta name="description" content="${esc(description)}" />`,
@@ -55,9 +57,15 @@ function metaTags({ title, description, path }) {
     `<meta property="og:title" content="${esc(title)}" />`,
     `<meta property="og:description" content="${esc(description)}" />`,
     `<meta property="og:url" content="${esc(url)}" />`,
-    // summary_large_image sans image donnerait un encart vide : on reste sur `summary`
-    // tant qu'aucune vignette n'est générée (voir la note en fin de fichier).
-    `<meta name="twitter:card" content="summary" />`,
+    ...(img
+      ? [`<meta property="og:image" content="${esc(img)}" />`,
+         `<meta property="og:image:width" content="1200" />`,
+         `<meta property="og:image:height" content="630" />`,
+         `<meta name="twitter:card" content="summary_large_image" />`,
+         `<meta name="twitter:image" content="${esc(img)}" />`]
+      // Sans vignette, `summary_large_image` afficherait un encart vide : on retombe
+      // sur la carte compacte plutôt que sur un trou.
+      : [`<meta name="twitter:card" content="summary" />`]),
     `<meta name="twitter:title" content="${esc(title)}" />`,
     `<meta name="twitter:description" content="${esc(description)}" />`,
   ].join("\n    ");
@@ -81,12 +89,17 @@ function write(path, html) {
   writeFileSync(join(dir, "index.html"), html);
 }
 
-function main() {
+async function main() {
   if (!existsSync(DIST) || !existsSync(join(DIST, "index.html"))) {
     console.error("[prerender] dist/index.html absent — lancer `vite build` d'abord.");
     process.exit(1);
   }
   const template = readFileSync(join(DIST, "index.html"), "utf-8");
+  // Les vignettes sont un bonus : si le rastériseur manque, on publie sans, plutôt que
+  // de faire échouer le déploiement.
+  const cards = await ogAvailable();
+  let made = 0;
+  if (!cards) console.warn("[prerender] rastériseur SVG indisponible — aperçus sans vignette");
   const sermons = JSON.parse(readFileSync(DATA, "utf-8"));
 
   // Le gabarit porte un <title> ET une <meta description> génériques : on retire les deux
@@ -185,14 +198,33 @@ function main() {
     // Les réseaux coupent le titre autour de 60-70 caractères. Plutôt que de laisser
     // tronquer n'importe où, on sacrifie le suffixe (prédicateur · passage) quand le
     // titre est déjà long, et on ne coupe qu'en dernier recours, sur un mot.
-    const who = [s.speaker, s.scripture_display].filter(Boolean).join(" · ");
+    // Ne pas répéter le passage quand il TIENT LIEU de titre (5 sermons dont le titre
+    // d'origine n'était qu'une référence) : « Actes 1 — David · Actes 1 » fait négligé.
+    const who = [s.speaker, s.scripture_display !== s.title ? s.scripture_display : null]
+      .filter(Boolean).join(" · ");
     const full = `${s.title}${who ? ` — ${who}` : ""}`;
     const title = full.length <= 95 ? full : clamp(s.title, 95);
     // `description` est l'accroche écrite par l'enrichissement : c'est exactement
     // ce qu'on veut voir apparaître sous le lien. `summary` en repli.
     const description = clamp(s.description || s.summary, 200);
     const path = `/sermon/${encodeURIComponent(s.id)}/`;
-    write(path, render(metaTags({ title, description, path: path.slice(1) }), noscript(s)));
+    let image = null;
+    if (cards) {
+      const png = await makeCard({
+        title: s.title,
+        scripture: s.scripture_display,
+        speaker: s.speaker,
+        date: s.date ? new Date(s.date + "T00:00:00").toLocaleDateString("fr-FR",
+          { day: "numeric", month: "long", year: "numeric" }) : "",
+      });
+      if (png) {
+        mkdirSync(join(DIST, "og"), { recursive: true });
+        writeFileSync(join(DIST, "og", `${s.id}.png`), png);
+        image = `og/${s.id}.png`;
+        made++;
+      }
+    }
+    write(path, render(metaTags({ title, description, path: path.slice(1), image }), noscript(s)));
   }
 
   // 4) Filet : toute URL inconnue retombe sur l'app, qui affiche son propre message.
@@ -201,15 +233,13 @@ function main() {
     render(metaTags({ title: `Page introuvable — ${SITE_NAME}`, description: homeDesc, path: "" }))
   );
 
+  if (cards) console.log(`[prerender] ${made} vignettes d'aperçu (1200×630)`);
   console.log(
     `[prerender] ${sermons.length} pages de sermon + ${books.size} pages de livre ` +
       `+ ${topicPages} pages de thème + ${browse.length} pages de navigation + accueil + 404`
   );
   console.log(`[prerender] URL publique : ${SITE}`);
-  console.log(
-    "[prerender] note : pas de vignette (og:image) — les aperçus affichent titre + description. " +
-      "Générer une image par sermon demanderait un rendu graphique au build."
-  );
+
 }
 
-main();
+await main();

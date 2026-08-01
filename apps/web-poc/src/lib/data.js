@@ -29,14 +29,13 @@ export async function loadVtt(id) {
   return res.text();
 }
 
-/** Normalise pour comparer sans accents ni casse (recherche FR). */
-export const fold = (s) =>
-  (s || "")
-    .toLowerCase()
-    .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "");
 
 import { BOOK_ORDER, BOOK_FR } from "./books.js";
+import { fold } from "./fold.js";
+import { searchSermons } from "./search.js";
+
+// Ré-exporté : plusieurs composants importent `fold` depuis data.js.
+export { fold };
 
 export const bookLabel = (osis) => BOOK_FR[osis] || osis;
 export const bookRank = (osis) => {
@@ -59,24 +58,21 @@ export const KIND_FR = {
 const KIND_GROUP = { teaching_or_qa: "teaching" };
 export const kindOf = (s) => KIND_GROUP[s?.kind] || s?.kind;
 
-/** Applique recherche + filtres. `filters` : { book, series, speaker, language, kind }. */
+/**
+ * Applique les filtres. La RECHERCHE est traitée à part (lib/search.js) : elle classe par
+ * pertinence et produit un extrait, ce qu'un simple `filter` ne peut pas rendre.
+ */
 export function filterSermons(all, { q = "", ...filters } = {}) {
-  const needle = fold(q).trim();
-  return all.filter((s) => {
+  const filtered = all.filter((s) => {
     if (filters.book && s.scripture_book !== filters.book) return false;
     if (filters.topic && !(s.topics_canonical || []).includes(filters.topic)) return false;
     if (filters.series && s.series_name !== filters.series) return false;
     if (filters.speaker && s.speaker !== filters.speaker) return false;
     if (filters.language && s.language !== filters.language) return false;
     if (filters.kind && kindOf(s) !== filters.kind) return false;
-    if (!needle) return true;
-    // Le champ de recherche balaie tout ce que l'enrichissement a produit.
-    const hay = fold(
-      [s.title, s.description, s.summary, s.speaker, s.series_name, s.scripture_display,
-       (s.topics || []).join(" "), (s.key_points || []).join(" ")].join(" ")
-    );
-    return needle.split(/\s+/).every((w) => hay.includes(w));
+    return true;
   });
+  return searchSermons(filtered, q);
 }
 
 /** Compte les occurrences d'une clé, trié — sert aux menus de filtres et aux vues d'agrégats. */

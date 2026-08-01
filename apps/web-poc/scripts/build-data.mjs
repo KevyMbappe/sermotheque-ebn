@@ -57,7 +57,11 @@ function embedFor(row) {
 function project(row) {
   return {
     id: row.id,
-    title: row.title,
+    // 5 sermons publiés ont un titre VIDE : leur titre d'origine ne contenait que la
+    // référence biblique, que le parseur en retire par construction. On retombe donc sur
+    // le passage — c'est ce qu'un humain écrirait. (Défaut de données à traiter en amont :
+    // un enregistrement sans titre gênera aussi l'import WordPress.)
+    title: row.title || row.scripture_display || row.raw_title || "Sermon",
     raw_title: row.raw_title,
     date: row.date,
     language: row.language,
