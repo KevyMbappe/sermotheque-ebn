@@ -39,7 +39,7 @@ export default function Player({ embed, title, onReady, onTime }) {
   }
 
   return (
-    <div className={`player player-${embed.kind}`}>
+    <div className={`player no-print player-${embed.kind}`}>
       <iframe
         ref={iframeRef}
         src={embed.url}

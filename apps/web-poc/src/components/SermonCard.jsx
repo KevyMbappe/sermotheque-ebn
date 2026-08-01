@@ -1,5 +1,6 @@
 import { href } from "../lib/router.js";
 import { fmtDate, fmtDuration } from "../lib/data.js";
+import { markedParts } from "../lib/search.js";
 
 export default function SermonCard({ sermon: s }) {
   // Slash final : c'est la forme canonique servie par le pré-rendu, donc celle qui doit
@@ -14,6 +15,18 @@ export default function SermonCard({ sermon: s }) {
 
       <h3 className="card-title">{s.title}</h3>
       {s.description && <p className="card-desc">{s.description}</p>}
+
+      {/* Quand un sermon ressort d'une recherche, on montre POURQUOI : le champ qui a
+          répondu et l'extrait, terme en évidence. Sinon un résultat inattendu a l'air
+          d'un bug. Le surlignage passe par des segments JSX, jamais par du HTML injecté. */}
+      {s._match?.snippet && (
+        <p className="card-match">
+          <span className="match-field">{s._match.field}</span>
+          {markedParts(s._match.snippet).map((p, i) =>
+            p.hit ? <mark key={i}>{p.text}</mark> : <span key={i}>{p.text}</span>
+          )}
+        </p>
+      )}
 
       <div className="card-meta">
         <span className="speaker">

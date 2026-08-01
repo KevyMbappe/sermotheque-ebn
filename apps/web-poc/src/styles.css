@@ -184,6 +184,17 @@ button { font: inherit; cursor: pointer; }
 .chip-link:hover { border-color: var(--accent); color: var(--accent); }
 .refs-verbatim { margin-top: .5rem; font-size: .8rem; line-height: 1.5; }
 
+.card-match {
+  margin: 0; padding: .5rem .6rem; border-left: 2px solid var(--accent-soft);
+  background: var(--bg); border-radius: 4px;
+  font-family: ui-sans-serif, system-ui, sans-serif; font-size: .8rem; color: var(--ink-soft);
+}
+.match-field {
+  display: block; margin-bottom: .15rem;
+  font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted);
+}
+.card-match mark { background: var(--accent-soft); color: var(--accent); padding: 0 .1em; border-radius: 2px; }
+
 .searchbox { margin-bottom: 1rem; }
 .searchbox .results-count { margin: .4rem 0 0; }
 
@@ -325,3 +336,50 @@ button { font: inherit; cursor: pointer; }
 }
 .group-chevron { color: var(--muted); width: 1rem; text-align: center; }
 .group-grid { padding: .5rem 0 1.2rem; }
+
+/* ---------- fiche de groupe de maison (impression) ---------- */
+
+.print-only { display: none; }
+.sermon-actions { margin: .8rem 0 0; }
+
+/**
+ * Le sermon a déjà tout ce qu'il faut pour un groupe de maison : résumé, points clés,
+ * chapitres horodatés, citations et questions de réflexion. Il ne manquait qu'une mise
+ * en page papier — donc pas de composant dédié, juste une feuille de style qui retire
+ * ce qui n'a aucun sens imprimé (lecteur, transcription, boutons de partage).
+ */
+@media print {
+  .no-print, .site-header, .site-footer, .back, .related, .filters, .searchbox { display: none !important; }
+  .print-only { display: block; }
+
+  @page { size: A4; margin: 16mm 14mm; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .site-main { max-width: none; padding: 0; }
+
+  .print-head {
+    display: flex; justify-content: space-between; gap: 1rem;
+    border-bottom: 1pt solid #999; padding-bottom: 4pt; margin-bottom: 10pt;
+    font-family: ui-sans-serif, system-ui, sans-serif; font-size: 8pt; color: #444;
+  }
+  .print-head span { text-align: right; word-break: break-all; }
+
+  .sermon-head h1 { font-size: 18pt; }
+  .sermon-meta { font-size: 9.5pt; color: #333; }
+  .invitation { font-style: italic; }
+
+  /* Une seule colonne : la mise en page à deux colonnes ne survit pas au papier. */
+  .sermon-body { display: block; }
+  .panel { border: 0; box-shadow: none; padding: 0; margin: 0 0 10pt; break-inside: avoid; }
+  .panel h2 {
+    font-size: 11pt; text-transform: uppercase; letter-spacing: .04em;
+    border-bottom: .5pt solid #bbb; padding-bottom: 2pt;
+  }
+  .quote { break-inside: avoid; }
+  .chapter-time { color: #555; }
+
+  /* Les questions sont le cœur de la fiche : on laisse la place pour écrire dessous. */
+  .panel:has(> h2) ol.bullets li { margin-bottom: 10pt; }
+
+  a { text-decoration: none; color: #000; }
+  .chip { border: .5pt solid #bbb; }
+}

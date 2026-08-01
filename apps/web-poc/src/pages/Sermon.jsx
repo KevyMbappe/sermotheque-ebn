@@ -72,6 +72,12 @@ export default function Sermon({ sermon: s, all }) {
     <article className="sermon">
       <a className="back" href={href("/")}>← Tous les sermons</a>
 
+      {/* En-tête visible seulement sur le papier : qui, quoi, et où retrouver le sermon. */}
+      <div className="print-only print-head">
+        <strong>Église Bonne Nouvelle — Poissy</strong>
+        <span>Fiche de groupe de maison · {typeof window !== "undefined" ? window.location.origin + window.location.pathname : ""}</span>
+      </div>
+
       <header className="sermon-head">
         <div className="sermon-tags">
           {s.scripture_display && <span className="tag tag-scripture">{s.scripture_display}</span>}
@@ -100,7 +106,16 @@ export default function Sermon({ sermon: s, all }) {
           )}
         </p>
         {s.invitation && <p className="invitation">{s.invitation}</p>}
+
+        {/* Fiche de groupe de maison : tout le matériel est déjà là (résumé, points clés,
+            chapitres, questions de réflexion). Il ne manquait qu'une mise en page papier. */}
+        <p className="sermon-actions no-print">
+          <button className="ghost small" onClick={() => window.print()}>
+            🖨 Imprimer la fiche de groupe
+          </button>
+        </p>
       </header>
+
 
       <Player embed={s.embed} title={s.title} onReady={handleReady} onTime={handleTime} />
 

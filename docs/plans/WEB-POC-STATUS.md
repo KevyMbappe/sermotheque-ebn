@@ -157,6 +157,37 @@ filtre) et la case est désactivée pour que ce soit visible.
   « mentions sans chapitre » doit être filtrée comme les autres — oubliée au premier jet,
   elle restait affichée pendant une recherche et faussait le compte.
 
+## 🆕 Ajouté le 2026-08-01 — recherche plein-texte, fiche papier, vignettes
+
+**Recherche plein-texte** (`src/lib/search.js`). L'ancienne version était un `includes` sur
+cinq champs, résultats rangés par date. Désormais : **tout le contenu est indexé** (citations,
+questions, références comprises), **les champs sont pondérés** (titre 10, passage 8, thème 5…
+question 1) donc les résultats sont classés par pertinence, et **chaque carte montre POURQUOI
+elle ressort** — le champ qui a répondu + un extrait avec le terme en évidence. Le surlignage
+passe par des segments JSX, jamais par du HTML injecté.
+⚠️ `fold` a été sorti dans `src/lib/fold.js` : `data.js` importe `search.js` qui importait
+`fold` depuis `data.js` — un cycle qui ne casse pas tant que l'usage est différé, mais c'est
+un pari sur l'ordre d'évaluation.
+
+**Fiche de groupe de maison.** Bouton « Imprimer » sur la fiche + `@media print` : le lecteur,
+la transcription, la navigation et les boutons de partage disparaissent ; restent le titre, le
+passage, le résumé, les points clés, les citations et **les questions de réflexion, espacées
+pour écrire dessous**. Un bandeau papier porte le nom de l'Église et l'URL du sermon.
+
+**Vignettes d'aperçu** (`scripts/og-image.mjs`). Une carte 1200×630 par sermon, SVG rastérisé
+en PNG (`@resvg/resvg-js`) : bandeau brun, référence biblique, titre, prédicateur, date, logo.
+131 cartes, ~5 Mo. Les pages passent en `summary_large_image`.
+⚠️ Le rendu est **isolé derrière `available()`** : si le binaire natif manque sur une
+plateforme, le build continue sans vignettes plutôt que d'échouer — un site sans images vaut
+mieux qu'un déploiement rouge.
+⚠️ Le facteur de largeur de caractère (0,62 em) a été **calibré sur l'image produite** : à
+0,52 les titres longs débordaient du cadre, ce qui ne se voit qu'en regardant le PNG.
+
+**Trouvaille de données :** **5 sermons publiés ont un titre vide** — leur titre d'origine ne
+contenait *que* la référence biblique, que le parseur retire par construction. La projection
+retombe sur le passage (`title || scripture_display || raw_title`), mais **c'est un défaut à
+corriger en amont** : un enregistrement sans titre gênera aussi l'import WordPress.
+
 ## ⏳ Reste à faire
 
 1. ~~**Page sermon**~~ — ✅ 2026-08-01. Rendu vérifié en émulation (en-tête, invitation, résumé,
