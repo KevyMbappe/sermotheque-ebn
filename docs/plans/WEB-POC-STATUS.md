@@ -59,8 +59,14 @@ dé-risquer la future bibliothèque WordPress.
    (build sur push `main` touchant `apps/web-poc/**` ou `data/catalog/**`, plus
    `workflow_dispatch` ; `configure-pages@v5` avec `enablement: true` active Pages tout seul).
    **Le repo est passé public** (décision #55) → Pages est gratuit, le repli payant est caduc.
-   ⏳ Reste : **fusionner dans `main`** — un workflow ne se déclenche pas depuis une branche,
-   et l'environnement `github-pages` n'accepte par défaut que la branche par défaut.
+   Fusionné dans `main` le 2026-08-01 ; le workflow s'est déclenché seul.
+   ⚠️ **Premier passage en échec** — `npm ci`, la projection (131 sermons) et le build Vite
+   passent, mais `actions/configure-pages` s'arrête sur *« Create Pages site failed:
+   Resource not accessible by integration »*. L'option `enablement: true` ne peut pas
+   fonctionner : créer le site Pages exige les droits admin, que le `GITHUB_TOKEN` d'un
+   workflow n'a pas. Option retirée.
+   ⏳ **Reste une action manuelle, une seule fois** : Settings → Pages → Source =
+   « GitHub Actions », puis relancer le workflow. Rien d'autre ne bloque.
 6. **Responsivité — ✅ mesurée et corrigée le 2026-08-01** (Playwright, `scrollWidth` vs
    `clientWidth` à 320/360/375/390/414/768). Trois débordements horizontaux réels corrigés :
    en-tête sans `flex-wrap`, enfants de `.filters` à `min-width:auto`, `.grid` en

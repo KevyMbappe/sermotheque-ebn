@@ -44,9 +44,12 @@ jobs:
         working-directory: apps/web-poc
         run: npm run build
 
+      # Prérequis, une seule fois : Settings → Pages → Source = « GitHub Actions ».
+      # `enablement: true` a été essayé et échoue — créer le site Pages demande les droits
+      # admin, que le GITHUB_TOKEN d'un workflow n'a pas ("Resource not accessible by
+      # integration"). Sans le site déjà créé, cette étape s'arrête sur "Get Pages site
+      # failed: Not Found".
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true # active Pages au premier passage, sans réglage manuel
 
       - uses: actions/upload-pages-artifact@v3
         with:
