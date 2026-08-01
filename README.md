@@ -99,7 +99,7 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **M5v — enrich from disk** (2026-06-22): store 39 → **139 enriched**, no re-ASR, ~$7 on Sonnet
 - [ ] **Finish the capture pass** — the only irreversible work; resume `run_enrichment.py --no-enrich` (Apple Silicon required for mlx-whisper)
 - [ ] **Enrich the remaining 378** — from committed transcripts, no re-ASR (**~$27 on Sonnet**)
-- [ ] **POC web** (`apps/web-poc/`, WIP, decision #54) — static React/Vite window onto the catalog: elder demo + de-risks the WP library. Remaining: verify the sermon page on screen, the YouTube player path, and deploy (`docs/plans/WEB-POC-STATUS.md`)
+- [ ] **POC web** (`apps/web-poc/`, WIP, decisions #54/#55) — static React/Vite window onto the catalog: elder demo + de-risks the WP library. Build, mobile layout and Pages workflow done; remaining: verify player seek on a real network, then merge to `main` to deploy (`docs/plans/WEB-POC-STATUS.md`)
 - [ ] WordPress import → website sermon library (first public deliverable)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 
@@ -109,4 +109,4 @@ The full decision logs live in the spec docs. Highlights: SoundCloud is the cata
 
 ---
 
-*This repository is private. Long-term, ownership is intended to transfer to the church.*
+*This repository is **public** (since 2026-08-01) — which makes GitHub Pages free for the web POC, and means the catalog, the transcripts, and the pipeline are readable by anyone. The sermons themselves are already public on YouTube and SoundCloud. Long-term, ownership is intended to transfer to the church.*
