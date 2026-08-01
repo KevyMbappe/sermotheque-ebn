@@ -45,19 +45,28 @@ dé-risquer la future bibliothèque WordPress.
 
 ## ⏳ Reste à faire
 
-1. **Vérifier la page sermon à l'écran** — c'était l'étape en cours quand la session s'est
-   arrêtée. Ouvrir `#/sermon/sc-2338530545` (Luc 1:26-38, SoundCloud) et contrôler :
-   lecteur qui démarre, **clic sur un chapitre → saut au bon timestamp**, transcription qui
-   suit et surligne. C'est LE point à valider : tout le reste est cosmétique à côté.
+1. **Page sermon — rendu vérifié le 2026-08-01, interaction NON vérifiée.** `#/sermon/sc-2338530545`
+   s'affiche entièrement (en-tête, invitation, résumé, points clés, chapitres, transcription).
+   Mais **le saut au timestamp reste à valider sur un vrai réseau** : le conteneur de dev bloque
+   les domaines externes, donc le SDK SoundCloud ne se charge jamais. La **dégradation gracieuse
+   a bien fonctionné** (message + lien « Ouvrir sur SoundCloud ») — première preuve live de ce
+   repli. ⚠️ C'est toujours LE point à valider, et il faut une machine avec accès réseau.
 2. **Vérifier un sermon YouTube** (ex. `#/sermon/yt-IqNmh_XGULE`) — l'API IFrame est un chemin
-   de code distinct de SoundCloud, jamais exécuté encore.
+   de code distinct de SoundCloud, jamais exécuté encore (même blocage réseau ici).
 3. **Vérifier un sermon EN** (badge langue ; l'enrichissement reste en français, c'est voulu).
-4. **`npm run build && npm run preview`** — le routing par hash n'a jamais été testé en build.
-5. **Workflow GitHub Pages** `.github/workflows/deploy-poc.yml` (non écrit) : build sur push de
-   `apps/web-poc/**` ou `data/catalog/**` → `actions/deploy-pages`.
-   ⚠️ **Le repo est privé** : Pages sur repo privé demande un plan payant. Repli à trancher au
-   moment du déploiement — rendre le repo public, ou pousser seulement `dist/` vers un petit
-   repo public `sermotheque-poc`.
+4. ~~**`npm run build`**~~ — ✅ 2026-08-01 : premier build réel (38 modules, 164 Ko JS / 53 Ko
+   gzip), servi par `vite preview`, routing par hash OK.
+5. ~~**Workflow GitHub Pages**~~ — ✅ 2026-08-01 : `.github/workflows/deploy-poc.yml` écrit
+   (build sur push `main` touchant `apps/web-poc/**` ou `data/catalog/**`, plus
+   `workflow_dispatch` ; `configure-pages@v5` avec `enablement: true` active Pages tout seul).
+   **Le repo est passé public** (décision #55) → Pages est gratuit, le repli payant est caduc.
+   ⏳ Reste : **fusionner dans `main`** — un workflow ne se déclenche pas depuis une branche,
+   et l'environnement `github-pages` n'accepte par défaut que la branche par défaut.
+6. **Responsivité — ✅ mesurée et corrigée le 2026-08-01** (Playwright, `scrollWidth` vs
+   `clientWidth` à 320/360/375/390/414/768). Trois débordements horizontaux réels corrigés :
+   en-tête sans `flex-wrap`, enfants de `.filters` à `min-width:auto`, `.grid` en
+   `minmax(280px,…)`. Toutes les largeurs sont propres. À noter : le CSS reste **fluide mais
+   pas mobile-first** (base desktop + un point de rupture `max-width: 820px`).
 6. ~~**Protocole de maintenance**~~ — ✅ fait le 2026-07-30 : entrée build-log **M6a** +
    **décision #54** dans `docs/SERMOTHEQUE.md`, statut/roadmap resynchronisés dans `CLAUDE.md`,
    `README.md`, `docs/PRD.md` (#37) et `docs/SYNTHESE.md`. À re-toucher quand le POC sera

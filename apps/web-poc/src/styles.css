@@ -44,7 +44,8 @@ button { font: inherit; cursor: pointer; }
 /* ---------- chrome ---------- */
 
 .site-header {
-  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: .5rem 1rem; flex-wrap: wrap;   /* sans wrap, la nav déborde sous ~400px */
   padding: 1rem clamp(1rem, 4vw, 3rem);
   border-bottom: 1px solid var(--line);
   background: var(--surface);
@@ -60,7 +61,7 @@ button { font: inherit; cursor: pointer; }
 }
 .brand strong { display: block; font-size: 1.05rem; }
 .brand small { display: block; color: var(--muted); font-size: .78rem; font-family: ui-sans-serif, system-ui, sans-serif; }
-.site-nav { display: flex; gap: 1.2rem; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .9rem; }
+.site-nav { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; font-family: ui-sans-serif, system-ui, sans-serif; font-size: .9rem; }
 .site-nav a { text-decoration: none; color: var(--ink-soft); padding-bottom: 2px; border-bottom: 2px solid transparent; }
 .site-nav a:hover { color: var(--accent); border-color: var(--accent); }
 
@@ -81,6 +82,9 @@ button { font: inherit; cursor: pointer; }
 .hero p { color: var(--ink-soft); }
 
 .filters { margin-bottom: 1.2rem; display: grid; gap: .7rem; }
+/* Un enfant de grille a min-width:auto = sa largeur intrinsèque (ici la taille par
+   défaut d'un <input>, ~312px) et déborde donc sous 340px. */
+.filters > * { min-width: 0; }
 .search {
   width: 100%; padding: .8rem 1rem; font-size: 1rem; font-family: inherit;
   border: 1px solid var(--line); border-radius: var(--radius);
@@ -92,6 +96,9 @@ button { font: inherit; cursor: pointer; }
   padding: .5rem .7rem; border: 1px solid var(--line); border-radius: 8px;
   background: var(--surface); color: var(--ink);
   font-family: ui-sans-serif, system-ui, sans-serif; font-size: .88rem;
+  /* un <select> a une largeur intrinsèque = son option la plus longue ("Épître aux
+     Colossiens…") : sans min-width:0 il refuse de rétrécir et pousse la page. */
+  min-width: 0; max-width: 100%; flex: 1 1 12rem;
 }
 .clear { color: var(--accent); border-color: var(--accent); background: transparent; }
 
@@ -100,7 +107,9 @@ button { font: inherit; cursor: pointer; }
   color: var(--muted); margin: 0 0 1rem;
 }
 
-.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+/* min(280px, 100%) : sur un écran plus étroit que 280px la piste ne force plus
+   la grille à déborder — elle retombe simplement sur une colonne. */
+.grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr)); }
 
 .card {
   display: flex; flex-direction: column; gap: .5rem;

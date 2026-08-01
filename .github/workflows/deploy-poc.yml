@@ -1,0 +1,63 @@
+# POC web (apps/web-poc) → GitHub Pages.
+#
+# Le site est une projection du catalogue canonique : `npm run build` relance
+# scripts/build-data.mjs, qui relit data/catalog/. D'où le déclenchement sur les
+# deux chemins — une passe d'enrichissement republie le site sans toucher au code.
+name: Déployer le POC web
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "apps/web-poc/**"
+      - "data/catalog/**"
+      - ".github/workflows/deploy-poc.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Une seule publication à la fois ; on ne coupe pas un déploiement en cours.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: apps/web-poc/package-lock.json
+
+      - name: Installer les dépendances
+        working-directory: apps/web-poc
+        run: npm ci
+
+      - name: Construire (projection du catalogue + build Vite)
+        working-directory: apps/web-poc
+        run: npm run build
+
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true # active Pages au premier passage, sans réglage manuel
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: apps/web-poc/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
