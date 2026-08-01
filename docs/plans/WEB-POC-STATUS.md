@@ -188,6 +188,28 @@ contenait *que* la référence biblique, que le parseur retire par construction.
 retombe sur le passage (`title || scripture_display || raw_title`), mais **c'est un défaut à
 corriger en amont** : un enregistrement sans titre gênera aussi l'import WordPress.
 
+## 🐛 Corrigé le 2026-08-01 — un menu de filtre se contraignait lui-même
+
+Signalé à l'usage : « on sélectionne un filtre, on reclique dessus, et tous les autres
+éléments sont grisés ».
+
+Cause exacte : les compteurs de CHAQUE menu étaient calculés sur `visible`, c'est-à-dire le
+corpus déjà filtré par **tous** les critères — y compris celui du menu qu'on rouvre. Après
+avoir choisi « Galates », les 53 autres livres affichaient donc 0, et `disabled` les grisait.
+Le menu décrivait fidèlement une sélection déjà faite, mais donnait l'impression d'être cassé.
+
+Règle posée : **un menu ne se contraint jamais lui-même**. Ses compteurs se calculent sur le
+corpus filtré par tous les AUTRES critères. Aucune option n'est plus désactivée non plus —
+une liste grise inquiète, et un choix sans résultat reste réversible.
+
+⚠️ **Piège rencontré en corrigeant** : la clé de DONNÉES et la clé de FILTRE diffèrent
+(`scripture_book` vs `book`, `series_name` vs `series`). Les confondre reproduisait le bug en
+plus discret — la première version du correctif ne marchait que pour `speaker` et `kind`,
+où les deux clés coïncident.
+
+Mesuré : après sélection de « Galates », les livres restent à **23/23**, les séries tombent à
+3 et les thèmes à 33 ; 0 option désactivée.
+
 ## ⏳ Reste à faire
 
 1. ~~**Page sermon**~~ — ✅ 2026-08-01. Rendu vérifié en émulation (en-tête, invitation, résumé,
