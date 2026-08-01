@@ -1,14 +1,26 @@
 import { useEffect, useState } from "react";
-import { bookLabel, bookRank, countBy, KIND_FR, kindOf, loadTopics } from "../lib/data.js";
+import { bookLabel, bookRank, countBy, filterSermons, KIND_FR, kindOf, loadTopics } from "../lib/data.js";
 
 /**
- * Filtres croisés. Chaque menu se construit sur le corpus COMPLET (`all`) pour que les
- * options ne disparaissent pas au fil des sélections, mais les compteurs reflètent le
- * sous-ensemble courant (`visible`) — on voit donc l'effet d'un filtre avant de le poser.
+ * Filtres croisés.
+ *
+ * Règle qui gouverne tout ici : **un menu ne se contraint jamais lui-même**. Les compteurs
+ * d'un menu sont calculés sur le corpus filtré par TOUS LES AUTRES critères, le sien exclu.
+ *
+ * Sans cette règle (le bug corrigé le 2026-08-01) : on choisissait « Galates », on rouvrait
+ * le menu des livres, et les 53 autres livres affichaient 0 — donc grisés. Le menu semblait
+ * cassé alors qu'il décrivait fidèlement une sélection déjà faite. Aucune option n'est plus
+ * désactivée non plus : une liste grise inquiète, et un choix sans résultat reste réversible
+ * (le compte le dit, « Réinitialiser » est à côté).
  */
 export default function Filters({ all, visible, filters, onChange, q, onQuery }) {
-  const counts = (key) => {
-    const c = new Map(countBy(visible, key).map((x) => [x.value, x.count]));
+  // Corpus vu par un menu donné : tous les filtres actifs SAUF le sien.
+  const without = (key) => filterSermons(all, { ...filters, [key]: undefined, q });
+  // ATTENTION : la clé de DONNÉES et la clé de FILTRE diffèrent (`scripture_book` vs `book`,
+  // `series_name` vs `series`). Les confondre laissait le menu se contraindre lui-même —
+  // exactement le bug qu'on corrige ici, en plus discret.
+  const counts = (dataKey, filterKey) => {
+    const c = new Map(countBy(without(filterKey), dataKey).map((x) => [x.value, x.count]));
     return (v) => c.get(v) || 0;
   };
 
@@ -26,7 +38,7 @@ export default function Filters({ all, visible, filters, onChange, q, onQuery })
   useEffect(() => { loadTopics().then(setVocab); }, []);
   const topicCount = (() => {
     const c = new Map();
-    for (const s of visible) for (const id of s.topics_canonical || []) c.set(id, (c.get(id) || 0) + 1);
+    for (const s of without("topic")) for (const id of s.topics_canonical || []) c.set(id, (c.get(id) || 0) + 1);
     return (id) => c.get(id) || 0;
   })();
   const topicsUsed = (() => {
@@ -35,12 +47,12 @@ export default function Filters({ all, visible, filters, onChange, q, onQuery })
     return vocab.filter((v) => seen.has(v.id));
   })();
 
-  const bookCount = counts("scripture_book");
-  const seriesCount = counts("series_name");
-  const speakerCount = counts("speaker");
+  const bookCount = counts("scripture_book", "book");
+  const seriesCount = counts("series_name", "series");
+  const speakerCount = counts("speaker", "speaker");
   const kindCount = (() => {
     const c = new Map();
-    for (const s of visible) { const k = kindOf(s); if (k) c.set(k, (c.get(k) || 0) + 1); }
+    for (const s of without("kind")) { const k = kindOf(s); if (k) c.set(k, (c.get(k) || 0) + 1); }
     return (v) => c.get(v) || 0;
   })();
 
@@ -62,7 +74,7 @@ export default function Filters({ all, visible, filters, onChange, q, onQuery })
         <select value={filters.topic || ""} onChange={set("topic")} aria-label="Thème">
           <option value="">Tous les thèmes</option>
           {topicsUsed.map((v) => (
-            <option key={v.id} value={v.id} disabled={!topicCount(v.id)}>
+            <option key={v.id} value={v.id}>
               {v.label} ({topicCount(v.id)})
             </option>
           ))}
@@ -70,7 +82,7 @@ export default function Filters({ all, visible, filters, onChange, q, onQuery })
         <select value={filters.book || ""} onChange={set("book")} aria-label="Livre biblique">
           <option value="">Tous les livres</option>
           {books.map(({ value }) => (
-            <option key={value} value={value} disabled={!bookCount(value)}>
+            <option key={value} value={value}>
               {bookLabel(value)} ({bookCount(value)})
             </option>
           ))}
@@ -79,7 +91,7 @@ export default function Filters({ all, visible, filters, onChange, q, onQuery })
         <select value={filters.series || ""} onChange={set("series")} aria-label="Série">
           <option value="">Toutes les séries</option>
           {series.map(({ value }) => (
-            <option key={value} value={value} disabled={!seriesCount(value)}>
+            <option key={value} value={value}>
               {value} ({seriesCount(value)})
             </option>
           ))}
@@ -88,7 +100,7 @@ export default function Filters({ all, visible, filters, onChange, q, onQuery })
         <select value={filters.speaker || ""} onChange={set("speaker")} aria-label="Prédicateur">
           <option value="">Tous les prédicateurs</option>
           {speakers.map(({ value }) => (
-            <option key={value} value={value} disabled={!speakerCount(value)}>
+            <option key={value} value={value}>
               {value} ({speakerCount(value)})
             </option>
           ))}
@@ -97,7 +109,7 @@ export default function Filters({ all, visible, filters, onChange, q, onQuery })
         <select value={filters.kind || ""} onChange={set("kind")} aria-label="Type">
           <option value="">Tous les types</option>
           {kinds.map(({ value }) => (
-            <option key={value} value={value} disabled={!kindCount(value)}>
+            <option key={value} value={value}>
               {KIND_FR[value] || value} ({kindCount(value)})
             </option>
           ))}
