@@ -4,9 +4,10 @@ import Chapters from "../components/Chapters.jsx";
 import Transcript from "../components/Transcript.jsx";
 import SermonCard from "../components/SermonCard.jsx";
 import ShareAt from "../components/ShareAt.jsx";
-import { fmtDate, fmtDuration, KIND_FR } from "../lib/data.js";
+import { bookLabel, bookRank, fmtDate, fmtDuration, KIND_FR } from "../lib/data.js";
 import { fmtTime } from "../lib/vtt.js";
 import { href, initialTime, setTimeParam } from "../lib/router.js";
+import { osisPoints } from "../lib/passages.js";
 
 export default function Sermon({ sermon: s, all }) {
   const ctrlRef = useRef(null);
@@ -34,6 +35,27 @@ export default function Sermon({ sermon: s, all }) {
   }, []);
   const canSeek = ctrlRef.current ? seek : null;
   const path = `/sermon/${encodeURIComponent(s.id)}/`;
+
+  // Passages cités, ramenés à des couples livre+chapitre uniques et rangés dans l'ordre
+  // du canon — une puce par passage réel, pas une par occurrence.
+  const citedPoints = (() => {
+    const seen = new Map();
+    for (const ref of s.scripture_refs_osis || []) {
+      for (const pt of osisPoints(ref)) {
+        const key = `${pt.book}.${pt.chapter ?? 0}`;
+        if (!seen.has(key)) {
+          seen.set(key, {
+            key,
+            book: pt.book,
+            label: `${bookLabel(pt.book)}${pt.chapter != null ? ` ${pt.chapter}` : ""}`,
+          });
+        }
+      }
+    }
+    return [...seen.values()].sort(
+      (a, b) => bookRank(a.book) - bookRank(b.book) || a.key.localeCompare(b.key, "fr", { numeric: true })
+    );
+  })();
 
   const sameSeries = s.series_name
     ? all.filter((o) => o.series_name === s.series_name && o.id !== s.id).slice(0, 6)
@@ -138,9 +160,22 @@ export default function Sermon({ sermon: s, all }) {
           {s.scripture_refs?.length > 0 && (
             <section className="panel">
               <h2>Passages cités</h2>
-              <ul className="chips">
-                {s.scripture_refs.map((r, i) => <li key={i} className="chip">{r}</li>)}
-              </ul>
+              {/* Les puces sont construites depuis les ids OSIS, PAS depuis le texte libre :
+                  les deux listes ne sont pas alignées index par index (`scripture_refs_osis`
+                  est dédupliqué, et une chaîne peut donner plusieurs ids). S'y fier
+                  produirait un lien juste 98 fois sur 100 — donc faux sur une vraie page. */}
+              {citedPoints.length > 0 && (
+                <ul className="chips">
+                  {citedPoints.map((p) => (
+                    <li key={p.key}>
+                      <a className="chip chip-link" href={href(`/livres/${p.book}/`)}>{p.label}</a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {/* Le texte d'origine est conservé tel quel : les puces s'arrêtent au chapitre,
+                  la précision au verset reste lisible ici. */}
+              <p className="muted refs-verbatim">{s.scripture_refs.join(" · ")}</p>
             </section>
           )}
 

@@ -106,6 +106,7 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [ ] **Finish the capture pass** — the only irreversible work; resume `run_enrichment.py --no-enrich` (Apple Silicon required for mlx-whisper)
 - [ ] **Enrich the remaining 378** — from committed transcripts, no re-ASR (**~$27 on Sonnet**)
 - [x] **POC web DEPLOYED** (2026-08-01, decisions #54/#55) — **https://kevymbappe.github.io/sermotheque-ebn/** · 131 enriched sermons, player + chapter deep-links + synced transcript; republishes itself when `data/catalog/**` changes. Remaining polish: the YouTube IFrame path and an EN sermon (`docs/plans/WEB-POC-STATUS.md`)
+- [x] **M6d–e — POC polished** (2026-08-01): OSIS citations (#56) + shareable `?t=` links + per-sermon link previews (131 pre-rendered pages) + **browse-by-passage** (54 books)
 - [ ] WordPress import → sermon library on the church's own site (the POC above is a demo, not its replacement — see #54)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 

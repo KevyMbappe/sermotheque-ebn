@@ -73,6 +73,31 @@ la fiche témoin, 0 erreur JS, et toujours aucun débordement horizontal de 320 
 **Limite connue** : pas de vignette (`og:image`) — les aperçus affichent titre + description,
 sans image. En générer une par prédication demanderait un rendu graphique au build.
 
+## 🆕 Ajouté le 2026-08-01 — parcourir par passage biblique
+
+Rendu possible par la normalisation OSIS des citations (#56). `src/lib/passages.js` construit
+l'index `livre → chapitre → prédications` **côté client** (une seule source de vérité, pas de
+second fichier à synchroniser), en distinguant **prêché** (`scripture_osis`) et **cité**
+(`scripture_refs_osis`) — la relation la plus forte l'emporte quand les deux s'appliquent.
+
+- **`/livres`** devient une vraie porte d'entrée : **54 tuiles** dans l'ordre du canon avec les
+  deux compteurs, là où le regroupement sur `scripture_book` n'en montrait que 22.
+- **`/livres/:book`** : ce qui a été prêché sur le livre, puis un index chapitre par chapitre.
+- **Fiche sermon** : les passages cités sont devenus des liens.
+
+⚠️ **Piège évité, à ne pas réintroduire** : les puces sont construites depuis les ids OSIS, **pas**
+en appariant index par index avec `scripture_refs`. Les deux listes divergent sur 2 lignes sur
+134 (`scripture_refs_osis` est dédupliqué, et une chaîne peut donner plusieurs ids) — s'y fier
+donnerait un lien juste 98 fois sur 100, donc faux sur une vraie page. Le texte français
+d'origine est conservé sous les puces, où la précision au verset survit.
+
+`src/lib/books.js` a été extrait de `data.js` : la table des livres est désormais partagée avec
+`scripts/prerender.mjs` (qui ne peut pas importer `data.js`, lequel utilise `fetch` et
+`import.meta.env`) au lieu d'être recopiée.
+
+**Vérifié** : 54 tuiles, Galates 22 prêchées / 32 citations, Malachie–Jude–Esther atteignables
+pour la première fois, puce → page de livre, 0 erreur JS, toujours propre de 320 à 768 px.
+
 ## ⏳ Reste à faire
 
 1. ~~**Page sermon**~~ — ✅ 2026-08-01. Rendu vérifié en émulation (en-tête, invitation, résumé,

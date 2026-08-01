@@ -19,6 +19,9 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+// Même table de livres que l'application — books.js est volontairement sans dépendance
+// navigateur pour pouvoir être importé ici (voir son en-tête).
+import { BOOK_FR } from "../src/lib/books.js";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const APP = resolve(HERE, "..");
@@ -115,7 +118,37 @@ function main() {
     write(path, render(metaTags({ title: `${t} — ${SITE_NAME}`, description: d, path: path.slice(1) + "/" })));
   }
 
-  // 3) Une page par prédication — le cœur du sujet.
+  // 3) Une page par livre biblique touché (#56). Ce sont de vraies pages d'entrée :
+  // « prédication sur Malachie » est typiquement ce qu'on cherche depuis un moteur.
+  const books = new Map();
+  for (const s of sermons) {
+    const add = (id, preached) => {
+      const book = String(id || "").split(/[.\-]/)[0];
+      if (!book) return;
+      if (!books.has(book)) books.set(book, { preached: 0, cited: 0 });
+      books.get(book)[preached ? "preached" : "cited"]++;
+    };
+    add(s.scripture_osis, true);
+    for (const r of s.scripture_refs_osis || []) add(r, false);
+  }
+  for (const [book, n] of books) {
+    const label = BOOK_FR[book] || book;
+    const bits = [];
+    if (n.preached) bits.push(`${n.preached} prédication${n.preached > 1 ? "s" : ""} sur ce livre`);
+    if (n.cited) bits.push(`${n.cited} citation${n.cited > 1 ? "s" : ""} dans d'autres messages`);
+    write(
+      `/livres/${book}/`,
+      render(
+        metaTags({
+          title: `${label} — prédications · ${SITE_NAME}`,
+          description: `${label} dans la prédication de l'Église Bonne Nouvelle : ${bits.join(" · ")}.`,
+          path: `livres/${book}/`,
+        })
+      )
+    );
+  }
+
+  // 4) Une page par prédication — le cœur du sujet.
   for (const s of sermons) {
     // Les réseaux coupent le titre autour de 60-70 caractères. Plutôt que de laisser
     // tronquer n'importe où, on sacrifie le suffixe (prédicateur · passage) quand le
@@ -137,7 +170,8 @@ function main() {
   );
 
   console.log(
-    `[prerender] ${sermons.length} pages de prédication + ${browse.length} pages de navigation + accueil + 404`
+    `[prerender] ${sermons.length} pages de prédication + ${books.size} pages de livre biblique ` +
+      `+ ${browse.length} pages de navigation + accueil + 404`
   );
   console.log(`[prerender] URL publique : ${SITE}`);
   console.log(
