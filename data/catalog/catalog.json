@@ -119,7 +119,19 @@
       "Malachie 4:2"
     ],
     "series_hint": "Série d'études sur la Confession de foi baptiste de 1689, chapitre 8 — Les médiateurs",
-    "captions_ref": "data/catalog/transcripts/sc-2338530545.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2338530545.vtt",
+    "scripture_refs_osis": [
+      "John.1.1",
+      "John.1.14",
+      "Gal.4.4",
+      "Rom.8.3",
+      "Phil.2.6-Phil.2.8",
+      "Heb.2.14",
+      "Heb.2.17",
+      "1John.4.2",
+      "Luke.24.39",
+      "Mal.4.2"
+    ]
   },
   {
     "id": "sc-2334913202",
@@ -251,7 +263,27 @@
     ],
     "series_hint": "Introduction à la Christologie — Confession de foi baptiste de 1689, chapitre 8",
     "raw_ref": "data/catalog/transcripts/sc-2334913202.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2334913202.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2334913202.vtt",
+    "scripture_refs_osis": [
+      "Matt.28.18",
+      "Eph.1.22-Eph.1.23",
+      "1Cor.15.25",
+      "Dan.7.13-Dan.7.14",
+      "Rom.8.3",
+      "John.5.27",
+      "Acts.17.31",
+      "Heb.12.24",
+      "Acts.4.12",
+      "1Tim.2.5",
+      "Luke.24.46-Luke.24.47",
+      "Rom.2.16",
+      "2Tim.4.1",
+      "1John.4.2",
+      "John.1.1",
+      "Phil.2.6-Phil.2.8",
+      "Mal.4.2",
+      "1Tim.3.16"
+    ]
   },
   {
     "id": "sc-2334907916",
@@ -377,7 +409,24 @@
     ],
     "series_hint": "Panorama général de la Bible — introduction au survol des 39 livres de l'Ancien Testament (suivi du Nouveau Testament)",
     "raw_ref": "data/catalog/transcripts/sc-2334907916.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2334907916.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2334907916.vtt",
+    "scripture_refs_osis": [
+      "Gen.1.1",
+      "Gen.3",
+      "Exod.34.6-Exod.34.7",
+      "Lev.19.34",
+      "Deut.6.5",
+      "John.2.19",
+      "John.8.56-John.8.58",
+      "Luke.24.27",
+      "Luke.24.45-Luke.24.47",
+      "Acts.15.13-Acts.15.18",
+      "Rom.11.33-Rom.11.36",
+      "1Cor.15.45-1Cor.15.47",
+      "1Pet.3.18",
+      "Mark.10.45",
+      "Rev.21.3-Rev.21.5"
+    ]
   },
   {
     "id": "sc-2326480337",
@@ -493,7 +542,12 @@
     ],
     "series_hint": "Étude de la Confession de foi baptiste de 1689, chapitre 8 (Christ le Médiateur)",
     "raw_ref": "data/catalog/transcripts/sc-2326480337.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2326480337.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2326480337.vtt",
+    "scripture_refs_osis": [
+      "1Tim.3.14-1Tim.3.16",
+      "Rev.4-Rev.5",
+      "Matt.16.13-Matt.16.17"
+    ]
   },
   {
     "id": "sc-2309532407",
@@ -627,7 +681,25 @@
     ],
     "series_hint": "Série de prédications sur l'épître de Jacques",
     "raw_ref": "data/catalog/transcripts/sc-2309532407.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2309532407.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2309532407.vtt",
+    "scripture_refs_osis": [
+      "Jas.1",
+      "Jas.2.1-Jas.2.11",
+      "Rom.8.1",
+      "Rom.14.10",
+      "2Cor.5.10",
+      "Gal.4.4-Gal.4.5",
+      "2Cor.5.21",
+      "Rom.10.4",
+      "Matt.5.17",
+      "Matt.25.46",
+      "Rev.20",
+      "Matt.6.12",
+      "Matt.6.14-Matt.6.15",
+      "Matt.25.21",
+      "John.13.35",
+      "Luke.6.36"
+    ]
   },
   {
     "id": "sc-2305315550",
@@ -748,7 +820,17 @@
       "1 Corinthiens 12-14"
     ],
     "raw_ref": "data/catalog/transcripts/sc-2305315550.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2305315550.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2305315550.vtt",
+    "scripture_refs_osis": [
+      "Ps.2",
+      "Acts.2.1-Acts.2.47",
+      "Matt.28.18-Matt.28.20",
+      "John.3.19-John.3.20",
+      "Gal.3",
+      "1Tim.3.15",
+      "Heb.11",
+      "1Cor.12-1Cor.14"
+    ]
   },
   {
     "id": "sc-2296940147",
@@ -876,7 +958,20 @@
     ],
     "series_hint": "Série de prédications sur l'Évangile de Jean — transition vers la seconde partie (chapitres 13 et suivants) : accomplissement de la mission du Christ",
     "raw_ref": "data/catalog/transcripts/sc-2296940147.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2296940147.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2296940147.vtt",
+    "scripture_refs_osis": [
+      "John.1.1",
+      "John.1.14",
+      "Gen.3",
+      "Exod.12",
+      "John.3.16",
+      "John.12",
+      "Luke.1.1-Luke.1.4",
+      "1Sam.25",
+      "Luke.7",
+      "John.11-John.12",
+      "1Cor.15.55"
+    ]
   },
   {
     "id": "sc-2284148612",
@@ -999,7 +1094,18 @@
     ],
     "series_hint": "Série de prédications sur la conclusion de Galates (Galates 6)",
     "raw_ref": "data/catalog/transcripts/sc-2284148612.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2284148612.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2284148612.vtt",
+    "scripture_refs_osis": [
+      "Gal.6.11",
+      "Gal.6.12",
+      "Gal.6.13",
+      "Gal.6.15",
+      "Phil.3",
+      "John.10.18",
+      "Col.1.19",
+      "Jas.4.4",
+      "1John.5.19"
+    ]
   },
   {
     "id": "sc-2279697239",
@@ -1119,7 +1225,18 @@
     ],
     "series_hint": "Série de prédications sur Ézéchiel (chapitres 6-7)",
     "raw_ref": "data/catalog/transcripts/sc-2279697239.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2279697239.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2279697239.vtt",
+    "scripture_refs_osis": [
+      "Ezek.7.1-Ezek.7.10",
+      "Ezek.14.1-Ezek.14.2",
+      "2Pet.3.1-2Pet.3.4",
+      "2Pet.3.8-2Pet.3.10",
+      "Eccl.3.1-Eccl.3.11",
+      "Ps.51.10-Ps.51.15",
+      "Rom.13",
+      "Matt.24.6-Matt.24.14",
+      "Matt.6.9-Matt.6.13"
+    ]
   },
   {
     "id": "sc-2275538630",
@@ -1240,7 +1357,17 @@
     ],
     "series_hint": "Série d'études sur l'épître aux Galates",
     "raw_ref": "data/catalog/transcripts/sc-2275538630.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2275538630.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2275538630.vtt",
+    "scripture_refs_osis": [
+      "Gal.2.18-Gal.2.20",
+      "Gal.5.16",
+      "Rom.7",
+      "John.15.1-John.15.5",
+      "Phil.3.4-Phil.3.11",
+      "Matt.23.24-Matt.23.27",
+      "Jude.1.12",
+      "John.21.15-John.21.17"
+    ]
   },
   {
     "id": "sc-2271246476",
@@ -1368,7 +1495,20 @@
     ],
     "series_hint": "Série de prédications sur l'Épître aux Hébreux, chapitre 7",
     "raw_ref": "data/catalog/transcripts/sc-2271246476.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2271246476.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2271246476.vtt",
+    "scripture_refs_osis": [
+      "Heb.6.20",
+      "Heb.4.16",
+      "Ps.110",
+      "Ps.76",
+      "Gen.14.1-Gen.14.2",
+      "Isa.9.5-Isa.9.6",
+      "Rom.8.6-Rom.8.7",
+      "1Sam.3.14",
+      "John.3",
+      "Matt",
+      "Dan.7"
+    ]
   },
   {
     "id": "sc-2270784290",
@@ -1500,7 +1640,30 @@
     ],
     "series_hint": "Étude de la Confession de foi baptiste de 1689 — section sur l'alliance des grâces",
     "raw_ref": "data/catalog/transcripts/sc-2270784290.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2270784290.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2270784290.vtt",
+    "scripture_refs_osis": [
+      "Gal.3.8",
+      "Gal.3.19-Gal.3.20",
+      "John.1.14",
+      "John.1.17-John.1.18",
+      "John.2.19-John.2.21",
+      "John.4.21-John.4.24",
+      "John.14.6",
+      "Rom.8.9-Rom.8.11",
+      "Col.2.9-Col.2.10",
+      "Eph.1.3",
+      "2Pet.1.4",
+      "1Pet.1.10-1Pet.1.12",
+      "Heb.3.4-Heb.3.6",
+      "Heb.8.6",
+      "Heb.9.1",
+      "Heb.9.10",
+      "Heb.10.1",
+      "Heb.10.12-Heb.10.14",
+      "Heb.11.39-Heb.11.40",
+      "Rev.21.22",
+      "Gen.15"
+    ]
   },
   {
     "id": "sc-2267022659",
@@ -1629,7 +1792,23 @@
       "Jean 14:6"
     ],
     "raw_ref": "data/catalog/transcripts/sc-2267022659.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2267022659.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2267022659.vtt",
+    "scripture_refs_osis": [
+      "John.3",
+      "Acts.17",
+      "Gal.4.4-Gal.4.5",
+      "Eph.3",
+      "Heb.1",
+      "Isa.44.3",
+      "Isa.49",
+      "Hos.4",
+      "Ps.24",
+      "Ps.51",
+      "1Sam.16.7",
+      "Gen.3.15",
+      "John.1.12-John.1.13",
+      "John.14.6"
+    ]
   },
   {
     "id": "sc-2262405503",
@@ -1745,7 +1924,12 @@
     ],
     "series_hint": "Série sur l'épître aux Galates — conclusion de la lettre",
     "raw_ref": "data/catalog/transcripts/sc-2262405503.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2262405503.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2262405503.vtt",
+    "scripture_refs_osis": [
+      "Gal.6.14",
+      "Matt.7",
+      "1Cor.2.2"
+    ]
   },
   {
     "id": "sc-2261976683",
@@ -1879,7 +2063,33 @@
     ],
     "series_hint": "Étude de la Confession de foi baptiste de 1689, chapitre 7 : De l'alliance de Dieu avec l'homme",
     "raw_ref": "data/catalog/transcripts/sc-2261976683.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2261976683.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2261976683.vtt",
+    "scripture_refs_osis": [
+      "Gen.3.15",
+      "Gen.9.8-Gen.9.17",
+      "Gen.9.25-Gen.9.27",
+      "Gen.12.1-Gen.12.3",
+      "Gen.17.7-Gen.17.8",
+      "Exod.19.3-Exod.19.6",
+      "1Chr.17.11",
+      "Ps.51",
+      "Jer.31",
+      "Ezek",
+      "Isa.53",
+      "Gal.3.7-Gal.3.9",
+      "Gal.3.14",
+      "Gal.3.16",
+      "Gal.4.21-Gal.4.31",
+      "Eph.2.11-Eph.2.19",
+      "2Cor.6.16",
+      "Heb.6.13-Heb.6.18",
+      "Heb.8.10",
+      "Heb.11",
+      "Heb.12.22-Heb.12.24",
+      "Rom.9",
+      "Rom.11",
+      "1Pet.2.9-1Pet.2.10"
+    ]
   },
   {
     "id": "sc-2259635702",
@@ -2005,7 +2215,22 @@
       "Jacques 1:17"
     ],
     "raw_ref": "data/catalog/transcripts/sc-2259635702.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2259635702.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2259635702.vtt",
+    "scripture_refs_osis": [
+      "John.3.12",
+      "John.3.18",
+      "John.4.10",
+      "John.7.50-John.7.51",
+      "John.19.39",
+      "Ps.145.9",
+      "Rom.5.6",
+      "Acts.17",
+      "Phil.2.13",
+      "Isa.53",
+      "Acts.4.12",
+      "1John.4.9",
+      "Jas.1.17"
+    ]
   },
   {
     "id": "sc-2259630446",
@@ -2127,7 +2352,15 @@
     ],
     "series_hint": "Série de prédications sur le livre d'Ézéchiel, chapitre 7",
     "raw_ref": "data/catalog/transcripts/sc-2259630446.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2259630446.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2259630446.vtt",
+    "scripture_refs_osis": [
+      "Luke.17.26-Luke.17.30",
+      "2Pet.3.1-2Pet.3.4",
+      "Jer.29",
+      "Deut",
+      "Isa.61",
+      "John.1"
+    ]
   },
   {
     "id": "sc-2258368859",
@@ -2247,7 +2480,18 @@
     ],
     "series_hint": "Série de prédications sur la lettre de Jacques, chapitre 2 (suite des versets 1-7)",
     "raw_ref": "data/catalog/transcripts/sc-2258368859.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2258368859.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2258368859.vtt",
+    "scripture_refs_osis": [
+      "Rom.1.20",
+      "Gal.4.4",
+      "Heb.10.5",
+      "Matt.5.18",
+      "Matt.11.25",
+      "Luke.14.13-Luke.14.14",
+      "Jas.1.27",
+      "2Cor.8.9",
+      "Rom.10.4"
+    ]
   },
   {
     "id": "sc-2258331260",
@@ -2367,7 +2611,19 @@
     ],
     "series_hint": "Prédication pour la dédicace d'un nouvel espace de l'Église Bonne Nouvelle, en lien avec la saison de Noël",
     "raw_ref": "data/catalog/transcripts/sc-2258331260.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2258331260.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2258331260.vtt",
+    "scripture_refs_osis": [
+      "1Kgs.8.10",
+      "1Kgs.8.28-1Kgs.8.30",
+      "1Kgs.8.57-1Kgs.8.61",
+      "John.1.1",
+      "John.1.14",
+      "2Pet.1.12-2Pet.1.19",
+      "Phil.2",
+      "1Tim.3.15",
+      "Ezek.37",
+      "Rev"
+    ]
   },
   {
     "id": "sc-2258129696",
@@ -2486,7 +2742,16 @@
     ],
     "series_hint": "Série d'exposition de la lettre aux Galates",
     "raw_ref": "data/catalog/transcripts/sc-2258129696.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2258129696.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2258129696.vtt",
+    "scripture_refs_osis": [
+      "Gal.1.6-Gal.1.10",
+      "Matt.7.21-Matt.7.23",
+      "Rom.11-Rom.12",
+      "Rom.12.9-Rom.12.11",
+      "2Tim.1.5",
+      "Joel.2.13",
+      "Jas.2.19"
+    ]
   },
   {
     "id": "sc-2257818737",
@@ -2608,7 +2873,20 @@
     ],
     "series_hint": "Série sur la théologie de l'alliance / Confession de foi baptiste de 1689, ch. 7 — leçon 3 (transition AT vers NT)",
     "raw_ref": "data/catalog/transcripts/sc-2257818737.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2257818737.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2257818737.vtt",
+    "scripture_refs_osis": [
+      "Gen.3",
+      "Gen.15",
+      "Gal.3",
+      "Jer.31.31-Jer.31.34",
+      "Ezek.36.25-Ezek.36.27",
+      "Ezek.37.26",
+      "Luke.22.20",
+      "Acts.2.16-Acts.2.39",
+      "Matt.13",
+      "John.8",
+      "Heb.10-Heb.12"
+    ]
   },
   {
     "id": "sc-2253830741",
@@ -2719,7 +2997,13 @@
     ],
     "series_hint": "Série sur Galates 6:11-18 — cette prédication est une introduction panoramique; les versets seront repris en détail les dimanches suivants.",
     "raw_ref": "data/catalog/transcripts/sc-2253830741.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2253830741.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2253830741.vtt",
+    "scripture_refs_osis": [
+      "Gal.1.6-Gal.1.10",
+      "2Cor",
+      "Ps",
+      "Acts"
+    ]
   },
   {
     "id": "sc-2250429056",
@@ -2838,7 +3122,15 @@
     ],
     "series_hint": "Série sur la théologie des alliances — deuxième leçon (suite de l'introduction sur la rédemption et Éphésiens 1)",
     "raw_ref": "data/catalog/transcripts/sc-2250429056.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2250429056.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2250429056.vtt",
+    "scripture_refs_osis": [
+      "Eph.1",
+      "Gal.3.13-Gal.3.19",
+      "Rom.8",
+      "Heb.9",
+      "Gen.15",
+      "2Sam.7"
+    ]
   },
   {
     "id": "sc-2250427724",
@@ -2961,7 +3253,21 @@
     ],
     "series_hint": "Confession Baptiste de Foi de Londres 1689, chapitre 7 — série de théologie systématique et biblique",
     "raw_ref": "data/catalog/transcripts/sc-2250427724.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2250427724.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2250427724.vtt",
+    "scripture_refs_osis": [
+      "Eph.1.3-Eph.1.14",
+      "Eph.2",
+      "2Cor.5",
+      "Rom.5",
+      "Rom.8",
+      "Gal.4",
+      "John.6",
+      "John.17",
+      "Ps.2",
+      "Ps.40",
+      "Heb.1.1-Heb.1.2",
+      "Heb.10.5"
+    ]
   },
   {
     "id": "sc-2249668412",
@@ -3072,7 +3378,14 @@
       "Galates 4:4"
     ],
     "raw_ref": "data/catalog/transcripts/sc-2249668412.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2249668412.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2249668412.vtt",
+    "scripture_refs_osis": [
+      "Gal.6.1-Gal.6.6",
+      "Gal.6.26",
+      "Ps.26",
+      "Heb.12.11",
+      "Gal.4.4"
+    ]
   },
   {
     "id": "sc-2223785435",
@@ -3192,7 +3505,20 @@
     ],
     "series_hint": "Étude systématique de la Confession de foi baptiste de 1689 — chapitres sur la chute, les péchés et les châtiments",
     "raw_ref": "data/catalog/transcripts/sc-2223785435.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2223785435.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2223785435.vtt",
+    "scripture_refs_osis": [
+      "Ps.51",
+      "Jer.17.9",
+      "Rom.1-Rom.3",
+      "Rom.8.7",
+      "Eph.2.1-Eph.2.8",
+      "Eph.4.17-Eph.4.18",
+      "Titus.3.3",
+      "Gal.5",
+      "1Cor.2",
+      "Gen.3",
+      "Heb.7"
+    ]
   },
   {
     "id": "sc-2216419829",
@@ -3314,7 +3640,24 @@
     ],
     "series_hint": "Série de prédications sur l'Épître aux Hébreux — introduction au chapitre 7",
     "raw_ref": "data/catalog/transcripts/sc-2216419829.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2216419829.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2216419829.vtt",
+    "scripture_refs_osis": [
+      "Heb.4.16",
+      "Heb.5",
+      "Heb.6",
+      "Gen.12",
+      "Gen.13",
+      "Gen.14",
+      "Gen.15",
+      "Ps.110.4",
+      "Ps.78",
+      "Dan.4",
+      "Lam.3",
+      "John.1.29",
+      "Rev",
+      "Ezek",
+      "Isa.6"
+    ]
   },
   {
     "id": "sc-2216417279",
@@ -3432,7 +3775,16 @@
     ],
     "series_hint": "Confession de foi baptiste de 1689, chapitres 6 (chute, péché et châtiment)",
     "raw_ref": "data/catalog/transcripts/sc-2216417279.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2216417279.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2216417279.vtt",
+    "scripture_refs_osis": [
+      "Isa.53.6",
+      "Rom.1.18",
+      "Rom.3.10-Rom.3.18",
+      "1John.1.8",
+      "Ps.51",
+      "Heb.7",
+      "Gal.3.13"
+    ]
   },
   {
     "id": "sc-2210690636",
@@ -3550,7 +3902,16 @@
     ],
     "series_hint": "Confession de foi baptiste de 1689, chapitre 6 — La chute de l'homme, le péché et son châtiment",
     "raw_ref": "data/catalog/transcripts/sc-2210690636.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2210690636.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2210690636.vtt",
+    "scripture_refs_osis": [
+      "Rom.5.12-Rom.5.19",
+      "Eph.3",
+      "Heb",
+      "2Cor.11.3",
+      "Gen.2.16-Gen.2.17",
+      "Gen.3.12",
+      "Exod.34"
+    ]
   },
   {
     "id": "sc-2210660165",
@@ -3669,7 +4030,15 @@
     ],
     "series_hint": "Série expositoire sur Galates — section sur la marche selon l'Esprit (Galates 5–6), partie I",
     "raw_ref": "data/catalog/transcripts/sc-2210660165.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2210660165.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2210660165.vtt",
+    "scripture_refs_osis": [
+      "Gal.6.1-Gal.6.2",
+      "Matt.18",
+      "Isa.42.3",
+      "John.13.34-John.13.35",
+      "Gen.4.9",
+      "Phil.3"
+    ]
   },
   {
     "id": "sc-2205625143",
@@ -3795,7 +4164,21 @@
     ],
     "series_hint": "Soirée questions-réponses ouvertes — Église Bonne Nouvelle",
     "raw_ref": "data/catalog/transcripts/sc-2205625143.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2205625143.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2205625143.vtt",
+    "scripture_refs_osis": [
+      "1Cor.15.21-1Cor.15.22",
+      "Col.1.13-Col.1.14",
+      "Heb.2.14-Heb.2.15",
+      "Gal.4.4-Gal.4.5",
+      "2Cor.5.14-2Cor.5.15",
+      "1John.2.2",
+      "Ezek.33.1-Ezek.33.9",
+      "Acts.20.20-Acts.20.28",
+      "Phil.1.17-Phil.1.18",
+      "Jas.5.19-Jas.5.20",
+      "Matt.18.15",
+      "1Thess.5.11-1Thess.5.14"
+    ]
   },
   {
     "id": "sc-2205619247",
@@ -3917,7 +4300,14 @@
     ],
     "series_hint": "Série sur Ézéchiel, chapitres 5-6",
     "raw_ref": "data/catalog/transcripts/sc-2205619247.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2205619247.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2205619247.vtt",
+    "scripture_refs_osis": [
+      "Ezek.6.1-Ezek.6.10",
+      "Lam.3.31-Lam.3.42",
+      "Luke.19.41-Luke.19.44",
+      "Matt.9.36",
+      "2Cor.6.1-2Cor.6.10"
+    ]
   },
   {
     "id": "sc-2199484955",
@@ -4036,7 +4426,16 @@
     ],
     "series_hint": "Série sur les fruits de l'Esprit (Galates 5:22) — dernier volet, après la douceur et la fidélité traitées la semaine précédente",
     "raw_ref": "data/catalog/transcripts/sc-2199484955.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2199484955.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2199484955.vtt",
+    "scripture_refs_osis": [
+      "Gal.2.20",
+      "Gal.5.19-Gal.5.21",
+      "John.4",
+      "Eph.2.4-Eph.2.5",
+      "Matt.11.29",
+      "1Cor.12-1Cor.14",
+      "1Tim.4.1-1Tim.4.3"
+    ]
   },
   {
     "id": "sc-2193800499",
@@ -4160,7 +4559,21 @@
     ],
     "series_hint": "Confession de foi baptiste de 1689, chapitre 6 — série d'expositions bibliques préparatoires",
     "raw_ref": "data/catalog/transcripts/sc-2193800499.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2193800499.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2193800499.vtt",
+    "scripture_refs_osis": [
+      "Gen.1-Gen.2",
+      "Gen.4",
+      "Gen.9-Gen.10",
+      "Rom.1.18-Rom.1.20",
+      "Rom.5.12-Rom.5.21",
+      "Gal.3.16",
+      "1John.2.16",
+      "Matt.4.1-Matt.4.11",
+      "John.3.14-John.3.15",
+      "Num.21.8-Num.21.9",
+      "Rev.12",
+      "1Tim.2.15"
+    ]
   },
   {
     "id": "sc-2193798131",
@@ -4209,7 +4622,13 @@
       "Ésaïe 40"
     ],
     "series_hint": "Série sur le fruit de l'Esprit (Galates 5:22) — derniers éléments, suite et fin annoncée au dimanche suivant",
-    "captions_ref": "data/catalog/transcripts/sc-2193798131.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2193798131.vtt",
+    "scripture_refs_osis": [
+      "2Tim.2.10-2Tim.2.13",
+      "Matt.5.3-Matt.5.5",
+      "Jas.3.17-Jas.3.18",
+      "Isa.40"
+    ]
   },
   {
     "id": "sc-2188664595",
@@ -4325,7 +4744,14 @@
     ],
     "series_hint": "Série sur les fruits de l'Esprit (Galates 5:22) — cette prédication porte sur la deuxième triade : patience, bénignité et bonté.",
     "raw_ref": "data/catalog/transcripts/sc-2188664595.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2188664595.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2188664595.vtt",
+    "scripture_refs_osis": [
+      "Ps.103.7-Ps.103.13",
+      "Eph.2.1-Eph.2.10",
+      "Matt.5.48",
+      "John.13.3-John.13.5",
+      "Luke.23.34"
+    ]
   },
   {
     "id": "sc-2187560778",
@@ -4443,7 +4869,16 @@
     ],
     "series_hint": "Étude doctrinale suivant l'ordre de la confession de foi — chapitre sur la chute, le péché et les châtiments",
     "raw_ref": "data/catalog/transcripts/sc-2187560778.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2187560778.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2187560778.vtt",
+    "scripture_refs_osis": [
+      "Gen.3.1-Gen.3.7",
+      "Matt.3.16-Matt.3.17",
+      "Jas.1.13-Jas.1.15",
+      "Ps.91.11-Ps.91.12",
+      "Deut.8.3",
+      "Deut.6.16",
+      "Deut.6.13"
+    ]
   },
   {
     "id": "sc-2183820587",
@@ -4557,7 +4992,16 @@
     ],
     "series_hint": "Série sur le fruit de l'Esprit (Galates 5:22)",
     "raw_ref": "data/catalog/transcripts/sc-2183820587.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2183820587.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2183820587.vtt",
+    "scripture_refs_osis": [
+      "Rom.8.15",
+      "Rom.8.28",
+      "Rom.8.32",
+      "Phil.4.6-Phil.4.7",
+      "Heb.4",
+      "Matt.6.33",
+      "John.15"
+    ]
   },
   {
     "id": "sc-2181893075",
@@ -4678,7 +5122,17 @@
     ],
     "series_hint": "Confession de foi baptiste de 1689, chapitre 6 — série sur la chute, le péché et son châtiment",
     "raw_ref": "data/catalog/transcripts/sc-2181893075.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2181893075.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2181893075.vtt",
+    "scripture_refs_osis": [
+      "Gen.1.26-Gen.1.31",
+      "Gen.2.7",
+      "Gen.2.9",
+      "Gen.2.15-Gen.2.17",
+      "Gen.2.18-Gen.2.25",
+      "Jas.1.13-Jas.1.15",
+      "1John.2.16",
+      "Rev"
+    ]
   },
   {
     "id": "sc-2178138930",
@@ -4793,7 +5247,13 @@
     ],
     "series_hint": "Série sur la lettre aux Galates (fruit de l'Esprit), prédication sur la paix — suite annoncée les dimanches suivants",
     "raw_ref": "data/catalog/transcripts/sc-2178138930.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2178138930.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2178138930.vtt",
+    "scripture_refs_osis": [
+      "Gal.5.15",
+      "Rom.5",
+      "Heb",
+      "Matt.5.9"
+    ]
   },
   {
     "id": "sc-2177514024",
@@ -4910,7 +5370,16 @@
     ],
     "series_hint": "Confession de foi baptiste de 1689 — chapitre 6 : La chute de l'homme, le péché et son châtiment",
     "raw_ref": "data/catalog/transcripts/sc-2177514024.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2177514024.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2177514024.vtt",
+    "scripture_refs_osis": [
+      "Gen.3",
+      "Job.31.33",
+      "Hos.6.7",
+      "2Cor.11.3",
+      "1Tim.2.14",
+      "Rom.5",
+      "Rev.22"
+    ]
   },
   {
     "id": "sc-2175501204",
@@ -5018,7 +5487,8 @@
     "primary_scripture": "Actes 6:1-7",
     "series_hint": "Séminaire de formation au diaconat — session d'évaluation des candidats",
     "raw_ref": "data/catalog/transcripts/sc-2175501204.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2175501204.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2175501204.vtt",
+    "scripture_refs_osis": []
   },
   {
     "id": "sc-2175500673",
@@ -5139,7 +5609,15 @@
     ],
     "series_hint": "Formation des diacres — sessions V à IX",
     "raw_ref": "data/catalog/transcripts/sc-2175500673.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2175500673.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2175500673.vtt",
+    "scripture_refs_osis": [
+      "Acts.6",
+      "Phil.2.3-Phil.2.11",
+      "Luke.8",
+      "Matt.26",
+      "John.13.13-John.13.17",
+      "Gal.5"
+    ]
   },
   {
     "id": "sc-2175498435",
@@ -5254,7 +5732,14 @@
     ],
     "series_hint": "Formation des diacres — session IV",
     "raw_ref": "data/catalog/transcripts/sc-2175498435.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2175498435.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2175498435.vtt",
+    "scripture_refs_osis": [
+      "1Tim.3.8-1Tim.3.13",
+      "Gal.5.22-Gal.5.23",
+      "Ps.51",
+      "Phil.4.2-Phil.4.3",
+      "Eph.5.18-Eph.5.21"
+    ]
   },
   {
     "id": "sc-2175491502",
@@ -5371,7 +5856,13 @@
     ],
     "series_hint": "Formation des diacres — session I à III",
     "raw_ref": "data/catalog/transcripts/sc-2175491502.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2175491502.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2175491502.vtt",
+    "scripture_refs_osis": [
+      "Phil.1.1",
+      "1Tim.3.8-1Tim.3.13",
+      "Lev",
+      "Num"
+    ]
   },
   {
     "id": "sc-2174499144",
@@ -5495,7 +5986,19 @@
     ],
     "series_hint": "Série expositionnelle sur les Actes des Apôtres",
     "raw_ref": "data/catalog/transcripts/sc-2174499144.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2174499144.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2174499144.vtt",
+    "scripture_refs_osis": [
+      "Acts.1.8",
+      "Acts.6",
+      "Acts.8.4-Acts.8.8",
+      "Isa.53.32-Isa.53.33",
+      "Matt.16",
+      "Matt.28.19-Matt.28.20",
+      "Eph.4-Eph.6",
+      "Gal",
+      "1Cor",
+      "John"
+    ]
   },
   {
     "id": "sc-2173529298",
@@ -5614,7 +6117,15 @@
     ],
     "series_hint": "Confession de foi baptiste de Londres de 1689, chapitre 6",
     "raw_ref": "data/catalog/transcripts/sc-2173529298.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2173529298.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2173529298.vtt",
+    "scripture_refs_osis": [
+      "Job.31.33",
+      "Hos.6.7",
+      "2Cor.11.3",
+      "1Tim.2.14",
+      "Rom.1",
+      "Gal.5"
+    ]
   },
   {
     "id": "sc-2170364553",
@@ -5731,7 +6242,16 @@
     ],
     "series_hint": "Série sur Actes 8:26 — fin du chapitre 8",
     "raw_ref": "data/catalog/transcripts/sc-2170364553.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2170364553.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2170364553.vtt",
+    "scripture_refs_osis": [
+      "Acts.1",
+      "Eph.4-Eph.6",
+      "Isa.53",
+      "Isa.53.7-Isa.53.8",
+      "John",
+      "Matt",
+      "Luke"
+    ]
   },
   {
     "id": "sc-2169824730",
@@ -5848,7 +6368,16 @@
     ],
     "series_hint": "Série sur la crainte de Dieu et la crainte de l'homme (leçon de conclusion)",
     "raw_ref": "data/catalog/transcripts/sc-2169824730.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2169824730.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2169824730.vtt",
+    "scripture_refs_osis": [
+      "Eph.1.5-Eph.1.6",
+      "Matt.22.37-Matt.22.38",
+      "Luke.6.27-Luke.6.33",
+      "Matt.22.39",
+      "1Cor.13.3-1Cor.13.7",
+      "Phil.2.3-Phil.2.7",
+      "Gal.6.10"
+    ]
   },
   {
     "id": "sc-2167749627",
@@ -5966,7 +6495,16 @@
     ],
     "series_hint": "Série d'études de l'épître de Jacques (suite de Jacques 1.13-15)",
     "raw_ref": "data/catalog/transcripts/sc-2167749627.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2167749627.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2167749627.vtt",
+    "scripture_refs_osis": [
+      "1John.1.5-1John.1.8",
+      "John.3.4-John.3.8",
+      "John.6.44",
+      "John.1.1-John.1.5",
+      "John.1.14",
+      "John.1.18",
+      "Rom.8"
+    ]
   },
   {
     "id": "sc-2167749246",
@@ -6079,7 +6617,15 @@
     ],
     "series_hint": "Série sur l'Épître de Jacques (Jacques 1, prédication suivant l'étude des versets 1-11)",
     "raw_ref": "data/catalog/transcripts/sc-2167749246.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2167749246.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2167749246.vtt",
+    "scripture_refs_osis": [
+      "Ps.1.1",
+      "1Cor.9.24-1Cor.9.25",
+      "Gen.3.8-Gen.3.13",
+      "Exod.17.7",
+      "Gen.4.7",
+      "Eph.2.1-Eph.2.10"
+    ]
   },
   {
     "id": "sc-2167748475",
@@ -6192,7 +6738,15 @@
     ],
     "series_hint": "Série de prédications suivies dans l'Épître de Jacques",
     "raw_ref": "data/catalog/transcripts/sc-2167748475.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2167748475.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2167748475.vtt",
+    "scripture_refs_osis": [
+      "Matt.6.19-Matt.6.21",
+      "Matt.6.24",
+      "Matt.19.23-Matt.19.24",
+      "Acts.5.1-Acts.5.11",
+      "Ps.52.7",
+      "Col.1.23"
+    ]
   },
   {
     "id": "sc-2167745982",
@@ -6312,7 +6866,18 @@
     ],
     "series_hint": "Série expositoire sur la lettre de Jacques — première prédication",
     "raw_ref": "data/catalog/transcripts/sc-2167745982.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2167745982.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2167745982.vtt",
+    "scripture_refs_osis": [
+      "Matt.5.11-Matt.5.12",
+      "1Pet.4.13",
+      "Ps.66.8-Ps.66.12",
+      "Heb.12.5-Heb.12.11",
+      "Heb.4.15",
+      "1Cor.13.3",
+      "Rom.5.3-Rom.5.4",
+      "Acts.15",
+      "Phil.2.12"
+    ]
   },
   {
     "id": "sc-2166477156",
@@ -6430,7 +6995,15 @@
       "Matthieu 28:18-20"
     ],
     "raw_ref": "data/catalog/transcripts/sc-2166477156.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2166477156.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2166477156.vtt",
+    "scripture_refs_osis": [
+      "Acts.1.8",
+      "Acts.6",
+      "Acts.8.1-Acts.8.25",
+      "Isa.53",
+      "Eph.5-Eph.6",
+      "Matt.28.18-Matt.28.20"
+    ]
   },
   {
     "id": "sc-2163682815",
@@ -6552,7 +7125,16 @@
     ],
     "series_hint": "Série de prédications sur Ézéchiel, chapitre 6 (suite de plusieurs dimanches consécutifs)",
     "raw_ref": "data/catalog/transcripts/sc-2163682815.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2163682815.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2163682815.vtt",
+    "scripture_refs_osis": [
+      "Deut.6.5",
+      "Hos.2.10-Hos.2.14",
+      "Zech.12.10",
+      "1Cor.10",
+      "Ps.51",
+      "Mic.7.18-Mic.7.20",
+      "Dan.9.1-Dan.9.9"
+    ]
   },
   {
     "id": "sc-2158843905",
@@ -6702,7 +7284,31 @@
     ],
     "series_hint": "Série sur Jacques 2 — prédication sur le favoritisme (suite du dimanche précédent intitulé « Favoritisme incompatible avec Dieu et son peuple »)",
     "raw_ref": "data/catalog/transcripts/sc-2158843905.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2158843905.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2158843905.vtt",
+    "scripture_refs_osis": [
+      "Ezek.16.15",
+      "Ezek.16.30-Ezek.16.34",
+      "Ezek.16.60-Ezek.16.63",
+      "Amos.2.6",
+      "Prov.14.31",
+      "John.12.42",
+      "Luke.12.4-Luke.12.5",
+      "Rom.8.29-Rom.8.31",
+      "Ps.118.8-Ps.118.9",
+      "Ps.146.3",
+      "Num.11.4",
+      "Isa.31.1",
+      "Isa.30.1-Isa.30.3",
+      "Hos.7.8-Hos.7.11",
+      "Jer.42.13-Jer.42.16",
+      "2Cor.6.14-2Cor.6.18",
+      "Gal.1.10",
+      "1Thess.2.4",
+      "Acts.5.29",
+      "Prov.22.24",
+      "Prov.25.19",
+      "Matt.5.3-Matt.5.12"
+    ]
   },
   {
     "id": "sc-2158843158",
@@ -6842,7 +7448,33 @@
     ],
     "series_hint": "Série sur l'épître de Jacques, chapitre 2 (suite de la prédication sur Jacques 2:1-4)",
     "raw_ref": "data/catalog/transcripts/sc-2158843158.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2158843158.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2158843158.vtt",
+    "scripture_refs_osis": [
+      "Gen.3",
+      "Isa.25.4",
+      "Deut.7",
+      "Deut.16.19",
+      "Ps.68",
+      "Ps.72.4",
+      "Ps.113.7",
+      "Prov.17.5",
+      "Prov.19.17",
+      "Prov.31.9",
+      "Lev.19.15",
+      "Zech.7.9",
+      "Isa.1.17",
+      "Amos.2.6",
+      "Amos.5.11",
+      "Mic.3.9",
+      "Ezek.16.15",
+      "Luke.20.46",
+      "Matt.25.35-Matt.25.40",
+      "1Cor.1.26-1Cor.1.29",
+      "1Tim.6.17",
+      "Gal.2.10",
+      "Acts.4.34",
+      "John.8.44"
+    ]
   },
   {
     "id": "sc-2151088524",
@@ -6971,7 +7603,25 @@
     ],
     "series_hint": "Série sur l'épître de Jacques (ch. 2) ; série parallèle le vendredi soir sur la crainte de l'homme",
     "raw_ref": "data/catalog/transcripts/sc-2151088524.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2151088524.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2151088524.vtt",
+    "scripture_refs_osis": [
+      "Jas.1.2",
+      "Jas.1.13",
+      "Jas.1.18-Jas.1.19",
+      "Jas.1.26",
+      "1Pet.1.6-1Pet.1.7",
+      "1Sam.16.7",
+      "Ps.8.5",
+      "Heb.12.5-Heb.12.11",
+      "Heb.13.17",
+      "Isa.14.12-Isa.14.14",
+      "Isa.28.12-Isa.28.17",
+      "John.8.44",
+      "Matt.5.3",
+      "1John.4.1",
+      "1Cor.5.13",
+      "Jer.9.24"
+    ]
   },
   {
     "id": "sc-2151088182",
@@ -7093,7 +7743,16 @@
     ],
     "series_hint": "Série de prédications sur le livre d'Ézéchiel",
     "raw_ref": "data/catalog/transcripts/sc-2151088182.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2151088182.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2151088182.vtt",
+    "scripture_refs_osis": [
+      "Ezek.5.12",
+      "2Chr.33.1",
+      "2Chr.33.10-2Chr.33.13",
+      "Jer.3.11-Jer.3.14",
+      "Zech.12.10",
+      "Rom.6.20-Rom.6.21",
+      "Luke.15"
+    ]
   },
   {
     "id": "sc-2151087165",
@@ -7221,7 +7880,25 @@
     ],
     "series_hint": "Série sur la peur de l'homme, leçon 5",
     "raw_ref": "data/catalog/transcripts/sc-2151087165.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2151087165.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2151087165.vtt",
+    "scripture_refs_osis": [
+      "Rom.5.6",
+      "Matt.6.33",
+      "Prov.29.25",
+      "1John.4.18",
+      "Prov.28.26",
+      "Phil.4.8",
+      "2Cor.10.5",
+      "2Cor.10.12",
+      "2Cor.3",
+      "Rom.3.23",
+      "Rom.12.3",
+      "Ps.42",
+      "Ps.43",
+      "Ps.15",
+      "1Cor.8",
+      "2Tim.2.21"
+    ]
   },
   {
     "id": "sc-2151086655",
@@ -7343,7 +8020,20 @@
     ],
     "series_hint": "Série « Craindre Dieu et non les hommes », leçon 4",
     "raw_ref": "data/catalog/transcripts/sc-2151086655.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2151086655.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2151086655.vtt",
+    "scripture_refs_osis": [
+      "Eph.2",
+      "Ezek.16",
+      "Rom.6",
+      "2Pet.1.3",
+      "Gen.1.26-Gen.1.27",
+      "Matt.6.9-Matt.6.13",
+      "John.4.19",
+      "1John.4.19",
+      "2Cor.5.14-2Cor.5.15",
+      "Luke.7.47",
+      "Ps.51"
+    ]
   },
   {
     "id": "sc-2137660878",
@@ -7469,7 +8159,16 @@
     ],
     "series_hint": "Série d'exposition du livre d'Ézéchiel (introduction au chapitre 6, après étude du chapitre 5)",
     "raw_ref": "data/catalog/transcripts/sc-2137660878.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2137660878.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2137660878.vtt",
+    "scripture_refs_osis": [
+      "Deut.6.5",
+      "Lev.26.27-Lev.26.33",
+      "Mic.6.1-Mic.6.2",
+      "2Tim.4.1-2Tim.4.5",
+      "Jer.8.1-Jer.8.2",
+      "Heb.12.22-Heb.12.29",
+      "Gen.3.15"
+    ]
   },
   {
     "id": "sc-2136840354",
@@ -7593,7 +8292,20 @@
     ],
     "series_hint": "Série sur la crainte de l'homme — leçon 3",
     "raw_ref": "data/catalog/transcripts/sc-2136840354.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2136840354.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2136840354.vtt",
+    "scripture_refs_osis": [
+      "Gen.3.5",
+      "Luke.18",
+      "Matt.10.28",
+      "Heb.4.13",
+      "Heb.10.12",
+      "Jas.4.1",
+      "Prov.15.33",
+      "Prov.25.27",
+      "Eph.2",
+      "Isa.25.8",
+      "Rev.21.4"
+    ]
   },
   {
     "id": "sc-2133657198",
@@ -7718,7 +8430,25 @@
     ],
     "series_hint": "Série de prédications sur Ézéchiel 5",
     "raw_ref": "data/catalog/transcripts/sc-2133657198.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2133657198.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2133657198.vtt",
+    "scripture_refs_osis": [
+      "Ezek.5.1-Ezek.5.17",
+      "Jer.22.8-Jer.22.9",
+      "Jer.17",
+      "Exod.20.1-Exod.20.3",
+      "Deut.6.4-Deut.6.5",
+      "1Sam",
+      "2Kgs.17.13-2Kgs.17.18",
+      "Lev.26.1-Lev.26.2",
+      "Lev.26.14-Lev.26.15",
+      "Lev.26.29",
+      "Lev.26.36",
+      "Lev.26.40-Lev.26.45",
+      "Heb.10.11-Heb.10.17",
+      "1Cor.10",
+      "1John.4",
+      "Gen.3"
+    ]
   },
   {
     "id": "sc-2133651906",
@@ -7850,7 +8580,25 @@
       "Matthieu 23:37"
     ],
     "raw_ref": "data/catalog/transcripts/sc-2133651906.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2133651906.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2133651906.vtt",
+    "scripture_refs_osis": [
+      "John.1.13",
+      "John.2.23-John.2.25",
+      "John.9.32",
+      "Ezek.36.19-Ezek.36.27",
+      "Ezek.11.19-Ezek.11.20",
+      "Jer.31.33",
+      "Jer.32.39-Jer.32.40",
+      "Gen.6.5",
+      "Gen.8.21",
+      "Ps.14.2-Ps.14.3",
+      "Jer.13.23",
+      "Isa.64.6",
+      "Prov.28",
+      "Heb.4.13",
+      "Matt.20.15",
+      "Matt.23.37"
+    ]
   },
   {
     "id": "sc-2128572861",
@@ -7982,7 +8730,28 @@
     ],
     "series_hint": "Série sur la crainte de l'homme et la crainte de Dieu (deuxième leçon, suite de la leçon du pasteur Stéphane)",
     "raw_ref": "data/catalog/transcripts/sc-2128572861.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2128572861.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2128572861.vtt",
+    "scripture_refs_osis": [
+      "Heb.10.31",
+      "1John.4.8",
+      "1John.4.18",
+      "Rom.11",
+      "Phil.2.12-Phil.2.13",
+      "Neh.1.11",
+      "Prov.28.14",
+      "Ps.147.11",
+      "Ps.33.8",
+      "Gen.1.26-Gen.1.27",
+      "Ps.89.7",
+      "Ps.90.11",
+      "Heb.12",
+      "Ps.111.10",
+      "Ps.115.11",
+      "Ps.115.13",
+      "Rom.1.23",
+      "Gen.3",
+      "Heb.11"
+    ]
   },
   {
     "id": "sc-2124804168",
@@ -8109,7 +8878,25 @@
     ],
     "series_hint": "Série d'études bibliques sur la crainte de l'homme — séance d'introduction",
     "raw_ref": "data/catalog/transcripts/sc-2124804168.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2124804168.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2124804168.vtt",
+    "scripture_refs_osis": [
+      "Gen.3.6-Gen.3.7",
+      "Gen.12.10-Gen.12.13",
+      "Gen.19",
+      "Gen.27.41-Gen.27.44",
+      "Exod.2.11-Exod.2.17",
+      "Num.20.9-Num.20.13",
+      "Exod.32.22-Exod.32.24",
+      "Judg.14",
+      "Luke.12.4-Luke.12.5",
+      "1Cor.10.13",
+      "Rom.8.31-Rom.8.35",
+      "Rom.8.38-Rom.8.39",
+      "1John.4.7-1John.4.12",
+      "1John.4.18",
+      "Isa.6",
+      "Eccl.12.13-Eccl.12.14"
+    ]
   },
   {
     "id": "sc-2121638127",
@@ -8226,7 +9013,15 @@
     ],
     "series_hint": "Série expositoire sur l'Épître aux Hébreux — approche du chapitre 7 (sacerdoce selon l'ordre de Melchisédec)",
     "raw_ref": "data/catalog/transcripts/sc-2121638127.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2121638127.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2121638127.vtt",
+    "scripture_refs_osis": [
+      "Heb.4.16",
+      "Heb.5",
+      "Heb.7",
+      "Ps.110",
+      "Matt.22",
+      "Gen.14"
+    ]
   },
   {
     "id": "sc-2120998923",
@@ -8349,7 +9144,16 @@
     ],
     "series_hint": "Confession de foi baptiste de Londres de 1689, chapitre 5 (La Providence de Dieu)",
     "raw_ref": "data/catalog/transcripts/sc-2120998923.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2120998923.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2120998923.vtt",
+    "scripture_refs_osis": [
+      "Rom.8.28",
+      "Eph.1.11",
+      "Num.22",
+      "Phil.3.8",
+      "1Cor.10.13",
+      "Heb.12",
+      "Matt.5.45"
+    ]
   },
   {
     "id": "sc-2117744874",
@@ -8399,7 +9203,14 @@
       "Matthieu 25:40"
     ],
     "series_hint": "Série sur les sources de la joie chrétienne dans Philippiens 4",
-    "captions_ref": "data/catalog/transcripts/sc-2117744874.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2117744874.vtt",
+    "scripture_refs_osis": [
+      "Phil.3",
+      "Phil.4.1-Phil.4.23",
+      "Matt.6.33",
+      "Matt.10.40",
+      "Matt.25.40"
+    ]
   },
   {
     "id": "sc-2117114544",
@@ -8517,7 +9328,16 @@
     ],
     "series_hint": "Série de théologie systématique : ordre des doctrines (Écriture, Dieu, création, décrets, providence) — prédication s'appuyant sur la Confession de foi baptiste de 1689, chapitres sur la providence.",
     "raw_ref": "data/catalog/transcripts/sc-2117114544.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2117114544.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2117114544.vtt",
+    "scripture_refs_osis": [
+      "Phil.4.6",
+      "Gen.50.20",
+      "Jas.1.12-Jas.1.15",
+      "Rom.1-Rom.3",
+      "Rom.9",
+      "Heb.1.3",
+      "Prov.16.33"
+    ]
   },
   {
     "id": "sc-2113855248",
@@ -8647,7 +9467,26 @@
     ],
     "series_hint": "Étude systématique de théologie — après les décrets éternels et la création, avant la conclusion sur les aspects réconfortants de la providence",
     "raw_ref": "data/catalog/transcripts/sc-2113855248.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2113855248.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2113855248.vtt",
+    "scripture_refs_osis": [
+      "Ps.103.19",
+      "Ps.104",
+      "Ps.75.6-Ps.75.7",
+      "Matt.5.44-Matt.5.45",
+      "Matt.6.26",
+      "Matt.10.29",
+      "Acts.2.22-Acts.2.24",
+      "Acts.17.26",
+      "Job.12.24",
+      "1Sam.16.1",
+      "Gal.1.15-Gal.1.16",
+      "Phil.4.6",
+      "Phil.4.19",
+      "Gen.50.20",
+      "Jas.1.12-Jas.1.15",
+      "Esth.6",
+      "Prov.16.33"
+    ]
   },
   {
     "id": "sc-2113848477",
@@ -8770,7 +9609,18 @@
     ],
     "series_hint": "Série sur la joie chrétienne dans Philippiens 4",
     "raw_ref": "data/catalog/transcripts/sc-2113848477.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2113848477.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2113848477.vtt",
+    "scripture_refs_osis": [
+      "Phil.3.20-Phil.3.21",
+      "Phil.4.1-Phil.4.5",
+      "Phil.4.6-Phil.4.9",
+      "Phil.4.10-Phil.4.13",
+      "1Cor.15.10",
+      "Col.1.29",
+      "Matt.25.36",
+      "Luke.10.7",
+      "Acts"
+    ]
   },
   {
     "id": "sc-2111905611",
@@ -8892,7 +9742,19 @@
     ],
     "series_hint": "Série sur les fruits de l'Esprit (Galates) — détour par Philippiens 4 pour approfondir la joie chrétienne",
     "raw_ref": "data/catalog/transcripts/sc-2111905611.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2111905611.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2111905611.vtt",
+    "scripture_refs_osis": [
+      "Phil.4.1-Phil.4.5",
+      "Phil.4.6-Phil.4.7",
+      "Phil.4.8-Phil.4.9",
+      "Phil.4.14",
+      "Phil.4.19",
+      "Phil.1.20",
+      "Phil.3",
+      "Acts.20.24",
+      "Gal.1",
+      "1Tim.6.17"
+    ]
   },
   {
     "id": "sc-2106554973",
@@ -9015,7 +9877,17 @@
     ],
     "series_hint": "Prédication ponctuelle sur le Psaume 1, mentionnant une continuité avec une série en cours sur Ézéchiel et Philippiens.",
     "raw_ref": "data/catalog/transcripts/sc-2106554973.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2106554973.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2106554973.vtt",
+    "scripture_refs_osis": [
+      "Phil.4.11-Phil.4.13",
+      "Phil.4.6-Phil.4.7",
+      "Jer.17.7-Jer.17.8",
+      "Josh.1.8",
+      "Rom.1.28-Rom.1.32",
+      "2Pet.3.3-2Pet.3.14",
+      "Matt.7.13-Matt.7.14",
+      "1Kgs.21"
+    ]
   },
   {
     "id": "sc-2104182597",
@@ -9138,7 +10010,21 @@
     ],
     "series_hint": "Confession de foi baptiste de 1689, chapitre 5 — étude systématique des grandes doctrines bibliques",
     "raw_ref": "data/catalog/transcripts/sc-2104182597.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2104182597.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2104182597.vtt",
+    "scripture_refs_osis": [
+      "Acts.17.28",
+      "Col.1.17",
+      "Heb.1.3",
+      "Dan.4.34",
+      "Ps.97.1",
+      "Ps.103.19",
+      "Isa.40.15",
+      "Amos.3.6",
+      "Matt.5.45",
+      "Acts.2",
+      "Acts.8",
+      "Gen.50.20"
+    ]
   },
   {
     "id": "sc-2104141731",
@@ -9263,7 +10149,21 @@
     ],
     "series_hint": "Série sur Philippiens 4 — suite des versets 1-5 étudiés la semaine précédente ; leçon sur la providence annoncée pour la prochaine séance.",
     "raw_ref": "data/catalog/transcripts/sc-2104141731.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2104141731.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2104141731.vtt",
+    "scripture_refs_osis": [
+      "Phil.3.7-Phil.3.8",
+      "Phil.3.10-Phil.3.11",
+      "Phil.3.20-Phil.3.21",
+      "Matt.6.25-Matt.6.33",
+      "Rom.12.1",
+      "2Cor.10.5",
+      "1Cor.15.9-1Cor.15.10",
+      "2Tim.3.14-2Tim.3.17",
+      "1Thess.1.4-1Thess.1.10",
+      "John.14.21",
+      "Ps.1",
+      "Jas.1.22-Jas.1.25"
+    ]
   },
   {
     "id": "sc-2098900806",
@@ -9383,7 +10283,19 @@
     ],
     "series_hint": "Retraite d'église sur la joie chrétienne en Philippiens — troisième session (aspects 1 et 2 traités lors de la retraite, aspect 3 développé ici)",
     "raw_ref": "data/catalog/transcripts/sc-2098900806.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2098900806.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2098900806.vtt",
+    "scripture_refs_osis": [
+      "Phil.3.8",
+      "Phil.3.20-Phil.3.21",
+      "Phil.4.1",
+      "Phil.4.6-Phil.4.7",
+      "Ps",
+      "Isa",
+      "Matt.5.6",
+      "Gal.1",
+      "Rom.8.28",
+      "1Tim.6.12"
+    ]
   },
   {
     "id": "sc-2091255438",
@@ -9509,7 +10421,21 @@
     ],
     "series_hint": "Série de prédications continues sur le livre d'Ézéchiel (première partie : jugement de Jérusalem)",
     "raw_ref": "data/catalog/transcripts/sc-2091255438.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2091255438.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2091255438.vtt",
+    "scripture_refs_osis": [
+      "Ezek.14.2",
+      "Ezek.14.22",
+      "Jer.7.8-Jer.7.11",
+      "Jer.41-Jer.44",
+      "Isa.26.7-Isa.26.10",
+      "Rom.1.20-Rom.1.22",
+      "Rom.2.17-Rom.2.24",
+      "Rom.12.1-Rom.12.2",
+      "1John.2.15-1John.2.16",
+      "Eph.3.16-Eph.3.19",
+      "Deut",
+      "Heb"
+    ]
   },
   {
     "id": "sc-2088231870",
@@ -9622,7 +10548,10 @@
     ],
     "series_hint": "Troisième session d'une série sur la vocation des femmes : être l'aide en Dieu (sessions précédentes : aide au mari, aide dans le ministère du mari)",
     "raw_ref": "data/catalog/transcripts/sc-2088231870.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2088231870.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2088231870.vtt",
+    "scripture_refs_osis": [
+      "Titus.2"
+    ]
   },
   {
     "id": "sc-2088230982",
@@ -9742,7 +10671,16 @@
     ],
     "series_hint": "Conférence sur la féminité biblique — deuxième session (la première portait sur la femme comme aide de son mari en général)",
     "raw_ref": "data/catalog/transcripts/sc-2088230982.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2088230982.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2088230982.vtt",
+    "scripture_refs_osis": [
+      "Phil.2.3-Phil.2.8",
+      "Prov.12.4",
+      "1Cor.11.7",
+      "1Pet.3.7",
+      "1Tim.3",
+      "Titus.1",
+      "Matt.20.26-Matt.20.28"
+    ]
   },
   {
     "id": "sc-2088230604",
@@ -9847,7 +10785,12 @@
     ],
     "series_hint": "Session d'enseignement pour femmes sur le dessein de Dieu et le rôle d'aide",
     "raw_ref": "data/catalog/transcripts/sc-2088230604.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2088230604.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2088230604.vtt",
+    "scripture_refs_osis": [
+      "Gen.2.7",
+      "Gen.2.18",
+      "1Cor.11.8-1Cor.11.9"
+    ]
   },
   {
     "id": "sc-2082409164",
@@ -9967,7 +10910,17 @@
     ],
     "series_hint": "Série de prédications sur l'Épître aux Hébreux, chapitre 6",
     "raw_ref": "data/catalog/transcripts/sc-2082409164.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2082409164.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2082409164.vtt",
+    "scripture_refs_osis": [
+      "Heb.6.9-Heb.6.20",
+      "Heb.6.10-Heb.6.11",
+      "Heb.7",
+      "Luke.9",
+      "Dan.7",
+      "Ezek.34",
+      "Ezek.16",
+      "Gen.3"
+    ]
   },
   {
     "id": "sc-2077749968",
@@ -10082,7 +11035,17 @@
     ],
     "series_hint": "Série sur les fruits de l'Esprit (Galates 5:22) — ce message porte sur la joie, deuxième facette, après un message sur l'amour.",
     "raw_ref": "data/catalog/transcripts/sc-2077749968.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2077749968.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2077749968.vtt",
+    "scripture_refs_osis": [
+      "Gal.5.19-Gal.5.21",
+      "Gal.5.26",
+      "Gal.4.4",
+      "Phil.4.4",
+      "John.3.16",
+      "Matt.5.5",
+      "Matt.5.8",
+      "Matt.25.21"
+    ]
   },
   {
     "id": "sc-2077120036",
@@ -10198,7 +11161,11 @@
     ],
     "series_hint": "Confession de foi ch. IV, partie 9 — série sur le créationnisme biblique",
     "raw_ref": "data/catalog/transcripts/sc-2077120036.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2077120036.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2077120036.vtt",
+    "scripture_refs_osis": [
+      "Gen.1",
+      "Rom.1"
+    ]
   },
   {
     "id": "sc-2072182164",
@@ -10315,7 +11282,16 @@
     ],
     "series_hint": "Série sur les fruits de l'Esprit (Galates 5) — troisième message, après l'amour",
     "raw_ref": "data/catalog/transcripts/sc-2072182164.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2072182164.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2072182164.vtt",
+    "scripture_refs_osis": [
+      "Gal.5.19-Gal.5.21",
+      "Gal.5.26",
+      "Neh.8.10",
+      "Prov.15.13",
+      "Eph.5",
+      "1Tim.4",
+      "Phil.4"
+    ]
   },
   {
     "id": "sc-2067280192",
@@ -10428,7 +11404,16 @@
     ],
     "series_hint": "Série sur le fruit de l'Esprit (Galates 5.22) — deuxième prédication sur l'amour",
     "raw_ref": "data/catalog/transcripts/sc-2067280192.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2067280192.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2067280192.vtt",
+    "scripture_refs_osis": [
+      "1Cor.13.13",
+      "1Cor.13.1-1Cor.13.8",
+      "Gal.6.2",
+      "John.3.16",
+      "1John.4.7-1John.4.16",
+      "Eph.3.14-Eph.3.19",
+      "Eph.2"
+    ]
   },
   {
     "id": "sc-2061671560",
@@ -10553,7 +11538,18 @@
     ],
     "series_hint": "Série sur le fruit de l'Esprit (Galates 5.22)",
     "raw_ref": "data/catalog/transcripts/sc-2061671560.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2061671560.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2061671560.vtt",
+    "scripture_refs_osis": [
+      "1Cor.13.13",
+      "1Thess.1.3",
+      "1Thess.5.8",
+      "Col.1.4-Col.1.5",
+      "John.14.20",
+      "Gal.5.13",
+      "Gal.5.18-Gal.5.19",
+      "Gal.5.23",
+      "Gal.6.2"
+    ]
   },
   {
     "id": "sc-2060412908",
@@ -10684,7 +11680,26 @@
     ],
     "series_hint": "Études sur la création — Confession de foi baptiste, chapitre 4",
     "raw_ref": "data/catalog/transcripts/sc-2060412908.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2060412908.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2060412908.vtt",
+    "scripture_refs_osis": [
+      "Gen.1.26-Gen.1.27",
+      "Gen.1.31",
+      "Gen.2.18",
+      "Gen.2.21-Gen.2.25",
+      "Gen.3.1-Gen.3.19",
+      "Gen.5.1-Gen.5.3",
+      "Exod.20",
+      "Eph.4.23-Eph.4.24",
+      "Eph.5",
+      "Rom.5",
+      "Rom.8",
+      "2Cor.3.16-2Cor.3.18",
+      "2Cor.5.16-2Cor.5.17",
+      "Heb.1.1-Heb.1.4",
+      "Gal.4",
+      "Phil.3.21",
+      "1Cor.15.42"
+    ]
   },
   {
     "id": "sc-2060162440",
@@ -10814,7 +11829,26 @@
     ],
     "series_hint": "Série sur le fruit de l'Esprit (Galates 5:22-26) — cinquième aspect d'une étude en cours sur la nature et la cultivation du fruit de l'Esprit",
     "raw_ref": "data/catalog/transcripts/sc-2060162440.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2060162440.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2060162440.vtt",
+    "scripture_refs_osis": [
+      "Gal.5.16",
+      "Gal.5.24",
+      "Gal.6.7-Gal.6.8",
+      "Eph.4.30",
+      "Eph.5.1-Eph.5.18",
+      "2Cor.3.15-2Cor.3.18",
+      "2Cor.4",
+      "Rom.5.1-Rom.5.5",
+      "1Pet.1.3-1Pet.1.9",
+      "Heb.12.5-Heb.12.11",
+      "Heb.11",
+      "Ps.1",
+      "Ps.51",
+      "Acts.7",
+      "Acts.20",
+      "Phil.1",
+      "Matt.28.18-Matt.28.20"
+    ]
   },
   {
     "id": "sc-2054926060",
@@ -10935,7 +11969,16 @@
     ],
     "series_hint": "Série sur la création — Confession de foi baptiste de 1689, chapitres sur la création",
     "raw_ref": "data/catalog/transcripts/sc-2054926060.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2054926060.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2054926060.vtt",
+    "scripture_refs_osis": [
+      "Exod.20",
+      "Eph.4.23-Eph.4.25",
+      "Heb.1.1-Heb.1.4",
+      "Eph.5",
+      "Zeph.3.17",
+      "Rom.1",
+      "Jas.3"
+    ]
   },
   {
     "id": "sc-2053267620",
@@ -11054,7 +12097,15 @@
     ],
     "series_hint": "Série sur le fruit de l'Esprit (Galates 5) — cette prédication porte sur la nature générale des fruits et les moyens de grâce ; les facettes particulières (amour, joie, paix…) sont annoncées pour les semaines suivantes.",
     "raw_ref": "data/catalog/transcripts/sc-2053267620.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2053267620.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2053267620.vtt",
+    "scripture_refs_osis": [
+      "Gal.5.16",
+      "Gal.5.19-Gal.5.21",
+      "Gal.6",
+      "Phil.2.12",
+      "Phil.3.9-Phil.3.12",
+      "Heb.12.1-Heb.12.3"
+    ]
   },
   {
     "id": "sc-2053265520",
@@ -11180,7 +12231,18 @@
     ],
     "series_hint": "Série sur l'épître aux Galates, chapitre 5",
     "raw_ref": "data/catalog/transcripts/sc-2053265520.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2053265520.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2053265520.vtt",
+    "scripture_refs_osis": [
+      "Gal.5.1",
+      "Gal.5.13",
+      "Gal.5.22-Gal.5.23",
+      "Gal.5.24",
+      "Gal.5.25",
+      "Phil.2.12-Phil.2.13",
+      "Eph.4",
+      "Ps.1.2-Ps.1.3",
+      "Acts.1"
+    ]
   },
   {
     "id": "sc-2053260992",
@@ -11301,7 +12363,17 @@
     ],
     "series_hint": "Confession de foi baptiste — Chapitre IV sur la création, partie 6",
     "raw_ref": "data/catalog/transcripts/sc-2053260992.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2053260992.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2053260992.vtt",
+    "scripture_refs_osis": [
+      "Gen.9",
+      "Jas.3.9",
+      "Rom.1-Rom.3",
+      "2Cor.3",
+      "Eph.1",
+      "Eph.5",
+      "Acts.7",
+      "Acts.17"
+    ]
   },
   {
     "id": "sc-2043159028",
@@ -11421,7 +12493,19 @@
     ],
     "series_hint": "Série de prédications sur le livre d'Ézéchiel",
     "raw_ref": "data/catalog/transcripts/sc-2043159028.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2043159028.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2043159028.vtt",
+    "scripture_refs_osis": [
+      "Deut.4.5-Deut.4.8",
+      "Luke.16",
+      "John.3.16-John.3.21",
+      "Heb.2.1-Heb.2.4",
+      "Heb.12",
+      "1John.1.7-1John.1.10",
+      "Rom.5.9-Rom.5.11",
+      "Lam.4.6",
+      "Ezek.34",
+      "Jer.52"
+    ]
   },
   {
     "id": "sc-2039466084",
@@ -11539,7 +12623,17 @@
     ],
     "series_hint": "Série sur Galates 5 — étude continue du fruit de l'Esprit (versets 22-26)",
     "raw_ref": "data/catalog/transcripts/sc-2039466084.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2039466084.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2039466084.vtt",
+    "scripture_refs_osis": [
+      "Gal.5.13",
+      "Gal.5.15",
+      "Gal.5.19-Gal.5.21",
+      "John.14.15-John.14.27",
+      "John.7.38-John.7.39",
+      "Rom.8.14-Rom.8.18",
+      "Acts.1.7-Acts.1.8",
+      "2Cor.5"
+    ]
   },
   {
     "id": "sc-2039462392",
@@ -11662,7 +12756,18 @@
     ],
     "series_hint": "Confession de foi baptiste, Chapitre IV – La création (partie 5) : l'image de Dieu dans l'homme",
     "raw_ref": "data/catalog/transcripts/sc-2039462392.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2039462392.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2039462392.vtt",
+    "scripture_refs_osis": [
+      "Gen.2.3",
+      "Gen.5.1-Gen.5.3",
+      "Gen.9.6",
+      "Acts.17",
+      "Rom.1-Rom.3",
+      "Eph.4.24",
+      "Eph.5",
+      "Col.3.10",
+      "Jas.3.9"
+    ]
   },
   {
     "id": "sc-2039458940",
@@ -11785,7 +12890,15 @@
     ],
     "series_hint": "Série d'études sur la lettre aux Galates",
     "raw_ref": "data/catalog/transcripts/sc-2039458940.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2039458940.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2039458940.vtt",
+    "scripture_refs_osis": [
+      "Gal.5.19-Gal.5.21",
+      "Gal.5.22-Gal.5.23",
+      "Gal.5.24",
+      "Ezek.36.26-Ezek.36.27",
+      "Rom.7",
+      "Eph.5.18"
+    ]
   },
   {
     "id": "sc-2039455192",
@@ -11901,7 +13014,13 @@
     ],
     "series_hint": "Confession de foi baptiste de 1689, chapitre IV — La création, partie 4",
     "raw_ref": "data/catalog/transcripts/sc-2039455192.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2039455192.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2039455192.vtt",
+    "scripture_refs_osis": [
+      "Gen.2.7",
+      "Exod.20",
+      "Rom.8",
+      "Eph.5"
+    ]
   },
   {
     "id": "sc-2024353268",
@@ -12019,7 +13138,16 @@
     ],
     "series_hint": "Série d'études sur la lettre aux Galates — section sur le fruit de l'Esprit (Galates 5:13-26)",
     "raw_ref": "data/catalog/transcripts/sc-2024353268.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2024353268.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2024353268.vtt",
+    "scripture_refs_osis": [
+      "Gal.2.21",
+      "Gal.5.16",
+      "Gal.5.17",
+      "Gal.5.18",
+      "Gal.5.19",
+      "Gal.5.21",
+      "Gal.5.24"
+    ]
   },
   {
     "id": "sc-2020464289",
@@ -12146,7 +13274,24 @@
     ],
     "series_hint": "Série sur les mystères de la piété (1 Timothée 3:16) — sixième et dernière prédication",
     "raw_ref": "data/catalog/transcripts/sc-2020464289.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2020464289.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2020464289.vtt",
+    "scripture_refs_osis": [
+      "John.12.23-John.12.24",
+      "John.17.1-John.17.5",
+      "Luke.24",
+      "Mark.9",
+      "Acts.1.9-Acts.1.11",
+      "Col.1",
+      "John.14",
+      "Heb.1",
+      "Heb.4",
+      "Heb.7",
+      "Heb.9",
+      "Heb.10",
+      "Rev.5",
+      "Ps.24",
+      "1Cor.15"
+    ]
   },
   {
     "id": "sc-2018139389",
@@ -12263,7 +13408,15 @@
     ],
     "series_hint": "Confession de foi ch. IV — La création, partie 3",
     "raw_ref": "data/catalog/transcripts/sc-2018139389.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2018139389.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2018139389.vtt",
+    "scripture_refs_osis": [
+      "Heb.11.1-Heb.11.10",
+      "Exod.20.11",
+      "Rev.21.1-Rev.21.2",
+      "Rev.22.1-Rev.22.2",
+      "Gen.2.9-Gen.2.15",
+      "Ps.19"
+    ]
   },
   {
     "id": "sc-2012677347",
@@ -12386,7 +13539,17 @@
     ],
     "series_hint": "Série de prédications sur Noël — prédication sur les deux dernières des six facettes de 1 Timothée 3.16",
     "raw_ref": "data/catalog/transcripts/sc-2012677347.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2012677347.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2012677347.vtt",
+    "scripture_refs_osis": [
+      "Rom.1",
+      "1Cor.15",
+      "2Cor.5",
+      "Luke.24.36-Luke.24.41",
+      "Mark.16",
+      "Acts.2",
+      "Heb",
+      "Dan"
+    ]
   },
   {
     "id": "sc-2011866255",
@@ -12523,7 +13686,31 @@
     ],
     "series_hint": "Confession de foi ch. IV (création), partie 2",
     "raw_ref": "data/catalog/transcripts/sc-2011866255.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2011866255.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2011866255.vtt",
+    "scripture_refs_osis": [
+      "Heb.11.3",
+      "Exod.20.8-Exod.20.11",
+      "Exod.31.17",
+      "Ps.8",
+      "Rom.5",
+      "Rom.8",
+      "1Cor.11.7",
+      "1Tim.2.13",
+      "Acts.17.26",
+      "Luke.11.50-Luke.11.51",
+      "Matt.24.37-Matt.24.39",
+      "Mark.10",
+      "Eph.1",
+      "Col.1",
+      "Rev.12.9",
+      "Gen.2.5",
+      "Gen.4.17",
+      "Gen.5.1-Gen.5.32",
+      "Gen.10",
+      "Gen.11",
+      "Gen.25",
+      "Gen.46"
+    ]
   },
   {
     "id": "sc-2007594779",
@@ -12579,7 +13766,20 @@
       "2 Corinthiens 5:17-21"
     ],
     "series_hint": "Série de Noël — méditation sur les facettes du mystère de l'incarnation (1 Timothée 3:16), présentée comme une série de plusieurs dimanches",
-    "captions_ref": "data/catalog/transcripts/sc-2007594779.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2007594779.vtt",
+    "scripture_refs_osis": [
+      "Gal.3.8",
+      "Rom.1.1-Rom.1.4",
+      "Rom.15.8-Rom.15.9",
+      "Acts.3.25-Acts.3.26",
+      "Acts.13",
+      "Eph.2.14-Eph.2.16",
+      "Eph.3.1-Eph.3.6",
+      "Luke.24.46-Luke.24.47",
+      "Matt.24.14",
+      "Matt.28.18-Matt.28.20",
+      "2Cor.5.17-2Cor.5.21"
+    ]
   },
   {
     "id": "sc-2006543831",
@@ -12704,7 +13904,21 @@
     ],
     "series_hint": "Confession de foi baptiste de 1689, chapitre IV",
     "raw_ref": "data/catalog/transcripts/sc-2006543831.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-2006543831.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-2006543831.vtt",
+    "scripture_refs_osis": [
+      "Heb.11.3",
+      "John.1.3",
+      "Col.1.16",
+      "Ps.102.25",
+      "Ps.104.30",
+      "Job.33.4",
+      "Isa.43.7",
+      "Rom.11.36",
+      "Ps.19.1",
+      "Rom.1.20",
+      "Gen.1.31",
+      "Exod.20.8-Exod.20.11"
+    ]
   },
   {
     "id": "sc-2002238743",
@@ -12857,7 +14071,19 @@
     ],
     "series_hint": "Série de prédications sur l'Évangile de Jean",
     "raw_ref": "data/catalog/transcripts/sc-1996734623.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1996734623.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1996734623.vtt",
+    "scripture_refs_osis": [
+      "John.1.1-John.1.5",
+      "John.1.14",
+      "John.8.12",
+      "Rom.1.20-Rom.1.21",
+      "Eph.2.1-Eph.2.8",
+      "1Cor.2.11-1Cor.2.14",
+      "Isa.53.4-Isa.53.7",
+      "Acts.4.27-Acts.4.28",
+      "Prov.28.1",
+      "2Cor.5.20"
+    ]
   },
   {
     "id": "sc-1992138231",
@@ -13899,7 +15125,14 @@
       "Psaumes 8"
     ],
     "series_hint": "Confession de foi ch.4 (La Création)",
-    "captions_ref": "data/catalog/transcripts/sc-1947861891.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1947861891.vtt",
+    "scripture_refs_osis": [
+      "Gen.2.1-Gen.2.3",
+      "Mark.10",
+      "Exod.20",
+      "Heb.11",
+      "Ps.8"
+    ]
   },
   {
     "id": "sc-1943259707",
@@ -14020,7 +15253,16 @@
     ],
     "series_hint": "Série sur l'épître aux Galates (mentionnée en parallèle)",
     "raw_ref": "data/catalog/transcripts/sc-1943259707.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1943259707.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1943259707.vtt",
+    "scripture_refs_osis": [
+      "Rom.12.1",
+      "Isa.6",
+      "Gal.5",
+      "Phil.3",
+      "Acts.11.26",
+      "Matt.25.40",
+      "Matt.28.19-Matt.28.20"
+    ]
   },
   {
     "id": "sc-1940982903",
@@ -15036,7 +16278,39 @@
     ],
     "series_hint": "Série sur l'Épître de Jacques, chapitre 1 — dans le cadre d'études parallèles sur Galates et Hébreux",
     "raw_ref": "data/catalog/transcripts/sc-1903866746.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1903866746.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1903866746.vtt",
+    "scripture_refs_osis": [
+      "Jas.1.2-Jas.1.4",
+      "Jas.1.5-Jas.1.8",
+      "Jas.1.9-Jas.1.11",
+      "Jas.1.12",
+      "Jas.1.13-Jas.1.17",
+      "Jas.1.18-Jas.1.25",
+      "Acts.8",
+      "Gal",
+      "Rom.2.28-Rom.2.29",
+      "Rom.8",
+      "Rom.13.14",
+      "Matt.15.1-Matt.15.9",
+      "Matt.25",
+      "Luke.14.12-Luke.14.14",
+      "John.4.21",
+      "John.15.10",
+      "1John.3.18",
+      "Phil.2.3",
+      "Eph.2.10",
+      "1Cor.9",
+      "Heb.12.11",
+      "Deut.10.16",
+      "Deut.30.6",
+      "Jer.4.4",
+      "Jer.9.25",
+      "Ezek.36.26",
+      "Isa.1",
+      "Isa.58.6",
+      "Prov.19.17",
+      "2Tim.3"
+    ]
   },
   {
     "id": "sc-1903861574",
@@ -15287,7 +16561,20 @@
     ],
     "series_hint": "Série de prédications sur le livre d'Ézéchiel (commencée environ 3-4 ans avant cette prédication)",
     "raw_ref": "data/catalog/transcripts/sc-1900268571.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1900268571.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1900268571.vtt",
+    "scripture_refs_osis": [
+      "Ezek.1",
+      "Ezek.2",
+      "Ezek.3",
+      "Ezek.4",
+      "1Sam.4",
+      "1Sam.6",
+      "Jer.39",
+      "Jer.42",
+      "Isa.5.16-Isa.5.21",
+      "1Cor.11.31",
+      "1Pet.1.8-1Pet.1.21"
+    ]
   },
   {
     "id": "sc-1900264623",
@@ -15343,7 +16630,20 @@
       "Job 34:26"
     ],
     "series_hint": "Série de prédications sur le livre d'Ézéchiel",
-    "captions_ref": "data/catalog/transcripts/sc-1900264623.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1900264623.vtt",
+    "scripture_refs_osis": [
+      "Ezek.5.1-Ezek.5.7",
+      "Lev",
+      "Deut",
+      "Isa.26.10",
+      "Jer",
+      "Dan.9",
+      "2Pet.3.8-2Pet.3.10",
+      "1Cor.10.6-1Cor.10.13",
+      "1Pet.4.17-1Pet.4.19",
+      "Luke.23.26-Luke.23.31",
+      "Job.34.26"
+    ]
   },
   {
     "id": "sc-1900255956",
@@ -15465,7 +16765,19 @@
     ],
     "series_hint": "Série de prédications sur le livre d'Ézéchiel",
     "raw_ref": "data/catalog/transcripts/sc-1900255956.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1900255956.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1900255956.vtt",
+    "scripture_refs_osis": [
+      "Ezek.5.1-Ezek.5.10",
+      "Ezek.5.11",
+      "Deut.4.1-Deut.4.2",
+      "Deut.4.6",
+      "Deut.8.11-Deut.8.14",
+      "Ps.68.16",
+      "1Pet.2.9-1Pet.2.10",
+      "1Cor.3",
+      "Rom.2.17-Rom.2.24",
+      "Isa.7.20"
+    ]
   },
   {
     "id": "sc-1900254174",
@@ -15773,7 +17085,15 @@
     ],
     "series_hint": "Série d'enseignements sur l'épître aux Galates",
     "raw_ref": "data/catalog/transcripts/sc-1824015846.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1824015846.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1824015846.vtt",
+    "scripture_refs_osis": [
+      "Eph.2.20",
+      "1Cor.3.10-1Cor.3.15",
+      "1Cor.15.8",
+      "John.8.12",
+      "Matt.5.13-Matt.5.14",
+      "Rom.8.28"
+    ]
   },
   {
     "id": "sc-1824014199",
@@ -16054,7 +17374,17 @@
       "Jérémie 18:6"
     ],
     "raw_ref": "data/catalog/transcripts/sc-1815112302.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1815112302.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1815112302.vtt",
+    "scripture_refs_osis": [
+      "Gen.32.9-Gen.32.12",
+      "Hos.12.4",
+      "Ps.32",
+      "Isa.59",
+      "Prov",
+      "Ps.144",
+      "2Cor.12.10",
+      "Jer.18.6"
+    ]
   },
   {
     "id": "sc-1796999869",
@@ -16754,7 +18084,24 @@
       "Jérémie 31"
     ],
     "series_hint": "Série expositoire sur l'Épître aux Hébreux (après Hébreux 1 et 2)",
-    "captions_ref": "data/catalog/transcripts/sc-1747280997.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1747280997.vtt",
+    "scripture_refs_osis": [
+      "Heb.1",
+      "Heb.2.1-Heb.2.3",
+      "Heb.3.1",
+      "Rom.1.18-Rom.1.26",
+      "Luke.17.12-Luke.17.19",
+      "Luke.12.48-Luke.12.49",
+      "John.16.13-John.16.14",
+      "Isa.6",
+      "Exod.3.2",
+      "Exod.19.16-Exod.19.18",
+      "Gen.18",
+      "Josh.5.13-Josh.5.15",
+      "Ps.139",
+      "Ps.90",
+      "Jer.31"
+    ]
   },
   {
     "id": "sc-1747279587",
@@ -17036,7 +18383,20 @@
     ],
     "series_hint": "Série expositoire verset par verset sur l'épître aux Hébreux, commencée en 2020 au chapitre 2",
     "raw_ref": "data/catalog/transcripts/sc-1737731010.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1737731010.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1737731010.vtt",
+    "scripture_refs_osis": [
+      "Heb.4.16",
+      "Heb.5",
+      "Heb.6.9-Heb.6.10",
+      "Heb.10",
+      "Heb.12",
+      "Rev.22",
+      "Rom.8.28",
+      "Rom.8.30",
+      "John.16.33",
+      "Matt.11.28",
+      "John.3.36"
+    ]
   },
   {
     "id": "sc-1736838363",
@@ -17188,7 +18548,22 @@
     ],
     "series_hint": "Série sur l'intendance — deuxième cours (le premier ayant été donné par le pasteur Stéphane sur la parabole des talents)",
     "raw_ref": "data/catalog/transcripts/sc-1736800041.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1736800041.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1736800041.vtt",
+    "scripture_refs_osis": [
+      "1Chr.29.10-1Chr.29.16",
+      "Ps.50.12",
+      "Gen.1.27-Gen.1.28",
+      "Gen.3",
+      "Jas.2.19",
+      "Rom.8.29",
+      "1Cor.4.7",
+      "1Cor.10.31",
+      "Prov.23.4-Prov.23.5",
+      "Eph.5.19",
+      "Matt.6.19-Matt.6.21",
+      "Matt.6.33",
+      "Mark.12.41-Mark.12.44"
+    ]
   },
   {
     "id": "sc-1722453477",
@@ -17727,7 +19102,19 @@
     ],
     "series_hint": "Étude sur le diaconat — Leçon n°6 (caractère et œuvre des diacres)",
     "raw_ref": "data/catalog/transcripts/sc-1652069766.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1652069766.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1652069766.vtt",
+    "scripture_refs_osis": [
+      "Matt.5.9",
+      "Prov.19.11",
+      "1Cor.1.10-1Cor.1.11",
+      "1Cor.13.7",
+      "Phil.1.1",
+      "Phil.4.2",
+      "1Tim.3.1-1Tim.3.13",
+      "Acts.20.28",
+      "1Thess.5",
+      "Acts.17"
+    ]
   },
   {
     "id": "sc-1651552257",
@@ -17847,7 +19234,18 @@
     ],
     "series_hint": "Série sur le ministère des diacres — Leçon n°1 (leçon introductoire)",
     "raw_ref": "data/catalog/transcripts/sc-1651552257.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1651552257.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1651552257.vtt",
+    "scripture_refs_osis": [
+      "1Tim.3",
+      "Eph.4",
+      "Acts.2.37-Acts.2.45",
+      "Acts.4",
+      "Acts.8",
+      "1Cor.9.14",
+      "Ps.19",
+      "Ps.104",
+      "Eph.2"
+    ]
   },
   {
     "id": "sc-1651552254",
@@ -17914,7 +19312,8 @@
     "primary_scripture": "1 Timothée 3:8-13",
     "series_hint": "Leçon n°2 — série sur l'organisation et les ministères de l'Église locale",
     "raw_ref": "data/catalog/transcripts/sc-1651552254.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1651552254.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1651552254.vtt",
+    "scripture_refs_osis": []
   },
   {
     "id": "sc-1651552227",
@@ -18029,7 +19428,11 @@
     ],
     "series_hint": "Formation des diacres et des anciens — Leçon n°3",
     "raw_ref": "data/catalog/transcripts/sc-1651552227.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1651552227.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1651552227.vtt",
+    "scripture_refs_osis": [
+      "1Pet.5.2-1Pet.5.3",
+      "1Tim.3.8-1Tim.3.12"
+    ]
   },
   {
     "id": "sc-1651552212",
@@ -18143,7 +19546,12 @@
     ],
     "series_hint": "Série d'enseignements sur le diaconat — Leçon n°4",
     "raw_ref": "data/catalog/transcripts/sc-1651552212.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1651552212.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1651552212.vtt",
+    "scripture_refs_osis": [
+      "Acts.6.2-Acts.6.3",
+      "1Tim.3.14-1Tim.3.16",
+      "Eph.4"
+    ]
   },
   {
     "id": "sc-1651552182",
@@ -18261,7 +19669,13 @@
     ],
     "series_hint": "Cours sur le diaconat — Leçon n°5",
     "raw_ref": "data/catalog/transcripts/sc-1651552182.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1651552182.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1651552182.vtt",
+    "scripture_refs_osis": [
+      "Acts.6",
+      "1Tim.3.14-1Tim.3.16",
+      "Matt.7",
+      "Eph.5"
+    ]
   },
   {
     "id": "sc-1650134268",
@@ -18382,7 +19796,14 @@
     ],
     "series_hint": "Introduction à la série expositionnelle sur l'épître aux Galates",
     "raw_ref": "data/catalog/transcripts/sc-1650134268.raw.txt",
-    "captions_ref": "data/catalog/transcripts/sc-1650134268.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1650134268.vtt",
+    "scripture_refs_osis": [
+      "Gal.3.10",
+      "Gal.4.19",
+      "Rom",
+      "Rev",
+      "1Cor.2.2"
+    ]
   },
   {
     "id": "sc-1650117738",
@@ -18433,7 +19854,15 @@
       "Éphésiens 1:4"
     ],
     "series_hint": "Série de leçons sur le baptême (Leçon 3)",
-    "captions_ref": "data/catalog/transcripts/sc-1650117738.vtt"
+    "captions_ref": "data/catalog/transcripts/sc-1650117738.vtt",
+    "scripture_refs_osis": [
+      "Jer.31",
+      "Gal",
+      "Rom.4",
+      "Col.2",
+      "Matt.10.34-Matt.10.36",
+      "Eph.1.4"
+    ]
   },
   {
     "id": "yt-snB851daJXk",
@@ -18522,7 +19951,8 @@
     ],
     "series_hint": "La Bible — 3ème partie",
     "raw_ref": "data/catalog/transcripts/yt-gj17HMaMOyY.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-gj17HMaMOyY.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-gj17HMaMOyY.vtt",
+    "scripture_refs_osis": []
   },
   {
     "id": "yt-sjG__9VrXM0",
@@ -18632,7 +20062,12 @@
     ],
     "series_hint": "Série mensuelle sur la Bible — 1ère partie (mois de février)",
     "raw_ref": "data/catalog/transcripts/yt-sjG__9VrXM0.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-sjG__9VrXM0.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-sjG__9VrXM0.vtt",
+    "scripture_refs_osis": [
+      "Ps.23",
+      "Ps.1",
+      "Col.3.16"
+    ]
   },
   {
     "id": "yt-uhX8wbxSQ1g",
@@ -18737,7 +20172,11 @@
     ],
     "series_hint": "Chasse au Roi, prédication 4/8",
     "raw_ref": "data/catalog/transcripts/yt-uhX8wbxSQ1g.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-uhX8wbxSQ1g.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-uhX8wbxSQ1g.vtt",
+    "scripture_refs_osis": [
+      "Deut.6.4-Deut.6.5",
+      "Lev.19.18"
+    ]
   },
   {
     "id": "yt-NDCyRMRt6xw",
@@ -18860,7 +20299,22 @@
     ],
     "series_hint": "Série sur l'épître aux Galates — GAL.003",
     "raw_ref": "data/catalog/transcripts/yt-NDCyRMRt6xw.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-NDCyRMRt6xw.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-NDCyRMRt6xw.vtt",
+    "scripture_refs_osis": [
+      "Gal.1.13-Gal.1.16",
+      "Gal.5.1",
+      "Rom.6",
+      "Rom.7",
+      "Rom.8",
+      "Rom.9",
+      "1Cor.2.1-1Cor.2.5",
+      "2Cor.11.23-2Cor.12.10",
+      "Phil.3",
+      "Acts.9",
+      "Acts.13",
+      "Acts.16",
+      "Mark.8"
+    ]
   },
   {
     "id": "yt-Tqu-GLCEgbA",
@@ -18976,7 +20430,14 @@
       "Matthieu 28:18-20"
     ],
     "raw_ref": "data/catalog/transcripts/yt-Tqu-GLCEgbA.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-Tqu-GLCEgbA.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-Tqu-GLCEgbA.vtt",
+    "scripture_refs_osis": [
+      "Acts.1.8",
+      "Acts.8.9-Acts.8.24",
+      "Isa.53",
+      "Eph.5-Eph.6",
+      "Matt.28.18-Matt.28.20"
+    ]
   },
   {
     "id": "yt-FDcy9KUQM6s",
@@ -19090,7 +20551,12 @@
     ],
     "series_hint": "Des Yeux pour Voir - épisode 04 (étude de Marc 8)",
     "raw_ref": "data/catalog/transcripts/yt-FDcy9KUQM6s.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-FDcy9KUQM6s.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-FDcy9KUQM6s.vtt",
+    "scripture_refs_osis": [
+      "1Cor.13.12",
+      "Heb.1.1-Heb.1.2",
+      "1Pet.2.9"
+    ]
   },
   {
     "id": "yt-yCBKVjfAfhQ",
@@ -19222,7 +20688,21 @@
     ],
     "series_hint": "cROIx — prédication 08/13",
     "raw_ref": "data/catalog/transcripts/yt-yCBKVjfAfhQ.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-yCBKVjfAfhQ.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-yCBKVjfAfhQ.vtt",
+    "scripture_refs_osis": [
+      "Rom.8",
+      "Joel.1.15",
+      "Joel.2.10",
+      "Joel.2.30",
+      "Amos.5.18",
+      "Amos.8.9",
+      "Zeph.1.14",
+      "Ps.27.1",
+      "Gal.3.13",
+      "2Cor.5.21",
+      "Mark.13.24-Mark.13.26",
+      "Matt"
+    ]
   },
   {
     "id": "yt-LAcVjq-mfJc",
@@ -19283,7 +20763,8 @@
     ],
     "series_hint": "Parole de Dieu 4/5",
     "raw_ref": "data/catalog/transcripts/yt-LAcVjq-mfJc.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-LAcVjq-mfJc.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-LAcVjq-mfJc.vtt",
+    "scripture_refs_osis": []
   },
   {
     "id": "yt-oLoNQjP0ZoU",
@@ -19495,7 +20976,14 @@
     ],
     "series_hint": "Questions et Réponses – Leçons 1 à 3 (Genèse 1-3)",
     "raw_ref": "data/catalog/transcripts/yt-nTrSEHDkXqM.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-nTrSEHDkXqM.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-nTrSEHDkXqM.vtt",
+    "scripture_refs_osis": [
+      "Gen.3.15",
+      "Gen.3.16",
+      "Eph",
+      "Rom.8",
+      "John"
+    ]
   },
   {
     "id": "yt-lWtea4iQzKw",
@@ -19683,7 +21171,19 @@
     ],
     "series_hint": "Série expositionnelle sur les Actes des Apôtres",
     "raw_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-HOjW63LMfhQ.vtt",
+    "scripture_refs_osis": [
+      "Isa.53",
+      "Acts.1.8",
+      "Acts.6",
+      "Acts.8.4-Acts.8.8",
+      "Matt.16",
+      "Matt.28.19-Matt.28.20",
+      "Eph.5-Eph.6",
+      "1Cor.1.21",
+      "Gal",
+      "John.6"
+    ]
   },
   {
     "id": "yt-HGLROgzi8Z0",
@@ -20117,7 +21617,14 @@
       "Psaume 51"
     ],
     "series_hint": "Prier selon le cœur de Dieu (Partie IV)",
-    "captions_ref": "data/catalog/transcripts/yt-IqNmh_XGULE.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-IqNmh_XGULE.vtt",
+    "scripture_refs_osis": [
+      "Isa.53",
+      "Matt.26.36-Matt.26.46",
+      "Luke.22.43-Luke.22.46",
+      "Heb.5.7-Heb.5.9",
+      "Ps.51"
+    ]
   },
   {
     "id": "yt-CZkmvAvA4ds",
@@ -27443,7 +28950,20 @@
     ],
     "series_hint": "Matinée pastorale — séance de questions-réponses",
     "raw_ref": "data/catalog/transcripts/yt-uNPP4M4Aqpc.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-uNPP4M4Aqpc.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-uNPP4M4Aqpc.vtt",
+    "scripture_refs_osis": [
+      "Eph.4",
+      "Luke.18",
+      "Acts.1.8",
+      "Gal.5",
+      "1Cor.3",
+      "1Cor.14",
+      "Eph.2.20",
+      "Jer.31.33-Jer.31.34",
+      "Ezek.36",
+      "Acts.2.16-Acts.2.21",
+      "Col.4"
+    ]
   },
   {
     "id": "yt-wgis2luCkVU",
@@ -27895,7 +29415,8 @@
     ],
     "series_hint": "7ème Conférence Bonne Nouvelle — Paris, 05 et 06 mai 2023",
     "raw_ref": "data/catalog/transcripts/yt-PEe-gsxWu3A.raw.txt",
-    "captions_ref": "data/catalog/transcripts/yt-PEe-gsxWu3A.vtt"
+    "captions_ref": "data/catalog/transcripts/yt-PEe-gsxWu3A.vtt",
+    "scripture_refs_osis": []
   },
   {
     "id": "yt-yAE6stBYOMk",

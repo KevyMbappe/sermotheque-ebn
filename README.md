@@ -27,6 +27,7 @@ YouTube, SoundCloud, the website, and any future mobile/TV apps are all just *re
 | Speaker attribution | 100 `audio-fingerprint` · 45 `title` · 331 `default-rule` · 41 blank |
 | Measured enrichment cost | **$0.0705/sermon** (Sonnet 4.6) ⇒ **~$27 for the 378 remaining** |
 | Scripture coverage (OSIS) | **196/239 (82%)** on the SoundCloud spine · **215/517 (42%)** across the union, 28 books |
+| In-body citations (OSIS) | **1 243/1 243 normalised (0 failures)** on the 139 enriched rows → `scripture_refs_osis`; **54 distinct books** reachable via body citations vs 22 via the main passage (decision #56) |
 | Series auto-clustered | **26** (e.g. Épître aux Galates ×71, aux Hébreux ×28) |
 | YouTube ↔ SoundCloud | largely **complementary** — corroborated matcher (decision #43) confirms 18 overlaps + 4 translations; true catalog = **union (517)** |
 
@@ -54,7 +55,8 @@ docs/
   SERMOTHEQUE.md       ★ Spec for the content system of record (the primary project)
   PRD.md               App suite spec (web/mobile/TV) — a downstream consumer
 pipeline/
-  scripture.py         Shared parsing primitives (OSIS book map, scripture/speaker parsing)
+  scripture.py         Shared parsing primitives (OSIS book map, scripture/speaker parsing,
+                       + citation → OSIS normalisation for in-body refs, #56)
   parse_catalog.py     SoundCloud titles → structured metadata
   cluster_series.py    Group sermons into ordered series (run after the parser)
   match_youtube.py     Link YouTube videos to SC sermons; emit orphans
@@ -100,6 +102,7 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **M5t — frozen record contract** (decision #53): `schema.py` + `sermon.schema.json` (WP-import contract), validated in `build.py`; **Sonnet-only locked**
 - [x] **M5u — capture batch started** (2026-06-20): 139 transcripts + 217 voiceprints banked at $0 API — **pass paused at ~27%**
 - [x] **M5v — enrich from disk** (2026-06-22): store 39 → **139 enriched**, no re-ASR, ~$7 on Sonnet
+- [x] **M5w — in-body citations normalised to OSIS** (2026-08-01, decision #56): `scripture_refs_osis`, derived on every writeback; 1 243/1 243 parsed, 54 books reachable — unblocks the inverted index / browse-by-passage
 - [ ] **Finish the capture pass** — the only irreversible work; resume `run_enrichment.py --no-enrich` (Apple Silicon required for mlx-whisper)
 - [ ] **Enrich the remaining 378** — from committed transcripts, no re-ASR (**~$27 on Sonnet**)
 - [x] **POC web DEPLOYED** (2026-08-01, decisions #54/#55) — **https://kevymbappe.github.io/sermotheque-ebn/** · 131 enriched sermons, player + chapter deep-links + synced transcript; republishes itself when `data/catalog/**` changes. Remaining polish: the YouTube IFrame path and an EN sermon (`docs/plans/WEB-POC-STATUS.md`)

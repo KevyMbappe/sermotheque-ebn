@@ -106,6 +106,141 @@ def parse_scripture(folded_title, original):
     }
 
 
+# ---- citation-style reference normalisation (decision #56) ----
+# `parse_scripture` above is TITLE-oriented: one reference, embedded in noise, and it is
+# deliberately left untouched (the structural catalog depends on its exact behaviour).
+# The LLM-produced `scripture_refs` are a different animal: short, already-isolated citation
+# strings, but many per sermon and in every French shape a preacher uses — chapter ranges
+# ("Genèse 9-10"), verse lists ("Jean 1:1,14"), dot separators ("Josué 1.8"), cross-chapter
+# spans, book-only allusions, and parenthetical glosses ("Luc 15 (fils prodigue)").
+# These functions turn one such string into zero or more OSIS ids, reusing the BOOKS table.
+# Rule of the house: never guess. Unrecognised book → [] (the caller counts the misses).
+
+# A book name only counts as a whole token — never inside a hyphenated name, so
+# "Jean-Baptiste" / "Saint-Jean" are not read as the gospel of John.
+_BOOK_TOKEN_RE = re.compile(
+    r"(?<![-\w])(?P<book>" + "|".join(re.escape(b) for b in _BOOK_ALT) + r")(?![-\w])"
+)
+# the numeric tail of a citation: digits plus the separators French refs actually use
+_REF_EXPR_RE = re.compile(r"^[\s:]*(\d[\d\s:.,;\-]*)")
+_PARENS_RE = re.compile(r"\(([^)]*)\)|\[([^\]]*)\]")
+
+
+def _normalize_ref_text(s):
+    """Fold to the matching alphabet, then reduce French ref vocabulary to punctuation.
+    The preposition meaning 'to' is handled AFTER folding (as a bare `a`) on purpose: a literal
+    accented character in a pattern is a normalisation trap (NFC vs NFD) -- see decision #56."""
+    s = (s or "").replace("–", "-").replace("—", "-").replace("−", "-")
+    f = fold(s)
+    f = re.sub(r"(?<=[\s\d])a(?=[\s\d])", "-", f)   # a bare "a" between numbers = "to"
+    f = re.sub(r"\bch(?:apitres?|ap)?\.?(?=\s*\d)", " ", f)    # "ch. 2", "chapitre 2" → dropped
+    f = re.sub(r"(?<=\d)\s*\b(?:versets?|vv?)\.?\s*(?=\d)", ":", f)   # "2 v 11" → "2:11"
+    f = re.sub(r"\b(?:versets?|vv?)\.?(?=\s*\d)", " ", f)      # leading "verset 5" → dropped
+    f = re.sub(r"(?<=\d)\s*\bet\b\s*(?=\d)", ",", f)           # "1:1 et 14" → a verse list
+    return f
+
+
+def _point(tok):
+    """'12:5' → (12, 5) explicit chapter:verse · '12' → (None, 12) bare number."""
+    if ":" in tok:
+        a, b = tok.split(":", 1)
+        return int(a), int(b)
+    return None, int(tok)
+
+
+def _resolve(pt, ctx, verse_mode):
+    """Bare numbers are ambiguous: a verse when a chapter:verse context is open
+    ('Jean 1:1,14'), another chapter otherwise ('Genèse 9-10').
+    Returns (chapter, verse|None, new_ctx, new_verse_mode)."""
+    c, n = pt
+    if c is not None:
+        return c, n, c, True
+    if verse_mode and ctx is not None:
+        return ctx, n, ctx, True
+    return n, None, n, False
+
+
+# Books with a single chapter: a bare number there is a VERSE, never a chapter
+# ('Jude 24-25' = verses 24-25 → Jude.1.24-Jude.1.25). OSIS still numbers the chapter 1.
+ONE_CHAPTER_BOOKS = {"Obad", "Phlm", "2John", "3John", "Jude"}
+
+
+def _parse_expr(expr, one_chapter=False):
+    """Numeric tail of a citation → list of (chapter, verse, end_chapter, end_verse) spans."""
+    expr = re.sub(r"(?<=\d)\s*\.\s*(?=\d)", ":", expr)   # 'Josué 1.8' — dot separates c.v
+    expr = expr.replace(";", ",").replace(".", ",")      # stray dot/semicolon = segment break
+    spans, ctx, verse_mode = [], (1 if one_chapter else None), one_chapter
+    for part in expr.split(","):
+        ends = [p.strip() for p in part.split("-") if p.strip()]
+        if not ends or not all(re.fullmatch(r"\d+(?::\d+)?", e) for e in ends):
+            continue                                     # unparseable segment → skipped, not guessed
+        c1, v1, ctx, verse_mode = _resolve(_point(ends[0]), ctx, verse_mode)
+        if len(ends) > 1:
+            c2, v2, _, _ = _resolve(_point(ends[-1]), ctx, verse_mode)
+        else:
+            c2, v2 = c1, v1
+        spans.append((c1, v1, c2, v2))
+    return spans
+
+
+def _osis(book, span):
+    c1, v1, c2, v2 = span
+    start = f"{book}.{c1}" + (f".{v1}" if v1 else "")
+    if (c2, v2) == (c1, v1):
+        return start
+    return f"{start}-{book}.{c2}" + (f".{v2}" if v2 else "")
+
+
+def _parse_chunk(text):
+    """One chunk may name several books ('Romains 8 et Éphésiens 2'): each book owns the
+    numbers that follow it, up to the next book name."""
+    f = _normalize_ref_text(text)
+    matches = list(_BOOK_TOKEN_RE.finditer(f))
+    out = []
+    for i, m in enumerate(matches):
+        tail_end = matches[i + 1].start() if i + 1 < len(matches) else len(f)
+        book = BOOKS[m.group("book")]
+        em = _REF_EXPR_RE.match(f[m.end():tail_end])
+        spans = _parse_expr(em.group(1), book in ONE_CHAPTER_BOOKS) if em else []
+        out += [_osis(book, s) for s in spans] or [book]     # no numbers → book-level id
+    return out
+
+
+def _is_reference_like(text):
+    """A parenthetical is only re-parsed when it *is* a citation ('(1 Jean 5:1)'), never when
+    it is a gloss ('(fils prodigue)', '(allusion)')."""
+    f = _normalize_ref_text(text).strip()
+    m = _BOOK_TOKEN_RE.match(f)
+    return bool(m and _REF_EXPR_RE.match(f[m.end():]))
+
+
+def parse_reference(text):
+    """Free-text scripture citation (FR/EN) → ordered, de-duplicated list of OSIS ids.
+    Returns [] when no Bible book can be recognised — misses are counted, never guessed."""
+    if not isinstance(text, str) or not text.strip():
+        return []
+    glosses = [g or h for g, h in _PARENS_RE.findall(text)]
+    chunks = [_PARENS_RE.sub(" ", text)] + [g for g in glosses if _is_reference_like(g)]
+    ids, seen = [], set()
+    for osis_id in (i for c in chunks for i in _parse_chunk(c)):
+        if osis_id not in seen:
+            seen.add(osis_id)
+            ids.append(osis_id)
+    return ids
+
+
+def normalize_refs(refs):
+    """A sermon's free-text `scripture_refs` → `scripture_refs_osis`: OSIS ids, de-duplicated,
+    in order of first appearance. References that don't parse are dropped (see #56)."""
+    ids, seen = [], set()
+    for raw in refs or []:
+        for osis_id in parse_reference(raw):
+            if osis_id not in seen:
+                seen.add(osis_id)
+                ids.append(osis_id)
+    return ids
+
+
 def parse_speaker(title):
     for name in SPEAKERS:
         if fold(name) in fold(title):

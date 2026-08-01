@@ -63,7 +63,8 @@ FIELDS = {
     "key_quotes":          (_ARR,  False, _OBJ),   # [{text, t}]
     "questions":           (_ARR,  False, _STR),
     "primary_scripture":   (_STR,  False, None),
-    "scripture_refs":      (_ARR,  False, _STR),
+    "scripture_refs":      (_ARR,  False, _STR),   # free text, as the LLM wrote it ("Jean 1:14")
+    "scripture_refs_osis": (_ARR,  False, _STR),   # ^ normalised to OSIS ids, derived (#56)
     "series_hint":         (_STR,  False, None),
     "raw_ref":             (_STR,  False, None),
     "captions_ref":        (_STR,  False, None),
