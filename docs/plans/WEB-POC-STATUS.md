@@ -129,6 +129,34 @@ au navigateur.
   (« je veux réécouter Loïc »), pas un classement. À retirer aussi si l'intention est plus
   large. Les anciennes URL `/predicateurs` retombent sur l'accueil via `404.html`.
 
+## 🆕 Ajouté le 2026-08-01 — une recherche partout où il y a une liste
+
+`components/SearchBox.jsx`, un seul composant pour que le geste soit identique partout, et
+le même pliage d'accents que le catalogue (« ezechiel » trouve « Ézéchiel »).
+
+| Écran | Cherche dans | Vérifié |
+|---|---|---|
+| Accueil | titre, résumé, thèmes (existait déjà) | ✅ |
+| `/livres` | nom du livre | 54 → 1 |
+| `/themes` | libellé du thème | 44 → 1 |
+| `/series` | nom de la série | 20 → 1 |
+| `/livres/:book` | titre, accroche, prédicateur, passage | 14 résultats |
+| `/themes/:id` | idem | 51 → 10 |
+| **Transcription** | le texte prononcé | **2 909 → 28 lignes** |
+
+La recherche dans la transcription est le « chercher où il dit X » que le minutage rendait
+possible depuis #42 : les lignes filtrées restent cliquables, donc on saute directement au
+moment. Le **suivi de lecture se suspend** pendant une recherche (il se battrait avec le
+filtre) et la case est désactivée pour que ce soit visible.
+
+⚠️ **Deux pièges rencontrés, à ne pas réintroduire :**
+- Les cues filtrées gardent leur **index d'origine** ; sans ça, le surlignage de la ligne
+  courante et le saut viseraient la mauvaise ligne.
+- Sur une page de livre, un sermon figure à la fois dans la grille et dans l'index des
+  chapitres : le compteur compte des **sermons distincts**, pas des lignes. Et la section
+  « mentions sans chapitre » doit être filtrée comme les autres — oubliée au premier jet,
+  elle restait affichée pendant une recherche et faussait le compte.
+
 ## ⏳ Reste à faire
 
 1. ~~**Page sermon**~~ — ✅ 2026-08-01. Rendu vérifié en émulation (en-tête, invitation, résumé,

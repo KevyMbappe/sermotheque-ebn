@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
-import { loadVtt } from "../lib/data.js";
+import { fold, loadVtt } from "../lib/data.js";
+import SearchBox from "./SearchBox.jsx";
 import { parseVtt, activeCueIndex, fmtTime } from "../lib/vtt.js";
 
 /**
@@ -12,6 +13,7 @@ export default function Transcript({ id, currentTime, onSeek }) {
   const [text, setText] = useState(null);
   const [error, setError] = useState(null);
   const [follow, setFollow] = useState(true);
+  const [q, setQ] = useState("");
   const listRef = useRef(null);
 
   useEffect(() => {
@@ -22,13 +24,23 @@ export default function Transcript({ id, currentTime, onSeek }) {
   const cues = useMemo(() => (text ? parseVtt(text) : []), [text]);
   const active = activeCueIndex(cues, currentTime);
 
+  // Recherche dans la transcription : c'est le « chercher où il dit X » que le minutage
+  // rendait possible depuis le début (#42). On garde l'index d'origine de chaque cue,
+  // sinon le surlignage de la ligne courante et le saut viseraient la mauvaise ligne.
+  const hits = useMemo(() => {
+    const needle = fold(q).trim();
+    if (!needle) return null;
+    return cues.map((c, i) => ({ c, i })).filter(({ c }) => fold(c.text).includes(needle));
+  }, [cues, q]);
+  const shown = hits || cues.map((c, i) => ({ c, i }));
+
   // Suivi automatique : on garde la ligne courante visible, sauf si l'utilisateur
   // a choisi de lire librement (case décochée) — sinon on lui reprendrait le scroll.
   useEffect(() => {
-    if (!follow || active < 0 || !listRef.current) return;
+    if (q || !follow || active < 0 || !listRef.current) return;
     const el = listRef.current.querySelector(`[data-cue="${active}"]`);
     el?.scrollIntoView({ block: "center", behavior: "smooth" });
-  }, [active, follow]);
+  }, [active, follow, q]);
 
   return (
     <section className="panel">
@@ -36,8 +48,9 @@ export default function Transcript({ id, currentTime, onSeek }) {
         <h2>Transcription</h2>
         <div className="panel-actions">
           {open && cues.length > 0 && (
-            <label className="follow">
-              <input type="checkbox" checked={follow} onChange={(e) => setFollow(e.target.checked)} />
+            <label className="follow" title={q ? "Suspendu pendant une recherche" : undefined}>
+              <input type="checkbox" checked={follow && !q} disabled={Boolean(q)}
+                     onChange={(e) => setFollow(e.target.checked)} />
               Suivre la lecture
             </label>
           )}
@@ -60,8 +73,15 @@ export default function Transcript({ id, currentTime, onSeek }) {
               <p className="muted transcript-note">
                 Transcription automatique (non relue) — cliquez une ligne pour y sauter.
               </p>
+              <SearchBox value={q} onChange={setQ}
+                         placeholder="Chercher un mot dans la transcription…"
+                         label="Chercher dans la transcription"
+                         count={hits ? hits.length : null} />
+              {hits?.length === 0 && (
+                <p className="muted">Aucun passage ne contient ce mot.</p>
+              )}
               <div className="transcript" ref={listRef}>
-                {cues.map((c, i) => (
+                {shown.map(({ c, i }) => (
                   <p
                     key={i}
                     data-cue={i}
