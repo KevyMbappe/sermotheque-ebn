@@ -67,7 +67,7 @@ export default function Book({ sermons, book }) {
                     {all.map((s) => (
                       <li key={s.id}>
                         <a href={href(`/sermon/${encodeURIComponent(s.id)}/`)}>{s.title}</a>
-                        {c.preached.includes(s) && <span className="badge-preached">prêché</span>}
+                        {c.preached.includes(s) && <span className="badge-preached">prédication</span>}
                       </li>
                     ))}
                   </ul>
