@@ -81,6 +81,8 @@ function project(row) {
     references: row.references || [],
     topics: row.topics || [],
     scripture_refs: row.scripture_refs || [],
+    // La moitié interrogeable des citations (#56) : c'est elle qui porte l'index inversé.
+    scripture_refs_osis: row.scripture_refs_osis || [],
     embed: embedFor(row),
     has_transcript: false, // fixé plus bas si le VTT existe
   };

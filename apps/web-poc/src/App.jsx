@@ -4,6 +4,7 @@ import { currentPath, href, startRouter, subscribe } from "./lib/router.js";
 import Home from "./pages/Home.jsx";
 import Sermon from "./pages/Sermon.jsx";
 import Browse from "./pages/Browse.jsx";
+import Book from "./pages/Book.jsx";
 
 /**
  * Routage par chemin — voir lib/router.js pour le pourquoi (partage et aperçus de lien).
@@ -82,6 +83,8 @@ function Route({ route, sermons }) {
       </p>
     );
   }
+  const bookMatch = route.match(/^\/livres\/([A-Za-z0-9]+)$/);
+  if (bookMatch) return <Book sermons={sermons} book={bookMatch[1]} />;
   if (route === "/livres") return <Browse sermons={sermons} mode="book" />;
   if (route === "/series") return <Browse sermons={sermons} mode="series" />;
   if (route === "/predicateurs") return <Browse sermons={sermons} mode="speaker" />;
