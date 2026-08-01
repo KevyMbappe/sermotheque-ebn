@@ -1,14 +1,14 @@
 /**
- * Index inversé des passages : « qui a prêché sur Romains 8, et qui l'a cité ? »
+ * Index inversé des passages : « quels sermons exposent Romains 8, et lesquels le citent ? »
  *
  * Rendu possible par la décision #56 (pipeline) : les passages cités dans le corps des
- * prédications, jusque-là en texte libre français, sont désormais normalisés en ids OSIS
+ * sermons, jusque-là en texte libre français, sont désormais normalisés en ids OSIS
  * (`scripture_refs_osis`). Le catalogue passe ainsi de 28 livres atteignables (par
  * l'Écriture principale seule) à 54.
  *
  * On distingue deux relations, parce qu'elles ne valent pas la même chose pour un lecteur :
- *   • PRÊCHÉ  — le passage est le texte du message (`scripture_osis`)
- *   • CITÉ    — le passage est convoqué à l'intérieur du message (`scripture_refs_osis`)
+ *   • EXPOSÉ — le passage est le texte du sermon (`preached` / `scripture_osis`)
+ *   • CITÉ   — le passage est convoqué à l'intérieur du sermon (`scripture_refs_osis`)
  *
  * L'index est calculé côté client : ~1 250 citations aujourd'hui, ~4 600 une fois les 517
  * enrichies. C'est instantané, et surtout ça garde UNE source de vérité (le catalogue
@@ -77,7 +77,7 @@ export function buildPassageIndex(sermons) {
   };
 
   for (const s of sermons) {
-    // Prêché : l'Écriture principale, celle qui titre le message.
+    // Exposé : l'Écriture principale, celle qui titre le sermon.
     for (const pt of osisPoints(s.scripture_osis)) {
       const b = touch(pt.book);
       b.preached.set(s.id, s);
@@ -87,7 +87,7 @@ export function buildPassageIndex(sermons) {
     for (const ref of s.scripture_refs_osis || []) {
       for (const pt of osisPoints(ref)) {
         const b = touch(pt.book);
-        // Un passage prêché n'est pas re-listé comme cité : la relation la plus forte gagne.
+        // Un passage exposé n'est pas re-listé comme cité : la relation la plus forte gagne.
         if (!b.preached.has(s.id)) b.cited.set(s.id, s);
         const ch = chapterOf(b, pt.chapter);
         if (!ch.preached.has(s.id)) ch.cited.set(s.id, s);

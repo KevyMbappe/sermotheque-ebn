@@ -62,7 +62,7 @@ export default function App() {
 
       <footer className="site-footer">
         <p>
-          {sermons.length} prédications publiées · catalogue généré depuis le dépôt canonique.
+          {sermons.length} sermons publiés · catalogue généré depuis le dépôt canonique.
           <br />
           <span className="muted">
             Prototype interne — les données proviennent de SoundCloud et YouTube de l'église.
@@ -81,7 +81,7 @@ function Route({ route, sermons }) {
       <Sermon sermon={sermon} all={sermons} />
     ) : (
       <p className="state">
-        Prédication introuvable. <a href={href("/")}>Retour au catalogue</a>
+        Sermon introuvable. <a href={href("/")}>Retour au catalogue</a>
       </p>
     );
   }

@@ -14,10 +14,10 @@ export default function Home({ sermons }) {
   return (
     <>
       <section className="hero">
-        <h1>Écouter la prédication de la Parole</h1>
+        <h1>Les sermons de l'Église Bonne Nouvelle</h1>
         <p>
-          Parcourez les prédications de l'Église Bonne Nouvelle : par livre biblique, par série
-          ou par prédicateur. Chaque message est découpé en chapitres pour aller droit au passage
+          Parcourez les sermons par livre biblique, par série ou par prédicateur. Chaque sermon
+          est découpé en chapitres pour aller droit au passage
           qui vous intéresse.
         </p>
       </section>
@@ -32,12 +32,12 @@ export default function Home({ sermons }) {
       />
 
       <p className="results-count">
-        {visible.length} prédication{visible.length > 1 ? "s" : ""}
+        {visible.length} sermon{visible.length > 1 ? "s" : ""}
         {visible.length !== sermons.length && ` sur ${sermons.length}`}
       </p>
 
       {visible.length === 0 ? (
-        <p className="state">Aucune prédication ne correspond à cette recherche.</p>
+        <p className="state">Aucun sermon ne correspond à cette recherche.</p>
       ) : (
         <>
           <div className="grid">

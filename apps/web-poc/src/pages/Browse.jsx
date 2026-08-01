@@ -26,8 +26,8 @@ function BrowseBooks({ sermons }) {
     <>
       <h1 className="page-title">Parcourir par livre biblique</h1>
       <p className="results-count">
-        <strong>{index.length}</strong> livres touchés — {preachedCount} exposés dans un message,
-        les autres cités à l'intérieur des prédications.
+        <strong>{index.length}</strong> livres touchés — {preachedCount} exposés dans un sermon,
+        les autres cités à l'intérieur des sermons.
       </p>
       <ul className="book-grid">
         {index.map((b) => (
@@ -35,7 +35,7 @@ function BrowseBooks({ sermons }) {
             <a className="book-tile" href={href(`/livres/${b.book}/`)}>
               <span className="book-name">{bookLabel(b.book)}</span>
               <span className="book-counts">
-                {b.preached.length > 0 && <span className="count-preached">{b.preached.length} prédication{b.preached.length > 1 ? "s" : ""}</span>}
+                {b.preached.length > 0 && <span className="count-preached">{b.preached.length} sermon{b.preached.length > 1 ? "s" : ""}</span>}
                 {b.cited.length > 0 && <span className="count-cited">{b.cited.length} citation{b.cited.length > 1 ? "s" : ""}</span>}
               </span>
             </a>
