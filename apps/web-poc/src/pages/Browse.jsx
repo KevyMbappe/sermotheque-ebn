@@ -35,7 +35,7 @@ function BrowseBooks({ sermons }) {
             <a className="book-tile" href={href(`/livres/${b.book}/`)}>
               <span className="book-name">{bookLabel(b.book)}</span>
               <span className="book-counts">
-                {b.preached.length > 0 && <span className="count-preached">{b.preached.length} prêchée{b.preached.length > 1 ? "s" : ""}</span>}
+                {b.preached.length > 0 && <span className="count-preached">{b.preached.length} prédication{b.preached.length > 1 ? "s" : ""}</span>}
                 {b.cited.length > 0 && <span className="count-cited">{b.cited.length} citation{b.cited.length > 1 ? "s" : ""}</span>}
               </span>
             </a>
