@@ -309,6 +309,18 @@
         ]
       }
     },
+    "topics_canonical": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
     "series_hint": {
       "type": [
         "string",

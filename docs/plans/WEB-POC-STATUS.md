@@ -98,6 +98,21 @@ d'origine est conservé sous les puces, où la précision au verset survit.
 **Vérifié** : 54 tuiles, Galates 22 prêchées / 32 citations, Malachie–Jude–Esther atteignables
 pour la première fois, puce → page de livre, 0 erreur JS, toujours propre de 320 à 768 px.
 
+## 🆕 Ajouté le 2026-08-01 — parcourir par thème
+
+Rendu possible par le vocabulaire curé (#57). Avant : 594 étiquettes libres pour 139 fiches,
+451 vues une seule fois — les thèmes ne servaient que de matière à la recherche plein texte,
+sans filtre ni navigation possible.
+
+- **`/themes`** : les 44 catégories avec leur nombre de prédications.
+- **`/themes/:id`** : les prédications du thème (Sanctification 51, L'Église 40, Péché et chute 39…).
+- **Fiche sermon** : les puces de thème sont devenues des liens ; les étiquettes libres restent
+  affichées dessous, parce que leur précision dit ce que 44 catégories ne peuvent pas dire.
+- **Filtre par thème** sur l'accueil, et les 44 pages de thème sont pré-rendues.
+
+`public/data/topics.json` ne contient que `id` + `label` : les alias servent au pipeline, pas
+au navigateur.
+
 ## ⏳ Reste à faire
 
 1. ~~**Page sermon**~~ — ✅ 2026-08-01. Rendu vérifié en émulation (en-tête, invitation, résumé,

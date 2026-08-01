@@ -65,7 +65,7 @@ def write_csv(rows):
               "speaker", "speaker_provenance", "series_name", "series_part", "series_order",
               "scripture_osis", "scripture_book", "primary_scripture", "kind", "is_conference",
               "description", "invitation", "summary", "transcript_ref"]
-    joined = ["topics", "key_points", "references", "scripture_refs", "scripture_refs_osis",
+    joined = ["topics", "key_points", "references", "scripture_refs", "scripture_refs_osis", "topics_canonical",
               "questions"]
     # key_quotes / chapters carry timestamps (nested objects) — JSON only, not flattened to CSV.
     cols = scalar + ["soundcloud_id", "youtube_id"] + joined

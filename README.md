@@ -28,6 +28,7 @@ YouTube, SoundCloud, the website, and any future mobile/TV apps are all just *re
 | Measured enrichment cost | **$0.0705/sermon** (Sonnet 4.6) ⇒ **~$27 for the 378 remaining** |
 | Scripture coverage (OSIS) | **196/239 (82%)** on the SoundCloud spine · **215/517 (42%)** across the union, 28 books |
 | In-body citations (OSIS) | **1 243/1 243 normalised (0 failures)** on the 139 enriched rows → `scripture_refs_osis`; **54 distinct books** reachable via body citations vs 22 via the main passage (decision #56) |
+| Topic vocabulary (#57) | **44 curated categories** · 98% of the 1 086 free-text labels classified → `topics_canonical`, derived on every build |
 | Series auto-clustered | **26** (e.g. Épître aux Galates ×71, aux Hébreux ×28) |
 | YouTube ↔ SoundCloud | largely **complementary** — corroborated matcher (decision #43) confirms 18 overlaps + 4 translations; true catalog = **union (517)** |
 
@@ -107,6 +108,7 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [ ] **Enrich the remaining 378** — from committed transcripts, no re-ASR (**~$27 on Sonnet**)
 - [x] **POC web DEPLOYED** (2026-08-01, decisions #54/#55) — **https://kevymbappe.github.io/sermotheque-ebn/** · 131 enriched sermons, player + chapter deep-links + synced transcript; republishes itself when `data/catalog/**` changes. Remaining polish: the YouTube IFrame path and an EN sermon (`docs/plans/WEB-POC-STATUS.md`)
 - [x] **M6d–e — POC polished** (2026-08-01): OSIS citations (#56) + shareable `?t=` links + per-sermon link previews (131 pre-rendered pages) + **browse-by-passage** (54 books)
+- [x] **M6f — curated topic vocabulary** (2026-08-01, decision #57): 44 categories, 98% coverage, browse-by-theme on the site
 - [ ] WordPress import → sermon library on the church's own site (the POC above is a demo, not its replacement — see #54)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 

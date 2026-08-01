@@ -1,4 +1,5 @@
-import { bookLabel, bookRank, countBy, KIND_FR } from "../lib/data.js";
+import { useEffect, useState } from "react";
+import { bookLabel, bookRank, countBy, KIND_FR, loadTopics } from "../lib/data.js";
 
 /**
  * Filtres croisés. Chaque menu se construit sur le corpus COMPLET (`all`) pour que les
@@ -15,6 +16,20 @@ export default function Filters({ all, visible, filters, onChange, q, onQuery })
   const series = countBy(all, "series_name");
   const speakers = countBy(all, "speaker");
   const kinds = countBy(all, "kind");
+
+  // Thèmes : un champ multivalué, donc `countBy` (mono-valeur) ne s'applique pas.
+  const [vocab, setVocab] = useState([]);
+  useEffect(() => { loadTopics().then(setVocab); }, []);
+  const topicCount = (() => {
+    const c = new Map();
+    for (const s of visible) for (const id of s.topics_canonical || []) c.set(id, (c.get(id) || 0) + 1);
+    return (id) => c.get(id) || 0;
+  })();
+  const topicsUsed = (() => {
+    const seen = new Set();
+    for (const s of all) for (const id of s.topics_canonical || []) seen.add(id);
+    return vocab.filter((v) => seen.has(v.id));
+  })();
 
   const bookCount = counts("scripture_book");
   const seriesCount = counts("series_name");
@@ -36,6 +51,14 @@ export default function Filters({ all, visible, filters, onChange, q, onQuery })
       />
 
       <div className="selects">
+        <select value={filters.topic || ""} onChange={set("topic")} aria-label="Thème">
+          <option value="">Tous les thèmes</option>
+          {topicsUsed.map((v) => (
+            <option key={v.id} value={v.id} disabled={!topicCount(v.id)}>
+              {v.label} ({topicCount(v.id)})
+            </option>
+          ))}
+        </select>
         <select value={filters.book || ""} onChange={set("book")} aria-label="Livre biblique">
           <option value="">Tous les livres</option>
           {books.map(({ value }) => (
