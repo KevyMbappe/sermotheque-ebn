@@ -297,6 +297,18 @@
         ]
       }
     },
+    "scripture_refs_osis": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "items": {
+        "type": [
+          "string",
+          "null"
+        ]
+      }
+    },
     "series_hint": {
       "type": [
         "string",
