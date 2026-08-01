@@ -1,8 +1,11 @@
+import { href } from "../lib/router.js";
 import { fmtDate, fmtDuration } from "../lib/data.js";
 
 export default function SermonCard({ sermon: s }) {
+  // Slash final : c'est la forme canonique servie par le pré-rendu, donc celle qui doit
+  // apparaître dans la barre d'adresse — c'est l'URL que les gens copient pour partager.
   return (
-    <a className="card" href={`#/sermon/${encodeURIComponent(s.id)}`}>
+    <a className="card" href={href(`/sermon/${encodeURIComponent(s.id)}/`)}>
       <div className="card-top">
         {s.scripture_display && <span className="tag tag-scripture">{s.scripture_display}</span>}
         {s.language === "en" && <span className="tag tag-lang">EN</span>}
