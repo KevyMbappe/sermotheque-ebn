@@ -113,6 +113,22 @@ sans filtre ni navigation possible.
 `public/data/topics.json` ne contient que `id` + `label` : les alias servent au pipeline, pas
 au navigateur.
 
+## 🆕 Ajouté le 2026-08-01 — nettoyage de navigation
+
+- **Le filtre « Type » montrait deux fois « Enseignement »** : `teaching` (7) et
+  `teaching_or_qa` (8) sont deux valeurs distinctes du catalogue, avec le même libellé.
+  `teaching_or_qa` est le cas où le parseur n'a pas pu trancher entre un enseignement et
+  une session de questions — une information utile **dans le catalogue**, pas dans un menu
+  déroulant. `kindOf()` les regroupe pour tout ce qui est visible (affichage ET filtrage) :
+  une seule entrée « Enseignement (15) ». Le catalogue, lui, garde la distinction intacte.
+- **Page `/predicateurs` retirée** (décision de l'auteur : « ce n'est pas une compétition »).
+  Argument qui la renforce : 331 des 517 lignes portent un prédicateur issu de la
+  *règle par défaut* — un annuaire classé par nombre de sermons aurait présenté des
+  inférences comme un palmarès. La nav est désormais **Livres · Thèmes · Séries**.
+  ⚠️ Le **filtre** par prédicateur reste sur l'accueil : c'est un outil de recherche
+  (« je veux réécouter Loïc »), pas un classement. À retirer aussi si l'intention est plus
+  large. Les anciennes URL `/predicateurs` retombent sur l'accueil via `404.html`.
+
 ## ⏳ Reste à faire
 
 1. ~~**Page sermon**~~ — ✅ 2026-08-01. Rendu vérifié en émulation (en-tête, invitation, résumé,

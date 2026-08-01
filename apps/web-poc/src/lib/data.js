@@ -48,8 +48,16 @@ export const KIND_FR = {
   sermon: "Sermon",
   teaching: "Enseignement",
   qa: "Questions/Réponses",
-  teaching_or_qa: "Enseignement",
 };
+
+/**
+ * `teaching_or_qa` est le cas où le parseur n'a pas pu trancher entre un enseignement et
+ * une session de questions. C'est une information utile DANS LE CATALOGUE, pas dans un
+ * menu déroulant : affichée telle quelle, elle produisait deux entrées « Enseignement »
+ * indiscernables. On la regroupe donc avec `teaching` pour tout ce qui est visible.
+ */
+const KIND_GROUP = { teaching_or_qa: "teaching" };
+export const kindOf = (s) => KIND_GROUP[s?.kind] || s?.kind;
 
 /** Applique recherche + filtres. `filters` : { book, series, speaker, language, kind }. */
 export function filterSermons(all, { q = "", ...filters } = {}) {
@@ -60,7 +68,7 @@ export function filterSermons(all, { q = "", ...filters } = {}) {
     if (filters.series && s.series_name !== filters.series) return false;
     if (filters.speaker && s.speaker !== filters.speaker) return false;
     if (filters.language && s.language !== filters.language) return false;
-    if (filters.kind && s.kind !== filters.kind) return false;
+    if (filters.kind && kindOf(s) !== filters.kind) return false;
     if (!needle) return true;
     // Le champ de recherche balaie tout ce que l'enrichissement a produit.
     const hay = fold(

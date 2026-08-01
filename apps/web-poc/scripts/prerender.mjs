@@ -112,7 +112,6 @@ function main() {
   const browse = [
     ["/livres", "Parcourir par livre biblique", "Tous les sermons classés par livre de la Bible."],
     ["/series", "Parcourir par série", "Les séries d'exposition suivie, dans l'ordre des textes."],
-    ["/predicateurs", "Parcourir par prédicateur", "Les sermons classés par prédicateur."],
   ];
   for (const [path, t, d] of browse) {
     write(path, render(metaTags({ title: `${t} — ${SITE_NAME}`, description: d, path: path.slice(1) + "/" })));
