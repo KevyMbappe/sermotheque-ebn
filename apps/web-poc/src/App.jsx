@@ -9,7 +9,7 @@ import { TopicsIndex, TopicPage } from "./pages/Topics.jsx";
 
 /**
  * Routage par chemin — voir lib/router.js pour le pourquoi (partage et aperçus de lien).
- * Routes : / · /sermon/:id · /livres · /series · /predicateurs
+ * Routes : / · /sermon/:id · /livres[/:book] · /themes[/:id] · /series
  */
 function useRoute() {
   const [path, setPath] = useState(currentPath);
@@ -46,7 +46,6 @@ export default function App() {
           <a href={href("/livres")}>Livres</a>
           <a href={href("/themes")}>Thèmes</a>
           <a href={href("/series")}>Séries</a>
-          <a href={href("/predicateurs")}>Prédicateurs</a>
         </nav>
       </header>
 
@@ -92,6 +91,5 @@ function Route({ route, sermons }) {
   if (bookMatch) return <Book sermons={sermons} book={bookMatch[1]} />;
   if (route === "/livres") return <Browse sermons={sermons} mode="book" />;
   if (route === "/series") return <Browse sermons={sermons} mode="series" />;
-  if (route === "/predicateurs") return <Browse sermons={sermons} mode="speaker" />;
   return <Home sermons={sermons} />;
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { bookLabel, bookRank, countBy, KIND_FR, loadTopics } from "../lib/data.js";
+import { bookLabel, bookRank, countBy, KIND_FR, kindOf, loadTopics } from "../lib/data.js";
 
 /**
  * Filtres croisés. Chaque menu se construit sur le corpus COMPLET (`all`) pour que les
@@ -15,7 +15,11 @@ export default function Filters({ all, visible, filters, onChange, q, onQuery })
   const books = countBy(all, "scripture_book", { rank: bookRank });
   const series = countBy(all, "series_name");
   const speakers = countBy(all, "speaker");
-  const kinds = countBy(all, "kind");
+  // Les types sont comptés sur le type REGROUPÉ, sinon `teaching` et `teaching_or_qa`
+  // produisent deux entrées « Enseignement » que rien ne distingue à l'écran.
+  const kinds = [...new Set(all.map(kindOf).filter(Boolean))]
+    .sort((a, b) => (KIND_FR[a] || a).localeCompare(KIND_FR[b] || b, "fr"))
+    .map((value) => ({ value }));
 
   // Thèmes : un champ multivalué, donc `countBy` (mono-valeur) ne s'applique pas.
   const [vocab, setVocab] = useState([]);
@@ -34,7 +38,11 @@ export default function Filters({ all, visible, filters, onChange, q, onQuery })
   const bookCount = counts("scripture_book");
   const seriesCount = counts("series_name");
   const speakerCount = counts("speaker");
-  const kindCount = counts("kind");
+  const kindCount = (() => {
+    const c = new Map();
+    for (const s of visible) { const k = kindOf(s); if (k) c.set(k, (c.get(k) || 0) + 1); }
+    return (v) => c.get(v) || 0;
+  })();
 
   const set = (key) => (e) => onChange({ ...filters, [key]: e.target.value || undefined });
   const active = Object.values(filters).some(Boolean) || q;

@@ -5,12 +5,11 @@ import { href } from "../lib/router.js";
 import { buildPassageIndex } from "../lib/passages.js";
 
 /**
- * Vue d'agrégats : on entre dans le catalogue par une porte (livre, série, prédicateur),
+ * Vue d'agrégats : on entre dans le catalogue par une porte (livre, thème, série),
  * puis on déplie le groupe choisi. Les livres suivent l'ordre du canon, pas la fréquence.
  */
 const MODES = {
   series: { key: "series_name", title: "Parcourir par série", label: (v) => v },
-  speaker: { key: "speaker", title: "Parcourir par prédicateur", label: (v) => v },
 };
 
 /**
