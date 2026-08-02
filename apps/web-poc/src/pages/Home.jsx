@@ -24,7 +24,6 @@ export default function Home({ sermons }) {
 
       <Filters
         all={sermons}
-        visible={visible}
         filters={filters}
         onChange={(f) => { setFilters(f); setLimit(24); }}
         q={q}

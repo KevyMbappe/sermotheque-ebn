@@ -145,7 +145,11 @@ export default function Sermon({ sermon: s, all }) {
             en font partie ; les avoir rangés avec les blocs de lecture obligeait à remonter
             toute la page pour changer de moment. */}
         <div className="col-main">
-          <Section title="Chapitres" count={s.chapters?.length || null}>
+          {/* Conditionné : replié, un bloc n'est plus qu'un titre cliquable. Sans garde, les
+              sermons sans chapitres offriraient un dépliant qui n'ouvre rien. Latent aujourd'hui
+              (0/131 publiés), mais 8 lignes enrichies sont déjà dans ce cas. */}
+          {s.chapters?.length > 0 && (
+          <Section title="Chapitres" count={s.chapters.length}>
             <Chapters
               chapters={s.chapters}
               currentTime={currentTime}
@@ -155,6 +159,7 @@ export default function Sermon({ sermon: s, all }) {
               bare
             />
           </Section>
+          )}
 
           <Transcript id={s.id} currentTime={currentTime} onSeek={canSeek} />
 
@@ -223,17 +228,23 @@ export default function Sermon({ sermon: s, all }) {
             </Section>
           )}
 
-          {s.topics_canonical?.length > 0 && (
-            <Section title="Thèmes" count={s.topics_canonical.length}>
-              <ul className="chips">
-                {s.topics_canonical.map((id) => (
-                  <li key={id}>
-                    <a className="chip chip-link" href={href(`/themes/${id}/`)}>
-                      {topicLabels.get(id) || id}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+          {/* La garde porte sur les DEUX listes, pas seulement sur la version canonique : un
+              sermon dont tous les thèmes libres restent hors vocabulaire (#57) a quand même
+              des thèmes à montrer, il n'a simplement rien de cliquable. Aucun cas parmi les
+              131 publiés aujourd'hui, mais l'enrichissement continue. */}
+          {(s.topics_canonical?.length > 0 || s.topics?.length > 0) && (
+            <Section title="Thèmes" count={s.topics_canonical?.length || s.topics.length}>
+              {s.topics_canonical?.length > 0 && (
+                <ul className="chips">
+                  {s.topics_canonical.map((id) => (
+                    <li key={id}>
+                      <a className="chip chip-link" href={href(`/themes/${id}/`)}>
+                        {topicLabels.get(id) || id}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
               <p className="muted refs-verbatim">{(s.topics || []).join(" · ")}</p>
             </Section>
           )}

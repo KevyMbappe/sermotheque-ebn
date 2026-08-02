@@ -109,6 +109,8 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **POC web DEPLOYED** (2026-08-01, decisions #54/#55) — **https://kevymbappe.github.io/sermotheque-ebn/** · 131 enriched sermons, player + chapter deep-links + synced transcript; republishes itself when `data/catalog/**` changes. Remaining polish: the YouTube IFrame path and an EN sermon (`docs/plans/WEB-POC-STATUS.md`)
 - [x] **M6d–e — POC polished** (2026-08-01): OSIS citations (#56) + shareable `?t=` links + per-sermon link previews (131 pre-rendered pages) + **browse-by-passage** (54 books)
 - [x] **M6f — curated topic vocabulary** (2026-08-01, decision #57): 44 categories, 98% coverage, browse-by-theme on the site
+- [x] **M6g — POC polish** (2026-08-01): weighted full-text search with match snippets, printable home-group sheet, 1200×630 link-preview cards, stray Xcode scaffold removed
+- [x] **M6h — sermon page restructured** (2026-08-02): listen-first order, collapsible sections, sticky player block; the page is a summary you unfold instead of a wall of text
 - [ ] WordPress import → sermon library on the church's own site (the POC above is a demo, not its replacement — see #54)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 
