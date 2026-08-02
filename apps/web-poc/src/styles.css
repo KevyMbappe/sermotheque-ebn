@@ -409,6 +409,9 @@ body.reading .site-header { position: static; }
      peut pas détecter l'état « collé » en CSS sans bricolage. */
   border-bottom: 1px solid var(--line);
 }
+/* `.player` portait un `margin-bottom: 2rem` utile quand il était un bloc ordinaire du flux.
+   Collé en haut, ce vide reste à l'écran en permanence : 32 px de chrome fixe pour rien. */
+.player-dock .player { margin-bottom: 0; }
 /* Le lecteur SoundCloud fait 166 px : trop pour un petit écran une fois l'en-tête ajouté.
    Sa mise en page compacte reste lisible à 120 px. */
 @media (max-width: 560px) {
