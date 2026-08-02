@@ -9,6 +9,8 @@
  *   attach(iframe, { onTime })  ->  { seekTo(sec), destroy() }
  *
  * `onTime(sec)` est appelé régulièrement pendant la lecture (pour surligner la transcription).
+ * Les commandes lecture/pause restent celles du lecteur natif : il est simplement rendu
+ * collant au défilement, donc toujours atteignable, avec sa propre barre de progression.
  * Les deux SDK sont chargés à la demande, une seule fois.
  */
 

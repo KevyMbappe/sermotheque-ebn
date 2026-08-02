@@ -13,7 +13,7 @@ import { bookLabel, bookRank, countBy, filterSermons, KIND_FR, kindOf, loadTopic
  * désactivée non plus : une liste grise inquiète, et un choix sans résultat reste réversible
  * (le compte le dit, « Réinitialiser » est à côté).
  */
-export default function Filters({ all, visible, filters, onChange, q, onQuery }) {
+export default function Filters({ all, filters, onChange, q, onQuery }) {
   // Corpus vu par un menu donné : tous les filtres actifs SAUF le sien.
   const without = (key) => filterSermons(all, { ...filters, [key]: undefined, q });
   // ATTENTION : la clé de DONNÉES et la clé de FILTRE diffèrent (`scripture_book` vs `book`,

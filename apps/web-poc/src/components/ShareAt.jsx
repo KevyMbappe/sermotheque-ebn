@@ -35,7 +35,7 @@ export default function ShareAt({ path, seconds, title, label = "Partager cet in
       <button
         className="ghost small no-print"
         onClick={onShare}
-        title={`Copier un lien qui démarre à ${fmtTime(seconds)}`}
+        title={seconds == null ? "Copier le lien de ce sermon" : `Copier un lien qui démarre à ${fmtTime(seconds)}`}
       >
         {state === "copié" ? "✓ Lien copié" : `🔗 ${label}`}
       </button>

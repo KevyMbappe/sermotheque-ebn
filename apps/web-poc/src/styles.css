@@ -340,7 +340,7 @@ button { font: inherit; cursor: pointer; }
 /* ---------- fiche de groupe de maison (impression) ---------- */
 
 .print-only { display: none; }
-.sermon-actions { margin: .8rem 0 0; }
+.sermon-actions { margin: .8rem 0 0; display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
 
 /**
  * Le sermon a déjà tout ce qu'il faut pour un groupe de maison : résumé, points clés,
@@ -382,4 +382,71 @@ button { font: inherit; cursor: pointer; }
 
   a { text-decoration: none; color: #000; }
   .chip { border: .5pt solid #bbb; }
+}
+
+/* ---------- lecteur collant ---------- */
+
+/**
+ * Le lecteur d'origine (SoundCloud ou YouTube) reste tel quel : on le rend simplement
+ * COLLANT sous l'en-tête. Aucun lecteur de substitution — on conserve ainsi sa barre de
+ * progression native, qui permet de reculer précisément, et il n'y a jamais deux flux à
+ * synchroniser.
+ *
+ * Il se colle en HAUT DE FENÊTRE, pas sous l'en-tête : empiler deux bandeaux collants coûtait
+ * 40 % de la hauteur d'un téléphone. Sur une fiche, `body.reading` rend donc l'en-tête normal,
+ * et `top: 0` suffit — aucune hauteur à mesurer.
+ */
+body.reading .site-header { position: static; }
+
+.player-dock {
+  position: sticky;
+  /* Sur une fiche (`body.reading`) l'en-tête n'est plus collant : le lecteur prend le haut. */
+  top: 0;
+  z-index: 9;                    /* sous l'en-tête (10), au-dessus du contenu */
+  background: var(--bg);
+  padding: .6rem 0;
+  margin-bottom: .4rem;
+  /* Un liseré bas plutôt qu'une ombre permanente : l'ombre n'a de sens que collé, et on ne
+     peut pas détecter l'état « collé » en CSS sans bricolage. */
+  border-bottom: 1px solid var(--line);
+}
+/* `.player` portait un `margin-bottom: 2rem` utile quand il était un bloc ordinaire du flux.
+   Collé en haut, ce vide reste à l'écran en permanence : 32 px de chrome fixe pour rien. */
+.player-dock .player { margin-bottom: 0; }
+/* Le lecteur SoundCloud fait 166 px : trop pour un petit écran une fois l'en-tête ajouté.
+   Sa mise en page compacte reste lisible à 120 px. */
+@media (max-width: 560px) {
+  .player-soundcloud iframe { height: 120px; }
+}
+@media print { .player-dock { position: static; border: 0; } }
+
+/* ---------- blocs repliables ---------- */
+
+.section h2 { margin: 0; }
+.section-toggle {
+  display: flex; align-items: center; gap: .55rem; width: 100%;
+  padding: 0; border: 0; background: none; text-align: left;
+  font: inherit; color: inherit;
+}
+.section-caret {
+  color: var(--accent); font-size: .8em; width: 1em;
+  transition: transform .15s ease;
+}
+.section-title { flex: 1; }
+.section-count {
+  font-family: ui-sans-serif, system-ui, sans-serif; font-size: .7rem; font-weight: 600;
+  padding: .1rem .45rem; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent);
+}
+.section-toggle:hover .section-title { color: var(--accent); }
+.section.is-closed .section-body { display: none; }
+.section.is-open .section-body { margin-top: .8rem; }
+/* Fermé, le bloc n'est plus qu'une ligne : c'est ce qui fait retomber la page de
+   « mur de texte » à « sommaire qu'on déplie ». */
+.section.is-closed { padding-top: .85rem; padding-bottom: .85rem; }
+
+/* À l'impression, tout s'ouvre : la fiche de groupe doit tout montrer. */
+@media print {
+  .section.is-closed .section-body { display: block !important; }
+  .section-caret, .section-count { display: none !important; }
 }

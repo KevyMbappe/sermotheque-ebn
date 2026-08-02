@@ -4,6 +4,7 @@ import Chapters from "../components/Chapters.jsx";
 import Transcript from "../components/Transcript.jsx";
 import SermonCard from "../components/SermonCard.jsx";
 import ShareAt from "../components/ShareAt.jsx";
+import Section from "../components/Section.jsx";
 import { bookLabel, bookRank, fmtDate, fmtDuration, KIND_FR } from "../lib/data.js";
 import { fmtTime } from "../lib/vtt.js";
 import { href, initialTime, setTimeParam } from "../lib/router.js";
@@ -12,6 +13,7 @@ import { loadTopics } from "../lib/data.js";
 
 export default function Sermon({ sermon: s, all }) {
   const ctrlRef = useRef(null);
+  const playerRef = useRef(null);
   const [currentTime, setCurrentTime] = useState(null);
   // `?t=` lu une seule fois, à l'arrivée : ensuite c'est la lecture qui pilote l'URL.
   const startAtRef = useRef(initialTime());
@@ -57,6 +59,17 @@ export default function Sermon({ sermon: s, all }) {
       (a, b) => bookRank(a.book) - bookRank(b.book) || a.key.localeCompare(b.key, "fr", { numeric: true })
     );
   })();
+
+  /**
+   * Sur une fiche, c'est le LECTEUR qui doit occuper le haut de l'écran, pas la navigation.
+   * Empiler les deux bandeaux collants coûtait 40 % de la hauteur d'un téléphone. L'en-tête
+   * du site redevient donc normal ici — il remonte d'un coup de défilement vers le haut,
+   * comportement usuel sur une page d'article — et le lecteur se colle à top: 0.
+   */
+  useEffect(() => {
+    document.body.classList.add("reading");
+    return () => document.body.classList.remove("reading");
+  }, []);
 
   // Libellés du vocabulaire curé, chargés à la demande (petit fichier, mis en cache).
   const [topicLabels, setTopicLabels] = useState(new Map());
@@ -105,11 +118,13 @@ export default function Sermon({ sermon: s, all }) {
             <> · <a href={href("/series")}>{s.series_name}</a>{s.series_part ? ` (partie ${s.series_part})` : ""}</>
           )}
         </p>
-        {s.invitation && <p className="invitation">{s.invitation}</p>}
-
         {/* Fiche de groupe de maison : tout le matériel est déjà là (résumé, points clés,
             chapitres, questions de réflexion). Il ne manquait qu'une mise en page papier. */}
+        {/* Replier les chapitres a rendu leurs boutons « Partager » invisibles : on garde
+            donc un partage du sermon entier ici, à portée. Le partage HORODATÉ reste dans
+            les chapitres et les citations, là où l'instant a un sens. */}
         <p className="sermon-actions no-print">
+          <ShareAt path={path} seconds={null} title={s.title} label="Partager ce sermon" />
           <button className="ghost small" onClick={() => window.print()}>
             🖨 Imprimer la fiche de groupe
           </button>
@@ -117,29 +132,57 @@ export default function Sermon({ sermon: s, all }) {
       </header>
 
 
-      <Player embed={s.embed} title={s.title} onReady={handleReady} onTime={handleTime} />
+      {/* Le lecteur SoundCloud/YouTube d'origine, inchangé — il devient simplement COLLANT
+          au défilement (voir .player-dock dans styles.css). Aucun lecteur de substitution :
+          on garde la barre de progression native, qui permet de reculer précisément. */}
+      <div className="player-dock" ref={playerRef}>
+        <Player embed={s.embed} title={s.title} onReady={handleReady} onTime={handleTime} />
+      </div>
 
       <div className="sermon-body">
+        {/* Colonne « écouter » : le lecteur, ce qui permet d'y naviguer, et le texte qui le
+            suit. Les chapitres et la transcription sont désormais COLLÉS au lecteur — ils
+            en font partie ; les avoir rangés avec les blocs de lecture obligeait à remonter
+            toute la page pour changer de moment. */}
         <div className="col-main">
-          {s.summary && (
-            <section className="panel">
-              <h2>Résumé</h2>
-              <p>{s.summary}</p>
-            </section>
+          {/* Conditionné : replié, un bloc n'est plus qu'un titre cliquable. Sans garde, les
+              sermons sans chapitres offriraient un dépliant qui n'ouvre rien. Latent aujourd'hui
+              (0/131 publiés), mais 8 lignes enrichies sont déjà dans ce cas. */}
+          {s.chapters?.length > 0 && (
+          <Section title="Chapitres" count={s.chapters.length}>
+            <Chapters
+              chapters={s.chapters}
+              currentTime={currentTime}
+              onSeek={canSeek}
+              path={path}
+              title={s.title}
+              bare
+            />
+          </Section>
+          )}
+
+          <Transcript id={s.id} currentTime={currentTime} onSeek={canSeek} />
+
+          {/* Le résumé reste OUVERT : c'est la seule chose qu'on veut lire d'emblée. */}
+          {/* L'invitation ouvre le résumé au lieu de séparer le titre du lecteur : c'est un
+              texte d'accueil, pas un obstacle à franchir avant d'écouter. */}
+          {(s.summary || s.invitation) && (
+            <Section title="Résumé" defaultOpen>
+              {s.invitation && <p className="invitation">{s.invitation}</p>}
+              {s.summary && <p>{s.summary}</p>}
+            </Section>
           )}
 
           {s.key_points?.length > 0 && (
-            <section className="panel">
-              <h2>Points clés</h2>
+            <Section title="Points clés" count={s.key_points.length}>
               <ul className="bullets">
                 {s.key_points.map((p, i) => <li key={i}>{p}</li>)}
               </ul>
-            </section>
+            </Section>
           )}
 
           {s.key_quotes?.length > 0 && (
-            <section className="panel">
-              <h2>Citations</h2>
+            <Section title="Citations" count={s.key_quotes.length}>
               {s.key_quotes.map((qt, i) => (
                 <blockquote key={i} className="quote">
                   <p>« {qt.text} »</p>
@@ -155,37 +198,23 @@ export default function Sermon({ sermon: s, all }) {
                   )}
                 </blockquote>
               ))}
-            </section>
+            </Section>
           )}
 
-          <Transcript id={s.id} currentTime={currentTime} onSeek={canSeek} />
-
           {s.questions?.length > 0 && (
-            <section className="panel">
-              <h2>Questions pour aller plus loin</h2>
+            <Section title="Questions pour aller plus loin" count={s.questions.length}>
               <ol className="bullets">
                 {s.questions.map((q, i) => <li key={i}>{q}</li>)}
               </ol>
-            </section>
+            </Section>
           )}
         </div>
 
         <aside className="col-side">
-          <Chapters
-            chapters={s.chapters}
-            currentTime={currentTime}
-            onSeek={canSeek}
-            path={path}
-            title={s.title}
-          />
-
           {s.scripture_refs?.length > 0 && (
-            <section className="panel">
-              <h2>Passages cités</h2>
+            <Section title="Passages cités" count={citedPoints.length || s.scripture_refs.length}>
               {/* Les puces sont construites depuis les ids OSIS, PAS depuis le texte libre :
-                  les deux listes ne sont pas alignées index par index (`scripture_refs_osis`
-                  est dédupliqué, et une chaîne peut donner plusieurs ids). S'y fier
-                  produirait un lien juste 98 fois sur 100 — donc faux sur une vraie page. */}
+                  les deux listes ne sont pas alignées index par index. */}
               {citedPoints.length > 0 && (
                 <ul className="chips">
                   {citedPoints.map((p) => (
@@ -195,18 +224,16 @@ export default function Sermon({ sermon: s, all }) {
                   ))}
                 </ul>
               )}
-              {/* Le texte d'origine est conservé tel quel : les puces s'arrêtent au chapitre,
-                  la précision au verset reste lisible ici. */}
               <p className="muted refs-verbatim">{s.scripture_refs.join(" · ")}</p>
-            </section>
+            </Section>
           )}
 
-          {s.topics?.length > 0 && (
-            <section className="panel">
-              <h2>Thèmes</h2>
-              {/* Les puces cliquables viennent du vocabulaire curé (#57) ; les étiquettes
-                  libres restent affichées dessous, parce que leur précision dit quelque
-                  chose du message que 44 catégories ne peuvent pas dire. */}
+          {/* La garde porte sur les DEUX listes, pas seulement sur la version canonique : un
+              sermon dont tous les thèmes libres restent hors vocabulaire (#57) a quand même
+              des thèmes à montrer, il n'a simplement rien de cliquable. Aucun cas parmi les
+              131 publiés aujourd'hui, mais l'enrichissement continue. */}
+          {(s.topics_canonical?.length > 0 || s.topics?.length > 0) && (
+            <Section title="Thèmes" count={s.topics_canonical?.length || s.topics.length}>
               {s.topics_canonical?.length > 0 && (
                 <ul className="chips">
                   {s.topics_canonical.map((id) => (
@@ -218,17 +245,16 @@ export default function Sermon({ sermon: s, all }) {
                   ))}
                 </ul>
               )}
-              <p className="muted refs-verbatim">{s.topics.join(" · ")}</p>
-            </section>
+              <p className="muted refs-verbatim">{(s.topics || []).join(" · ")}</p>
+            </Section>
           )}
 
           {s.references?.length > 0 && (
-            <section className="panel">
-              <h2>Références</h2>
+            <Section title="Références" count={s.references.length}>
               <ul className="bullets small">
                 {s.references.map((r, i) => <li key={i}>{r}</li>)}
               </ul>
-            </section>
+            </Section>
           )}
 
           {s.embed?.link && (

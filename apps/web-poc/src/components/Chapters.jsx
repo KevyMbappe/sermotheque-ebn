@@ -6,7 +6,7 @@ import ShareAt from "./ShareAt.jsx";
  * une phrase verbatim, puis convertie en timestamp réel depuis notre propre VTT.
  * Un chapitre sans timestamp (ancrage non retrouvé) reste affiché, mais non cliquable.
  */
-export default function Chapters({ chapters, currentTime, onSeek, path, title }) {
+export default function Chapters({ chapters, currentTime, onSeek, path, title, bare = false }) {
   if (!chapters?.length) return null;
 
   // Le chapitre courant = le dernier commencé avant la position de lecture.
@@ -15,10 +15,8 @@ export default function Chapters({ chapters, currentTime, onSeek, path, title })
     if (c.t != null && currentTime != null && c.t <= currentTime) activeIdx = i;
   });
 
-  return (
-    <section className="panel">
-      <h2>Chapitres</h2>
-      <ol className="chapters">
+  const list = (
+    <ol className="chapters">
         {chapters.map((c, i) => {
           const timed = c.t != null;
           return (
@@ -44,7 +42,13 @@ export default function Chapters({ chapters, currentTime, onSeek, path, title })
             </li>
           );
         })}
-      </ol>
+    </ol>
+  );
+  // `bare` : le composant est déjà enveloppé dans un bloc repliable qui porte le titre.
+  return bare ? list : (
+    <section className="panel">
+      <h2>Chapitres</h2>
+      {list}
     </section>
   );
 }

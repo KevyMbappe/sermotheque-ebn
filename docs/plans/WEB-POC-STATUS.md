@@ -210,6 +210,74 @@ où les deux clés coïncident.
 Mesuré : après sélection de « Galates », les livres restent à **23/23**, les séries tombent à
 3 et les thèmes à 33 ; 0 option désactivée.
 
+## 🆕 Restructuration de la fiche sermon — 2026-08-01 → 02
+
+Retours d'usage : « trop de blocs texte, ça fait peur » et « la transcription est trop loin
+du lecteur ». Les deux disent la même chose : la page affichait **tout ce que le pipeline
+avait produit**, empilé dans l'ordre où c'était commode à rendre. Un inventaire, pas une
+hiérarchie. Elle mélangeait aussi deux usages qui se disputaient l'écran — **écouter**
+(lecteur, chapitres, transcription) et **étudier** (résumé, points clés, citations, questions).
+
+- **Ordre revu** : lecteur → chapitres → transcription → résumé → le reste. Chapitres et
+  transcription sont désormais collés au lecteur : ils en font partie.
+- **Tout est replié sauf le résumé** (`components/Section.jsx`) : chaque bloc annonce son
+  titre et son nombre d'éléments, et s'ouvre d'un clic. Rien n'est supprimé.
+- **L'invitation a quitté l'en-tête.** 8 lignes en italique séparaient le titre du lecteur :
+  sur mobile, le lecteur commençait à ~1 250 px. Elle ouvre maintenant le résumé, et
+  **le lecteur commence à 414 px** — visible sans défiler.
+- **Le bloc lecteur est devenu collant** (`.player-dock`) : il reste en haut de l'écran au
+  défilement, donc toujours atteignable pour mettre en pause ou reculer.
+
+### Le lecteur d'origine est conservé — c'était le point
+
+Une première version pilotait le lecteur depuis une barre de commandes maison en bas d'écran
+(⏮10 s / lecture-pause / ⏭15 s). Elle ne remplaçait pas le lecteur — elle le télécommandait —
+mais **l'intention était plus simple et meilleure** : rendre collant le bloc lui-même.
+
+Deux avantages concrets à la version retenue :
+- on garde la **barre de progression native** de SoundCloud, qui permet de reculer
+  précisément, là où un bouton « −10 s » impose un pas fixe ;
+- moins de code : `lib/player.js` retrouve son contrat d'origine (`seekTo` + `onTime`), sans
+  `toggle`, `nudge` ni suivi d'état lecture/pause.
+
+### Deux mesures qui ont guidé la mise en œuvre
+
+1. **Empiler deux bandeaux collants coûtait 40 % de la hauteur d'un téléphone.** Sur une
+   fiche, `body.reading` rend donc l'en-tête du site normal : c'est le lecteur qui prend le
+   haut de l'écran, l'en-tête revient d'un coup de défilement vers le haut (comportement
+   usuel sur une page d'article). Le bloc se colle donc en `top: 0` — il n'y a aucune hauteur
+   d'en-tête à mesurer. *(Une première version publiait `--header-h` via un `ResizeObserver` ;
+   plus aucune règle ne la lisait, le hook a été supprimé à la revue.)*
+2. **`.player` gardait un `margin-bottom: 2rem`** hérité de l'époque où c'était un bloc
+   ordinaire du flux. Invisible quand ça défile ; collé en haut, c'est **32 px de chrome fixe**
+   en permanence à l'écran.
+
+| | en-tête collant + lecteur | lecteur seul | + marge morte retirée |
+|---|---|---|---|
+| desktop (900 px) | 327 px — 36 % | 247 px — 27 % | **215 px — 24 %** |
+| mobile (844 px) | 337 px — 40 % | 222 px — 26 % | **190 px — 23 %** |
+
+Il reste 11 px sous le lecteur : le `padding: .6rem 0` du bloc, qui le sépare de sa bordure
+basse. Celui-là est voulu.
+
+*(Mesuré ici avec le message de repli affiché, le conteneur bloquant SoundCloud ; en
+production le lecteur réel est plus compact — 120 px sous 560 px.)*
+
+### Correctifs de revue appliqués avant fusion (2026-08-02)
+
+- ~55 lignes de CSS `.sticky-player` / `.sp-*` orphelines — vestige de la barre du bas
+  abandonnée en cours de route — supprimées.
+- `useHeaderHeight` supprimé (voir ci-dessus), commentaires qui promettaient `--header-h`
+  corrigés dans `App.jsx` et `styles.css`.
+- **Bloc « Chapitres » conditionné** : replié, un bloc n'est plus qu'un titre cliquable ; sans
+  garde, un sermon sans chapitres offrait un dépliant qui n'ouvre rien. 0/131 publiés
+  aujourd'hui, mais **8 lignes enrichies** sont déjà dans ce cas.
+- **Bloc « Thèmes »** : la garde portait sur `topics_canonical` seul, ce qui faisait aussi
+  disparaître la ligne de thèmes libres affichée en dessous. Elle porte maintenant sur les
+  deux listes ; seules les puces cliquables dépendent de la version canonique.
+- 260 Ko de captures commitées dans un répertoire nommé `$S` (variable shell non substituée)
+  retirées du suivi, ainsi que `undefined/vocab.png`.
+
 ## ⏳ Reste à faire
 
 1. ~~**Page sermon**~~ — ✅ 2026-08-01. Rendu vérifié en émulation (en-tête, invitation, résumé,
