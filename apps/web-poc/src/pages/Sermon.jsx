@@ -5,6 +5,7 @@ import Transcript from "../components/Transcript.jsx";
 import SermonCard from "../components/SermonCard.jsx";
 import ShareAt from "../components/ShareAt.jsx";
 import Section from "../components/Section.jsx";
+import SourceBadge from "../components/SourceBadge.jsx";
 import { bookLabel, bookRank, fmtDate, fmtDuration, KIND_FR } from "../lib/data.js";
 import { fmtTime } from "../lib/vtt.js";
 import { href, initialQuery, initialTime, setTimeParam } from "../lib/router.js";
@@ -19,9 +20,21 @@ export default function Sermon({ sermon: s, all }) {
   const startAtRef = useRef(initialTime());
   const queryRef = useRef(initialQuery());
 
+  /**
+   * L'état « pilotable » est un STATE, pas seulement une ref.
+   *
+   * `ctrlRef` suffit pour APPELER le lecteur, mais écrire dans une ref ne re-rend rien : les
+   * chapitres restaient donc affichés en version non cliquable jusqu'à ce qu'un autre rendu
+   * survienne par hasard (le chargement des libellés de thèmes, une horloge). Selon lequel
+   * gagnait la course, la même page était cliquable ou muette — un défaut invisible en local,
+   * exactement le genre qui ne se reproduit que chez quelqu'un d'autre.
+   */
+  const [ready, setReady] = useState(false);
+
   // Callbacks stables : le lecteur ne doit pas se re-brancher à chaque tick d'horloge.
   const handleReady = useCallback((ctrl) => {
     ctrlRef.current = ctrl;
+    setReady(true);
     // Un lien horodaté doit démarrer au bon endroit dès que le lecteur est prêt.
     const t = startAtRef.current;
     if (t != null) {
@@ -37,7 +50,7 @@ export default function Sermon({ sermon: s, all }) {
     // La barre d'adresse suit le saut : l'URL qu'on copie pointe donc sur cet instant.
     setTimeParam(sec);
   }, []);
-  const canSeek = ctrlRef.current ? seek : null;
+  const canSeek = ready ? seek : null;
   const path = `/sermon/${encodeURIComponent(s.id)}/`;
 
   // Passages cités, ramenés à des couples livre+chapitre uniques et rangés dans l'ordre
@@ -97,6 +110,8 @@ export default function Sermon({ sermon: s, all }) {
           {s.scripture_display && <span className="tag tag-scripture">{s.scripture_display}</span>}
           {s.kind && s.kind !== "sermon" && <span className="tag">{KIND_FR[s.kind] || s.kind}</span>}
           {s.language === "en" && <span className="tag tag-lang">EN</span>}
+          {/* Sur la fiche il y a la place d'écrire le nom : on sait sur quoi on tombe. */}
+          <SourceBadge kind={s.embed?.kind} withLabel />
         </div>
         <h1>{s.title}</h1>
         <p className="sermon-meta">
@@ -137,7 +152,11 @@ export default function Sermon({ sermon: s, all }) {
           au défilement (voir .player-dock dans styles.css). Aucun lecteur de substitution :
           on garde la barre de progression native, qui permet de reculer précisément. */}
       <div className="player-dock" ref={playerRef}>
-        <Player embed={s.embed} title={s.title} onReady={handleReady} onTime={handleTime} />
+        {/* `key` : sans elle, passer d'un sermon à l'autre RÉUTILISE la même iframe, et le
+            pilote YouTube — dont `destroy()` retire l'iframe du document — laissait React
+            avec un nœud détaché : plus aucun lecteur à l'écran (mesuré : 0 iframe). La clé
+            force un démontage franc, donc une iframe neuve par sermon. */}
+        <Player key={s.id} embed={s.embed} title={s.title} onReady={handleReady} onTime={handleTime} />
       </div>
 
       <div className="sermon-body">

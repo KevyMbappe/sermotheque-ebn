@@ -317,6 +317,56 @@ nombres, sans aucune erreur. L'apostrophe y est un **séparateur** (« l'Église
 Tests : `cd apps/web-poc && npm test` — 13 tests `node --test`, sans dépendance.
 
 
+## 🆕 Chemin YouTube dé-risqué — 2026-08-04 (#60)
+
+L'API IFrame de YouTube est un chemin de code **entièrement distinct** de SoundCloud, jamais
+exercé depuis le début du POC : le conteneur de dev bloque `youtube.com` (vérifié — les trois
+URL nécessaires répondent `000`). Ce n'est pas un sujet futur : **12 des 131 sermons publiés
+sont déjà des vidéos**, et 278 des 517 du catalogue n'existent que sur YouTube.
+
+**Méthode** : un faux SDK écrit d'après le **contrat documenté de l'API**, pas d'après notre
+code — sinon le test tourne à vide. Il reproduit fidèlement ce qui piège : `onReady`
+asynchrone, `destroy()` qui **retire l'iframe du document**, `getCurrentTime()` qui n'avance
+qu'en lecture. Quatre scénarios : SDK disponible · navigation entre deux sermons vidéo · SDK
+bloqué · SDK chargé mais jamais prêt.
+
+### Trois défauts réels, tous invisibles en développement
+
+1. **Le lecteur disparaissait en passant d'un sermon YouTube à un autre** — mesuré : **0
+   iframe** dans le document. `player.destroy()` supprime l'iframe (c'est documenté), mais
+   React croyait encore la posséder et changeait juste son `src`, sur un nœud détaché.
+   → Règle écrite en tête de `player.js` : **aucun pilote ne retire du DOM un nœud rendu par
+   React.** Le cycle de vie passe par une `key` par sermon ; le pilote n'arrête que son horloge.
+2. **Un SDK qui charge sans jamais dire « prêt » laissait la promesse en suspens pour
+   toujours** — donc aucune erreur, donc aucun repli, donc des chapitres muets sans explication.
+   → Délai de 8 s sur les **deux** plateformes. La dégradation gracieuse n'existe que si
+   quelque chose la déclenche.
+3. **Les chapitres ne redevenaient cliquables que par accident** : l'état « pilotable » vivait
+   dans une `ref`, dont l'écriture ne re-rend rien. Selon qu'un autre rendu (les libellés de
+   thèmes) gagnait ou non la course, la même page était cliquable ou morte.
+   → Passé en `state`.
+
+Ajouté : les **codes d'erreur** de l'API (101/150 = « le propriétaire n'autorise pas la lecture
+intégrée ») affichent la vraie raison au lieu d'un rectangle noir.
+
+⚠️ **Ce que le faux SDK NE prouve PAS** : que YouTube se comporte comme sa documentation — en
+particulier que `YT.Player` s'attache correctement à une iframe `youtube-nocookie.com`
+existante. **À confirmer sur une machine ayant accès au réseau YouTube** : ouvrir un des 12
+sermons vidéo et cliquer un chapitre. Toute la logique d'intégration, elle, est vérifiée.
+
+### Conséquences d'interface livrées avec
+
+- **Pastille de source** sur chaque carte et chaque fiche : glyphe vidéo ou audio, **aux
+  couleurs du système de design et non à celles des plateformes** — dans une sermothèque
+  d'église, le rouge YouTube attirerait l'œil plus que le titre du sermon. Libellé lisible par
+  lecteur d'écran (`.sr-only`).
+- **Filtre par plateforme** : Audio (SoundCloud) 119 / Vidéo (YouTube) 12 — comptes vérifiés,
+  et le menu ne se contraint pas lui-même (même règle que les autres filtres).
+
+**Constat de données** : 1 fiche publiée (`yt-gj17HMaMOyY`, « La Bible 3ème Partie ») annonce
+elle-même que sa transcription est inexploitable — un cas #48 enrichi malgré tout, à recapturer.
+
+
 ## ⏳ Reste à faire
 
 1. ~~**Page sermon**~~ — ✅ 2026-08-01. Rendu vérifié en émulation (en-tête, invitation, résumé,
@@ -324,13 +374,11 @@ Tests : `cd apps/web-poc && npm test` — 13 tests `node --test`, sans dépendan
    par l'auteur** : clic sur un chapitre → le lecteur saute au bon endroit. La dégradation
    gracieuse a aussi été observée (conteneur sans accès à SoundCloud : message + lien direct).
    C'était LE point à valider — il l'est.
-2. ★ **Dé-risquer le chemin YouTube IFrame** (ex. `/sermon/yt-IqNmh_XGULE/`) — l'API IFrame est un
-   chemin de code distinct de SoundCloud, encore jamais exercé (le conteneur de dev bloque
-   YouTube). **Il faut montrer que c'est possible.** Deux conséquences d'interface, décidées avec
-   ce chantier : une **pastille de source** sur chaque carte (YouTube / SoundCloud, aux couleurs
-   du système de design) pour dire de quoi il s'agit, et probablement un **filtre par
-   plateforme** — 278 des 517 sermons sont YouTube-only, la distinction se verra partout dès que
-   la capture reprendra.
+2. ~~**Dé-risquer le chemin YouTube IFrame**~~ — ✅ 2026-08-04 (#60), voir ci-dessus. **Reste
+   une seule chose, hors de ce conteneur** : ouvrir un des 12 sermons vidéo sur une machine
+   ayant accès à YouTube et cliquer un chapitre, pour confirmer que `YT.Player` s'attache bien
+   à une iframe `youtube-nocookie.com` existante. Pastille de source et filtre par plateforme
+   sont livrés.
 3. **Vérifier un sermon EN** (badge langue ; l'enrichissement reste en français, c'est voulu).
 4. ~~**`npm run build`**~~ — ✅ 2026-08-01 : premier build réel (38 modules, 164 Ko JS / 53 Ko
    gzip), servi par `vite preview`, routing par hash OK.

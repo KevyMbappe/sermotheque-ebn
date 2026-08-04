@@ -70,6 +70,9 @@ export function filterSermons(all, { q = "", ...filters } = {}) {
     if (filters.speaker && s.speaker !== filters.speaker) return false;
     if (filters.language && s.language !== filters.language) return false;
     if (filters.kind && kindOf(s) !== filters.kind) return false;
+    // La plateforme est une vraie question d'usage — écouter ou regarder — et elle deviendra
+    // structurante : 278 des 517 sermons du catalogue n'existent que sur YouTube.
+    if (filters.source && s.embed?.kind !== filters.source) return false;
     return true;
   });
   return searchSermons(filtered, q);
