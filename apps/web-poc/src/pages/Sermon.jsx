@@ -7,7 +7,7 @@ import ShareAt from "../components/ShareAt.jsx";
 import Section from "../components/Section.jsx";
 import { bookLabel, bookRank, fmtDate, fmtDuration, KIND_FR } from "../lib/data.js";
 import { fmtTime } from "../lib/vtt.js";
-import { href, initialTime, setTimeParam } from "../lib/router.js";
+import { href, initialQuery, initialTime, setTimeParam } from "../lib/router.js";
 import { osisPoints } from "../lib/passages.js";
 import { loadTopics } from "../lib/data.js";
 
@@ -17,6 +17,7 @@ export default function Sermon({ sermon: s, all }) {
   const [currentTime, setCurrentTime] = useState(null);
   // `?t=` lu une seule fois, à l'arrivée : ensuite c'est la lecture qui pilote l'URL.
   const startAtRef = useRef(initialTime());
+  const queryRef = useRef(initialQuery());
 
   // Callbacks stables : le lecteur ne doit pas se re-brancher à chaque tick d'horloge.
   const handleReady = useCallback((ctrl) => {
@@ -161,7 +162,8 @@ export default function Sermon({ sermon: s, all }) {
           </Section>
           )}
 
-          <Transcript id={s.id} currentTime={currentTime} onSeek={canSeek} />
+          <Transcript id={s.id} currentTime={currentTime} onSeek={canSeek}
+                      initialQuery={queryRef.current} />
 
           {/* Le résumé reste OUVERT : c'est la seule chose qu'on veut lire d'emblée. */}
           {/* L'invitation ouvre le résumé au lieu de séparer le titre du lecteur : c'est un

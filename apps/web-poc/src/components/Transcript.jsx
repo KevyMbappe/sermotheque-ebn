@@ -8,12 +8,15 @@ import { parseVtt, activeCueIndex, fmtTime } from "../lib/vtt.js";
  * lecture, un clic pour sauter au moment exact. Chargée à la demande (les VTT font
  * ~100 Ko chacun — inutile de les payer pour qui ne les ouvre pas).
  */
-export default function Transcript({ id, currentTime, onSeek }) {
-  const [open, setOpen] = useState(false);
+export default function Transcript({ id, currentTime, onSeek, initialQuery = "" }) {
+  // `initialQuery` : on arrive d'une recherche plein-texte (lib/fulltext.js). La transcription
+  // s'ouvre alors d'elle-même sur le mot cherché — l'utilisateur atterrit au bon instant ET
+  // voit toutes les autres fois où il est prononcé, au lieu d'un mur de texte muet.
+  const [open, setOpen] = useState(Boolean(initialQuery));
   const [text, setText] = useState(null);
   const [error, setError] = useState(null);
   const [follow, setFollow] = useState(true);
-  const [q, setQ] = useState("");
+  const [q, setQ] = useState(initialQuery);
   const listRef = useRef(null);
 
   useEffect(() => {

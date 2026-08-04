@@ -111,6 +111,8 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 - [x] **M6f — curated topic vocabulary** (2026-08-01, decision #57): 44 categories, 98% coverage, browse-by-theme on the site
 - [x] **M6g — POC polish** (2026-08-01): weighted full-text search with match snippets, printable home-group sheet, 1200×630 link-preview cards, stray Xcode scaffold removed
 - [x] **M6h — sermon page restructured** (2026-08-02): listen-first order, collapsible sections, sticky player block; the page is a summary you unfold instead of a wall of text
+- [x] **M6i — full-text search over the transcripts** (2026-08-04, decision #59): prefix-sharded static index (338 shards, 0.6 KB median per query) — a search now returns **moments**, not just pages; 77% of the indexed vocabulary exists nowhere in the editorial fields
+- [x] **M6j — the POC's statement of purpose** (2026-08-04, decision #58): a permanent playground, not a first deliverable nor a throwaway — `apps/web-poc/README.md`
 - [ ] WordPress import → sermon library on the church's own site (the POC above is a demo, not its replacement — see #54)
 - [ ] App suite (Expo: iOS · Android · Android TV · Fire TV) — see `docs/PRD.md`
 

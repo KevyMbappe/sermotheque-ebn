@@ -10,9 +10,10 @@
  * Il tourne avant chaque dev/build : le site reflète toujours le catalogue commité. Les ~378
  * sermons pas encore enrichis apparaîtront d'eux-mêmes au fil des prochains runs d'enrichissement.
  */
-import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync, rmSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildFulltextIndex } from "./build-fulltext.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const APP = resolve(HERE, "..");
@@ -105,15 +106,17 @@ enriched.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
 // Transcriptions : on ne copie que celles des fiches publiées.
 rmSync(join(OUT, "vtt"), { recursive: true, force: true });
 mkdirSync(join(OUT, "vtt"), { recursive: true });
-let vttCount = 0;
+const transcribed = [];
 for (const s of enriched) {
   const src = join(TRANSCRIPTS, `${s.id}.vtt`);
   if (existsSync(src)) {
-    copyFileSync(src, join(OUT, "vtt", `${s.id}.vtt`));
+    const vtt = readFileSync(src, "utf-8");
+    writeFileSync(join(OUT, "vtt", `${s.id}.vtt`), vtt, "utf-8");
     s.has_transcript = true;
-    vttCount++;
+    transcribed.push({ id: s.id, vtt });
   }
 }
+const vttCount = transcribed.length;
 
 writeFileSync(join(OUT, "catalog.json"), JSON.stringify(enriched), "utf-8");
 
@@ -122,6 +125,9 @@ writeFileSync(join(OUT, "catalog.json"), JSON.stringify(enriched), "utf-8");
 const vocab = JSON.parse(readFileSync(TOPICS, "utf-8")).topics.map(({ id, label }) => ({ id, label }));
 writeFileSync(join(OUT, "topics.json"), JSON.stringify(vocab), "utf-8");
 
+// Index plein-texte des transcriptions (shardé par préfixe — voir build-fulltext.mjs).
+const ft = buildFulltextIndex(transcribed, join(OUT, "ft"));
+
 // Un petit récap : utile en CI pour voir grossir le catalogue publié.
 const withEmbed = enriched.filter((s) => s.embed).length;
 const withChapters = enriched.filter((s) => s.chapters.length).length;
@@ -129,6 +135,10 @@ const kb = Math.round(Buffer.byteLength(JSON.stringify(enriched)) / 1024);
 console.log(
   `[build-data] ${enriched.length} sermons publiés (${kb} Ko) · ` +
     `${withEmbed} lisibles · ${withChapters} avec chapitres · ${vttCount} transcriptions`
+);
+console.log(
+  `[build-data] index plein-texte : ${ft.terms.toLocaleString("fr")} termes sur ${ft.docs} transcriptions · ` +
+    `${ft.shards} shards · ${ft.kb} Ko bruts · ${ft.dropped} termes ubiquitaires écartés`
 );
 if (!enriched.length) {
   console.error("[build-data] aucun sermon enrichi trouvé — le catalogue est-il à jour ?");

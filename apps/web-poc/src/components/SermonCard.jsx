@@ -1,8 +1,9 @@
 import { href } from "../lib/router.js";
 import { fmtDate, fmtDuration } from "../lib/data.js";
 import { markedParts } from "../lib/search.js";
+import SpokenHits from "./SpokenHits.jsx";
 
-export default function SermonCard({ sermon: s }) {
+export default function SermonCard({ sermon: s, query }) {
   // Slash final : c'est la forme canonique servie par le pré-rendu, donc celle qui doit
   // apparaître dans la barre d'adresse — c'est l'URL que les gens copient pour partager.
   return (
@@ -27,6 +28,9 @@ export default function SermonCard({ sermon: s }) {
           )}
         </p>
       )}
+
+      {/* Trouvé dans la transcription : le mot a été PRONONCÉ, avec la minute pour y aller. */}
+      <SpokenHits id={s.id} spoken={s._spoken} query={query} />
 
       <div className="card-meta">
         <span className="speaker">

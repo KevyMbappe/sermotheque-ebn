@@ -61,6 +61,31 @@ export function initialTime() {
 }
 
 /**
+ * Lecture de `?q=` — les mots cherchés, transmis d'une page de résultats à une fiche.
+ *
+ * Arriver sur un sermon à la bonne minute est déjà utile ; y arriver avec le mot déjà
+ * surligné dans la transcription dit POURQUOI ce sermon est ressorti, et montre les autres
+ * fois où il est prononcé. Sans ça, l'utilisateur atterrit au milieu d'un sermon d'une heure
+ * sans rien pour relier ce qu'il entend à ce qu'il avait demandé.
+ */
+export function initialQuery() {
+  return new URLSearchParams(window.location.search).get("q") || "";
+}
+
+/**
+ * Navigation programmatique — pour les cas où un lien imbriqué serait invalide.
+ *
+ * Une carte de sermon est déjà un `<a>` ; y placer un second `<a>` (« aller à 12:34 ») produit
+ * du HTML illégal que les navigateurs réparent chacun à leur façon. Un `<button>` qui appelle
+ * `navigate` fait la même chose, correctement.
+ */
+export function navigate(path) {
+  window.history.pushState({}, "", href(path));
+  window.scrollTo(0, 0);
+  notify();
+}
+
+/**
  * Intercepte les clics sur les liens internes pour garder la navigation instantanée.
  * On laisse passer tout ce qui n'est pas un clic gauche simple (nouvel onglet, etc.),
  * pour ne pas casser les habitudes du navigateur.

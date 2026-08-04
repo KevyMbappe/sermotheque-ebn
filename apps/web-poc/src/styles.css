@@ -195,6 +195,33 @@ button { font: inherit; cursor: pointer; }
 }
 .card-match mark { background: var(--accent-soft); color: var(--accent); padding: 0 .1em; border-radius: 2px; }
 
+/* Trouvé dans la transcription. Volontairement DISTINCT de `.card-match` : c'est une autre
+   nature de preuve — le mot a été prononcé, pas écrit — et le résultat mène à un instant,
+   pas à une page. Le lire comme un extrait éditorial serait un contresens. */
+.card-spoken {
+  margin: 0; padding: .45rem .6rem; border-radius: 4px;
+  background: var(--accent-soft);
+  display: flex; align-items: center; flex-wrap: wrap; gap: .35rem;
+  font-family: ui-sans-serif, system-ui, sans-serif; font-size: .8rem;
+}
+.card-spoken .match-field { display: inline; margin: 0; color: var(--accent); font-weight: 600; }
+.spoken-count { color: var(--ink-soft); margin-right: .15rem; }
+/* Un horodatage est un BOUTON, pas un lien : la carte entière est déjà un `<a>` et un lien
+   imbriqué est du HTML illégal. Il en garde l'apparence, parce qu'il en fait le travail. */
+.stamp {
+  font-family: ui-monospace, monospace; font-size: .75rem; font-variant-numeric: tabular-nums;
+  padding: .1rem .4rem; border-radius: 999px;
+  border: 1px solid var(--accent); background: var(--bg); color: var(--accent);
+  cursor: pointer;
+}
+.stamp:hover { background: var(--accent); color: #fff; }
+.count-spoken { color: var(--accent); }
+.results-note {
+  margin: -.6rem 0 1rem; padding: .5rem .7rem; border-radius: 4px;
+  background: var(--surface); border: 1px solid var(--line);
+  font-family: ui-sans-serif, system-ui, sans-serif; font-size: .8rem; color: var(--ink-soft);
+}
+
 .searchbox { margin-bottom: 1rem; }
 .searchbox .results-count { margin: .4rem 0 0; }
 
