@@ -14,8 +14,9 @@ import { fold } from "./fold.js";
  *   3. **On montre où ça correspond** : un extrait avec le terme en évidence, pour qu'un
  *      résultat inattendu s'explique de lui-même au lieu d'avoir l'air d'un bug.
  *
- * Volontairement hors périmètre : les transcriptions (17 Mo pour 131 sermons). Les chercher
- * demande un index pré-calculé au build — c'est un autre chantier.
+ * Les TRANSCRIPTIONS sont cherchées à part (lib/fulltext.js) : 16 Mo pour 131 sermons ne
+ * tiennent pas en mémoire, il leur faut un index pré-calculé au build. Les deux recherches
+ * cohabitent — celle-ci répond à la frappe, l'autre arrive après et complète la liste.
  */
 
 // Poids par champ. L'écart compte plus que les valeurs : titre et passage biblique

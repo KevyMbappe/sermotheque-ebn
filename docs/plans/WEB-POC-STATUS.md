@@ -278,6 +278,45 @@ production le lecteur réel est plus compact — 120 px sous 560 px.)*
 - 260 Ko de captures commitées dans un répertoire nommé `$S` (variable shell non substituée)
   retirées du suivi, ainsi que `undefined/vocab.png`.
 
+## 🆕 Recherche plein-texte dans les transcriptions — 2026-08-04 (#59)
+
+La recherche ne voyait que le contenu éditorial. Mesure qui a décidé du chantier : **77 % du
+vocabulaire des transcriptions (16 586 mots sur 21 637) n'existe nulle part dans les champs
+éditoriaux** — « cancer » (5 sermons), « divorce » (3), « hôpital » (7), « adolescence » (7),
+« propitiation » (2), « indulgences » (3). Ce qu'un membre cherche, et ce qu'aucun résumé ne dit.
+
+**L'idée d'architecture** : ce n'est pas le poids de l'index qui compte, c'est le poids d'une
+requête. L'index est découpé par préfixe de terme (`public/data/ft/<préfixe>.json` + un
+manifeste), donc une recherche ne télécharge que les shards de ses propres mots.
+
+    21 637 termes · 338 shards · médiane 0,6 Ko gzip · le plus gros 22 Ko
+    (index monolithique : 244 Ko aujourd'hui, ~1 Mo à 517 sermons, à payer d'un bloc)
+
+Le redécoupage de 2 à 3 lettres se déclenche tout seul au-delà de 48 Ko bruts : **le coût d'une
+requête ne bougera pas quand le catalogue quadruplera.**
+
+**Le résultat est un INSTANT, pas une page.** Chaque sermon trouvé affiche ses horodatages ; un
+clic ouvre la fiche au bon moment, transcription déjà filtrée sur le mot (`?t=…&q=…`).
+
+### Deux pièges, dont un attrapé par la vérification
+
+1. **Vérité terrain** : l'index a été comparé à un `grep` sur les VTT, terme par terme
+   (*galates* 34, *circoncision* 18, *espérance* 40, *abraham* 37 — comptes d'occurrences
+   identiques, aucun écart). C'est ce contrôle qui a révélé le second piège.
+2. **Les mots ubiquitaires devaient être NOMMÉS, pas seulement écartés.** « Prière » (76/131) et
+   « pardon » (94/131) sont jetés au build — pour cette église, ce sont ses mots vides à elle.
+   Mais tant qu'ils étaient seulement absents, une requête « prière du matin » butait sur son
+   premier mot et ne rendait **rien**. Le manifeste liste donc les 527 termes écartés : un mot
+   ubiquitaire ne contraint plus la recherche, et l'interface le dit au lieu de se taire.
+
+⚠️ **Piège à connaître pour la suite** : la tokenisation (`src/lib/tokenize.js`) et le format
+(`src/lib/ftcodec.js`) sont **partagés entre l'indexeur et le lecteur**. Les dupliquer ferait
+diverger l'écriture et la lecture — et l'index se décoderait « avec succès » sur de mauvais
+nombres, sans aucune erreur. L'apostrophe y est un **séparateur** (« l'Église » → `eglise`).
+
+Tests : `cd apps/web-poc && npm test` — 13 tests `node --test`, sans dépendance.
+
+
 ## ⏳ Reste à faire
 
 1. ~~**Page sermon**~~ — ✅ 2026-08-01. Rendu vérifié en émulation (en-tête, invitation, résumé,
@@ -285,8 +324,13 @@ production le lecteur réel est plus compact — 120 px sous 560 px.)*
    par l'auteur** : clic sur un chapitre → le lecteur saute au bon endroit. La dégradation
    gracieuse a aussi été observée (conteneur sans accès à SoundCloud : message + lien direct).
    C'était LE point à valider — il l'est.
-2. **Vérifier un sermon YouTube** (ex. `#/sermon/yt-IqNmh_XGULE`) — l'API IFrame est un chemin
-   de code distinct de SoundCloud, encore jamais exercé (le conteneur de dev bloque YouTube).
+2. ★ **Dé-risquer le chemin YouTube IFrame** (ex. `/sermon/yt-IqNmh_XGULE/`) — l'API IFrame est un
+   chemin de code distinct de SoundCloud, encore jamais exercé (le conteneur de dev bloque
+   YouTube). **Il faut montrer que c'est possible.** Deux conséquences d'interface, décidées avec
+   ce chantier : une **pastille de source** sur chaque carte (YouTube / SoundCloud, aux couleurs
+   du système de design) pour dire de quoi il s'agit, et probablement un **filtre par
+   plateforme** — 278 des 517 sermons sont YouTube-only, la distinction se verra partout dès que
+   la capture reprendra.
 3. **Vérifier un sermon EN** (badge langue ; l'enrichissement reste en français, c'est voulu).
 4. ~~**`npm run build`**~~ — ✅ 2026-08-01 : premier build réel (38 modules, 164 Ko JS / 53 Ko
    gzip), servi par `vite preview`, routing par hash OK.
