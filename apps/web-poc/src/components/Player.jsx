@@ -12,13 +12,19 @@ import { attachPlayer } from "../lib/player.js";
 export default function Player({ embed, title, onReady, onTime }) {
   const iframeRef = useRef(null);
   const [controllable, setControllable] = useState(null); // null = en cours, false = dégradé
+  // Message venu de la plateforme elle-même (vidéo privée, intégration refusée…), qui vaut
+  // mieux que notre repli générique : il dit ce qui se passe vraiment.
+  const [platformError, setPlatformError] = useState(null);
 
   useEffect(() => {
     if (!embed || !iframeRef.current) return;
     let ctrl = null;
     let alive = true;
 
-    attachPlayer(iframeRef.current, embed.kind, { onTime })
+    attachPlayer(iframeRef.current, embed.kind, {
+      onTime,
+      onError: (msg) => alive && setPlatformError(msg),
+    })
       .then((c) => {
         if (!alive) return c.destroy?.();
         ctrl = c;
@@ -48,9 +54,11 @@ export default function Player({ embed, title, onReady, onTime }) {
         allowFullScreen
         frameBorder="0"
       />
-      {controllable === false && (
+      {(controllable === false || platformError) && (
         <p className="player-note">
-          Lecture disponible, mais le saut aux chapitres n'a pas pu être activé.{" "}
+          {platformError
+            ? `Cette vidéo ne peut pas être lue ici : ${platformError}.`
+            : "Lecture disponible, mais le saut aux chapitres n'a pas pu être activé."}{" "}
           <a href={embed.link} target="_blank" rel="noreferrer">Ouvrir sur {embed.kind === "youtube" ? "YouTube" : "SoundCloud"}</a>
         </p>
       )}

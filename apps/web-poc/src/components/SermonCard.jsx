@@ -2,6 +2,7 @@ import { href } from "../lib/router.js";
 import { fmtDate, fmtDuration } from "../lib/data.js";
 import { markedParts } from "../lib/search.js";
 import SpokenHits from "./SpokenHits.jsx";
+import SourceBadge from "./SourceBadge.jsx";
 
 export default function SermonCard({ sermon: s, query }) {
   // Slash final : c'est la forme canonique servie par le pré-rendu, donc celle qui doit
@@ -55,6 +56,8 @@ export default function SermonCard({ sermon: s, query }) {
       </div>
 
       <div className="card-foot">
+        {/* Vidéo ou audio : la première chose qu'on veut savoir avant de cliquer. */}
+        <SourceBadge kind={s.embed?.kind} />
         {s.date && <span>{fmtDate(s.date)}</span>}
         {s.duration ? <span>{fmtDuration(s.duration)}</span> : null}
         {s.chapters?.length ? <span>{s.chapters.length} chapitres</span> : null}

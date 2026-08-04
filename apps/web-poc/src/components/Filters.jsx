@@ -47,6 +47,17 @@ export default function Filters({ all, filters, onChange, q, onQuery }) {
     return vocab.filter((v) => seen.has(v.id));
   })();
 
+  // La plateforme vit dans `embed.kind`, pas dans un champ plat : `countBy` ne s'applique pas.
+  const SOURCE_FR = { soundcloud: "Audio (SoundCloud)", youtube: "Vidéo (YouTube)" };
+  const sources = [...new Set(all.map((s) => s.embed?.kind).filter(Boolean))]
+    .sort()
+    .map((value) => ({ value, label: SOURCE_FR[value] || value }));
+  const sourceCount = (() => {
+    const c = new Map();
+    for (const s of without("source")) { const k = s.embed?.kind; if (k) c.set(k, (c.get(k) || 0) + 1); }
+    return (v) => c.get(v) || 0;
+  })();
+
   const bookCount = counts("scripture_book", "book");
   const seriesCount = counts("series_name", "series");
   const speakerCount = counts("speaker", "speaker");
@@ -102,6 +113,17 @@ export default function Filters({ all, filters, onChange, q, onQuery }) {
           {speakers.map(({ value }) => (
             <option key={value} value={value}>
               {value} ({speakerCount(value)})
+            </option>
+          ))}
+        </select>
+
+        {/* Le compte se calcule comme les autres : sur le corpus filtré par TOUS les autres
+            critères, le sien exclu — sinon le menu se contraindrait lui-même. */}
+        <select value={filters.source || ""} onChange={set("source")} aria-label="Plateforme">
+          <option value="">Audio et vidéo</option>
+          {sources.map(({ value, label }) => (
+            <option key={value} value={value}>
+              {label} ({sourceCount(value)})
             </option>
           ))}
         </select>

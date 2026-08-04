@@ -216,6 +216,26 @@ button { font: inherit; cursor: pointer; }
 }
 .stamp:hover { background: var(--accent); color: #fff; }
 .count-spoken { color: var(--accent); }
+
+/* ---------- pastille de source (audio / vidéo) ---------- */
+
+.source-badge {
+  display: inline-flex; align-items: center; gap: .3rem;
+  color: var(--accent);
+}
+.source-badge svg { width: 1.05em; height: auto; display: block; }
+/* Sur la fiche, la pastille porte son nom et prend la forme d'une étiquette. */
+.sermon-tags .source-badge {
+  padding: .15rem .5rem; border-radius: 999px;
+  border: 1px solid var(--line);
+  font-family: ui-sans-serif, system-ui, sans-serif; font-size: .75rem; font-weight: 600;
+}
+/* Visible pour un lecteur d'écran, absent de l'affichage : la pastille dit « vidéo » sans
+   l'écrire, mais quelqu'un qui n'en voit pas le glyphe doit l'entendre. */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
 .results-note {
   margin: -.6rem 0 1rem; padding: .5rem .7rem; border-radius: 4px;
   background: var(--surface); border: 1px solid var(--line);
