@@ -1,3 +1,4 @@
+import { biblePath } from "../lib/bible.js";
 import { useState } from "react";
 import SermonCard from "../components/SermonCard.jsx";
 import SearchBox, { matches } from "../components/SearchBox.jsx";
@@ -20,6 +21,7 @@ export default function Book({ sermons, book }) {
       <>
         <a className="back" href={href("/livres")}>← Tous les livres</a>
         <h1 className="page-title">{label}</h1>
+      <p><a href={href(biblePath(`${book}.1`))}>Lire {label} dans la Bible →</a></p>
         <p className="state">
           Aucun sermon ne touche encore ce livre. Il apparaîtra ici dès qu'un sermon
           l'expose ou le cite — le site suit le catalogue, qui se remplit à chaque
@@ -58,6 +60,7 @@ export default function Book({ sermons, book }) {
     <>
       <a className="back" href={href("/livres")}>← Tous les livres</a>
       <h1 className="page-title">{label}</h1>
+      <p><a href={href(biblePath(`${book}.1`))}>Lire {label} dans la Bible →</a></p>
       <p className="results-count">
         {entry.preached.length > 0 && (
           <><strong>{entry.preached.length}</strong> sermon{entry.preached.length > 1 ? "s" : ""} sur ce livre</>
@@ -90,7 +93,7 @@ export default function Book({ sermons, book }) {
               const all = [...c.preached, ...c.cited];
               return (
                 <li key={c.chapter}>
-                  <span className="chapter-key">{label} {c.chapter}</span>
+                  <a className="chapter-key" href={href(biblePath(`${book}.${c.chapter}`))}>{label} {c.chapter}</a>
                   <ul className="chapter-sermons">
                     {all.map((s) => (
                       <li key={s.id}>

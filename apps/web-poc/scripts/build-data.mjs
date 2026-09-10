@@ -13,6 +13,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { buildBible } from './build-bible.mjs';
 import { buildFulltextIndex } from "./build-fulltext.mjs";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
@@ -126,6 +127,7 @@ const vocab = JSON.parse(readFileSync(TOPICS, "utf-8")).topics.map(({ id, label 
 writeFileSync(join(OUT, "topics.json"), JSON.stringify(vocab), "utf-8");
 
 // Index plein-texte des transcriptions (shardé par préfixe — voir build-fulltext.mjs).
+buildBible(ROOT, OUT, enriched);
 const ft = buildFulltextIndex(transcribed, join(OUT, "ft"));
 
 // Un petit récap : utile en CI pour voir grossir le catalogue publié.

@@ -193,6 +193,20 @@ async function main() {
     )
   );
 
+  const bible = JSON.parse(readFileSync(join(DIST, 'data/bible/manifest.json'), 'utf8'));
+  write('/bible/', render(metaTags({title:`La Bible · Louis Segond 1910 — ${SITE_NAME}`, description:'Lire la Bible et retrouver les prédications associées à chaque passage.', path:'bible/'})));
+  let biblePages = 0;
+  for (const [book, chapters] of Object.entries(bible.books)) {
+    for (let c = 1; c <= chapters.length; c++) {
+      const title = `${BOOK_FR[book]} ${c} · Louis Segond 1910`;
+      const verses = JSON.parse(readFileSync(join(DIST, `data/bible/${book}/${c}.json`),'utf8'));
+      const body = `<noscript><h1>${esc(title)}</h1>${Object.entries(verses).map(([n,text])=>`<p><sup>${n}</sup> ${esc(text)}</p>`).join('')}<p>Louis Segond 1910 · Domaine public · eBible.org</p></noscript>`;
+      write(`/bible/${book}/${c}/`, render(metaTags({title:`${title} — ${SITE_NAME}`,description:`Lire ${BOOK_FR[book]} ${c} et retrouver les prédications de l’Église Bonne Nouvelle sur ce passage.`,path:`bible/${book}/${c}/`}),body));
+      biblePages++;
+    }
+  }
+  console.log(`[prerender] ${biblePages} Bible chapters + Bible entry`);
+
   // 5) Une page par sermon — le cœur du sujet.
   for (const s of sermons) {
     // Les réseaux coupent le titre autour de 60-70 caractères. Plutôt que de laisser

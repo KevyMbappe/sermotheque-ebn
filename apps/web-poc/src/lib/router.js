@@ -116,3 +116,9 @@ export function subscribe(fn) {
 }
 
 export { currentPath };
+
+/** Verse selection changes the URL without losing the reading position. */
+export function replaceQuery(search) {
+  window.history.replaceState({}, "", window.location.pathname + search);
+  notify();
+}

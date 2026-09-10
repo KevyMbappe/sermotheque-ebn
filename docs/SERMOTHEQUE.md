@@ -1,7 +1,7 @@
 # Sermothèque EBN — Sermon & Service System of Record
 
 **Status:** Draft v1 (for grilling)
-**Last updated:** 2026-08-04
+**Last updated:** 2026-09-10
 **Owner:** kevy@merca.team
 **Relationship to other docs:** This is the **parent project**. The app suite ([PRD.md](PRD.md)) and the website sermon library are *downstream consumers* of this system.
 
@@ -119,6 +119,8 @@ Sequence:
 
 ## 7. Roadmap
 
+- [x] **M6l — Bible LSG 1910 reader** (#61, feature branch; awaiting merge/publication).
+
 - **M1 — Foundations & instant catalog:** canonical schema + repo + export format; WP authoring model; first-pass backfill from SC titles (a real catalog on day one).
 - **M2 — Matching & console:** YT↔SC matching + services import; completeness dashboard.
 - **M3 — Enrichment & search:** ASR + LLM + full-text/transcript search.
@@ -210,6 +212,15 @@ Sequence:
 
 **M6k chemin YouTube dé-risqué — DONE (2026-08-04, décision #60).** L'API IFrame de YouTube est un chemin de code entièrement distinct de SoundCloud, **jamais exercé depuis le début du POC** parce que le conteneur de développement bloque `youtube.com` (vérifié : les trois URL nécessaires répondent `000`). Ce n'est pas un détail futur : **12 des 131 sermons publiés sont déjà des vidéos**, et 278 des 517 du catalogue n'existent que sur YouTube. Le chemin a donc été exercé contre un **faux SDK écrit d'après le contrat documenté de l'API** — `onReady` asynchrone, `destroy()` qui retire l'iframe du document, `getCurrentTime()` qui n'avance qu'en lecture — et non d'après notre propre code, ce qui aurait fait tourner le test à vide. **Quatre scénarios : SDK disponible, navigation entre deux sermons vidéo, SDK bloqué, SDK chargé mais jamais prêt.** Trois défauts réels, tous invisibles en développement, ont été trouvés et corrigés. **(1) Le lecteur disparaissait en passant d'un sermon YouTube à un autre** (mesuré : 0 iframe dans le document) : `player.destroy()` supprime l'iframe — c'est documenté — mais React croyait encore la posséder et se contentait d'en changer le `src`, sur un nœud détaché. Corrigé par une règle explicite, écrite en tête de `player.js` : *aucun pilote ne retire du DOM un nœud rendu par React*. Le cycle de vie passe par une `key` sur le composant, et le pilote n'arrête que son horloge. **(2) Un SDK qui charge sans jamais signaler « prêt » — vidéo privée, intégration refusée par le propriétaire, réseau lent — laissait la promesse en suspens pour toujours** : ni erreur, ni repli, juste des chapitres muets et rien à l'écran pour le dire. Un délai de 8 s transforme l'attente silencieuse en échec franc, sur les DEUX plateformes. **(3) Les chapitres ne redevenaient cliquables que par accident** : l'état « pilotable » vivait dans une `ref`, dont l'écriture ne re-rend rien — la même page était cliquable ou muette selon qu'un autre rendu (le chargement des libellés de thèmes) gagnait ou non la course. Passé en `state`. Ajouté aussi : les **codes d'erreur de l'API** (101/150 = « le propriétaire n'autorise pas la lecture intégrée », le seul vraiment probable sur une chaîne d'église) affichent désormais la vraie raison au lieu d'un rectangle noir. **Ce que le faux SDK ne prouve pas, et qui reste à vérifier sur une machine ayant accès à YouTube :** que YouTube se comporte comme sa documentation — en particulier que `YT.Player` s'attache correctement à une iframe `youtube-nocookie.com` existante. Toute la logique d'intégration, elle, est vérifiée. **Conséquences d'interface livrées avec** : une **pastille de source** sur chaque carte et sur chaque fiche (glyphe vidéo ou audio, **aux couleurs du système de design et non à celles des plateformes** — le rouge YouTube attirerait l'œil plus que le titre du sermon), et un **filtre par plateforme** (Audio 119 / Vidéo 12, comptes vérifiés, menu qui ne se contraint pas lui-même). **Constat de données au passage :** 1 fiche publiée (`yt-gj17HMaMOyY`, « La Bible 3ème Partie ») annonce elle-même que sa transcription est inexploitable — un cas #48 enrichi malgré tout, à re-capturer.
 
+**M6l — Bible LSG 1910 (2026-09-10, feature branch, not deployed).** Imported 66 books /
+1,189 chapters / 31,170 verses with source checksum, omitting editorial annotations. Added
+chapter reader, precise verse/range matching, mobile results panel, reference input, sharing,
+sermon links and return to selection. Build projects chapters and per-book indexes and
+pre-renders every chapter. 20 JS tests + 3 importer tests pass; production build and all
+1,189 generated chapter routes validated. Browser QA remains pending. Two existing references
+are excluded/reportable: `sc-2249668412` / `Gal.6.26` and `sc-2174499144` /
+`Isa.53.32-Isa.53.33`. Catalogue and enrichment counts unchanged.
+
 ## 8. Resolved design decisions (grilled 2026-06-13)
 - **Scripture:** canonical **OSIS** book IDs (e.g. `Rom.8.1-8.4`) + a FR/EN parser; display localized, query canonical. Powers browse-by-book.
 - **EN/FR pairing:** **independent** Sermon records linked by `translation_of` (each keeps its own media/transcript/thumbnail).
@@ -273,3 +284,16 @@ Sequence:
 
 - **#60 (2026-08-04) — Un pilote de lecteur ne retire jamais du DOM un nœud rendu par React ; et une attente sans limite est un bug, pas une attente.** Exercer le chemin YouTube contre un faux SDK fidèle au contrat documenté a fait tomber trois défauts qui ne se voyaient pas en développement, et dont deux touchaient AUSSI SoundCloud. **(1) La propriété du DOM.** L'API IFrame documente que `player.destroy()` supprime l'iframe. Appelée depuis un nettoyage d'effet, elle laissait React avec une référence sur un nœud détaché : passer d'un sermon vidéo à un autre ne réutilisait pas l'iframe, il n'y en avait plus du tout (mesuré : 0 iframe). La règle retenue est écrite en tête de `player.js` — le cycle de vie appartient à React, via une `key` par sermon ; les pilotes n'arrêtent que ce qu'ils ont démarré. **(2) Aucune promesse d'interface ne doit pouvoir ne jamais se résoudre.** Un SDK qui charge mais ne signale jamais « prêt » (vidéo privée, intégration refusée, réseau lent) laissait `attachPlayer` en suspens indéfiniment : pas d'erreur à attraper, donc pas de repli, donc des chapitres qui ne répondent pas sans que rien ne l'explique. Un délai de 8 s convertit l'attente muette en échec franc — la dégradation gracieuse n'existe que si quelque chose la déclenche. **(3) Un état d'interface ne se stocke pas dans une `ref`.** « Le lecteur est pilotable » vivait dans `ctrlRef` ; y écrire ne provoque aucun rendu, donc les chapitres restaient en version non cliquable jusqu'à ce qu'un autre rendu survienne par hasard. Selon la course, la même page était utilisable ou morte. **Ce que le faux SDK prouve et ce qu'il ne prouve pas** est consigné explicitement : il valide notre logique d'intégration, pas la conformité de YouTube à sa propre documentation — l'attache de `YT.Player` sur une iframe `youtube-nocookie.com` existante reste à confirmer sur une machine ayant accès au réseau YouTube. Enfin, la distinction de plateforme devient visible dans l'interface (pastille + filtre) : **278 des 517 sermons n'existent que sur YouTube**, et savoir si l'on va écouter ou regarder est une question d'usage, pas de métadonnée. Les couleurs restent celles du système de design : dans une sermothèque d'église, le rouge YouTube attirerait l'œil plus que le titre du sermon.
 
+
+
+- **#61 (2026-09-10) — LSG Bible reader as a catalogue consumer.** The POC now bundles a
+  pinned public-domain LSG 1910 dataset, separate from sermon records, and projects chapter
+  files plus per-book reference indexes at build time. Exact verse overlaps distinguish a
+  sermon's main passage from an in-body citation; chapter/book-only references remain broad
+  context, never evidence about one specific verse. Duplicate sermons use their strongest
+  available relationship. Invalid/unsupported references are reported and excluded, never
+  repaired by guessing. All chapter routes are pre-rendered for GitHub Pages. Query-string
+  selection survives sharing and returning from a sermon. Translation-specific numbering is
+  retained; no automatic cross-versification mapping or citation-to-audio timestamp is
+  asserted. The existing #56 book/chapter browsing remains available. Review/merge and browser
+  acceptance precede publication; no new backend, dependency, API key or AI enrichment pass.

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { loadCatalog } from "./lib/data.js";
 import { currentPath, href, startRouter, subscribe } from "./lib/router.js";
+import Bible from "./pages/Bible.jsx";
 import Home from "./pages/Home.jsx";
 import Sermon from "./pages/Sermon.jsx";
 import Browse from "./pages/Browse.jsx";
@@ -12,10 +13,10 @@ import { TopicsIndex, TopicPage } from "./pages/Topics.jsx";
  * Routes : / · /sermon/:id · /livres[/:book] · /themes[/:id] · /series
  */
 function useRoute() {
-  const [path, setPath] = useState(currentPath);
+  const [path, setPath] = useState(() => currentPath() + window.location.search);
   useEffect(() => {
     startRouter();
-    return subscribe(() => setPath(currentPath()));
+    return subscribe(() => setPath(currentPath() + window.location.search));
   }, []);
   return path;
 }
@@ -43,6 +44,7 @@ export default function App() {
           </span>
         </a>
         <nav className="site-nav">
+          <a href={href("/bible/")}>Bible</a>
           <a href={href("/livres")}>Livres</a>
           <a href={href("/themes")}>Thèmes</a>
           <a href={href("/series")}>Séries</a>
@@ -50,13 +52,13 @@ export default function App() {
       </header>
 
       <main className="site-main">
-        {loading && <p className="state">Chargement du catalogue…</p>}
-        {error && (
+        {loading && !route.startsWith("/bible") && <p className="state">Chargement du catalogue…</p>}
+        {error && !route.startsWith("/bible") && (
           <p className="state state-error">
             Impossible de charger le catalogue : {error.message}
           </p>
         )}
-        {!loading && !error && <Route route={route} sermons={sermons} />}
+        {(route.startsWith("/bible") || (!loading && !error)) && <Route route={route} sermons={sermons} catalogError={error} />}
       </main>
 
       <footer className="site-footer">
@@ -72,12 +74,17 @@ export default function App() {
   );
 }
 
-function Route({ route, sermons }) {
+function Route({ route, sermons, catalogError }) {
+  const [pathname, query = ''] = route.split('?');
+  route = pathname;
+  const bibleMatch = route.match(/^\/bible(?:\/([A-Za-z0-9]+)\/(\d+))?$/);
+  if (bibleMatch) return <Bible book={bibleMatch[1] || 'Gen'} chapter={Number(bibleMatch[2] || 1)} search={query} sermons={sermons} catalogError={catalogError} />;
+
   const sermonMatch = route.match(/^\/sermon\/(.+)$/);
   if (sermonMatch) {
     const sermon = sermons.find((s) => s.id === decodeURIComponent(sermonMatch[1]));
     return sermon ? (
-      <Sermon sermon={sermon} all={sermons} />
+      <Sermon key={sermon.id} sermon={sermon} all={sermons} />
     ) : (
       <p className="state">
         Sermon introuvable. <a href={href("/")}>Retour au catalogue</a>

@@ -497,3 +497,48 @@ body.reading .site-header { position: static; }
   .section.is-closed .section-body { display: block !important; }
   .section-caret, .section-count { display: none !important; }
 }
+
+/* Bible reader: quiet reading column, contextual sermons, touch-friendly verse numbers. */
+.bible-head h1 { font-size: clamp(2rem, 5vw, 3rem); }
+.bible-eyebrow { font: 600 .75rem/1.5 ui-sans-serif, system-ui, sans-serif; text-transform: uppercase; letter-spacing: .12em; color: var(--accent); }
+.bible-reference { display:flex; gap:.5rem; max-width:34rem; margin:1.5rem 0 1rem; }
+.bible-reference input { min-width:0; }
+.bible-controls { display:flex; flex-wrap:wrap; align-items:end; gap:.8rem; padding:1rem 0; border-block:1px solid var(--line); margin-bottom:2rem; }
+.bible-controls label { display:grid; gap:.3rem; font: .8rem ui-sans-serif,system-ui,sans-serif; min-width:0; }
+.bible-controls select { max-width:100%; background:var(--surface); color:var(--ink); border:1px solid var(--line); border-radius:6px; padding:.6rem; font:inherit; min-height:44px; }
+.bible-layout { display:grid; grid-template-columns:minmax(0,1.7fr) minmax(0,1fr); gap:3rem; align-items:start; }
+.bible-text, .bible-sidebar { min-width:0; }
+.bible-chapter-head { margin-bottom:1.5rem; }
+.bible-chapter-head h2 { font-size:1.8rem; }
+.bible-range { display:block; font: .82rem/1.6 ui-sans-serif,system-ui,sans-serif; color:var(--ink-soft); margin:.8rem 0; }
+.bible-range input { width:18px; height:18px; vertical-align:middle; accent-color:var(--accent); }
+.bible-verse { display:flex; gap:.6rem; margin:0; padding:.45rem .4rem .45rem 0; font-size:1.12rem; line-height:1.9; border-radius:6px; scroll-margin-top:9rem; }
+.bible-verse.is-selected { background:var(--accent-soft); box-shadow:inset 3px 0 var(--accent); }
+.verse-number { flex:0 0 44px; align-self:flex-start; min-height:44px; border:0; background:transparent; color:var(--accent); font:600 .8rem ui-sans-serif,system-ui,sans-serif; position:relative; }
+.verse-dot { display:block; font-size:.75rem; line-height:.7; }
+.bible-reader :focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
+.bible-sidebar { position:sticky; top:7rem; max-height:calc(100dvh - 8rem); overflow:auto; padding:1.3rem; background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); }
+.bible-sidebar h2,.bible-sheet h2 { font-size:1.4rem; }
+.bible-matches { border-top:1px solid var(--line); margin-top:1.4rem; padding-top:1rem; }
+.bible-matches h3 { font:600 .86rem/1.5 ui-sans-serif,system-ui,sans-serif; }
+.bible-matches h3 span { color:var(--ink-soft); }
+.bible-matches ul { list-style:none; padding:0; margin:0; }
+.bible-matches li { padding:.8rem 0; }
+.bible-matches a { text-decoration:none; font-weight:600; }
+.bible-matches a:hover { text-decoration:underline; color:var(--accent); }
+.bible-matches small { display:block; color:var(--ink-soft); font: .75rem/1.6 ui-sans-serif,system-ui,sans-serif; margin-top:.25rem; }
+.bible-empty { color:var(--ink-soft); padding:1rem 0; }
+.bible-chapter-nav { display:flex; justify-content:space-between; gap:1rem; border-top:1px solid var(--line); padding:1.5rem 0; margin-top:2rem; }
+.bible-attribution { font-size:.75rem; }
+.bible-mobile-results { display:none; }
+.bible-sheet { color:var(--ink); background:var(--surface); border:1px solid var(--line); border-radius:16px 16px 0 0; margin:auto auto 0; padding:1.5rem; width:100%; max-width:45rem; max-height:80dvh; overflow:auto; }
+.bible-sheet::backdrop { background:rgba(0,0,0,.45); }
+.bible-sheet-close { display:block; margin:0 0 1rem auto; }
+@media (max-width:760px) {
+  .bible-layout { display:block; }
+  .bible-sidebar { display:none; }
+  .bible-reader { padding-bottom:4rem; }
+  .bible-mobile-results { display:block; position:fixed; z-index:20; bottom:1rem; left:1rem; right:1rem; width:calc(100% - 2rem); padding:.9rem; border:1px solid var(--accent); border-radius:10px; background:var(--accent); color:var(--bg); box-shadow:var(--shadow); font:600 .85rem/1.5 ui-sans-serif,system-ui,sans-serif; }
+  .bible-verse { font-size:1.05rem; }
+}
+@media print { .bible-controls,.bible-reference,.bible-sidebar,.bible-mobile-results,.bible-range,.bible-sheet { display:none !important; } .bible-layout { display:block; } }

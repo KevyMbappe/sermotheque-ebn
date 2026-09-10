@@ -431,3 +431,23 @@ elle-même que sa transcription est inexploitable — un cas #48 enrichi malgré
   20 YT) alors que les deux sont écrites depuis le même téléchargement — à auditer avant de
   relancer la capture, sinon ces 79 seront re-téléchargés et re-transcrits pour rien.
 - 88 tests passent (`python3 -m unittest discover -s tests`).
+
+## Bible LSG 1910 — 2026-09-10 (#61, branche de fonctionnalité)
+
+- Lecteur complet : 66 livres, 1 189 chapitres, 31 170 versets de l'édition eBible,
+  source du 2026-08-08, SHA-256 figé. Import reproductible ; aucun téléchargement au build.
+- Sélection au verset ou par plage, saisie FR/OSIS, navigation entre chapitres/livres,
+  partage de `?ref=`, liens depuis les fiches sermon et retour à la sélection biblique.
+- Relations exactes texte principal/citation ; contexte chapitre/livre séparé. Un sermon
+  n'apparaît qu'une fois, avec la relation la plus précise disponible.
+- Interface à deux colonnes sur ordinateur, panneau modal natif sur mobile ; clavier,
+  états de chargement/erreur et relance. Le texte reste lisible si le catalogue échoue.
+- `build-bible.mjs` produit un index par livre, les chapitres JSON et un rapport des références
+  rejetées. Les 1 189 pages HTML sont pré-rendues (texte LSG également présent sans JS).
+- Validation : 20 tests JS (dont 7 Bible), 3 tests de l'importeur, build de production réussi,
+  vérification des 1 189 routes pré-rendues et de leurs assets. Pas de QA navigateur effectuée.
+- Références existantes rejetées, à corriger en amont après revue : `sc-2249668412` →
+  `Gal.6.26` ; `sc-2174499144` → `Isa.53.32-Isa.53.33`. Aucun remplacement deviné.
+- Limite : les références sont interprétées selon la numérotation LSG ; le catalogue ne
+  documente pas encore la versification de chaque citation. Pas d'alignement citation/audio.
+- État : prêt à relire sur la branche ; pas encore publié sur le POC en ligne.

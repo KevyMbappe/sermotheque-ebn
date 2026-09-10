@@ -6,10 +6,10 @@ import SermonCard from "../components/SermonCard.jsx";
 import ShareAt from "../components/ShareAt.jsx";
 import Section from "../components/Section.jsx";
 import SourceBadge from "../components/SourceBadge.jsx";
-import { bookLabel, bookRank, fmtDate, fmtDuration, KIND_FR } from "../lib/data.js";
+import { fmtDate, fmtDuration, KIND_FR } from "../lib/data.js";
 import { fmtTime } from "../lib/vtt.js";
 import { href, initialQuery, initialTime, setTimeParam } from "../lib/router.js";
-import { osisPoints } from "../lib/passages.js";
+import { biblePath, parseOsis, referenceLabel } from "../lib/bible.js";
 import { loadTopics } from "../lib/data.js";
 
 export default function Sermon({ sermon: s, all }) {
@@ -53,26 +53,9 @@ export default function Sermon({ sermon: s, all }) {
   const canSeek = ready ? seek : null;
   const path = `/sermon/${encodeURIComponent(s.id)}/`;
 
-  // Passages cités, ramenés à des couples livre+chapitre uniques et rangés dans l'ordre
-  // du canon — une puce par passage réel, pas une par occurrence.
-  const citedPoints = (() => {
-    const seen = new Map();
-    for (const ref of s.scripture_refs_osis || []) {
-      for (const pt of osisPoints(ref)) {
-        const key = `${pt.book}.${pt.chapter ?? 0}`;
-        if (!seen.has(key)) {
-          seen.set(key, {
-            key,
-            book: pt.book,
-            label: `${bookLabel(pt.book)}${pt.chapter != null ? ` ${pt.chapter}` : ""}`,
-          });
-        }
-      }
-    }
-    return [...seen.values()].sort(
-      (a, b) => bookRank(a.book) - bookRank(b.book) || a.key.localeCompare(b.key, "fr", { numeric: true })
-    );
-  })();
+  const citedPoints = [...new Set(s.scripture_refs_osis || [])]
+    .filter(ref => parseOsis(ref)).map(ref => ({key:ref, label:referenceLabel(ref), path:biblePath(ref)}));
+  const fromBible = new URLSearchParams(window.location.search).get('bible');
 
   /**
    * Sur une fiche, c'est le LECTEUR qui doit occuper le haut de l'écran, pas la navigation.
@@ -98,6 +81,7 @@ export default function Sermon({ sermon: s, all }) {
   return (
     <article className="sermon">
       <a className="back" href={href("/")}>← Tous les sermons</a>
+      {parseOsis(fromBible) && <p><a className="back" href={href(biblePath(fromBible))}>← Reprendre la lecture : {referenceLabel(fromBible)}</a></p>}
 
       {/* En-tête visible seulement sur le papier : qui, quoi, et où retrouver le sermon. */}
       <div className="print-only print-head">
@@ -107,7 +91,7 @@ export default function Sermon({ sermon: s, all }) {
 
       <header className="sermon-head">
         <div className="sermon-tags">
-          {s.scripture_display && <span className="tag tag-scripture">{s.scripture_display}</span>}
+          {s.scripture_display && <a className="tag tag-scripture" href={href(biblePath(s.scripture_osis))}>{s.scripture_display}</a>}
           {s.kind && s.kind !== "sermon" && <span className="tag">{KIND_FR[s.kind] || s.kind}</span>}
           {s.language === "en" && <span className="tag tag-lang">EN</span>}
           {/* Sur la fiche il y a la place d'écrire le nom : on sait sur quoi on tombe. */}
@@ -240,7 +224,7 @@ export default function Sermon({ sermon: s, all }) {
                 <ul className="chips">
                   {citedPoints.map((p) => (
                     <li key={p.key}>
-                      <a className="chip chip-link" href={href(`/livres/${p.book}/`)}>{p.label}</a>
+                      <a className="chip chip-link" href={href(p.path)}>{p.label}</a>
                     </li>
                   ))}
                 </ul>
