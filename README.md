@@ -84,6 +84,8 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 
 ## Roadmap
 
+- [x] **M6l — Bible LSG 1910** (2026-09-10, #61, feature branch): complete Bible reader, precise verse/range sermon matching, shareable selections and bidirectional sermon links. 66 books / 1,189 chapters / 31,170 verses; awaiting merge to publish.
+
 - [x] Plan & specs (decision logs in `docs/SERMOTHEQUE.md` / `docs/PRD.md`)
 - [x] **M1** — first-pass catalog from SoundCloud titles
 - [x] **M1b** — series clustering (expository + thematic)

@@ -82,3 +82,18 @@ npm test         # tests de l'index plein-texte (node --test, sans dépendance)
 - Décisions : #54 (projection au build), #55 (dépôt public), #56 (citations OSIS),
   #57 (vocabulaire de thèmes), #58 (cette raison d'être) — dans
   [`docs/SERMOTHEQUE.md`](../../docs/SERMOTHEQUE.md)
+
+## Bible LSG 1910 (2026-09-10, décision #61)
+
+Le lecteur `/bible/` propose les 66 livres, la recherche par référence (ex. `Jean 3:16–18`),
+la sélection d'un verset ou d'une plage, les chapitres précédent/suivant et le partage.
+Les prédications apparaissent à côté du texte sur ordinateur et dans un panneau mobile.
+La relation distingue texte principal, citation et contexte moins précis (chapitre/livre).
+Les fiches sermon ouvrent directement leurs passages dans la Bible ; un lien permet de
+reprendre la sélection après avoir ouvert une prédication depuis le lecteur.
+
+Texte LSG versionné dans `data/bible/lsg/`, source et checksum documentés sur place.
+Projection par chapitre au build, index des sermons par livre, 1 189 pages pré-rendues pour
+les liens directs sur GitHub Pages. Aucune API Bible ni nouvelle dépendance.
+La sélection ne prétend pas localiser une citation dans l'audio : cet alignement est différé.
+Implémenté sur la branche de fonctionnalité ; publication à la fusion.

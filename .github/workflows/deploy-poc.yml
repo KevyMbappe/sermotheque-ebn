@@ -11,6 +11,7 @@ on:
     paths:
       - "apps/web-poc/**"
       - "data/catalog/**"
+      - "data/bible/**"
       - ".github/workflows/deploy-poc.yml"
   workflow_dispatch:
 

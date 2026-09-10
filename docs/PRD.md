@@ -1,7 +1,7 @@
 # PRD — Église Bonne Nouvelle App Suite
 
 **Status:** Draft v2 — content-foundation-first reframe
-**Last updated:** 2026-07-30
+**Last updated:** 2026-09-10
 **Owner:** kevy@merca.team
 **Existing site:** https://www.eglisebonnenouvelle.com (WordPress, theme `EBN_Version_Finale`)
 **Sermon sources today:** YouTube (`@eglisebonnenouvelle855`) + SoundCloud
@@ -256,3 +256,10 @@ This is the heart of Phase 1: a repeatable per-sermon workflow that produces ric
 **Consumption layer — first surfaces (2026-07-30):**
 37. **A static web app is the first consumption surface** (`apps/web-poc/`, WIP — full rationale in SERMOTHEQUE.md #54): React 18 + Vite 6, **build-time projection of the canonical catalog**, no API and no server. It is the first thing to *read* the dataset rather than build it, and it validates the "apps are replaceable windows" claim in practice. Scope is **elder demo + de-risking the WordPress sermon library** — it does not displace #2 (headless WP as CMS) or the WP-first web surface in #4. Its player abstraction (one `seekTo`/`onTime` interface over the SoundCloud Widget and YouTube IFrame APIs) is the first working sketch of what the apps will need.
 38. **RESOLVED (2026-08-01) — the native Xcode project has been deleted.** It sat at the repo root (`Sermothèque EBN/`, an untouched default SwiftUI/SwiftData template). This **contradicts #9 (Expo dev builds)** and #5 (Android TV + Fire TV first, Apple TV fast-follow). No decision was recorded to move to native iOS, and the template contains no project code. Logged here so the contradiction isn't silently carried: either remove it, or write the decision that supersedes #9 and re-phase the surfaces in §3.
+
+39. **2026-09-10 — Bible-linked preaching in the POC (#61).** Complete LSG 1910 reader with
+    verse/range selection, exact main-passage/citation relations, separate chapter/book
+    context, shareable URLs and return from a sermon. Reusable pinned Bible dataset and
+    static chapter/index projection; no Bible API. Implemented on feature branch, awaiting
+    review/merge and browser acceptance. This demonstrates a future app capability without
+    expanding native app delivery or adding accounts/notes/audio alignment to this milestone.

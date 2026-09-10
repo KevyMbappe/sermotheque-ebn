@@ -50,6 +50,8 @@ WordPress **authors but does not own**. The canonical dataset (this repo's `data
 
 ## Key decisions (the short list — full logs in the specs)
 
+- **#61 — Bible reader:** pinned public-domain LSG 1910, local build projection and precise OSIS overlap; chapter/book context kept separate. No audio timestamps inferred from citations.
+
 - **System of record:** WP authors → canonical = portable, git-versioned dataset. (Build custom, not a turnkey vendor.)
 - **SoundCloud is the catalog spine** (its titles are 74% structured vs 20% on YouTube). Match YouTube videos *in* by title/date.
 - **Scripture:** canonical **OSIS** IDs + FR/EN parser → browse-by-book.
@@ -114,6 +116,14 @@ Everything the pipeline needs lives **inside the project** (never `/tmp`):
 - Nothing critical is unrecoverable: the pipeline is committed, audio re-downloadable, transcripts regenerable.
 
 ## Current status & next steps
+
+**2026-09-10 — M6l / #61 implemented on feature branch (not yet deployed):** full LSG 1910
+reader with exact verse/range matching, separate chapter/book context, shareable selection,
+sermon-to-Bible links and return to reading. Pinned text: 66 books / 1,189 chapters / 31,170
+verses in `data/bible/lsg/`; 1,189 direct chapter pages. Validation: 20 JS tests, 3 importer
+tests and production build. Next for this feature: review/merge and browser acceptance.
+Two existing references are excluded pending upstream correction (`Gal.6.26`, `Isa.53.32-Isa.53.33`).
+No catalogue/enrichment counts changed; capture backlog remains as below.
 
 **Done:** planning/specs · M1 catalog · M1b series · M2 YT↔SC matching · M2b duration dedup (union 467) · M3 ASR+LLM spike (PASS) · M3b n=8 sample · M4 fold→unified 467 · **M5 enrichment pipeline `build_entry`** · M5b POC (8 real sermons) · M5c cost + Haiku-vs-Sonnet bake-off · M5d timestamp capture · M5e docs restructure · **M5f pipeline hardening (cap 120k, YT date, live tracking + cost, txt+vtt default) + first real YT run** · **M5h matcher hardening (false positives fixed; union 467→517)** · **M5i enrichment writeback (#44)** · **M5j production runner + default-speaker rule (#45)** · **M5k/l audio voiceprint validated + rich schema (#46)** · **M5m voiceprint capture adapter** · **M5n 30-sermon checkpoint (#47, store→39, ~$0.0705/sermon)** · **M5o language-from-audio + retry-on-garbage (#48)** · **M5p–q audio speaker attribution + series priors (#49–#52: all 5 voices, 100 rows audio-fingerprint, LOO 99%)** · **M5s capture/enrich decoupled + rebuild integrity (#52)** · **M5t frozen record contract + Sonnet-only (#53)** · **M5u capture batch (139 transcripts + 217 voiceprints banked, $0 API — paused at ~27%)** · **M5v enrich-from-disk (store 39→139, no re-ASR)** · **M6a POC web WIP (#54)** · **M6b/c POC web deployed (#55)** · **M5w in-body citations → OSIS (#56)** · **M6f vocabulaire de thèmes (#57)** · **M6g finitions POC (recherche plein-texte, fiche imprimable, vignettes d'aperçu)** · **M6h fiche sermon restructurée (blocs repliables + lecteur collant)** · **M6i recherche plein-texte dans les transcriptions (#59)** · **M6j raison d'être du POC formalisée (#58)** · **M6k chemin YouTube dé-risqué + pastille de source + filtre plateforme (#60)** · 153 tests Python + 13 tests JS · git + GitHub remote.
 
