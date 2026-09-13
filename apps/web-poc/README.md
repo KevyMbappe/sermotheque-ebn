@@ -96,4 +96,9 @@ Texte LSG versionné dans `data/bible/lsg/`, source et checksum documentés sur 
 Projection par chapitre au build, index des sermons par livre, 1 189 pages pré-rendues pour
 les liens directs sur GitHub Pages. Aucune API Bible ni nouvelle dépendance.
 La sélection ne prétend pas localiser une citation dans l'audio : cet alignement est différé.
-Implémenté sur la branche de fonctionnalité ; publication à la fusion.
+Déployé sur GitHub Pages depuis la fusion de la PR #11.
+
+L’itération 1 de l’expérience classique ajoute une navigation livre → chapitre → verset,
+les versets en ligne dans les paragraphes, les titres de section, l’indentation poétique et
+les paroles de Jésus en rouge telles que balisées par l’édition source. Les titres et limites
+du texte rouge sont des repères éditoriaux, pas une couche ajoutée par Sermothèque.

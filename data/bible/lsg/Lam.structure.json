@@ -1,0 +1,6667 @@
+{
+  "1": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Les malheurs de Jérusalem"
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Eh quoi! Elle est assise solitaire, cette ville si peuplée!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Elle est semblable à une veuve!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Grande entre les nations, souveraine parmi les états,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Elle est réduite à la servitude!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Elle pleure durant la nuit, et ses joues sont couvertes de larmes;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "De tous ceux qui l’aimaient nul ne la console;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Tous ses amis lui sont devenus infidèles,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Ils sont devenus ses ennemis.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Juda est en exil, victime de l’oppression et d’une grande servitude;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Il habite au milieu des nations,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Et il n’y trouve point de repos;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Tous ses persécuteurs l’ont surpris dans l’angoisse.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Les chemins de Sion sont dans le deuil, car on ne va plus aux fêtes;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Toutes ses portes sont désertes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Ses sacrificateurs gémissent,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Ses vierges sont affligées, et elle est remplie d’amertume.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Ses oppresseurs triomphent, ses ennemis sont en paix;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Car l’Éternel l’a humiliée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "A cause de la multitude de ses péchés;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Ses enfants ont marché captifs devant l’oppresseur.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "La fille de Sion a perdu toute sa gloire;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Ses chefs sont comme des cerfs",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Qui ne trouvent point de pâture,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Et qui fuient sans force devant celui qui les chasse.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Aux jours de sa détresse et de sa misère, Jérusalem s’est souvenue",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "De tous les biens dès longtemps son partage,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Quand son peuple est tombé sans secours sous la main de l’oppresseur;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Ses ennemis l’ont vue, et ils ont ri de sa chute.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Jérusalem a multiplié ses péchés,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "C’est pourquoi elle est un objet d’aversion;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Tous ceux qui l’honoraient la méprisent, en voyant sa nudité;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Elle-même soupire, et détourne la face.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "La souillure était dans les pans de sa robe, et elle ne songeait pas à sa fin;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Elle est tombée d’une manière étonnante, et nul ne la console.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Vois ma misère, ô Éternel!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Quelle arrogance chez l’ennemi!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "L’oppresseur a étendu la main",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Sur tout ce qu’elle avait de précieux;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Elle a vu pénétrer dans son sanctuaire les nations",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Auxquelles tu avais défendu d’entrer dans ton assemblée.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Tout son peuple soupire, il cherche du pain;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Ils ont donné leurs choses précieuses pour de la nourriture,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Afin de ranimer leur vie.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Vois, Éternel, regarde comme je suis avilie!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Je m’adresse à vous, à vous tous qui passez ici!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Regardez et voyez s’il est une douleur pareille à ma douleur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "A celle dont j’ai été frappée!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "L’Éternel m’a affligée au jour de son ardente colère.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "D’en haut il a lancé dans mes os un feu qui les dévore;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Il a tendu un filet sous mes pieds,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Il m’a fait tomber en arrière;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Il m’a jetée dans la désolation, dans une langueur de tous les jours.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Sa main a lié le joug de mes iniquités;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Elles se sont entrelacées, appliquées sur mon cou;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Il a brisé ma force;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Le Seigneur m’a livrée à des mains auxquelles je ne puis résister.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Le Seigneur a terrassé tous mes guerriers au milieu de moi;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Il a rassemblé contre moi une armée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Pour détruire mes jeunes hommes;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Le Seigneur a foulé au pressoir la vierge, fille de Juda.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "C’est pour cela que je pleure, que mes yeux fondent en larmes;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Car il s’est éloigné de moi, celui qui me consolerait,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Qui ranimerait ma vie.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Mes fils sont dans la désolation, parce que l’ennemi a triomphé.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Sion a étendu les mains,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Et personne ne l’a consolée;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "L’Éternel a envoyé contre Jacob les ennemis d’alentour;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Jérusalem a été un objet d’horreur au milieu d’eux.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "L’Éternel est juste,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Car j’ai été rebelle à ses ordres.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Écoutez, vous tous, peuples, et voyez ma douleur!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Mes vierges et mes jeunes hommes sont allés en captivité.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "J’ai appelé mes amis, et ils m’ont trompée.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Mes sacrificateurs et mes anciens ont expiré dans la ville:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Ils cherchaient de la nourriture,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Afin de ranimer leur vie.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Éternel, regarde ma détresse! Mes entrailles bouillonnent,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Mon cœur est bouleversé au-dedans de moi,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Car j’ai été rebelle.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Au-dehors l’épée a fait ses ravages, au-dedans la mort.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "On a entendu mes soupirs, et personne ne m’a consolée;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Tous mes ennemis ont appris mon malheur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Ils se sont réjouis de ce que tu l’as causé;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Tu amèneras, tu publieras le jour où ils seront comme moi.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Que toute leur méchanceté vienne devant toi,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Et traite-les comme tu m’as traitée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "A cause de toutes mes transgressions!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Car mes soupirs sont nombreux, et mon cœur est souffrant.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "La ruine de Jérusalem"
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Eh quoi! Le Seigneur, dans sa colère, a couvert de nuages la fille de Sion!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Il a précipité du ciel sur la terre la magnificence d’Israël!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Il ne s’est pas souvenu de son marchepied,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Au jour de sa colère!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Le Seigneur a détruit sans pitié toutes les demeures de Jacob;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Il a, dans sa fureur, renversé les forteresses de la fille de Juda,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Il les a fait rouler à terre;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Il a profané le royaume et ses chefs.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Il a, dans son ardente colère, abattu toute la force d’Israël;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Il a retiré sa droite en présence de l’ennemi;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Il a allumé dans Jacob des flammes de feu,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Qui dévorent de tous côtés.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Il a tendu son arc comme un ennemi;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Sa droite s’est dressée comme celle d’un assaillant;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Il a fait périr tout ce qui plaisait aux regards;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Il a répandu sa fureur comme un feu sur la tente de la fille de Sion.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Le Seigneur a été comme un ennemi;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Il a dévoré Israël, il a dévoré tous ses palais,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Il a détruit ses forteresses;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Il a rempli la fille de Juda de plaintes et de gémissements.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Il a dévasté sa tente comme un jardin,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Il a détruit le lieu de son assemblée;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "L’Éternel a fait oublier en Sion les fêtes et le sabbat,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Et, dans sa violente colère, il a rejeté le roi et le sacrificateur.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Le Seigneur a dédaigné son autel, repoussé son sanctuaire;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Il a livré entre les mains de l’ennemi les murs des palais de Sion;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Les cris ont retenti dans la maison de l’Éternel,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Comme en un jour de fête.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "L’Éternel avait résolu de détruire les murs de la fille de Sion;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Il a tendu le cordeau, il n’a pas retiré sa main sans les avoir anéantis;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Il a plongé dans le deuil rempart et murailles,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Qui n’offrent plus ensemble qu’une triste ruine.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Ses portes sont enfoncées dans la terre;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Il en a détruit, rompu les barres.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Son roi et ses chefs sont parmi les nations; il n’y a plus de loi.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Même les prophètes ne reçoivent aucune vision de l’Éternel.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Les anciens de la fille de Sion sont assis à terre, ils sont muets;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Ils ont couvert leur tête de poussière,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Ils se sont revêtus de sacs;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Les vierges de Jérusalem laissent retomber leur tête vers la terre.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Mes yeux se consument dans les larmes, mes entrailles bouillonnent,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Ma bile se répand sur la terre,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "A cause du désastre de la fille de mon peuple,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Des enfants et des nourrissons en défaillance dans les rues de la ville.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Ils disaient à leurs mères:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Où y a-t-il du blé et du vin?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Et ils tombaient comme des blessés dans les rues de la ville,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Ils rendaient l’âme sur le sein de leurs mères.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Que dois-je te dire? À quoi te comparer, fille de Jérusalem?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Qui trouver de semblable à toi, et quelle consolation te donner,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Vierge, fille de Sion?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Car ta plaie est grande comme la mer:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Qui pourra te guérir?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Tes prophètes ont eu pour toi des visions vaines et fausses;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Ils n’ont pas mis à nu ton iniquité,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Afin de détourner de toi la captivité;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Ils t’ont donné des oracles mensongers et trompeurs.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Tous les passants battent des mains sur toi,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Ils sifflent, ils secouent la tête contre la fille de Jérusalem:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Est-ce là cette ville qu’on appelait une beauté parfaite,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "La joie de toute la terre?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Tous tes ennemis ouvrent la bouche contre toi,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Ils sifflent, ils grincent des dents,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Ils disent: Nous l’avons engloutie!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "C’est bien le jour que nous attendions, nous l’avons atteint, nous le voyons!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "L’Éternel a exécuté ce qu’il avait résolu,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Il a accompli la parole qu’il avait dès longtemps arrêtée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Il a détruit sans pitié;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Il a fait de toi la joie de l’ennemi,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Il a relevé la force de tes oppresseurs.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Leur cœur crie vers le Seigneur…",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Mur de la fille de Sion, répands jour et nuit des torrents de larmes!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Ne te donne aucun relâche,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Et que ton œil n’ait point de repos!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Lève-toi, pousse des gémissements à l’entrée des veilles de la nuit!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Répands ton cœur comme de l’eau, en présence du Seigneur!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Lève tes mains vers lui pour la vie de tes enfants",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Qui meurent de faim aux coins de toutes les rues!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Vois, Éternel, regarde qui tu as ainsi traité!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Fallait-il que des femmes dévorassent le fruit de leurs entrailles,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Les petits enfants objets de leur tendresse?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Que sacrificateurs et prophètes fussent massacrés dans le sanctuaire du Seigneur?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Les enfants et les vieillards sont couchés par terre dans les rues;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Mes vierges et mes jeunes hommes sont tombés par l’épée;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Tu as tué, au jour de ta colère,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Tu as égorgé sans pitié.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Tu as appelé de toutes parts sur moi l’épouvante, comme à un jour de fête.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Au jour de la colère de l’Éternel, il n’y a eu ni réchappé ni survivant.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Ceux que j’avais soignés et élevés,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Mon ennemi les a consumés.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Souffrances et consolations"
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Je suis l’homme qui a vu la misère",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Sous la verge de sa fureur.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Il m’a conduit, mené dans les ténèbres,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Et non dans la lumière.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Contre moi il tourne et retourne sa main",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Tout le jour.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Il a fait dépérir ma chair et ma peau,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Il a brisé mes os.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Il a bâti autour de moi,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Il m’a environné de poison et de douleur.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Il me fait habiter dans les ténèbres,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Comme ceux qui sont morts dès longtemps.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Il m’a entouré d’un mur, pour que je ne sorte pas;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Il m’a donné de pesantes chaînes.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "J’ai beau crier et implorer du secours,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Il ne laisse pas accès à ma prière.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Il a fermé mon chemin avec des pierres de taille,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Il a détruit mes sentiers.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Il a été pour moi un ours en embuscade,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Un lion dans un lieu caché.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Il a détourné mes voies, il m’a déchiré,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Il m’a jeté dans la désolation.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Il a tendu son arc, et il m’a placé",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Comme un but pour sa flèche.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Il a fait entrer dans mes reins",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Les traits de son carquois.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Je suis pour tout mon peuple un objet de raillerie,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Chaque jour l’objet de leurs chansons.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Il m’a rassasié d’amertume,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Il m’a enivré d’absinthe.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Il a brisé mes dents avec des cailloux,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Il m’a couvert de cendre.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Tu m’as enlevé la paix;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Je ne connais plus le bonheur.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Et j’ai dit: Ma force est perdue,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Je n’ai plus d’espérance en l’Éternel!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Quand je pense à ma détresse et à ma misère,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "A l’absinthe et au poison;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Quand mon âme s’en souvient,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Elle est abattue au-dedans de moi.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Voici ce que je veux repasser en mon cœur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Ce qui me donnera de l’espérance.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Les bontés de l’Éternel ne sont pas épuisées,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Ses compassions ne sont pas à leur terme;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 23,
+          "segments": [
+            {
+              "text": "Elles se renouvellent chaque matin.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 23,
+          "segments": [
+            {
+              "text": "Oh! Que ta fidélité est grande!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 24,
+          "segments": [
+            {
+              "text": "L’Éternel est mon partage, dit mon âme;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 24,
+          "segments": [
+            {
+              "text": "C’est pourquoi je veux espérer en lui.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 25,
+          "segments": [
+            {
+              "text": "L’Éternel a de la bonté pour qui espère en lui,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 25,
+          "segments": [
+            {
+              "text": "Pour l’âme qui le cherche.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 26,
+          "segments": [
+            {
+              "text": "Il est bon d’attendre en silence",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 26,
+          "segments": [
+            {
+              "text": "Le secours de l’Éternel.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 27,
+          "segments": [
+            {
+              "text": "Il est bon pour l’homme",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 27,
+          "segments": [
+            {
+              "text": "De porter le joug dans sa jeunesse.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 28,
+          "segments": [
+            {
+              "text": "Il se tiendra solitaire et silencieux,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 28,
+          "segments": [
+            {
+              "text": "Parce que l’Éternel le lui impose;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 29,
+          "segments": [
+            {
+              "text": "Il mettra sa bouche dans la poussière,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 29,
+          "segments": [
+            {
+              "text": "Sans perdre toute espérance;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 30,
+          "segments": [
+            {
+              "text": "Il présentera la joue à celui qui le frappe,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 30,
+          "segments": [
+            {
+              "text": "Il se rassasiera d’opprobres.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 31,
+          "segments": [
+            {
+              "text": "Car le Seigneur",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 31,
+          "segments": [
+            {
+              "text": "Ne rejette pas à toujours.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 32,
+          "segments": [
+            {
+              "text": "Mais, lorsqu’il afflige,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 32,
+          "segments": [
+            {
+              "text": "Il a compassion selon sa grande miséricorde;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 33,
+          "segments": [
+            {
+              "text": "Car ce n’est pas volontiers qu’il humilie",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 33,
+          "segments": [
+            {
+              "text": "Et qu’il afflige les enfants des hommes.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 34,
+          "segments": [
+            {
+              "text": "Quand on foule aux pieds",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 34,
+          "segments": [
+            {
+              "text": "Tous les captifs du pays,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 35,
+          "segments": [
+            {
+              "text": "Quand on viole la justice humaine",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 35,
+          "segments": [
+            {
+              "text": "A la face du Très-Haut,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 36,
+          "segments": [
+            {
+              "text": "Quand on fait tort à autrui dans sa cause,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 36,
+          "segments": [
+            {
+              "text": "Le Seigneur ne le voit-il pas?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 37,
+          "segments": [
+            {
+              "text": "Qui dira qu’une chose arrive,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 37,
+          "segments": [
+            {
+              "text": "Sans que le Seigneur l’ait ordonnée?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 38,
+          "segments": [
+            {
+              "text": "N’est-ce pas de la volonté du Très-Haut que viennent",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 38,
+          "segments": [
+            {
+              "text": "Les maux et les biens?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 39,
+          "segments": [
+            {
+              "text": "Pourquoi l’homme vivant se plaindrait-il?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 39,
+          "segments": [
+            {
+              "text": "Que chacun se plaigne de ses propres péchés.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 40,
+          "segments": [
+            {
+              "text": "Recherchons nos voies et sondons,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 40,
+          "segments": [
+            {
+              "text": "Et retournons à l’Éternel;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 41,
+          "segments": [
+            {
+              "text": "Élevons nos cœurs et nos mains",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 41,
+          "segments": [
+            {
+              "text": "Vers Dieu qui est au ciel:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 42,
+          "segments": [
+            {
+              "text": "Nous avons péché, nous avons été rebelles!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 42,
+          "segments": [
+            {
+              "text": "Tu n’as point pardonné!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 43,
+          "segments": [
+            {
+              "text": "Tu t’es caché dans ta colère, et tu nous as poursuivis;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 43,
+          "segments": [
+            {
+              "text": "Tu as tué sans miséricorde;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 44,
+          "segments": [
+            {
+              "text": "Tu t’es enveloppé d’un nuage,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 44,
+          "segments": [
+            {
+              "text": "Pour fermer accès à la prière.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 45,
+          "segments": [
+            {
+              "text": "Tu nous as rendus un objet de mépris et de dédain",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 45,
+          "segments": [
+            {
+              "text": "Au milieu des peuples.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 46,
+          "segments": [
+            {
+              "text": "Ils ouvrent la bouche contre nous,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 46,
+          "segments": [
+            {
+              "text": "Tous ceux qui sont nos ennemis.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 47,
+          "segments": [
+            {
+              "text": "Notre partage a été la terreur et la fosse,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 47,
+          "segments": [
+            {
+              "text": "Le ravage et la ruine.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 48,
+          "segments": [
+            {
+              "text": "Des torrents d’eau coulent de mes yeux,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 48,
+          "segments": [
+            {
+              "text": "A cause de la ruine de la fille de mon peuple.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 49,
+          "segments": [
+            {
+              "text": "Mon œil fond en larmes, sans repos,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 49,
+          "segments": [
+            {
+              "text": "Sans relâche,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 50,
+          "segments": [
+            {
+              "text": "Jusqu’à ce que l’Éternel regarde et voie",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 50,
+          "segments": [
+            {
+              "text": "Du haut des cieux;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 51,
+          "segments": [
+            {
+              "text": "Mon œil me fait souffrir,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 51,
+          "segments": [
+            {
+              "text": "A cause de toutes les filles de ma ville.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 52,
+          "segments": [
+            {
+              "text": "Ils m’ont donné la chasse comme à un oiseau,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 52,
+          "segments": [
+            {
+              "text": "Ceux qui sont à tort mes ennemis.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 53,
+          "segments": [
+            {
+              "text": "Ils ont voulu anéantir ma vie dans une fosse,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 53,
+          "segments": [
+            {
+              "text": "Et ils ont jeté des pierres sur moi.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 54,
+          "segments": [
+            {
+              "text": "Les eaux ont inondé ma tête;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 54,
+          "segments": [
+            {
+              "text": "Je disais: Je suis perdu!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 55,
+          "segments": [
+            {
+              "text": "J’ai invoqué ton nom, ô Éternel,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 55,
+          "segments": [
+            {
+              "text": "Du fond de la fosse.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 56,
+          "segments": [
+            {
+              "text": "Tu as entendu ma voix:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 56,
+          "segments": [
+            {
+              "text": "Ne ferme pas l’oreille à mes soupirs, à mes cris!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 57,
+          "segments": [
+            {
+              "text": "Au jour où je t’ai invoqué, tu t’es approché,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 57,
+          "segments": [
+            {
+              "text": "Tu as dit: Ne crains pas!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 58,
+          "segments": [
+            {
+              "text": "Seigneur, tu as défendu la cause de mon âme,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 58,
+          "segments": [
+            {
+              "text": "Tu as racheté ma vie.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 59,
+          "segments": [
+            {
+              "text": "Éternel, tu as vu ce qu’on m’a fait souffrir:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 59,
+          "segments": [
+            {
+              "text": "Rends-moi justice!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 60,
+          "segments": [
+            {
+              "text": "Tu as vu toutes leurs vengeances,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 60,
+          "segments": [
+            {
+              "text": "Tous leurs complots contre moi.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 61,
+          "segments": [
+            {
+              "text": "Éternel, tu as entendu leurs outrages,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 61,
+          "segments": [
+            {
+              "text": "Tous leurs complots contre moi,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 62,
+          "segments": [
+            {
+              "text": "Les discours de mes adversaires, et les projets",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 62,
+          "segments": [
+            {
+              "text": "Qu’ils formaient chaque jour contre moi.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 63,
+          "segments": [
+            {
+              "text": "Regarde quand ils sont assis et quand ils se lèvent:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 63,
+          "segments": [
+            {
+              "text": "Je suis l’objet de leurs chansons.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 64,
+          "segments": [
+            {
+              "text": "Tu leur donneras un salaire, ô Éternel,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 64,
+          "segments": [
+            {
+              "text": "Selon l’œuvre de leurs mains;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 65,
+          "segments": [
+            {
+              "text": "Tu les livreras à l’endurcissement de leur cœur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 65,
+          "segments": [
+            {
+              "text": "A ta malédiction contre eux;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 66,
+          "segments": [
+            {
+              "text": "Tu les poursuivras dans ta colère, et tu les extermineras",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 66,
+          "segments": [
+            {
+              "text": "De dessous les cieux, ô Éternel!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Lamentations sur le sort du peuple"
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Eh quoi! L’or a perdu son éclat!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "L’or pur est altéré!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Les pierres du sanctuaire sont dispersées",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Aux coins de toutes les rues!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Les nobles fils de Sion,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Estimés à l’égal de l’or pur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Sont regardés, hélas! Comme des vases de terre,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Ouvrage des mains du potier!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Les chacals mêmes présentent la mamelle,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Et allaitent leurs petits;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Mais la fille de mon peuple est devenue cruelle",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Comme les autruches du désert.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "La langue du nourrisson s’attache à son palais,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Desséchée par la soif;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Les enfants demandent du pain,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Et personne ne leur en donne.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Ceux qui se nourrissaient de mets délicats",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Périssent dans les rues;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Ceux qui étaient élevés dans la pourpre",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Embrassent les fumiers.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Le châtiment de la fille de mon peuple est plus grand",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Que celui de Sodome,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Détruite en un instant,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Sans que personne ait porté la main sur elle.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Ses princes étaient plus éclatants que la neige,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Plus blancs que le lait;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Ils avaient le teint plus vermeil que le corail;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Leur figure était comme le saphir.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Leur aspect est plus sombre que le noir;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "On ne les reconnaît pas dans les rues;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Ils ont la peau collée sur les os,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Sèche comme du bois.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Ceux qui périssent par l’épée sont plus heureux",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Que ceux qui périssent par la faim,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Qui tombent exténués,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Privés du fruit des champs.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Les femmes, malgré leur tendresse,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Font cuire leurs enfants;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Ils leur servent de nourriture,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Au milieu du désastre de la fille de mon peuple.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "L’Éternel a épuisé sa fureur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Il a répandu son ardente colère;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Il a allumé dans Sion un feu",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Qui en dévore les fondements.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Les rois de la terre n’auraient pas cru,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Aucun des habitants du monde n’aurait cru",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Que l’adversaire, que l’ennemi entrerait",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Dans les portes de Jérusalem.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Voilà le fruit des péchés de ses prophètes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Des iniquités de ses sacrificateurs,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Qui ont répandu dans son sein",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Le sang des justes!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Ils erraient en aveugles dans les rues,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Souillés de sang;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "On ne pouvait",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Toucher leurs vêtements.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Éloignez-vous, impurs! Leur criait-on,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Éloignez-vous, éloignez-vous, ne nous touchez pas!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Ils sont en fuite, ils errent çà et là;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "On dit parmi les nations: Ils n’auront plus leur demeure!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "L’Éternel les a dispersés dans sa colère,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Il ne tourne plus les regards vers eux;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "On n’a eu ni respect pour les sacrificateurs,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Ni pitié pour les vieillards.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Nos yeux se consumaient encore,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Et nous attendions vainement du secours;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Nos regards se portaient avec espérance",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Vers une nation qui ne nous a pas délivrés.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "On épiait nos pas,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Pour nous empêcher d’aller sur nos places;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Notre fin s’approchait, nos jours étaient accomplis…",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Notre fin est arrivée!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Nos persécuteurs étaient plus légers",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Que les aigles du ciel;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Ils nous ont poursuivis sur les montagnes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Ils nous ont dressé des embûches dans le désert.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Celui qui nous faisait respirer, l’oint de l’Éternel,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "A été pris dans leurs fosses,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Lui de qui nous disions:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Nous vivrons sous son ombre parmi les nations.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Réjouis-toi, tressaille d’allégresse, fille d’Édom,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Habitante du pays d’Uts!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Vers toi aussi passera la coupe;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Tu t’enivreras, et tu seras mise à nu.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Fille de Sion, ton iniquité est expiée;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Il ne t’enverra plus en captivité.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Fille d’Édom, il châtiera ton iniquité,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Il mettra tes péchés à découvert.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Prière du peuple opprimé"
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Souviens-toi, Éternel, de ce qui nous est arrivé!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Regarde, vois notre opprobre!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Notre héritage a passé à des étrangers,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Nos maisons à des inconnus.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Nous sommes orphelins, sans père;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Nos mères sont comme des veuves.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Nous buvons notre eau à prix d’argent,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Nous payons notre bois.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Nous sommes poursuivis, le joug sur le cou;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Nous sommes épuisés, nous n’avons point de repos.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Nous avons tendu la main vers l’Égypte, vers l’Assyrie,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Pour nous rassasier de pain.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Nos pères ont péché, ils ne sont plus,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Et c’est nous qui portons la peine de leurs iniquités.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Des esclaves dominent sur nous,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Et personne ne nous délivre de leurs mains.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Nous cherchons notre pain au péril de notre vie,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Devant l’épée du désert.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Notre peau est brûlante comme un four,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Par l’ardeur de la faim.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Ils ont déshonoré les femmes dans Sion,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Les vierges dans les villes de Juda.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Des chefs ont été pendus par leurs mains;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "La personne des vieillards n’a pas été respectée.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Les jeunes hommes ont porté la meule,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Les enfants chancelaient sous des fardeaux de bois.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Les vieillards ne vont plus à la porte,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Les jeunes hommes ont cessé leurs chants.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "La joie a disparu de nos cœurs,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Le deuil a remplacé nos danses.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "La couronne de notre tête est tombée!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Malheur à nous, parce que nous avons péché!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Si notre cœur est souffrant,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Si nos yeux sont obscurcis,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "C’est que la montagne de Sion est ravagée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "C’est que les renards s’y promènent.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Toi, l’Éternel, tu règnes à jamais;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Ton trône subsiste de génération en génération.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Pourquoi nous oublierais-tu pour toujours,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Nous abandonnerais-tu pour de longues années?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Fais-nous revenir vers toi, ô Éternel, et nous reviendrons!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Donne-nous encore des jours comme ceux d’autrefois!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Nous aurais-tu entièrement rejetés,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Et t’irriterais-tu contre nous jusqu’à l’excès?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -450,4 +450,22 @@ elle-même que sa transcription est inexploitable — un cas #48 enrichi malgré
   `Gal.6.26` ; `sc-2174499144` → `Isa.53.32-Isa.53.33`. Aucun remplacement deviné.
 - Limite : les références sont interprétées selon la numérotation LSG ; le catalogue ne
   documente pas encore la versification de chaque citation. Pas d'alignement citation/audio.
-- État : prêt à relire sur la branche ; pas encore publié sur le POC en ligne.
+- État : fusionné et publié le 2026-09-10.
+
+## Bible classique — itération 1, 2026-09-12 (#62, branche de fonctionnalité)
+
+- Le texte plat reste le contrat des références ; une vue structurée parallèle conserve
+  l'ordre de lecture USFM. Les deux vues reconstruisent exactement les mêmes 31 170 versets.
+- Rendu : versets en ligne dans les paragraphes, titres de section, lignes poétiques
+  indentées, divisions et 2 126 segments de paroles de Jésus en rouge selon l'édition source.
+- Sélecteur modal livre → chapitre → verset, utilisable sur bureau et téléphone ; les liens
+  restent des URL réelles pré-rendues et la sélection OSIS continue d'alimenter les sermons.
+- Sont toujours exclus : introductions modernes, références parallèles/croisées, notes et
+  Strong. Les titres et limites rouges sont explicitement des choix éditoriaux de l'édition.
+- Vérification : 21 tests JS, 5 tests Python, couverture structurelle des 31 170 versets,
+  égalité texte plat/structuré et build de production. QA navigateur encore à faire.
+- Itération 2 : copier/partager le texte sélectionné, préférences typographiques, recherche
+  biblique, signets/surlignages locaux.
+- Itération 3 : éditions bibliques libres EN/ES/PT et internationalisation globale. Le contrat
+  devra distinguer édition biblique, langue d'interface, métadonnées éditoriales, chapitres,
+  transcription et sous-titres ; ils partagent des locales mais pas leur provenance.

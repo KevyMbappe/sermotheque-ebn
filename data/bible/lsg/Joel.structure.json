@@ -1,0 +1,4038 @@
+{
+  "1": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Une invasion de sauterelles. Exhortation à la repentance"
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "La parole de l’Éternel qui fut adressée à Joël, fils de Pethuel.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Écoutez ceci, vieillards!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Prêtez l’oreille, vous tous, habitants du pays!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Rien de pareil est-il arrivé de votre temps,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Ou du temps de vos pères?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Racontez-le à vos enfants,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Et que vos enfants le racontent à leurs enfants,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Et leurs enfants à la génération qui suivra!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Ce qu’a laissé le gazam, la sauterelle l’a dévoré;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Ce qu’a laissé la sauterelle, le jélek l’a dévoré;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Ce qu’a laissé le jélek, le hasil l’a dévoré.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Réveillez-vous, ivrognes, et pleurez!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Vous tous, buveurs de vin, gémissez,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Parce que le moût vous est enlevé de la bouche!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Car un peuple est venu fondre sur mon pays,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Puissant et innombrable.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Il a les dents d’un lion,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Les mâchoires d’une lionne.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Il a dévasté ma vigne;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Il a mis en morceaux mon figuier,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Il l’a dépouillé, abattu;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Les rameaux de la vigne ont blanchi.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Lamente-toi, comme la vierge qui se revêt d’un sac",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Pour pleurer l’ami de sa jeunesse!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Offrandes et libations disparaissent de la maison de l’Éternel;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Les sacrificateurs, serviteurs de l’Éternel, sont dans le deuil.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Les champs sont ravagés,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "La terre est attristée;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Car les blés sont détruits,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Le moût est tari, l’huile est desséchée.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Les laboureurs sont consternés, les vignerons gémissent,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "A cause du froment et de l’orge,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Parce que la moisson des champs est perdue.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "La vigne est confuse,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Le figuier languissant;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Le grenadier, le palmier, le pommier,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Tous les arbres des champs sont flétris…",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "La joie a cessé parmi les fils de l’homme!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Sacrificateurs, ceignez-vous et pleurez!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Lamentez-vous, serviteurs de l’autel!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Venez, passez la nuit revêtus de sacs,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Serviteurs de mon Dieu!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Car offrandes et libations ont disparu de la maison de votre Dieu.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Publiez un jeûne, une convocation solennelle!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Assemblez les vieillards, tous les habitants du pays,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Dans la maison de l’Éternel, votre Dieu,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Et criez à l’Éternel!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Ah! Quel jour!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Car le jour de l’Éternel est proche:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Il vient comme un ravage du Tout-Puissant.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "La nourriture n’est-elle pas enlevée sous nos yeux?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "La joie et l’allégresse n’ont-elles pas disparu de la maison de notre Dieu?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Les semences ont séché sous les mottes;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Les greniers sont vides,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Les magasins sont en ruines,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Car il n’y a point de blé.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Comme les bêtes gémissent!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Les troupeaux de bœufs sont consternés,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Parce qu’ils sont sans pâturage;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Et même les troupeaux de brebis sont en souffrance.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "C’est vers toi que je crie, ô Éternel!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Car le feu a dévoré les plaines du désert,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Et la flamme a brûlé tous les arbres des champs.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Les bêtes des champs crient aussi vers toi;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Car les torrents sont à sec,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Et le feu a dévoré les plaines du désert.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Le jour de l’Éternel"
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Sonnez de la trompette en Sion!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Faites-la retentir sur ma montagne sainte!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Que tous les habitants du pays tremblent!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Car le jour de l’Éternel vient, car il est proche,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Jour de ténèbres et d’obscurité,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Jour de nuées et de brouillards,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Il vient comme l’aurore se répand sur les montagnes.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Voici un peuple nombreux et puissant,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Tel qu’il n’y en a jamais eu,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Et qu’il n’y en aura jamais dans la suite des âges.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Devant lui est un feu dévorant,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Et derrière lui une flamme brûlante;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Le pays était auparavant comme un jardin d’Éden,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Et depuis, c’est un désert affreux:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Rien ne lui échappe.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "A les voir, on dirait des chevaux,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Et ils courent comme des cavaliers.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "A les entendre, on dirait un bruit de chars",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Sur le sommet des montagnes où ils bondissent,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "On dirait un pétillement de la flamme du feu,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Quand elle consume le chaume.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "C’est comme une armée puissante",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Qui se prépare au combat.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Devant eux les peuples tremblent,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Tous les visages pâlissent.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Ils s’élancent comme des guerriers,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Ils escaladent les murs comme des gens de guerre;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Chacun va son chemin,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Sans s’écarter de sa route.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Ils ne se pressent point les uns les autres,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Chacun garde son rang;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Ils se précipitent au travers des traits",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Sans arrêter leur marche.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Ils se répandent dans la ville,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Courent sur les murailles,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Montent sur les maisons,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Entrent par les fenêtres comme un voleur.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Devant eux la terre tremble,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Les cieux sont ébranlés,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Le soleil et la lune s’obscurcissent,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Et les étoiles retirent leur éclat.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "L’Éternel fait entendre sa voix devant son armée;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Car son camp est immense,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Et l’exécuteur de sa parole est puissant;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Car le jour de l’Éternel est grand, il est terrible:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Qui pourra le soutenir?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Appel à la repentance"
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Maintenant encore, dit l’Éternel,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Revenez à moi de tout votre cœur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Avec des jeûnes, avec des pleurs et des lamentations!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Déchirez vos cœurs et non vos vêtements,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Et revenez à l’Éternel, votre Dieu;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Car il est compatissant et miséricordieux,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Lent à la colère et riche en bonté,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Et il se repent des maux qu’il envoie.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Qui sait s’il ne reviendra pas et ne se repentira pas,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Et s’il ne laissera pas après lui la bénédiction,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Des offrandes et des libations pour l’Éternel, votre Dieu?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Sonnez de la trompette en Sion!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Publiez un jeûne, une convocation solennelle!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Assemblez le peuple, formez une sainte réunion!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Assemblez les vieillards,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Assemblez les enfants,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Même les nourrissons à la mamelle!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Que l’époux sorte de sa demeure,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Et l’épouse de sa chambre!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Qu’entre le portique et l’autel",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Pleurent les sacrificateurs, Serviteurs de l’Éternel,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Et qu’ils disent: Éternel, épargne ton peuple!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Ne livre pas ton héritage à l’opprobre,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Aux railleries des nations!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Pourquoi dirait-on parmi les peuples:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Où est leur Dieu?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Promesses"
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "L’Éternel est ému de jalousie pour son pays,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Et il épargne son peuple.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "L’Éternel répond, il dit à son peuple:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Voici, je vous enverrai du blé,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Du moût et de l’huile,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Et vous en serez rassasiés;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Et je ne vous livrerai plus à l’opprobre parmi les nations.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "J’éloignerai de vous l’ennemi du nord,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Je le chasserai vers une terre aride et déserte,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Son avant-garde dans la mer orientale,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Son arrière-garde dans la mer occidentale;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Et son infection se répandra,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Sa puanteur s’élèvera dans les airs,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Parce qu’il a fait de grandes choses.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Terre, ne crains pas,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Sois dans l’allégresse et réjouis-toi,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Car l’Éternel fait de grandes choses!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Bêtes des champs, ne craignez pas,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Car les plaines du désert reverdiront,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Car les arbres porteront leurs fruits,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "Le figuier et la vigne donneront leurs richesses.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 23,
+          "segments": [
+            {
+              "text": "Et vous, enfants de Sion, soyez dans l’allégresse et réjouissez-vous",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 23,
+          "segments": [
+            {
+              "text": "En l’Éternel, votre Dieu,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 23,
+          "segments": [
+            {
+              "text": "Car il vous donnera la pluie en son temps,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 23,
+          "segments": [
+            {
+              "text": "Il vous enverra la pluie de la première et de l’arrière-saison,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 23,
+          "segments": [
+            {
+              "text": "Comme autrefois.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 24,
+          "segments": [
+            {
+              "text": "Les aires se rempliront de blé,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 24,
+          "segments": [
+            {
+              "text": "Et les cuves regorgeront de moût et d’huile.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 25,
+          "segments": [
+            {
+              "text": "Je vous remplacerai les années",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 25,
+          "segments": [
+            {
+              "text": "Qu’ont dévorées la sauterelle,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 25,
+          "segments": [
+            {
+              "text": "Le jélek, le hasil et le gazam,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 25,
+          "segments": [
+            {
+              "text": "Ma grande armée que j’avais envoyée contre vous.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 26,
+          "segments": [
+            {
+              "text": "Vous mangerez et vous vous rassasierez,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 26,
+          "segments": [
+            {
+              "text": "Et vous célébrerez le nom de l’Éternel, votre Dieu,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 26,
+          "segments": [
+            {
+              "text": "Qui aura fait pour vous des prodiges;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 26,
+          "segments": [
+            {
+              "text": "Et mon peuple ne sera plus jamais dans la confusion.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 27,
+          "segments": [
+            {
+              "text": "Et vous saurez que je suis au milieu d’Israël,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 27,
+          "segments": [
+            {
+              "text": "Que je suis l’Éternel, votre Dieu, et qu’il n’y en a point d’autre,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 27,
+          "segments": [
+            {
+              "text": "Et mon peuple ne sera plus jamais dans la confusion.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 28,
+          "segments": [
+            {
+              "text": "Après cela, je répandrai mon esprit sur toute chair;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 28,
+          "segments": [
+            {
+              "text": "Vos fils et vos filles prophétiseront,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 28,
+          "segments": [
+            {
+              "text": "Vos vieillards auront des songes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 28,
+          "segments": [
+            {
+              "text": "Et vos jeunes gens des visions.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 29,
+          "segments": [
+            {
+              "text": "Même sur les serviteurs et sur les servantes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 29,
+          "segments": [
+            {
+              "text": "Dans ces jours-là, je répandrai mon esprit.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 30,
+          "segments": [
+            {
+              "text": "Je ferai paraître des prodiges dans les cieux et sur la terre,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 30,
+          "segments": [
+            {
+              "text": "Du sang, du feu, et des colonnes de fumée;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 31,
+          "segments": [
+            {
+              "text": "Le soleil se changera en ténèbres,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 31,
+          "segments": [
+            {
+              "text": "Et la lune en sang,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 31,
+          "segments": [
+            {
+              "text": "Avant l’arrivée du jour de l’Éternel,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 31,
+          "segments": [
+            {
+              "text": "De ce jour grand et terrible.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 32,
+          "segments": [
+            {
+              "text": "Alors quiconque invoquera le nom de l’Éternel sera sauvé;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 32,
+          "segments": [
+            {
+              "text": "Le salut sera sur la montagne de Sion et à Jérusalem,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 32,
+          "segments": [
+            {
+              "text": "Comme a dit l’Éternel,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 32,
+          "segments": [
+            {
+              "text": "Et parmi les réchappés que l’Éternel appellera.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Le jugement des nations"
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Car voici, en ces jours, en ce temps-là,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Quand je ramènerai les captifs de Juda et de Jérusalem,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Je rassemblerai toutes les nations,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Et je les ferai descendre dans la vallée de Josaphat;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Là, j’entrerai en jugement avec elles,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Au sujet de mon peuple, d’Israël, mon héritage,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Qu’elles ont dispersé parmi les nations,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Et au sujet de mon pays qu’elles se sont partagé.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Ils ont tiré mon peuple au sort;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Ils ont donné le jeune garçon pour une prostituée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Ils ont vendu la jeune fille pour du vin, et ils ont bu.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Que me voulez-vous, Tyr et Sidon,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Et vous tous, districts des Philistins?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Voulez-vous tirer vengeance de moi?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Si vous voulez vous venger,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Je ferai bien vite retomber votre vengeance sur vos têtes.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Vous avez pris mon argent et mon or;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Et ce que j’avais de plus précieux et de plus beau,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Vous l’avez emporté dans vos temples.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Vous avez vendu les enfants de Juda et de Jérusalem aux enfants de Javan,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Afin de les éloigner de leur territoire.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Voici, je les ferai revenir du lieu où vous les avez vendus,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Et je ferai retomber votre vengeance sur vos têtes.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Je vendrai vos fils et vos filles aux enfants de Juda,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Et ils les vendront aux Sabéens, nation lointaine;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Car l’Éternel a parlé.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Publiez ces choses parmi les nations!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Préparez la guerre!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Réveillez les héros!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Qu’ils s’approchent, qu’ils montent,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Tous les hommes de guerre!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "De vos hoyaux forgez des épées,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Et de vos serpes des lances!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Que le faible dise: Je suis fort!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Hâtez-vous et venez, vous toutes, nations d’alentour,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Et rassemblez-vous!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Là, ô Éternel, fais descendre tes héros!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Que les nations se réveillent, et qu’elles montent",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Vers la vallée de Josaphat!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Car là je siégerai pour juger toutes les nations d’alentour.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Saisissez la faucille,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Car la moisson est mûre!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Venez, foulez,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Car le pressoir est plein,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Les cuves regorgent!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Car grande est leur méchanceté,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "C’est une multitude, une multitude,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Dans la vallée du jugement;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Car le jour de l’Éternel est proche,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Dans la vallée du jugement.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Le soleil et la lune s’obscurcissent,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Et les étoiles retirent leur éclat.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "De Sion l’Éternel rugit,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "De Jérusalem il fait entendre sa voix;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Les cieux et la terre sont ébranlés.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Mais l’Éternel est un refuge pour son peuple,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Un abri pour les enfants d’Israël.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Et vous saurez que je suis l’Éternel, votre Dieu,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Résidant à Sion, ma sainte montagne.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Jérusalem sera sainte,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Et les étrangers n’y passeront plus.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "En ce temps-là, le moût ruissellera des montagnes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Le lait coulera des collines,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Et il y aura de l’eau dans tous les torrents de Juda;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Une source sortira aussi de la maison de l’Éternel,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Et arrosera la vallée de Sittim.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "L’Égypte sera dévastée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Édom sera réduit en désert,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "A cause des violences contre les enfants de Juda,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Dont ils ont répandu le sang innocent dans leur pays.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Mais Juda sera toujours habité,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Et Jérusalem, de génération en génération.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Je vengerai leur sang que je n’ai point encore vengé,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Et L’Éternel résidera dans Sion.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

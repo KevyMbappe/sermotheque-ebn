@@ -199,7 +199,8 @@ async function main() {
   for (const [book, chapters] of Object.entries(bible.books)) {
     for (let c = 1; c <= chapters.length; c++) {
       const title = `${BOOK_FR[book]} ${c} · Louis Segond 1910`;
-      const verses = JSON.parse(readFileSync(join(DIST, `data/bible/${book}/${c}.json`),'utf8'));
+      const chapter = JSON.parse(readFileSync(join(DIST, `data/bible/${book}/${c}.json`),'utf8'));
+      const verses = chapter.verses;
       const body = `<noscript><h1>${esc(title)}</h1>${Object.entries(verses).map(([n,text])=>`<p><sup>${n}</sup> ${esc(text)}</p>`).join('')}<p>Louis Segond 1910 · Domaine public · eBible.org</p></noscript>`;
       write(`/bible/${book}/${c}/`, render(metaTags({title:`${title} — ${SITE_NAME}`,description:`Lire ${BOOK_FR[book]} ${c} et retrouver les prédications de l’Église Bonne Nouvelle sur ce passage.`,path:`bible/${book}/${c}/`}),body));
       biblePages++;

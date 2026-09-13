@@ -1,0 +1,5856 @@
+{
+  "1": [
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Cantique des cantiques, de Salomon.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "break"
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Qu’il me baise des baisers de sa bouche!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Car ton amour vaut mieux que le vin,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Tes parfums ont une odeur suave;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Ton nom est un parfum qui se répand;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "C’est pourquoi les jeunes filles t’aiment.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Entraîne-moi après toi!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Nous courrons!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Le roi m’introduit dans ses appartements…",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Nous nous égaierons, nous nous réjouirons à cause de toi;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Nous célébrerons ton amour plus que le vin.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "C’est avec raison que l’on t’aime.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Je suis noire, mais je suis belle, filles de Jérusalem,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Comme les tentes de Kédar, comme les pavillons de Salomon.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Ne prenez pas garde à mon teint noir:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "C’est le soleil qui m’a brûlée.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Les fils de ma mère se sont irrités contre moi,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Ils m’ont faite gardienne des vignes.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Ma vigne, à moi, je ne l’ai pas gardée.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Dis-moi, ô toi que mon cœur aime,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Où tu fais paître tes brebis,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Où tu les fais reposer à midi;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Car pourquoi serais-je comme une égarée",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Près des troupeaux de tes compagnons?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Si tu ne le sais pas, ô la plus belle des femmes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Sors sur les traces des brebis,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Et fais paître tes chevreaux",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Près des demeures des bergers.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "A ma jument qu’on attelle aux chars de Pharaon",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Je te compare, ô mon amie.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Tes joues sont belles au milieu des colliers,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Ton cou est beau au milieu des rangées de perles.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Nous te ferons des colliers d’or,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Avec des points d’argent.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Tandis que le roi est dans son entourage,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Mon nard exhale son parfum.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Mon bien-aimé est pour moi un bouquet de myrrhe,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Qui repose entre mes seins.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Mon bien-aimé est pour moi une grappe de troëne",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Des vignes d’En-Guédi.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Que tu es belle, mon amie, que tu es belle!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Tes yeux sont des colombes.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Que tu es beau, mon bien-aimé, que tu es aimable!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Notre lit, c’est la verdure.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Les solives de nos maisons sont des cèdres,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Nos lambris sont des cyprès.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Je suis un narcisse de Saron,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Un lis des vallées.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Comme un lis au milieu des épines,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Telle est mon amie parmi les jeunes filles.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Comme un pommier au milieu des arbres de la forêt,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Tel est mon bien-aimé parmi les jeunes hommes.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "J’ai désiré m’asseoir à son ombre,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Et son fruit est doux à mon palais.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Il m’a fait entrer dans la maison du vin;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Et la bannière qu’il déploie sur moi, c’est l’amour.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Soutenez-moi avec des gâteaux de raisins,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Fortifiez-moi avec des pommes;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Car je suis malade d’amour.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Que sa main gauche soit sous ma tête,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Et que sa droite m’embrasse!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Je vous en conjure, filles de Jérusalem,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Par les gazelles et les biches des champs,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Ne réveillez pas, ne réveillez pas l’amour,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Avant qu’elle le veuille.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "C’est la voix de mon bien-aimé!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Le voici, il vient,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Sautant sur les montagnes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Bondissant sur les collines.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Mon bien-aimé est semblable à la gazelle",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Ou au faon des biches.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Le voici, il est derrière notre mur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Il regarde par la fenêtre,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Il regarde par le treillis.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Mon bien-aimé parle et me dit:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Lève-toi, mon amie, ma belle, et viens!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Car voici, l’hiver est passé;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "La pluie a cessé, elle s’en est allée.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Les fleurs paraissent sur la terre,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Le temps de chanter est arrivé,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Et la voix de la tourterelle se fait entendre dans nos campagnes.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Le figuier embaume ses fruits,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Et les vignes en fleur exhalent leur parfum.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Lève-toi, mon amie, ma belle, et viens!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Ma colombe, qui te tiens dans les fentes du rocher,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Qui te caches dans les parois escarpées,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Fais-moi voir ta figure,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Fais-moi entendre ta voix;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Car ta voix est douce, et ta figure est agréable.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Prenez-nous les renards,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Les petits renards qui ravagent les vignes;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Car nos vignes sont en fleur.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Mon bien-aimé est à moi, et je suis à lui;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Il fait paître son troupeau parmi les lis.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Avant que le jour se rafraîchisse,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Et que les ombres fuient,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Reviens!… sois semblable, mon bien-aimé,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "A la gazelle ou au faon des biches,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Sur les montagnes qui nous séparent.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Sur ma couche, pendant les nuits,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "J’ai cherché celui que mon cœur aime;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Je l’ai cherché, et je ne l’ai point trouvé…",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Je me lèverai, et je ferai le tour de la ville,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Dans les rues et sur les places;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Je chercherai celui que mon cœur aime…",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Je l’ai cherché, et je ne l’ai point trouvé.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Les gardes qui font la ronde dans la ville m’ont rencontrée:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Avez-vous vu celui que mon cœur aime?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "A peine les avais-je passés,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Que j’ai trouvé celui que mon cœur aime;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Je l’ai saisi, et je ne l’ai point lâché",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Jusqu’à ce que je l’aie amené dans la maison de ma mère,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Dans la chambre de celle qui m’a conçue.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Je vous en conjure, filles de Jérusalem,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Par les gazelles et les biches des champs,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Ne réveillez pas, ne réveillez pas l’amour,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Avant qu’elle le veuille.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Qui est celle qui monte du désert,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Comme des colonnes de fumée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Au milieu des vapeurs de myrrhe et d’encens",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Et de tous les aromates des marchands?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Voici la litière de Salomon,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Et autour d’elle soixante vaillants hommes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Des plus vaillants d’Israël.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Tous sont armés de l’épée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Sont exercés au combat;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Chacun porte l’épée sur sa hanche,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "En vue des alarmes nocturnes.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Le roi Salomon s’est fait une litière",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "De bois du Liban.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Il en a fait les colonnes d’argent,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Le dossier d’or,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Le siège de pourpre;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Au milieu est une broderie, œuvre d’amour",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Des filles de Jérusalem.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Sortez, filles de Sion, regardez",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Le roi Salomon,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Avec la couronne dont sa mère l’a couronné",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Le jour de ses fiançailles,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Le jour de la joie de son cœur.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Que tu es belle, mon amie, que tu es belle!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Tes yeux sont des colombes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Derrière ton voile.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Tes cheveux sont comme un troupeau de chèvres,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Suspendues aux flancs de la montagne de Galaad.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Tes dents sont comme un troupeau de brebis tondues,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Qui remontent de l’abreuvoir;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Toutes portent des jumeaux,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Aucune d’elles n’est stérile.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Tes lèvres sont comme un fil cramoisi,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Et ta bouche est charmante;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Ta joue est comme une moitié de grenade,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Derrière ton voile.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Ton cou est comme la tour de David,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Bâtie pour être un arsenal;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Mille boucliers y sont suspendus,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Tous les boucliers des héros.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Tes deux seins sont comme deux faons,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Comme les jumeaux d’une gazelle,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Qui paissent au milieu des lis.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Avant que le jour se rafraîchisse,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Et que les ombres fuient,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "J’irai à la montagne de la myrrhe",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Et à la colline de l’encens.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Tu es toute belle, mon amie,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Et il n’y a point en toi de défaut.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Viens avec moi du Liban, ma fiancée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Viens avec moi du Liban!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Regarde du sommet de l’Amana,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Du sommet du Senir et de l’Hermon,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Des tanières des lions,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Des montagnes des léopards.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Tu me ravis le cœur, ma sœur, ma fiancée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Tu me ravis le cœur par l’un de tes regards,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Par l’un des colliers de ton cou.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Que de charmes dans ton amour, ma sœur, ma fiancée!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Comme ton amour vaut mieux que le vin,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Et combien tes parfums sont plus suaves que tous les aromates!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Tes lèvres distillent le miel, ma fiancée;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Il y a sous ta langue du miel et du lait,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Et l’odeur de tes vêtements est comme l’odeur du Liban.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Tu es un jardin fermé, ma sœur, ma fiancée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Une source fermée, une fontaine scellée.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Tes jets forment un jardin, où sont des grenadiers,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Avec les fruits les plus excellents,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Les troënes avec le nard;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Le nard et le safran, le roseau aromatique et le cinnamome,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Avec tous les arbres qui donnent l’encens;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "La myrrhe et l’aloès,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Avec tous les principaux aromates;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Une fontaine des jardins,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Une source d’eaux vives,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Des ruisseaux du Liban.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Lève-toi, aquilon! Viens, autan!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Soufflez sur mon jardin, et que les parfums s’en exhalent!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Que mon bien-aimé entre dans son jardin,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Et qu’il mange de ses fruits excellents!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "J’entre dans mon jardin, ma sœur, ma fiancée;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Je cueille ma myrrhe avec mes aromates,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Je mange mon rayon de miel avec mon miel,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Je bois mon vin avec mon lait…",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Mangez, amis, buvez, enivrez-vous d’amour!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "J’étais endormie, mais mon cœur veillait…",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "C’est la voix de mon bien-aimé, qui frappe:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Ouvre-moi, ma sœur, mon amie,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Ma colombe, ma parfaite!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Car ma tête est couverte de rosée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Mes boucles sont pleines des gouttes de la nuit.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "J’ai ôté ma tunique; comment la remettrais-je?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "J’ai lavé mes pieds; comment les salirais-je?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Mon bien-aimé a passé la main par la fenêtre,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Et mes entrailles se sont émues pour lui.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Je me suis levée pour ouvrir à mon bien-aimé;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Et de mes mains a dégoutté la myrrhe,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "De mes doigts, la myrrhe répandue",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Sur la poignée du verrou.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "J’ai ouvert à mon bien-aimé;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Mais mon bien-aimé s’en était allé, il avait disparu.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "J’étais hors de moi, quand il me parlait.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Je l’ai cherché, et je ne l’ai point trouvé;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Je l’ai appelé, et il ne m’a point répondu.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Les gardes qui font la ronde dans la ville m’ont rencontrée;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Ils m’ont frappée, ils m’ont blessée;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Ils m’ont enlevé mon voile, les gardes des murs.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Je vous en conjure, filles de Jérusalem,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Si vous trouvez mon bien-aimé,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Que lui direz-vous?…",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Que je suis malade d’amour.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Qu’a ton bien-aimé de plus qu’un autre,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "O la plus belle des femmes?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Qu’a ton bien-aimé de plus qu’un autre,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Pour que tu nous conjures ainsi?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Mon bien-aimé est blanc et vermeil;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Il se distingue entre dix mille.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Sa tête est de l’or pur;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Ses boucles sont flottantes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Noires comme le corbeau.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Ses yeux sont comme des colombes au bord des ruisseaux,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Se baignant dans le lait,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Reposant au sein de l’abondance.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Ses joues sont comme un parterre d’aromates,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Une couche de plantes odorantes;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Ses lèvres sont des lis,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "D’où découle la myrrhe.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Ses mains sont des anneaux d’or,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Garnis de chrysolithes;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Son corps est de l’ivoire poli,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Couvert de saphirs;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Ses jambes sont des colonnes de marbre blanc,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Posées sur des bases d’or pur.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Son aspect est comme le Liban,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Distingué comme les cèdres.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Son palais n’est que douceur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Et toute sa personne est pleine de charme.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Tel est mon bien-aimé, tel est mon ami,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Filles de Jérusalem!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "6": [
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Où est allé ton bien-aimé,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "O la plus belle des femmes?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "De quel côté ton bien-aimé s’est-il dirigé?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Nous le chercherons avec toi.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Mon bien-aimé est descendu à son jardin,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Au parterre d’aromates,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Pour faire paître son troupeau dans les jardins,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Et pour cueillir des lis.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Je suis à mon bien-aimé, et mon bien-aimé est à moi;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Il fait paître son troupeau parmi les lis.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Tu es belle, mon amie, comme Thirtsa,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Agréable comme Jérusalem,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Mais terrible comme des troupes sous leurs bannières.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Détourne de moi tes yeux, car ils me troublent.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Tes cheveux sont comme un troupeau de chèvres,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Suspendues aux flancs de Galaad.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Tes dents sont comme un troupeau de brebis,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Qui remontent de l’abreuvoir;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Toutes portent des jumeaux,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Aucune d’elles n’est stérile.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Ta joue est comme une moitié de grenade,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Derrière ton voile…",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Il y a soixante reines, quatre-vingts concubines,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Et des jeunes filles sans nombre.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Une seule est ma colombe, ma parfaite;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Elle est l’unique de sa mère,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "La préférée de celle qui lui donna le jour.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Les jeunes filles la voient, et la disent heureuse;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Les reines et les concubines aussi, et elles la louent.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Qui est celle qui apparaît comme l’aurore,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Belle comme la lune, pure comme le soleil,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Mais terrible comme des troupes sous leurs bannières?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Je suis descendue au jardin des noyers,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Pour voir la verdure de la vallée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Pour voir si la vigne pousse,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Si les grenadiers fleurissent.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Je ne sais, mais mon désir m’a rendue semblable",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Aux chars de mon noble peuple.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "7": [
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Reviens, reviens, Sulamithe!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Reviens, reviens, afin que nous te regardions.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Qu’avez-vous à regarder la Sulamithe",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Comme une danse de deux chœurs?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Que tes pieds sont beaux dans ta chaussure, fille de prince!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Les contours de ta hanche sont comme des colliers,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Œuvre des mains d’un artiste.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Ton sein est une coupe arrondie,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Où le vin parfumé ne manque pas;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Ton corps est un tas de froment,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Entouré de lis.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Tes deux seins sont comme deux faons,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Comme les jumeaux d’une gazelle.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Ton cou est comme une tour d’ivoire;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Tes yeux sont comme les étangs de Hesbon,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Près de la porte de Bath-Rabbim;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Ton nez est comme la tour du Liban,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Qui regarde du côté de Damas.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Ta tête est élevée comme le Carmel,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Et les cheveux de ta tête sont comme la pourpre;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Un roi est enchaîné par des boucles!…",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Que tu es belle, que tu es agréable,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "O mon amour, au milieu des délices!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Ta taille ressemble au palmier,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Et tes seins à des grappes.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Je me dis: Je monterai sur le palmier,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "J’en saisirai les rameaux!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Que tes seins soient comme les grappes de la vigne,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Le parfum de ton souffle comme celui des pommes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Et ta bouche comme un vin excellent,…",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Qui coule aisément pour mon bien-aimé,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Et glisse sur les lèvres de ceux qui s’endorment!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Je suis à mon bien-aimé,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Et ses désirs se portent vers moi.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Viens, mon bien-aimé, sortons dans les champs,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Demeurons dans les villages!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Dès le matin nous irons aux vignes,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Nous verrons si la vigne pousse, si la fleur s’ouvre,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Si les grenadiers fleurissent.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Là je te donnerai mon amour.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Les mandragores répandent leur parfum,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Et nous avons à nos portes tous les meilleurs fruits,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Nouveaux et anciens:",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Mon bien-aimé, je les ai gardés pour toi.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "8": [
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Oh! Que n’es-tu mon frère,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Allaité des mamelles de ma mère!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Je te rencontrerais dehors, je t’embrasserais,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Et l’on ne me mépriserait pas.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Je veux te conduire, t’amener à la maison de ma mère;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Tu me donneras tes instructions,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Et je te ferai boire du vin parfumé,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Du moût de mes grenades.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Que sa main gauche soit sous ma tête,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Et que sa droite m’embrasse!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Je vous en conjure, filles de Jérusalem,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Ne réveillez pas, ne réveillez pas l’amour,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Avant qu’elle le veuille.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Qui est celle qui monte du désert,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Appuyée sur son bien-aimé?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Je t’ai réveillée sous le pommier;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Là ta mère t’a enfantée,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "C’est là qu’elle t’a enfantée, qu’elle t’a donné le jour.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Mets-moi comme un sceau sur ton cœur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Comme un sceau sur ton bras;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Car l’amour est fort comme la mort,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "La jalousie est inflexible comme le séjour des morts;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Ses ardeurs sont des ardeurs de feu,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Une flamme de l’Éternel.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Les grandes eaux ne peuvent éteindre l’amour,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Et les fleuves ne le submergeraient pas;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Quand un homme offrirait tous les biens de sa maison contre l’amour,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Il ne s’attirerait que le mépris.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Nous avons une petite sœur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Qui n’a point encore de mamelles;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Que ferons-nous de notre sœur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Le jour où on la recherchera?",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Si elle est un mur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Nous bâtirons sur elle des créneaux d’argent;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Si elle est une porte,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Nous la fermerons avec une planche de cèdre.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Je suis un mur,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Et mes seins sont comme des tours;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "J’ai été à ses yeux comme celle qui trouve la paix.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Salomon avait une vigne à Baal-Hamon;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Il remit la vigne à des gardiens;",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Chacun apportait pour son fruit mille sicles d’argent.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Ma vigne, qui est à moi, je la garde.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "A toi, Salomon, les mille sicles,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Et deux cents à ceux qui gardent le fruit!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Habitante des jardins!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Des amis prêtent l’oreille à ta voix.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Daigne me la faire entendre!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Fuis, mon bien-aimé!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Sois semblable à la gazelle ou au faon des biches,",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "poetry",
+      "level": 1,
+      "content": [
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Sur les montagnes des aromates!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
