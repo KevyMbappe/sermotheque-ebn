@@ -1,0 +1,46 @@
+name: Validate POC pull request
+
+on:
+  pull_request:
+    paths:
+      - "apps/web-poc/**"
+      - "data/catalog/**"
+      - "data/bible/**"
+      - "pipeline/**"
+      - "tests/**"
+      - "tools/**"
+      - ".github/workflows/validate-poc-pr.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-poc-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: apps/web-poc/package-lock.json
+
+      - name: Run Python tests
+        run: python3 -m unittest discover -s tests
+
+      - name: Install web dependencies
+        working-directory: apps/web-poc
+        run: npm ci
+
+      - name: Run web tests
+        working-directory: apps/web-poc
+        run: npm test
+
+      - name: Build production site
+        working-directory: apps/web-poc
+        run: npm run build
