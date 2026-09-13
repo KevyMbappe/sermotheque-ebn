@@ -1,7 +1,7 @@
 # PRD — Église Bonne Nouvelle App Suite
 
 **Status:** Draft v2 — content-foundation-first reframe
-**Last updated:** 2026-09-10
+**Last updated:** 2026-09-12
 **Owner:** kevy@merca.team
 **Existing site:** https://www.eglisebonnenouvelle.com (WordPress, theme `EBN_Version_Finale`)
 **Sermon sources today:** YouTube (`@eglisebonnenouvelle855`) + SoundCloud
@@ -260,6 +260,16 @@ This is the heart of Phase 1: a repeatable per-sermon workflow that produces ric
 39. **2026-09-10 — Bible-linked preaching in the POC (#61).** Complete LSG 1910 reader with
     verse/range selection, exact main-passage/citation relations, separate chapter/book
     context, shareable URLs and return from a sermon. Reusable pinned Bible dataset and
-    static chapter/index projection; no Bible API. Implemented on feature branch, awaiting
-    review/merge and browser acceptance. This demonstrates a future app capability without
+    static chapter/index projection; no Bible API. Deployed on 2026-09-10; browser acceptance
+    remains pending. This demonstrates a future app capability without
     expanding native app delivery or adding accounts/notes/audio alignment to this milestone.
+
+40. **2026-09-12 — Three Bible iterations and the localization boundary (#62).** Iteration 1
+    restores classic reading structure from USFM: book/chapter/verse picker, inline verses,
+    paragraphs, headings, poetry and edition-defined red letters. Iteration 2 adds local
+    reading tools: selected-text copy/share, typography preferences, Bible-wide search,
+    bookmarks and highlights. Iteration 3 adds redistributable English, Spanish and Portuguese
+    Bible editions as one part of global app localization. Bible text, UI copy, editorial
+    sermon metadata, chapters, transcripts and subtitles share locale identifiers and fallback
+    rules, but remain distinct assets with distinct provenance, availability and licensing.
+    Translation is never inferred merely because a locale exists.

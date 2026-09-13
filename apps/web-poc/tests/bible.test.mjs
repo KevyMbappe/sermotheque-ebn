@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
 import {parseOsis, validReference, referenceLabel, parseInput, matchSermons, buildBibleIndex, biblePath} from '../src/lib/bible.js';
-const read=name=>JSON.parse(readFileSync(new URL(`../../../data/bible/lsg/${name}.json`,import.meta.url)));
+const read=(name,suffix='')=>JSON.parse(readFileSync(new URL(`../../../data/bible/lsg/${name}${suffix}.json`,import.meta.url)));
 const manifest=read('manifest');
 const entry=(id,reference,relation='preached')=>({id,reference,relation});
 test('verse boundaries and precision: no whole-chapter false positives',()=>{
@@ -45,4 +45,23 @@ test('complete pinned text, contiguous chapters/verses, no leaked annotations',(
  }
  assert.equal(chapters,1189);assert.equal(verses,31170);
  assert.match(read('John')['3']['16'],/^Car Dieu a tant aimé le monde/);
+});
+test('reading structure covers every verse and retains paragraphs, headings, poetry and red letters',()=>{
+ const kinds=new Set(), covered=new Set(); let red=0;
+ for(const book of Object.keys(manifest.books)) {
+  const structure=read(book,'.structure');
+  for(const [chapter,blocks] of Object.entries(structure)) {
+   assert.ok(blocks.length,`${book}.${chapter}`);
+   for(const block of blocks) {
+    kinds.add(block.type);
+    for(const run of block.content||[]) {
+     covered.add(`${book}.${chapter}.${run.verse}`);
+     for(const segment of run.segments) {assert.ok(segment.text);if(segment.red)red++;}
+    }
+   }
+  }
+ }
+ assert.deepEqual([...kinds].sort(),['break','heading','paragraph','poetry']);
+ assert.equal(covered.size,31170);
+ assert.ok(red>2000,`expected words-of-Jesus spans, got ${red}`);
 });

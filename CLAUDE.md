@@ -50,6 +50,7 @@ WordPress **authors but does not own**. The canonical dataset (this repo's `data
 
 ## Key decisions (the short list — full logs in the specs)
 
+- **#62 — Classic Bible reading structure:** preserve both a flat verse index and ordered USFM reading blocks. Paragraphs, headings, poetry and `wj` spans are source data, not reconstructed in React. Iteration 2 adds personal/local reading tools; Iteration 3 treats Bible editions and whole-app localization as related but separate contracts.
 - **#61 — Bible reader:** pinned public-domain LSG 1910, local build projection and precise OSIS overlap; chapter/book context kept separate. No audio timestamps inferred from citations.
 
 - **System of record:** WP authors → canonical = portable, git-versioned dataset. (Build custom, not a turnkey vendor.)
@@ -117,11 +118,21 @@ Everything the pipeline needs lives **inside the project** (never `/tmp`):
 
 ## Current status & next steps
 
-**2026-09-10 — M6l / #61 implemented on feature branch (not yet deployed):** full LSG 1910
+**2026-09-12 — M6m / Bible iteration 1 implemented on feature branch:** the LSG importer
+now preserves ordered reading blocks beside the flat verse index. The reader renders inline
+verses in paragraphs, section headings, indented poetry and 2,126 source-defined red-letter
+segments, with a book → chapter → verse dialog. All 31,170 verses occur in the reading
+structure by identity. Validation: 21 JS tests, 5 importer tests and production build.
+Next: review/merge, then Iteration 2 (copy/share selected text, reading preferences,
+Bible-wide search, local bookmarks/highlights). Iteration 3 follows only after an explicit
+translation/locale contract separates Bible editions, UI strings, editorial metadata,
+transcripts/subtitles and generated enrichment.
+
+**2026-09-10 — M6l / #61 deployed:** full LSG 1910
 reader with exact verse/range matching, separate chapter/book context, shareable selection,
 sermon-to-Bible links and return to reading. Pinned text: 66 books / 1,189 chapters / 31,170
 verses in `data/bible/lsg/`; 1,189 direct chapter pages. Validation: 20 JS tests, 3 importer
-tests and production build. Next for this feature: review/merge and browser acceptance.
+tests and production build. Published at `/bible/`; browser acceptance remains pending.
 Two existing references are excluded pending upstream correction (`Gal.6.26`, `Isa.53.32-Isa.53.33`).
 No catalogue/enrichment counts changed; capture backlog remains as below.
 

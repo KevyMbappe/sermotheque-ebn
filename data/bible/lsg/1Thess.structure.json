@@ -1,0 +1,942 @@
+{
+  "1": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adresse et salutation"
+    },
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Paul, et Silvain, et Timothée, à l’Église des Thessaloniciens, qui est en Dieu le Père et en Jésus-Christ le Seigneur: que la grâce et la paix vous soient données!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Succès de l’Évangile à Thessalonique, et fidélité de son Église"
+    },
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Nous rendons continuellement grâces à Dieu pour vous tous, faisant mention de vous dans nos prières,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "nous rappelant sans cesse l’œuvre de votre foi, le travail de votre charité, et la fermeté de votre espérance en notre Seigneur Jésus-Christ, devant Dieu notre Père.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Nous savons, frères bien-aimés de Dieu, que vous avez été élus,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "notre Évangile ne vous ayant pas été prêché en paroles seulement, mais avec puissance, avec l’Esprit Saint, et avec une pleine persuasion; car vous n’ignorez pas que nous nous sommes montrés ainsi parmi vous, à cause de vous.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Et vous-mêmes, vous avez été mes imitateurs et ceux du Seigneur, en recevant la parole au milieu de beaucoup de tribulations, avec la joie du Saint-Esprit,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "en sorte que vous êtes devenus un modèle pour tous les croyants de la Macédoine et de l’Achaïe.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Non seulement, en effet, la parole du Seigneur a retenti de chez vous dans la Macédoine et dans l’Achaïe, mais votre foi en Dieu s’est fait connaître en tout lieu, de telle manière que nous n’avons pas besoin d’en parler.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Car on raconte, à notre sujet, quel accès nous avons eu auprès de vous, et comment vous vous êtes convertis à Dieu, en abandonnant les idoles pour servir le Dieu vivant et vrai,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "et pour attendre des cieux son Fils, qu’il a ressuscité des morts, Jésus, qui nous délivre de la colère à venir.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Comment Paul a exercé son ministère parmi les Thessaloniciens"
+    },
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Vous savez vous-mêmes, frères, que notre arrivée chez vous n’a pas été sans résultat.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Après avoir souffert et reçu des outrages à Philippes, comme vous le savez, nous prîmes de l’assurance en notre Dieu, pour vous annoncer l’Évangile de Dieu, au milieu de bien des combats.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Car notre prédication ne repose ni sur l’erreur, ni sur des motifs impurs, ni sur la fraude;",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "mais, selon que Dieu nous a jugés dignes de nous confier l’Évangile, ainsi nous parlons, non comme pour plaire à des hommes, mais pour plaire à Dieu, qui sonde nos cœurs.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Jamais, en effet, nous n’avons usé de paroles flatteuses, comme vous le savez; jamais nous n’avons eu la cupidité pour mobile, Dieu en est témoin.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Nous n’avons point cherché la gloire qui vient des hommes, ni de vous ni des autres; nous aurions pu nous produire avec autorité comme apôtres de Christ,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "mais nous avons été pleins de douceur au milieu de vous. De même qu’une nourrice prend un tendre soin de ses enfants,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "nous aurions voulu, dans notre vive affection pour vous, non seulement vous donner l’Évangile de Dieu, mais encore nos propres vies, tant vous nous étiez devenus chers.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Vous vous rappelez, frères, notre travail et notre peine: nuit et jour à l’œuvre, pour n’être à charge à aucun de vous, nous vous avons prêché l’Évangile de Dieu.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Vous êtes témoins, et Dieu l’est aussi, que nous avons eu envers vous qui croyez une conduite sainte, juste et irréprochable.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Vous savez aussi que nous avons été pour chacun de vous ce qu’un père est pour ses enfants,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "vous exhortant, vous consolant, vous conjurant de marcher d’une manière digne de Dieu, qui vous appelle à son royaume et à sa gloire.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "C’est pourquoi nous rendons continuellement grâces à Dieu de ce qu’en recevant la parole de Dieu, que nous vous avons fait entendre, vous l’avez reçue, non comme la parole des hommes, mais, ainsi qu’elle l’est véritablement, comme la parole de Dieu, qui agit en vous qui croyez.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Car vous, frères, vous êtes devenus les imitateurs des Églises de Dieu qui sont en Jésus-Christ dans la Judée, parce que vous aussi, vous avez souffert de la part de vos propres compatriotes les mêmes maux qu’elles ont soufferts de la part des Juifs.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Ce sont ces Juifs qui ont fait mourir le Seigneur Jésus et les prophètes, qui nous ont persécutés, qui ne plaisent point à Dieu, et qui sont ennemis de tous les hommes,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "nous empêchant de parler aux païens pour qu’ils soient sauvés, en sorte qu’ils ne cessent de mettre le comble à leurs péchés. Mais la colère a fini par les atteindre.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Désir qu’éprouve l’apôtre de revoir les Thessaloniciens"
+    },
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Pour nous, frères, après avoir été quelque temps séparés de vous, de corps mais non de cœur, nous avons eu d’autant plus ardemment le vif désir de vous voir.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Aussi voulions-nous aller vers vous, du moins moi Paul, une et même deux fois; mais Satan nous en a empêchés.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "Qui est, en effet, notre espérance, ou notre joie, ou notre couronne de gloire? N’est-ce pas vous aussi, devant notre Seigneur Jésus, lors de son avènement?",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Oui, vous êtes notre gloire et notre joie.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "C’est pourquoi, impatients que nous étions, et nous décidant à rester seuls à Athènes,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "nous envoyâmes Timothée, notre frère, ministre de Dieu dans l’Évangile de Christ, pour vous affermir et vous exhorter au sujet de votre foi,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "afin que personne ne fût ébranlé au milieu des tribulations présentes; car vous savez vous-mêmes que nous sommes destinés à cela.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Et lorsque nous étions auprès de vous, nous vous annoncions d’avance que nous serions exposés à des tribulations, comme cela est arrivé, et comme vous le savez.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "Ainsi, dans mon impatience, j’envoyai m’informer de votre foi, dans la crainte que le tentateur ne vous eût tentés, et que nous n’eussions travaillé en vain.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Joie et vœux de l’apôtre à l’occasion des nouvelles apportées par Timothée"
+    },
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Mais Timothée, récemment arrivé ici de chez vous, nous a donné de bonnes nouvelles de votre foi et de votre charité, et nous a dit que vous avez toujours de nous un bon souvenir, désirant nous voir comme nous désirons aussi vous voir.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "En conséquence, frères, au milieu de toutes nos calamités et de nos tribulations, nous avons été consolés à votre sujet, à cause de votre foi.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Car maintenant nous vivons, puisque vous demeurez fermes dans le Seigneur.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Quelles actions de grâces, en effet, nous pouvons rendre à Dieu à votre sujet, pour toute la joie que nous éprouvons à cause de vous, devant notre Dieu!",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "Nuit et jour, nous le prions avec une extrême ardeur de nous permettre de vous voir, et de compléter ce qui manque à votre foi.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "Que Dieu lui-même, notre Père, et notre Seigneur Jésus, aplanissent notre route pour que nous allions à vous!",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Que le Seigneur augmente de plus en plus parmi vous, et à l’égard de tous, cette charité que nous avons nous-mêmes pour vous,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "afin d’affermir vos cœurs pour qu’ils soient irréprochables dans la sainteté devant Dieu notre Père, lors de l’avènement de notre Seigneur Jésus avec tous ses saints!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Exhortation à la sainteté, à la charité, au travail"
+    },
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Au reste, frères, puisque vous avez appris de nous comment vous devez vous conduire et plaire à Dieu, et que c’est là ce que vous faites, nous vous prions et nous vous conjurons au nom du Seigneur Jésus de marcher à cet égard de progrès en progrès.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Vous savez, en effet, quels préceptes nous vous avons donnés de la part du Seigneur Jésus.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Ce que Dieu veut, c’est votre sanctification; c’est que vous vous absteniez de l’impudicité;",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "c’est que chacun de vous sache posséder son corps dans la sainteté et l’honnêteté,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "sans vous livrer à une convoitise passionnée, comme font les païens qui ne connaissent pas Dieu;",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "c’est que personne n’use envers son frère de fraude et de cupidité dans les affaires, parce que le Seigneur tire vengeance de toutes ces choses, comme nous vous l’avons déjà dit et attesté.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Car Dieu ne nous a pas appelés à l’impureté, mais à la sanctification.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Celui donc qui rejette ces préceptes ne rejette pas un homme, mais Dieu, qui vous a aussi donné son Saint-Esprit.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Pour ce qui est de l’amour fraternel, vous n’avez pas besoin qu’on vous en écrive; car vous avez vous-mêmes appris de Dieu à vous aimer les uns les autres,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "et c’est aussi ce que vous faites envers tous les frères dans la Macédoine entière. Mais nous vous exhortons, frères, à abonder toujours plus dans cet amour,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "et à mettre votre honneur à vivre tranquilles, à vous occuper de vos propres affaires, et à travailler de vos mains, comme nous vous l’avons recommandé,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "en sorte que vous vous conduisiez honnêtement envers ceux du dehors, et que vous n’ayez besoin de personne.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Sur la résurrection des morts et l’avènement du Seigneur"
+    },
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Nous ne voulons pas, frères, que vous soyez dans l’ignorance au sujet de ceux qui dorment, afin que vous ne vous affligiez pas comme les autres qui n’ont point d’espérance.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Car, si nous croyons que Jésus est mort et qu’il est ressuscité, croyons aussi que Dieu ramènera par Jésus et avec lui ceux qui sont morts.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Voici, en effet, ce que nous vous déclarons d’après la parole du Seigneur: nous les vivants, restés pour l’avènement du Seigneur, nous ne devancerons pas ceux qui sont morts.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Car le Seigneur lui-même, à un signal donné, à la voix d’un archange, et au son de la trompette de Dieu, descendra du ciel, et les morts en Christ ressusciteront premièrement.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Ensuite, nous les vivants, qui serons restés, nous serons tous ensemble enlevés avec eux sur des nuées, à la rencontre du Seigneur dans les airs, et ainsi nous serons toujours avec le Seigneur.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Consolez-vous donc les uns les autres par ces paroles.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 1,
+          "segments": [
+            {
+              "text": "Pour ce qui est des temps et des moments, vous n’avez pas besoin, frères, qu’on vous en écrive.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 2,
+          "segments": [
+            {
+              "text": "Car vous savez bien vous-mêmes que le jour du Seigneur viendra comme un voleur dans la nuit.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 3,
+          "segments": [
+            {
+              "text": "Quand les hommes diront: Paix et sûreté! Alors une ruine soudaine les surprendra, comme les douleurs de l’enfantement surprennent la femme enceinte, et ils n’échapperont point.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 4,
+          "segments": [
+            {
+              "text": "Mais vous, frères, vous n’êtes pas dans les ténèbres, pour que ce jour vous surprenne comme un voleur;",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 5,
+          "segments": [
+            {
+              "text": "vous êtes tous des enfants de la lumière et des enfants du jour. Nous ne sommes point de la nuit ni des ténèbres.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 6,
+          "segments": [
+            {
+              "text": "Ne dormons donc point comme les autres, mais veillons et soyons sobres.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 7,
+          "segments": [
+            {
+              "text": "Car ceux qui dorment dorment la nuit, et ceux qui s’enivrent s’enivrent la nuit.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 8,
+          "segments": [
+            {
+              "text": "Mais nous qui sommes du jour, soyons sobres, ayant revêtu la cuirasse de la foi et de la charité, et ayant pour casque l’espérance du salut.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 9,
+          "segments": [
+            {
+              "text": "Car Dieu ne nous a pas destinés à la colère, mais à l’acquisition du salut par notre Seigneur Jésus-Christ,",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 10,
+          "segments": [
+            {
+              "text": "qui est mort pour nous, afin que, soit que nous veillions, soit que nous dormions, nous vivions ensemble avec lui.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 11,
+          "segments": [
+            {
+              "text": "C’est pourquoi exhortez-vous réciproquement, et édifiez-vous les uns les autres, comme en réalité vous le faites.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Préceptes divers"
+    },
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 12,
+          "segments": [
+            {
+              "text": "Nous vous prions, frères, d’avoir de la considération pour ceux qui travaillent parmi vous, qui vous dirigent dans le Seigneur, et qui vous exhortent.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 13,
+          "segments": [
+            {
+              "text": "Ayez pour eux beaucoup d’affection, à cause de leur œuvre. Soyez en paix entre vous.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 14,
+          "segments": [
+            {
+              "text": "Nous vous en prions aussi, frères, avertissez ceux qui vivent dans le désordre, consolez ceux qui sont abattus, supportez les faibles, usez de patience envers tous.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 15,
+          "segments": [
+            {
+              "text": "Prenez garde que personne ne rende à autrui le mal pour le mal; mais poursuivez toujours le bien, soit entre vous, soit envers tous.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 16,
+          "segments": [
+            {
+              "text": "Soyez toujours joyeux.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 17,
+          "segments": [
+            {
+              "text": "Priez sans cesse.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 18,
+          "segments": [
+            {
+              "text": "Rendez grâces en toutes choses, car c’est à votre égard la volonté de Dieu en Jésus-Christ.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 19,
+          "segments": [
+            {
+              "text": "N’éteignez pas l’Esprit.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 20,
+          "segments": [
+            {
+              "text": "Ne méprisez pas les prophéties.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 21,
+          "segments": [
+            {
+              "text": "Mais examinez toutes choses; retenez ce qui est bon;",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 22,
+          "segments": [
+            {
+              "text": "abstenez-vous de toute espèce de mal.",
+              "red": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Vœux et salutations"
+    },
+    {
+      "type": "paragraph",
+      "level": 0,
+      "content": [
+        {
+          "verse": 23,
+          "segments": [
+            {
+              "text": "Que le Dieu de paix vous sanctifie lui-même tout entiers, et que tout votre être, l’esprit, l’âme et le corps, soit conservé irrépréhensible, lors de l’avènement de notre Seigneur Jésus-Christ!",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 24,
+          "segments": [
+            {
+              "text": "Celui qui vous a appelés est fidèle, et c’est lui qui le fera.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 25,
+          "segments": [
+            {
+              "text": "Frères, priez pour nous.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 26,
+          "segments": [
+            {
+              "text": "Saluez tous les frères par un saint baiser.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 27,
+          "segments": [
+            {
+              "text": "Je vous en conjure par le Seigneur, que cette lettre soit lue à tous les frères.",
+              "red": false
+            }
+          ]
+        },
+        {
+          "verse": 28,
+          "segments": [
+            {
+              "text": "Que la grâce de notre Seigneur Jésus-Christ soit avec vous!",
+              "red": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

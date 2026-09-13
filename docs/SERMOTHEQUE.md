@@ -1,7 +1,7 @@
 # Sermothèque EBN — Sermon & Service System of Record
 
 **Status:** Draft v1 (for grilling)
-**Last updated:** 2026-09-10
+**Last updated:** 2026-09-12
 **Owner:** kevy@merca.team
 **Relationship to other docs:** This is the **parent project**. The app suite ([PRD.md](PRD.md)) and the website sermon library are *downstream consumers* of this system.
 
@@ -119,7 +119,10 @@ Sequence:
 
 ## 7. Roadmap
 
-- [x] **M6l — Bible LSG 1910 reader** (#61, feature branch; awaiting merge/publication).
+- [x] **M6m — Bible classique, itération 1** (#62, feature branch): navigation livre/chapitre/verset et structure de lecture USFM fidèle.
+- [ ] **Bible, itération 2:** copie/partage du texte, préférences, recherche, signets/surlignages locaux.
+- [ ] **Bible + app, itération 3:** traductions libres EN/ES/PT et contrat d'internationalisation global.
+- [x] **M6l — Bible LSG 1910 reader** (#61; deployed 2026-09-10).
 
 - **M1 — Foundations & instant catalog:** canonical schema + repo + export format; WP authoring model; first-pass backfill from SC titles (a real catalog on day one).
 - **M2 — Matching & console:** YT↔SC matching + services import; completeness dashboard.
@@ -212,7 +215,7 @@ Sequence:
 
 **M6k chemin YouTube dé-risqué — DONE (2026-08-04, décision #60).** L'API IFrame de YouTube est un chemin de code entièrement distinct de SoundCloud, **jamais exercé depuis le début du POC** parce que le conteneur de développement bloque `youtube.com` (vérifié : les trois URL nécessaires répondent `000`). Ce n'est pas un détail futur : **12 des 131 sermons publiés sont déjà des vidéos**, et 278 des 517 du catalogue n'existent que sur YouTube. Le chemin a donc été exercé contre un **faux SDK écrit d'après le contrat documenté de l'API** — `onReady` asynchrone, `destroy()` qui retire l'iframe du document, `getCurrentTime()` qui n'avance qu'en lecture — et non d'après notre propre code, ce qui aurait fait tourner le test à vide. **Quatre scénarios : SDK disponible, navigation entre deux sermons vidéo, SDK bloqué, SDK chargé mais jamais prêt.** Trois défauts réels, tous invisibles en développement, ont été trouvés et corrigés. **(1) Le lecteur disparaissait en passant d'un sermon YouTube à un autre** (mesuré : 0 iframe dans le document) : `player.destroy()` supprime l'iframe — c'est documenté — mais React croyait encore la posséder et se contentait d'en changer le `src`, sur un nœud détaché. Corrigé par une règle explicite, écrite en tête de `player.js` : *aucun pilote ne retire du DOM un nœud rendu par React*. Le cycle de vie passe par une `key` sur le composant, et le pilote n'arrête que son horloge. **(2) Un SDK qui charge sans jamais signaler « prêt » — vidéo privée, intégration refusée par le propriétaire, réseau lent — laissait la promesse en suspens pour toujours** : ni erreur, ni repli, juste des chapitres muets et rien à l'écran pour le dire. Un délai de 8 s transforme l'attente silencieuse en échec franc, sur les DEUX plateformes. **(3) Les chapitres ne redevenaient cliquables que par accident** : l'état « pilotable » vivait dans une `ref`, dont l'écriture ne re-rend rien — la même page était cliquable ou muette selon qu'un autre rendu (le chargement des libellés de thèmes) gagnait ou non la course. Passé en `state`. Ajouté aussi : les **codes d'erreur de l'API** (101/150 = « le propriétaire n'autorise pas la lecture intégrée », le seul vraiment probable sur une chaîne d'église) affichent désormais la vraie raison au lieu d'un rectangle noir. **Ce que le faux SDK ne prouve pas, et qui reste à vérifier sur une machine ayant accès à YouTube :** que YouTube se comporte comme sa documentation — en particulier que `YT.Player` s'attache correctement à une iframe `youtube-nocookie.com` existante. Toute la logique d'intégration, elle, est vérifiée. **Conséquences d'interface livrées avec** : une **pastille de source** sur chaque carte et sur chaque fiche (glyphe vidéo ou audio, **aux couleurs du système de design et non à celles des plateformes** — le rouge YouTube attirerait l'œil plus que le titre du sermon), et un **filtre par plateforme** (Audio 119 / Vidéo 12, comptes vérifiés, menu qui ne se contraint pas lui-même). **Constat de données au passage :** 1 fiche publiée (`yt-gj17HMaMOyY`, « La Bible 3ème Partie ») annonce elle-même que sa transcription est inexploitable — un cas #48 enrichi malgré tout, à re-capturer.
 
-**M6l — Bible LSG 1910 (2026-09-10, feature branch, not deployed).** Imported 66 books /
+**M6l — Bible LSG 1910 (2026-09-10, deployed).** Imported 66 books /
 1,189 chapters / 31,170 verses with source checksum, omitting editorial annotations. Added
 chapter reader, precise verse/range matching, mobile results panel, reference input, sharing,
 sermon links and return to selection. Build projects chapters and per-book indexes and
@@ -220,6 +223,17 @@ pre-renders every chapter. 20 JS tests + 3 importer tests pass; production build
 1,189 generated chapter routes validated. Browser QA remains pending. Two existing references
 are excluded/reportable: `sc-2249668412` / `Gal.6.26` and `sc-2174499144` /
 `Isa.53.32-Isa.53.33`. Catalogue and enrichment counts unchanged.
+
+**M6m — Bible classique, itération 1 (2026-09-12, décision #62; feature branch).** Le
+format canonique garde désormais deux vues complémentaires de la même édition : l'index
+plat des 31 170 versets pour les références/recherches et des blocs ordonnés USFM pour la
+lecture. Le POC rend les versets en ligne dans 2 594 paragraphes, 23 917 lignes poétiques,
+1 500 titres de section/section majeure et 2 126 segments `wj` (« paroles de Jésus ») issus
+de l'édition. Un sélecteur classique ouvre livre → chapitre → verset, sans casser les URL
+OSIS ni l'association aux sermons. Les introductions, notes, références parallèles et
+numéros Strong restent exclus. Validation : 21 tests JS, 5 tests importeur, égalité exacte
+entre texte plat et texte structuré sur les 31 170 versets, build de production réussi.
+Étape suivante : revue/fusion, puis itération 2.
 
 ## 8. Resolved design decisions (grilled 2026-06-13)
 - **Scripture:** canonical **OSIS** book IDs (e.g. `Rom.8.1-8.4`) + a FR/EN parser; display localized, query canonical. Powers browse-by-book.

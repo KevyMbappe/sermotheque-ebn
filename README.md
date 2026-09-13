@@ -84,7 +84,10 @@ Re-pulling inventories requires a recent `yt-dlp` (≥ 2026.x).
 
 ## Roadmap
 
-- [x] **M6l — Bible LSG 1910** (2026-09-10, #61, feature branch): complete Bible reader, precise verse/range sermon matching, shareable selections and bidirectional sermon links. 66 books / 1,189 chapters / 31,170 verses; awaiting merge to publish.
+- [x] **M6m — Bible classique, itération 1** (2026-09-12, #62): sélecteur livre→chapitre→verset, paragraphes continus, titres de section, poésie indentée et paroles de Jésus en rouge depuis la structure USFM.
+- [ ] **Bible, itération 2** — copie/partage du texte sélectionné, préférences de lecture, recherche biblique, signets et surlignage local.
+- [ ] **Bible + app, itération 3** — traductions bibliques libres EN/ES/PT et internationalisation globale du contenu et de l'interface (contrats à définir avant l'import).
+- [x] **M6l — Bible LSG 1910** (2026-09-10, #61): complete Bible reader, precise verse/range sermon matching, shareable selections and bidirectional sermon links. 66 books / 1,189 chapters / 31,170 verses; deployed.
 
 - [x] Plan & specs (decision logs in `docs/SERMOTHEQUE.md` / `docs/PRD.md`)
 - [x] **M1** — first-pass catalog from SoundCloud titles

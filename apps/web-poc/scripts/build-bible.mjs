@@ -14,6 +14,7 @@ export function buildBible(root, out, sermons) {
   let verses = 0, chapters = 0;
   for (const book of BOOK_ORDER) {
     const data = JSON.parse(readFileSync(join(source, `${book}.json`), 'utf8'));
+    const structure = JSON.parse(readFileSync(join(source, `${book}.structure.json`), 'utf8'));
     if (Object.keys(data).length !== manifest.books[book].length) throw Error(`Chapter count: ${book}`);
     mkdirSync(join(dest, book), {recursive:true});
     for (const [i,count] of manifest.books[book].entries()) {
@@ -22,7 +23,9 @@ export function buildBible(root, out, sermons) {
       for (let n = 1; n <= count; n++) {
         if (typeof rows[n] !== 'string' || !rows[n].trim() || /\\|strong=/.test(rows[n])) throw Error(`Invalid text: ${book}.${chapter}.${n}`);
       }
-      writeFileSync(join(dest,book,`${chapter}.json`), JSON.stringify(rows));
+      const blocks = structure[chapter];
+      if (!Array.isArray(blocks) || !blocks.length) throw Error(`Reading structure: ${book}.${chapter}`);
+      writeFileSync(join(dest,book,`${chapter}.json`), JSON.stringify({verses: rows, blocks}));
       chapters++; verses += count;
     }
     writeFileSync(join(dest,book,'sermons.json'), JSON.stringify(index[book] || []));
